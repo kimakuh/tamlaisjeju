@@ -57,9 +57,9 @@
                     <a href="#">음식점</a>
                 </li>
                 <li class="dropdown">
-                    <button onclick="location()" class="dropbtn">전체
+                    <a href="#" onclick="location()" class="dropbtn">전체
                         <i class="fa fa-caret-down"></i>
-                    </button>
+                    </a>
                     <ul id="myDropdown" class="dropdown-content">
                         <li>
                             <a href="#">전체</a>
@@ -86,23 +86,7 @@
                 <li></li>
             </ul>
         </div>
-        <script>
-                /* When the user clicks on the button, 
-                toggle between hiding and showing the dropdown content */
-                function location() {
-                    document.getElementById("myDropdown").classList.toggle("show");
-                }
-                
-                // Close the dropdown if the user clicks outside of it
-                window.onclick = function(e) {
-                  if (!e.target.matches('.dropbtn')) {
-                    var myDropdown = document.getElementById("myDropdown");
-                      if (myDropdown.classList.contains('show')) {
-                        myDropdown.classList.remove('show');
-                      }
-                  }
-                }
-                </script>
+
 
 
 
