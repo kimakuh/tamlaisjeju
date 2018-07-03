@@ -33,8 +33,8 @@
 }
 
 
-.topnav h1{display:block;}
-.topnav h1 a{font-family: 'Gugi', cursive;}
+.topnav h1{display:block;float: left;}
+.topnav h1 a{font-family: 'Gugi', cursive;float:none;font-size:30px;padding:0;}
 .topnav h1 a:hover{background:none;}
 
 
