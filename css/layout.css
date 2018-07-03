@@ -264,7 +264,8 @@
 
 .util_area {
   float: right;
-  text-align: right
+  padding:0 15px;
+  text-align: right;
 }
 
 .util_area li {
