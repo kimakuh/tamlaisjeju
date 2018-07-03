@@ -91,7 +91,9 @@
                     <a href="#">음식점</a>
                 </li>
                 <li class="dropdown">
-                    <button href="#" onclick="myFunction()" class="dropbtn">전체</button>
+                    <button href="#" onclick="myFunction()" class="dropbtn">전체
+                        <i class="fa fa-caret-down"></i>
+                    </button>
                     <ul id="myDropdown" class="dropdown-content">
                         <li>
                             <a href="#">전체</a>
@@ -117,7 +119,7 @@
         </div>
         <script>
             /* When the user clicks on the button, 
-                                        toggle between hiding and showing the dropdown content */
+                                                    toggle between hiding and showing the dropdown content */
             function myFunction() {
                 document.getElementById("myDropdown").classList.toggle("show");
             }
