@@ -176,15 +176,11 @@
   margin:0;
 }
 
-.content {
-  margin: 30px auto;
-  width: 1200px;
 
-}
 
-.content .sub_text_area{margin:50px 0;}
+#content .sub_text_area{margin:50px 0;}
 
-.content h3 {
+#content h3 {
   margin-bottom:20px;
   font-size: 35px;
   line-height: 35px;
@@ -193,7 +189,7 @@
   font-weight:bold;
 }
 
-.content .h3_sub_txt {
+#content .h3_sub_txt {
   margin-top: 24px;
   font-size: 18px;
   color: #555;
