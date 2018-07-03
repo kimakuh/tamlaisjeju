@@ -166,6 +166,10 @@
 #content{width:1200px;margin:0 auto;}
 #svisual img{display:block;width:100%;height:400px;}
 
+
+
+.location_wrap{background-color:#f4f4f4;border:1px solid #e5e5e5;}
+
 .container{
   max-width: 100%;
   padding: 83px 0 0 0;
