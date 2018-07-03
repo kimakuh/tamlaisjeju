@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <style type="text/css">
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+        @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+        body {
+            /* font-family: 'Noto Sans KR', sans-serif; */
+            font-family: 'NanumSquareRound', sans-serif;
+        }
+
+        .container {
+            width: 1200px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .box_wrap {
+            overflow: hidden;
+        }
+
+        .box_wrap .box {
+            position: relative;
+            float: left;
+            width: 30%;
+        }
+
+        .box_wrap .box.hover:hover .hover_cont{position: absolute;width:100%;left:0;top:0;height:100%;background:#000;}
+
+        .box_wrap .img_area {}
+
+        .box_wrap .img_area img {
+            display: block;
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box_wrap">
+            <div class="box">
+                <div class="img_area">
+                    <img src="img/common/board_img.gif" alt="성산일출봉(UNESCO 세계자연유산)">
+                </div>
+                <div class="content_area">
+                    <p class="cont_tit">제목제목제목</p>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="box">
+                <div class="img_area">
+                    <img src="img/common/board_img.gif" alt="성산일출봉(UNESCO 세계자연유산)">
+                </div>
+                <div class="content_area">
+                    <p class="cont_tit">제목제목제목</p>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="box hover">
+                <div class="img_area">
+                    <img src="img/common/board_img.gif" alt="성산일출봉(UNESCO 세계자연유산)">
+                </div>
+                <div class="content_area">
+                    <p class="cont_tit">제목제목제목</p>
+                </div>
+                <div class="hover_cont">
+                    마우스올렸을때!!!!!
+                </div>
+            </div>
+            <!-- box -->
+        </div>
+    </div>
+</body>
+
+</html>

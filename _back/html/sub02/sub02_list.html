@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>음식점</title>
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <style type="text/css">
+        /* font */
+
+        @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+        body {
+            /* font-family: 'Noto Sans KR', sans-serif; */
+            font-family: 'NanumSquareRound', sans-serif;
+            font-size: 14px;
+        }
+
+        /* common */
+
+        .container {
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .clear::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .no_mar {
+            margin: 0;
+        }
+
+
+        /* layout */
+
+
+
+
+
+        .container h3 {
+            margin: 20px 0;
+            font-size: 30px;
+        }
+
+        /* board_common */
+
+        .box_wrap {
+            margin: 0 0 2% -2%;
+        }
+
+        .box_warp::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .box {
+            float: left;
+            border: 1px solid #ededed;
+            box-sizing: border-box;
+
+        }
+
+        .box .img_area {
+            position: relative;
+        }
+
+
+        .box::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+        .box .img_area .category {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 5px 10px;
+            background: #222;
+            color: #fff;
+        }
+
+        .box .img_area img {
+            display: block;
+            width: 100%;
+            height: 225px;
+        }
+
+        .box .box_cont_area h4 {
+            font-size: 22px;
+            font-weight: bold;
+
+            overflow: hidden;
+            color: #1b1b1b;
+            line-height: 22px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .box .box_cont_area .location_category {
+            padding: 15px;
+
+            color: #959595;
+            line-height: 16px;
+        }
+
+        .box .box_cont_area .hashtag a {
+            display: inline-block;
+            color: #2168f6;
+        }
+
+
+        /* board_type01 */
+
+        .box.type01 {
+
+            width: 32%;
+            margin-left: 2%;
+        }
+
+        .box.type01.no_mar {
+            margin: 0;
+        }
+
+        .box.type01 .img_area {}
+
+        .box.type01 .img_area .category {}
+
+        .box.type01 .img_area img {}
+
+        .box.type01 .box_cont_area {
+            padding: 25px 10px;
+        }
+
+        .box.type01 .box_cont_area h4 {
+            text-align: center;
+        }
+
+        .box.type01 .box_cont_area .location_category {
+            text-align: center;
+        }
+
+        .box.type01 .box_cont_area .hashtag {
+            text-align: center;
+        }
+
+        .box.type01 .box_cont_area .hashtag a {
+            display: inline-block;
+            color: #2168f6;
+        }
+
+        .box.type01 .box_cont_area .my_hashtag {
+            margin: 15px 0;
+            text-align: center;
+
+        }
+
+        .box.type01 .box_cont_area .my_hashtag a {
+            display: inline-block;
+            line-height: 15px;
+        }
+
+        .box.type01 .box_cont_area .icon_area {
+            margin-top: 20px;
+        }
+
+        .box.type01 .box_cont_area .icon_area ul {}
+
+        .box.type01 .box_cont_area .icon_area ul li {
+            float: left;
+            width: 33.3%;
+            padding-top: 30px;
+            text-align: center;
+
+        }
+
+        .box.type01 .box_cont_area .icon_area ul li a {
+            display: block;
+            margin: 5px;
+            font-size: 13px;
+        }
+    
+
+
+
+        .box.type01 .box_cont_area .icon_area ul li.icon.like_icon {
+            background: url('../../img/common/ico_like.png') no-repeat 50% 0;
+        }
+
+        .box.type01 .box_cont_area .icon_area ul li.icon.zzim_icon {
+            background: url('../../img/common/ico_zzim.png') no-repeat 50% 0;
+        }
+
+        .box.type01 .box_cont_area .icon_area ul li.icon.review_icon {
+            background: url('../../img/common/ico_review.png') no-repeat 50% 0;
+        }
+
+        .box.type01 .box_cont_area .icon_area ul li span {
+            margin:4px 0;
+            display:block;
+            color: #959595;
+            font-size: 12px;
+            
+        }
+
+
+
+        /* 게시판 타입2 */
+
+        .box.type02 {
+            float: none;
+            margin-bottom: 2%;
+            border-left:none;border-right:none;
+        }
+
+        .box.type02::after {}
+
+        .box.type02 .img_area {
+            float: left;
+            width: 30%;
+        }
+
+        .box.type02 .box_cont_area {
+            float: left;
+            position: relative;
+            width: 66%;
+            padding: 2%;
+        }
+
+        .box.type02 .box_cont_area h4 {
+            text-align: left
+        }
+
+        .box.type02 .box_cont_area .location_category {
+            padding-left: 0;
+            text-align: left;
+        }
+
+        .box.type02 .box_cont_area .info_txt {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #959595;
+            line-height: 22px;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+        }
+
+        .box.type02 .box_cont_area .count_area {
+            color: #959595;
+            font-size: 13px;
+        }
+
+        .box.type02 .box_cont_area .count_area li {
+            display: inline-block;
+            position: relative;
+            padding: 0 10px;
+            
+        }
+
+        .box.type02 .box_cont_area .count_area li:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 1px;
+            height: 10px;
+            background: #999;
+        }
+
+        .box.type02 .box_cont_area .count_area li:first-child {
+            padding-left: 0;
+        }
+
+        .box.type02 .box_cont_area .count_area li:first-child:after {
+            display: none;
+        }
+
+        .box.type02 .box_cont_area .icon_area {
+            position: absolute;
+            right: 0;
+            top: 50px;
+
+            /*
+            
+            float:right;
+            margin-top:-115px;
+            
+            */
+
+        }
+
+        .box.type02 .box_cont_area .icon_area li {
+            margin:5px 0;
+            border: 1px solid #e5e5e5;
+            
+        }
+
+        .box.type02 .box_cont_area .icon_area ul li a {
+            display: block;
+            padding:15px 60px;
+        }
+
+        .box.type02 .box_cont_area .icon_area ul li.icon.like_icon {
+            background: url('../../img/common/ico_like.png') no-repeat 20px 50%;
+        }
+
+        .box.type02 .box_cont_area .icon_area ul li.icon.zzim_icon {
+            background: url('../../img/common/ico_zzim.png') no-repeat  20px 50%;
+        }
+
+        .box.type02 .box_cont_area .icon_area ul li.icon.review_icon {
+            background: url('../../img/common/ico_review.png') no-repeat  20px 50%;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container" id="sub02">
+        <h3>게시판타입1</h3>
+        <div class="board_restaurant tpye01">
+            <div class="board_wrap">
+                <div class="box_wrap clear">
+                    <div class="box type01 no_mar">
+                        <div class="img_area">
+                            <span class="category">음식점</span>
+                            <img src="../../img/sub02/board_restaurant_img01.jpg" alt="제주김만복(만복이네김밥집)">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</h4>
+                            <p class="location_category">제주시 > 제주시내</p>
+                            <p class="hashtag">
+                                <a href="#">#전복김밥</a>
+                                <a href="#">#통전복주먹밥</a>
+                                <a href="#">#미역국</a>
+                            </p>
+                            <p class="my_hashtag">
+                                <a href="#"></a>
+                            </p>
+                            <div class="icon_area">
+                                <ul class="clear">
+                                    <li class="icon like_icon">
+                                        <a href="#">
+                                            <span>좋아요</span>
+                                            <span class="like_count">60</span>
+                                        </a>
+                                    </li>
+                                    <li class="icon zzim_icon">
+                                        <a href="#">
+                                            <span>찜하기</span>
+                                            <span class="zzim_count">883</span>
+                                        </a>
+                                    </li>
+                                    <li class="icon review_icon">
+                                        <a href="#">
+                                            <span>리뷰</span>
+                                            <span class="review_count">921</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                    <div class="box type01">
+                        <div class="img_area">
+                            <span class="category">관광지</span>
+                            <img src="../../img/sub02/board_restaurant_img02.jpg" alt="봄날카페">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>봄날카페</h4>
+                            <p class="location_category">제주시>애월</p>
+                            <p class="hashtag">
+                                <a href="#">#일출</a>
+                                <a href="#">#오름</a>
+                                <a href="#">경관/포토</a>
+                            </p>
+                            <p class="my_hashtag">
+                                <a href="#"></a>
+                            </p>
+                            <div class="icon_area">
+                                    <ul class="clear">
+                                        <li class="icon like_icon">
+                                            <a href="#">
+                                                <span>좋아요</span>
+                                                <span class="like_count">60</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon zzim_icon">
+                                            <a href="#">
+                                                <span>찜하기</span>
+                                                <span class="zzim_count">883</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon review_icon">
+                                            <a href="#">
+                                                <span>리뷰</span>
+                                                <span class="review_count">921</span>
+                                            </a>
+    
+                                        </li>
+                                    </ul>
+                                </div>
+                            <!-- icon_area end -->
+                        </div>
+                        <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                    <div class="box type01">
+                        <div class="img_area">
+                            <span class="category">음식점</span>
+                            <img src="../../img/sub02/board_restaurant_img03.jpg" alt="명당양과">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>명당양과</h4>
+                            <p class="location_category">제주시>제주시내</p>
+                            <p class="hashtag">
+                                <a href="#">#일출</a>
+                                <a href="#">#오름</a>
+                                <a href="#">경관/포토</a>
+                            </p>
+                            <p class="my_hashtag">
+                                <a href="#">#쑥찐빵</a>
+                                <a href="#">#우유식빵</a>
+                            </p>
+                            <div class="icon_area">
+                                    <ul class="clear">
+                                        <li class="icon like_icon">
+                                            <a href="#">
+                                                <span>좋아요</span>
+                                                <span class="like_count">60</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon zzim_icon">
+                                            <a href="#">
+                                                <span>찜하기</span>
+                                                <span class="zzim_count">883</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon review_icon">
+                                            <a href="#">
+                                                <span>리뷰</span>
+                                                <span class="review_count">921</span>
+                                            </a>
+    
+                                        </li>
+                                    </ul>
+                                </div>
+                            <!-- icon_area end -->
+                        </div>
+                        <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                </div>
+                <!-- box_wrap end -->
+
+
+
+
+
+                <div class="box_wrap">
+                    <div class="box type01 no_mar">
+                        <div class="img_area">
+                            <span class="category">음식점</span>
+                            <img src="../../img/sub02/board_restaurant_img01.jpg" alt="제주김만복(만복이네김밥집)">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</h4>
+                            <p class="location_category">제주시 > 제주시내</p>
+                            <p class="hashtag">
+                                <a href="#">#전복김밥</a>
+                                <a href="#">#통전복주먹밥</a>
+                                <a href="#">#미역국</a>
+                            </p>
+                            <p class="my_hashtag">
+                                <a href="#"></a>
+                            </p>
+                            <div class="icon_area">
+                                    <ul class="clear">
+                                        <li class="icon like_icon">
+                                            <a href="#">
+                                                <span>좋아요</span>
+                                                <span class="like_count">60</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon zzim_icon">
+                                            <a href="#">
+                                                <span>찜하기</span>
+                                                <span class="zzim_count">883</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon review_icon">
+                                            <a href="#">
+                                                <span>리뷰</span>
+                                                <span class="review_count">921</span>
+                                            </a>
+    
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                    <div class="box type01">
+                        <div class="img_area">
+                            <span class="category">관광지</span>
+                            <img src="../../img/sub02/board_restaurant_img02.jpg" alt="봄날카페">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>봄날카페</h4>
+                            <p class="location_category">제주시>애월</p>
+                            <p class="hashtag">
+                                <a href="#">#일출</a>
+                                <a href="#">#오름</a>
+                                <a href="#">경관/포토</a>
+                            </p>
+                            <p class="my_hashtag">
+                                <a href="#"></a>
+                            </p>
+                            <div class="icon_area">
+                                    <ul class="clear">
+                                        <li class="icon like_icon">
+                                            <a href="#">
+                                                <span>좋아요</span>
+                                                <span class="like_count">60</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon zzim_icon">
+                                            <a href="#">
+                                                <span>찜하기</span>
+                                                <span class="zzim_count">883</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon review_icon">
+                                            <a href="#">
+                                                <span>리뷰</span>
+                                                <span class="review_count">921</span>
+                                            </a>
+    
+                                        </li>
+                                    </ul>
+                                </div>
+                            <!-- icon_area end -->
+                        </div>
+                        <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                    <div class="box type01">
+                        <div class="img_area">
+                            <span class="category">음식점</span>
+                            <img src="../../img/sub02/board_restaurant_img03.jpg" alt="명당양과">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>명당양과</h4>
+                            <p class="location_category">제주시>제주시내</p>
+                            <p class="hashtag">
+                                <a href="#">#일출</a>
+                                <a href="#">#오름</a>
+                                <a href="#">경관/포토</a>
+                            </p>
+                            <p class="my_hashtag">
+                                <a href="#">#쑥찐빵</a>
+                                <a href="#">#우유식빵</a>
+                            </p>
+                            <div class="icon_area">
+                                    <ul class="clear">
+                                        <li class="icon like_icon">
+                                            <a href="#">
+                                                <span>좋아요</span>
+                                                <span class="like_count">60</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon zzim_icon">
+                                            <a href="#">
+                                                <span>찜하기</span>
+                                                <span class="zzim_count">883</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon review_icon">
+                                            <a href="#">
+                                                <span>리뷰</span>
+                                                <span class="review_count">921</span>
+                                            </a>
+    
+                                        </li>
+                                    </ul>
+                                </div>
+                            <!-- icon_area end -->
+                        </div>
+                        <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                </div>
+                <!-- box_wrap end -->
+            </div>
+            <!-- board_wrap end -->
+        </div>
+        <!-- board_restaurant -->
+
+
+
+        <h3>게시판타입2</h3>
+
+        <div class="board_restaurant tpye02">
+            <div class="board_wrap">
+                <div class="box_wrap clear">
+                    <div class="box type02 no_mar">
+                        <div class="img_area">
+                            <span class="category">음식점</span>
+                            <img src="../../img/sub02/board_restaurant_img01.jpg" alt="제주김만복(만복이네김밥집)">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</h4>
+                            <p class="location_category">제주시 > 제주시내</p>
+                            <p class="hashtag">
+                                <a href="#">#전복김밥</a>
+                                <a href="#">#통전복주먹밥</a>
+                                <a href="#">#미역국</a>
+                            </p>
+                            <p class="info_txt">
+                                전복내장으로 만든 김밥, 심플한 메뉴로 많은 여행객들에게 사랑받는 곳
+                            </p>
+                            <div class="icon_area">
+                                    <ul class="clear">
+                                        <li class="icon like_icon">
+                                            <a href="#">
+                                                <span>좋아요</span>
+                                                <span class="like_count">60</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon zzim_icon">
+                                            <a href="#">
+                                                <span>찜하기</span>
+                                                <span class="zzim_count">883</span>
+                                            </a>
+                                        </li>
+                                        <li class="icon review_icon">
+                                            <a href="#">
+                                                <span>리뷰</span>
+                                                <span class="review_count">921</span>
+                                            </a>
+    
+                                        </li>
+                                    </ul>
+                                </div>
+                            <!-- icon_area -->
+                            <div class="count_area">
+                                <ul>
+                                    <li>조회
+                                        <span>19,408</span>
+                                    </li>
+                                    <li>방문
+                                        <span>57</span>
+                                    </li>
+                                    <li>사진 공유
+                                        <span>59</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- count_area-->
+                        </div>
+                        <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                    <div class="box type02">
+                        <div class="img_area">
+                            <span class="category">관광지</span>
+                            <img src="../../img/sub02/board_restaurant_img02.jpg" alt="봄날카페">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>봄날카페</h4>
+                            <p class="location_category">제주시>애월</p>
+                            <p class="hashtag">
+                                <a href="#">#일출</a>
+                                <a href="#">#오름</a>
+                                <a href="#">경관/포토</a>
+                            </p>
+                            <p class="info_txt">
+                                    전복내장으로 만든 김밥, 심플한 메뉴로 많은 여행객들에게 사랑받는 곳
+                                </p>
+                                <div class="icon_area">
+                                        <ul class="clear">
+                                            <li class="icon like_icon">
+                                                <a href="#">
+                                                    <span>좋아요</span>
+                                                    <span class="like_count">60</span>
+                                                </a>
+                                            </li>
+                                            <li class="icon zzim_icon">
+                                                <a href="#">
+                                                    <span>찜하기</span>
+                                                    <span class="zzim_count">883</span>
+                                                </a>
+                                            </li>
+                                            <li class="icon review_icon">
+                                                <a href="#">
+                                                    <span>리뷰</span>
+                                                    <span class="review_count">921</span>
+                                                </a>
+        
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <!-- icon_area -->
+                                <div class="count_area">
+                                    <ul>
+                                        <li>조회
+                                            <span>19,408</span>
+                                        </li>
+                                        <li>방문
+                                            <span>57</span>
+                                        </li>
+                                        <li>사진 공유
+                                            <span>59</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- count_area-->
+                            </div>
+                            <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                    <div class="box type02">
+                        <div class="img_area">
+                            <span class="category">음식점</span>
+                            <img src="../../img/sub02/board_restaurant_img03.jpg" alt="명당양과">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>명당양과</h4>
+                            <p class="location_category">제주시>제주시내</p>
+                            <p class="hashtag">
+                                <a href="#">#일출</a>
+                                <a href="#">#오름</a>
+                                <a href="#">경관/포토</a>
+                            </p>
+                            <p class="info_txt">
+                                    전복내장으로 만든 김밥, 심플한 메뉴로 많은 여행객들에게 사랑받는 곳
+                                </p>
+                                <div class="icon_area">
+                                        <ul class="clear">
+                                            <li class="icon like_icon">
+                                                <a href="#">
+                                                    <span>좋아요</span>
+                                                    <span class="like_count">60</span>
+                                                </a>
+                                            </li>
+                                            <li class="icon zzim_icon">
+                                                <a href="#">
+                                                    <span>찜하기</span>
+                                                    <span class="zzim_count">883</span>
+                                                </a>
+                                            </li>
+                                            <li class="icon review_icon">
+                                                <a href="#">
+                                                    <span>리뷰</span>
+                                                    <span class="review_count">921</span>
+                                                </a>
+        
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <!-- icon_area -->
+                                <div class="count_area">
+                                    <ul>
+                                        <li>조회
+                                            <span>19,408</span>
+                                        </li>
+                                        <li>방문
+                                            <span>57</span>
+                                        </li>
+                                        <li>사진 공유
+                                            <span>59</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- count_area-->
+                            </div>
+                            <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                </div>
+                <!-- box_wrap end -->
+
+
+
+
+
+                <div class="box_wrap">
+                    <div class="box type02 no_mar">
+                        <div class="img_area">
+                            <span class="category">음식점</span>
+                            <img src="../../img/sub02/board_restaurant_img01.jpg" alt="제주김만복(만복이네김밥집)">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</h4>
+                            <p class="location_category">제주시 > 제주시내</p>
+                            <p class="hashtag">
+                                <a href="#">#전복김밥</a>
+                                <a href="#">#통전복주먹밥</a>
+                                <a href="#">#미역국</a>
+                            </p>
+                            <p class="info_txt">
+                                    전복내장으로 만든 김밥, 심플한 메뉴로 많은 여행객들에게 사랑받는 곳
+                                </p>
+                                <div class="icon_area">
+                                        <ul class="clear">
+                                            <li class="icon like_icon">
+                                                <a href="#">
+                                                    <span>좋아요</span>
+                                                    <span class="like_count">60</span>
+                                                </a>
+                                            </li>
+                                            <li class="icon zzim_icon">
+                                                <a href="#">
+                                                    <span>찜하기</span>
+                                                    <span class="zzim_count">883</span>
+                                                </a>
+                                            </li>
+                                            <li class="icon review_icon">
+                                                <a href="#">
+                                                    <span>리뷰</span>
+                                                    <span class="review_count">921</span>
+                                                </a>
+        
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <!-- icon_area -->
+                                <div class="count_area">
+                                    <ul>
+                                        <li>조회
+                                            <span>19,408</span>
+                                        </li>
+                                        <li>방문
+                                            <span>57</span>
+                                        </li>
+                                        <li>사진 공유
+                                            <span>59</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- count_area-->
+                            </div>
+                            <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                    <div class="box type02">
+                        <div class="img_area">
+                            <span class="category">관광지</span>
+                            <img src="../../img/sub02/board_restaurant_img02.jpg" alt="봄날카페">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>봄날카페</h4>
+                            <p class="location_category">제주시>애월</p>
+                            <p class="hashtag">
+                                <a href="#">#일출</a>
+                                <a href="#">#오름</a>
+                                <a href="#">경관/포토</a>
+                            </p>
+                            <p class="info_txt">
+                                    전복내장으로 만든 김밥, 심플한 메뉴로 많은 여행객들에게 사랑받는 곳
+                                </p>
+                                <div class="icon_area">
+                                        <ul class="clear">
+                                            <li class="icon like_icon">
+                                                <a href="#">
+                                                    <span>좋아요</span>
+                                                    <span class="like_count">60</span>
+                                                </a>
+                                            </li>
+                                            <li class="icon zzim_icon">
+                                                <a href="#">
+                                                    <span>찜하기</span>
+                                                    <span class="zzim_count">883</span>
+                                                </a>
+                                            </li>
+                                            <li class="icon review_icon">
+                                                <a href="#">
+                                                    <span>리뷰</span>
+                                                    <span class="review_count">921</span>
+                                                </a>
+        
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <!-- icon_area -->
+                                <div class="count_area">
+                                    <ul>
+                                        <li>조회
+                                            <span>19,408</span>
+                                        </li>
+                                        <li>방문
+                                            <span>57</span>
+                                        </li>
+                                        <li>사진 공유
+                                            <span>59</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- count_area-->
+                            </div>
+                            <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                    <div class="box type02">
+                        <div class="img_area">
+                            <span class="category">음식점</span>
+                            <img src="../../img/sub02/board_restaurant_img03.jpg" alt="명당양과">
+                            <span class="star_score"></span>
+                        </div>
+                        <!-- img_area end-->
+                        <div class="box_cont_area">
+                            <h4>명당양과</h4>
+                            <p class="location_category">제주시>제주시내</p>
+                            <p class="hashtag">
+                                <a href="#">#일출</a>
+                                <a href="#">#오름</a>
+                                <a href="#">경관/포토</a>
+                            </p>
+                            <p class="info_txt">
+                                    전복내장으로 만든 김밥, 심플한 메뉴로 많은 여행객들에게 사랑받는 곳
+                                </p>
+                                <div class="icon_area">
+                                        <ul class="clear">
+                                            <li class="icon like_icon">
+                                                <a href="#">
+                                                    <span>좋아요</span>
+                                                    <span class="like_count">60</span>
+                                                </a>
+                                            </li>
+                                            <li class="icon zzim_icon">
+                                                <a href="#">
+                                                    <span>찜하기</span>
+                                                    <span class="zzim_count">883</span>
+                                                </a>
+                                            </li>
+                                            <li class="icon review_icon">
+                                                <a href="#">
+                                                    <span>리뷰</span>
+                                                    <span class="review_count">921</span>
+                                                </a>
+        
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <!-- icon_area -->
+                                <div class="count_area">
+                                    <ul>
+                                        <li>조회
+                                            <span>19,408</span>
+                                        </li>
+                                        <li>방문
+                                            <span>57</span>
+                                        </li>
+                                        <li>사진 공유
+                                            <span>59</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- count_area-->
+                            </div>
+                            <!-- box_cont_area -->
+                    </div>
+                    <!-- box end -->
+                </div>
+                <!-- box_wrap end -->
+            </div>
+            <!-- board_wrap end -->
+        </div>
+        <!-- board_restaurant -->
+    </div>
+    <!-- container-->
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="foot_link">
+                <ul>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">홈페이지 개선의견</a>
+                    </li>
+                    <li>
+                        <a href="#">관광업체등록문의</a>
+                    </li>
+                    <li>
+                        <a href="#">사이트맵</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot_info">
+                <address>(63208) 제주특별자치도 제주시 광양9길 10, 대표전화：064-120, Gwangyang 9-gil, Jeju-si, Jeju. Republic of Korea 63208</address>
+                <p>Copyright 2018 TAMNANEUNTEAM. All rights reserved.</p>
+                <p>제주시 홈페이지는 운영체제(OS)：Windows 7이상, 인터넷 브라우저：IE 9이상, 파이어 폭스, 크롬, 사파리에 최적화 되어있습니다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

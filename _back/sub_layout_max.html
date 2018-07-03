@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>서브레이아웃 - PC</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <script type="text/javascript" src="js/common/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/common/jquery-ui.min.js"></script>
+
+  <style type="text/css">
+    /* reset.css */
+
+    /* common.css */
+
+    body {
+      font-size: 14px;
+      color: #333;
+      -webkit-text-size-adjust: none;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+
+    .clearfix {
+      width: 100%
+    }
+
+    .clearfix:after {
+      content: "";
+      display: block;
+      visibility: hidden;
+      clear: both
+    }
+
+    /* hidden type */
+
+    .skip {
+      position: absolute;
+      top: 0;
+      height: 0;
+      visibility: hidden;
+      font-size: 0
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .topnav a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #555;
+      color: white;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+
+
+    .top_util {
+      height: 40px;
+      background-color: #414c5d;
+    }
+
+
+    .top_util ul li {
+      float: left;
+      display: inline-block;
+      border-left: 1px solid #353e4d
+    }
+
+    .top_util ul li a {
+      display: block;
+      color: #fff;
+      line-height: 40px;
+      padding: 0 15px;
+    }
+
+
+
+    @media screen and (max-width: 1200px) {
+      .top_util {
+        display: none;
+      }
+    }
+
+
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child),
+      .dropdown .dropbtn {
+        display: none;
+      }
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {
+        position: relative;
+      }
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav.responsive .dropdown {
+        float: none;
+      }
+      .topnav.responsive .dropdown-content {
+        position: relative;
+      }
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+
+  <script>
+    //브라우저 버전 체크
+    var IEVersionCheck = function () {
+
+      var word,
+        version = "N/A",
+        agent = navigator.userAgent.toLowerCase(),
+        name = navigator.appName;
+
+      // IE old version ( IE 10 or Lower )
+      if (name == "Microsoft Internet Explorer") word = "msie ";
+
+      else {
+        // IE 11
+        if (agent.search("trident") > -1) word = "trident/.*rv:";
+
+        // IE 12  ( Microsoft Edge )
+        else if (agent.search("edge/") > -1) word = "edge/";
+      }
+
+      var reg = new RegExp(word + "([0-9]{1,})(\\.{0,}[0-9]{0,1})");
+      if (reg.exec(agent) != null)
+        version = RegExp.$1 + RegExp.$2;
+
+      return version;
+    };
+
+
+
+
+
+
+
+
+
+    /* ====================================================================================================================
+    //팝업(popup)
+    * ====================================================================================================================*/
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+      }
+
+      return "";
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+
+
+    $(document).ready(function ($) {
+      //ie하위 브라우저시 실행
+      if (IEVersionCheck() == 8 || IEVersionCheck() == 7 || IEVersionCheck() == 5) {
+        var error_browser = '';
+        error_browser += '<div class="not-browser">';
+        error_browser += '  <div class="warning"><span></span></div>';
+        error_browser +=
+          '  <h1 class="error-title">현재 사용중인 브라우저는 지원되지 않습니다.<br><span class="sub">(In this broser isn&#39;t supported.)</span></h1>';
+        error_browser += '  <p class="error-text">Microsoft의 지원 종료 된 브라우저를 사용하고 있습니다.</p>';
+        error_browser +=
+          '  <p class="error-text">최신 버전의 Internet Explorer, Chroem, Safari, Firefox, Microsoft Edge<br>브라우저를 이용해 주세요.</p>';
+        error_browser +=
+          '  <div style="margin-top: 20px;"><a href="https://www.google.co.kr/chrome/browser/desktop/index.html" class="btn blue">크롬 브라우저 다운로드</a></div>';
+        error_browser += '</div>';
+
+        $('body').html(error_browser);
+      } else {
+
+
+        LanguageMenu(); //언어선택
+        SnadMail(); //메일 보내기
+        ShareLink(); //공유하기
+        MenuFocus(); //주메뉴 Focus (웹접근성)
+        fullmenuFocus(); // 전체메뉴 Focus (웹접근성)
+        SideMenu(); //서브 프레임 side_menu
+        MobileMenu(); //모바일 주메뉴
+        MobileMenu_3depth(); //모바일 주메뉴
+        SiteLinkFocus(); //유관기관 바로가기 Focus (웹접근성)
+        AreaDepth(); //분야별정보 뎁스 메뉴
+        DetailSearch(); //통합검색 상세검색 레이어
+        ArAgreeView(); //개인정보 수집 및 이용에 대한 동의 안내
+      }
+
+
+
+    });
+  </script>
+
+
+
+
+
+  <div id="sub">
+    <header id="header">
+      <div class="top_util">
+        <div class="wrapper">
+          <ul class="link">
+            <li>
+              <a href="#">제주시포털</a>
+            </li>
+            <li>
+              <a href="#">비짓제주</a>
+            </li>
+          </ul>
+          <ul class="sns">
+            <li>
+              <a href="#">facebook</a>
+            </li>
+            <li>
+              <a href="#">카카오스토리</a>
+            </li>
+            <li>
+              <a href="#">카카오스토리</a>
+            </li>
+            <li>
+              <a href="#">다음블로그</a>
+            </li>
+            <li>
+              <a href="#">네이버블로그</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="topnav" id="myTopnav">
+        <div class="wrapper">
+          <h1>
+            <a href="#">탐라는 제주</a>
+          </h1>
+          <!-- <a href="#home" class="active">Home</a> -->
+          <div class="dropdown">
+            <button class="dropbtn">관광지
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">전체</a>
+              <a href="#">자연</a>
+              <a href="#">문화관광</a>
+              <a href="#">레저/체험</a>
+              <a href="#">테마관광지</a>
+              <a href="#">섬속의 섬</a>
+              <a href="#">도보</a>
+              <a href="#">포토스팟</a>
+              <a href="#">쇼핑</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">음식점
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">전체</a>
+              <a href="#">음식점</a>
+              <a href="#">베이커리</a>
+              <a href="#">카페</a>
+              <a href="#">바&nbsp;펍</a>
+              <a href="#">길거리음식</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">숙박
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">호텔</a>
+              <a href="#">리조트</a>
+              <a href="#">모텔/여관</a>
+              <a href="#">펜션/민박</a>
+              <a href="#">게스트하우스</a>
+              <a href="#">에어비앤비</a>
+              <a href="#">기타</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">커뮤니티
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">공지사항</a>
+              <a href="#">여행일정</a>
+              <a href="#">여행기</a>
+              <a href="#">동행찾기(설레는동행)</a>
+            </div>
+          </div>
+          <a href="#about">여행큐레이션</a>
+          <div class="dropdown">
+            <button class="dropbtn">제주여행꿀팁
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">전체</a>
+              <a href="#">날씨</a>
+              <a href="#">교통정보</a>
+              <a href="#">편의시설</a>
+              <a href="#">가이드북</a>
+              <a href="#">관광문의</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">나의 여행
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">전체</a>
+              <a href="#">나의 여행일정</a>
+              <a href="#">나의 여행기</a>
+              <a href="#">나의 동행</a>
+              <a href="#">나의 리뷰</a>
+              <a href="#">찜한여행</a>
+              <a href="#">정보수정</a>
+            </div>
+          </div>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </div>
+
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+
+    </header>
+    <!-- header end -->
+    <div class="wrapper">
+
+    </div>
+    <div id="container">
+      <div class="wrapper">
+        <div class="location_wrap">
+
+        </div>
+
+
+        <div class="content_wrap">
+            <!-- 제목 -->
+            <h3>ui component</h3>
+
+          <h2>게시판 까지 하고 한번 정리 / 별점넣기 </h2>
+
+
+          <div class="board_wrap type01">
+            <div class="box_wrap clear">
+              <div class="box">
+                <p class="img_area">
+                  <a href="#">
+                    <span class="category">관광지</span>
+                    <img src="img/common/board_img.gif" alt="성산일출봉(UNESCO 세계자연유산)" />
+                  </a>
+                </p>
+                <p class="box_title">
+                  <a href="#">제목이길어졌을때제목이길어졌을때제목이길어졌을때제목이길어졌을때</a>
+                </p>
+                <p class="hashtag">
+                  <a href="#">#일출</a>
+                  <a href="#">#오름</a>
+                  <a href="#">#경관/포토</a>
+                </p>
+                <p class="mytag">
+                  <a href="#">#부모</a>
+                </p>
+                <div class="item_count_area">
+                  <ul>
+                    <li class="like">
+                      <a href="#">좋아요</a>
+                      <span>32</span>
+                    </li>
+                    <li class="zzim">
+                      <a href="#">찜하기</a>
+                      <span>637</span>
+                    </li>
+                    <li class="review">
+                      <a href="#">리뷰</a>
+                      <span>736</span>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <!-- box -->
+              <div class="box">
+                <p class="img_area">
+                  <a href="#">
+                    <span class="category">관광지</span>
+                    <img src="img/common/board_img.gif" alt="성산일출봉(UNESCO 세계자연유산)" />
+                  </a>
+                </p>
+                <p class="box_title">
+                  <a href="#">성산일출봉(UNESCO 세계자연유산)</a>
+                </p>
+                <p class="hashtag">
+                  <a href="#">#일출</a>
+                  <a href="#">#오름</a>
+                  <a href="#">#경관/포토</a>
+                </p>
+                <p class="mytag">
+                  <a href="#">#커플</a>
+                  <a href="#">#흐림</a>
+                  <a href="#">#봄</a>
+                </p>
+                <div class="item_count_area">
+                  <ul>
+                    <li class="like">
+                      <a href="#">좋아요</a>
+                      <span>32</span>
+                    </li>
+                    <li class="zzim">
+                      <a href="#">찜하기</a>
+                      <span>637</span>
+                    </li>
+                    <li class="review">
+                      <a href="#">리뷰</a>
+                      <span>736</span>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <!-- box -->
+              <div class="box">
+                <p class="img_area">
+                  <a href="#">
+                    <span class="category">관광지</span>
+                    <img src="img/common/board_img.gif" alt="성산일출봉(UNESCO 세계자연유산)" />
+                  </a>
+                </p>
+                <p class="box_title">
+                  <a href="#">성산일출봉(UNESCO 세계자연유산)</a>
+                </p>
+                <p class="hashtag">
+                  <a href="#">#일출</a>
+                  <a href="#">#오름</a>
+                  <a href="#">#경관/포토</a>
+                </p>
+                <p class="mytag">
+                  <a href="#">#부모</a>
+                </p>
+                <div class="item_count_area">
+                  <ul>
+                    <li class="like">
+                      <a href="#">좋아요</a>
+                      <span>32</span>
+                    </li>
+                    <li class="zzim">
+                      <a href="#">찜하기</a>
+                      <span>637</span>
+                    </li>
+                    <li class="review">
+                      <a href="#">리뷰</a>
+                      <span>736</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- box -->
+            </div>
+            <!-- box_wrap-->
+            <div class="box_wrap clear">
+              <div class="box">
+                <p class="img_area">
+                  <a href="#">
+                    <span class="category">관광지</span>
+                    <img src="img/common/board_img.gif" alt="성산일출봉(UNESCO 세계자연유산)" />
+                  </a>
+                </p>
+                <p class="box_title">
+                  <a href="#">제목이길어졌을때제목이길어졌을때제목이길어졌을때제목이길어졌을때</a>
+                </p>
+                <p class="hashtag">
+                  <a href="#">#일출</a>
+                  <a href="#">#오름</a>
+                  <a href="#">#경관/포토</a>
+                </p>
+                <p class="mytag">
+                  <a href="#">#부모</a>
+                </p>
+                <div class="item_count_area">
+                  <ul>
+                    <li class="like">
+                      <a href="#">좋아요</a>
+                      <span>32</span>
+                    </li>
+                    <li class="zzim">
+                      <a href="#">찜하기</a>
+                      <span>637</span>
+                    </li>
+                    <li class="review">
+                      <a href="#">리뷰</a>
+                      <span>736</span>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <!-- box -->
+              <div class="box">
+                <p class="img_area">
+                  <a href="#">
+                    <span class="category">관광지</span>
+                    <img src="img/common/board_img.gif" alt="성산일출봉(UNESCO 세계자연유산)" />
+                  </a>
+                </p>
+                <p class="box_title">
+                  <a href="#">성산일출봉(UNESCO 세계자연유산)</a>
+                </p>
+                <p class="hashtag">
+                  <a href="#">#일출</a>
+                  <a href="#">#오름</a>
+                  <a href="#">#경관/포토</a>
+                </p>
+                <p class="mytag">
+                  <a href="#">#커플</a>
+                  <a href="#">#흐림</a>
+                  <a href="#">#봄</a>
+                </p>
+                <div class="item_count_area">
+                  <ul>
+                    <li class="like">
+                      <a href="#">좋아요</a>
+                      <span>32</span>
+                    </li>
+                    <li class="zzim">
+                      <a href="#">찜하기</a>
+                      <span>637</span>
+                    </li>
+                    <li class="review">
+                      <a href="#">리뷰</a>
+                      <span>736</span>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <!-- box -->
+              <div class="box">
+                <p class="img_area">
+                  <a href="#">
+                    <span class="category">관광지</span>
+                    <img src="img/common/board_img.gif" alt="성산일출봉(UNESCO 세계자연유산)" />
+                  </a>
+                </p>
+                <p class="box_title">
+                  <a href="#">성산일출봉(UNESCO 세계자연유산)</a>
+                </p>
+                <p class="hashtag">
+                  <a href="#">#일출</a>
+                  <a href="#">#오름</a>
+                  <a href="#">#경관/포토</a>
+                </p>
+                <p class="mytag">
+                  <a href="#">#부모</a>
+                </p>
+                <div class="item_count_area">
+                  <ul>
+                    <li class="like">
+                      <a href="#">좋아요</a>
+                      <span>32</span>
+                    </li>
+                    <li class="zzim">
+                      <a href="#">찜하기</a>
+                      <span>637</span>
+                    </li>
+                    <li class="review">
+                      <a href="#">리뷰</a>
+                      <span>736</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- box -->
+            </div>
+            <!-- box_wrap-->
+
+
+
+
+
+            <div class="paging">
+              <div id="paging" class="page-wrap">
+                <a href="#" class="spr_com page-first">첫 페이지</a>
+                <a href="#" class="spr_com page-prev">이전 페이지</a>
+                <a href="#" class="current">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#" class="spr_com page-next">다음 페이지</a>
+                <a href="#" class="spr_com page-last">마지막 페이지</a>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+          <!-- board_wrap-->
+          <div class="board_wrap type02">
+            <div class="box_wrap clear">
+              <!-- box -->
+              <div class="box">
+                  <p class="img_area">
+                <a href="#">
+                  <span class="category">관광지</span>
+                  <img src="img/common/board_img.gif" alt="성산일출봉(UNESCO 세계자연유산)" />
+                </a>
+                </p>
+                <p class="box_title">
+                  <a href="#">성산일출봉(UNESCO 세계자연유산)</a>
+                </p>
+                <p class="hashtag">
+                  <a href="#">#일출</a>
+                  <a href="#">#오름</a>
+                  <a href="#">#경관/포토</a>
+                </p>
+                <p class="mytag">
+                  <a href="#">#부모</a>
+                </p>
+                <div class="item_count_area">
+                  <ul>
+                    <li class="like">
+                      <a href="#">좋아요</a>
+                      <span>32</span>
+                    </li>
+                    <li class="zzim">
+                      <a href="#">찜하기</a>
+                      <span>637</span>
+                    </li>
+                    <li class="review">
+                      <a href="#">리뷰</a>
+                      <span>736</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- box -->
+              <!-- box_wrap -->
+            </div>
+            <!-- board_wrap-->
+
+
+            <style type="text/css">
+              .board_wrap.type02 {}
+
+              .board_wrap.type02 .box_wrap {
+                margin: 0;
+              }
+
+              .board_wrap.type02 .box {
+                float: none;
+                margin: 0;
+                padding: 2% 0;
+                width: auto;
+                border:none;
+              }
+            </style>
+
+
+
+
+            <!-- 제목 -->
+            <h3>ui component</h3>
+            <h4>h4 제목이 들어간다.</h4>
+            <h5>h5 제목이 들어간다.</h5>
+            <!-- 제목과 텍스트 -->
+            <h3>h3 페이지제목</h3>
+            <div>div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트</div>
+            <p>서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가
+              들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.</p>
+            <ul>
+              <li>리스트</li>
+              <li>리스트</li>
+              <li>리스트</li>
+              <li>리스트</li>
+              <li>리스트</li>
+            </ul>
+            <h4>h4 제목이 들어간다.</h4>
+            <div>div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트</div>
+            <p>서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가
+              들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.</p>
+            <ul>
+              <li>리스트</li>
+              <li>리스트</li>
+              <li>리스트</li>
+              <li>리스트</li>
+              <li>리스트</li>
+            </ul>
+            <table class="table-type01 w100 center">
+              <caption>위탁을 받는자(수탁자), 위탁을 하는 업무, 위탁기간으로 구성된 개인정보 위탁현황 표</caption>
+              <thead>
+                <tr>
+                  <th>위탁을 받는자(수탁자)</th>
+                  <th>위탁을 하는 업무</th>
+                  <th>위탁기간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>㈜쓰리에스텍</td>
+                  <td>‘제주관광정보 홈페이지’ DBMS 유지보수</td>
+                  <td>2017.06.01~2018.02.28</td>
+                </tr>
+                <tr>
+                  <td>㈜이지정보기술</td>
+                  <td>‘제주관광정보 홈페이지’ 서버 유지보수</td>
+                  <td>2017.06.01~2018.02.28</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table-type01 w100 center">
+              <caption class="hidden">
+                <strong>금융기관 18개에 대한 내용</strong>
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col" class="align_center"> 금 융 기 관(18개)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align_left word_keep_all"> 국민은행, 신한은행, 우리은행, 하나은행, 한국외환은행, 한국스탠다드차타드은행, 한국씨티은행, 경남은행, 광주은행, 대구은행, 부산은행, 전북은행, 제주은행, 중소기업은행, 농업은행,
+                    수산업협동조합중앙회, 서울보증보험
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h5>h5 제목이 들어간다.</h5>
+            <div>div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트</div>
+            <p>서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가
+              들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.</p>
+            <ul>
+              <li>리스트타입1</li>
+              <li>리스트</li>
+              <li>리스트</li>
+              <li>리스트</li>
+              <li>리스트</li>
+            </ul>
+            <ul>
+              <li>리스트타입2</li>
+              <li>리스트타입2</li>
+              <li>리스트타입2</li>
+              <li>리스트타입2</li>
+              <li>리스트타입2</li>
+              <li>리스트타입2</li>
+            </ul>
+            <table class="table-type01 w100 center">
+              <caption>위탁을 받는자(수탁자), 위탁을 하는 업무, 위탁기간으로 구성된 개인정보 위탁현황 표</caption>
+              <thead>
+                <tr>
+                  <th>위탁을 받는자(수탁자)</th>
+                  <th>위탁을 하는 업무</th>
+                  <th>위탁기간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>㈜쓰리에스텍</td>
+                  <td>‘제주관광정보 홈페이지’ DBMS 유지보수</td>
+                  <td>2017.06.01~2018.02.28</td>
+                </tr>
+                <tr>
+                  <td>㈜이지정보기술</td>
+                  <td>‘제주관광정보 홈페이지’ 서버 유지보수</td>
+                  <td>2017.06.01~2018.02.28</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+      <!-- container end -->
+      <footer id="footer">
+        <div class="wrapper">
+          <div class="foot_link">
+            <ul>
+              <li>
+                <a href="#">개인정보취급방침</a>
+              </li>
+              <li>
+                <a href="#">이용약관</a>
+              </li>
+              <li>
+                <a href="#">홈페이지 개선의견</a>
+              </li>
+              <li>
+                <a href="#">관광업체등록문의</a>
+              </li>
+              <li>
+                <a href="#">사이트맵</a>
+              </li>
+            </ul>
+          </div>
+          <div class="foot_info">
+            <address>(63208) 제주특별자치도 제주시 광양9길 10, 대표전화：064-120, Gwangyang 9-gil, Jeju-si, Jeju. Republic of Korea 63208</address>
+            <p>Copyright 2018 TAMNANEUNTEAM. All rights reserved.</p>
+            <p>제주시 홈페이지는 운영체제(OS)：Windows 7이상, 인터넷 브라우저：IE 9이상, 파이어 폭스, 크롬, 사파리에 최적화 되어있습니다.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+</body>
+
+</html>

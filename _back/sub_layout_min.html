@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>서브레이아웃</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <script type="text/javascript" src="js/common/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/common/jquery-ui.min.js"></script>
+  <style type="text/css">
+    /* reset.css */
+
+    /* common.css */
+
+    body {
+      font-size: 14px;
+      color: #333;
+      -webkit-text-size-adjust: none;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+
+
+
+    .allmenu_close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 16px;
+      height: 16px;
+      padding: 16px;
+      background: url("/image/common/btn_gnb_close.png") no-repeat 50%;
+      background-size: 16px
+    }
+
+    .allmenu_bx {
+      position: fixed;
+      z-index: 50001;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none
+    }
+
+    .allmenu_bx.open {
+      display: block;
+      -webkit-animation: gnbopen 0s;
+      animation: gnbopen 0s
+    }
+
+    .allmenu_bx.open .gnb {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      -webkit-animation: gnbopen_gnb .3s;
+      animation: gnbopen_gnb .3s
+    }
+
+    .allmenu_bx.open .dimm {
+      display: block;
+      -webkit-animation: gnbopen_dimm .3s;
+      animation: gnbopen_dimm .3s;
+      opacity: .6
+    }
+
+    .allmenu_bx.close {
+      -webkit-animation: gnbclose 0s .3s ease;
+      animation: gnbclose 0s .3s ease
+    }
+
+    .allmenu_bx.close .gnb {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      -webkit-animation: gnbclose_gnb .3s 0s ease;
+      animation: gnbclose_gnb .3s 0s ease
+    }
+
+    .allmenu_bx.close .allmenu_close {
+      -webkit-animation: gnbclose_gnb_close .3s 0s ease;
+      animation: gnbclose_gnb_close .3s 0s ease;
+      opacity: 0
+    }
+
+    .allmenu_bx.close .dimm {
+      display: block;
+      -webkit-animation: gnbclose_dimm .3s 0s ease;
+      animation: gnbclose_dimm .3s 0s ease;
+      opacity: 0
+    }
+
+    .gnb {
+      position: absolute;
+      z-index: 50002;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 52px;
+      background: #f4f4f4
+    }
+
+    .gnb_top {
+      height: 48px;
+      background: #f19221
+    }
+
+    .gnb_top .btn_home {
+      display: inline-block;
+      width: 20%;
+      padding: 15px 20px 13px 45px;
+      color: #fff;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      background: url("/image/common/ico_gnb_home.png") no-repeat 20px;
+      background-size: 16px 14px
+    }
+
+    .gnb_list {
+      overflow-y: scroll;
+      position: absolute;
+      top: 49px;
+      right: 0;
+      bottom: 40px;
+      left: 0;
+      -webkit-overflow-scrolling: touch
+    }
+
+    .gnb_list .depth1>li {
+      border-bottom: 1px solid #e5e5e5
+    }
+
+    .gnb_list .depth1>li.campaign {
+      background: #fff
+    }
+
+    .gnb_list .depth1>li.campaign a {
+      background: none;
+      padding: 14px 20px
+    }
+
+    .gnb_list .depth1>li.campaign img {
+      width: 120px;
+      height: 25px
+    }
+
+    .gnb_list .depth1>li>a {
+      display: block;
+      padding: 17px 20px;
+      color: #1b1b1b;
+      font-size: 14px;
+      font-weight: 700;
+      background: #fff url("/image/common/ico_gnb_off.png") no-repeat 94%;
+      background-size: 12px
+    }
+
+    .gnb_list .depth1>li.on>a {
+      color: #f19221;
+      background-image: url("/image/common/ico_gnb_on.png")
+    }
+
+    .gnb_list .depth1>li .depth2 {
+      display: none;
+      padding: 5px 20px;
+      border-top: 1px solid #e5e5e5
+    }
+
+    .gnb_list .depth1>li.on .depth2 {
+      display: block
+    }
+
+    .gnb_list .depth2 li {
+      float: left;
+      width: 50%
+    }
+
+    .gnb_list .depth2 li a {
+      display: block;
+      padding: 12px 0;
+      color: #535353;
+      font-size: 14px
+    }
+
+    .gnb_btm {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      background: #535353;
+      text-align: center
+    }
+
+    .gnb_btm a {
+      position: relative;
+      padding: 8px 0 9px
+    }
+
+    .gnb_btm a span {
+      display: inline-block;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.5
+    }
+
+    .gnb_btm a:after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 1px;
+      height: 11px;
+      background: #aeaeae;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%)
+    }
+
+    .gnb_btm a:first-child:after {
+      display: none
+    }
+
+    .gnb_btm a:hover span {
+      border-bottom: 2px solid #f19221
+    }
+
+    .header_wrap.distinct .gnb_list .depth2 li {
+      width: 49%
+    }
+
+    .header_wrap.distinct .gnb_list .depth2 li a {
+      font-size: 12px
+    }
+
+    .header_wrap.distinct .gnb_list .depth2 li:nth-child(2n) {
+      padding-left: 1%
+    }
+
+    .header_wrap.distinct .gnb_list .depth2 li:nth-child(odd) {
+      padding-right: 1%
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    //브라우저 버전 체크
+    var IEVersionCheck = function() {
+
+      var word,
+        version = "N/A",
+        agent = navigator.userAgent.toLowerCase(),
+        name = navigator.appName;
+
+      // IE old version ( IE 10 or Lower )
+      if (name == "Microsoft Internet Explorer") word = "msie ";
+
+      else {
+        // IE 11
+        if (agent.search("trident") > -1) word = "trident/.*rv:";
+
+        // IE 12  ( Microsoft Edge )
+        else if (agent.search("edge/") > -1) word = "edge/";
+      }
+
+      var reg = new RegExp(word + "([0-9]{1,})(\\.{0,}[0-9]{0,1})");
+      if (reg.exec(agent) != null)
+        version = RegExp.$1 + RegExp.$2;
+
+      return version;
+    };
+
+
+    //언어선택
+    function LanguageMenu() {
+      $('#language > a').click(function(event) {
+        var speed = 400;
+        if ($(this).next('.language_menu').css('display') == 'none') {
+          $('.language_menu').slideUp(speed);
+          $(this).next('.language_menu').slideDown(speed);
+        } else {
+          $('.language_menu').slideUp(speed);
+        }
+      });
+    }
+
+
+    //메일 보내기
+    function SnadMail() {
+      $('#snad_mail_btn').click(function(event) {
+        var speed = 0;
+        if ($(this).next('.snad_mail_form').css('display') == 'none') {
+          $('.snad_mail_form').slideDown(speed);
+        } else {
+          $('.snad_mail_form').slideUp(speed);
+        }
+      });
+    }
+
+
+    //공유하기
+    function ShareLink() {
+      $('#share_btn').click(function(event) {
+        var speed = 0;
+        if ($(this).next('.share_link').css('display') == 'none') {
+          $('.share_link').slideDown(speed);
+        } else {
+          $('.share_link').slideUp(speed);
+        }
+      });
+    }
+
+
+    //전체메뉴
+    //function show_fullmenu()
+    //{
+    //	if($("#fullmenu_lay").is(":hidden"))
+    //	{
+    //		$("#fullmenu_lay").show();
+    //	}
+    //}
+
+    //전체메뉴 Focus (웹접근성)
+    function fullmenuFocus() {
+      var speed = 0,
+        obj = '#fullmenu', //object
+        item = '#fullmenu .fullmenu_wrap', //selector
+        focusOut = '#menu_area'; //focus out
+
+      $(obj).focusin(function(event) {
+        if ($(this).children(item).is(":hidden")) {
+          $(item).removeClass('focusActive');
+          $(this).children(item).addClass('focusActive');
+
+          //+, - 버튼이미지 추가
+          //$(obj).removeClass('select');
+          //$(this).addClass('select');
+        }
+      });
+
+      $(focusOut).focusin(function() {
+        $(item).removeClass('focusActive');
+      });
+
+      $('.search_area').focusin(function() {
+        $(item).removeClass('focusActive');
+      });
+    };
+
+    //통합검색
+    function show_search() {
+      if ($("#search_lay").is(":hidden")) {
+        $("#search_lay").show();
+      }
+    }
+
+
+    //주메뉴 Focus (웹접근성)
+    function MenuFocus() {
+      var speed = 0,
+        obj = '#lnb_menu > ul > li', //object
+        item = '#lnb_menu .menu_depth', //selector
+        focusOut = '.location a'; //focus out
+
+      //Depth3
+      var obj2 = '.menu_depth_detail .depth',
+        item2 = '.menu_depth_detail .menu_3depth',
+        focusOut2 = '.menu_depth_detail > ul > li > span > a';
+
+      $(obj).focusin(function(event) {
+        if ($(this).children(item).is(":hidden")) {
+          $(item).removeClass('focusActive');
+          $(this).children(item).addClass('focusActive');
+
+          //+, - 버튼이미지 추가
+          //$(obj).removeClass('select');
+          //$(this).addClass('select');
+        }
+      });
+      //Depth3 on
+      $(obj2).focusin(function(event) {
+        if ($(this).children(item2).is(":hidden")) {
+          $(item2).removeClass('focusActive');
+          $(this).children(item2).addClass('focusActive');
+        }
+      });
+
+      $(focusOut).focusin(function() {
+        $(item).removeClass('focusActive');
+      });
+
+      $(focusOut2).focusin(function() {
+        $(item2).removeClass('focusActive');
+      });
+
+      $('.gnb_menu').focusin(function() {
+        $(item).removeClass('focusActive');
+        $(item2).removeClass('focusActive');
+      });
+      $('#scroll_ani').focusin(function() {
+        $(item).removeClass('focusActive');
+        $(item2).removeClass('focusActive');
+      });
+    };
+
+
+    //서브 프레임 side_menu
+    function SideMenu() {
+      $('#side_menu > ul > li.depth > a').click(function(event) {
+        var speed = 350;
+        if ($(this).next('#side_menu .menu_depth').css('display') == 'none') {
+          $('#side_menu .menu_depth').slideUp(speed);
+          $(this).next('#side_menu .menu_depth').slideDown(speed);
+          $('#side_menu > ul > li.depth > a').removeClass('on');
+          $(this).addClass('on');
+        }
+        //else {
+        //	$('#side_menu .menu_depth').slideUp(speed);
+        //	$('#side_menu > ul > li.depth > a').removeClass('on');
+        //}
+      });
+    }
+
+    function MobileMenu() {
+      $('#lnb_menu > ul > li > a').click(function(event) {
+        var speed = 350;
+        var winWidth = $(window).outerWidth();
+
+        if (winWidth <= 1023) {
+          if ($(this).next('#lnb_menu .menu_depth').css('display') == 'none') {
+            $('#lnb_menu .menu_depth').slideUp(speed);
+            $(this).next('#lnb_menu .menu_depth').slideDown(speed);
+            $('#lnb_menu > ul > li > a').removeClass('on');
+            $(this).addClass('on');
+          }
+          //else {
+          //	$('#lnb_menu .menu_depth').slideUp(speed);
+          //	$('#lnb_menu > ul > li > a').removeClass('on');
+          //}
+
+          //모바일 링크 클릭시 무력화
+          return false;
+        }
+      });
+    }
+
+    function MobileMenu_3depth() {
+      $('#lnb_menu > ul > li .menu_depth .menu_depth_detail > ul > li.depth > span').click(function(event) {
+        var speed = 350;
+        var winWidth = $(window).outerWidth();
+
+        if (winWidth <= 1023) {
+          if ($(this).next('#lnb_menu .menu_3depth').css('display') == 'none') {
+            $('#lnb_menu .menu_3depth').slideUp(speed);
+            $(this).next('#lnb_menu .menu_3depth').slideDown(speed);
+            $('#lnb_menu > ul > li .menu_depth .menu_depth_detail > ul > li.depth > span').removeClass('on');
+            $(this).addClass('on');
+          } else {
+            $('#lnb_menu .menu_3depth').slideUp(speed);
+            $('#lnb_menu > ul > li .menu_depth .menu_depth_detail > ul > li.depth > span').removeClass('on');
+          }
+
+          //모바일 링크 클릭시 무력화
+          return false;
+        }
+      });
+    }
+
+
+    //분야별정보 뎁스 메뉴
+    function AreaDepth() {
+      $('.area_depth_menu .menu_depth dt').click(function(event) {
+        var speed = 400;
+        var winWidth = $(window).outerWidth();
+
+        if (winWidth < 768) {
+          if ($(this).next('.area_depth_menu .menu_depth dd').css('display') == 'none') {
+            $('.area_depth_menu .menu_depth dd').slideUp(speed);
+            $(this).next('.area_depth_menu .menu_depth dd').slideDown(speed);
+            $('.area_depth_menu .menu_depth dt').removeClass('on');
+            $(this).addClass('on');
+          } else {
+            $('.area_depth_menu dd').slideUp(speed);
+            $('.area_depth_menu dt').removeClass('on');
+          }
+        }
+      });
+    }
+
+
+    //유관기관 바로가기
+    //function SiteLink() {
+    //	$('.site_link dt').click(function(event) {
+    //		var speed = 400;
+    //		if ($(this).next('.site_link dd').css('display')=='none') {
+    //			$('.site_link dd').slideUp(speed);
+    //			$(this).next('.site_link dd').slideDown(speed);
+    //			$('.site_link dt').removeClass('on');
+    //			$(this).addClass('on');
+    //		}
+    //		else {
+    //			$('.site_link dd').slideUp(speed);
+    //			$('.site_link dt').removeClass('on');
+    //		}
+    //	});
+    //}
+
+    //유관기관 바로가기 Focus (웹접근성)
+    function SiteLinkFocus() {
+      var speed = 0,
+        obj = '.site_link > dl', //object
+        item = '.site_link > dl dd', //selector
+        focusOut = '.footer'; //focus out
+
+      $(obj).focusin(function(event) {
+        if ($(this).children(item).is(":hidden")) {
+          $(item).removeClass('focusActive');
+          $(this).children(item).addClass('focusActive');
+
+          //+, - 버튼이미지 추가
+          //$(obj).removeClass('select');
+          //$(this).addClass('select');
+        }
+      });
+
+      $(focusOut).focusin(function() {
+        $(item).removeClass('focusActive');
+      });
+
+      $('.go-top').focusin(function() {
+        $(item).removeClass('focusActive');
+      });
+
+      $('.footer_banner_area').focusin(function() {
+        $(item).removeClass('focusActive');
+      });
+    };
+
+
+    //통합검색 상세검색 레이어
+    function DetailSearch() {
+      $('.detail_search_view').click(function(event) {
+        var speed = 0;
+        if ($(this).next('#detail_search_lay').css('display') == 'none') {
+          $('#detail_search_lay').toggle(speed);
+        } else {
+          $('#detail_search_lay').toggle(speed);
+        }
+      });
+    }
+
+
+    //개인정보 수집 및 이용에 대한 동의 안내
+    function ArAgreeView() {
+      $('#agree_view').click(function(event) {
+        var speed = 0;
+        if ($(this).next('#agree_lay').css('display') == 'none') {
+          $('#agree_lay').toggle(speed);
+        } else {
+          $('#agree_lay').toggle(speed);
+        }
+      });
+    }
+
+
+    //아코디언
+    function accordion(obj) {
+      var speed = 400; //animation speed
+
+      $(obj + ' dt .open').on('click', function() {
+        if ($(this).parents('dt').next('dd').css('display') == 'none') {
+          $(obj + ' dd').slideUp(speed); //전체 dd 초기화
+          $(this).parents('dt').next('dd').slideDown(speed); //해당 dd 보이기
+
+          $(obj + ' .open').removeClass('active'); //클래스 초기화
+          $(this).addClass('active'); //클래스 추가
+        } else {
+          $(obj + ' dd').slideUp(speed); //본인 dd 숨김
+          $(obj + ' .open').removeClass('active'); //클래스 초기화
+        }
+
+        return false;
+      });
+    }
+
+
+
+    /* ====================================================================================================================
+    //팝업(popup)
+    * ====================================================================================================================*/
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+      }
+
+      return "";
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+
+
+    $(document).ready(function($) {
+      //ie하위 브라우저시 실행
+      if (IEVersionCheck() == 8 || IEVersionCheck() == 7 || IEVersionCheck() == 5) {
+        var error_browser = '';
+        error_browser += '<div class="not-browser">';
+        error_browser += '  <div class="warning"><span></span></div>';
+        error_browser += '  <h1 class="error-title">현재 사용중인 브라우저는 지원되지 않습니다.<br><span class="sub">(In this broser isn&#39;t supported.)</span></h1>';
+        error_browser += '  <p class="error-text">Microsoft의 지원 종료 된 브라우저를 사용하고 있습니다.</p>';
+        error_browser += '  <p class="error-text">최신 버전의 Internet Explorer, Chroem, Safari, Firefox, Microsoft Edge<br>브라우저를 이용해 주세요.</p>';
+        error_browser += '  <div style="margin-top: 20px;"><a href="https://www.google.co.kr/chrome/browser/desktop/index.html" class="btn blue">크롬 브라우저 다운로드</a></div>';
+        error_browser += '</div>';
+
+        $('body').html(error_browser);
+      } else {
+
+
+        LanguageMenu(); //언어선택
+        SnadMail(); //메일 보내기
+        ShareLink(); //공유하기
+        MenuFocus(); //주메뉴 Focus (웹접근성)
+        fullmenuFocus(); // 전체메뉴 Focus (웹접근성)
+        SideMenu(); //서브 프레임 side_menu
+        MobileMenu(); //모바일 주메뉴
+        MobileMenu_3depth(); //모바일 주메뉴
+        SiteLinkFocus(); //유관기관 바로가기 Focus (웹접근성)
+        AreaDepth(); //분야별정보 뎁스 메뉴
+        DetailSearch(); //통합검색 상세검색 레이어
+        ArAgreeView(); //개인정보 수집 및 이용에 대한 동의 안내
+
+
+
+        //모바일 주메뉴
+        var speed = 350;
+        $("#mainmenu").click(function(event) {
+          $("#menu_area").animate({
+            left: "0"
+          }, speed);
+          $('#wrap').after('<div class="blackBg"></div>');
+        });
+        $(".menu_close").click(function(event) {
+          $("#menu_area").animate({
+            left: "-100%"
+          }, speed);
+          $('.blackBg').remove();
+        });
+
+
+
+        //차고지 증명제 아코디언 실행
+        accordion('.accordion_list');
+        //FAQ 아코디언 실행
+        accordion('.board-accordion.faq');
+
+        //Top 버튼
+        // hide .go-top first
+        $(".go-top").hide();
+
+        // fade in .go-top
+        $(function() {
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 150) {
+              $('.go-top').fadeIn();
+            } else {
+              $('.go-top').fadeOut();
+            }
+          });
+
+          // scroll body to 0px on click
+          $('.go-top a').click(function() {
+            $('body,html').animate({
+              scrollTop: 0
+            }, 800);
+            return false;
+          });
+        });
+
+
+        //관련배너
+        if ($('.footer_banner .banner_list li').length > 6) {
+          $('.footer_banner .banner_list').bxSlider({
+            auto: 'true',
+            autoControls: 'true',
+            autoControlsCombine: 'true',
+            pagerCustom: 'false',
+            infiniteLoop: 'false',
+            nextSelector: '#fb_next',
+            prevSelector: '#fb_prev',
+            autoControlsSelector: '#fb_control',
+            nextText: '다음',
+            prevText: '이전',
+            startText: '시작',
+            stopText: '정지',
+            minSlides: 1,
+            maxSlides: 6,
+            slideWidth: 170,
+            moveSlides: 1,
+            speed: 200
+          });
+          $('.bx-controls').show();
+          $('#fb_control .bx-controls-auto').click(function(event) {
+            $(this).find('a').focus();
+          });
+        }
+
+
+        //서비스 바로가기
+        if ($('.service_shortcut .shortcut_link ul li').length > 4) {
+          $('.service_shortcut .shortcut_link ul').bxSlider({
+            //auto:'true',
+            autoControls: 'true',
+            autoControlsCombine: 'true',
+            pagerCustom: 'false',
+            infiniteLoop: 'false',
+            nextSelector: '#ss_next',
+            prevSelector: '#ss_prev',
+            nextText: '다음',
+            prevText: '이전',
+            startText: '시작',
+            stopText: '정지',
+            minSlides: 1,
+            maxSlides: 6,
+            slideWidth: 180,
+            moveSlides: 1,
+            speed: 200
+          });
+          $('.bx-controls').show();
+        }
+
+
+        //시정 일정
+        //	if($('.sijung_schedule .date_list ul li').length > 7) {
+        //		$('.sijung_schedule .date_list ul').bxSlider({
+        //			autoControlsCombine:'true',
+        //			pagerCustom:'false',
+        //			nextSelector:'.date_next',
+        //			prevSelector:'.date_prev',
+        //			nextText:'다음 일',
+        //			prevText:'이전 일',
+        //			minSlides:7,
+        //			maxSlides:7,
+        //			slideWidth:90
+        //		});
+        //		$('.bx-controls').show();
+        //	}
+
+
+        //이미지 슬라이드
+        if ($('.img_slide_list li').length > 1) {
+          $('.img_slide_list').bxSlider({
+            autoControls: 'true',
+            autoControlsCombine: 'true',
+            nextText: '다음',
+            prevText: '이전',
+            nextSelector: '.img_slide_next',
+            prevSelector: '.img_slide_prev',
+            pagerSelector: '.img_slide_pager'
+          });
+          $('.bx-controls').show();
+        }
+
+
+        //레이어 팝업
+        if ($('.main-popup').size() >= 1) { //main layer popup
+          cookiedata = document.cookie; //쿠키 조회
+          var cookieArray = cookiedata.split(';'); //쿠키 배열 만들기
+          var cookieCount = cookieArray.length; //쿠키 개수
+
+          $(".main-popup").show(); //팝업 show
+
+          for (var i = 0; i < cookieCount; i++) {
+            //console.log('cookie[' + i + '] = ' + cookieArray[i]);
+
+            if (i >= 1) {
+              cookieCut = cookieArray[i].substring(1, cookieArray[i].length - 2); //뒤에 문자열 자르기 (=y) + 앞에 여백포함
+            } else {
+              cookieCut = cookieArray[i].substring(0, cookieArray[i].length - 2); //뒤에 문자열 자르기 (=y)
+            }
+
+            if (cookieArray[i]) {
+              $("input[name='" + cookieCut + "']").parents('.main-popup').hide(); //쿠키 있을 시 팝업 숨김
+            }
+          }
+
+          $(".main-popup .close").click(function() {
+            var cookieName = $(this).parents('.today-close').find('input').attr('name'); //해당 input name 가져오기
+
+            if ($("input[name='" + cookieName + "']").is(":checked") == true) { //오늘하루그만보기 체크시
+              setCookie(cookieName, "Y", 1); //쿠키생성
+            }
+
+            $(this).parents('.main-popup').hide(); //해당 팝업 숨김
+
+            return false;
+          });
+
+        }
+
+      }
+
+    });
+
+
+    /* ====================================================================================================================
+     * window resize
+     * ====================================================================================================================*/
+    $(window).resize(function() {
+      if (this.resizeTO) {
+        clearTimeout(this.resizeTO);
+      }
+      this.resizeTO = setTimeout(function() {
+        $(this).trigger('resizeEnd');
+      }, 300);
+    });
+    $(window).on('resizeEnd', function() {
+      //main_menuCheck();
+
+      var winWidth = $(window).outerWidth();
+      if (winWidth >= 1024) {
+        //모바일에서 메뉴 닫지 않고 창 크기를 키우는 경우
+        //$('#lnb_menu > ul > li > a').removeClass('on');
+        //$('#lnb_menu .menu_depth').hide();
+        $('#lnb_menu .menu_depth').removeClass('focusActive');
+        $('#lnb_menu .menu_depth').hide();
+        $('#lnb_menu .menu_3depth').hide();
+        $('.blackBg').hide();
+      } else {
+        //$('#lnb_menu > ul > li').removeClass('on');
+        $('.blackBg').show();
+      };
+    });
+  </script>
+  <div id="sub">
+    <header id="header">
+
+      <div class="header_wrap">
+        <h1 class="logo"><a href="/kr/"><span class="hide">VISIT JEJU</span></a></h1><a href="#" class="btn_all_menu"></a>
+        <div class="allmenu_bx open">
+          <div class="dimm"></div>
+          <div class="gnb clfix">
+            <div class="gnb_top"><a href="#" class="btn_home">HOME</a>
+              <!----><a href="/kr/common/loginIndex" class="btn_login">로그인</a></div>
+            <div class="gnb_list">
+              <ul class="depth1">
+                <li class="on"><a href="#">관광지<em class="hide">접기</em></a>
+                  <div class="depth2">
+                    <ul class="clfix">
+                      <li><a href="#">전체</a></li>
+                      <li><a href="#">자연</a></li>
+                      <li><a href="#">문화관광</a></li>
+                      <li><a href="#">테마관광지</a></li>
+                      <li><a href="#">도보</a></li>
+                      <li><a href="#">레저/체험</a></li>
+                      <li><a href="#">섬 속의 섬</a></li>
+                      <li><a href="#">포토스팟</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">음식점<em class="hide">펼치기</em></a>
+                  <div class="depth2">
+                    <ul class="clfix">
+                      <li><a href="#">전체</a></li>
+                      <li><a href="#">향토음식</a></li>
+                      <li><a href="#">한식</a></li>
+                      <li><a href="#">양식</a></li>
+                      <li><a href="#">일식</a></li>
+                      <li><a href="#">중식</a></li>
+                      <li><a href="#">동남아식</a></li>
+                      <li><a href="#">무슬림프렌들리</a></li>
+                      <li><a href="#">카페</a></li>
+                      <li><a href="#">고메위크선정맛집</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">숙박<em class="hide">펼치기</em></a>
+                  <div class="depth2">
+                    <ul class="clfix">
+                      <li><a href="#">전체</a></li>
+                      <li><a href="#">호텔</a></li>
+                      <li><a href="#">리조트/콘도</a></li>
+                      <li><a href="#">모텔/여관</a></li>
+                      <li><a href="#">펜션/민박</a></li>
+                      <li><a href="#">게스트하우스</a></li>
+                      <li><a href="#">굿스테이</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">쇼핑<em class="hide">펼치기</em></a>
+                  <div class="depth2">
+                    <ul class="clfix">
+                      <li><a href="#">전체</a></li>
+                      <li><a href="#">전통시장</a></li>
+                      <li><a href="#">플리마켓</a></li>
+                      <li><a href="#">면세점</a></li>
+                      <li><a href="#">상점/상가</a></li>
+                      <li><a href="#">특산품</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">제주이야기<em class="hide">펼치기</em></a>
+                  <div class="depth2">
+                    <ul class="clfix">
+                      <li><a href="#">문화와역사 </a></li>
+                      <li><a href="#">유네스코</a></li>
+                      <li><a href="#">영상속제주</a></li>
+                      <li><a href="#">제주명품42</a></li>
+                      <li><a href="#">우수관광사업체</a></li>
+                      <li><a href="#">지오브랜드</a></li>
+                      <li><a href="#">템플스테이</a></li>
+                      <li><a href="#">4·3  70주년</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">여행필수정보<em class="hide">펼치기</em></a>
+                  <div class="depth2">
+                    <ul class="clfix">
+                      <li><a href="#">날씨</a></li>
+                      <li><a href="#">교통</a></li>
+                      <li><a href="#">편의시설</a></li>
+                      <li><a href="#">가이드북</a></li>
+                      <li><a href="#">관광문의</a></li>
+                      <li><a href="#">무장애 관광</a></li>
+                      <li><a href="#">제주의료관광</a></li>
+                      <li><a href="#">공지</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">제주여행추천<em class="hide">펼치기</em></a>
+                  <div class="depth2">
+                    <ul class="clfix">
+                      <li><a href="#">일정 추천</a></li>
+                      <li><a href="#">여행 큐레이션</a></li>
+                      <li><a href="#">테마여행</a></li>
+                      <li><a href="#">축제와 행사</a></li>
+                      <li><a href="#">제주人놀다</a></li>
+                      <li><a href="#">알쓸신제 원정대</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">나의 여행<em class="hide">펼치기</em></a>
+                  <div class="depth2">
+                    <ul class="clfix">
+                      <li><a href="#">나의 프로필</a></li>
+                      <li><a href="#">나의 여행일정</a></li>
+                      <li><a href="#">찜한 여행</a></li>
+                      <li><a href="#">나의 리뷰</a></li>
+                      <li><a href="#">방문 여행지</a></li>
+                      <li><a href="#">관광문의</a></li>
+                      <li><a href="#">틀린정보신고</a></li>
+                      <li><a href="#">정보수정</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="allmenu_close"><span class="hide">메뉴닫기</span></a></div>
+        </div><a href="#" class="btn_sear"><span class="hide">검색</span></a>
+        <!-- <div class="total_search_bx">
+                    <div class="dimm"></div>
+                    <div class="total_search">
+                        <div class="search_wrap"><input type="search" id="search_box" placeholder="검색어를 입력해주세요." value=""><button type="button">검색</button><a style="display:none;"><img src="/image/common/btn_list_del.png" alt="" ></a></div>
+                        <div class="keyword_wrap clfix">
+                            <dl class="keyword_list"><dt>인기 검색어</dt>
+                                <dd><a href="#"><span>1</span><span>지도</span></a></dd>
+                                <dd><a href="#"><span>2</span><span>애월 카페</span></a></dd>
+                                <dd><a href="#"><span>3</span><span>우도</span></a></dd>
+                                <dd><a href="#"><span>4</span><span>거문오름</span></a></dd>
+                                <dd><a href="#"><span>5</span><span>비자림</span></a></dd>
+                                <dd><a href="#"><span>6</span><span>반딧불이</span></a></dd>
+                                <dd><a href="#"><span>7</span><span>주상절리</span></a></dd>
+                                <dd><a href="#"><span>8</span><span>반딧불</span></a></dd>
+                                <dd><a href="#"><span>9</span><span>만장굴</span></a></dd>
+                                <dd><a href="#"><span>10</span><span>성산일출봉</span></a></dd>
+                            </dl>
+                            <dl class="keyword_list"><dt>인기 태그</dt>
+                                <dd><a href="#"><span>1</span><span>오름</span></a></dd>
+                                <dd><a href="#"><span>2</span><span>기념품</span></a></dd>
+                                <dd><a href="#"><span>3</span><span>액티비티</span></a></dd>
+                                <dd><a href="#"><span>4</span><span>맑음</span></a></dd>
+                                <dd><a href="#"><span>5</span><span>흐림</span></a></dd>
+                                <dd><a href="#"><span>6</span><span>활동/레저</span></a></dd>
+                                <dd><a href="#"><span>7</span><span>걷기/등산</span></a></dd>
+                                <dd><a href="#"><span>8</span><span>친구</span></a></dd>
+                                <dd><a href="#"><span>9</span><span>부모</span></a></dd>
+                                <dd><a href="#"><span>10</span><span>여름</span></a></dd>
+                            </dl>
+                        </div>
+                        <div class="close_wrap"><button class="keyword_close_btn">닫기</button></div>
+                    </div>
+                </div> -->
+      </div>
+
+    </header>
+    <!-- header end -->
+    <div class="wrapper">
+
+    </div>
+    <div id="container">
+      <div class="wrapper">
+        <div class="location_wrap">
+
+        </div>
+        <div class="content_wrap">
+          <!-- 제목 -->
+          <h3>h3 페이지제목</h3>
+          <h4>h4 제목이 들어간다.</h4>
+          <h5>h5 제목이 들어간다.</h5>
+          <!-- 제목과 텍스트 -->
+          <h3>h3 페이지제목</h3>
+          <div>div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트</div>
+          <p>서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.</p>
+          <ul>
+            <li>리스트</li>
+            <li>리스트</li>
+            <li>리스트</li>
+            <li>리스트</li>
+            <li>리스트</li>
+          </ul>
+          <h4>h4 제목이 들어간다.</h4>
+          <div>div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트</div>
+          <p>서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.</p>
+          <ul>
+            <li>리스트</li>
+            <li>리스트</li>
+            <li>리스트</li>
+            <li>리스트</li>
+            <li>리스트</li>
+          </ul>
+          <table summary="위탁을 받는자(수탁자), 위탁을 하는 업무, 위탁기간으로 구성된 개인정보 위탁현황 표" class="table-type01 w100 center">
+            <caption>개인정보 위탁현황</caption>
+            <thead>
+              <tr>
+                <th>위탁을 받는자(수탁자)</th>
+                <th>위탁을 하는 업무</th>
+                <th>위탁기간</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>㈜쓰리에스텍</td>
+                <td>‘제주관광정보 홈페이지’ DBMS 유지보수</td>
+                <td>2017.06.01~2018.02.28</td>
+              </tr>
+              <tr>
+                <td>㈜이지정보기술</td>
+                <td>‘제주관광정보 홈페이지’ 서버 유지보수</td>
+                <td>2017.06.01~2018.02.28</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table-type01 w100 center">
+            <caption class="hidden">
+              <strong>금융기관 18개에 대한 내용</strong>
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col" class="align_center"> 금 융 기 관(18개)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="align_left word_keep_all"> 국민은행, 신한은행, 우리은행, 하나은행, 한국외환은행, 한국스탠다드차타드은행, 한국씨티은행, 경남은행, 광주은행, 대구은행, 부산은행, 전북은행, 제주은행, 중소기업은행, 농업은행, 수산업협동조합중앙회, 서울보증보험</td>
+              </tr>
+            </tbody>
+          </table>
+          <h5>h5 제목이 들어간다.</h5>
+          <div>div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트</div>
+          <p>서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.</p>
+          <ul>
+            <li>리스트타입1</li>
+            <li>리스트</li>
+            <li>리스트</li>
+            <li>리스트</li>
+            <li>리스트</li>
+          </ul>
+          <ul>
+            <li>리스트타입2</li>
+            <li>리스트타입2</li>
+            <li>리스트타입2</li>
+            <li>리스트타입2</li>
+            <li>리스트타입2</li>
+            <li>리스트타입2</li>
+          </ul>
+          <table summary="위탁을 받는자(수탁자), 위탁을 하는 업무, 위탁기간으로 구성된 개인정보 위탁현황 표" class="table-type01 w100 center">
+            <caption>개인정보 위탁현황</caption>
+            <thead>
+              <tr>
+                <th>위탁을 받는자(수탁자)</th>
+                <th>위탁을 하는 업무</th>
+                <th>위탁기간</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>㈜쓰리에스텍</td>
+                <td>‘제주관광정보 홈페이지’ DBMS 유지보수</td>
+                <td>2017.06.01~2018.02.28</td>
+              </tr>
+              <tr>
+                <td>㈜이지정보기술</td>
+                <td>‘제주관광정보 홈페이지’ 서버 유지보수</td>
+                <td>2017.06.01~2018.02.28</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+    <!-- container end -->
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="foot_link">
+          <ul>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">틀린정보신고/ 홈페이지 개선의견</a></li>
+            <li><a href="#">관광업체등록문의</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </div>
+        <div class="foot_info">
+          <address>(63208) 제주특별자치도 제주시 광양9길 10, 대표전화：064-120, Gwangyang 9-gil, Jeju-si, Jeju. Republic of Korea 63208</address>
+          <p>Copyright 2018 TAMNANEUNTEAM. All rights reserved.</p>
+          <p>제주시 홈페이지는 운영체제(OS)：Windows 7이상, 인터넷 브라우저：IE 9이상, 파이어 폭스, 크롬, 사파리에 최적화 되어있습니다.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </div>
+</body>
+
+</html>
