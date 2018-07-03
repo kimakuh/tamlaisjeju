@@ -32,6 +32,12 @@
   background-color: #333;
 }
 
+
+.topnav h1{display:block;}
+.topnav h1 a{font-family: 'Gugi', cursive;}
+.topnav h1 a:hover{background:none;}
+
+
 .topnav a {
   float: left;
   display: block;
