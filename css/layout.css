@@ -164,7 +164,7 @@
 
 /* sub layout */
 #content{width:1200px;margin:0 auto;}
-.svisual{width:100%;height:400px;background:url('../img/sub02/sub_visual_img.jpg') no-repeat;}
+#svisual img{display:block;width:100%;height:400px;}
 
 .container{
   max-width: 100%;
