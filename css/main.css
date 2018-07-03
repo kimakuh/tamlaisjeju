@@ -1,4 +1,4 @@
 @charset "utf-8";
 
 #mcontainer{padding:83px 0 0 0;margin:0;}
-#mcontainer #mcontent{}
+#mcontainer #mcontent{margin:0 auto;width:1200px;}
