@@ -526,6 +526,7 @@ traffic_one - 교통정보안내 - 항공
     #sub05 .sub-detail .detail-text {
     margin: 60px 0 0;
     text-align: left;
+    overflow: hidden;
     }
     
     #sub05 .btnC {
