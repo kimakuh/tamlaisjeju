@@ -1,61 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<title>siteMap</title>
-<link rel="stylesheet"
-	href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-<style type="text/css">
-@import
-	url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css')
-	;
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+	<meta property="og:title" content="탐라는제주">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	    crossorigin="anonymous">
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/layout.css" />
+	<!-- sub02 -->
+	<link rel="stylesheet" href="../../css/sub07.css" />
+	<!-- logo font -->
+	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
 
-body {
-	/* font-family: 'Noto Sans KR', sans-serif; */
-	font-family: 'NanumSquareRound', sans-serif;
-	font-size: 14px;
-}
-
-#sub7.container {
-	margin: 0 auto;
-	width: 1200px;
-	overflow: hidden;
-	clear: both;
-}
-
-#sub7 .h3_wrap {
-	font-size: 35px;
-	color: black;
-	text-align: left;
-	margin-top: 50px;
-}
-
-#sub7 .ic_search {
-	padding: 0 0 0 30px;
-	width: 30px;
-}
-
-#sub7 .table_layout {
-	width: 100%;
-	min-width: 1160px;
-	height: 70px;
-	border-collapse: collapse;
-}
-
-#sub7 .side_title {
-	
-}
-#sub7 .search{
-	width: 100%;
-    height: 42px;
-    margin: 14px 0;
-    border: none;
-    color: #000;
-    font-size: 18px;
-}
-</style>
+	<style type="text/css">
+		@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+	</style>
 </head>
+
 <body>
+	<div id="header"></div>
 	<div class="container" id="sub7">
 		<table id="table_layout">
 			<tbody>
@@ -86,10 +62,19 @@ body {
 					<td> 
 					<input type="text" class="search"  name="searchKeyword" id="searchKeyword" placeholder="검색어를 입력하세요." >
 					</td>
-					<t
 				</tr>
 			</tbody>
 		</table>
 	</div>
+	<div id="footer"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
 </body>
 </html>
