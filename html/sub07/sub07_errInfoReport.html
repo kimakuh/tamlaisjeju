@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>errInfoReport</title>
+<link rel="stylesheet"
+	href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<style type="text/css">
+@import
+	url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css')
+	;
+
+#sub7 body {
+	/* font-family: 'Noto Sans KR', sans-serif; */
+	font-family: 'NanumSquareRound', sans-serif;
+	font-size: 14px;
+}
+
+#sub7.container {
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+	clear: both;
+}
+
+#sub7 .btn_url {
+	display: inline-block;
+	float: left;
+	width: 73px;
+	height: 25px;
+	border: 1px solid #959595;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #959595;
+	line-height: 25px;
+	text-align: center;
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+#sub7 .navbar {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+}
+
+#sub7 .navbar-light .navbar-brand {
+	color: rgba(0, 0, 0, 0.9);
+}
+
+#sub7 .navbar-brand {
+	display: inline-block;
+	padding-top: 0.3125rem;
+	padding-bottom: 0.3125rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+	line-height: inherit;
+	white-space: nowrap;
+}
+
+#sub7 .bg-light {
+	background-color: #f8f9fa !important;
+}
+
+#sub7 .menu {
+	float: right;
+	margin: 0;
+	padding: 3px;
+}
+
+#sub7 .btn_kt {
+	margin-left: 0;
+	background: url(kakao.png) no-repeat 0 50%;
+	text-indent: -9999px;
+}
+
+#sub7 .btn_fb {
+	margin-left: 0;
+	background: url(facebook.png) no-repeat 0 50%;
+	text-indent: -9999px;
+}
+
+#sub7 .btn_tw {
+	margin-left: 0;
+	background: url(twiter.png) no-repeat 0 50%;
+	text-indent: -9999px;
+}
+
+#sub7 .btn_pr {
+	margin-left: 0;
+	background: url(print.png) no-repeat 0 50%;
+	text-indent: -9999px;
+}
+
+#sub7 .btn_re {
+	margin-left: 0;
+	background: url(report.png) no-repeat 0 50%;
+	text-indent: -9999px;
+}
+
+#sub7 .btn_write {
+	background-color: #f19221;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 35px;
+	text-align: left;
+	margin-top: 250px;
+	float: right;
+}
+
+#sub7 .btn_next {
+	background-color: white;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 700;
+	color: black;
+	line-height: 20px;
+	margin-top: 400px;
+	text-align: center;
+}
+#select{
+    width: 180px;
+    padding: 12px 0 13px 15px;
+    font-size: 18px;
+    color: #959595;
+    line-height: 18px;
+}
+#search{
+	float: left;
+    width: 488px;
+    height: 43px;
+    padding-left: 10px;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #000;
+    line-height: 43px;
+    margin: 0 20px 0 20px;
+	
+}
+</style>
+</head>
+<body>
+	<div class="container" id="sub7">
+		<div class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#"> <img src="home.png" width="30"
+				height="30" class="d-inline-block align-top">
+			</a>
+			<div class="menu">
+				<button class="btn_url">단축 URL</button>
+				<a href="https://www.kakaocorp.com/service/KakaoTalk?lang=ko"
+					class="btn_kt">kakao</a> <a href="https://www.facebook.com/"
+					class="btn_fb">facebook</a> <a href="https://twitter.com/"
+					class="btn_tw">twitter</a> <a href="www.naver.com" class="btn_pr">print</a>
+				<a href="www.naver.com" class="btn_re">report</a>
+
+			</div>
+		</div>
+		<button type="button" class="btn_write">글쓰기</button>
+		<div class="btn_next">
+			<button type="button"><<</button>
+			<button type="button"><</button>
+			<button type="button" style="margin-left: 30px">></button>
+			<button type="button">>></button>
+		</div>
+ 
+		<div class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#"> </a>
+			<nav class="navbar navbar-light bg-light">
+				
+				<select id="select">
+				<option value="subject" selected="selected">제목</option>
+				<option value="description">내용</option>
+				</select>
+				
+				<form class="form-inline">
+				<input id="search" type="search" placeholder="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색하기</button>
+				</form>
+			</nav>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

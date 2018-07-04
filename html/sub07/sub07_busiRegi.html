@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>busiRegi</title>
+<link rel="stylesheet"
+	href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<style type="text/css">
+@import
+	url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css')
+	;
+
+body {
+	/* font-family: 'Noto Sans KR', sans-serif; */
+	font-family: 'NanumSquareRound', sans-serif;
+	font-size: 14px;
+}
+
+#sub7.container {
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+	clear: both;
+}
+
+#sub7 #h3_wrap {
+	font-size: 35px;
+	color: #1b1b1b;
+	line-height: 35px;
+	text-align: center;
+	margin: 50px 0 30px 0;
+}
+
+#sub7 #tbl_tit {
+	height: 20px;
+	margin: 50px 0 20px;
+	padding-left: 35px;
+	background: url(ico_arr_right_circle.png) no-repeat 0 50%;
+	font-size: 18px;
+	font-weight: 800px;
+	color: black;
+	line-height: 20px;
+}
+
+.table_style {
+	border-top: 2px solid black;
+	border-bottom: 1px solid darkgray;
+	border-left: 0px;
+	border-right: 0px;
+	border-left: 0px;
+}
+
+#sub7 #sub_01 {
+	padding: 0 0 0 3px;
+	color: #ff4a4a;
+}
+
+#sub7 .table_01 {
+	border-top: 2px solid #535353;
+	font-size: 16px;
+	width: 100%;
+	border-spacing: 100px;
+	border-collapse: collapse;
+	font-weight: bold;
+}
+
+#sub7 .table_01 th {
+	height: 60px;
+	text-align: left;
+	padding: 0 0 0 30px;
+	font-size: 17px;
+	color: #1b1b1b;
+}
+
+#sub7 .th_control {
+	height: 60px;
+	border-bottom: 1px solid #e5e5e5;
+	text-align: left;
+	padding: 0 30px 0 30px;
+	font-size: 17px;
+	color: #1b1b1b;
+	font-weight: bold;
+}
+
+#sub7 .td_control {
+	position: relative;
+	height: 35px;
+	padding: 15px 30px;
+	border-left: 1px solid #e5e5e5;
+	color: #535353;
+	font-weight: bold;
+	font-size: 17px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#sub7 .td_control02 {
+	position: relative;
+	height: 35px;
+	border-right: 1px solid #e5e5e5;
+	color: #535353;
+	font-weight: bold;
+	font-size: 17px;
+	padding-right: 20px;
+}
+
+.input_text01 {
+	width: 300px;
+	height: 33px;
+	color: #535353;
+	line-height: 33px;
+	text-indent: 10px;
+}
+
+.input_text02 {
+	width: 75px;
+	height: 33px;
+	color: #535353;
+	line-height: 33px;
+	text-indent: 10px;
+}
+
+.input_text03 {
+	width: 750px;
+	height: 33px;
+	color: #535353;
+	line-height: 33px;
+	text-indent: 10px;
+}
+
+.input_text03 {
+	width: 750px;
+	height: 33px;
+	color: #535353;
+	line-height: 33px;
+	text-indent: 10px;
+}
+
+.input_text04 {
+	width: 750px;
+	height: 100px;
+	color: #535353;
+	line-height: 33px;
+	text-indent: 10px;
+}
+
+.input_text05 {
+	width: 200px;
+	height: 33px;
+	color: #535353;
+	line-height: 33px;
+	text-indent: 10px;
+}
+
+.error_msg {
+	position: relative;
+	padding-top: 3px;
+	font-size: 12px;
+	color: #ff4a4a;
+	margin-bottom: 5px;
+}
+
+.input_radio_style {
+	padding-left: 26px;
+	height: 17px;
+	display: inline-block;
+	line-height: 17px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 15px;
+	color: #595959;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-left: 25px;
+	font-size: 19px;
+}
+
+.input_des {
+	line-height: 35px;
+	padding-left: 20px;
+	color: gray;
+	vertical-align: top;
+}
+
+.p_tag {
+	margin-bottom: 5px !important;
+	color: darkgray;
+	text-align: left;
+}
+
+.btn_style01 {
+	width: 120px;
+	height: 35px;
+	margin-left: 15px;
+	background: #959595;
+	font-size: 15px;
+	color: #fff;
+}
+.file_find{
+	width: 70px;
+	background-color: initial;
+}
+.guide_txt{
+	display: inline-block;
+	margin-left: 20px;
+    font-size: 15px;
+    line-height: 35px;
+    color: #959595;
+}
+.btn_control .btn_fakie{
+	margin-left: 0;
+	border: 3px solid #e5e5e5;
+    color: #959595;
+    width: 180px;
+    line-height: 39px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.btn_control .btn_next{
+	margin-left: 20px;
+	border: 3px solid #53bb4b;
+    color: #53f121;
+    width: 180px;
+    line-height: 39px;
+    font-size: 17px;
+    font-weight: 700;
+    background: white;
+}
+.btn_control{
+	margin-top: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+</style>
+</head>
+<body>
+	<div class="container" id="sub7">
+		<h3 id="h3_wrap">탐라는제주 업체등록 신청</h3>
+		<p id="tbl_tit">신청자 정보</p>
+		<div class="table_style">
+			<table>
+				<tbody>
+					<tr>
+						<th class="th_control">신청자 이메일<sup id="sub_01">*</sup></th>
+						<td class="td_control"><input type="text" value=""
+							class="input_text01" aria-required="true" aria-invalid="true">
+							<p class="error_msg" style="">필수 값입니다.</p></td>
+						<th class="th_control">신청자 연락저</th>
+
+						<td class="td_control"><input type="text" maxlength="3"
+							value="" class="input_text02" aria-required="false"
+							aria-invalid="false"> <span class="input_tech">-</span> <input
+							type="text" maxlength="4" value="" class="input_text02"
+							aria-required="false" aria-invalid="false"> <span
+							class="input_tech">-</span> <input type="text" maxlength="4"
+							value="" class="input_text02" aria-required="false"
+							aria-invalid="false"></td>
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p id="tbl_tit">가맹정 기본정보</p>
+		<div class="table_style">
+			<table style="width: 100%;">
+				<tbody>
+					<tr>
+						<th class="th_control">카테고리<sup id="sub_01">*</sup></th>
+						<td class="td_control" colspan=4><div style="height: 20px;">
+								<input type="radio" id="txt01" class="input_radio_style"
+									value="c1" aria-required="true" aria-invalid="false"> <label
+									for="txt01" class="css-label2 radGroup1">관광지</label> <input
+									type="radio" id="txt02" class="input_radio_style" value="c1"
+									aria-required="true" aria-invalid="false"> <label
+									for="txt02" class="css-label2 radGroup1">음식점</label> <input
+									type="radio" id="txt03" class="input_radio_style" value="c1"
+									aria-required="true" aria-invalid="false"> <label
+									for="txt03" class="css-label2 radGroup1">숙소</label> <input
+									type="radio" id="txt04" class="input_radio_style" value="c1"
+									aria-required="true" aria-invalid="false"> <label
+									for="txt04" class="css-label2 radGroup1">쇼핑</label>
+							</div></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th class="th_control">상호명<sup id="sub_01">*</sup></th>
+						<td class="td_control"><input type="text" value=""
+							class="input_text01" aria-required="true" aria-invalid="true">
+						</td>
+
+						<th class="th_control">상호명(외국어)</th>
+						<td class="td_control"><input type="text" maxlength="3"
+							value="" class="input_text01" aria-required="false"
+							aria-invalid="false">
+					</tr>
+					<tr>
+						<th class="th_control">업체간략소개</th>
+						<td colspan=4 class="td_control"><input type="text" value=""
+							class="input_text03" aria-required="true" aria-invalid="true">
+							<span class="input_des">최대 100자</span></td>
+					</tr>
+					<tr>
+						<th class="th_control">업체상세내용</th>
+						<td colspan=4 class="td_control"><input type="text" value=""
+							class="input_text04" aria-required="true" aria-invalid="true">
+							<span class="input_des">최대 1000자</span>
+							<p class="p_tag">* 한국어 외에 필요시 영어, 중국어, 일본어 소개를 자유롭게 입력해주세요.</p></td>
+					</tr>
+					<tr>
+						<th class="th_control">주소<sup id="sub_01">*</sup></th>
+						<td colspan="4" class="td_control"><input type="text"
+							class="input_text05" readonly="readonly"> <span
+							class="input_tech">-</span> <input type="text"
+							class="input_text05" readonly="readonly">
+							<button type="button" class="btn_style01">우편번호 찾기</button> <br>
+							<input type="text" readonly="readonly" style="margin-top: 10px;"
+							class="input_text01" aria-required="true" aria-invalid="false">
+							<input type="text" readonly="readonly"
+							style="margin-top: 10px; margin-left: 10px;" class="input_text01"
+							aria-required="true" aria-invalid="false"></td>
+					</tr>
+					<tr>
+						<th class="th_control">전화번호<sup id="sub_01">*</sup></th>
+						<td class="td_control"><input type="text" maxlength="3"
+							value="" class="input_text02" aria-required="false"
+							aria-invalid="false"> <span class="input_tech">-</span> <input
+							type="text" maxlength="4" value="" class="input_text02"
+							aria-required="false" aria-invalid="false"> <span
+							class="input_tech">-</span> <input type="text" maxlength="4"
+							value="" class="input_text02" aria-required="false"
+							aria-invalid="false"></td>
+						<th class="th_control">모바일 번호</th>
+						<td class="td_control"><input type="text" maxlength="3"
+							value="" class="input_text02" aria-required="false"
+							aria-invalid="false"> <span class="input_tech">-</span> <input
+							type="text" maxlength="4" value="" class="input_text02"
+							aria-required="false" aria-invalid="false"> <span
+							class="input_tech">-</span> <input type="text" maxlength="4"
+							value="" class="input_text02" aria-required="false"
+							aria-invalid="false"></td>
+					</tr>
+					<tr>
+						<th class="th_control">홈페이지<sup id="sub_01">*</sup></th>
+						<td class="td_control"><input type="text" value=""
+							class="input_text01" aria-required="true" aria-invalid="true"></td>
+						<th class="th_control">이메일</th>
+						<td class="td_control"><input type="text" value=""
+							class="input_text01" aria-required="true" aria-invalid="true"></td>
+					</tr>
+					<tr>
+						<th class="th_control">결제수단</th>
+						<td class="td_control"></td>
+						<th class="th_control">결제수단 기타</th>
+						<td class="td_control"><input type="text" value=""
+							class="input_text01" aria-required="true" aria-invalid="true"></td>
+					</tr>
+					<tr>
+						<th class="th_control">편의시설</th>
+						<td colspan="4" class="td_control"></td>
+					</tr>
+					<tr>
+						<th class="th_control">외국어 안내</th>
+						<td class="td_control"></td>
+						<th class="th_control">외국어 안내 기타</th>
+						<td class="td_control"><input type="text" value=""
+							class="input_text01" aria-required="true" aria-invalid="true"></td>
+					</tr>
+					<tr>
+						<th class="th_control">장애인 시설</th>
+						<td colspan="4" class="td_control"></td>
+					</tr>
+					<tr>
+						<th class="th_control">장애인 접근성</th>
+						<td class="td_control"><select
+							style="height: 35pxl border: 1px solid #e5e5e5; height: 35px; width: 300px; color: #959595; padding-left: 35px;"></select>
+						</td>
+					</tr>
+					<tr>
+						<th class="th_control">이용상세정보<br> <span
+							style="font-size: 14px; color: #c1c1c1;">이용시간, 휴무 등</span>
+						</th>
+						<td colspan=4 class="td_control"><input type="text" value=""
+							class="input_text04" aria-required="true" aria-invalid="true">
+							<span class="input_des">최대 1000자</span></td>
+					</tr>
+					<tr>
+						<th class="th_control">가맹점 사진<br>
+						<td colspan="4" class="td_control">
+							<input type="text"value="" class="input_text01" aria-required="true" aria-invalid="true"> 
+							<input type="file" id="Photo" name="PhotoFiles" multiple="multiple"
+							class="file_find" aria-required="false" aria-invalid="false">
+							<span class="guide_txt">첨부파일은 총 10개, 최대 50MB까지 추가 가능합니다.</span>
+							<p class="p_tag">* 가로 2,000픽셀 이상</p>
+						</td>
+					</tr>
+					<tr>
+						<th class="th_control">대표자</th>
+						<td class="td_control"><input type="text" value=""
+							class="input_text01" aria-required="true" aria-invalid="true"></td>
+						<th class="th_control">사업자 번호</th>
+						<td class="td_control"><input type="text" maxlength="3"
+							value="" class="input_text02" aria-required="false"
+							aria-invalid="false"> <span class="input_tech">-</span> <input
+							type="text" maxlength="4" value="" class="input_text02"
+							aria-required="false" aria-invalid="false"> <span
+							class="input_tech">-</span> <input type="text" maxlength="4"
+							value="" class="input_text02" aria-required="false"
+							aria-invalid="false"></td>
+					</tr>
+					<tr>
+						<th class="th_control">사업자 등록증<sup id="sub_01">*</sup></th>
+						<td colspan="4" class="td_control">
+							<input type="text"value="" class="input_text01" aria-required="true" aria-invalid="true"> 
+							<input type="file" id="licenseReg" name="licensee" multiple="multiple"
+							class="file_find" aria-required="false" aria-invalid="false">
+					</tr>
+					<tr> 
+						<th class="th_control">사업자 등록증<sup id="sub_01">*</sup></th>
+						<td colspan="4" class="td_control">
+							<input type="text"value="" class="input_text01" aria-required="true" aria-invalid="true"> 
+							<input type="file" id="businessReg" name="business" multiple="multiple"
+							class="file_find" aria-required="false" aria-invalid="false">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btn_control">
+			<button type="button" class="btn_fakie">이전</button>
+			<button type="button" class="btn_next">다음</button>
+		</div>
+	</div>
+</body>
+</html>
