@@ -245,7 +245,7 @@ errInfoReport - 틀린정보신고
 	font-weight: 700;
 	color: black;
 	line-height: 20px;
-	margin-top: 400px;
+	/* margin-top: 400px; */
 	text-align: center;
 }
 #select{
