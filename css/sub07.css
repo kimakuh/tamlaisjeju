@@ -54,7 +54,7 @@ presonalData - 개인정보취급방침
 }
 
 #sub7 .text h4{
-	background: url(iconH4.png) no-repeat 0;
+	background: url('../sub07/iconH4.png') no-repeat 0;
 	margin: 20px 0 20px 0 ; 
 	align-content: left;
 	padding: 4px 0 0 16px;
@@ -198,31 +198,31 @@ errInfoReport - 틀린정보신고
 
 #sub7 .btn_kt {
 	margin-left: 0;
-	background: url(kakao.png) no-repeat 0 50%;
+	background: url('../sub07/kakao.png') no-repeat 0 50%;
 	text-indent: -9999px;
 }
 
 #sub7 .btn_fb {
 	margin-left: 0;
-	background: url(facebook.png) no-repeat 0 50%;
+	background: url('../sub07/facebook.png') no-repeat 0 50%;
 	text-indent: -9999px;
 }
 
 #sub7 .btn_tw {
 	margin-left: 0;
-	background: url(twiter.png) no-repeat 0 50%;
+	background: url('../sub07/twiter.png') no-repeat 0 50%;
 	text-indent: -9999px;
 }
 
 #sub7 .btn_pr {
 	margin-left: 0;
-	background: url(print.png) no-repeat 0 50%;
+	background: url('../sub07/print.png') no-repeat 0 50%;
 	text-indent: -9999px;
 }
 
 #sub7 .btn_re {
 	margin-left: 0;
-	background: url(report.png) no-repeat 0 50%;
+	background: url('../sub07/report.png') no-repeat 0 50%;
 	text-indent: -9999px;
 }
 
@@ -273,7 +273,7 @@ errInfoReport - 틀린정보신고
 
 
 /**************************************************************************************
-busiRegi
+busiRegi - 관광업체등록
 ***************************************************************************************/
 
 #sub7.container {
@@ -295,9 +295,9 @@ busiRegi
 	height: 20px;
 	margin: 50px 0 20px;
 	padding-left: 35px;
-	background: url(ico_arr_right_circle.png) no-repeat 0 50%;
+	background: url('../sub07/ico_arr_right_circle.png') no-repeat 0 50%;
 	font-size: 18px;
-	font-weight: 800px;
+	font-weight: bold;
 	color: black;
 	line-height: 20px;
 }
