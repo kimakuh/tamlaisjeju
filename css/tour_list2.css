@@ -1,0 +1,148 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+#sub1 .tour_list {
+    width: 1160px;
+    height: 1954px;
+}
+#sub1 .item_list li {
+    width: 1160px;
+    height: 281px;
+    padding-top: 30px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+#sub1 .item_section {
+    width: 1160px;
+    height: 220px;
+    position: relative;
+    clear: both;
+}
+#sub1 .item_top {
+    float: left;
+    width: 676px;
+    height: 220px;
+    clear: both;
+}
+#sub1 .item_list {
+    list-style: none;
+}
+#sub1 .item_top img {
+    width: 270px;
+    height: 220px;
+    float: left;
+}
+#sub1 .s_day {
+    position: absolute;
+    color: white;
+    background-color: black;
+    width:61.5px;
+    height: 22px;
+    font-size: 10pt;
+    text-align: center;
+    line-height: 22px;
+}
+#sub1 .s_star {
+    position: absolute;
+    color: yellow;
+    left: 180px;
+    top: 190px;
+}
+#sub1 .item_desc {
+    float: left;
+    width: 396px;
+    padding-left: 10px;
+}
+
+#sub1 .s_tit {
+    margin-top: 10px;
+    font-size: 17pt;
+    font-weight: bold;
+}
+#sub1 .s_theme {
+    margin: 10px 0 0 10px;
+    font-size: 11pt;
+    color: slategray
+}
+#sub1 .s_theme_tit {
+    margin: 12px 0 0 0;
+    font-size: 10pt;
+    color: slategray
+}
+#sub1 .item_tag {
+    color: #2168f6;
+    font-size: 10pt;
+    margin-top: 12px;
+}
+#sub1 .item_count_h_area {
+    margin-top: 10px;
+    font-size: 12px;
+    color: slategray;
+}
+
+#sub1 .item_count_area {
+    margin: 0;
+    float: left;
+    width: 484px;
+    height: 220px;
+}
+
+#sub1 .item_count_area p {
+    float: none;
+    position: relative;
+    width: 129px;
+    height: 43px;
+    padding-left: 50px;
+    border: 1px solid rgb(221, 221, 221);
+    margin: 21px 0 21px 304px;
+}
+#sub1 .item_count_area img {
+    position: absolute;
+    left: 25px;
+    top: 11.5px;
+}
+#sub1 .item_count_area #like {
+    float: left;
+    width: 52px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+    display: block;
+}
+#sub1 .item_count_area #zzim {
+    float: left;
+    width: 52px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+    display: block;
+}
+#sub1 .item_count_area #review {
+    float: left;
+    width: 52px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+    display: block;
+}
+#sub1 .item_count_area p:hover {
+    color: #2168f6;
+
+}
+#sub1 .count {
+    float: left;
+    display: block;
+    width: 76px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+}
+#sub1 .item_count_area a:visited {
+    color: black;
+}
+#sub1 .item_count_area a:default {
+    color: black;
+}
+
+

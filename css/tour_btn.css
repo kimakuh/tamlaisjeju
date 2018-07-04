@@ -1,0 +1,19 @@
+#sub1 .btn_bottom {
+    text-align: center;
+}
+
+#sub1 .btn_bottom a:hover {
+    border: 1px solid #2168f6;
+}
+
+#sub1 .btn_bottom a {
+    text-decoration: none;
+    border: 1px solid #E2E2E2;
+    color: #999;
+    font-size: 12pt;
+    padding: 6px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    line-height: 32px;
+    box-sizing: border-box;
+}
