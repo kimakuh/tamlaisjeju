@@ -784,3 +784,206 @@ traffic_one - 교통정보안내 - 여객선/도항선
 
 
 
+
+
+
+
+
+
+
+
+/**************************************************************************************
+tourInfo -관광 문의
+***************************************************************************************/
+
+
+
+
+
+        .cont_wrap h3 {
+            font-size: 35px;
+            color: #1b1b1b;
+            line-height: 35px;
+            text-align: center;
+        }
+
+        .cont_wrap .h3_txt,
+        .cont_wrap .h4_txt {
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        .cont_wrap .h3_txt {
+            margin-top: 24px;
+            font-size: 18px;
+            color: #555;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .slogun {
+            padding: 50px 0 40px 0;
+            text-align: center;
+        }
+
+        .inquiryTop {
+            border: 1px #22698f solid;
+            min-height: 50px;
+            overflow: hidden;
+        }
+
+        .inquiryTop li {
+            float: left;
+        }
+
+        .cont_wrap img {
+            vertical-align: top;
+        }
+
+        .inquiryList {
+            padding: 50px 30px 80px 30px;
+        }
+
+        .inquiryList li {
+            min-height: 50px;
+            overflow: hidden;
+            padding: 0 0 50px 0;
+        }
+
+        .inquiryList li dt {
+            float: left;
+            width: 16%;
+        }
+
+        .inquiryList li dt img {
+            width: 117px;
+        }
+
+        .inquiryList li dd {
+            float: left;
+            width: 84%;
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+        }
+
+        .inquiryList li dd strong {
+            display: block;
+            font-size: 28px;
+            line-height: 32px;
+            color: #000000;
+            padding: 12px 0 20px 0;
+        }
+
+        .tour_info .cont_inner_wrap {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .tourInquiry .sub-detail {
+            padding-top: 30px;
+        }
+
+        .tourInquiry .sub-detail .detail-text {
+            margin: 0;
+        }
+
+        .detail-text {
+            text-align: left !important;
+        }
+
+        h4.lineTitle:first-child {
+            margin-top: 0;
+        }
+
+        .tour_info .cont_inner_wrap h4 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        .lineTitle {
+            display: inline-block;
+            height: 24px;
+            width: 100%;
+            position: relative;
+            padding-bottom: 50px;
+            margin-top: 60px;
+            line-height: 1.1;
+        }
+
+        .sub-detail .tit35,
+        .sub-detail h4 {
+            font-size: 35px;
+            color: #222;
+            line-height: 46px;
+            font-weight: 400;
+            letter-spacing: -1px;
+        }
+
+        .cont_wrap h4 {
+            font-size: 35px;
+            color: #1b1b1b;
+            line-height: 35px;
+            text-align: center;
+        }
+
+        .lineTitle strong {
+            display: block;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 24px;
+        }
+
+        .lineTitle em {
+            display: inline-block;
+            background: #fff;
+            padding: 0 15px;
+        }
+
+        .detail-text {
+            text-align: left !important
+        }
+
+        .tourInquiry .sub-detail {
+            padding-top: 30px;
+        }
+
+        .tour_info .content-group {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .tourInquiry .sub-detail .detail-text {
+            margin: 0;
+        }
+
+        .content-group .left {
+            width: 570px;
+            float: left;
+            text-align: center;
+        }
+
+        .content-group .right {
+            width: 570px;
+            float: right;
+            text-align: center;
+        }
+
+        .sub-detail .detail-text .tit22,
+        .sub-detail .detail-text h5 {
+            display: block;
+            margin-bottom: 24px;
+            padding-left: 16px;
+            background: url(../img/common/iconH4.png) no-repeat 0;
+            font-size: 22px;
+            text-align: left;
+            line-height: 1.3;
+        }
+
+        .sub-detail .text dt {
+            margin-top: 10px;
+        }

@@ -1,444 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
-    <title>관광문의</title>
+    <!-- meta tags -->
     <meta charset="utf-8">
-    <style>
-        div {
-            display: block;
-        }
-
-        a,
-        fieldset,
-        img,
-        table {
-            border: 0;
-        }
-
-        a,
-        a:active,
-        a:hover,
-        a:link,
-        a:visited {
-            color: inherit;
-            text-decoration: none;
-        }
-
-
-        blockquote,
-        body,
-        button,
-        caption,
-        dd,
-        div,
-        dl,
-        dt,
-        fieldset,
-        form,
-        frame,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        hr,
-        html,
-        iframe,
-        input,
-        legend,
-        li,
-        object,
-        ol,
-        p,
-        pre,
-        q,
-        select,
-        table,
-        td,
-        textarea,
-        tr,
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        ol,
-        ul {
-            list-style: none;
-        }
-
-        article,
-        aside,
-        canvas,
-        details,
-        figcaption,
-        figure,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        section {
-            display: block;
-        }
-
-        .clear {
-            clear: both;
-        }
-
-        .clear:after {
-            display: block;
-            content: "";
-            clear: both;
-        }
-
-
-        .header {
-            position: fixed;
-            width: 100%;
-            height: 161px;
-            background-color: rgba(0, 0, 0, .5);
-        }
-
-        .footer {
-            width: 100%;
-            height: 731px;
-            background-color: rgba(0, 0, 0, .5);
-            z-index: 100;
-            float: left;
-        }
-
-        #sub05_container {
-            padding-top: 161px;
-            min-height: 500px;
-        }
-
-        #content {
-            margin: 0 auto;
-            padding: 0px 20px;
-            width: 1160px;
-        }
-
-        .location_wrap {
-            height: 27px;
-            padding: 11px 28px;
-            border: 1px solid #e5e5e5;
-            border-top: 0;
-        }
-
-        .location {
-            float: left;
-        }
-
-        .ico_home {
-            width: 15px;
-            height: 27px;
-            background: url(../img/common/ico_home.png) no-repeat 0 50%;
-            text-indent: -9999px;
-        }
-
-        .location_wrap .location a,
-        .location_wrap .location div.lst_depth,
-        .location_wrap .location span {
-            display: block;
-            float: left;
-        }
-
-        .location_wrap .location .lst_depth,
-        .location_wrap .location .p_depth {
-            height: 27px;
-            margin-left: 6px;
-            font-size: 14px;
-            color: #959595;
-            line-height: 27px;
-        }
-
-        .location_wrap .location .lst_depth .btn_dropdown {
-            padding-right: 15px;
-            color: #535353;
-            background: url(../img/common/bg_locaion_dropdown.gif) no-repeat right 5px;
-        }
-
-        .location_wrap .location {
-            float: left;
-        }
-
-        .location_wrap .location a,
-        .location_wrap .location div.lst_depth,
-        .location_wrap .location span {
-            display: block;
-            float: left;
-        }
-
-        .location_wrap .util_zone {
-            float: right;
-        }
-
-        .location_wrap .util_zone .btn_s_lnk {
-            -webkit-box-shadow: 1px 1px #c1c1c1;
-            box-shadow: 1px 1px #c1c1c1;
-        }
-
-        .location_wrap .util_zone .btn_s_lnk {
-            display: block;
-            float: left;
-            width: 73px;
-            height: 25px;
-            border: 1px solid #959595;
-            border-radius: 5px;
-            font-size: 14px;
-            color: #959595;
-            line-height: 25px;
-            text-align: center;
-        }
-
-        .location_wrap .util_zone .util_list {
-            float: left;
-            margin-left: 27px;
-        }
-
-        .location_wrap .util_zone .util_list li {
-            float: left;
-            margin: 0 0 0 12px;
-        }
-
-        .location_wrap .util_zone .util_list li a.btn_kt {
-            margin-left: 0;
-            background: url(../img/common/ico_kakao.png) no-repeat 0 50%;
-        }
-
-        .location_wrap .util_zone .util_list li a.btn_fb {
-            margin-left: 0;
-            background: url(../img/common/ico_facebook.png) no-repeat 0 50%;
-        }
-
-        .location_wrap .util_zone .util_list li a.btn_tw {
-            margin-left: 0;
-            background: url(../img/common/ico_twitter.png) no-repeat 0 50%;
-        }
-
-        .location_wrap .util_zone .util_list li a.btn_pr {
-            margin-left: 0;
-            background: url(../img/common/ico_print.png) no-repeat 0 50%;
-        }
-
-        .location_wrap .util_zone .util_list li a.btn_re {
-            margin-left: 0;
-            background: url(../img/common/ico_report.png) no-repeat 0 50%;
-        }
-
-        .location_wrap .util_zone .util_list li a {
-            display: block;
-            width: 22px;
-            height: 27px;
-            margin-left: 17px;
-            text-indent: -9999px;
-        }
-
-        .cont {
-            padding-bottom: 100px;
-        }
-
-        .cont_wrap {
-            padding-top: 50px;
-        }
-
-        .cont_wrap h3 {
-            font-size: 35px;
-            color: #1b1b1b;
-            line-height: 35px;
-            text-align: center;
-        }
-
-        .cont_wrap .h3_txt,
-        .cont_wrap .h4_txt {
-            -ms-word-wrap: break-word;
-            word-wrap: break-word;
-        }
-
-        .cont_wrap .h3_txt {
-            margin-top: 24px;
-            font-size: 18px;
-            color: #555;
-            line-height: 30px;
-            text-align: center;
-        }
-
-        .slogun {
-            padding: 50px 0 40px 0;
-            text-align: center;
-        }
-
-        .inquiryTop {
-            border: 1px #22698f solid;
-            min-height: 50px;
-            overflow: hidden;
-        }
-
-        .inquiryTop li {
-            float: left;
-        }
-
-        .cont_wrap img {
-            vertical-align: top;
-        }
-
-        .inquiryList {
-            padding: 50px 30px 80px 30px;
-        }
-
-        .inquiryList li {
-            min-height: 50px;
-            overflow: hidden;
-            padding: 0 0 50px 0;
-        }
-
-        .inquiryList li dt {
-            float: left;
-            width: 16%;
-        }
-
-        .inquiryList li dt img {
-            width: 117px;
-        }
-
-        .inquiryList li dd {
-            float: left;
-            width: 84%;
-            font-size: 18px;
-            line-height: 22px;
-            color: #333333;
-        }
-
-        .inquiryList li dd strong {
-            display: block;
-            font-size: 28px;
-            line-height: 32px;
-            color: #000000;
-            padding: 12px 0 20px 0;
-        }
-
-        .tour_info .cont_inner_wrap {
-            padding-top: 30px;
-            text-align: center;
-        }
-
-        .tourInquiry .sub-detail {
-            padding-top: 30px;
-        }
-
-        .tourInquiry .sub-detail .detail-text {
-            margin: 0;
-        }
-
-        .detail-text {
-            text-align: left !important;
-        }
-
-        h4.lineTitle:first-child {
-            margin-top: 0;
-        }
-
-        .tour_info .cont_inner_wrap h4 {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 24px;
-        }
-
-        .lineTitle {
-            display: inline-block;
-            height: 24px;
-            width: 100%;
-            position: relative;
-            padding-bottom: 50px;
-            margin-top: 60px;
-            line-height: 1.1;
-        }
-
-        .sub-detail .tit35,
-        .sub-detail h4 {
-            font-size: 35px;
-            color: #222;
-            line-height: 46px;
-            font-weight: 400;
-            letter-spacing: -1px;
-        }
-
-        .cont_wrap h4 {
-            font-size: 35px;
-            color: #1b1b1b;
-            line-height: 35px;
-            text-align: center;
-        }
-
-        .lineTitle strong {
-            display: block;
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-size: 24px;
-        }
-
-        .lineTitle em {
-            display: inline-block;
-            background: #fff;
-            padding: 0 15px;
-        }
-
-        .detail-text {
-            text-align: left !important
-        }
-
-        .tourInquiry .sub-detail {
-            padding-top: 30px;
-        }
-
-        .tour_info .content-group {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .tourInquiry .sub-detail .detail-text {
-            margin: 0;
-        }
-
-        .content-group .left {
-            width: 570px;
-            float: left;
-            text-align: center;
-        }
-
-        .content-group .right {
-            width: 570px;
-            float: right;
-            text-align: center;
-        }
-
-        .sub-detail .detail-text .tit22,
-        .sub-detail .detail-text h5 {
-            display: block;
-            margin-bottom: 24px;
-            padding-left: 16px;
-            background: url(../img/common/iconH4.png) no-repeat 0;
-            font-size: 22px;
-            text-align: left;
-            line-height: 1.3;
-        }
-
-        .sub-detail .text dt {
-            margin-top: 10px;
-        }
-
-    </style>
-</head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta property="og:title" content="탐라는제주">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <!-- sub05 -->
+    <link rel="stylesheet" href="../../css/sub05.css" />
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+
+    <style type="text/css">
+		@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+	</style>
+	</head>
 <body>
-    <div class="header">HEADER</div>
-    <div id="sub05_container">
+	<div id="header"></div>
+    <div id="sub05" class="sub05 container">
         <div id="content">
             <div class="cont tour_info tourInquiry">
                 <div class="location_wrap clear">
@@ -594,8 +187,17 @@
             </div>
         </div>
     </div>
-
-    <div class="footer">FOOTER</div>
+    
+	<div id="footer"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
 
 </body>
 
