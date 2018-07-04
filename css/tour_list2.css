@@ -5,6 +5,7 @@
 
 #sub1 .tour_list {
     width: 1160px;
+    margin:30px 0;
     /* height: 1954px; */
 }
 #sub1 .item_list li {
