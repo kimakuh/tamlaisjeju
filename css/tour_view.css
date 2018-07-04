@@ -626,7 +626,7 @@
       position: relative;
       width: 65px;
       height: 12px;
-      background: url(../img/bg_starP_off.png) no-repeat 0 0;
+      background: url(../img/sub01/bg_starP_off.png) no-repeat 0 0;
     }
 
     .score_area_p .score_count_p {
@@ -635,7 +635,7 @@
       left: 0;
       width: 0;
       height: 100%;
-      background: url(../img/bg_starP_on.png) no-repeat 0 0;
+      background: url(../img/sub01/bg_starP_on.png) no-repeat 0 0;
       text-indent: -9999px;
     }
 
@@ -658,7 +658,7 @@
     .review_wrap .review_area .user_content .recom_area .ico_like {
       float: left;
       padding-left: 20px;
-      background: url(../img/ico_like.png) no-repeat 0 50%;
+      background: url(../img/sub01/ico_like.png) no-repeat 0 50%;
       background-size: 15px 11px;
       font-size: 14px;
       color: #2168f6;
@@ -711,7 +711,7 @@
     }
 
     .review_wrap .review_area .tbn_area a.btn_kt {
-      background: url(../img/ico_kakao.png) no-repeat 0 50%;
+      background: url(../img/sub01/ico_kakao.png) no-repeat 0 50%;
     }
 
     .review_wrap .review_area .tbn_area a {
@@ -723,11 +723,11 @@
     }
 
     .review_wrap .review_area .tbn_area a.btn_fb {
-      background: url(../img/ico_facebook.png) no-repeat 0 50%;
+      background: url(../img/sub01/ico_facebook.png) no-repeat 0 50%;
     }
 
     .review_wrap .review_area .tbn_area a.btn_tw {
-      background: url(../img/ico_twitter.png) no-repeat 0 50%;
+      background: url(../img/sub01/ico_twitter.png) no-repeat 0 50%;
       margin-right: 12px;
     }
 
@@ -785,7 +785,7 @@
     .review_wrap .review_list .review_item .reg_ripple .reg_ripple_item {
       padding: 20px 0 1px 130px;
       border-top: 1px solid #e5e5e5;
-      background: url(../img/ico_reply_mark.png) no-repeat 87px 23px;
+      background: url(../img/sub01/ico_reply_mark.png) no-repeat 87px 23px;
     }
 
     .review_wrap .review_list .review_item .reg_ripple .reg_ripple_area {
