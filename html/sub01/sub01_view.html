@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>게시판</title>
+    <link rel="stylesheet" type="text/css" href="view.css">
+
+    <style type="text/css">
+        /* font */
+
+        @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+        body {
+            /* font-family: 'Noto Sans KR', sans-serif; */
+            font-family: 'NanumSquareRound', sans-serif;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="cont detail_page detail_style" id="sub1-1">
+        <div class="sub_visual_wrap" style="background: url(&quot;https://api.visitjeju.net/photomng/imgpath/201804/30/df920e48-533a-4b27-821c-d935b5783593.gif&quot;) 50% 50% / cover no-repeat;">
+            <div class="inner_wrap">
+                <div class="sub_visual_style"></div>
+                <div class="sub_info">
+                    <div class="sub_info_area">
+                        <div class="sub_info_title">
+                            <h3 class="">성산일출봉
+                                <br>&nbsp;</h3>
+                            <br>
+                            <p class="h3_sub">(UNESCO 세계자연유산)</p>
+                            <div class="weather">
+                                <img src="img/weather_rain.png" alt="" class="ico_weather">
+                                <p>비</p>
+                            </div>
+                        </div>
+                        <div class="score_area_l">★★★★★</p>
+                        </div>
+                        <div class="tag_area">
+                            <p class="best_tag">
+                                <a href="#">#일출</a>
+                                <a href="#">#오름</a>
+                                <a href="#">#경관/포토</a>
+                            </p>
+                            <p>
+                                <a href="#">#부모</a>
+                            </p>
+                        </div>
+                        <div class="basic_information">
+                            <p class="info_tit">기본정보</p>
+                            <div class="clear1">
+                                <p class="info_sub_tit">주소</p>
+                                <p class="info_sub_cont">제주특별자치도 서귀포시 성산읍 성산리 114</p>
+                            </div>
+                            <div class="clear1">
+                                <p class="info_sub_tit">연락처</p>
+                                <p class="info_sub_cont">(+82) 064-783-0959</p>
+                            </div>
+                            <div class="btn_area">
+                                <button type="button">길찾기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outer_wrap"></div>
+        </div>
+
+
+        <div class="container" id="sub1">
+            <div id="content">
+                <div class="cont_wrap sub_visual">
+                    <ul class="appraisal_list clear">
+                        <li>
+                            <button type="button">
+                                <div class="ico_like"></div>
+                                <img src="img/like.png">
+                                <p class="appraisal_tit">좋아요</p>
+                                <p class="appraisal_cnt">61</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <div class="ico_zzim"></div>
+                                <img src="img/zzim.png">
+                                <p class="appraisal_tit">찜하기</p>
+                                <p class="appraisal_cnt">888</p>
+                            </button>
+                        </li>
+                        <li>
+                            <div class="ico_review"></div>
+                            <img src="img/ico_app_review.png">
+                            <p class="appraisal_tit">리뷰</p>
+                            <p class="appraisal_cnt">921</p>
+                        </li>
+                        <li>
+                            <div class="ico_schedule"></div>
+                            <img src="img/ico_app_schedule.png">
+                            <p class="appraisal_tit">일정 등록</p>
+                            <p class="appraisal_cnt">0</p>
+                        </li>
+                        <li>
+                            <div class="ico_back"></div>
+                            <img src="img/ico_app_back.png">
+                            <p class="appraisal_tit">방문했어요</p>
+                            <p class="appraisal_cnt">460</p>
+                        </li>
+                        <li>
+                            <div class="ico_hits"></div>
+                            <img src="img/ico_app_hits.png">
+                            <p class="appraisal_tit">조회</p>
+                            <p class="appraisal_cnt">130,912</p>
+                        </li>
+                        <li>
+                            <div class="ico_sns"></div>
+                            <img src="img/ico_app_sns.png">
+                            <p class="appraisal_tit">SNS 공유</p>
+                            <p class="appraisal_cnt">36</p>
+                        </li>
+                    </ul>
+                    <div id="detailTap" class="tab_area item_6">
+                        <button type="button" class="tab_btn" onclick="openCity(event, 'tab_info')" id="defaultOpen">
+                            <span>상세 정보</span>
+                        </button>
+
+                        <button type="button" class="tab_btn" onclick="openCity(event, 'tab_guide')">
+                            <span>이용안내</span>
+                        </button>
+
+                        <button type="button" class="tab_btn" onclick="openCity(event, 'tab_photo')">
+                            <span>사진</span>
+                        </button>
+
+                        <button type="button" class="tab_btn" onclick="openCity(event, 'tab_map')">
+                            <span>지도/주변관광지</span>
+                        </button>
+
+                        <button type="button" class="tab_btn" onclick="openCity(event, 'tab_ps_review')">
+                            <span>리뷰</span>
+                        </button>
+
+                        <button type="button" class="tab_btn">
+                            <span>리뷰</span>
+                        </button>
+                    </div>
+                    <div class="tab_cont">
+                        <div id="tab_info" class="conts_detail">
+                            <ol class="ui-sortable" id="sortable" style="list-style: none; margin: 0px; padding: 0px;" type="I">
+                                <li class="ui-sortable-handle">
+                                    <img src="https://www.visitjeju.net/ckImage/201706/web/ckeditor_1273371715073741195.jpg">
+                                    <br>성산일출봉은 제주도의 다른 오름들과는 달리 마그마가 물속에서 분출하면서 만들어진 수성화산체다.
+                                    <br>
+                                    <br>화산활동시 분출된 뜨거운 마그마가 차가운 바닷물과 만나면서 화산재가 습기를 많이 머금어 끈끈한 성질을 띄게 되었고,
+                                    <br>
+                                    <br>이것이 층을 이루면서 쌓인 것이 성산일출봉이다.
+                                    <br>
+                                    <br>바다 근처의 퇴적층은 파도와 해류에 의해 침식되면서 지금처럼 경사가 가파른 모습을 띄게 되었다.&nbsp;
+                                    <br>
+                                    <br>생성 당시엔 제주 본토와 떨어진 섬이었는데, 주변에 모래와 자갈등이 쌓이면서 간조 때면 본토와 이어지는 길이 생겼고,
+                                    <br>
+                                    <br>1940년엔 이곳에 도로가 생기면서 현재는 육지와 완벽하게 연결되어 있다.&nbsp;
+                                    <br>
+                                    <br>
+                                    <br>
+                                </li>
+                                <li class="ui-sortable-handle">
+                                    <img src="https://www.visitjeju.net/ckImage/201611/ckeditor_7681234462167691262.jpg">
+                                    <br>정상에 오르면 너비가 8만여 평에 이르는 분화구를 볼 수 있는데, 그릇처럼 오목한 형태로 안에는 억새 등의 풀이 자라고 있다.
+                                    <br>
+                                    <br>분화구 둘레에는 99개의 고만고만한 봉우리(암석)이 자리하고 있다.
+                                    <br>
+                                    <br>이 모습이 거대한 성과 같다고 해서 '성산(城山)', 해가 뜨는 모습이 장관이라 하여 '일출봉(日出峰)'이라는 이름이 붙었다.
+                                    <br>
+                                    <br>전설에 의하면&nbsp;성산일출봉의 봉오리가 100이었다면, 제주에도 호랑이.사자 같은 맹수가 날 것인데,
+                                    <br>
+                                    <br>하나가 모자라 아흔 아홉이기 때문에 호랑이도 사자도 아니 난다고 한다.&nbsp;
+                                    <br>
+                                    <br>
+                                    <br>
+                                </li>
+
+                                <li class="ui-sortable-handle">
+                                    <img src="https://www.visitjeju.net/ckImage/201611/ckeditor_5877082166042270343.jpg">
+                                    <br>성산일출봉에는 제주의 아픈역사도 간직하고 있다. 1943년에는 일본군이 이곳을 요새화 하기 위해 일출봉 해안절벽에 24개의 굴을 팠다.
+                                    <br>
+                                    <br>굴속에 폭탄과 어뢰등을 감춰두고 일전에 대비했지만 제대로 사용하지 못하고 패전하였다.
+                                    <br>
+                                    <br>이 굴은 이후 잠녀의 탈의장으로 사용되기도 했다.
+                                    <br>
+                                    <br>성산일출봉과 본토를 잇는 길목은 간조때 길이 터진다 하면 터진목이라 불렀는데,
+                                    <br>
+                                    <br>이곳과 일출봉의 우뭇개 일대에서 4·3항쟁 당시 많은 민간인이 토벌대에 의해 목숨을 잃었다.
+                                    <br>
+                                    <br>
+                                    <br>
+                                </li>
+                                <li class="ui-sortable-handle">
+                                    <img src="https://www.visitjeju.net/ckImage/201611/ckeditor_4259624126778553777.jpg">
+                                    <br>성산일출봉 정상에 이르는 가파른 계단 길은 숨이 가쁘나, 넉넉히 20분이면 꼭대기에 다다른다.
+                                    <br>
+                                    <br>정상에서는 너른 분화구와 그 뒤로 펼쳐지는 바다의 풍경은, 제주의 다른 오름과는 전혀 다른 웅장한 느낌을 준다.
+                                    <br>
+                                    <br>예부터 이곳 정상에서 바라보는&nbsp;일출광경은&nbsp;영주10경(제주의 경승지)중에서 으뜸이라 하였고, 이에 매년 12월 31일에는 성산일출축제가
+                                    열린다.&nbsp;
+                                    <br>
+                                    <br>
+                                    <br>
+                                </li>
+                                <li class="ui-sortable-handle">
+                                    <img src="https://www.visitjeju.net/ckImage/201707/web/ckeditor_7858709477429717596.JPG">
+                                    <img src="https://www.visitjeju.net/ckImage/201707/web/ckeditor_5309356712996692626.JPG">
+                                    <br>성산일출봉은 지방기념물로 관리하다 2000년 7월 19일 천연기념물로 지정되었으며,
+                                    <br>
+                                    <br>빼어난 경관과 지질학적 가치를 인정받아 2007년 7월 2일 UNESCO 세계자연유산에 등재되었다.
+                                    <br>
+                                    <br>또한 2010년 10월에는 UNESCO 세계지질공원에 인증되었고,&nbsp;
+                                    <br>
+                                    <br>2011년도 대한민국 자연생태관광 으뜸명소, 2012년 12월 한국관광 기네스 12선에도 선정되었다.
+                                    <br>
+                                    <br>
+                                    <br>
+                                </li>
+                            </ol>
+                        </div>
+
+
+                        <!--이용안내-->
+                        <div id="tab_guide" class="conts_detail guide">
+                            <p class="cont_tit">이용 안내</p>
+                            <table>
+                                <colgroup>
+                                    <col style="width: 24.5%;">
+                                    <col style="width: 75.5%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>소개</th>
+                                        <td>바다위에 우뚝 솟아난 수성화산·유네스코 세계자연유산, 천연기념물 제420호, 올레1코스</td>
+                                    </tr>
+                                    <tr>
+                                        <th>상세 정보</th>
+                                        <td>하절기 07:10~19:00 동절기 07:30~18:00 확인: 성산일출봉 관리사무소</td>
+                                    </tr>
+                                    <tr>
+                                        <th>편의시설</th>
+                                        <td>공용주차장,현금결제,카드결제,화장실,무료 WIFI,편의점,음료대,유도 및 안내시설,경보 및 피난시설,임산부 휴게시설</td>
+                                    </tr>
+                                    <tr>
+                                        <th>언어 서비스</th>
+                                        <td>중국어</td>
+                                    </tr>
+                                    <tr>
+                                        <th>장애인 전용 매표소</th>
+                                        <td>무</td>
+                                    </tr>
+                                    <tr>
+                                        <th>장애인 시설정보</th>
+                                        <td>
+                                            <div>
+                                                <img src="https://www.visitjeju.net/image/tour_info/picto08.gif" alt="장애인 화장실 유무" class="">
+                                                <img src="https://www.visitjeju.net/image/tour_info/picto10.gif" alt="장애인 전용 주차장 유무" class="">
+                                                <a href="#" class="btn_info">장애인 시설정보 &gt; </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>장애인 활동 보조 필요성</th>
+                                        <td>아주 어려움</td>
+                                    </tr>
+                                    <tr>
+                                        <th>기타 상세</th>
+                                        <td>UNESCO 세계자연유산,UNESCO 세계지질공원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!--사진-->
+
+                        <div>
+                            <div id="tab_photo" class="conts_detail photo">
+                                <p class="cont_tit_photo">사진(940)</p>
+                                <button type="button" class="btn_regsit">사진 등록</button>
+                                <div class="photo_list justified-gallery">
+                                    <div class="photo_item jg-entry entry-visible">
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152670134859067.jpg">
+                                            <p class="tag">힐링제주도</p>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152670119383606.jpg">
+                                            <p class="tag">유채꽃은아름다워</p>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152643904224455.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                    </div>
+                                    <div class="photo_item jg-entry entry-visible">
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152643898039645.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152643890917686.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152643880688376.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                    </div>
+                                    <div class="photo_item jg-entry entry-visible">
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152643878596913.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201802/thumbnail/151851720888059.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152643880688376.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201802/thumbnail/151851721065276.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                    </div>
+                                    <div class="photo_item jg-entry entry-visible">
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152643898039645.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152643890917686.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://www.visitjeju.net/upload_data/campaign/2018/201805/thumbnail/152643880688376.jpg">
+                                            <p class="tag">성산 일출봉</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--지도 / 주변관광지-->
+
+                        <div id="tab_map" class="conts_detail map">
+                            <p class="cont_tit">성산일출봉(UNESCO 세계자연유산)</p>
+                            <div class="util_wrap clear">
+                                <div class="util_area">
+                                    <ul class="clear">
+                                        <li class="on">
+                                            <a href="javascript:void(0)">전체(100)</a>
+                                        </li>
+                                        <li class="c1">
+                                            <a href="javascript:void(0)">관광지(11)</a>
+                                        </li>
+                                        <li class="c4">
+                                            <a href="javascript:void(0)">음식점(57)</a>
+                                        </li>
+                                        <li class="c3">
+                                            <a href="javascript:void(0)">숙박(29)</a>
+                                        </li>
+                                        <li class="c2">
+                                            <a href="javascript:void(0)">쇼핑(3)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="clear util_area">
+                                    <ul class="clear">
+                                        <li>
+                                            <input type="radio" name="distance" id="distance3" value="3">&nbsp;
+                                            <label for="distance3">3Km</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="distance" id="distance5" value="5">&nbsp;
+                                            <label for="distance5">5Km</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="distance" id="distance10" value="10">&nbsp;
+                                            <label for="distance10">10Km</label>
+                                        </li>
+                                    </ul>
+                                    <div id="map" style="width:100%;height:400px;"></div>
+
+                                    <!--지도-길찾기-->
+                                    <dl class="map_search_area clear">
+                                        <dt>길찾기</dt>
+                                        <dd>
+                                            <p class="area_tit">출발지</p>
+                                            <input type="text" readonly="readonly">
+                                        </dd>
+                                        <dd>
+                                            <p class="area_tit">도착지</p>
+                                            <input type="text" readonly="readonly">
+                                        </dd>
+                                        <dd>
+                                            <button type="button" class="btn_search type_1">길찾기</button>
+                                            <button type="button" class="btn_search type_2">초기화</button>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div id="tab_ps_review" class="conts_detail ps_review">
+                            <p class="cont_tit">여행가의 리뷰
+                                <span style="font-size: 24px; font-weight: 800; color: rgb(243, 143, 30); line-height: 24px; margin-left: 0px;">(463)</span>
+                            </p>
+                            <button type="button" class="btn_regsit">리뷰 및 평가 등록</button>
+                            <div class="util_wrap clear">
+                                <div class="util_area">
+                                    <ul class="clear">
+                                        <li class="on">
+                                            <a href="javascript:void(0)">최신</a>
+
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:void(0)">추천</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:void(0)">평가</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="review_wrap">
+                                <ul class="review_list">
+                                    <li id="contentsReviewItem0" class="review_item">
+                                        <div class="review_area clear">
+                                            <div class="user_profile">
+                                                <div class="photo_area">
+                                                    <a href="/kr/schedule?menuId=DOM_000002000000000101&amp;userid=U000000000000773#">
+                                                        <img src="img/img_non_profile.png" alt="" class="user_profile_img">
+                                                    </a>
+                                                    <img src="https://api.visitjeju.net/badge/iconpath/201803/05/eef5a818-bd4e-4d17-b649-b09f14848b80.png" alt="" class="user_badge">
+                                                </div>
+                                                <p class="user_name">조**</p>
+                                                <p class="reg_date">2018.06.11</p>
+                                                <div class="score_area_p">
+                                                    <p class="score_count_p" style="width: 100%;">100%</p>
+                                                </div>
+                                            </div>
+                                            <div class="user_content">
+                                                <div class="recom_area">
+                                                    <p class="ico_like">0</p>
+                                                    <button type="button" class="btn_rcmd">추천</button>
+                                                </div>
+                                                <div class="checked_area clear">
+                                                    <ul class="check_list">
+                                                        <li>방문했어요</li>
+                                                        <li class="top">
+                                                            <a href="#">##힐링 </a>
+                                                        </li>
+                                                        <li class="top">
+                                                            <a href="#">##미식 </a>
+                                                        </li>
+                                                        <li class="top">
+                                                            <a href="#">##체험 </a>
+                                                        </li>
+                                                    </ul>
+                                                    <button type="button">리뷰 번역</button>
+                                                </div>
+                                                <div class="review clear">
+                                                    <p class="review_txt">성산일출봉 너무 좋았어요! 멋진 자연경관 ㅠ</p>
+                                                    <ul class="review_img_list clear"></ul>
+                                                </div>
+                                                <div class="tbn_area clear">
+                                                    <a href="javascript:void(0);" class="btn_kt">카카오톡</a>
+                                                    <a href="javascript:void(0);" class="btn_fb">페이스북</a>
+                                                    <a href="javascript:void(0);" class="btn_tw">트위터</a>
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                    <button type="button" class="type_1">댓글(0)</button>
+                                                    <button type="button" class="type_1">댓글 쓰기</button>
+                                                    <!---->
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul id="regRippleBox0" class="reg_ripple">
+                                            <li class="reg_ripple_item">
+                                                <div class="reg_ripple_area clear">
+                                                    <div class="reg_ripple_input">
+                                                        <textarea placeholder="홍보 및 비방성 글 등 리뷰 성격에 맞지 않는 글은 관리자에 의해 삭제 될 수 있습니다." maxlength="1000" class="reg_ripple_textarea"></textarea>
+                                                    </div>
+                                                    <div class="reg_ripple_create">
+                                                        <div class="review clear">
+                                                            <button class="reg_btn">등록</button>
+                                                            <button class="reg_cancel">취소</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="reply_list">
+                                            <!---->
+                                        </ul>
+                                    </li>
+                                    <li id="contentsReviewItem0" class="review_item">
+                                            <div class="review_area clear">
+                                                <div class="user_profile">
+                                                    <div class="photo_area">
+                                                        <a href="/kr/schedule?menuId=DOM_000002000000000101&amp;userid=U000000000000773#">
+                                                            <img src="img/img_non_profile.png" alt="" class="user_profile_img">
+                                                        </a>
+                                                        <img src="https://api.visitjeju.net/badge/iconpath/201803/05/eef5a818-bd4e-4d17-b649-b09f14848b80.png" alt="" class="user_badge">
+                                                    </div>
+                                                    <p class="user_name">조**</p>
+                                                    <p class="reg_date">2018.06.11</p>
+                                                    <div class="score_area_p">
+                                                        <p class="score_count_p" style="width: 100%;">100%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="user_content">
+                                                    <div class="recom_area">
+                                                        <p class="ico_like">0</p>
+                                                        <button type="button" class="btn_rcmd">추천</button>
+                                                    </div>
+                                                    <div class="checked_area clear">
+                                                        <ul class="check_list">
+                                                            <li>방문했어요</li>
+                                                            <li class="top">
+                                                                <a href="#">##힐링 </a>
+                                                            </li>
+                                                            <li class="top">
+                                                                <a href="#">##미식 </a>
+                                                            </li>
+                                                            <li class="top">
+                                                                <a href="#">##체험 </a>
+                                                            </li>
+                                                        </ul>
+                                                        <button type="button">리뷰 번역</button>
+                                                    </div>
+                                                    <div class="review clear">
+                                                        <p class="review_txt">성산일출봉 너무 좋았어요! 멋진 자연경관 ㅠ</p>
+                                                        <ul class="review_img_list clear"></ul>
+                                                    </div>
+                                                    <div class="tbn_area clear">
+                                                        <a href="javascript:void(0);" class="btn_kt">카카오톡</a>
+                                                        <a href="javascript:void(0);" class="btn_fb">페이스북</a>
+                                                        <a href="javascript:void(0);" class="btn_tw">트위터</a>
+                                                        <!---->
+                                                        <!---->
+                                                        <!---->
+                                                        <button type="button" class="type_1">댓글(0)</button>
+                                                        <button type="button" class="type_1">댓글 쓰기</button>
+                                                        <!---->
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="regRippleBox0" class="reg_ripple">
+                                                <li class="reg_ripple_item">
+                                                    <div class="reg_ripple_area clear">
+                                                        <div class="reg_ripple_input">
+                                                            <textarea placeholder="홍보 및 비방성 글 등 리뷰 성격에 맞지 않는 글은 관리자에 의해 삭제 될 수 있습니다." maxlength="1000" class="reg_ripple_textarea"></textarea>
+                                                        </div>
+                                                        <div class="reg_ripple_create">
+                                                            <div class="review clear">
+                                                                <button class="reg_btn">등록</button>
+                                                                <button class="reg_cancel">취소</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="reply_list">
+                                                <!---->
+                                            </ul>
+                                        </li>
+                                        <li id="contentsReviewItem0" class="review_item">
+                                                <div class="review_area clear">
+                                                    <div class="user_profile">
+                                                        <div class="photo_area">
+                                                            <a href="/kr/schedule?menuId=DOM_000002000000000101&amp;userid=U000000000000773#">
+                                                                <img src="img/img_non_profile.png" alt="" class="user_profile_img">
+                                                            </a>
+                                                            <img src="https://api.visitjeju.net/badge/iconpath/201803/05/eef5a818-bd4e-4d17-b649-b09f14848b80.png" alt="" class="user_badge">
+                                                        </div>
+                                                        <p class="user_name">조**</p>
+                                                        <p class="reg_date">2018.06.11</p>
+                                                        <div class="score_area_p">
+                                                            <p class="score_count_p" style="width: 100%;">100%</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user_content">
+                                                        <div class="recom_area">
+                                                            <p class="ico_like">0</p>
+                                                            <button type="button" class="btn_rcmd">추천</button>
+                                                        </div>
+                                                        <div class="checked_area clear">
+                                                            <ul class="check_list">
+                                                                <li>방문했어요</li>
+                                                                <li class="top">
+                                                                    <a href="#">##힐링 </a>
+                                                                </li>
+                                                                <li class="top">
+                                                                    <a href="#">##미식 </a>
+                                                                </li>
+                                                                <li class="top">
+                                                                    <a href="#">##체험 </a>
+                                                                </li>
+                                                            </ul>
+                                                            <button type="button">리뷰 번역</button>
+                                                        </div>
+                                                        <div class="review clear">
+                                                            <p class="review_txt">성산일출봉 너무 좋았어요! 멋진 자연경관 ㅠ</p>
+                                                            <ul class="review_img_list clear"></ul>
+                                                        </div>
+                                                        <div class="tbn_area clear">
+                                                            <a href="javascript:void(0);" class="btn_kt">카카오톡</a>
+                                                            <a href="javascript:void(0);" class="btn_fb">페이스북</a>
+                                                            <a href="javascript:void(0);" class="btn_tw">트위터</a>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <button type="button" class="type_1">댓글(0)</button>
+                                                            <button type="button" class="type_1">댓글 쓰기</button>
+                                                            <!---->
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul id="regRippleBox0" class="reg_ripple">
+                                                    <li class="reg_ripple_item">
+                                                        <div class="reg_ripple_area clear">
+                                                            <div class="reg_ripple_input">
+                                                                <textarea placeholder="홍보 및 비방성 글 등 리뷰 성격에 맞지 않는 글은 관리자에 의해 삭제 될 수 있습니다." maxlength="1000" class="reg_ripple_textarea"></textarea>
+                                                            </div>
+                                                            <div class="reg_ripple_create">
+                                                                <div class="review clear">
+                                                                    <button class="reg_btn">등록</button>
+                                                                    <button class="reg_cancel">취소</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="reply_list">
+                                                    <!---->
+                                                </ul>
+                                            </li>
+                                            <li id="contentsReviewItem0" class="review_item">
+                                                    <div class="review_area clear">
+                                                        <div class="user_profile">
+                                                            <div class="photo_area">
+                                                                <a href="/kr/schedule?menuId=DOM_000002000000000101&amp;userid=U000000000000773#">
+                                                                    <img src="img/img_non_profile.png" alt="" class="user_profile_img">
+                                                                </a>
+                                                                <img src="https://api.visitjeju.net/badge/iconpath/201803/05/eef5a818-bd4e-4d17-b649-b09f14848b80.png" alt="" class="user_badge">
+                                                            </div>
+                                                            <p class="user_name">조**</p>
+                                                            <p class="reg_date">2018.06.11</p>
+                                                            <div class="score_area_p">
+                                                                <p class="score_count_p" style="width: 100%;">100%</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user_content">
+                                                            <div class="recom_area">
+                                                                <p class="ico_like">0</p>
+                                                                <button type="button" class="btn_rcmd">추천</button>
+                                                            </div>
+                                                            <div class="checked_area clear">
+                                                                <ul class="check_list">
+                                                                    <li>방문했어요</li>
+                                                                    <li class="top">
+                                                                        <a href="#">##힐링 </a>
+                                                                    </li>
+                                                                    <li class="top">
+                                                                        <a href="#">##미식 </a>
+                                                                    </li>
+                                                                    <li class="top">
+                                                                        <a href="#">##체험 </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <button type="button">리뷰 번역</button>
+                                                            </div>
+                                                            <div class="review clear">
+                                                                <p class="review_txt">성산일출봉 너무 좋았어요! 멋진 자연경관 ㅠ</p>
+                                                                <ul class="review_img_list clear"></ul>
+                                                            </div>
+                                                            <div class="tbn_area clear">
+                                                                <a href="javascript:void(0);" class="btn_kt">카카오톡</a>
+                                                                <a href="javascript:void(0);" class="btn_fb">페이스북</a>
+                                                                <a href="javascript:void(0);" class="btn_tw">트위터</a>
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <button type="button" class="type_1">댓글(0)</button>
+                                                                <button type="button" class="type_1">댓글 쓰기</button>
+                                                                <!---->
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul id="regRippleBox0" class="reg_ripple">
+                                                        <li class="reg_ripple_item">
+                                                            <div class="reg_ripple_area clear">
+                                                                <div class="reg_ripple_input">
+                                                                    <textarea placeholder="홍보 및 비방성 글 등 리뷰 성격에 맞지 않는 글은 관리자에 의해 삭제 될 수 있습니다." maxlength="1000" class="reg_ripple_textarea"></textarea>
+                                                                </div>
+                                                                <div class="reg_ripple_create">
+                                                                    <div class="review clear">
+                                                                        <button class="reg_btn">등록</button>
+                                                                        <button class="reg_cancel">취소</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="reply_list">
+                                                        <!---->
+                                                    </ul>
+                                                </li>
+                                </ul>
+                            </div>
+                            <div class="paging">
+                                <div id="paging" class="page-wrap">
+                                    <a href="javascript:void(0)" class="spr_com page-first">첫 페이지</a>
+                                    <a href="javascript:void(0)" class="spr_com page-prev">이전 페이지</a>
+                                    <a href="javascript:void(0)" class="current">1</a>
+                                    <a href="javascript:void(0)" class="">2</a>
+                                    <a href="javascript:void(0)" class="">3</a>
+                                    <a href="javascript:void(0)" class="">4</a>
+                                    <a href="javascript:void(0)" class="">5</a>
+                                    <a href="javascript:void(0)" class="">6</a>
+                                    <a href="javascript:void(0)" class="">7</a>
+                                    <a href="javascript:void(0)" class="">8</a>
+                                    <a href="javascript:void(0)" class="">9</a>
+                                    <a href="javascript:void(0)" class="">10</a>
+                                    <a href="javascript:void(0)" class="spr_com page-next">다음 페이지</a>
+                                    <a href="javascript:void(0)" class="spr_com page-last">마지막 페이지</a>
+                                </div>
+                            </div>
+                            <!---->
+                            <!---->
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script>
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5"></script>
+
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 10 // 지도의 확대 레벨
+            };
+
+        var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        // 지도를 표시하는 div 크기를 변경하는 함수입니다
+        function resizeMap() {
+            var mapContainer = document.getElementById('map');
+            mapContainer.style.width = '650px';
+            mapContainer.style.height = '650px';
+        }
+
+        function relayout() {
+
+            // 지도를 표시하는 div 크기를 변경한 이후 지도가 정상적으로 표출되지 않을 수도 있습니다
+            // 크기를 변경한 이후에는 반드시  map.relayout 함수를 호출해야 합니다 
+            // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
+            map.relayout();
+        } -->
+
+
+
+
+
+    <script>
+        // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
+        var infowindow = new daum.maps.InfoWindow({
+            zIndex: 1
+        });
+
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new daum.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+                level: 5 // 지도의 확대 레벨
+            };
+
+
+
+        // 지도를 생성합니다    
+        var map = new daum.maps.Map(mapContainer, mapOption);
+
+        // 장소 검색 객체를 생성합니다
+        var ps = new daum.maps.services.Places();
+
+        // 키워드로 장소를 검색합니다
+        ps.keywordSearch('성산일출봉 관광지', placesSearchCB);
+
+        // 키워드 검색 완료 시 호출되는 콜백함수 입니다
+        function placesSearchCB(data, status, pagination) {
+            if (status === daum.maps.services.Status.OK) {
+
+                // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
+                // LatLngBounds 객체에 좌표를 추가합니다
+                var bounds = new daum.maps.LatLngBounds();
+
+                for (var i = 0; i < data.length; i++) {
+                    displayMarker(data[i]);
+                    bounds.extend(new daum.maps.LatLng(data[i].y, data[i].x));
+                }
+
+                // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
+                map.setBounds(bounds);
+            }
+        }
+
+        // 지도에 마커를 표시하는 함수입니다
+        function displayMarker(place) {
+
+            // 마커를 생성하고 지도에 표시합니다
+            var marker = new daum.maps.Marker({
+                map: map,
+                position: new daum.maps.LatLng(place.y, place.x)
+            });
+
+            // 마커에 클릭이벤트를 등록합니다
+            daum.maps.event.addListener(marker, 'click', function () {
+                // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
+                infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
+                infowindow.open(map, marker);
+            });
+        }
+
+
+        function relayout() {
+
+            // 지도를 표시하는 div 크기를 변경한 이후 지도가 정상적으로 표출되지 않을 수도 있습니다
+            // 크기를 변경한 이후에는 반드시  map.relayout 함수를 호출해야 합니다 
+            // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
+            map.relayout();
+        }
+
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("conts_detail");
+
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab_btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            console.log(evt.currentTarget.className);
+
+        }
+            relayout();
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+    <script>
+    </script>
+
+
+</body>
