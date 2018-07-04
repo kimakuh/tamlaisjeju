@@ -1066,7 +1066,7 @@ notice - 공지사항
 
 #sub05 .spr_com {
     display: inline-block;
-    background: url(../../img/sub05/common/spr_comm.png) no-repeat;
+    background: url(../img/sub05/common/spr_comm.png) no-repeat;
     text-indent: -999px;
     overflow: hidden;
     vertical-align: middle;
@@ -1112,7 +1112,7 @@ notice - 공지사항
 #sub05 .search_wrap .i-select {
     float: left;
     margin-right: 10px;
-    background: url(../../img/sub05/commom/ico_arr_dn.png) no-repeat 145px 50% #fff;
+    background: url(../img/sub05/commom/ico_arr_dn.png) no-repeat 145px 50% #fff;
 }
 
 #sub05 .search_wrap .i-select select {
@@ -1148,7 +1148,7 @@ notice - 공지사항
     height: 45px;
     margin-left: 20px;
     padding-left: 48px;
-    background: url(../../img/sub05/common/ico_btn_search.png) no-repeat 22px 50%;
+    background: url(../img/sub05/common/ico_btn_search.png) no-repeat 22px 50%;
     background-color: #2168f6;
     font-size: 18px;
     font-weight: 700;
