@@ -414,7 +414,7 @@
 /* 지도 하단 검색 */
 #sub1 .map_search_area {
     width: 1200px;
-    height: 45px;
+    height: 75px;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 15px 0 15px 60px;
