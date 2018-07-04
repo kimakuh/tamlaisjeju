@@ -403,7 +403,7 @@
 }
 
 #sub1 .c1 a::before {
-    background-image: url(img/marker_loc_1.png);
+    background-image: url(../img/sub01/marker_loc_1.png);
 }
 
 #sub1 .c1 a::before {
