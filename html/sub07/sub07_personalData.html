@@ -28,7 +28,7 @@
 
 </head>
 <body>
-
+<div id="header"></div>
 	<div class="container" id="sub7">
 		<div class="div-h3">
 			<h3>개인정보 처리방침</h3>
@@ -352,6 +352,16 @@
 			</div>
 		</div>
 	</div>
+	<div id="footer"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
 
 </body>
 </html>
