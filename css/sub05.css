@@ -13,8 +13,8 @@ all - 여행필수정보 전체
 
 #sub05 #content {
     margin: 0 auto;
-    padding: 0px 20px 100px;
-    width: 1160px;
+    /* padding: 0px 20px 100px; */
+    width: 1200px;
 }
 
 
