@@ -9,7 +9,7 @@ all - 여행필수정보 전체
 }
 
 #sub05 #content {
-    margin: 30px auto;
+    margin: 0 auto 30px;
     /* padding: 0px 20px 100px; */
     width: 1200px;
 }
@@ -456,3 +456,151 @@ weather - 제주 날씨
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
+/**************************************************************************************
+traffic_one - 교통정보안내
+***************************************************************************************/
+
+
+
+#sub05 .cont_wrap h3 {
+    font-size: 35px;
+    color: #1b1b1b;
+    line-height: 35px;
+    text-align: center;
+    }
+    #sub05 .cont_wrap.h3_txt, .cont_wrap.h4_txt {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    }
+    #sub05 .cont_wrap .h3_txt {
+    margin-top: 24px;
+    font-size: 18px;
+    color: #555;
+    line-height: 30px;
+    text-align: center;
+    }
+    
+    #sub05 .theme_list {
+    margin-top: 64px;
+    border: 1px solid #e5e5e5;
+    border-bottom: 0;
+    }
+    #sub05 .item_5 li {
+    width: 231px;
+    }
+    #sub05 .theme_list li:first-child {
+    width: 20%;
+    border-left: 0;
+    }
+    #sub05 .theme_list li {
+    display: table;
+    float: left;
+    width: 20%;
+    height: 42px;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    }
+    #sub05 .theme_list li {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    #sub05 .theme_list.item_5 li.on {
+    width: 230px;
+    }
+    #sub05 .theme_list li a {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #959595;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    }
+    #sub05 .theme_list li.on a {
+    background: #2168f6;
+    color: #fff;
+    }
+    
+    #sub05 .sub-detail .detail-text {
+    margin: 60px 0 0;
+    text-align: left;
+    }
+    
+    #sub05 .btnC {
+    padding: 10px 0;
+    text-align: center;
+    }
+    #sub05 .btnC, #sub05 .btnL {
+    display: block;
+    }
+    #sub05 .btnC.btn:first-child {
+    margin-left: 0;
+    }
+    #sub05 .btn.line {
+    border: 2px solid #333;
+    color: #333;
+    background: #fff;
+    }
+    #sub05 .btnC.btn {
+    margin-left: 10px;
+    }
+    #sub05 .btnT {
+    height: 47px;
+    line-height: 47px;
+    font-size: 18px;
+    }
+    #sub05 .btn {
+    color: #fff;
+    border: none;
+    padding: 0 30px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    }
+    
+    #sub05 .tour_info .cont_inner_wrap {
+    padding-top: 60px;
+    text-align: center;
+    }
+    #sub05 .sub-detail .subImg {
+    display: inline-block;
+    margin: 10px 0 30px;
+    }
+    
+    #sub05 .sub-detail h4.sub_title {
+    font-size: 24px;
+    }
+    #sub05 .tour_info .cont_inner_wrap h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    }
+    #sub05 .sub-detail .tit35, #sub05 .sub-detail h4 {
+    font-size: 35px;
+    color: #222;
+    line-height: 46px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    }
+    #sub05 .cont_wrap h4 {
+    font-size: 35px;
+    color: #1b1b1b;
+    line-height: 35px;
+    text-align: center;
+    }
+    #sub05 .sub-detail h4.sub_title+p {
+    font-size: 16px;
+    margin-top: 10px;
+    }
+    #sub05 .sub-detail h4+p {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    line-height: 27px;
+    letter-spacing: -1px;
+    }
