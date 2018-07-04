@@ -1,7 +1,4 @@
-        * {
-            margin: 0;
-            padding: 0;
-        }
+
 
         .wide_inner_img {
             width: 100%;
@@ -24,7 +21,7 @@
         .layer_main {
             width: 1160px;
             /* height: 2568px; */
-            margin: auto;
+            margin: 30px auto;
             padding: 0;
             position: relative;
             background-repeat: no-repeat;
