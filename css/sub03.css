@@ -187,12 +187,12 @@ ul {
     bottom: 0;
     left: 50%;
     margin-left: -72px;
-    border: 1px solid #f29221;
+    border: 1px solid #2168f6;
     border-radius: 5px;
     width: 145px;
     height: 33px;
     font-size: 15px;
-    color: #f29221;
+    color: #2168f6;
     background: #fff;
 }
 
@@ -423,7 +423,7 @@ ul {
 
 #sub3 .item_section .item_count_area .ico_type.like {
     display: block;
-    background: url(../img/sub03/ico_like.png) no-repeat 50% 2px;
+    background: url(../img/common/ico_like.png) no-repeat 50% 2px;
 }
 
 #sub3 .item_section .item_count_area .ico_type {
@@ -576,11 +576,11 @@ ul {
 }
 
 #sub3 .item_section .item_count_area .ico_type.zzim {
-    background: url(../img/sub03/ico_zzim_l.png) no-repeat 50% 0;
+    background: url(../img/common/ico_zzim.png) no-repeat 50% 0;
 }
 
 #sub3 .item_section .item_count_area .ico_type.review {
-    background: url(../img/sub03/ico_review.png) no-repeat 50% 0;
+    background: url(../img/common/ico_review.png) no-repeat 50% 0;
 }
 
 #sub3 .recommend_area .item_list .type_thumb.type_1 li {
