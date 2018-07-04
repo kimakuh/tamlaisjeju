@@ -33,7 +33,7 @@ all - 여행필수정보 전체
 #sub05 .ico_home {
     width: 15px;
     height: 27px;
-    background: url(../img/common/ico_home.png) no-repeat 0 50%;
+    background: url(../img/sub05/common/ico_home.png) no-repeat 0 50%;
     text-indent: -9999px;
 }
 
@@ -56,7 +56,7 @@ all - 여행필수정보 전체
 #sub05 .location_wrap .location .lst_depth .btn_dropdown {
     padding-right: 15px;
     color: #535353;
-    background: url(../img/common/bg_locaion_dropdown.gif) no-repeat right 5px;
+    background: url(../img/sub05/common/bg_locaion_dropdown.gif) no-repeat right 5px;
     cursor: pointer;
 }
 
@@ -145,27 +145,27 @@ all - 여행필수정보 전체
 
 #sub05 .location_wrap .util_zone .util_list li a.btn_kt {
     margin-left: 0;
-    background: url(../img/common/ico_kakao.png) no-repeat 0 50%;
+    background: url(../img/sub05/sub05/common/ico_kakao.png) no-repeat 0 50%;
 }
 
 #sub05 .location_wrap .util_zone .util_list li a.btn_fb {
     margin-left: 0;
-    background: url(../img/common/ico_facebook.png) no-repeat 0 50%;
+    background: url(../img/sub05/sub05/common/ico_facebook.png) no-repeat 0 50%;
 }
 
 #sub05 .location_wrap .util_zone .util_list li a.btn_tw {
     margin-left: 0;
-    background: url(../img/common/ico_twitter.png) no-repeat 0 50%;
+    background: url(../img/sub05/common/ico_twitter.png) no-repeat 0 50%;
 }
 
 #sub05 .location_wrap .util_zone .util_list li a.btn_pr {
     margin-left: 0;
-    background: url(../img/common/ico_print.png) no-repeat 0 50%;
+    background: url(../img/sub05/common/ico_print.png) no-repeat 0 50%;
 }
 
 #sub05 .location_wrap .util_zone .util_list li a.btn_re {
     margin-left: 0;
-    background: url(../img/common/ico_report.png) no-repeat 0 50%;
+    background: url(../img/sub05/common/ico_report.png) no-repeat 0 50%;
 }
 
 #sub05 .location_wrap .util_zone .util_list li a {
@@ -292,12 +292,12 @@ all - 여행필수정보 전체
     font-weight: 400;
     color: #2168f6;
     line-height: 20px;
-    background-image: url(../img/common/icon_arrow02.png);
+    background-image: url(../img/sub05/common/icon_arrow02.png);
     background-repeat: no-repeat;
     background-position: right 5px;
 }
 
 #sub05 .landing_lnk a:hover span {
     color: #fff;
-    background-image: url(../img/common/icon_arrow01.png);
+    background-image: url(../img/sub05/common/icon_arrow01.png);
 }
