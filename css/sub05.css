@@ -462,15 +462,13 @@ weather - 제주 날씨
 traffic_one - 교통정보안내
 ***************************************************************************************/
 
-
-
 #sub05 .cont_wrap h3 {
     font-size: 35px;
     color: #1b1b1b;
     line-height: 35px;
     text-align: center;
     }
-    #sub05 .cont_wrap.h3_txt, .cont_wrap.h4_txt {
+    #sub05 .cont_wrap.h3_txt, #sub05 .cont_wrap.h4_txt {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
     }
