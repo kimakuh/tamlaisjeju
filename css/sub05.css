@@ -302,3 +302,157 @@ all - 여행필수정보 전체
 /**************************************************************************************
 weather - 제주 날씨
 ***************************************************************************************/
+
+
+
+
+#sub05 div.weatherMap {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background: url(../img/tour_info/mapBg.gif);
+    text-align: center;
+}
+
+#sub05 div.weatherMap img {
+    display: inline-block;
+    width: 65%;
+    height: auto;
+}
+
+#sub05 ul.weather {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 60px 0 0;
+}
+
+#sub05 ul.weather li:first-child {
+    top: -12px;
+    left: 387px;
+}
+
+#sub05 ul.weather li:nth-child(2) {
+    bottom: 10px;
+    left: 410px;
+}
+
+#sub05 ul.weather li:nth-child(3) {
+    top: 124px;
+    right: 0;
+}
+
+#sub05 ul.weather li:nth-child(4) {
+    top: 330px;
+    left: -4px;
+}
+
+#sub05 ul.weather li:last-child {
+    margin-right: 0;
+}
+
+#sub05 ul.weather li {
+    position: absolute;
+    display: block;
+    text-align: center;
+    height: 220px;
+    overflow: hidden;
+    float: left;
+    width: calc(25% - 12px);
+    margin-right: 16px;
+}
+
+#sub05 ul.weather li .title {
+    margin: 20px 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+#sub05 ul.weather li .icon {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 50%;
+}
+
+#sub05 ul.weather li .info {
+    display: block;
+    float: left;
+    text-align: left;
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+#sub05 .hide {
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    margin: 0 -1px -1px 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+#sub05 ul.weather li .icon img {
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+}
+
+#sub05 div.weatherMap img {
+    display: inline-block;
+    width: 65%;
+    height: auto;
+}
+
+#sub05 ul.weather li .info strong {
+    display: block;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+#sub05 .sub-detail .weather_btn {
+    display: block;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 17px;
+    line-height: 22px;
+    margin: 40px auto 0;
+    padding: 0;
+    text-align: center;
+}
+
+#sub05 .sub-detail .weather_btn a {
+    display: block;
+    width: 100%;
+    padding: 15px 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#sub05 .btn.darkcyan {
+    background: #2168f6;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#sub05 .btn {
+    color: #fff;
+    border: none;
+    padding: 0 30px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sub05 .sub-detail .weather_btn a {
+    display: block;
+    width: 100%;
+    padding: 15px 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
