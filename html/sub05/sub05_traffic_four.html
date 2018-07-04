@@ -1,381 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
-<title>택시</title>
-<meta charset="utf-8">
-<style>
-    div {
-    display: block;
-    }
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta property="og:title" content="탐라는제주">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <!-- sub05 -->
+    <link rel="stylesheet" href="../../css/sub05.css" />
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
 
-    a, fieldset, img, table {
-    border: 0;
-    }
-
-    a, a:active, a:hover, a:link, a:visited {
-    color: inherit;
-    text-decoration: none;
-    }
-
-
-    blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, frame, h1, h2, h3, h4, h5, h6, hr, html, iframe, input, legend, li, object, ol, p, pre, q, select, table, td, textarea, tr, ul {
-    margin: 0;
-    padding: 0;
-    }
-
-    ol, ul {
-    list-style: none;
-    }
-
-    article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-    }
-
-    table {
-    width: 100%;
-    border-spacing: 0;
-    border-collapse: collapse;
-    }
-    thead {
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
-    }
-    tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-    }
-
-    caption, legend {
-    font-size: 0;
-    line-height: 0;
-    height: 0;
-    visibility: hidden;
-    }
-
-    .clear{
-        clear: both;
-    }
-
-    .clear:after {
-    display: block;
-    content: "";
-    clear: both;
-    }
-
-
-    .header{
-        position: fixed;
-        width: 100%;
-        height: 161px;
-        background-color: rgba(0, 0, 0, .5);
-    }
-    .footer{
-        width: 100%;
-        height: 731px;
-        background-color: rgba(0, 0, 0, .5);
-        z-index: 100;
-        float: left;
-    }
-
-    #sub05_container {
-    padding-top: 161px;
-    min-height: 500px;
-    }
-
-    #content{
-        margin: 0 auto;
-        padding: 0px 20px;
-        width: 1160px;
-    }
-
-    .location_wrap{
-        height: 27px;
-        padding: 11px 28px;
-        border: 1px solid #e5e5e5;
-        border-top: 0;
-    }
-    .location{
-        float: left;
-    }
-
-    .ico_home{
-        width: 15px;
-        height: 27px;
-        background: url(../img/common/ico_home.png) no-repeat 0 50%;
-        text-indent: -9999px;
-    }
-
-    .location_wrap .location a, .location_wrap .location div.lst_depth, .location_wrap .location span {
-    display: block;
-    float: left;
-    }
-
-    .location_wrap .location .lst_depth, .location_wrap .location .p_depth {
-    height: 27px;
-    margin-left: 6px;
-    font-size: 14px;
-    color: #959595;
-    line-height: 27px;
-    }
-
-    .location_wrap .location .lst_depth .btn_dropdown {
-    padding-right: 15px;
-    color: #535353;
-    background: url(../img/common/bg_locaion_dropdown.gif) no-repeat right 5px;
-    }
-
-    .location_wrap .location {
-    float: left;
-    }
-
-    .location_wrap .location a, .location_wrap .location div.lst_depth, .location_wrap .location span {
-    display: block;
-    float: left;
-    }
-
-    .location_wrap .util_zone {
-    float: right;
-    }
-
-    .location_wrap .util_zone .btn_s_lnk {
-    -webkit-box-shadow: 1px 1px #c1c1c1;
-    box-shadow: 1px 1px #c1c1c1;
-    }
-
-    .location_wrap .util_zone .btn_s_lnk {
-    display: block;
-    float: left;
-    width: 73px;
-    height: 25px;
-    border: 1px solid #959595;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #959595;
-    line-height: 25px;
-    text-align: center;
-    }
-    .location_wrap .util_zone .util_list {
-    float: left;
-    margin-left: 27px;
-    }
-    .location_wrap .util_zone .util_list li {
-    float: left;
-    margin: 0 0 0 12px;
-    }
-    .location_wrap .util_zone .util_list li a.btn_kt {
-    margin-left: 0;
-    background: url(../img/common/ico_kakao.png) no-repeat 0 50%;
-    }
-    .location_wrap .util_zone .util_list li a.btn_fb {
-    margin-left: 0;
-    background: url(../img/common/ico_facebook.png) no-repeat 0 50%;
-    }
-    .location_wrap .util_zone .util_list li a.btn_tw {
-    margin-left: 0;
-    background: url(../img/common/ico_twitter.png) no-repeat 0 50%;
-    }
-    .location_wrap .util_zone .util_list li a.btn_pr {
-    margin-left: 0;
-    background: url(../img/common/ico_print.png) no-repeat 0 50%;
-    }
-    .location_wrap .util_zone .util_list li a.btn_re {
-    margin-left: 0;
-    background: url(../img/common/ico_report.png) no-repeat 0 50%;
-    }
-    .location_wrap .util_zone .util_list li a {
-    display: block;
-    width: 22px;
-    height: 27px;
-    margin-left: 17px;
-    text-indent: -9999px;
-    }
-
-    .cont_wrap {
-    padding-top: 50px;
-    }
-    .cont_wrap h3 {
-    font-size: 35px;
-    color: #1b1b1b;
-    line-height: 35px;
-    text-align: center;
-    }
-    .cont_wrap .h3_txt, .cont_wrap .h4_txt {
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-    }
-    .cont_wrap .h3_txt {
-    margin-top: 24px;
-    font-size: 18px;
-    color: #555;
-    line-height: 30px;
-    text-align: center;
-    }
-    .cont_wrap h4 {
-    font-size: 35px;
-    color: #1b1b1b;
-    line-height: 35px;
-    text-align: center;
-    }
-
-    .theme_list {
-    margin-top: 64px;
-    border: 1px solid #e5e5e5;
-    border-bottom: 0;
-    }
-    .item_5 li {
-    width: 231px;
-    }
-    .theme_list li:first-child {
-    width: 20%;
-    border-left: 0;
-    }
-    .theme_list li {
-    display: table;
-    float: left;
-    width: 20%;
-    height: 42px;
-    border-bottom: 1px solid #e5e5e5;
-    border-left: 1px solid #e5e5e5;
-    }
-    .theme_list li {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    }
-    .theme_list.item_5 li.on {
-    width: 230px;
-    }
-    .theme_list li a {
-    display: table-cell;
-    width: 100%;
-    height: 100%;
-    font-size: 18px;
-    font-weight: 700;
-    color: #959595;
-    line-height: 24px;
-    text-align: center;
-    vertical-align: middle;
-    }
-    .theme_list li.on a {
-    background: #2168f6;
-    color: #fff;
-    }
-
-
-    .cont_inner_wrap {
-    padding-top: 30px;
-    padding-bottom: 100px;
-    text-align: center;
-    }
-    .cont_inner_wrap h4 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    }
-
-
-    .sub-detail h4.sub_title {
-    font-size: 24px;
-    }
-    .sub-detail .sub-detail h4 {
-    font-size: 35px;
-    color: #222;
-    line-height: 46px;
-    font-weight: 400;
-    letter-spacing: -1px;
-    }
-    h4.sub_title+p {
-    font-size: 16px;
-    margin-top: 10px;
-    }
-    h4+p {
-    margin-top: 25px;
-    font-size: 18px;
-    color: #666;
-    text-align: center;
-    line-height: 27px;
-    letter-spacing: -1px;
-    }
-
-    .detail-text {
-    margin: 60px 0 0;
-    text-align: left;
-    }
-
-    .detail-text h5 {
-    display: block;
-    margin-bottom: 24px;
-    padding-left: 16px;
-    background: url(../img/common/iconH4.png) no-repeat 0;
-    font-size: 22px;
-    text-align: left;
-    line-height: 1.3;
-    }
-
-
-    .table-type01 {
-    width: 100%;
-    border: 1px solid #e2e2e2;
-    margin-bottom: 30px;
-    line-height: 1.3;
-    }
-    .table-type01.center {
-    text-align: center;
-    }
-    .table-type01.w100 {
-    width: 100%;
-    }
-    .table-type01 td, .table-type01 th {
-    border: 1px solid #e2e2e2;
-    border-right: none;
-    border-top: none;
-    font-size: 14px;
-    padding: 15px 0;
-    }
-    .table-type01 th {
-    background: #f0f0f0;
-    font-weight: 400;
-    }
-    .table-type01 td {
-    position: relative;
-    height: auto;
-    }
-    .table-type01 td, .table-type01 th {
-    border: 1px solid #e2e2e2;
-    border-right: none;
-    border-top: none;
-    font-size: 14px;
-    padding: 15px 0;
-    }
-
-    .btn.orange {
-    background: #2168f6;
-    color: #fff;
-    border-radius: 5px;
-    }
-    .btnB, .btnB02 {
-    font-size: 17px;
-    }
-    .btnB {
-    height: 49px;
-    line-height: 49px;
-    }
-    .btn {
-    color: #fff;
-    border: none;
-    padding: 0 30px;
-    font-weight: 400;
-    display: inline-block;
-    vertical-align: middle;
-    }
-
-</style>
-</head>
+    <style type="text/css">
+		@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+	</style>
+	</head>
 <body>
-    <div class="header">HEADER</div>
-    <div id="sub05_container">
+	<div id="header"></div>
+    <div id="sub05" class="sub05 container">
         <div id="content">
             <div class="location_wrap clear">
                 <div class="location clear">
@@ -482,7 +138,16 @@
         </div>
     </div>
 
-    <div class="footer">FOOTER</div>
+	<div id="footer"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
 
 </body>
 </html>
