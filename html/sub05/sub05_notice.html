@@ -1,471 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
-    <title>공지사항</title>
+    <!-- meta tags -->
     <meta charset="utf-8">
-    <style>
-        div {
-            display: block;
-        }
-
-        a,
-        fieldset,
-        img,
-        table {
-            border: 0;
-        }
-
-        a,
-        a:active,
-        a:hover,
-        a:link,
-        a:visited {
-            color: inherit;
-            text-decoration: none;
-        }
-
-
-
-
-        blockquote,
-        body,
-        button,
-        caption,
-        dd,
-        div,
-        dl,
-        dt,
-        fieldset,
-        form,
-        frame,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        hr,
-        html,
-        iframe,
-        input,
-        legend,
-        li,
-        object,
-        ol,
-        p,
-        pre,
-        q,
-        select,
-        table,
-        td,
-        textarea,
-        tr,
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        ol,
-        ul {
-            list-style: none;
-        }
-
-        article,
-        aside,
-        canvas,
-        details,
-        figcaption,
-        figure,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        section {
-            display: block;
-        }
-
-        table {
-            width: 100%;
-            border-spacing: 0;
-            border-collapse: collapse;
-        }
-
-        caption,
-        legend {
-            font-size: 0;
-            line-height: 0;
-            height: 0;
-            visibility: hidden;
-        }
-
-        button {
-            border: 0;
-            font-family: inherit;
-            cursor: pointer;
-            text-transform: inherit;
-        }
-
-        .clear {
-            clear: both;
-        }
-
-        .clear:after {
-            display: block;
-            content: "";
-            clear: both;
-        }
-
-
-        .header {
-            position: fixed;
-            width: 100%;
-            height: 161px;
-            background-color: rgba(0, 0, 0, .5);
-        }
-
-        .footer {
-            width: 100%;
-            height: 731px;
-            background-color: rgba(0, 0, 0, .5);
-            z-index: 100;
-            float: left;
-        }
-
-        #sub05_container {
-            padding-top: 161px;
-            min-height: 500px;
-        }
-
-        #content {
-            margin: 0 auto;
-            padding: 0px 20px;
-            width: 1160px;
-        }
-
-        .location_wrap {
-            height: 27px;
-            padding: 11px 28px;
-            border: 1px solid #e5e5e5;
-            border-top: 0;
-        }
-
-        .location {
-            float: left;
-        }
-
-        .ico_home {
-            width: 15px;
-            height: 27px;
-            background: url(img/common/ico_home.png) no-repeat 0 50%;
-            text-indent: -9999px;
-        }
-
-        .location_wrap .location a,
-        .location_wrap .location div.lst_depth,
-        .location_wrap .location span {
-            display: block;
-            float: left;
-        }
-
-        .location_wrap .location .lst_depth,
-        .location_wrap .location .p_depth {
-            height: 27px;
-            margin-left: 6px;
-            font-size: 14px;
-            color: #959595;
-            line-height: 27px;
-        }
-
-        .location_wrap .location .lst_depth .btn_dropdown {
-            padding-right: 15px;
-            color: #535353;
-            background: url(img/common/bg_locaion_dropdown.gif) no-repeat right 5px;
-        }
-
-        .location_wrap .location {
-            float: left;
-        }
-
-        .location_wrap .location a,
-        .location_wrap .location div.lst_depth,
-        .location_wrap .location span {
-            display: block;
-            float: left;
-        }
-
-        .location_wrap .util_zone {
-            float: right;
-        }
-
-        .location_wrap .util_zone .btn_s_lnk {
-            -webkit-box-shadow: 1px 1px #c1c1c1;
-            box-shadow: 1px 1px #c1c1c1;
-        }
-
-        .location_wrap .util_zone .btn_s_lnk {
-            display: block;
-            float: left;
-            width: 73px;
-            height: 25px;
-            border: 1px solid #959595;
-            border-radius: 5px;
-            font-size: 14px;
-            color: #959595;
-            line-height: 25px;
-            text-align: center;
-        }
-
-        .location_wrap .util_zone .util_list {
-            float: left;
-            margin-left: 27px;
-        }
-
-        .location_wrap .util_zone .util_list li {
-            float: left;
-            margin: 0 0 0 12px;
-        }
-
-        .location_wrap .util_zone .util_list li a.btn_kt {
-            margin-left: 0;
-            background: url(../img/common/ico_kakao.png) no-repeat 0 50%;
-        }
-
-        .location_wrap .util_zone .util_list li a.btn_fb {
-            margin-left: 0;
-            background: url(../img/common/ico_facebook.png) no-repeat 0 50%;
-        }
-
-        .location_wrap .util_zone .util_list li a.btn_tw {
-            margin-left: 0;
-            background: url(../img/common/ico_twitter.png) no-repeat 0 50%;
-        }
-
-        .location_wrap .util_zone .util_list li a.btn_pr {
-            margin-left: 0;
-            background: url(../img/common/ico_print.png) no-repeat 0 50%;
-        }
-
-        .location_wrap .util_zone .util_list li a.btn_re {
-            margin-left: 0;
-            background: url(../img/common/ico_report.png) no-repeat 0 50%;
-        }
-
-        .location_wrap .util_zone .util_list li a {
-            display: block;
-            width: 22px;
-            height: 27px;
-            margin-left: 17px;
-            text-indent: -9999px;
-        }
-
-        .cont_wrap {
-            padding-top: 50px;
-        }
-
-        .cont_inner_wrap {
-            padding-top: 30px;
-            text-align: center;
-        }
-
-        .cont_inner_wrap h4 {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 24px;
-        }
-
-        .cont_wrap h4 {
-            color: #1b1b1b;
-        }
-
-        .cont_inner_wrap .h4_txt {
-            font-size: 16px;
-            line-height: 28px;
-        }
-
-        .cont_wrap .h3_txt,
-        .cont_wrap .h4_txt {
-            -ms-word-wrap: break-word;
-            word-wrap: break-word;
-        }
-
-        .h4_txt {
-            margin-top: 37px;
-            font-size: 18px;
-            color: #555;
-            line-height: 30px;
-            text-align: center;
-        }
-
-        .sub_detail {
-            margin-top: 70px;
-        }
-
-
-        .tbl_type01 {
-            border-top: 2px solid #535353;
-            font-size: 16px;
-        }
-
-        .tbl_type01 td,
-        .tbl_type01 th {
-            height: 60px;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        .tbl_type01 th {
-            padding: 0;
-            font-size: 17px;
-            color: #1b1b1b;
-        }
-
-        .tbl_type01 td {
-            color: #535353;
-            text-align: center;
-        }
-
-
-        .board_wrap .paging_wrap {
-            position: relative;
-            padding-bottom: 70px;
-        }
-
-        .paging_wrap {
-            padding-top: 20px;
-            text-align: center;
-        }
-
-        .paging {
-            position: relative;
-            text-align: center;
-            padding-top: 70px;
-        }
-
-        .paging .page-wrap {
-            display: inline-block;
-        }
-
-        .paging .page-wrap a.page-first,
-        .paging .page-wrap a.page-last {
-            margin: 0 3px;
-        }
-
-        .paging .page-wrap a {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            margin: 0 8px;
-            vertical-align: middle;
-            border: 1px solid #ccc;
-            line-height: 30px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .spr_com.page-first {
-            background-position: 0 -100px;
-        }
-
-        .spr_com {
-            display: inline-block;
-            background: url(../img/common/spr_comm.png) no-repeat;
-            text-indent: -999px;
-            overflow: hidden;
-            vertical-align: middle;
-        }
-
-        .spr_com.ico-file {
-            width: 9px;
-            height: 18px;
-            background-position: -60px -20px;
-        }
-
-        .spr_com.page-prev {
-            background-position: -30px -100px;
-            margin-right: 30px !important;
-        }
-
-        .paging a.current {
-            color: #fff !important;
-            font-weight: 700;
-            border-color: #2168f6;
-            background-color: #2168f6;
-        }
-
-        .spr_com.page-next {
-            background-position: -60px -100px;
-            margin-left: 30px !important;
-        }
-
-        .spr_com.page-last {
-            background-position: -90px -100px;
-        }
-
-        .board_wrap .search_wrap {
-            padding: 15px 0;
-            background: #f4f4f4;
-            text-align: center;
-        }
-
-        .board_wrap .search_wrap div {
-            display: inline-block;
-        }
-
-        .search_wrap .i-select {
-            float: left;
-            margin-right: 10px;
-            background: url(../img/common/ico_arr_dn.png) no-repeat 145px 50% #fff;
-        }
-
-        .search_wrap .i-select select {
-            width: 180px;
-            padding: 12px 0 13px 15px;
-            font-size: 18px;
-            color: #959595;
-            line-height: 18px;
-        }
-
-        .i-select select {
-            min-width: 120px;
-            border: none;
-            background: none;
-            -webkit-appearance: none;
-        }
-
-        .board_wrap .search_wrap div input {
-            float: left;
-            width: 488px;
-            height: 43px;
-            padding-left: 10px;
-            border: 1px solid #e5e5e5;
-            font-family: inherit;
-            font-size: 14px;
-            color: #000;
-            line-height: 43px;
-        }
-
-        .board_wrap .search_wrap div .btn_search {
-            float: left;
-            width: 100px;
-            height: 45px;
-            margin-left: 20px;
-            padding-left: 48px;
-            background: url(../img/common/ico_btn_search.png) no-repeat 22px 50%;
-            background-color: #2168f6;
-            font-size: 18px;
-            font-weight: 700;
-            color: #fff;
-            line-height: 45px;
-            text-align: left;
-        }
-
-    </style>
-</head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta property="og:title" content="탐라는제주">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <!-- sub05 -->
+    <link rel="stylesheet" href="../../css/sub05.css" />
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+
+    <style type="text/css">
+		@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+	</style>
+	</head>
 <body>
-    <div class="header">HEADER</div>
-    <div id="sub05_container">
+	<div id="header"></div>
+    <div id="sub05" class="sub05 container">
         <div id="content">
             <div class="location_wrap clear">
                 <div class="location clear">
@@ -727,7 +293,16 @@
             </div>
         </div>
     </div>
-    <div class="footer">FOOTER</div>
+    <div id="footer"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
 </body>
 
 </html>
