@@ -1156,3 +1156,58 @@ notice - 공지사항
     line-height: 45px;
     text-align: left;
 }
+
+
+
+
+
+
+
+
+
+/**************************************************************************************
+notice_view - 공지사항 뷰
+***************************************************************************************/
+
+
+
+#sub05 .tbl_type02 {
+    border-top: 2px solid #535353;
+    font-size: 16px;
+}
+
+#sub05 .tbl_type02 td,
+#sub05 .tbl_type02 th {
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+#sub05 .tbl_type02 th {
+    padding: 0 0 0 30px;
+    font-size: 17px;
+    color: #1b1b1b;
+}
+
+#sub05 .tbl_type02 td {
+    padding: 0 30px;
+    border-left: 1px solid #e5e5e5;
+    color: #535353;
+}
+
+#sub05 .tbl_type02 td,
+#sub05 .tbl_type02 th {
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+#sub05 .btnC {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#sub05 .btnC,
+#sub05 .btnL {
+    display: block;
+}
