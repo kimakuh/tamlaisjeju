@@ -1576,6 +1576,7 @@ table {
 #sub3 .review_wrap .review_item .review_area .user_content {
     position: relative;
     min-height: 180px;
+    padding-left:150px;
 }
 
 #sub3 .review_wrap .review_area .user_content {
@@ -1802,7 +1803,7 @@ table {
 }
 
 #sub3 .detail_page .map_search_area {
-    height: 45px;
+    height: 80px;
     margin-top: 50px;
     padding: 15px 0 15px 60px;
     background: #f4f4f4;
