@@ -564,6 +564,9 @@ traffic_one - 교통정보안내
     padding-top: 60px;
     text-align: center;
     }
+    #sub05 .sub-detail{
+        margin-top:30px
+    }
     #sub05 .sub-detail .subImg {
     display: inline-block;
     margin: 10px 0 30px;
