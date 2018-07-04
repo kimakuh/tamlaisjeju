@@ -23,7 +23,7 @@
 
         .layer_main {
             width: 1160px;
-            height: 2568px;
+            /* height: 2568px; */
             margin: auto;
             padding: 0;
             position: relative;
@@ -86,7 +86,7 @@
 
         .theme_list li {
             float: left;
-            width: 33.334%;
+            width: 33.33%;
             height: 33.3%;
             line-height: 43px;
             text-decoration: none;
