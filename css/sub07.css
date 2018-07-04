@@ -1,5 +1,277 @@
 @charset "utf-8";
 
+
+
+
+/**************************************************************************************
+presonalData - 개인정보취급방침
+***************************************************************************************/
+
+
+#sub7.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+#sub7 .text {
+	color: gray;
+	font-size: 14px;
+	line-height: 1.8;
+	margin-bottom: 30px;
+	padding: 0 15px;
+}
+
+.detail-text {
+	font-size: 14px;
+    padding: 0 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+#sub7 .table-style {
+    font-size: 14px;
+    padding: 15px 0;
+
+    font-weight: 400;
+}
+#sub7 .table-style th{
+	background: #f0f0f0;
+    font-weight: 400;
+    text-align: center;
+}
+#sub7 .text td{
+	text-align: center;
+}
+
+#sub7 .div-h3 {
+	font-size: 35px;
+	color: #1b1b1b;
+	line-height: 35px;
+	text-align: center;
+	align-content: center;
+	margin: 50px 0 30px 0;
+}
+
+#sub7 .text h4{
+	background: url(iconH4.png) no-repeat 0;
+	margin: 20px 0 20px 0 ; 
+	align-content: left;
+	padding: 4px 0 0 16px;
+}
+#sub7 .text h5{
+	color: #1b1b1b;
+	text-align: left;
+    line-height: 1.3;
+    font-size: 16.5px;
+    padding: 0 15px;
+    margin: 10px 0 6px;
+    font-weight: bold;
+}
+
+
+
+/**************************************************************************************
+terms - 이용약관
+***************************************************************************************/
+
+
+
+#sub7.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+#sub7 .text {
+	color: gray;
+	font-size: 14px;
+	line-height: 1.8;
+	margin-bottom: 30px;
+	padding: 0 15px;
+}
+
+#sub7 .detail-text {
+	font-size: 14px;
+	padding: 0 15px;
+	line-height: 1.8;
+	margin-bottom: 30px;
+	color: gray;
+}
+
+#sub7 .text td {
+	text-align: center;
+}
+
+#sub7 .div-h3 {
+	font-size: 35px;
+	color: #1b1b1b;
+	line-height: 35px;
+	text-align: center;
+	align-content: center;
+	margin: 50px 0 30px 0;
+}
+
+#sub7 h4 {
+	background: url(iconH4.png) no-repeat 0;
+	margin: 20px 0 20px 0;
+	padding: 4px 0 0 16px;
+}
+
+#sub7 .text h5 {
+	color: #1b1b1b;
+	text-align: left;
+	line-height: 1.3;
+	font-size: 16.5px;
+	padding: 0 15px;
+	margin: 10px 0 6px;
+	font-weight: bold;
+}
+
+
+
+
+
+/**************************************************************************************
+errInfoReport - 틀린정보신고
+***************************************************************************************/
+
+
+
+#sub7.container {
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+	clear: both;
+}
+
+#sub7 .btn_url {
+	display: inline-block;
+	float: left;
+	width: 73px;
+	height: 25px;
+	border: 1px solid #959595;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #959595;
+	line-height: 25px;
+	text-align: center;
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+#sub7 .navbar {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+}
+
+#sub7 .navbar-light .navbar-brand {
+	color: rgba(0, 0, 0, 0.9);
+}
+
+#sub7 .navbar-brand {
+	display: inline-block;
+	padding-top: 0.3125rem;
+	padding-bottom: 0.3125rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+	line-height: inherit;
+	white-space: nowrap;
+}
+
+#sub7 .bg-light {
+	background-color: #f8f9fa !important;
+}
+
+#sub7 .menu {
+	float: right;
+	margin: 0;
+	padding: 3px;
+}
+
+#sub7 .btn_kt {
+	margin-left: 0;
+	background: url(kakao.png) no-repeat 0 50%;
+	text-indent: -9999px;
+}
+
+#sub7 .btn_fb {
+	margin-left: 0;
+	background: url(facebook.png) no-repeat 0 50%;
+	text-indent: -9999px;
+}
+
+#sub7 .btn_tw {
+	margin-left: 0;
+	background: url(twiter.png) no-repeat 0 50%;
+	text-indent: -9999px;
+}
+
+#sub7 .btn_pr {
+	margin-left: 0;
+	background: url(print.png) no-repeat 0 50%;
+	text-indent: -9999px;
+}
+
+#sub7 .btn_re {
+	margin-left: 0;
+	background: url(report.png) no-repeat 0 50%;
+	text-indent: -9999px;
+}
+
+#sub7 .btn_write {
+	background-color: #f19221;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 35px;
+	text-align: left;
+	margin-top: 250px;
+	float: right;
+}
+
+#sub7 .btn_next {
+	background-color: white;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 700;
+	color: black;
+	line-height: 20px;
+	margin-top: 400px;
+	text-align: center;
+}
+#select{
+    width: 180px;
+    padding: 12px 0 13px 15px;
+    font-size: 18px;
+    color: #959595;
+    line-height: 18px;
+}
+#search{
+	float: left;
+    width: 488px;
+    height: 43px;
+    padding-left: 10px;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #000;
+    line-height: 43px;
+    margin: 0 20px 0 20px;
+	
+}
+
+
+
+
+
 /**************************************************************************************
 busiRegi
 ***************************************************************************************/
@@ -218,3 +490,6 @@ busiRegi
     text-align: center;
     margin-bottom: 30px;
 }
+
+
+
