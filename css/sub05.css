@@ -1,10 +1,7 @@
 @charset "utf-8";
-
 /**************************************************************************************
 all - 여행필수정보 전체
 ***************************************************************************************/
-
-
 
 #sub05 {
     padding-top: 83px;
@@ -17,13 +14,11 @@ all - 여행필수정보 전체
     width: 1200px;
 }
 
-
 #sub05 .location_wrap {
-    height: 27px;
+    height: 50px;
     padding: 11px 28px;
     border: 1px solid #e5e5e5;
     border-top: 0;
-
 }
 
 #sub05 .location {
@@ -183,17 +178,18 @@ all - 여행필수정보 전체
 
 #sub05 .landing_area {
     position: relative;
-    margin: 24px -9px 0;
+    margin-left: -2%;
 }
 
 #sub05 .landing_item {
     position: relative;
-    margin: 20px 9px 0;
+    margin: 2%;
     padding: 21px;
     border: 1px solid #e5e5e5;
     box-shadow: 3px 4px 5px 0 rgba(2, 2, 2, .2);
     width: calc(50% - 63px);
     float: left;
+    width: 48%;
     background-color: rgba(0, 0, 0, .1);
 }
 
@@ -301,7 +297,6 @@ all - 여행필수정보 전체
     color: #fff;
     background-image: url(../img/sub05/common/icon_arrow01.png);
 }
-
 
 /**************************************************************************************
 all - 여행필수정보 전체
