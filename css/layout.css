@@ -1647,3 +1647,4 @@ board_list  travel_together - 동행 게시판 리스트
 
 
 .board_list.travel_together{}
+.board_list.travel_together .box{}
