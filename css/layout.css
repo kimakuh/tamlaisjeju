@@ -1442,7 +1442,8 @@ board_list - 게시판 리스트
   height: 225px;
 }
 
-.box .box_cont_area h4 {
+.box .box_cont_area b {
+  display: block;
   font-size: 22px;
   font-weight: bold;
   overflow: hidden;
@@ -1467,7 +1468,6 @@ board_list - 게시판 리스트
 
 
 
-        /* board_type01 */
 
        .board_list.type01 .box {
 
@@ -1484,7 +1484,8 @@ board_list - 게시판 리스트
           padding: 25px 10px;
       }
 
-      .board_list.type01 .box_cont_area h4 {
+      .board_list.type01 .box_cont_area b {
+        display:block;font-size:24px;
           text-align: center;
       }
 
