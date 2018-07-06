@@ -1555,3 +1555,108 @@ board_list - 게시판 리스트
           font-size: 14px;
           
       }
+
+
+
+      /* board_list type02 */
+
+
+      .board_list.type02 {
+        float: none;
+        margin-bottom: 2%;
+        border-left:none;border-right:none;
+    }
+
+
+   .board_list.type02 .img_area {
+        float: left;
+        width: 30%;
+    }
+
+    .board_list.type02 .box_cont_area {
+        float: left;
+        position: relative;
+        width: 70%;
+        padding: 2%;
+    }
+
+    .board_list.type02 .box_cont_area h4 {
+        text-align: left
+    }
+
+    .board_list.type02 .box_cont_area .location_category {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .board_list.type02 .box_cont_area .info_txt {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #959595;
+        line-height: 22px;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+    }
+
+    .board_list.type02 .box_cont_area .count_area {
+        color: #959595;
+        font-size: 13px;
+    }
+
+    .board_list.type02 .box_cont_area .count_area li {
+        display: inline-block;
+        position: relative;
+        padding: 0 10px;
+        
+    }
+
+    .board_list.type02 .box_cont_area .count_area li:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 1px;
+        height: 10px;
+        background: #999;
+    }
+
+    .board_list.type02 .box_cont_area .count_area li:first-child {
+        padding-left: 0;
+    }
+
+    .board_list.type02 .box_cont_area .count_area li:first-child:after {
+        display: none;
+    }
+
+    .board_list.type02 .box_cont_area .icon_area {
+        position: absolute;
+        right: 0;
+        top: 18px;
+
+
+    }
+
+    .board_list.type02 .box_cont_area .icon_area li {
+        margin:5px 0;
+        border: 1px solid #e5e5e5;
+        
+    }
+
+    .board_list.type02 .box_cont_area .icon_area ul li a {
+        display: block;
+        padding:15px 60px;
+    }
+
+    .board_list.type02 .box_cont_area .icon_area ul li.icon.like_icon {
+        background: url('../img/common/ico_like.png') no-repeat 20px 50%;
+    }
+
+    .board_list.type02 .box_cont_area .icon_area ul li.icon.zzim_icon {
+        background: url('../img/common/ico_zzim.png') no-repeat  20px 50%;
+    }
+
+    .board_list.type02 .box_cont_area .icon_area ul li.icon.review_icon {
+        background: url('../img/common/ico_review.png') no-repeat  20px 50%;
+    }
+
