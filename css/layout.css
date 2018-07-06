@@ -684,19 +684,20 @@ container - 컨텐츠 스타일
 
 
 /* heading */
-.container h3{margin:0 0 35px 0;/*margin-bottom:35px*/   font-size: 35px;
+.container h3{margin:0 0 35px 0; font-size: 35px;
   color: #1b1b1b;
-  line-height: 35px;
+  line-height: 43px;
   text-align: center;}
-.container h4{position:relative;margin-bottom:30px;padding-left:12px;font-size:24px;font-weight: bold; color:#121212;line-height:160%;}
+.container h4{position:relative;margin-bottom:30px;padding-left:12px;font-size:24px;font-weight: bold; color:#121212;line-height:32px;}
 .container h4:before{content:'';position:absolute;top: 9px;left: 0;width:4px;height:21px;background-color:#134af1}
-/* .container h4:first-child {margin:0 0 10px 0;} */
+
 
 
   
-.container h5{position: relative;margin-bottom:25px;padding-left:13px;color:#121212;font-size:16px;line-height:160%;}
+.container h5{position: relative;margin-bottom:25px;padding-left:13px;color:#121212;font-size:16px;line-height:24px;}
  .container h5:before{content: '';position: absolute;top:11px;left: 0;width: 6px;height: 4px;background-color: #1a2273;}
  /*
+
 .container h5.excep{position: relative;margin:30px 0 10px 0;padding-left:13px;color:#1a2273;font-size:16px;line-height:160%;}
 .container h5.excep:before{content: '';position: absolute;top:11px;left: 0;width: 6px;height: 4px;background-color: #172162;} */
 /* .container h5{margin:30px 0 15px 0px;font-size:15px;color:#545454;} */
@@ -712,13 +713,13 @@ container - 컨텐츠 스타일
 .h3_txt{    margin-bottom:30px;
   color: #5c5c5c;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 26px;
   word-wrap: break-word;
   word-break: keep-all;}
   .h4_txt{margin-bottom:30px;font-size:16px;  word-wrap: break-word;
-    word-break: keep-all;  line-height: 23px;}
+    word-break: keep-all;  line-height: 24px;}
   .h5_txt{margin-bottom:30px; font-size:16px;  word-wrap: break-word;
-    word-break: keep-all;  line-height: 23px;}
+    word-break: keep-all;  line-height: 24px;}
 
 
 
