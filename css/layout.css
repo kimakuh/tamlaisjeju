@@ -1653,3 +1653,5 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together .box:first-child {
   margin-left: 0;
 }
+
+.board_list.travel_together .box_cont_area  
