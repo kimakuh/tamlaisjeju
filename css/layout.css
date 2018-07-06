@@ -695,6 +695,18 @@ container - 컨텐츠 스타일
 
 
 
+
+.btn.btn-file,
+.btn.disabled.btn-file,
+.btn.btn-file[disabled],
+.btn.btn-file,
+.btn.btn-file:link,
+.btn.btn-file:visited{color:#666;background-color: #fff;}
+.btn.btn-file:hover,
+.btn.btn-file:focus,
+.btn.btn-file:active{color:#666;border: 1px solid #10349e;}
+
+
 .btn-ani:hover .bico.bticon.arr,
 .btn-ani:focus .bico.bticon.arr,
 .btn-ani:active .bico.bticon.arr{background-position:-84px -17px;}
