@@ -688,7 +688,7 @@ container - 컨텐츠 스타일
   color: #1b1b1b;
   line-height: 35px;
   text-align: center;}
-.container h4{position:relative;margin:35px 0 15px 0;padding-left:12px;font-size:24px;font-weight: bold; color:#121212;line-height:160%;}
+.container h4{position:relative;margin-bottom:25px;padding-left:12px;font-size:24px;font-weight: bold; color:#121212;line-height:160%;}
 .container h4:before{content:'';position:absolute;top: 9px;left: 0;width:4px;height:21px;background-color:#134af1}
 .container h4:first-child {margin:0 0 10px 0;}
 
