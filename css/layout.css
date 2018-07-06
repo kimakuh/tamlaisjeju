@@ -674,6 +674,9 @@
 container - 컨텐츠 스타일
 ***************************************************************************************/
 
+.content{margin:30px 0;}
+
+
 
 /*color*/
 .color1{color:#1a2273}
@@ -681,7 +684,7 @@ container - 컨텐츠 스타일
 
 
 /* heading */
-.container h3{margin:35px 0;/*margin-bottom:35px*/   font-size: 35px;
+.container h3{margin:0 0 35px 0;/*margin-bottom:35px*/   font-size: 35px;
   color: #1b1b1b;
   line-height: 35px;
   text-align: center;}
