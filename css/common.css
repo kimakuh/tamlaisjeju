@@ -2,7 +2,7 @@
 blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, frame, h1, h2, h3, h4, h5, h6, hr, html, iframe, input, legend, li, object, ol, p, pre, q, select, table, td, textarea, tr, ul {
     margin: 0;
     padding: 0;
-    font-family: NanumSquare, Nanum Gothic,  Malgun Gothic, Open Sans, Dotum, arial, sans-serif
+    font-family: 'Nanum Square', 'Nanum Gothic',  Malgun Gothic, Open Sans, Dotum, arial, sans-serif
 }
 
 
@@ -62,6 +62,15 @@ textarea {
     resize: none
 }
 
+
+
+p{   
+    color: #5c5c5c;
+    font-size: 16px;
+    line-height: 23px;
+    word-wrap: break-word;
+    word-break: keep-all;}
+
 .section h2 {
     font-size: 35px;
     font-weight: 400;
@@ -78,6 +87,9 @@ textarea {
 .section .tab {
     margin-top: 30px
 }
+
+
+
 
 .pt0 {
     padding-top: 0 !important
@@ -693,3 +705,47 @@ textarea {
 .no_mar {
     margin: 0;
 }
+
+
+
+
+
+/**************************************************************************************
+table style - 테이블스타일
+***************************************************************************************/
+
+
+table caption{position:relative;left:-999px;top:auto;width:1px;line-height:0;text-indent:-9999px}
+.tbl_basic{margin-bottom:30px;width:100%;border-top:2px solid transparent;border-bottom:1px solid transparent;font-size: 16px}
+.tbl_basic{border-collapse: separate;}
+.tbl_basic th,
+.tbl_basic td{padding:10px 15px;border-left:1px solid transparent;border-bottom:1px solid transparent;margin-left:-1px;vertical-align:middle;word-wrap:break-word;word-break:keep-all;}
+.tbl_basic th:last-child,
+.tbl_basic td:last-child{border-right:1px solid #d2d2d2}
+.tbl_basic th.trw,
+.tbl_basic td.trw{border-right:1px solid #d2d2d2;}
+.tbl_basic tbody th,
+.tbl_basic thead th{vertical-align:middle;}
+.tbl_basic thead th,
+.tbl_basic tfoot th,
+.tbl_basic tfoot td{background-image:none;background: #f2f6f9;}
+.tbl_basic tbody th{color:#333;}
+.tbl_basic thead th{color:#333;background:#fafafa;}
+
+.tbl_basic{border-top-color:#121212;}
+.tbl_basic th,
+.tbl_basic td{border-left-color:#d2d2d2;border-bottom-color:#d2d2d2;}
+.tbl_basic tbody th{background-color:#f6f3f3;}
+
+.tbl_basic.tbl_type1{border-top-color:#000;border-bottom-color:#ddd;}
+.tbl_basic.tbl_type1 th,
+.tbl_basic.tbl_type1 td{border-left-color:#ddd;border-bottom-color:#ddd;}
+.tbl_basic.tbl_type1 thead th{background-color:#fff;border-bottom-color:#d2d2d2;}
+.tbl_basic.tbl_type1 tfoot th{background-color:#fafafa;}
+
+.tbl_basic.tbl_type2{border-top-color:#df3127;border-bottom-color:#d2d2d2;}
+.tbl_basic.tbl_type2 th,
+.tbl_basic.tbl_type2 td{border-left-color:#ddd;border-bottom-color:#ddd;}
+.tbl_basic.tbl_type2 tbody th{color:#df3127}
+.tbl_basic.tbl_type2 tfoot th{background-color:#f1f1f1;}
+.tbl_txt{color: #10349e;}
