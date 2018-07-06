@@ -62,6 +62,15 @@ textarea {
     resize: none
 }
 
+
+
+p{   
+    color: #5c5c5c;
+    font-size: 16px;
+    line-height: 23px;
+    word-wrap: break-word;
+    word-break: keep-all;}
+
 .section h2 {
     font-size: 35px;
     font-weight: 400;
@@ -78,6 +87,9 @@ textarea {
 .section .tab {
     margin-top: 30px
 }
+
+
+
 
 .pt0 {
     padding-top: 0 !important
@@ -693,10 +705,6 @@ textarea {
 .no_mar {
     margin: 0;
 }
-
-/**************************************************************************************
-container - 컨텐츠 스타일
-***************************************************************************************/
 
 
 
