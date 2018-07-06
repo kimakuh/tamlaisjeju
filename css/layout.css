@@ -1675,4 +1675,4 @@ board_list  travel_together - 동행 게시판 리스트
   border-radius:100%;
 }
 
-.board_list.travel_together .box_cont_area .plan_txt{}
+.board_list.travel_together .box_cont_area .plan_txt{margin:10px 0;}
