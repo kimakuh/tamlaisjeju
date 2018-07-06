@@ -686,8 +686,11 @@ container - 컨텐츠 스타일
 .ui.uit .inner .txtwrap b {display:block;margin-bottom:5px; font-weight:bold; font-size:18px;}
 .ui.uit .inner .txtwrap p{margin:0;font-size:16px;line-height:21px;color: #545454;}
 .ui.uit .inner .btnwrap{margin-top:20px;}
-.ui.uit .inner .tp_icon.circle{display:none;}
 .ui.uit .thm_figure{display:none;}
+.ui.uit.type1 .inner .tp_icon.circle{    display: block;
+  position: absolute;
+  top: 19%;
+  left: 45px;}
 .ui.uit.type3 img{position: absolute;width: 100%;height: 100%;}
 .ui.uit.type3 .inner .tit_inner,
 .ui.uit.type3 .inner .txtwrap p{color: #fff;}
