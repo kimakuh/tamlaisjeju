@@ -689,13 +689,13 @@ container - 컨텐츠 스타일
   line-height: 43px;
   text-align: center;}
 .container h4{position:relative;margin-bottom:30px;padding-left:12px;font-size:24px;font-weight: bold; color:#121212;line-height:32px;}
-.container h4:before{content:'';position:absolute;top: 9px;left: 0;width:4px;height:21px;background-color:#134af1}
+.container h4:before{content:'';position:absolute;top: 5px;left: 0;width:4px;height:21px;background-color:#134af1}
 
 
 
   
 .container h5{position: relative;margin-bottom:25px;padding-left:13px;color:#121212;font-size:16px;line-height:24px;}
- .container h5:before{content: '';position: absolute;top:11px;left: 0;width: 6px;height: 4px;background-color: #1a2273;}
+.container h5:before{content: '';position: absolute;top:11px;left: 0;width: 6px;height: 4px;background-color: #1a2273;}
 .container h3+h3{margin-top:0;}
 .container h3+h4{margin-top:0;}
 .container h4+h5{margin-top:0;}
@@ -719,7 +719,7 @@ container - 컨텐츠 스타일
 
 
 /* baisc list */
-.list_1st {margin:15px 0;padding:0;}
+.list_1st {margin:0 0 25px 0;padding:0;}
 .list_1st > li,
 .list_1st > dd{position: relative;margin:3px 0;padding-left:14px;color:#444;font-size:16px;word-wrap:break-word;word-break:keep-all;}
 .list_1st li:before,
