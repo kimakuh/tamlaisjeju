@@ -734,6 +734,7 @@ container - 컨텐츠 스타일
 .bico.bticon.excel{background-position:-68px 0;}
 .bico.bticon.home{width: 17px;height: 17px; background-position:0px -17px;}
 .bico.bticon.home2{width: 33px;height: 33px; background-position:-126px 0;}
+/*
 .bico.bticon.home3{width: 16px;height: 16px;margin-right: 0; background-position:-16px -17px;}
 .bico.bticon.home4{width: 16px;height: 16px;margin-right: 0; background-position: 0 -17px;}
 .bico.bticon.file{background-position:-84px 0;}
@@ -742,20 +743,20 @@ container - 컨텐츠 스타일
 .bico.bticon.radius{width:36px;height:36px;background-position:0 -26px;}
 .bico.bticon.arr{position: absolute;top: 32%;right: 0;width: 9px;height: 16px; background-position:-97px -17px;}
 .bico.bticon.btimg{display: block;width: 27px;height: 37px;margin: 0 auto 20px;background-position:0px -37px;}
-
+*/
 
 /* heading */
 .container h3{margin:0 0 35px 0; font-size: 35px;
   color: #1b1b1b;
   line-height: 43px;
   text-align: center;}
-.container h4{position:relative;margin-bottom:30px;padding-left:12px;font-size:24px;font-weight: bold; color:#121212;line-height:32px;}
+.container h4{position:relative;margin-bottom:30px;padding-left:12px;font-size:24px;font-weight:bold; color:#121212;line-height:32px;}
 .container h4:before{content:'';position:absolute;top: 5px;left: 0;width:4px;height:21px;background-color:#134af1}
 
 
 
   
-.container h5{position: relative;margin-bottom:25px;padding-left:13px;color:#121212;font-size:20px;line-height:28px;}
+.container h5{position: relative;margin-bottom:25px;padding-left:13px;color:#121212;font-size:20px;font-weight:bold;line-height:28px;}
 .container h5:before{content: '';position: absolute;top:11px;left: 0;width: 6px;height: 4px;background-color: #1a2273;}
 .container h3+h3{margin-top:0;}
 .container h3+h4{margin-top:0;}
