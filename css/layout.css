@@ -738,30 +738,29 @@ container - 컨텐츠 스타일
 
 
 /* top_box */
-/* topbox */
-.ui.uit{background: #f1f1f4;}
-.ui.uit .inner{ position: relative;
+.top_box{background: #f1f1f4;margin-bottom:30px;}
+.top_box .inner{position: relative;
   padding: 45px 50px 50px;}
-  .ui.uit.type1 .inner{    padding-left: 200px;
+  .top_box.type1 .inner{    padding-left: 200px;
     min-height: 160px;}
-.ui.uit .inner .txtwrap{position:relative;}
-.ui.uit .inner .tit_inner{display:block;margin:0;margin-bottom:10px;color:#10349e;font-size:20px;line-height:30px;font-weight:bold;}
-.ui.uit .inner .txtwrap b {display:block;margin-bottom:5px; font-weight:bold; font-size:18px;}
-.ui.uit .inner .txtwrap p{margin:0;font-size:16px;line-height:21px;color: #545454;}
-.ui.uit .inner .btnwrap{margin-top:20px;}
-.ui.uit .thm_figure{display:none;}
-.ui.uit.type1 .inner .tp_icon.circle{    display: block;
+.top_box .inner .txtwrap{position:relative;}
+.top_box .inner .tit_inner{display:block;margin:0;margin-bottom:10px;color:#10349e;font-size:20px;line-height:30px;font-weight:bold;}
+.top_box .inner .txtwrap b {display:block;margin-bottom:5px; font-weight:bold; font-size:18px;}
+.top_box .inner .txtwrap p{margin:0;font-size:16px;line-height:21px;color: #545454;}
+.top_box .inner .btnwrap{margin-top:20px;}
+.top_box .thm_figure{display:none;}
+.top_box.type1 .inner .tp_icon.circle{    display: block;
   position: absolute;
   top: 19%;
   left: 45px;}
-.ui.uit.type3 img{position: absolute;width: 100%;height: 100%;}
-.ui.uit.type3 .inner .tit_inner,
-.ui.uit.type3 .inner .txtwrap p{color: #fff;}
-.ui.uit.type4{min-height: 79px;background: #fff;border:1px solid #d2d2d2;}
-.ui.uit.type5 .inner{padding:35px 0 35px 100px;min-height:80px;}
-.ui.uit.type4 .inner .radius{display:none;}
-.ui.uit.type5 .inner .radius2{position: absolute;top: 25px;left: 35px;}
-.ui.uit.type5 .inner .radius2 .tp_icon{position: relative;top: 35%;width:46px;height:46px;margin: 0px auto;}
+.top_box.type3 img{position: absolute;width: 100%;height: 100%;}
+.top_box.type3 .inner .tit_inner,
+.top_box.type3 .inner .txtwrap p{color: #fff;}
+.top_box.type4{min-height: 79px;background: #fff;border:1px solid #d2d2d2;}
+.top_box.type5 .inner{padding:35px 0 35px 100px;min-height:80px;}
+.top_box.type4 .inner .radius{display:none;}
+.top_box.type5 .inner .radius2{position: absolute;top: 25px;left: 35px;}
+.top_box.type5 .inner .radius2 .tp_icon{position: relative;top: 35%;width:46px;height:46px;margin: 0px auto;}
 
 /* 탑박스 아이콘 */
 .tp_icon{display:block;overflow:hidden;width:114px;height:113px;background:url(../img/common/tp_icon.png) no-repeat;}
