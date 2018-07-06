@@ -1414,11 +1414,6 @@ board_list - 게시판 리스트
   margin: 2% 0;
 }
 
-
-
-
-
-
 .box {
   float: left;
   border: 1px solid #ededed;
@@ -1428,7 +1423,6 @@ board_list - 게시판 리스트
 .box .img_area {
   position: relative;
 }
-
 
 .box .img_area .category {
   position: absolute;
@@ -1469,194 +1463,176 @@ board_list - 게시판 리스트
 
 /* board_list type01*/
 
-.board_list.type01 .box_wrap .box:first-child{margin-left:0;}
+.board_list.type01 .box_wrap .box:first-child {
+  margin-left: 0;
+}
 
+.board_list.type01 .box {
+  width: 32%;
+  margin-left: 2%;
+}
 
-       .board_list.type01 .box {
+.board_list.type01 .box_cont_area {
+  padding: 25px 10px;
+}
 
-          width: 32%;
-          margin-left: 2%;
-      }
+.board_list.type01 .box_cont_area b {
+  text-align: center;
+}
 
+.board_list.type01 .box_cont_area .location_category {
+  text-align: center;
+}
 
+.board_list.type01 .box_cont_area .hashtag {
+  text-align: center;
+}
 
-      .board_list.type01 .box_cont_area {
-          padding: 25px 10px;
-      }
+.board_list.type01 .box_cont_area .hashtag a {
+  display: inline-block;
+  color: #2168f6;
+}
 
-      .board_list.type01 .box_cont_area b {
- 
-          text-align: center;
-      }
+.board_list.type01 .box_cont_area .my_hashtag {
+  margin: 15px 0;
+  text-align: center;
+}
 
-      .board_list.type01 .box_cont_area .location_category {
-          text-align: center;
-      }
+.board_list.type01 .box_cont_area .my_hashtag a {
+  display: inline-block;
+  line-height: 15px;
+}
 
-      .board_list.type01 .box_cont_area .hashtag {
-          text-align: center;
-      }
+.board_list.type01 .box_cont_area .icon_area {
+  margin-top: 20px;
+}
 
-      .board_list.type01 .box_cont_area .hashtag a {
-          display: inline-block;
-          color: #2168f6;
-      }
+.board_list.type01 .box_cont_area .icon_area ul li {
+  float: left;
+  width: 33.3%;
+  padding-top: 30px;
+  text-align: center;
+}
 
-      .board_list.type01 .box_cont_area .my_hashtag {
-          margin: 15px 0;
-          text-align: center;
+.board_list.type01 .box_cont_area .icon_area ul li a {
+  display: block;
+  margin: 5px;
+  font-size: 13px;
+}
 
-      }
+.board_list.type01 .box_cont_area .icon_area ul li.icon.like_icon {
+  background: url('../img/common/ico_like.png') no-repeat 50% 0;
+}
 
-      .board_list.type01 .box_cont_area .my_hashtag a {
-          display: inline-block;
-          line-height: 15px;
-      }
+.board_list.type01 .box_cont_area .icon_area ul li.icon.zzim_icon {
+  background: url('../img/common/ico_zzim.png') no-repeat 50% 0;
+}
 
-      .board_list.type01 .box_cont_area .icon_area {
-          margin-top: 20px;
-      }
+.board_list.type01 .box_cont_area .icon_area ul li.icon.review_icon {
+  background: url('../img/common/ico_review.png') no-repeat 50% 0;
+}
 
+.board_list.type01 .box_cont_area .icon_area ul li span {
+  margin: 4px 0;
+  display: block;
+  color: #959595;
+  font-size: 14px;
+}
 
+/* board_list type02 */
 
-      .board_list.type01 .box_cont_area .icon_area ul li {
-          float: left;
-          width: 33.3%;
-          padding-top: 30px;
-          text-align: center;
+.board_list.type02 .box {
+  float: none;
+  width: 100%;
+  margin-bottom: 2%;
+  border-left: none;
+  border-right: none;
+}
 
-      }
+.board_list.type02 .img_area {
+  float: left;
+  width: 30%;
+}
 
-      .board_list.type01 .box_cont_area .icon_area ul li a {
-          display: block;
-          margin: 5px;
-          font-size: 13px;
-      }
-  
+.board_list.type02 .box_cont_area {
+  float: left;
+  position: relative;
+  width: 70%;
+  padding: 2%;
+}
 
+.board_list.type02 .box_cont_area h4 {
+  text-align: left
+}
 
+.board_list.type02 .box_cont_area .location_category {
+  padding-left: 0;
+  text-align: left;
+}
 
-      .board_list.type01 .box_cont_area .icon_area ul li.icon.like_icon {
-          background: url('../img/common/ico_like.png') no-repeat 50% 0;
-      }
+.board_list.type02 .box_cont_area .info_txt {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #959595;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
 
-      .board_list.type01 .box_cont_area .icon_area ul li.icon.zzim_icon {
-          background: url('../img/common/ico_zzim.png') no-repeat 50% 0;
-      }
+.board_list.type02 .box_cont_area .count_area {
+  color: #959595;
+  font-size: 13px;
+}
 
-      .board_list.type01 .box_cont_area .icon_area ul li.icon.review_icon {
-          background: url('../img/common/ico_review.png') no-repeat 50% 0;
-      }
+.board_list.type02 .box_cont_area .count_area li {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+}
 
-      .board_list.type01 .box_cont_area .icon_area ul li span {
-          margin:4px 0;
-          display:block;
-          color: #959595;
-          font-size: 14px;
-          
-      }
+.board_list.type02 .box_cont_area .count_area li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1px;
+  height: 10px;
+  background: #999;
+}
 
+.board_list.type02 .box_cont_area .count_area li:first-child {
+  padding-left: 0;
+}
 
+.board_list.type02 .box_cont_area .count_area li:first-child:after {
+  display: none;
+}
 
-      /* board_list type02 */
+.board_list.type02 .box_cont_area .icon_area {
+  position: absolute;
+  right: 0;
+  top: 18px;
+}
 
+.board_list.type02 .box_cont_area .icon_area li {
+  margin: 5px 0;
+  border: 1px solid #e5e5e5;
+}
 
-      .board_list.type02 .box{
-        float: none;
-        margin-bottom: 2%;
-        border-left:none;border-right:none;
-    }
+.board_list.type02 .box_cont_area .icon_area ul li a {
+  display: block;
+  padding: 15px 60px;
+}
 
+.board_list.type02 .box_cont_area .icon_area ul li.icon.like_icon {
+  background: url('../img/common/ico_like.png') no-repeat 20px 50%;
+}
 
-   .board_list.type02 .img_area {
-        float: left;
-        width: 30%;
-    }
+.board_list.type02 .box_cont_area .icon_area ul li.icon.zzim_icon {
+  background: url('../img/common/ico_zzim.png') no-repeat 20px 50%;
+}
 
-    .board_list.type02 .box_cont_area {
-        float: left;
-        position: relative;
-        width: 70%;
-        padding: 2%;
-    }
-
-    .board_list.type02 .box_cont_area h4 {
-        text-align: left
-    }
-
-    .board_list.type02 .box_cont_area .location_category {
-        padding-left: 0;
-        text-align: left;
-    }
-
-    .board_list.type02 .box_cont_area .info_txt {
-        margin: 10px 0;
-        font-size: 14px;
-        color: #959595;
-        line-height: 22px;
-        text-overflow: ellipsis;
-        -webkit-box-orient: vertical;
-    }
-
-    .board_list.type02 .box_cont_area .count_area {
-        color: #959595;
-        font-size: 13px;
-    }
-
-    .board_list.type02 .box_cont_area .count_area li {
-        display: inline-block;
-        position: relative;
-        padding: 0 10px;
-        
-    }
-
-    .board_list.type02 .box_cont_area .count_area li:after {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 2px;
-        width: 1px;
-        height: 10px;
-        background: #999;
-    }
-
-    .board_list.type02 .box_cont_area .count_area li:first-child {
-        padding-left: 0;
-    }
-
-    .board_list.type02 .box_cont_area .count_area li:first-child:after {
-        display: none;
-    }
-
-    .board_list.type02 .box_cont_area .icon_area {
-        position: absolute;
-        right: 0;
-        top: 18px;
-
-
-    }
-
-    .board_list.type02 .box_cont_area .icon_area li {
-        margin:5px 0;
-        border: 1px solid #e5e5e5;
-        
-    }
-
-    .board_list.type02 .box_cont_area .icon_area ul li a {
-        display: block;
-        padding:15px 60px;
-    }
-
-    .board_list.type02 .box_cont_area .icon_area ul li.icon.like_icon {
-        background: url('../img/common/ico_like.png') no-repeat 20px 50%;
-    }
-
-    .board_list.type02 .box_cont_area .icon_area ul li.icon.zzim_icon {
-        background: url('../img/common/ico_zzim.png') no-repeat  20px 50%;
-    }
-
-    .board_list.type02 .box_cont_area .icon_area ul li.icon.review_icon {
-        background: url('../img/common/ico_review.png') no-repeat  20px 50%;
-    }
-
+.board_list.type02 .box_cont_area .icon_area ul li.icon.review_icon {
+  background: url('../img/common/ico_review.png') no-repeat 20px 50%;
+}
