@@ -1427,12 +1427,15 @@ board_list - 게시판 리스트
 
 .box .img_area .category {
   position: absolute;
+  display: block;
   left: 0;
   top: 0;
   padding: 5px 10px;
   background: #222;
   color: #fff;
   font-size:14px;
+  min-width:60px;
+  text-align: center;
 }
 
 .box .img_area img {
