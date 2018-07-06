@@ -2,7 +2,7 @@
 blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, frame, h1, h2, h3, h4, h5, h6, hr, html, iframe, input, legend, li, object, ol, p, pre, q, select, table, td, textarea, tr, ul {
     margin: 0;
     padding: 0;
-    font-family: NanumSquare, Nanum Gothic,  Malgun Gothic, Open Sans, Dotum, arial, sans-serif
+    font-family: 'Nanum Square', 'Nanum Gothic',  Malgun Gothic, Open Sans, Dotum, arial, sans-serif
 }
 
 
