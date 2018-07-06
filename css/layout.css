@@ -665,3 +665,60 @@
 .spr_com.page-first {
   background-position: 0 -100px
 }
+
+
+
+
+
+/**************************************************************************************
+container - 컨텐츠 스타일
+***************************************************************************************/
+
+.container h3{}
+
+
+/* top_box */
+/* topbox */
+.ui.uit{background: #f1f1f4;}
+.ui.uit .inner{position:relative;padding:25px;}
+.ui.uit .inner .txtwrap{position:relative;}
+.ui.uit .inner .tit_inner{display:block;margin:0;margin-bottom:10px;color:#10349e;font-size:20px;line-height:30px;font-weight:bold;}
+.ui.uit .inner .txtwrap b {display:block;margin-bottom:5px; font-weight:bold; font-size:18px;}
+.ui.uit .inner .txtwrap p{margin:0;font-size:16px;line-height:21px;color: #545454;}
+.ui.uit .inner .btnwrap{margin-top:20px;}
+.ui.uit .inner .tp_icon.circle{display:none;}
+.ui.uit .thm_figure{display:none;}
+.ui.uit.type3 img{position: absolute;width: 100%;height: 100%;}
+.ui.uit.type3 .inner .tit_inner,
+.ui.uit.type3 .inner .txtwrap p{color: #fff;}
+.ui.uit.type4{min-height: 79px;background: #fff;border:1px solid #d2d2d2;}
+.ui.uit.type5 .inner{padding:35px 0 35px 100px;min-height:80px;}
+.ui.uit.type4 .inner .radius{display:none;}
+.ui.uit.type5 .inner .radius2{position: absolute;top: 25px;left: 35px;}
+.ui.uit.type5 .inner .radius2 .tp_icon{position: relative;top: 35%;width:46px;height:46px;margin: 0px auto;}
+
+/* 탑박스 아이콘 */
+.tp_icon{display:block;overflow:hidden;width:114px;height:113px;background:url(../img/common/tp_icon.png) no-repeat;}
+.tp_icon.circle1{background-position:0 0;}
+.tp_icon.circle2{background-position:-113px 0;}
+.tp_icon.icon1{background-position:0 0;}
+.tp_icon.icon2{background-position:-114px 0px;}
+.tp_icon.icon3{background-position:-227px 0;}
+.tp_icon.icon4{background-position:-339px 0;}
+.tp_icon.icon5{background-position:-452px 0;}
+.tp_icon.icon6{background-position:-114px -127px;}
+.tp_icon.icon7{background-position:-227px -128px;}
+.tp_icon.icon8{background-position:-340px -128px;}
+.tp_icon.icon9{background-position:-452px -128px;}
+
+.tp_icon.icon10{background-position:0 -254px;}
+.tp_icon.icon11{background-position:-114px -254px;}
+.tp_icon.icon12{background-position:-227px -254px;}
+.tp_icon.icon13{background-position:-339px -254px;}
+.tp_icon.icon14{background-position:-452px -254px;}
+
+.tp_icon.icon15{background-position:0 -380px;}
+.tp_icon.icon16{background-position:-114px -380px;}
+.tp_icon.icon17{background-position:-227px -380px;}
+.tp_icon.icon18{background-position:-339px -380px;}
+.tp_icon.icon19{background-position:-452px -380px;}
