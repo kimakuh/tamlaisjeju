@@ -716,7 +716,7 @@ table style - 테이블스타일
 
 
 table caption{position:relative;left:-999px;top:auto;width:1px;line-height:0;text-indent:-9999px}
-.tbl_basic{width:100%;border-top:2px solid transparent;border-bottom:1px solid transparent;font-size: 16px}
+.tbl_basic{margin-bottom:30px;width:100%;border-top:2px solid transparent;border-bottom:1px solid transparent;font-size: 16px}
 .tbl_basic{border-collapse: separate;}
 .tbl_basic th,
 .tbl_basic td{padding:10px 15px;border-left:1px solid transparent;border-bottom:1px solid transparent;margin-left:-1px;vertical-align:middle;word-wrap:break-word;word-break:keep-all;}
