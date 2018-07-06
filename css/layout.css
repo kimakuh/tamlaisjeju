@@ -708,7 +708,7 @@ container - 컨텐츠 스타일
 
 
 /* text */
-.h3_txt{    margin: 3px 0;
+.h3_txt{    margin-bottom:30px;
   color: #5c5c5c;
   font-size: 18px;
   line-height: 23px;
