@@ -694,6 +694,20 @@ container - 컨텐츠 스타일
 .btn-ani.btn-file{padding:10px 15px 10px 15px;background-color:transparent;}
 
 
+
+.btn-ani:hover .bico.bticon.arr,
+.btn-ani:focus .bico.bticon.arr,
+.btn-ani:active .bico.bticon.arr{background-position:-84px -17px;}
+.bico.bticon.down{position: absolute;top: 32%;right: 0;width: 15px;height: 15px; background-position:-68px -17px;}
+.btn-ani:hover .bico.bticon.down,
+.btn-ani:focus .bico.bticon.down,
+.btn-ani:active .bico.bticon.down{background-position:-51px -17px;}
+.btn-ani.line{background-color:#fff;border-color:#10349e;color: #10349e;}
+.btn-ani.line .bico.bticon.down{background-position:-51px -17px;font-size: 0;text-indent:-9999px;}
+
+
+
+
 /* heading */
 .container h3{margin:0 0 35px 0; font-size: 35px;
   color: #1b1b1b;
