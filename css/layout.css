@@ -1414,11 +1414,7 @@ board_list - 게시판 리스트
   margin: 30px 0;
 }
 
-.box_warp::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+
 
 .box {
   float: left;
@@ -1430,11 +1426,6 @@ board_list - 게시판 리스트
   position: relative;
 }
 
-.box::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
 .box .img_area .category {
   position: absolute;
@@ -1473,3 +1464,93 @@ board_list - 게시판 리스트
 }
 
 /* board_list type01*/
+
+
+
+        /* board_type01 */
+
+       .board_list.type01 .box {
+
+          width: 32%;
+          margin-left: 2%;
+      }
+
+      .board_list.type01 .no_mar {
+          margin: 0;
+      }
+
+
+      .board_list.type01 .box_cont_area {
+          padding: 25px 10px;
+      }
+
+      .board_list.type01 .box_cont_area h4 {
+          text-align: center;
+      }
+
+      .board_list.type01 .box_cont_area .location_category {
+          text-align: center;
+      }
+
+      .board_list.type01 .box_cont_area .hashtag {
+          text-align: center;
+      }
+
+      .board_list.type01 .box_cont_area .hashtag a {
+          display: inline-block;
+          color: #2168f6;
+      }
+
+      .board_list.type01 .box_cont_area .my_hashtag {
+          margin: 15px 0;
+          text-align: center;
+
+      }
+
+      .board_list.type01 .box_cont_area .my_hashtag a {
+          display: inline-block;
+          line-height: 15px;
+      }
+
+      .board_list.type01 .box_cont_area .icon_area {
+          margin-top: 20px;
+      }
+
+
+
+      .board_list.type01 .box_cont_area .icon_area ul li {
+          float: left;
+          width: 33.3%;
+          padding-top: 30px;
+          text-align: center;
+
+      }
+
+      .board_list.type01 .box_cont_area .icon_area ul li a {
+          display: block;
+          margin: 5px;
+          font-size: 13px;
+      }
+  
+
+
+
+      .board_list.type01 .box_cont_area .icon_area ul li.icon.like_icon {
+          background: url('../img/common/ico_like.png') no-repeat 50% 0;
+      }
+
+      .board_list.type01 .box_cont_area .icon_area ul li.icon.zzim_icon {
+          background: url('../img/common/ico_zzim.png') no-repeat 50% 0;
+      }
+
+      .board_list.type01 .box_cont_area .icon_area ul li.icon.review_icon {
+          background: url('../img/common/ico_review.png') no-repeat 50% 0;
+      }
+
+      .board_list.type01 .box_cont_area .icon_area ul li span {
+          margin:4px 0;
+          display:block;
+          color: #959595;
+          font-size: 12px;
+          
+      }
