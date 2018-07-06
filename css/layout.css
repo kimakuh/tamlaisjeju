@@ -694,7 +694,9 @@ container - 컨텐츠 스타일
 .btn-ani.btn-file{padding:10px 15px 10px 15px;background-color:transparent;}
 
 
-.bico.bticon{position:relative;top:-1px;display:inline-block;margin-right:16px;width:17px;height:16px;background:url(../img/common/ico_file.png) no-repeat;vertical-align: middle;font-size: 0;text-indent:-9999px;}
+
+
+
 
 .btn.btn-file,
 .btn.disabled.btn-file,
@@ -718,6 +720,28 @@ container - 컨텐츠 스타일
 .btn-ani.line .bico.bticon.down{background-position:-51px -17px;font-size: 0;text-indent:-9999px;}
 
 
+
+
+
+
+
+.bico.bticon{position:relative;top:-1px;display:inline-block;margin-right:16px;width:17px;height:16px;background:url(../img/common/ico_file.png) no-repeat;vertical-align: middle;font-size: 0;text-indent:-9999px;}
+.bico.bticon.right{margin:0 0 0 16px;}
+.bico.bticon.acrobat{background-position:0 0;font-size:0;text-indent:-9999px}
+.bico.bticon.ppt{background-position:-17px 0;}
+.bico.bticon.word{background-position:-34px 0;}
+.bico.bticon.hwp{background-position:-51px 0;}
+.bico.bticon.excel{background-position:-68px 0;}
+.bico.bticon.home{width: 17px;height: 17px; background-position:0px -17px;}
+.bico.bticon.home2{width: 33px;height: 33px; background-position:-126px 0;}
+.bico.bticon.home3{width: 16px;height: 16px;margin-right: 0; background-position:-16px -17px;}
+.bico.bticon.home4{width: 16px;height: 16px;margin-right: 0; background-position: 0 -17px;}
+.bico.bticon.file{background-position:-84px 0;}
+.bico.bticon.ai{background-position:-126px 0;}
+.bico.bticon.jpg{background-position:-148px 0;}
+.bico.bticon.radius{width:36px;height:36px;background-position:0 -26px;}
+.bico.bticon.arr{position: absolute;top: 32%;right: 0;width: 9px;height: 16px; background-position:-97px -17px;}
+.bico.bticon.btimg{display: block;width: 27px;height: 37px;margin: 0 auto 20px;background-position:0px -37px;}
 
 
 /* heading */
