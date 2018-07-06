@@ -1654,7 +1654,7 @@ board_list  travel_together - 동행 게시판 리스트
   margin-left: 0;
 }
 
-.board_list.travel_together .box_cont_area {}
+.board_list.travel_together .box_cont_area {padding:20px;}
 
 .board_list.travel_together .box_cont_area .plan_date {
   font-size: 14px;
