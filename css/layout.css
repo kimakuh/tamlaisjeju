@@ -1658,10 +1658,15 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together .box_cont_area b{margin-bottom:10px;}
 
 .board_list.travel_together .box_cont_area .plan_date {
+  display:inline-block;
   font-size: 14px;
   color: #134af1;
+  vertical-align: middle;
 }
 
 .board_list.travel_together .box_cont_area .plan_gender{
-  display: inline-block;padding:5px;background: #55acee;font-size:14px;color:#fff;
+  display: inline-block;padding:6px;background: #134af1;font-size:14px;color:#fff;
+  vertical-align: middle;
 }
+
+.board_list.travel_together .box_cont_area .plan_txt{}
