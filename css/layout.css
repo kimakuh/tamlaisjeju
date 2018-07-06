@@ -675,24 +675,29 @@ container - 컨텐츠 스타일
 ***************************************************************************************/
 
 
-/* heading */
-.container h2{position:relative;margin:35px 0 10px 0;padding-left:12px;font-size:24px;font-weight: bold; color:#121212;line-height:160%;}
-.container h2:before{content:'';position:absolute;top: 9px;left: 0;width:4px;height:21px;background-color:#10349e}
-.container h2:first-child {margin:0 0 10px 0;}
-.container h3{margin:30px 0 15px 0;padding-left:0px;color:#1a2273;font-size:20px;line-height:160%;}
+/*color*/
+.color1{color:#1a2273}
+.color2{color:#134af1}
 
-.container h3{ margin-bottom:35px;   font-size: 35px;
+
+/* heading */
+.container h3{margin:35px 0;/*margin-bottom:35px*/   font-size: 35px;
   color: #1b1b1b;
   line-height: 35px;
   text-align: center;}
-.container h4{position: relative;margin:35px 0 15px 0;padding-left:13px;color:#121212;font-size:16px;line-height:160%;}
-.container h4:before{content: '';position: absolute;top:11px;left: 0;width: 6px;height: 4px;background-color: #1a2273;}
-.container h4.excep{position: relative;margin:30px 0 10px 0;padding-left:13px;color:#1a2273;font-size:16px;line-height:160%;}
-.container h4.excep:before{content: '';position: absolute;top:11px;left: 0;width: 6px;height: 4px;background-color: #172162;}
-.container h5{margin:30px 0 15px 0px;font-size:15px;color:#545454;}
-.container h2+h2{margin-top:0;}
+.container h4{position:relative;margin:35px 0 15px 0;padding-left:12px;font-size:24px;font-weight: bold; color:#121212;line-height:160%;}
+.container h4:before{content:'';position:absolute;top: 9px;left: 0;width:4px;height:21px;background-color:#134af1}
+.container h4:first-child {margin:0 0 10px 0;}
+
+
+  
+.container h5{position: relative;margin:35px 0 15px 0;padding-left:13px;color:#121212;font-size:16px;line-height:160%;}
+.container h5:before{content: '';position: absolute;top:11px;left: 0;width: 6px;height: 4px;background-color: #1a2273;}
+.container h5.excep{position: relative;margin:30px 0 10px 0;padding-left:13px;color:#1a2273;font-size:16px;line-height:160%;}
+.container h5.excep:before{content: '';position: absolute;top:11px;left: 0;width: 6px;height: 4px;background-color: #172162;}
+/* .container h5{margin:30px 0 15px 0px;font-size:15px;color:#545454;} */
+
 .container h3+h3{margin-top:0;}
-.container h2+h3{margin-top:0;}
 .container h3+h4{margin-top:0;}
 .container h4+h5{margin-top:0;}
 .container h5+h6{margin-top:0;}
