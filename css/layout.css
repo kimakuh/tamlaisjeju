@@ -1655,6 +1655,7 @@ board_list  travel_together - 동행 게시판 리스트
 }
 
 .board_list.travel_together .box_cont_area {padding:20px;}
+.board_list.travel_together .box_cont_area b{margin-bottom:10px;}
 
 .board_list.travel_together .box_cont_area .plan_date {
   font-size: 14px;
@@ -1662,5 +1663,5 @@ board_list  travel_together - 동행 게시판 리스트
 }
 
 .board_list.travel_together .box_cont_area .plan_gender{
-  display: inline-block;padding:5px;background: #125688;font-size:14px;
+  display: inline-block;padding:5px;background: #55acee;font-size:14px;color:#fff;
 }
