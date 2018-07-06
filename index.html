@@ -35,10 +35,9 @@
 
     <header id="header"></header>
     <div id="mcontainer" class="container wrapper">
-        <div id="mcontent" style="min-height:500px">
+        <div id="mcontent" class="content">
+            <!-- content 안의 가장 큰 제목은 h3 태그로 작성합니다. -->
             <h3>UI_COMPONENT</h3>
-            <!-- 제목 -->
-            <h3>ui component</h3>
             <h4>h4 제목이 들어간다.</h4>
             <h5>h5 제목이 들어간다.</h5>
             <!-- 제목과 텍스트 -->
@@ -64,45 +63,40 @@
                 <li>리스트</li>
                 <li>리스트</li>
             </ul>
-            <table class="table-type01 w100 center">
-                <caption>위탁을 받는자(수탁자), 위탁을 하는 업무, 위탁기간으로 구성된 개인정보 위탁현황 표</caption>
-                <thead>
-                    <tr>
-                        <th>위탁을 받는자(수탁자)</th>
-                        <th>위탁을 하는 업무</th>
-                        <th>위탁기간</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>㈜쓰리에스텍</td>
-                        <td>‘제주관광정보 홈페이지’ DBMS 유지보수</td>
-                        <td>2017.06.01~2018.02.28</td>
-                    </tr>
-                    <tr>
-                        <td>㈜이지정보기술</td>
-                        <td>‘제주관광정보 홈페이지’ 서버 유지보수</td>
-                        <td>2017.06.01~2018.02.28</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table-type01 w100 center">
-                <caption class="hidden">
-                    <strong>금융기관 18개에 대한 내용</strong>
-                </caption>
-                <thead>
-                    <tr>
-                        <th scope="col" class="align_center"> 금 융 기 관(18개)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="align_left word_keep_all"> 국민은행, 신한은행, 우리은행, 하나은행, 한국외환은행, 한국스탠다드차타드은행, 한국씨티은행, 경남은행, 광주은행, 대구은행, 부산은행, 전북은행, 제주은행, 중소기업은행,
-                            농업은행, 수산업협동조합중앙회, 서울보증보험
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <h4>테이블 스타일</h4>
+            <table class="tbl_basic center">
+                    <caption>
+                         <strong>개인정보 보호책임자</strong>
+                         <details>
+                            <summary>개인정보 보호책임자에 대한 표로 구분, 개인정보보호책임자, 개인정보 보호담당자에 관련된 내용입니다.</summary>
+                         </details>
+                      </caption>
+                    <colgroup>
+                      <col>
+                      <col>
+                      <col>
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">구분</th>
+                        <th scope="col">담당</th>
+                        <th scope="col">전화</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>개인정보 보호 책임자</td>
+                        <td>강천윤 책임기술원</td>
+                        <td>032-770-8700</td>
+                      </tr>
+                      <tr>
+                        <td>개인정보 보호 담당자</td>
+                        <td>김상명 선임기술원</td>
+                        <td>032-770-8486</td>
+                      </tr>
+                    </tbody> 
+                </table>
+
             <h5>h5 제목이 들어간다.</h5>
             <div>div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트div에텍스트</div>
             <p>서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가 들어갑니다.서브텍스트가
