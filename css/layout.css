@@ -680,7 +680,10 @@ container - 컨텐츠 스타일
 /* top_box */
 /* topbox */
 .ui.uit{background: #f1f1f4;}
-.ui.uit .inner{position:relative;padding:25px;}
+.ui.uit .inner{ position: relative;
+  padding: 45px 50px 50px;}
+  .ui.uit.type1 .inner{    padding-left: 200px;
+    min-height: 160px;}
 .ui.uit .inner .txtwrap{position:relative;}
 .ui.uit .inner .tit_inner{display:block;margin:0;margin-bottom:10px;color:#10349e;font-size:20px;line-height:30px;font-weight:bold;}
 .ui.uit .inner .txtwrap b {display:block;margin-bottom:5px; font-weight:bold; font-size:18px;}
