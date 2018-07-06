@@ -755,7 +755,7 @@ container - 컨텐츠 스타일
 
 
   
-.container h5{position: relative;margin-bottom:25px;padding-left:13px;color:#121212;font-size:16px;line-height:24px;}
+.container h5{position: relative;margin-bottom:25px;padding-left:13px;color:#121212;font-size:20px;line-height:28px;}
 .container h5:before{content: '';position: absolute;top:11px;left: 0;width: 6px;height: 4px;background-color: #1a2273;}
 .container h3+h3{margin-top:0;}
 .container h3+h4{margin-top:0;}
