@@ -1680,15 +1680,19 @@ board_list  travel_together - 동행 게시판 리스트
   opacity: 0.8;
 }
 
-
 .board_list.travel_together .box_wrap figure .r_status {
-position: absolute;
-left: 0;
-top:0;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-.board_list.travel_together .box_wrap figure .r_status.open{background-color:#000}
-.board_list.travel_together .box_wrap figure .r_status.close{background-color:#db4747;}
 
+.board_list.travel_together .box_wrap figure .r_status.open {
+  background-color: #000
+}
+
+.board_list.travel_together .box_wrap figure .r_status.close {
+  background-color: #db4747;
+}
 
 .board_list.travel_together .box_wrap figure figcaption {
   color: #fff;
@@ -1721,7 +1725,7 @@ top:0;
 
 .board_list.travel_together .box_wrap figure b {
   display: block;
-  width:100%;
+  width: 100%;
   /* font-size: 22px;
   color: #1b1b1b; */
 }
@@ -1737,25 +1741,32 @@ top:0;
   white-space: nowrap;
 }
 
-
 .board_list.travel_together .box_wrap figure .gender {
-  display: inline-block;padding:6px;background-color:#db4747;font-size:14px;color:#fff;
+  display: inline-block;
+  padding: 6px;
+  background-color: #db4747;
+  font-size: 14px;
+  color: #fff;
   vertical-align: middle;
-  border-radius:100%;
+  border-radius: 10px;
 }
 
 .board_list.travel_together .box_wrap figure .date {
-  display:inline-block;
+  display: inline-block;
   font-size: 14px;
-  color: #134af1;
+  color: #fff;
+  background-color: #134af1;
   vertical-align: middle;
+  border-radius: 10px;
 }
 
-.board_list.travel_together .box_wrap figure .capacity{
-  display:inline-block;
+.board_list.travel_together .box_wrap figure .capacity {
+  display: inline-block;
   font-size: 14px;
-  color: #134af1;
+  color: #fff;
+  background-color: #134af1;
   vertical-align: middle;
+  border-radius: 10px;
 }
 
 /* .board_list.travel_together .box_wrap figure b span {
