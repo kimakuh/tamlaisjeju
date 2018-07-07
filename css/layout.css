@@ -35,8 +35,8 @@
 
 .topnav h1 a {
   display:block;
-  width:88px;
-  height:81px;
+  width:167px;
+  height:95px;
   font-family: 'Gugi', cursive;
   float: none;
   font-size: 0;
@@ -45,9 +45,9 @@
   /* color: #091152; */
   /* color:#10349e; */
   /* color:#2168f6; */
-  color: #1a7ef8;
+  /* color: #1a7ef8; */
   line-height: 0;
-  background: url(../img/common/new_logo2.png) no-repeat;
+  background: url(../img/common/logo_web.gif) no-repeat;
 }
 
 .topnav h1 a:hover {}
