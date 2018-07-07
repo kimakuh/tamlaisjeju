@@ -454,9 +454,9 @@
 
 #footer ul li {
   display: inline-block;
-  background-image: url('../img/common/f_line.png');
+  /* background-image: url('../img/common/f_line.png');
   background-repeat: no-repeat;
-  background-size: auto 11px;
+  background-size: auto 11px; */
   padding-left: 11px;
   margin-right: 7px;
 }
@@ -488,69 +488,6 @@
   margin-top: 8px;
 }
 
-/* board common */
-
-/* .board_wrap {
-  margin-bottom: 30px;
-} */
-
-/* 
-.box {
-  position: relative;
-  float: left;
-  width: 31.3%;
-  margin-left: 2%;
-  border: 1px solid #ededed;
-  box-sizing: border-box;
-}
-
-.box a {
-  display: block;
-}
-
-.box a span.category {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 2px 5px;
-  color: #fff;
-  background: #2d2d2d
-}
-
-.box a img {
-  width: 100%;
-}
-
-.box p.box_title {
-  margin: 15px;
-  text-align: center;
-}
-
-.box p.box_title a {
-  overflow: hidden;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #1b1b1b;
-  line-height: 20px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.box p {
-  margin: 15px;
-  text-align: center;
-}
-
-.box p.hashtag a {
-  display: inline-block;
-  color: #2168f6;
-}
-
-.box p.mytag a {
-  display: inline-block;
-  color: #535353;
-} */
 
 .item_count_area {}
 
