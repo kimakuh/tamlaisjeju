@@ -1684,6 +1684,7 @@ board_list  travel_together - 동행 게시판 리스트
   position: absolute;
   left: 0;
   top: 0;
+  z-index:1001;
 }
 
 .board_list.travel_together .box_wrap figure .r_status.open {
@@ -1692,6 +1693,7 @@ board_list  travel_together - 동행 게시판 리스트
 
 .board_list.travel_together .box_wrap figure .r_status.close {
   background-color: #db4747;
+  text-shadow:none;
 }
 
 .board_list.travel_together .box_wrap figure figcaption {
