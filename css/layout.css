@@ -48,6 +48,7 @@
   /* color: #1a7ef8; */
   line-height: 0;
   background: url(../img/common/tamla_logo.gif) no-repeat;
+  background-size: cover;
 }
 
 .topnav h1 a:hover {}
