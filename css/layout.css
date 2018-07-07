@@ -1750,7 +1750,7 @@ board_list  travel_together - 동행 게시판 리스트
 
   font-weight: bold;
   color: #10349e;
-  font-size: 22px;
+  font-size: 20px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
