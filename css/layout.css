@@ -76,7 +76,7 @@
   font-size: 17px;
   border: none;
   outline: none;
-  color: white;
+  color: #282828;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -482,7 +482,7 @@
 }
 
 #footer .foot_info  address{
-  margin-bottom:5px;
+  margin-bottom:8px;
 }
 #footer .foot_info p{
   color:#9ea3a7;
