@@ -250,6 +250,9 @@
   font-size: 14px;
   color: #909090;
 }
+#header .search_wrap .search_box_left dd a{
+  margin-right: 14px;
+}
 
 
 
