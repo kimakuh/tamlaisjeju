@@ -1686,7 +1686,7 @@ board_list  travel_together - 동행 게시판 리스트
   top: 0;
   z-index:1001;
   font-size:14px;
-  line-height:24px;
+  line-height:20px;
   padding:5px 10px;
   min-width:60px;
   text-align: center;
