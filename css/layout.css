@@ -179,6 +179,20 @@
   }
 }
 
+
+/* search_wrap */
+.search_wrap{
+  padding: 7px 0;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  height: 38px;
+}
+
+
+
+
+
+
 /* sub layout */
 
 #content {
