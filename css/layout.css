@@ -206,8 +206,30 @@
   height: 38px;
 }
 
+#header .search_wrap .search_box label.nav-search {
+  display: none;
+}
 
+#header .search_wrap .search_box .nav-search {
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  background: transparent;
+  outline: none;
+}
 
+#header .search_wrap .search_box .btn_search {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  background: url(../img/common/srh_icon.png) no-repeat;
+}
 
 /* sub layout */
 
