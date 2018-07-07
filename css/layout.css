@@ -1688,8 +1688,11 @@ board_list  travel_together - 동행 게시판 리스트
   font-size:14px;
   line-height:24px;
   padding:5px 10px;
-  min-width:80px;
+  min-width:60px;
+  text-align: center;
+  vertical-align: middle;
   opacity:1;
+  color:#fff;
 }
 
 .board_list.travel_together .box_wrap figure .r_status.open {
