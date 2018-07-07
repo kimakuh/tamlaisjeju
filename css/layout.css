@@ -1744,7 +1744,7 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together .box_wrap figure .gender {
   display: inline-block;
   padding: 6px;
-  background-color: #db4747;
+  background-color: #134af1;
   font-size: 14px;
   color: #fff;
   vertical-align: middle;
@@ -1766,7 +1766,7 @@ board_list  travel_together - 동행 게시판 리스트
   color: #fff;
   background-color: #134af1;
   vertical-align: middle;
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 /* .board_list.travel_together .box_wrap figure b span {
