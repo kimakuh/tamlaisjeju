@@ -1744,8 +1744,10 @@ board_list  travel_together - 동행 게시판 리스트
 
 .board_list.travel_together .box_wrap figure .title {
   display: block;
-  line-height: 22px;
   overflow: hidden;
+  margin-bottom:10px;
+  line-height: 22px;
+
   font-weight: bold;
   color: #10349e;
   font-size: 22px;
@@ -1757,7 +1759,7 @@ board_list  travel_together - 동행 게시판 리스트
 
 .board_list.travel_together .box_wrap figure .date {
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   color: #1b1b1b;
 
   vertical-align: middle;
