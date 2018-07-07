@@ -206,7 +206,7 @@
   height: 38px;
 }
 
-#header .search_wrap .search_box label.nav-search {
+#header .search_wrap .search_box label {
   display: none;
 }
 
