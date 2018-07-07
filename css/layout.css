@@ -1668,10 +1668,12 @@ board_list  travel_together - 동행 게시판 리스트
   overflow: hidden;
   width: 32%;
   margin-left: 2%;
+  min-height:350px;
   /* margin: 10px 1%; */
-  min-width: 320px;
+  /* min-width: 320px;
   max-width: 480px;
-  max-height: 360px;
+  max-height: 360px; */
+  
   /* width: 48%; */
   height: auto;
   background: #3085a3;
