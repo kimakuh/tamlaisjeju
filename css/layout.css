@@ -1663,7 +1663,9 @@ board_list  travel_together - 동행 게시판 리스트
 }
 
 
-.board_list.travel_together .box .img_area {
+
+
+.board_list.travel_together .box .img_area img{
   backface-visibility: hidden;
   transition: transform 0.35s;
   position: relative;
@@ -1675,6 +1677,14 @@ board_list  travel_together - 동행 게시판 리스트
 
 
 
+.board_list.travel_together .box .img_area a:hover img{
+  -webkit-transform: translate3d(0, -80px, 0);
+  transform: translate3d(0, -80px, 0);
+}
+
+
+
+
 .board_list.travel_together .box_cont_area::before,
 .board_list.travel_together .box_cont_area::after {
     pointer-events: none;
@@ -1683,6 +1693,17 @@ board_list  travel_together - 동행 게시판 리스트
 
 .board_list.travel_together .box_cont_area .visible_cont{
   position: absolute;left: 0;bottom:0;
+  
+
+}
+
+.board_list.travel_together .box_cont_area .hide_cont{
+  text-transform: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
 }
 
 
