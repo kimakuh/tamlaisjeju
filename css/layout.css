@@ -23,8 +23,8 @@
 .topnav {
   /* overflow: hidden; */
   background-color: #fff;
-  border-top:1px solid #dfdfdf;
-  border-bottom:1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 .topnav h1 {
@@ -38,13 +38,13 @@
   font-size: 30px;
   padding: 0;
   /* color: #091152; */
-  color:#10349e;
+  /* color:#10349e; */
+  /* color:#2168f6; */
+  color: #1a7ef8;
   line-height: 54px;
 }
 
-.topnav h1 a:hover {
-
-}
+.topnav h1 a:hover {}
 
 .menu_wrap {
   float: right;
@@ -180,33 +180,33 @@
   }
 }
 
-
 /* search_wrap */
-.search_wrap{
+
+.search_wrap {
   padding: 7px 0;
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
   height: 38px;
 }
 
+#header .search_wrap .search_box_left {
+  float: left;
+}
 
-#header .search_wrap .search_box_left{float: left;}
+#header .search_wrap .search_box {
+  position: relative;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 420px;
+  margin-right: 5px;
+  padding-right: 40px;
+  border: 3px solid #1a7ef8;
+  width: 46px;
+  height: 38px;
+}
 
 
-
-
-#header .search_wrap .search_box{
-position: relative;
-    float: left;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 420px;
-    margin-right: 5px;
-    padding-right: 40px;
-    border: 3px solid #10349e;
-    width: 46px;
-    height: 38px;
-  }
 
 
 /* sub layout */
@@ -494,34 +494,33 @@ position: relative;
 #footer ul li:first-child {
   background: none;
   padding: 0;
-  
 }
 
-#footer ul li:first-child a{
-  font-weight:bold;
+#footer ul li:first-child a {
+  font-weight: bold;
   color: #ddd;
 }
 
 #footer ul li a {
   display: block;
-  color:#9ea3a7;
+  color: #9ea3a7;
 }
 
 #footer .foot_info {
   margin-top: 20px;
 }
 
-#footer .foot_info  address{
-  margin-bottom:8px;
+#footer .foot_info address {
+  margin-bottom: 8px;
 }
-#footer .foot_info p{
-  color:#9ea3a7;
+
+#footer .foot_info p {
+  color: #9ea3a7;
 }
 
 #footer .foot_info>p:last-child {
-  margin-top:8px;
+  margin-top: 8px;
 }
-
 
 .item_count_area {}
 
@@ -1668,16 +1667,16 @@ board_list  travel_together - 동행 게시판 리스트
   position: absolute;
   left: 0;
   top: 0;
-  z-index:1001;
-  font-size:14px;
-  line-height:20px;
-  padding:5px 10px;
-  min-width:60px;
+  z-index: 1001;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 10px;
+  min-width: 60px;
   text-align: center;
   vertical-align: middle;
-  opacity:1;
-  color:#fff;
-  font-weight:normal;
+  opacity: 1;
+  color: #fff;
+  font-weight: normal;
 }
 
 .board_list.travel_together .box_wrap figure .r_status.open {
@@ -1686,8 +1685,8 @@ board_list  travel_together - 동행 게시판 리스트
 
 .board_list.travel_together .box_wrap figure .r_status.close {
   background-color: #db4747;
-  text-shadow:none;
-  float:none;
+  text-shadow: none;
+  float: none;
 }
 
 .board_list.travel_together .box_wrap figure figcaption {
@@ -1722,15 +1721,13 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together .box_wrap figure b {
   display: block;
   width: 100%;
-
 }
 
 .board_list.travel_together .box_wrap figure .title {
   display: block;
   overflow: hidden;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   line-height: 22px;
-
   font-weight: bold;
   color: #1b1b1b;
   font-size: 20px;
@@ -1738,21 +1735,18 @@ board_list  travel_together - 동행 게시판 리스트
   white-space: nowrap;
 }
 
-
-
 .board_list.travel_together .box_wrap figure .date {
   display: inline-block;
-  margin:0 2px;
+  margin: 0 2px;
   font-size: 16px;
   color: #545454;
-
   vertical-align: middle;
-
 }
+
 .board_list.travel_together .box_wrap figure .gender {
   display: inline-block;
   padding: 8px 6px;
-  margin:0 2px;
+  margin: 0 2px;
   /* background-color: #134af1; */
   background-color: #10349e;
   font-size: 14px;
@@ -1765,19 +1759,17 @@ board_list  travel_together - 동행 게시판 리스트
   display: inline-block;
   padding: 8px;
   font-size: 14px;
-  margin:0 2px;
+  margin: 0 2px;
   color: #fff;
   /* background-color: #134af1; */
   background-color: #10349e;
   vertical-align: middle;
-    border-radius: 100%;
-  
+  border-radius: 100%;
 }
-
 
 .board_list.travel_together figure.effect {
   background: #f1f1f4;
-  border:1px solid #ededed;
+  border: 1px solid #ededed;
 }
 
 .board_list.travel_together figure.effect img,
@@ -1796,8 +1788,7 @@ board_list  travel_together - 동행 게시판 리스트
   position: absolute;
   bottom: 0;
   left: 0;
-  padding:20px;
-
+  padding: 20px;
 }
 
 .board_list.travel_together figure.effect p {
@@ -1838,4 +1829,3 @@ board_list  travel_together - 동행 게시판 리스트
   }
 }
 */
-
