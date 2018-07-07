@@ -35,8 +35,8 @@
 
 .topnav h1 a {
   display:block;
-  width:167px;
-  height:95px;
+  width:100px;
+  height:100px;
   font-family: 'Gugi', cursive;
   float: none;
   font-size: 0;
@@ -47,7 +47,7 @@
   /* color:#2168f6; */
   /* color: #1a7ef8; */
   line-height: 0;
-  background: url(../img/common/logo_web.gif) no-repeat;
+  background: url(../img/common/tamla_logo.gif) no-repeat;
 }
 
 .topnav h1 a:hover {}
