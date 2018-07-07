@@ -1770,19 +1770,7 @@ board_list  travel_together - 동행 게시판 리스트
   vertical-align: middle;
     border-radius: 10px;
 }
-
-/* .board_list.travel_together .box_wrap figure b span {
-
-}
-
-.board_list.travel_together .box_wrap figure b,
-.board_list.travel_together .box_wrap figure p {
-
-}
-
-.board_list.travel_together .box_wrap figure p {
-
-} */
+\
 
 .board_list.travel_together figure.effect {
   background: #f1f1f4;
@@ -1804,7 +1792,7 @@ board_list  travel_together - 동행 게시판 리스트
   position: absolute;
   bottom: 0;
   left: 0;
-  /* padding: 30px; */
+\
 }
 
 .board_list.travel_together figure.effect p {
@@ -1829,7 +1817,7 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together figure.effect:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 20px, 0);
 }
 
 /* Media queries */
