@@ -1656,7 +1656,6 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together .box_wrap {
   position: relative;
   clear: both;
-  /* margin: 0 auto; */
   list-style: none;
   text-align: center;
 }
@@ -1670,12 +1669,6 @@ board_list  travel_together - 동행 게시판 리스트
   margin-left: 2%;
   margin-bottom:0;
   min-height:350px;
-  /* margin: 10px 1%; */
-  /* min-width: 320px;
-  max-width: 480px;
-  max-height: 360px; */
-  
-  /* width: 48%; */
   height: auto;
   background: #3085a3;
   text-align: center;
@@ -1696,9 +1689,7 @@ board_list  travel_together - 동행 게시판 리스트
 }
 
 .board_list.travel_together .box_wrap figure figcaption {
-  padding: 2em;
   color: #fff;
-  font-size: 1.25em;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1737,7 +1728,7 @@ board_list  travel_together - 동행 게시판 리스트
   white-space: nowrap;
 }
 
-.board_list.travel_together .box_wrap figure b span {
+/* .board_list.travel_together .box_wrap figure b span {
 
 }
 
@@ -1748,7 +1739,7 @@ board_list  travel_together - 동행 게시판 리스트
 
 .board_list.travel_together .box_wrap figure p {
 
-}
+} */
 
 
 .board_list.travel_together figure.effect {
@@ -1775,7 +1766,6 @@ board_list  travel_together - 동행 게시판 리스트
 }
 
 .board_list.travel_together figure.effect p {
-  font-size: 90%;
   text-transform: none;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -1804,7 +1794,7 @@ board_list  travel_together - 동행 게시판 리스트
 
 
 /* Media queries */
-
+/*
 @media screen and (max-width: 50em) {
 
   .board_list.travel_together .box_wrap figure {
@@ -1814,7 +1804,7 @@ board_list  travel_together - 동행 게시판 리스트
       width: 100%;
   }
 }
-
+*/
 
 
 
