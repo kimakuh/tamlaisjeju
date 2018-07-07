@@ -1647,7 +1647,171 @@ board_list - 게시판 리스트
 board_list  travel_together - 동행 게시판 리스트
 ***************************************************************************************/
 
-.board_list.travel_together {}
+
+
+
+
+
+
+.board_list.travel_together .box_wrap {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  list-style: none;
+  text-align: center;
+}
+
+
+.board_list.travel_together .box_wrap figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.board_list.travel_together .box_wrap figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.board_list.travel_together .box_wrap figure figcaption {
+  padding: 2em;
+  color: #fff;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.board_list.travel_together .box_wrap figure figcaption::before,
+.board_list.travel_together .box_wrap figure figcaption::after {
+  pointer-events: none;
+}
+
+.board_list.travel_together .box_wrap figure figcaption,
+.board_list.travel_together .box_wrap figure figcaption>a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.board_list.travel_together .box_wrap figure figcaption>a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.board_list.travel_together .box_wrap figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.board_list.travel_together .box_wrap figure h2 span {
+  font-weight: 800;
+}
+
+.board_list.travel_together .box_wrap figure h2,
+.board_list.travel_together .box_wrap figure p {
+  margin: 0;
+}
+
+.board_list.travel_together .box_wrap figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+
+.board_list.travel_together figure.effect {
+  background: #df4e4e;
+}
+
+.board_list.travel_together figure.effect img,
+.board_list.travel_together figure.effect h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+.board_list.travel_together figure.effect img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.board_list.travel_together figure.effect h2,
+.board_list.travel_together figure.effect p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+
+.board_list.travel_together figure.effect p {
+  font-size: 90%;
+  text-transform: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
+}
+
+.board_list.travel_together figure.effect:hover img {
+  -webkit-transform: translate3d(0, -80px, 0);
+  transform: translate3d(0, -80px, 0);
+}
+
+.board_list.travel_together figure.effect:hover h2 {
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0);
+}
+
+.board_list.travel_together figure.effect:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 50em) {
+
+  .board_list.travel_together .box_wrap figure {
+      display: inline-block;
+      float: none;
+      margin: 10px auto;
+      width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .board_list.travel_together {}
 
 .board_list.travel_together .box {
   position: relative;
@@ -1746,4 +1910,4 @@ board_list  travel_together - 동행 게시판 리스트
   border-radius:100%;
 }
 
-.board_list.travel_together .box_cont_area .plan_txt{margin:10px 0;}
+.board_list.travel_together .box_cont_area .plan_txt{margin:10px 0;} */
