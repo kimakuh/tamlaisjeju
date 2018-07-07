@@ -1820,8 +1820,8 @@ board_list  travel_together - 동행 게시판 리스트
 }
 
 .board_list.travel_together figure.effect:hover b {
-  -webkit-transform: translate3d(0, -10px, 0);
-  transform: translate3d(0, -10px, 0);
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0);
 }
 
 .board_list.travel_together figure.effect:hover p {
