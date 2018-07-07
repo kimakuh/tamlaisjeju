@@ -795,18 +795,14 @@
             </div>
             <!-- board_list end-->
 
-            <style type="text/css">
-                /*동행게시판 리스트 스타일*/
-            </style>
-
 
         </div>
         <!-- container end -->
     </div>
     <!-- mcontainer -->
 
-
-    <div class="grid">
+<div class="board_list travel_together">
+    <div class="box_wrap">
         <figure class="effect-goliath">
             <img src="https://tympanus.net/Development/HoverEffectIdeas/img/23.jpg" alt="img23" />
             <figcaption>
@@ -828,10 +824,10 @@
             </figcaption>
         </figure>
     </div>
-
+</div><!-- board_list end -->
 
     <style type="text/css">
-        .grid {
+        .box_wrap {
             position: relative;
             clear: both;
             margin: 0 auto;
@@ -843,7 +839,7 @@
 
         /* Common style */
 
-        .grid figure {
+        .box_wrap figure {
             position: relative;
             /* float: left; */
             overflow: hidden;
@@ -858,7 +854,7 @@
             cursor: pointer;
         }
 
-        .grid figure img {
+        .box_wrap figure img {
             position: relative;
             display: block;
             min-height: 100%;
@@ -866,7 +862,7 @@
             opacity: 0.8;
         }
 
-        .grid figure figcaption {
+        .box_wrap figure figcaption {
             padding: 2em;
             color: #fff;
             font-size: 1.25em;
@@ -875,13 +871,13 @@
             backface-visibility: hidden;
         }
 
-        .grid figure figcaption::before,
-        .grid figure figcaption::after {
+        .box_wrap figure figcaption::before,
+        .box_wrap figure figcaption::after {
             pointer-events: none;
         }
 
-        .grid figure figcaption,
-        .grid figure figcaption>a {
+        .box_wrap figure figcaption,
+        .box_wrap figure figcaption>a {
             position: absolute;
             top: 0;
             left: 0;
@@ -893,7 +889,7 @@
 
         /* For some effects it will show as a button */
 
-        .grid figure figcaption>a {
+        .box_wrap figure figcaption>a {
             z-index: 1000;
             text-indent: 200%;
             white-space: nowrap;
@@ -901,21 +897,21 @@
             opacity: 0;
         }
 
-        .grid figure h2 {
+        .box_wrap figure h2 {
             word-spacing: -0.15em;
             font-weight: 300;
         }
 
-        .grid figure h2 span {
+        .box_wrap figure h2 span {
             font-weight: 800;
         }
 
-        .grid figure h2,
-        .grid figure p {
+        .box_wrap figure h2,
+        .box_wrap figure p {
             margin: 0;
         }
 
-        .grid figure p {
+        .box_wrap figure p {
             letter-spacing: 1px;
             font-size: 68.5%;
         }
@@ -987,7 +983,7 @@
                 padding: 0 10px;
                 text-align: center;
             }
-            .grid figure {
+            .box_wrap figure {
                 display: inline-block;
                 float: none;
                 margin: 10px auto;
