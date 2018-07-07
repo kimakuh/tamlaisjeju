@@ -464,6 +464,12 @@
 #footer ul li:first-child {
   background: none;
   padding: 0;
+  
+}
+
+#footer ul li:first-child a{
+  font-weight:bold;
+  color: #ddd;
 }
 
 #footer ul li a {
@@ -473,6 +479,9 @@
 
 #footer .foot_info {
   margin-top: 20px;
+}
+#footer .foot_info p{
+  color:#9ea3a7;
 }
 
 #footer .foot_info>p:last-child {
