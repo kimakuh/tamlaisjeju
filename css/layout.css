@@ -1144,13 +1144,13 @@ container - 컨텐츠 스타일
 .list_2st li {
   margin: 3px 0;
   padding-left: 9px;
-  background: url(/site/common/img/list_bul2.png) no-repeat left 9px;
+  background: url(/common/img/list_bul3.png) no-repeat left 9px;
   color: #555;
   word-break: keep-all;
   word-wrap: break-word;
 }
 
-.list_3st {
+/* .list_3st {
   margin: 4px 0;
   padding: 0;
 }
@@ -1159,7 +1159,7 @@ container - 컨텐츠 스타일
   margin: 3px 0;
   padding-left: 11px;
   background: url(/common/img/list_bul3.png) no-repeat left 8px;
-}
+} */
 
 .list_1st li b,
 .list_1st dd b,
