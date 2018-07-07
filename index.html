@@ -739,8 +739,8 @@
                             <p class="plan_date">2018-07-09 ~ 2018-07-10</p>
                             <p class="plan_gender">무관</p>
                             <p class="plan_txt">
-                                    제주도 여행 혼자 가는데 함께하실분 구합니다. 같이 사진도 찍어주고 이쁜 카페나 맛집도 다녀요.
-                                </p>
+                                제주도 여행 혼자 가는데 함께하실분 구합니다. 같이 사진도 찍어주고 이쁜 카페나 맛집도 다녀요.
+                            </p>
                             <p class="hashtag">
                                 <a href="#">#전복김밥</a>
                                 <a href="#">#통전복주먹밥</a>
@@ -764,23 +764,28 @@
                         </div>
                         <!-- img area end -->
                         <div class="box_cont_area">
-                            <a href="#">
-                                <b>동행은 넘조아동행은 넘조아동행은 넘조아동행은 넘조아동행은 넘조아동행은 넘조아</b>
-                            </a>
-                            <p class="plan_date">2018-07-09 ~ 2018-07-10</p>
-                            <p class="plan_gender">남성</p>
-                            <p class="plan_txt">
+                            <div class="visible_cont">
+                                <a href="#">
+                                    <b>동행은 넘조아동행은 넘조아동행은 넘조아동행은 넘조아동행은 넘조아동행은 넘조아</b>
+                                </a>
+                                <p class="plan_date">2018-07-09 ~ 2018-07-10</p>
+                                <p class="plan_gender">남성</p>
+                            </div>
+                            <div class="hide_cont">
+                                <p class="plan_txt">
                                     제주도 여행 혼자 가는데 함께하실분 구합니다. 같이 사진도 찍어주고 이쁜 카페나 맛집도 다녀요.
                                 </p>
-                            <p class="hashtag">
-                                <a href="#">#전복김밥</a>
-                                <a href="#">#통전복주먹밥</a>
-                                <a href="#">#미역국</a>
-                            </p>
-                            <p class="my_hashtag">
-                                <a href="#">#쑥찐빵</a>
-                                <a href="#">#우유식빵</a>
-                            </p>
+                                <p class="hashtag">
+                                    <a href="#">#전복김밥</a>
+                                    <a href="#">#통전복주먹밥</a>
+                                    <a href="#">#미역국</a>
+                                </p>
+                                <p class="my_hashtag">
+                                    <a href="#">#쑥찐빵</a>
+                                    <a href="#">#우유식빵</a>
+                                </p>
+                            </div>
+                            <!-- more_cont end -->
                         </div>
                         <!-- box_cont_area -->
                     </div>
@@ -790,7 +795,9 @@
             </div>
             <!-- board_list end-->
 
-
+            <style type="text/css">
+                /*동행게시판 리스트 스타일*/
+            </style>
 
 
         </div>
@@ -799,35 +806,31 @@
     <!-- mcontainer -->
 
 
-        <div class="grid">
-            <figure class="effect-goliath">
-                <img src="https://tympanus.net/Development/HoverEffectIdeas/img/23.jpg" alt="img23" />
-                <figcaption>
-                    <h2>Thoughtful
-                        <span>Goliath</span>
-                    </h2>
-                    <p>When Goliath comes out, you should run.</p>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-            <figure class="effect-goliath">
-                <img src="https://tympanus.net/Development/HoverEffectIdeas/img/24.jpg" alt="img24" />
-                <figcaption>
-                    <h2>Thoughtful
-                        <span>Goliath</span>
-                    </h2>
-                    <p>When Goliath comes out, you should run.</p>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-        </div>
+    <div class="grid">
+        <figure class="effect-goliath">
+            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/23.jpg" alt="img23" />
+            <figcaption>
+                <h2>Thoughtful
+                    <span>Goliath</span>
+                </h2>
+                <p>When Goliath comes out, you should run.</p>
+                <a href="#">View more</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-goliath">
+            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/24.jpg" alt="img24" />
+            <figcaption>
+                <h2>Thoughtful
+                    <span>Goliath</span>
+                </h2>
+                <p>When Goliath comes out, you should run.</p>
+                <a href="#">View more</a>
+            </figcaption>
+        </figure>
+    </div>
 
 
     <style type="text/css">
-
-
-
-
         .grid {
             position: relative;
             clear: both;
@@ -866,8 +869,8 @@
         .grid figure figcaption {
             padding: 2em;
             color: #fff;
-            text-transform: uppercase;
             font-size: 1.25em;
+            text-transform: uppercase;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
         }
