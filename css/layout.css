@@ -1433,8 +1433,8 @@ board_list - 게시판 리스트
   padding: 5px 10px;
   background: #222;
   color: #fff;
-  font-size:14px;
-  min-width:60px;
+  font-size: 14px;
+  min-width: 60px;
   text-align: center;
 }
 
@@ -1647,12 +1647,6 @@ board_list - 게시판 리스트
 board_list  travel_together - 동행 게시판 리스트
 ***************************************************************************************/
 
-
-
-
-
-
-
 .board_list.travel_together .box_wrap {
   position: relative;
   clear: both;
@@ -1660,24 +1654,22 @@ board_list  travel_together - 동행 게시판 리스트
   text-align: center;
 }
 
-
 .board_list.travel_together .box_wrap figure {
   position: relative;
   float: left;
   overflow: hidden;
   width: 32%;
   margin-left: 2%;
-  margin-bottom:0;
-  min-height:350px;
+  margin-bottom: 0;
+  min-height: 350px;
   height: auto;
   background: #3085a3;
   text-align: center;
   cursor: pointer;
 }
 
-
-.board_list.travel_together .box_wrap figure:first-child{
-  margin-left:0;
+.board_list.travel_together .box_wrap figure:first-child {
+  margin-left: 0;
 }
 
 .board_list.travel_together .box_wrap figure img {
@@ -1719,11 +1711,17 @@ board_list  travel_together - 동행 게시판 리스트
 
 .board_list.travel_together .box_wrap figure b {
   display: block;
-  font-size: 22px;
-  font-weight: bold;
-  overflow: hidden;
-  color: #1b1b1b;
+  /* font-size: 22px;
+  color: #1b1b1b; */
+}
+
+.board_list.travel_together .box_wrap figure .title {
+  display: block;
   line-height: 22px;
+  overflow: hidden;
+  font-weight: bold;
+  color: #10349e;
+  font-size: 22px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -1740,7 +1738,6 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together .box_wrap figure p {
 
 } */
-
 
 .board_list.travel_together figure.effect {
   background: #f1f1f4;
@@ -1790,10 +1787,8 @@ board_list  travel_together - 동행 게시판 리스트
   transform: translate3d(0, 0, 0);
 }
 
-
-
-
 /* Media queries */
+
 /*
 @media screen and (max-width: 50em) {
 
@@ -1805,15 +1800,6 @@ board_list  travel_together - 동행 게시판 리스트
   }
 }
 */
-
-
-
-
-
-
-
-
-
 
 /* .board_list.travel_together {}
 
