@@ -1707,7 +1707,7 @@ board_list  travel_together - 동행 게시판 리스트
   margin-bottom: 0;
   min-height: 330px;
   height: auto;
-  background: #3085a3;
+  /* background: #3085a3; */
   text-align: center;
   cursor: pointer;
 }
@@ -1829,7 +1829,7 @@ board_list  travel_together - 동행 게시판 리스트
 }
 
 .board_list.travel_together figure.effect {
-  background: #f1f1f4;
+  /* background: #f1f1f4; */
   border: 1px solid #ededed;
 }
 
