@@ -1759,7 +1759,7 @@ board_list  travel_together - 동행 게시판 리스트
 
 .board_list.travel_together .box_wrap figure .date {
   display: inline-block;
-  margin:0 3px;
+  margin:0 2px;
   font-size: 16px;
   color: #545454;
 
@@ -1769,7 +1769,7 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together .box_wrap figure .gender {
   display: inline-block;
   padding: 8px 6px;
-  margin:0 3px;
+  margin:0 2px;
   background-color: #134af1;
   font-size: 14px;
   color: #fff;
@@ -1781,7 +1781,7 @@ board_list  travel_together - 동행 게시판 리스트
   display: inline-block;
   padding: 8px 6px;
   font-size: 14px;
-  margin:0 3px;
+  margin:0 2px;
   color: #fff;
   background-color: #134af1;
   vertical-align: middle;
