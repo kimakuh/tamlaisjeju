@@ -827,7 +827,19 @@
                                 <p>동행은 넘조아동행은 넘조아동행은 넘조아동행은 넘조아동행은 넘조아동행은 넘조아</p>
                                 <a href="#">View more</a>
                             </figcaption>
-                        </figure>
+                        </figure><!-- effect end -->
+                        <figure class="effect">
+                                <span>마감</span>
+                                <img src="img/sub02/board_restaurant_img01.jpg" alt="제주김만복(만복이네김밥집)">
+                            <figcaption>
+                                <h2>제주도 비자림 같이가실분!!!
+                                    <span>무관</span>
+                                    <b class="date">2018-07-09 ~ 2018-07-10</b>
+                                </h2>
+                                <p>제주도 여행 혼자 가는데 함께하실분 구합니다. 같이 사진도 찍어주고 이쁜 카페나 맛집도 다녀요.</p>
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure><!-- effect end -->
                         <figure class="effect">
                                 <span>마감</span>
                                 <img src="img/sub02/board_restaurant_img01.jpg" alt="제주김만복(만복이네김밥집)">
@@ -846,174 +858,6 @@
         <!-- container end -->
     </div>
     <!-- mcontainer -->
-
-
-
-    <style type="text/css">
-        .box_wrap {
-            position: relative;
-            clear: both;
-            margin: 0 auto;
-            padding: 1em 0 4em;
-            max-width: 1000px;
-            list-style: none;
-            text-align: center;
-        }
-
-        /* Common style */
-
-        .box_wrap figure {
-            position: relative;
-            /* float: left; */
-            overflow: hidden;
-            margin: 10px 1%;
-            min-width: 320px;
-            max-width: 480px;
-            max-height: 360px;
-            width: 48%;
-            height: auto;
-            background: #3085a3;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .box_wrap figure img {
-            position: relative;
-            display: block;
-            min-height: 100%;
-            max-width: 100%;
-            opacity: 0.8;
-        }
-
-        .box_wrap figure figcaption {
-            padding: 2em;
-            color: #fff;
-            font-size: 1.25em;
-            text-transform: uppercase;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-
-        .box_wrap figure figcaption::before,
-        .box_wrap figure figcaption::after {
-            pointer-events: none;
-        }
-
-        .box_wrap figure figcaption,
-        .box_wrap figure figcaption>a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Anchor will cover the whole item by default */
-
-        /* For some effects it will show as a button */
-
-        .box_wrap figure figcaption>a {
-            z-index: 1000;
-            text-indent: 200%;
-            white-space: nowrap;
-            font-size: 0;
-            opacity: 0;
-        }
-
-        .box_wrap figure h2 {
-            word-spacing: -0.15em;
-            font-weight: 300;
-        }
-
-        .box_wrap figure h2 span {
-            font-weight: 800;
-        }
-
-        .box_wrap figure h2,
-        .box_wrap figure p {
-            margin: 0;
-        }
-
-        .box_wrap figure p {
-            letter-spacing: 1px;
-            font-size: 68.5%;
-        }
-
-
-
-        /*-----------------*/
-
-        /***** Goliath *****/
-
-        /*-----------------*/
-
-        figure.effect {
-            background: #df4e4e;
-        }
-
-        figure.effect img,
-        figure.effect h2 {
-            -webkit-transition: -webkit-transform 0.35s;
-            transition: transform 0.35s;
-        }
-
-        figure.effect img {
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-
-        figure.effect h2,
-        figure.effect p {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            padding: 30px;
-        }
-
-        figure.effect p {
-            font-size: 90%;
-            text-transform: none;
-            opacity: 0;
-            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
-            -webkit-transform: translate3d(0, 50px, 0);
-            transform: translate3d(0, 50px, 0);
-        }
-
-        figure.effect:hover img {
-            -webkit-transform: translate3d(0, -80px, 0);
-            transform: translate3d(0, -80px, 0);
-        }
-
-        figure.effect:hover h2 {
-            -webkit-transform: translate3d(0, -100px, 0);
-            transform: translate3d(0, -100px, 0);
-        }
-
-        figure.effect:hover p {
-            opacity: 1;
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-
-
-
-
-        /* Media queries */
-
-        @media screen and (max-width: 50em) {
-            .content {
-                padding: 0 10px;
-                text-align: center;
-            }
-            .box_wrap figure {
-                display: inline-block;
-                float: none;
-                margin: 10px auto;
-                width: 100%;
-            }
-        }
-    </style>
 
 
 

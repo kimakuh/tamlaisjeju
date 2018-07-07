@@ -1657,7 +1657,6 @@ board_list  travel_together - 동행 게시판 리스트
   position: relative;
   clear: both;
   margin: 0 auto;
-  padding: 1em 0 4em;
   list-style: none;
   text-align: center;
 }
