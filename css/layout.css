@@ -1656,7 +1656,7 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together .box_wrap {
   position: relative;
   clear: both;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   list-style: none;
   text-align: center;
 }
@@ -1666,15 +1666,22 @@ board_list  travel_together - 동행 게시판 리스트
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
+  width: 32%;
+  margin-left: 2%;
+  /* margin: 10px 1%; */
   min-width: 320px;
   max-width: 480px;
   max-height: 360px;
-  width: 48%;
+  /* width: 48%; */
   height: auto;
   background: #3085a3;
   text-align: center;
   cursor: pointer;
+}
+
+
+.board_list.travel_together .box_wrap figure:first-child{
+  margin-left:0;
 }
 
 .board_list.travel_together .box_wrap figure img {
@@ -1731,8 +1738,7 @@ board_list  travel_together - 동행 게시판 리스트
 }
 
 .board_list.travel_together .box_wrap figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
+
 }
 
 
