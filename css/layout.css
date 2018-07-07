@@ -1693,6 +1693,7 @@ board_list  travel_together - 동행 게시판 리스트
 
 .board_list.travel_together .box_cont_area .visible_cont{
   position: absolute;left: 0;bottom:0;
+  background-color:#fff;
 
 }
 
