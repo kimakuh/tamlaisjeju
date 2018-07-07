@@ -37,7 +37,8 @@
   float: none;
   font-size: 30px;
   padding: 0;
-  color: #091152;
+  /* color: #091152; */
+  color:#10349e;
   line-height: 54px;
 }
 
@@ -189,8 +190,22 @@
 }
 
 
+#header .search_wrap .search_box_left{float: left;}
 
 
+
+
+#header .search_wrap .search_box{
+position: relative;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 5px;
+    padding-right: 40px;
+    border: 3px solid #10349e;
+    width: 46px;
+    height: 38px;
+  }
 
 
 /* sub layout */
