@@ -1753,6 +1753,16 @@ board_list  travel_together - 동행 게시판 리스트
   white-space: nowrap;
 }
 
+
+
+.board_list.travel_together .box_wrap figure .date {
+  display: inline-block;
+  font-size: 14px;
+  color: #1b1b1b;
+
+  vertical-align: middle;
+
+}
 .board_list.travel_together .box_wrap figure .gender {
   display: inline-block;
   padding: 6px;
@@ -1760,25 +1770,17 @@ board_list  travel_together - 동행 게시판 리스트
   font-size: 14px;
   color: #fff;
   vertical-align: middle;
-  border-radius: 10px;
-}
-
-.board_list.travel_together .box_wrap figure .date {
-  display: inline-block;
-  font-size: 14px;
-  color: #fff;
-  background-color: #134af1;
-  vertical-align: middle;
-  border-radius: 10px;
+  border-radius: 100%;
 }
 
 .board_list.travel_together .box_wrap figure .capacity {
   display: inline-block;
+  padding: 6px;
   font-size: 14px;
   color: #fff;
   background-color: #134af1;
   vertical-align: middle;
-    border-radius: 10px;
+    border-radius: 100%;
 }
 
 
