@@ -1680,6 +1680,16 @@ board_list  travel_together - 동행 게시판 리스트
   opacity: 0.8;
 }
 
+
+.board_list.travel_together .box_wrap figure .r_status {
+position: absolute;
+left: 0;
+top:0;
+}
+.board_list.travel_together .box_wrap figure .r_status.open{background-color:#000}
+.board_list.travel_together .box_wrap figure .r_status.close{background-color:#db4747;}
+
+
 .board_list.travel_together .box_wrap figure figcaption {
   color: #fff;
   text-transform: uppercase;
