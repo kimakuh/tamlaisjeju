@@ -1806,6 +1806,7 @@ board_list  travel_together - 동행 게시판 리스트
   position: absolute;
   bottom: 0;
   left: 0;
+  padding:20px;
 
 }
 
