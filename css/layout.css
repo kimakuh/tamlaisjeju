@@ -1693,6 +1693,7 @@ board_list  travel_together - 동행 게시판 리스트
   vertical-align: middle;
   opacity:1;
   color:#fff;
+  font-weight:normal;
 }
 
 .board_list.travel_together .box_wrap figure .r_status.open {
