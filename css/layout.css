@@ -22,7 +22,9 @@
 
 .topnav {
   /* overflow: hidden; */
-  background-color: #333;
+  background-color: #fff;
+  border-top:1px solid #dfdfdf;
+  border-bottom:1px solid #dfdfdf;
 }
 
 .topnav h1 {
@@ -35,7 +37,7 @@
   float: none;
   font-size: 30px;
   padding: 0;
-  color: #fff;
+  color: #091152;
   line-height: 54px;
 }
 
@@ -441,8 +443,9 @@
 /* footer area */
 
 #footer {
-  background-color: #3c3c3c;
-  color: #fff;
+  /* background-color: #3c3c3c; */
+  background-color: #3d464f;
+  color: #9ea3a7;
 }
 
 #footer .wrapper {
@@ -465,6 +468,7 @@
 
 #footer ul li a {
   display: block;
+  color:#9ea3a7;
 }
 
 #footer .foot_info {
