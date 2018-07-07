@@ -1748,7 +1748,7 @@ board_list  travel_together - 동행 게시판 리스트
   line-height: 22px;
 
   font-weight: bold;
-  color: #10349e;
+  color: #1b1b1b;
   font-size: 20px;
   text-overflow: ellipsis;
   white-space: nowrap;
