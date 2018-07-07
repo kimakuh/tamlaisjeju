@@ -229,23 +229,22 @@
   width: 32px;
   height: 32px;
   background: url(../img/common/srh_icon.png) no-repeat;
+  color: transparent;
+  text-indent: -9999px;
 }
 
-#header .search_wrap .search_box .txt_interest{
+#header .search_wrap .search_box .txt_interest {
   overflow: hidden;
   float: left;
-  line-height: 38px;  
+  line-height: 38px;
 }
 
-#header .search_wrap .search_box dt{
+#header .search_wrap .search_box dt {
   float: left;
   padding: 0 15px;
   font-size: 14px;
   color: #333;
 }
-
-
-
 
 /* sub layout */
 
