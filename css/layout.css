@@ -198,7 +198,7 @@
   margin:0 auto;
 }
 
-#header .search_wrap .search_box_right {
+#header .search_wrap .search_box_wrap {
   float: right;
 }
 
@@ -242,24 +242,24 @@
   text-indent: -9999px;
 }
 
-#header .search_wrap .search_box_left .txt_interest {
+#header .search_wrap .search_box_wrap .txt_interest {
   overflow: hidden;
   float: left;
   line-height: 38px;
 }
 
-#header .search_wrap .search_box_left dt {
+#header .search_wrap .search_box_wrap dt {
   float: left;
   padding: 0 15px;
   font-size: 14px;
   color: #333;
 }
-#header .search_wrap .search_box_left dd{
+#header .search_wrap .search_box_wrap dd{
   float: left;
   font-size: 14px;
   color: #909090;
 }
-#header .search_wrap .search_box_left dd a{
+#header .search_wrap .search_box_wrap dd a{
   margin-right: 14px;
 }
 
