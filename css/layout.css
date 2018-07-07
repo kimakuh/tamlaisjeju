@@ -1783,11 +1783,13 @@ board_list  travel_together - 동행 게시판 리스트
   background-color: #134af1;
   vertical-align: middle;
     border-radius: 100%;
+  
 }
 
 
 .board_list.travel_together figure.effect {
   background: #f1f1f4;
+  border:1px solid #ededed;
 }
 
 .board_list.travel_together figure.effect img,
