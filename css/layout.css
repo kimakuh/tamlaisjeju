@@ -1723,9 +1723,15 @@ board_list  travel_together - 동행 게시판 리스트
   opacity: 0;
 }
 
-.board_list.travel_together .box_wrap figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
+.board_list.travel_together .box_wrap figure b {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  overflow: hidden;
+  color: #1b1b1b;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .board_list.travel_together .box_wrap figure h2 span {
