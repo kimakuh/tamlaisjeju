@@ -183,10 +183,17 @@
 /* search_wrap */
 
 .search_wrap {
-  padding: 7px 0;
+
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
   height: 38px;
+}
+
+
+#header .search_wrap .search_inner{
+  padding:7px 0;
+  width:1200px;
+  margin:0 auto;
 }
 
 #header .search_wrap .search_box_left {
@@ -224,7 +231,7 @@
 #header .search_wrap .search_box .btn_search {
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 0;
   border: 0;
   width: 32px;
   height: 32px;
