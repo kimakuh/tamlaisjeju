@@ -1711,12 +1711,13 @@ board_list  travel_together - 동행 게시판 리스트
 
 .board_list.travel_together .box_wrap figure b {
   display: block;
+  width:100%;
   /* font-size: 22px;
   color: #1b1b1b; */
 }
 
 .board_list.travel_together .box_wrap figure .title {
-  display: inline-block;
+  display: block;
   line-height: 22px;
   overflow: hidden;
   font-weight: bold;
