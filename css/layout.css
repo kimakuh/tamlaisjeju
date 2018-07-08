@@ -267,6 +267,9 @@
 }
 #header .search_wrap .search_box_wrap dd a{
   margin-right: 14px;
+  padding:8px;
+  border:1px solid #d4d4d6;
+  border-radius:20px;
 }
 
 
