@@ -1846,6 +1846,7 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together figure.effect img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  height:225px;
 }
 
 .board_list.travel_together figure.effect b,
