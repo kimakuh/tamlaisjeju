@@ -2037,7 +2037,7 @@ board_list travelog - 내가 쓰는 여행기 리스트
 }
 
 .board_list.travelog figure.effect:hover img {
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 .board_list.travelog figure.effect figcaption::before,
