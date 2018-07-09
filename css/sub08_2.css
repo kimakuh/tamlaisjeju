@@ -304,7 +304,7 @@ travel_view - 타임라인
 }
 
 #sub08 .t_timeline .t_timeline_content {
-    width: 1000px;
+    width: 500px;
     height: 210px;
     margin: auto;
     margin-bottom: 50px;
@@ -324,35 +324,33 @@ travel_view - 타임라인
     font-weight: bold;
 }
 
-#sub08 .t_timeline .t_timeline_content .t_timeline_content_imgbox {
-    float: left;
-}
-
 #sub08 .t_timeline .t_timeline_content img {
     display: inline-block;
-    max-width: 200px;
+    max-width: 500px;
 }
 
-#sub08 .t_timeline .t_timeline_content .content_box {
+#sub08 .t_timeline .t_timeline_content .content_box img {
     float: left;
-    margin-left: 20px;
-    margin-top: 20px;
+    width: 60px;
 }
 
 #sub08 .t_timeline .t_timeline_content .content_box p {
+    font-size: 14px;
+    font-weight: 400;
     padding-left: 5px;
     margin-bottom: 5px;
 }
 
-#sub08 .t_timeline .t_timeline_content .content_text {
-    padding: 5px;
-    width: 700px;
-    height: 120px;
-    border: dotted 1px rgb(185, 185, 185);
-    border-radius: 5px;
+#sub08 .t_timeline .t_timeline_content .content_box .contnet_name {
+    float: left;
 }
 
-#sub08 .t_timeline .t_timeline_content .content_box::first-line {
+#sub08 .t_timeline .t_timeline_content .content_text {
+    
+    width: 500px;
+}
+
+#sub08 .t_timeline .t_timeline_content .content_box .contnet_name {
     font-size: 20px;
     font-weight: bold;
 }
@@ -368,10 +366,9 @@ figure.snip0016 {
     float: left;
     overflow: hidden;
     margin: 10px 1%;
-    min-width: 200px;
-    max-width: 200px;
-    max-height: 200px;
-    width: 200px;
+    min-width: 500px;
+    max-width: 500px;
+    width: 500px;
     background: #000000;
     text-align: left;
 }
@@ -384,7 +381,7 @@ figure.snip0016 * {
 figure.snip0016 img {
     max-width: 100%;
     opacity: 1;
-    width: 200px;
+    width: 500px;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
 }
@@ -434,7 +431,7 @@ figure.snip0016 h2 {
 
 
 figure.snip0016 p {
-    line-height: 200px;
+    line-height: 500px;
     text-align: center;
     font-weight: 200;
     -webkit-transform: translate3d(0%, 30%, 0);
