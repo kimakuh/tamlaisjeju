@@ -93,16 +93,16 @@
                         <div data-time="2017">
                             your content or markup
                         </div>
-                        <div data-time="1">
+                        <div data-time="2016">
                             your content or markup
                         </div>
-                        <div data-time="2">
+                        <div data-time="2015">
                             your content or markup
                         </div>
-                        <div data-time="3">
+                        <div data-time="2014">
                             your content or markup
                         </div>
-                        <div data-time="4">
+                        <div data-time="2013">
                             your content or markup
                         </div>
                     </div>
@@ -199,6 +199,9 @@
             </script>
 
             <script>
+                // 타임라인 start
+                $('.js-timeline').Timeline();
+
                 // 타임라인 스크립트 - default
                 $('.timeline-1').Timeline();
 
@@ -209,6 +212,12 @@
                     startItem: 'last'
                 });
 
+
+                $('.timeline-2').Timeline({
+                    autoplay: true,
+                    mode: 'vertical',
+                    itemClass: 'box-item',
+                });
             </script>
 </body>
 
