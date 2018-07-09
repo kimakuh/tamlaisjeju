@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+    <!-- Timeline js -->
+    <link rel="stylesheet" href="dist/css/timeline.min.css" />
 
     <style type="text/css">
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
@@ -40,50 +42,77 @@
         <div id="content">
 
             <!-- 좋아요 탭 -->
-                <div class="content_wrap">
-                    <div class="sns_area clear">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <span class="icon view_like_icon"></span>
-                                    <strong>좋아요</strong>26</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon view_zzim_icon"></span>
-                                    <strong>찜하기</strong>537</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon view_review_icon"></span>
-                                    <strong>리뷰</strong>114</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon view_schedule_icon"></span>
-                                    <strong>일정등록</strong>0</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon view_visit_icon"></span>
-                                    <strong>방문했어요</strong>57</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon view_hit_icon"></span>
-                                    <strong>조회</strong>19,416</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon view_sns_icon"></span>
-                                    <strong>SNS 공유</strong>8</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 지도 -->
-
-                    <div id="map" style="width:100%;height:400px;"></div>
+            <div class="content_wrap">
+                <div class="sns_area clear">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon view_like_icon"></span>
+                                <strong>좋아요</strong>26</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon view_zzim_icon"></span>
+                                <strong>찜하기</strong>537</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon view_review_icon"></span>
+                                <strong>리뷰</strong>114</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon view_schedule_icon"></span>
+                                <strong>일정등록</strong>0</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon view_visit_icon"></span>
+                                <strong>방문했어요</strong>57</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon view_hit_icon"></span>
+                                <strong>조회</strong>19,416</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon view_sns_icon"></span>
+                                <strong>SNS 공유</strong>8</a>
+                        </li>
+                    </ul>
                 </div>
+                <!-- 지도 -->
+
+                <div id="map" style="width:100%;height:400px;"></div>
+
+                <!-- 타임라인 -->
+
+                <div class="timeline-container timeline-theme-1">
+                    <div class="timeline js-timeline">
+                        <div data-time="2017">
+                            your content or markup
+                        </div>
+                        <div data-time="1">
+                            your content or markup
+                        </div>
+                        <div data-time="2">
+                            your content or markup
+                        </div>
+                        <div data-time="3">
+                            your content or markup
+                        </div>
+                        <div data-time="4">
+                            your content or markup
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
 
             <div id="footer"></div>
             <script type="text/javascript">
@@ -97,6 +126,8 @@
             </script>
             <script src="node_modules/jquery/dist/jquery.min.js"></script>
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <script type="text/javascript" src="dist/js/timeline.min.js"></script>
 
             <script>
                 // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
@@ -165,6 +196,19 @@
                     // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
                     map.relayout();
                 }
+            </script>
+
+            <script>
+                // 타임라인 스크립트 - default
+                $('.timeline-1').Timeline();
+
+                // Dots Position Top
+                $('.timeline-2').Timeline({
+                    itemClass: 'box-item',
+                    dotsPosition: 'top',
+                    startItem: 'last'
+                });
+
             </script>
 </body>
 
