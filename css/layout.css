@@ -1460,7 +1460,9 @@ container - 컨텐츠 스타일
 board_list pagination - 게시판 페이징
 ***************************************************************************************/
 
-
+.board_list .pagination_wrap{
+  text-align: center;
+}
 .board_list .pagination {
   display: inline-block;
 }
