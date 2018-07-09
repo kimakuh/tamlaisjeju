@@ -1,40 +1,38 @@
-
-<header id="header">
-    <div class="top_util">
-        <div class="wrapper">
-            <ul class="link">
-                <li>
-                    <a href="http://www.jejusi.go.kr/" target="_blank" title="새창열림">제주시포털</a>
-                </li>
-                <li>
-                    <a href="http://korean.visitkorea.or.kr" target="_blank" title="새창열림">대한민국 구석구석</a>
-                </li>
-            </ul>
-            <ul class="sns">
-                <li>
-                    <a href="https://www.facebook.com/Tamlaisjeju/" target="_blank" title="새창열림">facebook</a>
-                </li>
-                <li>
-                    <a href="#">카카오스토리</a>
-                </li>
-                <li>
-                    <a href="#">다음블로그</a>
-                </li>
-                <li>
-                    <a href="#">네이버블로그</a>
-                </li>
-            </ul>
-        </div>
+<div class="top_util">
+    <div class="wrapper">
+        <ul class="link">
+            <li>
+                <a href="http://www.jejusi.go.kr/" target="_blank" title="새창열림">제주시포털</a>
+            </li>
+            <li>
+                <a href="http://korean.visitkorea.or.kr" target="_blank" title="새창열림">대한민국 구석구석</a>
+            </li>
+        </ul>
+        <ul class="sns">
+            <li>
+                <a href="https://www.facebook.com/Tamlaisjeju/" target="_blank" title="새창열림">facebook</a>
+            </li>
+            <li>
+                <a href="#">카카오스토리</a>
+            </li>
+            <li>
+                <a href="#">다음블로그</a>
+            </li>
+            <li>
+                <a href="#">네이버블로그</a>
+            </li>
+        </ul>
     </div>
+</div>
 
 
 
-    <div class="topnav" id="myTopnav">
-        <div class="wrapper clear">
-            <h1>
-                <a href="#">탐라는 제주</a>
-            </h1>
-            <div class="menu_wrap">
+<div class="topnav" id="myTopnav">
+    <div class="wrapper clear">
+        <h1>
+            <a href="#">탐라는 제주</a>
+        </h1>
+        <div class="menu_wrap">
             <div class="dropdown">
                 <button class="dropbtn">관광지
                     <i class="fa fa-caret-down"></i>
@@ -121,19 +119,36 @@
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
     </div>
+</div>
+<div class="search_wrap">
+    <div class="search_inner clear">
+        <div class="search_box_wrap">
+            <div class="search_box on">
+                <label for="nav-search">검색</label>
+                <input id="nav-search" type="text" name="search" placeholder="" class="inp_search">
+                <button type="button" class="btn_search">검색</button>
+            </div>
+            <dl class="txt_interest">
+                <dt>인기</dt>
+                <dd>
+                    <a href="#">#지도</a>
+                    <a href="#">#애월 카페</a>
+                    <a href="#">#우도</a>
+                </dd>
+            </dl>
+        </div>
     </div>
+</div>
 
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
         }
-    </script>
+    }
+</script>
 
-</header>
-<!-- header end -->
