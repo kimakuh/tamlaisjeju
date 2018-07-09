@@ -256,3 +256,14 @@ travel_view - 투어 뷰
 	margin: 5px 0;
 }
 
+/**************************************************************************************
+travel_view - 타임라인
+***************************************************************************************/
+
+#sub08 .timeline-container .timeline .timeline_content .timeline_content_textbox * {
+    float: left;
+    margin-left: 20px
+}
+#sub08 .timeline-container .timeline .timeline_content .timeline_content_textbox p {
+    margin-top: 10px;
+}
