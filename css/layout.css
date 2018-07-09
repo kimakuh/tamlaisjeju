@@ -2068,7 +2068,11 @@ board_list travelog - 내가 쓰는 여행기 리스트
 }
 
 .board_list.travelog figure.effect h2 {
-  padding-top: 30%;
+  /* padding-top: 30%; */
+padding:30% 20% 0 20%;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
   -webkit-transform: translate3d(0, -20px, 0);
