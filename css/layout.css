@@ -1477,7 +1477,7 @@ board_list pagination - 게시판 페이징
 
 .board_list .pagination a.active {
   background-color: #10349e;
-  color: #10349e;
+  color: #fff;
   border: 1px solid #10349e;
 }
 
