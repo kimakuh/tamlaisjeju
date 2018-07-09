@@ -5,12 +5,10 @@
       
 #sub10 .plan .plan_cover {
     width: 100%;
-    height: 350px;
     position: relative;
 }
 
 #sub10 .plan .plan_cover .cover_img {
-    position: absolute;
     width: 100%;
     height: 350px;
     background: url('http://img.earthtory.com/img/city_images/312/jeju_1425527621.jpg') no-repeat;
@@ -87,8 +85,7 @@
 
 #sub10 .plan .plan_mnu_box {
     width: 100%;
-    position: relative;
-    height: 70px;
+    float: left;
     margin-bottom: 30px;
 }
 
@@ -185,8 +182,8 @@
 }
 
 #sub10 .plan .day_page {
-    display: block;
     padding-bottom: 60px;
+    float: left;
     width: 100%;
     margin: 0 auto;
     position: relative;
