@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<!-- meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+<meta property="og:title" content="탐라는제주">
+<meta property="og:type" content="website">
+<meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+	integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	crossorigin="anonymous">
+<!-- css -->
+<link rel="stylesheet" href="../../css/common.css" />
+<link rel="stylesheet" href="../../css/layout.css" />
+<!-- sub02 -->
+<link rel="stylesheet" href="../../css/sub09.css" />
+<!-- logo font -->
+<link href="https://fonts.googleapis.com/css?family=Gugi"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+
+<style type="text/css">
+@import
+	url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css')
+	;
+</style>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="container" id="sub09">
+		<div id="sub09" class="content">
+			<div id="main_div">
+				<h3>#통장이_통장으로 #탕진잼</h3>
+			</div>
+			<span id="main_span">조회수 <span>???</span> | 일정담기 <span>???</span>
+				| 찜하기 <span>???</span></span>
+			<button id="btn_company">버튼이오</button>
+			<div class="main_span">
+				<span>여행일자</span><span style="padding-left: 320px;">인원</span><span
+					style="padding-left: 140px;">일행</span><span
+					style="padding-left: 92px;">테마</span><span
+					style="padding-left: 90px;">태그</span> <br> <input type="date" />
+				~ <input type="date"> <input
+					style="margin-left: 32px; width: 120px;" type="number"></input> <select
+					style="margin-left: 45px;" id="party">
+					<option>가족</option>
+					<option>친구</option>
+					<option>친척</option>
+					<option>동아리</option>
+				</select> <select style="margin-left: 45px;" id="Thema">
+					<option>걷기</option>
+					<option>힐링</option>
+					<option>문화유적</option>
+					<option>레저</option>
+					<option>드라이브</option>
+					<option>사진</option>
+					<option>등산</option>
+					<option>체험</option>
+					<option>쇼핑</option>
+				</select> <input style="margin-left: 30px;" type="search"></input>
+			</div>
+			<div class="author_voice">
+				<img class="profile_img" src="../../img/sub09/iu.jpg">
+				<div class="profile_word">
+					<h5>글쓴이 한 마디</h5>
+					<p>솰라리솰라리솰라리랏다</p>
+				</div>
+			</div>
+			<div id="map">
+				<script type="text/javascript"
+					src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a39a869b2b427425c966081cb35dc719"></script>
+				<script>
+					var container = document.getElementById('map');
+					var options = {
+						center : new daum.maps.LatLng(33.450701, 126.570667),
+						level : 3
+					};
+					var map = new daum.maps.Map(container, options);
+				</script>
+			</div>
+			<div>
+				<h3>Day 1</h3>
+				<h5>2018-07-09</h5>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#header").load("../include/sub_header.html")
+			$("#footer").load("../include/sub_footer.html")
+			/* id 지정을 통해서도 가능합니다. 
+			 $("#header").load("header.html #navbar")
+			 */
+		});
+	</script>
+</body>
+</html>
