@@ -452,6 +452,33 @@ all - 여행필수정보 전체
     line-height: 16px;
 }
 
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .kind_list {
+    height: 14px;
+    margin-top: 9px;
+}
+
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .kind_list li:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .kind_list li {
+    float: left;
+    padding: 0 18px;
+    border-left: 1px solid #d9d9d9;
+}
+
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .kind_list li.on a {
+    color: #535353;
+}
+
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .kind_list li a {
+    display: block;
+    font-size: 14px;
+    color: #959595;
+    line-height: 14px;
+}
+
 #sub11 .my_tour .my_tour_wrap .util_wrap .util_area2 {
     float: right;
 }
@@ -550,9 +577,8 @@ all - 여행필수정보 전체
     color: #959595;
 }
 
-#sub11 .my_tour .my_tour_wrap .tour_list .item_section.add {
-    -webkit-box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
-    box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
+#sub11 .my_tour .my_tour_wrap .tour_list.type_1 .item_section {
+    height: auto;
 }
 
 #sub11 .my_tour .my_tour_wrap .tour_list dl:nth-child(4n+1) {
@@ -561,16 +587,12 @@ all - 여행필수정보 전체
 }
 
 #sub11 .my_tour .my_tour_wrap .tour_list .item_section {
-    height: 210px;
-    margin-top: 27px;
+    height: 250px;
 }
 
-#sub11 .item_section.add {
-    width: 268px;
-    height: 278px;
-    border: 1px solid #2168f6;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+#sub11 .my_tour .my_tour_wrap .tour_list .item_section {
+    height: 210px;
+    margin-top: 27px;
 }
 
 #sub11 .item_section {
@@ -583,41 +605,6 @@ all - 여행필수정보 전체
     -webkit-box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
     box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
     text-align: center;
-}
-
-#sub11 .my_tour .my_tour_wrap .tour_list .item_section.add dt {
-    padding-top: 54px;
-    font-size: 18px;
-    line-height: 18px;
-}
-
-#sub11 .item_section.add dt {
-    padding-top: 54px;
-    font-size: 24px;
-    font-weight: 700;
-    color: #ef8321;
-    line-height: 38px;
-}
-
-#sub11 .my_tour .my_tour_wrap .tour_list .item_section.add .btn_add_schedule {
-    width: 63px;
-    height: 63px;
-    margin: 20px auto 0;
-    background-size: 100% 100%;
-}
-
-#sub11 .item_section.add .btn_add_schedule {
-    display: block;
-    width: 76px;
-    height: 76px;
-    margin: 18px auto 0;
-    background: url(../img/sub11/common/btn_add_schedule.png) no-repeat 0 0;
-    text-indent: -9999px;
-}
-
-#sub11 .my_tour .my_tour_wrap .tour_list .item_section {
-    height: 210px;
-    margin-top: 27px;
 }
 
 #sub11 .item_section .item_top a {
@@ -637,29 +624,49 @@ all - 여행필수정보 전체
     line-height: 22px;
 }
 
+#sub11 .my_tour .my_tour_wrap .tour_list.type_1 .item_section .item_top a img {
+    height: 172px;
+}
+
 #sub11 .item_section .item_top a img {
     display: block;
     width: 270px;
     height: 140px;
 }
 
-#sub11 .my_tour .my_tour_wrap .tour_list .item_section .item_top .s_tit {
-    margin-top: 13px;
+#sub11 .item_section .item_top .score_area {
+    position: absolute;
+    top: 150px;
+    right: 11px;
+    width: 88px;
+    height: 15px;
+    background: url(../img/sub11/common/bg_star_off.png) no-repeat 0 0;
 }
 
-#sub11 .item_section .item_top .s_tit {
+#sub11 .item_section .item_top .score_area .score_count {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: 10px;
+    color: transparent;
+    line-height: 10px;
+    background: url(../img/sub11/common/bg_star_on.png) no-repeat 0 0;
+}
+
+#sub11 .my_tour .my_tour_wrap .tour_list.type_1 .item_section .item_top .s_tit {
     overflow: hidden;
+    width: 211px;
     margin: 19px auto 0;
-    width: 94%;
+    font-size: 22px;
+    line-height: 22px;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-#sub11 .item_section .item_top .s_tit {
-    margin-top: 19px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
+#sub11 .my_tour .my_tour_wrap .tour_list.type_1 .item_section .item_top .s_theme {
+    margin-top: 8px;
+    color: #959595;
 }
 
 #sub11 .item_section .item_top .s_theme {
@@ -676,17 +683,106 @@ all - 여행필수정보 전체
     line-height: 14px;
 }
 
-#sub11 .item_section .item_del .btn_del_circle {
+#sub11 .my_tour .my_tour_wrap .tour_list.type_1 .item_section .item_top .item_tag {
+    margin-top: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #535353;
+    line-height: 15px;
+}
+
+#sub11 .item_section .item_count_area {
+    margin-top: 15px;
+}
+
+#sub11 .item_section .item_count_area .ico_type.like, .item_section .item_count_area .ico_type.zzim {
+    cursor: pointer;
+}
+
+#sub11 .item_section .item_count_area .ico_type.like {
+    display: block;
+    background: url(../img/sub11/common/ico_like.png) no-repeat 50% 2px;
+}
+
+#sub11 .item_section .item_count_area .ico_type.zzim {
+    background: url(../img/sub11/common/ico_zzim_l.png) no-repeat 50% 0;
+}
+
+#sub11 .item_section .item_count_area .ico_type.review {
+    background: url(../img/sub11/common/ico_review.png) no-repeat 50% 0;
+}
+
+#sub11 .item_section .item_count_area a:first-child, .item_section .item_count_area p:first-child {
+    width: 33.333334%;
+}
+
+#sub11 .item_section .item_count_area .ico_type {
+    padding-top: 28px;
+}
+
+#sub11 .item_section .item_count_area a, .item_section .item_count_area p {
+    float: left;
+    width: 33.333333%;
+}
+
+#sub11 .item_section .item_count_area .ico_type span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #535353;
+    line-height: 14px;
+}
+
+#sub11 .item_section .item_count_area .ico_type span.count {
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #959595;
+    line-height: 13px;
+}
+
+#sub11 .item_section .item_count_area .item_count_h_area {
+    clear: left;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background: #f4f4f4;
+    font-size: 12px;
+    color: #959595;
+    line-height: 30px;
+}
+
+#sub11 .item_section .item_review {
+    width: 210px;
+}
+
+#sub11 .item_section .item_review {
+    display: table;
+    position: relative;
+    height: 65px;
+    padding: 12px 48px 0 22px;
+}
+
+#sub11 .item_section .item_review p {
+    width: 100%;
+    word-break: break-all;
+}
+
+#sub11 .item_section .item_review p .review_tit {
+    color: #f19221;
+}
+
+#sub11 .item_section .item_review .btn_del_review {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    background: url(../img/sub11/common/btn_del_circle.png) no-repeat 0 0;
+    top: 15px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: url(../img/sub11/common/btn_del_x.png) no-repeat 0 0;
     text-indent: -9999px;
 }
 
-#sub11 .paging {
+#sub11 #sub11 .paging {
     position: relative;
     text-align: center;
     padding-top: 70px;

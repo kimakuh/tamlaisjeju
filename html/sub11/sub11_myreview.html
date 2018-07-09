@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../css/common.css" />
     <link rel="stylesheet" href="../../css/layout.css" />
     <!-- sub05 -->
-    <link rel="stylesheet" href="../../css/sub11_myschdule.css" />
+    <link rel="stylesheet" href="../../css/sub11_myreview.css" />
     <!-- logo font -->
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,7 +40,7 @@
                         <a class="ico_home">home</a>
                         <div class="lst_depth">
                             <span class="p_depth"><a class="asd">&gt; 나의 여행</a></span>
-                            <a class="btn_dropdown">&gt; 나의여행일정</a>
+                            <a class="btn_dropdown">&gt; 찜한 여행</a>
                             <div tabindex="99" class="snb_menu_box" style="top: auto; max-height: none; overflow: auto;">
                                 <a href="" class="asd">관광지</a>
                                 <a href="" class="asd">음식점</a>
@@ -111,34 +111,45 @@
                 </div>
                 <div class="my_tour_wrap">
                     <div class="wrap_tit_zone">
-                        <p class="wrap_tit">나의 여행일정 (1)</p>
+                        <p class="wrap_tit">나의 리뷰</p>
                     </div>
                     <div class="util_wrap clear">
                         <div class="util_area">
                             <ul class="count_list clear">
-                                <li class="on"><a href="/kr/schedule/tourSchedule#">전체</a></li>
-                                <li class=""><a href="/kr/schedule/tourSchedule?tourfnsdateabove=20180706000000#">여행 전/중</a></li>
-                                <li class=""><a href="/kr/schedule/tourSchedule?tourfnsdatebelow=20180706000000#">여행 완료</a></li>
+                                <li class="on"><a href="/kr/schedule/tourSchedule#">여행지(1)</a></li>
+                                <li class=""><a href="/kr/schedule/tourSchedule?tourfnsdateabove=20180706000000#">여행일정(0)</a></li>
+                                <li class=""><a href="/kr/schedule/tourSchedule?tourfnsdatebelow=20180706000000#">테마여행(0)</a></li>
+                            </ul>
+                            <ul class="kind_list clear">
+                                <li class="on"><a>전체</a></li>
+                                <li class=""><a>관광지</a></li>
+                                <li class=""><a>음식점</a></li>
+                                <li class=""><a>숙박</a></li>
+                                <li class=""><a>쇼핑</a></li>
                             </ul>
                         </div>
                         <div class="util_area2">
                             <div class="clear">
-                                <!---->
-                                <div class="order_type"><label for="goto-select-1" style="display:none;"> 정렬 </label><select id="goto-select-1"><option value="">최신순</option></select></div>
-                                <div class="target_page"><label for="goto-page-1" style="display:none;"> 페이지 </label><input id="goto-page-1" type="text" value="1"><button type="button">GO</button></div>
-                                <div class="page_navi"><a href="javascript:void(0)" class="btn_first">첫 페이지</a><a href="javascript:void(0)" class="btn_prev">이전 페이지</a>
-                                    <p>1/1</p><a href="javascript:void(0)" class="btn_next">다음 페이지</a><a href="javascript:void(0)" class="btn_last">마지막 페이지</a></div>
-                                <div class="page_size"><label for="goto-size-1" style="display:none;"> 페이지 뷰 </label><select id="goto-size-1"><option value="6">6</option><option value="9">9</option><option value="12">12</option><option value="15">15</option></select></div>
+                                <div style="height: 30px; line-height: 30px;">보기 </div>
+                                <div class="page_size"><select><option value="8">8</option><option value="16">16</option><option value="24">24</option></select></div>
                             </div>
                         </div>
                     </div>
-                    <div class="tour_list clear">
-                        <dl class="item_section add"><dt>나의 여행 일정 만들기</dt>
-                            <dd><a href="javascript:void(0)" class="btn_add_schedule">만들기</a></dd>
+                    <div class="tour_list clear type_1">
+                        <dl class="item_section"><dt class="item_top"><a href="javascript:void(0)"><span class="s_day">관광지</span><a href="/kr/detail/view?contentsid=CONT_000000000500349#"><img src="https://api.visitjeju.net/photomng/thumbnailpath/201804/30/711dea02-985d-4363-b092-8ef7b93eb2cd.gif" alt="" class=""></a><div class="score_area"><p class="score_count" style="width: 80%;">4%</p></div><p class="s_tit">성산일출봉(UNESCO 세계자연유산)</p><p class="s_theme">서귀포시 &gt; 성산</p><p class="item_tag">#일출 #오름 #경관/포토 #부모</p></a></dt>
+                            <dd class="item_count_area clear">
+                                <p class="ico_type like"><span>좋아요</span><span class="count">63</span></p>
+                                <p class="ico_type zzim "><span>찜하기</span><span class="count">915</span></p>
+                                <p class="ico_type review"><span>리뷰</span><span class="count">926</span></p>
+                                <p class="item_count_h_area">
+                                    조회 133486&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;방문 461&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;사진 공유 946
+                                </p>
+                            </dd>
+                            <dd class="item_review">
+                                <p><span class="review_tit">[나의 리뷰]</span> 좋을것같아요</p><button type="button" class="btn_del_review">삭제</button></dd>
                         </dl>
-                        <dl class="item_section"><dt class="item_top"><a href="javascript:void(0)" data-tourid="3622"><span class="s_day">4박5일</span><img src="/image/common/thum_img.gif" alt="" class=""><p class="s_tit">ㅋㅇㄴㅇ</p><p class="s_theme">4박5일 | 아이 | 휴식과 치유 여행</p></a></dt>
-                            <dd class="item_del"><button type="button" data-tourid="3622" class="btn_del_circle">삭제</button></dd>
-                        </dl>
+                        <!---->
+                        <!---->
                     </div>
                     <div class="paging">
                         <div id="paging" class="page-wrap"><a href="javascript:void(0)" class="spr_com page-first">처음</a><a href="javascript:void(0)" class="spr_com page-prev">이전</a><a href="1" class="current">1</a><a href="javascript:void(0)" class="spr_com page-next">다음</a><a href="javascript:void(0)" class="spr_com page-last">마지막페이지</a></div>

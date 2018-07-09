@@ -550,6 +550,61 @@ all - 여행필수정보 전체
     color: #959595;
 }
 
+#sub11 .inner_map_wrap {
+    padding-top: 80px;
+}
+
+#sub11 .inner_map_wrap .loc_btn_area {
+    text-align: center;
+}
+
+#sub11 .inner_map_wrap .loc_btn_area .location_category {
+    display: inline-block;
+}
+
+#sub11 .inner_map_wrap .loc_btn_area .location_category li:first-child {
+    margin-left: 0;
+}
+
+#sub11 .inner_map_wrap .loc_btn_area .location_category li {
+    float: left;
+    margin-left: 30px;
+}
+
+#sub11 .inner_map_wrap .loc_btn_area .location_category li .ico_loc_1 {
+    background: url(../img/sub11/common/ico_loc_1.png) no-repeat 0 0;
+}
+
+#sub11 .inner_map_wrap .loc_btn_area .location_category li .ico_loc_2 {
+    background: url(../img/sub11/common/ico_loc_2.png) no-repeat 0 0;
+}
+
+#sub11 .inner_map_wrap .loc_btn_area .location_category li .ico_loc_3 {
+    background: url(../img/sub11/common/ico_loc_3.png) no-repeat 0 0;
+}
+
+#sub11 .inner_map_wrap .loc_btn_area .location_category li .ico_loc_4 {
+    background: url(../img/sub11/common/ico_loc_4.png) no-repeat 0 0;
+}
+
+#sub11 .inner_map_wrap .loc_btn_area .location_category li span {
+    display: inline-block;
+    height: 30px;
+    padding-left: 28px;
+    font-size: 16px;
+    color: #000;
+    line-height: 30px;
+    background-size: auto 30px!important;
+}
+
+#sub11 .inner_map_wrap .map_area {
+    width: 100%;
+    height: 340px;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,.1);
+}
+
+
 #sub11 .my_tour .my_tour_wrap .tour_list .item_section.add {
     -webkit-box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
     box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);

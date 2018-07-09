@@ -425,27 +425,37 @@ all - 여행필수정보 전체
     float: left;
 }
 
-#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .count_list {
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .list_tit {
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1b1b1b;
+    line-height: 30px;
+}
+
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .season_list {
+    float: left;
     height: 16px;
+    margin-left: 25px;
     padding: 7px 0;
 }
 
-#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .count_list li:first-child {
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .season_list li:first-child {
     padding-left: 0;
     border-left: 0;
 }
 
-#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .count_list li {
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .season_list li {
     float: left;
     padding: 0 20px;
     border-left: 1px solid #d9d9d9;
 }
 
-#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .count_list li.on a {
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .season_list li.on a {
     color: #535353;
 }
 
-#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .count_list li a {
+#sub11 .my_tour .my_tour_wrap .util_wrap .util_area .season_list li a {
     display: block;
     font-size: 16px;
     color: #959595;
@@ -549,6 +559,18 @@ all - 여행필수정보 전체
     border: 1px solid #ccc;
     color: #959595;
 }
+
+#sub11 .inner_map_wrap {
+    padding-top: 80px;
+}
+
+#sub11 .inner_map_wrap .map_area {
+    width: 100%;
+    height: 340px;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,.1);
+}
+
 
 #sub11 .my_tour .my_tour_wrap .tour_list .item_section.add {
     -webkit-box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
