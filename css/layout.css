@@ -1912,8 +1912,8 @@ board_list travelog - 내가 쓰는 여행기 리스트
 
 
 
-.board_list.travelog figure{float: left;width:49%;}
-
+.board_list.travelog figure{float: left;width:49%;margin-left:2%;}
+.board_list.travelog figure:first-child{margin-left:0;}
 
 .board_list.travelog figure.effect {
   background: #fff;
