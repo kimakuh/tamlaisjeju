@@ -1921,6 +1921,23 @@ board_list travelog - 내가 쓰는 여행기 리스트
 }
 
 
+
+
+.board_list.travelog figure .img_wrap{
+  display: block;
+  float: left;
+  width:50%;
+
+}
+
+.board_list.travelog figure travelog_cont{
+  float: left;
+  width:50%;
+}
+
+
+
+
 .board_list.travelog figure img {
 	position: relative;
 	display: block;
