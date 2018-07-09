@@ -1708,7 +1708,7 @@ board_list  travel_together - 동행 게시판 리스트
   width: 32%;
   margin-left: 2%;
   margin-bottom: 0;
-  min-height: 330px;
+  min-height: 365px;
   height: auto;
   /* background: #3085a3; */
   text-align: center;
@@ -1809,6 +1809,14 @@ board_list  travel_together - 동행 게시판 리스트
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+
+.board_list.travel_together .box_wrap figure .hashtag{
+  display: block;
+  color: #2168f6;
+}
+
+
 
 .board_list.travel_together .box_wrap figure .date {
   display: inline-block;
