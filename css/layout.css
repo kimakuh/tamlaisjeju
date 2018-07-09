@@ -1991,8 +1991,6 @@ board_list travelog - 내가 쓰는 여행기 리스트
 
 .board_list.travelog figure h2 {
   font-size:22px;
-	/* word-spacing: -0.15em;
-	font-weight: 300; */
 }
 
 
