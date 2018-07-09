@@ -1983,8 +1983,8 @@ board_list travelog - 내가 쓰는 여행기 리스트
 .board_list.travelog figure .travelog_cont ul li {
   overflow: hidden;
   position: relative;
-  margin: 8px 0;
-  line-height: 18px;
+  margin: 12px 0;
+  line-height: 22px;
 }
 
 .board_list.travelog figure .travelog_cont ul li span {
