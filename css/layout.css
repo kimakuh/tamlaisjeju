@@ -1832,11 +1832,13 @@ board_list  travel_together - 동행 게시판 리스트
   padding: 8px 6px;
   margin: 0 2px;
   /* background-color: #134af1; */
-  background-color: #10349e;
+  /* background-color: #10349e; */
   font-size: 14px;
   color: #fff;
   vertical-align: middle;
   border-radius: 100%;
+  border:1px solid #10349e;
+  color:#10349e;
 }
 
 .board_list.travel_together .box_wrap figure .capacity {
