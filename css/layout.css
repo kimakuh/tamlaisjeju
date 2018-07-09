@@ -1990,8 +1990,8 @@ board_list travelog - 내가 쓰는 여행기 리스트
 
 
 .board_list.travelog figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
+	/* word-spacing: -0.15em;
+	font-weight: 300; */
 }
 
 
@@ -2005,8 +2005,7 @@ board_list travelog - 내가 쓰는 여행기 리스트
 
 
 .board_list.travelog figure p {
-	/* letter-spacing: 1px;
-	font-size: 68.5%; */
+
 }
 
 
