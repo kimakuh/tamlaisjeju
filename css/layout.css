@@ -21,7 +21,7 @@
 }
 
 .topnav {
-  padding:10px;
+  padding: 10px;
   /* overflow: hidden; */
   background-color: #fff;
   /* border-top: 1px solid #dfdfdf;
@@ -34,13 +34,13 @@
 }
 
 .topnav h1 a {
-  display:block;
-  width:200px;
-  height:63px;
+  display: block;
+  width: 200px;
+  height: 63px;
   font-family: 'Gugi', cursive;
   float: none;
   font-size: 0;
-  text-indent:-9999px;
+  text-indent: -9999px;
   padding: 0;
   /* color: #091152; */
   /* color:#10349e; */
@@ -190,18 +190,16 @@
 /* search_wrap */
 
 .search_wrap {
-
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
   /* height: 38px; */
-  background-color:#fff;
+  background-color: #fff;
 }
 
-
-#header .search_wrap .search_inner{
-  padding:7px 0;
-  width:1200px;
-  margin:0 auto;
+#header .search_wrap .search_inner {
+  padding: 7px 0;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 #header .search_wrap .search_box_wrap {
@@ -260,19 +258,19 @@
   font-size: 14px;
   color: #333;
 }
-#header .search_wrap .search_box_wrap dd{
+
+#header .search_wrap .search_box_wrap dd {
   float: left;
   font-size: 14px;
   color: #909090;
 }
-#header .search_wrap .search_box_wrap dd a{
+
+#header .search_wrap .search_box_wrap dd a {
   margin-right: 14px;
-  padding:8px;
-  border:1px solid #d4d4d6;
-  border-radius:20px;
+  padding: 8px;
+  border: 1px solid #d4d4d6;
+  border-radius: 20px;
 }
-
-
 
 /* sub layout */
 
@@ -1484,7 +1482,7 @@ board_list - 게시판 리스트
   font-size: 14px;
   min-width: 60px;
   text-align: center;
-  line-height:22px;
+  line-height: 22px;
 }
 
 .box .img_area img {
@@ -1789,10 +1787,17 @@ board_list  travel_together - 동행 게시판 리스트
   width: 100%;
 }
 
-<<<<<<< HEAD
-.box .img_area .category.open{}
-.box .img_area .category.close{float:none;opacity:1;font-weight:normal;background-color:#f11313;text-shadow:none;}
-=======
+/*
+ .board_list.travel_together .box .img_area .category.open {}
+
+.board_list.travel_together .box .img_area .category.close {
+  float: none;
+  opacity: 1;
+  font-weight: normal;
+  background-color: #f11313;
+  text-shadow: none;
+} */
+
 .board_list.travel_together .box_wrap figure .title {
   display: block;
   overflow: hidden;
@@ -1804,7 +1809,6 @@ board_list  travel_together - 동행 게시판 리스트
   text-overflow: ellipsis;
   white-space: nowrap;
 }
->>>>>>> 8a8f804dfdbb88da115d9fde14f52cf59586604d
 
 .board_list.travel_together .box_wrap figure .date {
   display: inline-block;
@@ -1852,8 +1856,8 @@ board_list  travel_together - 동행 게시판 리스트
 .board_list.travel_together figure.effect img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  width:100%;
-  height:225px;
+  width: 100%;
+  height: 225px;
 }
 
 .board_list.travel_together figure.effect b,
