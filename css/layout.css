@@ -1930,7 +1930,7 @@ board_list travelog - 내가 쓰는 여행기 리스트
 
 }
 
-.board_list.travelog figure travelog_cont{
+.board_list.travelog figure .travelog_cont{
   float: left;
   width:50%;
 }
@@ -1948,7 +1948,7 @@ board_list travelog - 내가 쓰는 여행기 리스트
 
 
 .board_list.travelog figure figcaption {
-	padding: 2em;
+	/* padding: 2em; */
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.25em;
