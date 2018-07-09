@@ -1948,7 +1948,7 @@ board_list travelog - 내가 쓰는 여행기 리스트
 }
 
 .board_list.travelog figure .travelog_cont .writer {
-padding-bottom:20px;
+
 margin-bottom:20px;
 border-bottom:1px solid #555;
 
@@ -1957,7 +1957,15 @@ border-bottom:1px solid #555;
 
 .board_list.travelog figure .travelog_cont .writer i{
   font-size:55px;
+  
   }
+
+
+  .board_list.travelog figure .travelog_cont .writer .name{
+    margin:15px 0;
+  }
+
+
 
 .board_list.travelog figure img {
   position: relative;
