@@ -1449,7 +1449,41 @@ container - 컨텐츠 스타일
 
 .tp_icon.icon19 {
   background-position: -452px -380px;
+
+
+  
 }
+
+
+
+/**************************************************************************************
+board_list pagination - 게시판 페이징
+***************************************************************************************/
+
+
+.board_list .pagination {
+  display: inline-block;
+}
+
+.board_list .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.board_list .pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.board_list .pagination a:hover:not(.active) {background-color: #ddd;}
+
+
 
 /**************************************************************************************
 board_list - 게시판 리스트
@@ -1969,7 +2003,7 @@ border-bottom:1px solid #555;
 
 
   .board_list.travelog figure .travelog_cont .writer .name{
-    margin:15px 0;
+    margin:10px 0;
   }
 
 
