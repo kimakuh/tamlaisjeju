@@ -299,10 +299,12 @@ travel_view - 타임라인
 
 #sub08 .t_timeline {
     width: 100%;
+    position: relative;
 }
 
 #sub08 .t_timeline .timeline_content_day {
-    margin-left: 80px;
+    position: fixed;
+    top:300px;
 }
 
 #sub08 .t_timeline .timeline_content_day * {
