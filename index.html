@@ -810,23 +810,22 @@
     /*---------------*/
 /***** Bubba *****/
 /*---------------*/
-
-figure.effect-bubba {
-	background: #9e5406;
+.board_list.travelog figure.effect {
+	background: #fff;
 }
 
-figure.effect-bubba img {
+.board_list.travelog figure.effect img {
 	opacity: 0.7;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
 
-figure.effect-bubba:hover img {
+.board_list.travelog figure.effect:hover img {
 	opacity: 0.4;
 }
 
-figure.effect-bubba figcaption::before,
-figure.effect-bubba figcaption::after {
+.board_list.travelog figure.effect figcaption::before,
+.board_list.travelog figure.effect figcaption::after {
 	position: absolute;
 	top: 30px;
 	right: 30px;
@@ -838,21 +837,21 @@ figure.effect-bubba figcaption::after {
 	transition: opacity 0.35s, transform 0.35s;
 }
 
-figure.effect-bubba figcaption::before {
+.board_list.travelog figure.effect figcaption::before {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 	-webkit-transform: scale(0,1);
 	transform: scale(0,1);
 }
 
-figure.effect-bubba figcaption::after {
+.board_list.travelog figure.effect figcaption::after {
 	border-right: 1px solid #fff;
 	border-left: 1px solid #fff;
 	-webkit-transform: scale(1,0);
 	transform: scale(1,0);
 }
 
-figure.effect-bubba h2 {
+.board_list.travelog figure.effect h2 {
 	padding-top: 30%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
@@ -860,7 +859,7 @@ figure.effect-bubba h2 {
 	transform: translate3d(0,-20px,0);
 }
 
-figure.effect-bubba p {
+.board_list.travelog figure.effect p {
 	padding: 20px 2.5em;
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -869,15 +868,15 @@ figure.effect-bubba p {
 	transform: translate3d(0,20px,0);
 }
 
-figure.effect-bubba:hover figcaption::before,
-figure.effect-bubba:hover figcaption::after {
+.board_list.travelog figure.effect:hover figcaption::before,
+.board_list.travelog figure.effect:hover figcaption::after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
-figure.effect-bubba:hover h2,
-figure.effect-bubba:hover p {
+.board_list.travelog figure.effect:hover h2,
+.board_list.travelog figure.effect:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
