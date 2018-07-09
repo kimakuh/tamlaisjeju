@@ -1975,9 +1975,6 @@ board_list travelog - 내가 쓰는 여행기 리스트
 }
 
 
-.board_list.travelog figure h2 span {
-	font-weight: 800;
-}
 
 
 .board_list.travelog figure h2,
