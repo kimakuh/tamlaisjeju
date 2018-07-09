@@ -1908,13 +1908,13 @@ board_list travelog - 내가 쓰는 여행기 리스트
 
 .board_list.travelog figure {
 	position: relative;
-	float: left;
+	/* float: left; */
 	overflow: hidden;
-	margin: 10px 1%;
+	/* margin: 10px 1%;
 	min-width: 320px;
 	max-width: 480px;
 	max-height: 360px;
-	width: 48%;
+	width: 48%; */
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
