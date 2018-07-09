@@ -1481,7 +1481,7 @@ board_list pagination - 게시판 페이징
 }
 
 .board_list .pagination a:hover:not(.active) {
-  background-color: #ddd;
+  /* background-color: #ddd; */
   border: 1px solid #10349e;
 }
 
