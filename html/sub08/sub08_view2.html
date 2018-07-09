@@ -27,21 +27,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
-    <!-- Timeline js / css -->
-    <script type="text/javascript" src="../../js/timelinejs-slider/dist/js/timeline.min.js"></script>
-    <link rel="stylesheet" href="../../css/timelinejs-slider/dist/css/timeline.min.css" />
-
-    <!-- fotorama.css & fotorama.js. -->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-    <!-- 3 KB -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-
-    <!--horver-->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Merriweather' rel='stylesheet' type='text/css'>
 
     <style type="text/css">
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
-        @import url('https://fonts.googleapis.com/css?family=Raleway:400,200,300,800');
     </style>
 </head>
 
@@ -178,6 +166,7 @@
     </script>
     <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script> -->
 
+<!--     
     <script>
         // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
         var infowindow = new daum.maps.InfoWindow({
@@ -245,9 +234,9 @@
             // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
             map.relayout();
         }
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
         $('.js-timeline').Timeline({
             dotsPosition: 'top'
         });
@@ -258,54 +247,9 @@
             dotsPosition: 'top',
             startItem: 'last'
         });
-    </script>
+    </script> -->
 
-    <script>
-        // Open the Modal
-        function openModal() {
-            document.getElementById('myModal').style.display = "block";
-        }
-
-        // Close the Modal
-        function closeModal() {
-            document.getElementById('myModal').style.display = "none";
-        }
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script>
+   
 
 </body>
 
