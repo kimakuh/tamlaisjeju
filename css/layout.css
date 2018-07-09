@@ -1969,7 +1969,7 @@ board_list travelog - 내가 쓰는 여행기 리스트
 .board_list.travelog figure .travelog_cont {
   float: left;
   width: 50%;
-  padding: 30px;
+  padding: 30px 30px 0;
 }
 
 
@@ -1982,15 +1982,15 @@ board_list travelog - 내가 쓰는 여행기 리스트
   display: block;
 }
 .board_list.travelog figure .travelog_cont ul{margin-top:15px}
-.board_list.travelog figure .travelog_cont ul li{overflow: hidden;position: relative;margin:5px 0;line-height:18px;}
-.board_list.travelog figure .travelog_cont ul li span{float: left;padding-left:15px;}
+.board_list.travelog figure .travelog_cont ul li{overflow: hidden;position: relative;margin:8px 0;line-height:18px;}
+.board_list.travelog figure .travelog_cont ul li span{float: left;padding-left:25px;}
 .board_list.travelog figure .travelog_cont ul li span i{position: absolute;left:0;top:0;}
 .board_list.travelog figure .travelog_cont ul li b{display:block;float: right;}
 
 
 .board_list.travelog figure .travelog_cont .writer {
 
-margin-bottom:20px;
+margin-bottom:15px;
 border-bottom:1px solid #555;
 
 }
