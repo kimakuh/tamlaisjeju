@@ -1940,6 +1940,9 @@ board_list travelog - 내가 쓰는 여행기 리스트
 
 
 
+.board_list.travelog figure .travelog_cont .heart{
+  font-size:35px;
+}
 
 
 
