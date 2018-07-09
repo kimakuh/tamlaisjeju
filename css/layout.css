@@ -1449,20 +1449,16 @@ container - 컨텐츠 스타일
 
 .tp_icon.icon19 {
   background-position: -452px -380px;
-
-
-  
 }
-
-
 
 /**************************************************************************************
 board_list pagination - 게시판 페이징
 ***************************************************************************************/
 
-.board_list .pagination_wrap{
+.board_list .pagination_wrap {
   text-align: center;
 }
+
 .board_list .pagination {
   display: inline-block;
 }
@@ -1483,9 +1479,10 @@ board_list pagination - 게시판 페이징
   border: 1px solid #10349e;
 }
 
-.board_list .pagination a:hover:not(.active) {background-color: #ddd;}
-
-
+.board_list .pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border: 1px solid #10349e;
+}
 
 /**************************************************************************************
 board_list - 게시판 리스트
@@ -1974,41 +1971,49 @@ board_list travelog - 내가 쓰는 여행기 리스트
   padding: 30px 30px 0;
 }
 
-
-
-
-
-
-
 .board_list.travelog figure .travelog_cont span {
   display: block;
 }
-.board_list.travelog figure .travelog_cont ul{margin-top:15px}
-.board_list.travelog figure .travelog_cont ul li{overflow: hidden;position: relative;margin:8px 0;line-height:18px;}
-.board_list.travelog figure .travelog_cont ul li span{float: left;padding-left:25px;}
-.board_list.travelog figure .travelog_cont ul li span i{position: absolute;left:0;top:0;}
-.board_list.travelog figure .travelog_cont ul li b{display:block;float: right;}
 
-
-.board_list.travelog figure .travelog_cont .writer {
-
-margin-bottom:15px;
-border-bottom:1px solid #555;
-
+.board_list.travelog figure .travelog_cont ul {
+  margin-top: 15px
 }
 
+.board_list.travelog figure .travelog_cont ul li {
+  overflow: hidden;
+  position: relative;
+  margin: 8px 0;
+  line-height: 18px;
+}
 
-.board_list.travelog figure .travelog_cont .writer i{
-  font-size:55px;
-  
-  }
+.board_list.travelog figure .travelog_cont ul li span {
+  float: left;
+  padding-left: 25px;
+}
 
+.board_list.travelog figure .travelog_cont ul li span i {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
-  .board_list.travelog figure .travelog_cont .writer .name{
-    margin:10px 0;
-  }
+.board_list.travelog figure .travelog_cont ul li b {
+  display: block;
+  float: right;
+}
 
+.board_list.travelog figure .travelog_cont .writer {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #555;
+}
 
+.board_list.travelog figure .travelog_cont .writer i {
+  font-size: 55px;
+}
+
+.board_list.travelog figure .travelog_cont .writer .name {
+  margin: 10px 0;
+}
 
 .board_list.travelog figure img {
   position: relative;
