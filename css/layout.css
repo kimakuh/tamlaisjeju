@@ -1942,8 +1942,8 @@ board_list travelog - 내가 쓰는 여행기 리스트
   display: block;
 }
 
-.board_list.travelog figure .travelog_cont .day {
-margin-bottom:20px;
+.board_list.travelog figure .travelog_cont .writer {
+padding-bottom:20px;
 border-bottom:1px solid #555;
 }
 
