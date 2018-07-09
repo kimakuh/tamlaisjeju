@@ -317,9 +317,8 @@ travel_view - 타임라인
 
 #sub08 .t_timeline .t_timeline_content {
     width: 500px;
-    height: 500px;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 #sub08 .t_timeline .t_timeline_content .context_menu {
@@ -369,6 +368,7 @@ travel_view - 타임라인
 
 #sub08 .t_timeline .t_timeline_content .t_timeline_content_imgbox {
     width: 500px;
+    height: 500px;
 }
 
 figure.snip0016 {
