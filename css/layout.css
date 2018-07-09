@@ -1948,6 +1948,10 @@ board_list travelog - 내가 쓰는 여행기 리스트
   display: block;
 }
 
+.board_list.travelog figure .travelog_cont ul li span{float: left;}
+.board_list.travelog figure .travelog_cont ul li b{float: right;}
+
+
 .board_list.travelog figure .travelog_cont .writer {
 
 margin-bottom:20px;
