@@ -1982,7 +1982,7 @@ board_list travelog - 내가 쓰는 여행기 리스트
   display: block;
 }
 .board_list.travelog figure .travelog_cont ul{margin-top:15px}
-.board_list.travelog figure .travelog_cont ul li{overflow: hidden;line-height:18px;}
+.board_list.travelog figure .travelog_cont ul li{overflow: hidden;margin:5px 0;line-height:18px;}
 .board_list.travelog figure .travelog_cont ul li span{float: left;}
 .board_list.travelog figure .travelog_cont ul li span i{}
 .board_list.travelog figure .travelog_cont ul li b{display:block;float: right;}
