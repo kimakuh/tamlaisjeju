@@ -2085,7 +2085,7 @@ border-bottom:1px solid #555;
 }
 
 .board_list.travelog figure.effect:hover img {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .board_list.travelog figure.effect figcaption::before,
