@@ -129,7 +129,6 @@
             <script src="node_modules/jquery/dist/jquery.min.js"></script>
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script>
             <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-            <script type="text/javascript" src="dist/js/timeline.min.js"></script>
 
             <script>
                 // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
@@ -200,6 +199,7 @@
                 }
             </script>
 
+            <script type="text/javascript" src="dist/js/timeline.min.js"></script>
             <script>
                 // 타임라인 start
                 $('.js-timeline').Timeline();
@@ -212,13 +212,6 @@
                     itemClass: 'box-item',
                     dotsPosition: 'top',
                     startItem: 'last'
-                });
-
-
-                $('.timeline-2').Timeline({
-                    autoplay: true,
-                    mode: 'vertical',
-                    itemClass: 'box-item',
                 });
             </script>
 </body>
