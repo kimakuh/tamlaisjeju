@@ -1914,7 +1914,8 @@ board_list travelog - 내가 쓰는 여행기 리스트
 	min-width: 320px;
 	max-width: 480px;
 	max-height: 360px;
-	width: 48%; */
+  width: 48%; */
+  min-height:318px;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
@@ -1943,7 +1944,8 @@ board_list travelog - 내가 쓰는 여행기 리스트
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.8;
+  opacity: 0.8;
+  min-height:318px;
 }
 
 
