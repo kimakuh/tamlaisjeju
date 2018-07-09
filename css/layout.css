@@ -1918,7 +1918,8 @@ board_list travelog - 내가 쓰는 여행기 리스트
   min-height:318px;
 	background: #3085a3;
 	text-align: center;
-	cursor: pointer;
+  cursor: pointer;
+  margin-bottom:0;
 }
 
 
