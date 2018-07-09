@@ -17,308 +17,530 @@
     <!-- css -->
     <link rel="stylesheet" href="../../css/common.css" />
     <link rel="stylesheet" href="../../css/layout.css" />
-    <!-- sub02 -->
-    <link rel="stylesheet" href="../../css/sub02.css" />
+    <!-- sub10 -->
+    <link rel="stylesheet" href="../../css/sub10.css" />
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
 
     <style type="text/css">
-        @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+    
     </style>
+
+
+
 </head>
 
 <body>
+    <div id="header"></div>
 
-        <div id="header"></div>
-    <div class="svisual">
-        <img src="../../img/sub02/sub_visual_img.jpg" alt="제주김만복(만복이네김밥집)">
-    </div>
-    <div class="svisual_info_box_wrap">
-        <div class="svisual_info_box">
-            <div class="svisual_info">
-                <h3>제주김만복</h3>
-                <p>(만복이네김밥집)</p>
-                <p class="hashtag">
-                    <a href="#">#일출</a>
-                    <a href="#">#오름</a>
-                    <a href="#">경관/포토</a>
-                </p>
-                <div class="info_area">
-                    <h4>기본정보</h4>
-                    <ul>
-                        <li class="clear">
-                            <strong>주소</strong>
-                            <span>제주특별자치도 제주시 삼도2동 1158-36</span>
-                        </li>
-                        <li class="clear">
-                            <strong>연락처</strong>
-                            <span>(+82) 064-759-8582</span>
-                        </li>
+    <div class="container" id="sub10"> 
+
+        <div id="content" class="wrapper">
+
+            <div class="plan wrapper clear">
+                <div class="plan_nav" style>
+                    <div class="plan_nav_prev" data-op="prev"></div>
+                    <div class="plan_nav_list">
+                        <div class="plan_nav_btn on" onclick="page_scroll('day_box','1')" data-id="1">D1 제주도</div>
+                        <div class="plan_nav_btn" onclick="page_scroll('day_box','2')" data-id="2">D2 제주도</div>
+                        <div class="plan_nav_btn  last" onclick="page_scroll('day_box','3')" data-id="3">D3 제주도</div>
+                    </div>
+                    <div class="plan_nav_next" data-op="next"></div>
+                </div>
+                <div class="plan_cover">
+                    <div class="cover_img"></div>
+                    <div class="share_box">
+                        <div class="share_btn" id="share">
+                            <img src="../../img/sub10/btn_share.png" alt="">
+                        </div>
+                        <div class="share_btn" id="like">
+                            <img src="../../img/sub10/btn_like.png" alt="">
+                        </div>
+                    </div>
+                    <ul class="plan_box">
+                        <li class="plan_title">xxxx 여행</li>
+                        <li class="plan_cont clear">출발: 2018-06-18 ~ 도착:2018-06-20</li>
+                        <li class="plan_cont clear">인원: 2명</li>
+                        <li class="plan_cont clear">일행: 친구</li>
+                        <li class="plan_cont clear">테마: 사진</li>
+                        <li class="plan_cont clear">태그: #일출봉</li>
                     </ul>
-                    <p>
-                        <a href="#">길찾기</a>
-                    </p>
+                    <div class="cover_bg"></div>
                 </div>
-            </div>
-            <!-- svisual_info -->
-            <div class="weather">
-                <img src="../../img/common/weather/weather_blur.png" alt="흐림">
-                <strong>흐림</strong>
-            </div>
-        </div>
-    </div>
-    <!-- svisual_info_box-->
-
-
-
-
-    <div class="container" id="sub02">
-        <div class="content_wrap">
-            <div class="sns_area clear">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span class="icon view_like_icon"></span>
-                            <strong>좋아요</strong>26</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon view_zzim_icon"></span>
-                            <strong>찜하기</strong>537</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon view_review_icon"></span>
-                            <strong>리뷰</strong>114</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon view_schedule_icon"></span>
-                            <strong>일정등록</strong>0</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon view_visit_icon"></span>
-                            <strong>방문했어요</strong>57</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon view_hit_icon"></span>
-                            <strong>조회</strong>19,416</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon view_sns_icon"></span>
-                            <strong>SNS 공유</strong>8</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- sns_area -->
-            <!-- Tab links -->
-            <div class="tab">
-                <ul>
-                    <li>
-                        <a class="tablinks" onclick="openTab(event, 'tab_cont01')" id="defaultOpen">이용 안내</a>
-                    </li>
-                    <li>
-                        <a class="tablinks" onclick="openTab(event, 'tab_cont02')">사진</a>
-                    </li>
-                    <li>
-                        <a class="tablinks" onclick="openTab(event, 'tab_cont03')">지도/주변관광지</a>
-                    </li>
-                    <li>
-                        <a class="tablinks" onclick="openTab(event, 'tab_cont04')">리뷰</a>
-                    </li>
-                    <li>
-                        <a class="tablinks" onclick="openTab(event, 'tab_cont05')">리뷰2</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="tab_cont01" class="tabcontent">
-                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                <h3>이용 안내 type1</h3>
-                <ul>
-                    <li>
-                        <strong>소개</strong>
-                        <span>전복내장으로 만든 김밥, 심플한 메뉴로 많은 여행객들에게 사랑받는 곳</span>
-                    </li>
-                    <li>
-                        <strong>상세 정보</strong>
-                        <span> 연중무휴(재료 소진시 조기마감)</span>
-                    </li>
-                    <li>
-                        <strong>이용 시간</strong>
-                        <span> 평일 : 10:00 ~ 20:00 , 주말 : 10:00 ~ 20:00</span>
-                    </li>
-                    <li>
-                        <strong>편의시설</strong>
-                        <span>공용주차장,현금결제,카드결제,화장실,편의점,음료대,유도 및 안내시설,경보 및 피난시설</span>
-                    </li>
-                </ul>
-
-
-                <h3>이용 안내 type2</h3>
-                <h4>소개</h4>
-                <p>전복내장으로 만든 김밥, 심플한 메뉴로 많은 여행객들에게 사랑받는 곳</p>
-                <h4>상세 정보</h4>
-                <p>연중무휴(재료 소진시 조기마감)</p>
-                <h4>이용 시간</h4>
-                <ul>
-                    <li>평일 : 10:00 ~ 20:00</li>
-                    <li>주말 : 10:00 ~ 20:00</li>
-                </ul>
-                <h4>편의시설</h4>
-                <p>공용주차장,현금결제,카드결제,화장실,편의점,음료대,유도 및 안내시설,경보 및 피난시설</p>
-            </div>
-
-            <div id="tab_cont02" class="tabcontent">
-                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                <h3>사진(59)</h3>
-                <!-- Photo Grid -->
-                <div class="row">
-                    <div class="column">
-                        <img src="../../img/sub02/wedding.jpg" style="width:100%">
-                        <img src="../../img/sub02/underwater.jpg" style="width:100%">
-                        <img src="../../img/sub02/rocks.jpg" style="width:100%">
-                        <img src="../../img/sub02/falls2.jpg" style="width:100%">
-                        <img src="../../img/sub02/nature.jpg" style="width:100%">
-                        <img src="../../img/sub02/ocean.jpg" style="width:100%">
-                        <img src="../../img/sub02/paris.jpg" style="width:100%">
+                <div class="plan_mnu_box clear" style>
+                    <div class="plan_mnu_box1">
+                        <div class="plan_mnu" id="1">일정</div>
+                        <div class="plan_mnu_line"></div>
+                        <div class="plan_mnu" id="2">전체일정</div>
+                        <div class="plan_mnu_line"></div>
+                        <div class="plan_mnu" id="3">지도</div>
+                        <div class="plan_mnu_line"></div>
+                        <div class="plan_mnu" id="4">댓글</div>
+                        <div class="plan_mnu_line"></div>
                     </div>
-                    <div class="column">
-                        <img src="../../img/sub02/paris.jpg" style="width:100%">
-                        <img src="../../img/sub02/ocean.jpg" style="width:100%">
-                        <img src="../../img/sub02/nature.jpg" style="width:100%">
-                        <img src="../../img/sub02/falls2.jpg" style="width:100%">
-                        <img src="../../img/sub02/rocks.jpg" style="width:100%">
-                        <img src="../../img/sub02/underwater.jpg" style="width:100%">
-                        <img src="../../img/sub02/wedding.jpg" style="width:100%">
-                    </div>
-                    <div class="column">
-                        <img src="../../img/sub02/wedding.jpg" style="width:100%">
-                        <img src="../../img/sub02/underwater.jpg" style="width:100%">
-                        <img src="../../img/sub02/rocks.jpg" style="width:100%">
-                        <img src="../../img/sub02/falls2.jpg" style="width:100%">
-                        <img src="../../img/sub02/nature.jpg" style="width:100%">
-                        <img src="../../img/sub02/ocean.jpg" style="width:100%">
-                        <img src="../../img/sub02/paris.jpg" style="width:100%">
-                    </div>
-                    <div class="column">
-                        <img src="../../img/sub02/wedding.jpg" style="width:100%">
-                        <img src="../../img/sub02/underwater.jpg" style="width:100%">
-                        <img src="../../img/sub02/rocks.jpg" style="width:100%">
-                        <img src="../../img/sub02/falls2.jpg" style="width:100%">
-                        <img src="../../img/sub02/nature.jpg" style="width:100%">
-                        <img src="../../img/sub02/ocean.jpg" style="width:100%">
-                        <img src="../../img/sub02/paris.jpg" style="width:100%">
+                    <div class="plan_mnu_box2">
+                        <div class="pdfexcel_box">
+                            <div class="pe_txt">다운로드</div>
+                            <a class="down_btn pdf member_btn" href="#" target="_blank"></a>
+                            <a class="down_btn excel member_btn" href="#" target="_blank"></a>
+                        </div>
+                        <a class="plan_mnu_btn">복 사</a>
                     </div>
                 </div>
+                <div class="day_page clear" data-id="1">
+                    <div class="day_page_left">
+                        <div class="day_box" data-id="1">
+                            <div class="day_info_box">
+                                <div class="day_txt">DAY1</div>
+                                <div class="day_info">
+                                    <div class="day_info_left">
+                                        <div class="date">2018.07.13 (금)</div>
+                                        <div class="day_title">제주도</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="day_sch_box" data-id="1-1">
+                                <div class="day_sch_num">
+                                    <div class="sch_num">1</div>
+                                </div>
+                                <div class="sch_content">
+                                    <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                        onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
+                                        style="cursor:pointer;">
+                                    <div class="spot_content_box">
+                                        <div class="spot_name" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');" style="cursor:pointer;">제주 국제공항</div>
+                                        <div class="spot_info">
+                                            <div class="tag">공항</div>
+                                            <div class="sinfo_line"></div>
+                                            <div class="sinfo_txt">7.4 / 10
+                                                <span>9개의 평가</span>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="spot_btn_box">
+                                        <img src="../../img/sub10/map_ico.png" alt="" class="spot_btn map_view" onclick="set_center(33.50721000,126.49294300)">
+                                        <img src="../../img/sub10/info_ico.png" alt="" class="spot_btn spot_info_btn" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');">
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="sch_add_content">
+                                    <div class="sch_price hide" data-srl="1-1"></div>
+                                    <div class="sch_memo" data-full="&nbsp;<span class='memo_more' data-op='min'>닫기</span>" data-min="" data-srl="1-1"></div>
+                                    <div class="sch_memo_box" data-srl="1-1">
+                                        <textarea name="" id="" cols="30" rows="10" class="memo_input" data-srl="1-1"></textarea>
+                                        <div class="memo_save_btn" data-srl="1-1">저장</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="day_sch_box" data-id="1-2">
+                                <div class="day_sch_num">
+                                    <div class="sch_num">2</div>
+                                </div>
+                                <div class="sch_content">
+                                    <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                        onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
+                                        style="cursor:pointer;">
+                                    <div class="spot_content_box">
+                                        <div class="spot_name" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');" style="cursor:pointer;">제주 국제공항</div>
+                                        <div class="spot_info">
+                                            <div class="tag">공항</div>
+                                            <div class="sinfo_line"></div>
+                                            <div class="sinfo_txt">7.4 / 10
+                                                <span>9개의 평가</span>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="spot_btn_box">
+                                        <img src="../../img/sub10/map_ico.png" alt="" class="spot_btn map_view" onclick="set_center(33.50721000,126.49294300)">
+                                        <img src="../../img/sub10/info_ico.png" alt="" class="spot_btn spot_info_btn" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');">
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="sch_add_content">
+                                    <div class="sch_price hide" data-srl="1-2"></div>
+                                    <div class="sch_memo" data-full="&nbsp;<span class='memo_more' data-op='min'>닫기</span>" data-min="" data-srl="1-2"></div>
+                                    <div class="sch_memo_box" data-srl="1-2">
+                                        <textarea name="" id="" cols="30" rows="10" class="memo_input" data-srl="1-2"></textarea>
+                                        <div class="memo_save_btn" data-srl="1-2">저장</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="day_sch_box" data-id="1-3">
+                                <div class="day_sch_num">
+                                    <div class="sch_num">3</div>
+                                </div>
+                                <div class="sch_content">
+                                    <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                        onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
+                                        style="cursor:pointer;">
+                                    <div class="spot_content_box">
+                                        <div class="spot_name" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');" style="cursor:pointer;">제주 국제공항</div>
+                                        <div class="spot_info">
+                                            <div class="tag">공항</div>
+                                            <div class="sinfo_line"></div>
+                                            <div class="sinfo_txt">7.4 / 10
+                                                <span>9개의 평가</span>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="spot_btn_box">
+                                        <img src="../../img/sub10/map_ico.png" alt="" class="spot_btn map_view" onclick="set_center(33.50721000,126.49294300)">
+                                        <img src="../../img/sub10/info_ico.png" alt="" class="spot_btn spot_info_btn" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');">
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="sch_add_content">
+                                    <div class="sch_price hide" data-srl="1-3"></div>
+                                    <div class="sch_memo" data-full="&nbsp;<span class='memo_more' data-op='min'>닫기</span>" data-min="" data-srl="1-3"></div>
+                                    <div class="sch_memo_box" data-srl="1-3">
+                                        <textarea name="" id="" cols="30" rows="10" class="memo_input" data-srl="1-3"></textarea>
+                                        <div class="memo_save_btn" data-srl="1-3">저장</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="day_sch_box" data-id="1-4">
+                                <div class="day_sch_num">
+                                    <div class="sch_num">4</div>
+                                </div>
+                                <div class="sch_content">
+                                    <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                        onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
+                                        style="cursor:pointer;">
+                                    <div class="spot_content_box">
+                                        <div class="spot_name" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');" style="cursor:pointer;">제주 국제공항</div>
+                                        <div class="spot_info">
+                                            <div class="tag">공항</div>
+                                            <div class="sinfo_line"></div>
+                                            <div class="sinfo_txt">7.4 / 10
+                                                <span>9개의 평가</span>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="spot_btn_box">
+                                        <img src="../../img/sub10/map_ico.png" alt="" class="spot_btn map_view" onclick="set_center(33.50721000,126.49294300)">
+                                        <img src="../../img/sub10/info_ico.png" alt="" class="spot_btn spot_info_btn" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');">
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="sch_add_content">
+                                    <div class="sch_price hide" data-srl="1-4"></div>
+                                    <div class="sch_memo" data-full="&nbsp;<span class='memo_more' data-op='min'>닫기</span>" data-min="" data-srl="1-4"></div>
+                                    <div class="sch_memo_box" data-srl="1-4">
+                                        <textarea name="" id="" cols="30" rows="10" class="memo_input" data-srl="1-4"></textarea>
+                                        <div class="memo_save_btn" data-srl="1-4">저장</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="day_sch_box" data-id="1-5">
+                                <div class="day_sch_num">
+                                    <div class="sch_num">5</div>
+                                </div>
+                                <div class="sch_content">
+                                    <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                        onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
+                                        style="cursor:pointer;">
+                                    <div class="spot_content_box">
+                                        <div class="spot_name" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');" style="cursor:pointer;">제주 국제공항</div>
+                                        <div class="spot_info">
+                                            <div class="tag">공항</div>
+                                            <div class="sinfo_line"></div>
+                                            <div class="sinfo_txt">7.4 / 10
+                                                <span>9개의 평가</span>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="spot_btn_box">
+                                        <img src="../../img/sub10/map_ico.png" alt="" class="spot_btn map_view" onclick="set_center(33.50721000,126.49294300)">
+                                        <img src="../../img/sub10/info_ico.png" alt="" class="spot_btn spot_info_btn" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');">
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="sch_add_content">
+                                    <div class="sch_price hide" data-srl="1-5"></div>
+                                    <div class="sch_memo" data-full="&nbsp;<span class='memo_more' data-op='min'>닫기</span>" data-min="" data-srl="1-5"></div>
+                                    <div class="sch_memo_box" data-srl="1-5">
+                                        <textarea name="" id="" cols="30" rows="10" class="memo_input" data-srl="1-5"></textarea>
+                                        <div class="memo_save_btn" data-srl="1-5">저장</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="day_page_right">
+                        <div class="right_scroll_box" style>
+                            <div class="day_sel">
+                                <select name="" id="" class="day_select">
+                                    <option value="1">DAY1</option>
+                                    <option value="2">DAY2</option>
+                                    <option value="3">DAY3</option>
+                                </select>
+                            </div>
+
+                            <div class="map_box">
+                                <div id="map" style="width: 100%; height: 100%;"></div>
+                            </div>
+                            <div class="spot_list_box"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="day_page clear" data-id="2">
+                        <div class="day_page_left">
+                            <div class="day_box" data-id="2">
+                                <div class="day_info_box">
+                                    <div class="day_txt">DAY1</div>
+                                    <div class="day_info">
+                                        <div class="day_info_left">
+                                            <div class="date">2018.07.13 (금)</div>
+                                            <div class="day_title">제주도</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day_sch_box" data-id="2-1">
+                                    <div class="day_sch_num">
+                                        <div class="sch_num">1</div>
+                                    </div>
+                                    <div class="sch_content">
+                                        <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                            onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
+                                            style="cursor:pointer;">
+                                        <div class="spot_content_box">
+                                            <div class="spot_name" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');" style="cursor:pointer;">제주 국제공항</div>
+                                            <div class="spot_info">
+                                                <div class="tag">공항</div>
+                                                <div class="sinfo_line"></div>
+                                                <div class="sinfo_txt">7.4 / 10
+                                                    <span>9개의 평가</span>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="spot_btn_box">
+                                            <img src="../../img/sub10/map_ico.png" alt="" class="spot_btn map_view" onclick="set_center(33.50721000,126.49294300)">
+                                            <img src="../../img/sub10/info_ico.png" alt="" class="spot_btn spot_info_btn" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');">
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="sch_add_content">
+                                        <div class="sch_price hide" data-srl="2-1"></div>
+                                        <div class="sch_memo" data-full="&nbsp;<span class='memo_more' data-op='min'>닫기</span>" data-min="" data-srl="2-1"></div>
+                                        <div class="sch_memo_box" data-srl="2-1">
+                                            <textarea name="" id="" cols="30" rows="10" class="memo_input" data-srl="2-1"></textarea>
+                                            <div class="memo_save_btn" data-srl="2-1">저장</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="day_sch_box" data-id="2-2">
+                                    <div class="day_sch_num">
+                                        <div class="sch_num">2</div>
+                                    </div>
+                                    <div class="sch_content">
+                                        <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                            onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
+                                            style="cursor:pointer;">
+                                        <div class="spot_content_box">
+                                            <div class="spot_name" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');" style="cursor:pointer;">제주 국제공항</div>
+                                            <div class="spot_info">
+                                                <div class="tag">공항</div>
+                                                <div class="sinfo_line"></div>
+                                                <div class="sinfo_txt">7.4 / 10
+                                                    <span>9개의 평가</span>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="spot_btn_box">
+                                            <img src="../../img/sub10/map_ico.png" alt="" class="spot_btn map_view" onclick="set_center(33.50721000,126.49294300)">
+                                            <img src="../../img/sub10/info_ico.png" alt="" class="spot_btn spot_info_btn" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');">
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="sch_add_content">
+                                        <div class="sch_price hide" data-srl="2-2"></div>
+                                        <div class="sch_memo" data-full="&nbsp;<span class='memo_more' data-op='min'>닫기</span>" data-min="" data-srl="2-2"></div>
+                                        <div class="sch_memo_box" data-srl="2-2">
+                                            <textarea name="" id="" cols="30" rows="10" class="memo_input" data-srl="2-2"></textarea>
+                                            <div class="memo_save_btn" data-srl="2-2">저장</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+    
+                                <div class="day_sch_box" data-id="2-3">
+                                    <div class="day_sch_num">
+                                        <div class="sch_num">3</div>
+                                    </div>
+                                    <div class="sch_content">
+                                        <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                            onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
+                                            style="cursor:pointer;">
+                                        <div class="spot_content_box">
+                                            <div class="spot_name" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');" style="cursor:pointer;">제주 국제공항</div>
+                                            <div class="spot_info">
+                                                <div class="tag">공항</div>
+                                                <div class="sinfo_line"></div>
+                                                <div class="sinfo_txt">7.4 / 10
+                                                    <span>9개의 평가</span>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="spot_btn_box">
+                                            <img src="../../img/sub10/map_ico.png" alt="" class="spot_btn map_view" onclick="set_center(33.50721000,126.49294300)">
+                                            <img src="../../img/sub10/info_ico.png" alt="" class="spot_btn spot_info_btn" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');">
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="sch_add_content">
+                                        <div class="sch_price hide" data-srl="2-3"></div>
+                                        <div class="sch_memo" data-full="&nbsp;<span class='memo_more' data-op='min'>닫기</span>" data-min="" data-srl="2-3"></div>
+                                        <div class="sch_memo_box" data-srl="2-3">
+                                            <textarea name="" id="" cols="30" rows="10" class="memo_input" data-srl="2-3"></textarea>
+                                            <div class="memo_save_btn" data-srl="2-3">저장</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+    
+                                <div class="day_sch_box" data-id="2-4">
+                                    <div class="day_sch_num">
+                                        <div class="sch_num">4</div>
+                                    </div>
+                                    <div class="sch_content">
+                                        <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                            onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
+                                            style="cursor:pointer;">
+                                        <div class="spot_content_box">
+                                            <div class="spot_name" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');" style="cursor:pointer;">제주 국제공항</div>
+                                            <div class="spot_info">
+                                                <div class="tag">공항</div>
+                                                <div class="sinfo_line"></div>
+                                                <div class="sinfo_txt">7.4 / 10
+                                                    <span>9개의 평가</span>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="spot_btn_box">
+                                            <img src="../../img/sub10/map_ico.png" alt="" class="spot_btn map_view" onclick="set_center(33.50721000,126.49294300)">
+                                            <img src="../../img/sub10/info_ico.png" alt="" class="spot_btn spot_info_btn" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');">
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="sch_add_content">
+                                        <div class="sch_price hide" data-srl="2-4"></div>
+                                        <div class="sch_memo" data-full="&nbsp;<span class='memo_more' data-op='min'>닫기</span>" data-min="" data-srl="2-4"></div>
+                                        <div class="sch_memo_box" data-srl="2-4">
+                                            <textarea name="" id="" cols="30" rows="10" class="memo_input" data-srl="2-4"></textarea>
+                                            <div class="memo_save_btn" data-srl="2-4">저장</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+    
+                                <div class="day_sch_box" data-id="2-5">
+                                    <div class="day_sch_num">
+                                        <div class="sch_num">5</div>
+                                    </div>
+                                    <div class="sch_content">
+                                        <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                            onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
+                                            style="cursor:pointer;">
+                                        <div class="spot_content_box">
+                                            <div class="spot_name" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');" style="cursor:pointer;">제주 국제공항</div>
+                                            <div class="spot_info">
+                                                <div class="tag">공항</div>
+                                                <div class="sinfo_line"></div>
+                                                <div class="sinfo_txt">7.4 / 10
+                                                    <span>9개의 평가</span>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="spot_btn_box">
+                                            <img src="../../img/sub10/map_ico.png" alt="" class="spot_btn map_view" onclick="set_center(33.50721000,126.49294300)">
+                                            <img src="../../img/sub10/info_ico.png" alt="" class="spot_btn spot_info_btn" onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');">
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="sch_add_content">
+                                        <div class="sch_price hide" data-srl="2-5"></div>
+                                        <div class="sch_memo" data-full="&nbsp;<span class='memo_more' data-op='min'>닫기</span>" data-min="" data-srl="2-5"></div>
+                                        <div class="sch_memo_box" data-srl="2-5">
+                                            <textarea name="" id="" cols="30" rows="10" class="memo_input" data-srl="2-5"></textarea>
+                                            <div class="memo_save_btn" data-srl="2-5">저장</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+
+               
+
+
+
+
             </div>
-
-            <div id="tab_cont03" class="tabcontent">
-                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                <h3>지도/주변관광지</h3>
-                <div id="map" style="width:100%;height:350px;"></div>
-
-
-            </div>
-            <div id="tab_cont04" class="tabcontent">
-                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                <h3>리뷰1</h3>
-                <p>Tokyo is the capital of Japan.</p>
-            </div>
-            <div id="tab_cont05" class="tabcontent">
-
-
-                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                <h3>리뷰2</h3>
-                <p>Tokyo is the capital of Japan.</p>
-            </div>
-
-            <script>
-                function openTab(evt, cityName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
-
-                // Get the element with id="defaultOpen" and click on it
-                document.getElementById("defaultOpen").click();
-            </script>
-
-            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=faacc3e95b7c75f518f36a165b1f0f91&libraries=services"></script>
-            <script>
-                // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
-                var infowindow = new daum.maps.InfoWindow({
-                    zIndex: 1
-                });
-
-                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-                    mapOption = {
-                        center: new daum.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
-                        level: 3 // 지도의 확대 레벨
-                    };
-
-                // 지도를 생성합니다    
-                var map = new daum.maps.Map(mapContainer, mapOption);
-
-                // 장소 검색 객체를 생성합니다
-                var ps = new daum.maps.services.Places();
-
-                // 키워드로 장소를 검색합니다
-                ps.keywordSearch('이태원 맛집', placesSearchCB);
-
-                // 키워드 검색 완료 시 호출되는 콜백함수 입니다
-                function placesSearchCB(data, status, pagination) {
-                    if (status === daum.maps.services.Status.OK) {
-
-                        // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
-                        // LatLngBounds 객체에 좌표를 추가합니다
-                        var bounds = new daum.maps.LatLngBounds();
-
-                        for (var i = 0; i < data.length; i++) {
-                            displayMarker(data[i]);
-                            bounds.extend(new daum.maps.LatLng(data[i].y, data[i].x));
-                        }
-
-                        // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
-                        map.setBounds(bounds);
-                    }
-                }
-
-                // 지도에 마커를 표시하는 함수입니다
-                function displayMarker(place) {
-
-                    // 마커를 생성하고 지도에 표시합니다
-                    var marker = new daum.maps.Marker({
-                        map: map,
-                        position: new daum.maps.LatLng(place.y, place.x)
-                    });
-
-                    // 마커에 클릭이벤트를 등록합니다
-                    daum.maps.event.addListener(marker, 'click', function () {
-                        // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
-                        infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name +
-                            '</div>');
-                        infowindow.open(map, marker);
-                    });
-                }
-            </script>
-
-
-
         </div>
+        <!-- content -->
     </div>
+    <!-- container-->
+
 
     <div id="footer"></div>
     <script type="text/javascript">
@@ -330,6 +552,305 @@
              */
         });
     </script>
+
+
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        // 지도를 생성합니다    
+        var map = new daum.maps.Map(mapContainer, mapOption);
+
+        // 주소-좌표 변환 객체를 생성합니다
+        var geocoder = new daum.maps.services.Geocoder();
+
+        // 주소로 좌표를 검색합니다
+        geocoder.addressSearch('제주시 애월읍 고성리 875-2', function (result, status) {
+
+
+            // 정상적으로 검색이 완료됐으면 
+            if (status === daum.maps.services.Status.OK) {
+
+                var coords = new daum.maps.LatLng(result[0].y, result[0].x);
+
+                // 결과값으로 받은 위치를 마커로 표시합니다
+                var marker = new daum.maps.Marker({
+                    map: map,
+                    position: coords
+                });
+
+                // 인포윈도우로 장소에 대한 설명을 표시합니다
+                var infowindow = new daum.maps.InfoWindow({
+                    content: '<div style="width:150px;text-align:center;padding:6px 0;"></div>'
+                });
+                infowindow.open(map, marker);
+
+                // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                map.setCenter(coords);
+            }
+            // 장소 검색 객체를 생성합니다
+            var ps = new daum.maps.services.Places(map);
+            ps.categorySearch('AD5', placesSearchCB, {
+                useMapCenter: true
+            });
+            ps.categorySearch('AT4', placesSearchCB, {
+                useMapCenter: true
+            });
+            ps.categorySearch('FD6', placesSearchCB, {
+                useMapCenter: true
+            });
+
+            // 키워드 검색 완료 시 호출되는 콜백함수 입니다
+            function placesSearchCB(data, status, pagination) {
+                if (status === daum.maps.services.Status.OK) {
+                    for (var i = 0; i < data.length; i++) {
+                        displayMarker(data[i]);
+                    }
+                }
+            }
+
+            // 지도에 마커를 표시하는 함수입니다
+            function displayMarker(place) {
+                // 마커를 생성하고 지도에 표시합니다
+                var marker = new daum.maps.Marker({
+                    map: map,
+                    position: new daum.maps.LatLng(place.y, place.x)
+                });
+
+                // 마커에 클릭이벤트를 등록합니다
+                daum.maps.event.addListener(marker, 'click', function () {
+                    // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
+                    infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name +
+                        '</div>');
+                    infowindow.open(map, marker);
+                });
+            }
+        });
+    </script>
+
+
+
+
+    <script>
+        function go_top() {
+            $('html, body').animate({
+                scrollTop: 0
+            });
+        }
+        $(document).ready(function () {
+            get_plan_member();
+            $(document).on('click', '.plan_mnu', function () {
+                var _this = $(this).attr('data-id');
+                if (_this != null) {
+                    if (_this == '1') {
+                        $('.plan_nav').removeClass('hide');
+                        set_map('1');
+                    } else {
+                        $('.plan_nav').addClass('hide');
+                    }
+                    $('.page').removeClass('show');
+                    $('.page[data-id=' + _this + ']').addClass('show');
+                    $('.plan_mnu').removeClass('on');
+                    $(this).addClass('on');
+
+                    $('html,body').animate({
+                        scrollTop: 0
+                    });
+                }
+            });
+
+            $(document).on('click', '.memo_more', function () {
+                var option = $(this).attr('data-op');
+
+                if (option == 'full') {
+                    $(this).parent().html($(this).parent().attr('data-full'));
+                } else {
+                    $(this).parent().html($(this).parent().attr('data-min'));
+                }
+            });
+
+            $(document).on('click', '.btn_memo', function () {
+                var onoff = $(this).attr('data-on');
+                var srl = $(this).attr('data-srl');
+                if (onoff == 'off') {
+                    $(this).attr('data-on', 'on')
+                    $('.sch_memo[data-srl=' + srl + ']').hide();
+                    $('.sch_price[data-srl=' + srl + ']').hide();
+                    $('.sch_memo_box[data-srl=' + srl + ']').show();
+                } else {
+                    $(this).attr('data-on', 'off');
+                    $('.sch_memo[data-srl=' + srl + ']').show();
+                    $('.sch_price[data-srl=' + srl + ']').show();
+                    $('.sch_memo_box[data-srl=' + srl + ']').hide();
+                }
+            });
+
+            $(document).on('click', '.memo_save_btn', function () { //메모작성 완료시
+                var srl = $(this).attr('data-srl');
+                $('.day_sch_box[data-id=' + srl + '] .btn_memo').text('메모&예산 수정');
+                $('.sch_memo_box[data-srl=' + srl + ']').hide();
+                console.log(srl + '/' + $('.memo_input[data-srl=' + srl + ']').val());
+                var txt_data = minmax($('.memo_input[data-srl=' + srl + ']').val());
+                $('.sch_memo[data-srl=' + srl + ']').attr('data-full', txt_data.max);
+                $('.sch_memo[data-srl=' + srl + ']').attr('data-min', txt_data.min);
+                $('.sch_memo[data-srl=' + srl + ']').html(txt_data.min);
+                $('.sch_memo[data-srl=' + srl + ']').show();
+                var memo_data = $('.memo_input[data-srl=' + srl + ']').val();
+
+                var s_currency = $('.currency[data-srl=' + srl + ']').val();
+                var s_price = $('.price[data-srl=' + srl + ']').val()
+
+                if (s_price != '') {
+                    $('.sch_price[data-srl=' + srl + ']').text(s_currency + ' ' + number_format(s_price));
+                    $('.sch_price[data-srl=' + srl + ']').show();
+                }
+
+                var srl_arr = srl.split('-');
+
+                var set_day = srl_arr[0];
+                var set_order = srl_arr[1];
+                console.log({
+                    'pn_srl': '252931',
+                    'set_day': set_day,
+                    'set_order': set_order,
+                    'memo': memo_data
+                });
+                console.log({
+                    'pn_srl': '252931',
+                    'set_day': set_day,
+                    'set_order': set_order,
+                    'currency': s_currency,
+                    'amount': s_price
+                });
+                $('.btn_memo[data-srl=' + srl + ']').attr('data-on', 'off')
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/plan/set_plan_inspot_memo',
+                    data: {
+                        'pn_srl': '252931',
+                        'set_day': set_day,
+                        'set_order': set_order,
+                        'memo': memo_data
+                    },
+                    success: function (data) {
+                        console.log(data);
+                    }
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/plan/update_budget_inspot',
+                    data: {
+                        'pn_srl': '252931',
+                        'set_day': set_day,
+                        'set_order': set_order,
+                        'currency': s_currency,
+                        'amount': s_price
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        get_total_budget(set_day);
+                        get_total_budget();
+                    }
+                });
+            });
+
+
+
+            $(document).scroll(function () {
+                var stop_top = $('.list_bottom.page').position().top;
+                var right_top = $('.right_scroll_box').offset().top;
+                //console.log(stop_top+'/'+right_top+'/'+(parseInt(stop_top)-567));
+                var stop = $(document).scrollTop();
+                var body_height = parseInt($(document).height()) - parseInt($('.list_bottom.page.show')
+                    .height()) - 1000;
+                if (stop > body_height) {
+                    $('.right_scroll_box').css('position', 'absolute');
+                    $('.right_scroll_box').css('left', '0px');
+                    //오른쪽 배너 여기 수정
+                    $('.right_scroll_box').css('top', (body_height - 657));
+                    $('.right_scroll_box').css('margin-left', '0px');
+
+                    $('.plan_nav').css('position', 'absolute');
+                    $('.plan_nav').css('left', '50%');
+                    $('.plan_nav').css('top', body_height);
+                    $('.plan_nav').css('margin-left', '-700px');
+                } else {
+                    $('.plan_nav').attr('style', '');
+                    if (stop > 473) {
+                        $('.plan_mnu_box').css('position', 'fixed');
+                        $('.plan_mnu_box').css('top', 0);
+                        $('.plan_mnu_box').css('z-index', '10');
+                        $('.plan_mnu_box').css('left', '50%');
+                        $('.plan_mnu_box').css('margin-left', '-546px');
+                        $('.plan_mnu_box').css('width', '1092px');
+
+                        if (stop < parseInt(stop_top) - 700) {
+                            $('.right_scroll_box').css('position', 'fixed');
+                            $('.right_scroll_box').css('width', '348px');
+                            $('.right_scroll_box').css('left', '50%');
+                            $('.right_scroll_box').css('top', '100px');
+                            $('.right_scroll_box').css('margin-left', '198px');
+                        }
+                    } else {
+                        $('.plan_mnu_box').attr('style', '');
+                        $('.wrap.page').attr('style', '');
+                        $('.right_scroll_box').attr('style', '');
+                    }
+                }
+
+                if (stop > 0) {
+                    $('.btn_top').fadeIn();
+                } else {
+                    $('.btn_top').fadeOut();
+                }
+                var _this_day = '1';
+                $('.day_box').each(function () {
+                    var xtop = parseInt($(this).offset().top) - 100;
+                    if (stop >= xtop) {
+                        _this_day = $(this).attr('data-id');
+                    }
+                });
+
+                set_day(_this_day);
+            });
+        });
+
+        var cur_day = 1;
+
+        function set_day(day) {
+            //console.log('set_day: '+day);
+            var top = 30 * parseInt(day) - 180;
+            $('.plan_nav_list').scrollTop(top);
+            $('.plan_nav_btn').removeClass('on');
+            $('.plan_nav_btn[data-id=' + day + ']').addClass('on');
+            $('.day_select').val(day);
+            set_map(day);
+            if (cur_day != day) {
+                $('.spot_list_box').html(spot_nav[day]);
+                reset_spot_list();
+            }
+            cur_day = day;
+        }
+
+        function minmax(txt) {
+            var data = {
+                'max': '',
+                'min': ''
+            };
+            data.min = txt.cut(180, '...');
+
+            if (data.min.length > 90) {
+                data.min += "&nbsp;<span class='memo_more' data-op='full'>더보기</span>";
+            }
+            data.max = txt + "&nbsp;<span class='memo_more' data-op='min'>닫기</span>";
+
+            return data;
+        }
+    </Script>
 </body>
 
 </html>

@@ -1,8 +1,65 @@
 @charset "utf-8";
-
 /* 플래너 뷰 */
 
-      
+#sub10 .plan .plan_nav {
+    width: 144px;
+    border-top: 2px solid #dedede;
+    border-bottom: 2px solid #dedede;
+    background: white;
+    position: fixed;
+    left: 50%;
+    margin-left: -750px;
+}
+
+#sub10 .plan .plan_nav .plan_nav_prev {
+    background: url(../img/sub10/plan_nav_prev.png) no-repeat;
+    background-position: center center;
+    margin-bottom: 3px;
+}
+
+#sub10 .plan .plan_nav .plan_nav_prev,
+.plan_nav_next {
+    width: 100%;
+    cursor: pointer;
+    height: 30px;
+}
+
+#sub10 .plan .plan_nav .plan_nav_list {
+    width: 100%;
+    max-height: 360px;
+    overflow-y: hidden;
+}
+
+#sub10 .plan .plan_nav .plan_nav_list .plan_nav_btn.on {
+    background: url(../img/sub10/plan_nav_line_on.gif) no-repeat;
+    background-position: left center;
+    color: #ff9320;
+}
+
+#sub10 .plan .plan_nav .plan_nav_list .plan_nav_btn {
+    width: 100%;
+    color: #b3b3b3;
+    font-size: 11px;
+    padding-left: 37px;
+    background: url(../img/sub10/plan_nav_line.gif) no-repeat;
+    background-position: left center;
+    height: 30px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#sub10 .plan .plan_nav .plan_nav_list .plan_nav_btn.last {
+    background: url(../img/sub10/plan_nav_line_last.gif) no-repeat;
+    background-position: left center;
+    height: 10px;
+}
+
+#sub10 .plan .plan_nav .plan_nav_next {
+    background: url(../img/sub10/plan_nav_next.png) no-repeat;
+    background-position: center center;
+    margin-top: 3px;
+}
+
 #sub10 .plan .plan_cover {
     width: 100%;
     position: relative;
@@ -31,7 +88,6 @@
     top: 180px;
     z-index: 10;
     left: 25px;
-
 }
 
 #sub10 .plan .plan_cover .plan_box .plan_title {
@@ -41,7 +97,6 @@
     float: left;
     margin-bottom: 10px;
     z-index: 10;
-
 }
 
 #sub10 .plan .plan_cover .plan_box .plan_cont {
@@ -161,7 +216,6 @@
     cursor: pointer;
 }
 
-
 #sub10 .plan .plan_mnu_box2 .pdfexcel_box .down_btn.pdf {
     background: url(../img/sub10/down_btn_pdf.png) no-repeat #555555;
 }
@@ -278,7 +332,6 @@
     vertical-align: middle;
     margin: 0 auto;
     margin-top: 35px;
-
 }
 
 #sub10 .plan .day_page .day_page_left .day_box .day_sch_box .sch_content {
@@ -391,13 +444,11 @@
 
 #sub10 .plan .day_page .day_page_left .day_box .day_sch_box .sch_add_content .sch_memo_box .plan_info_box {}
 
-
 #sub10 .plan .day_page .day_page_right {
     float: left;
     width: 348px;
     position: relative;
 }
-
 
 #sub10 .plan .day_page .day_page_right .right_scroll_box {
     position: absolute;
@@ -415,6 +466,7 @@
     left: 20px;
     top: 15px;
     background: url(../img/sub10/select_arrow.gif) no-repeat right center white;
+    z-index: 99;
 }
 
 #sub10 .plan .day_page .day_page_right .right_scroll_box .day_sel .day_select {
@@ -450,4 +502,393 @@
     border-left: 1px solid #e5e5e5;
     background: white;
     height: 195px;
+}
+
+/*sub_10_planner*/
+
+#sub10 .full_wrap {
+    width: 100%;
+    height: 824px;
+}
+
+#sub10 .full_wrap .left_full_box {
+    border-right: solid 1px #a7a7a7;
+    height: 100%;
+    z-index: 999;
+    float: left;
+}
+
+#sub10 .full_wrap .left_full_box .f1 {
+    float: left;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #pn_title_box {
+    width: 160px;
+    height: 100%;
+    background: #203341;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #pn_title_box li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #203341;
+    color: #fff;
+    text-align: center;
+    border-bottom: solid 1px #374854;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #pn_title_box li .full_data_info {
+    margin-left: 15px;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #pn_title_box li .day_edit_start_btn {
+    margin-top: 18px;
+    margin-left: 10px;
+    background: url(../img/sub10/cat_set_icon.png) no-repeat;
+    padding-left: 18px;
+    line-height: 15px;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_menu {
+    width: 160px;
+    height: 100%;
+    background: #203341;
+    overflow-y: auto;
+    max-height: 654px;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_menu li {
+    width: 100%;
+    height: 70px;
+    background: #203341;
+    color: #fff;
+    text-align: center;
+    border-bottom: solid 1px #374854;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_menu li on {
+    background: #1a7ad9;
+    border-bottom: solid 1px #1a7ad9;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_menu li .cat_date_left_box {
+    margin-top: 16px;
+    margin-left: 18px;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_menu li .cat_date_left_box .cat_left_day {
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_menu li .cat_date_left_box .cat_left_date {
+    color: #49b2e9;
+    font-size: 11px;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_menu li .cat_date_right_box {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_menu li .cat_date_right_box .cat_right_weekday {
+    margin-bottom: 3px;
+    text-align: left !important;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_menu li .cat_date_right_box .cat_right_city {
+    color: #b3b3b3;
+    text-align: left !important;
+}
+
+#sub10 #show_all_day {
+    line-height: 70px;
+    font-size: 15px !important;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_add_box {
+    width: 160px;
+    background: rgb(32, 51, 65);
+    color: rgb(255, 255, 255);
+    height: 424px;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_add_box li {
+    padding-top: 15px;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #cat_add_box li .add_box_pert {
+    width: 124px;
+    height: 32px;
+    line-height: 32px;
+    border: solid 1px #fff;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #pn_date_controll_box {
+    width: 160px;
+    height: 100%;
+    background: #203341;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #pn_date_controll_box li {
+    width: 100%;
+    height: 120px;
+    background: #203341;
+    color: #fff;
+    text-align: center;
+    border-bottom: solid 1px #374854;
+    font-size: 12px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #pn_date_controll_box li .controll_box_pert_top {
+    text-align: center;
+    border-top: solid #fff 1px;
+    margin-top: 10px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #pn_date_controll_box li .controll_box_pert_top .controll_box_pert_center {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+}
+
+#sub10 .full_wrap .left_full_box .f1 #pn_date_controll_box li .controll_box_pert_top .controll_box_pert_center img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box {
+    width: 265px;
+    border-right: solid #a9a9a9 1px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .title_box {
+    width: 265px;
+    height: 50px;
+    background: #707070;
+    color: #fff;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .title_box #schedule_detail_title {
+    display: block;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .title_box #schedule_detail_title .schedule_detail_title_text {
+    width: 245px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .title_box #schedule_detail_title .schedule_detail_title_text .day_reset_btn {
+    width: 20px;
+    height: 20px;
+    background: url(../img/sub10/_day_reset_icon.png) no-repeat;
+    background-size: 20px 20px;
+    margin-top: 14px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .title_box #schedule_detail_title .schedule_detail_title_text .day_next_btn {
+    width: 22px;
+    height: 24px;
+    border: solid #fff 1px;
+    background: url(../img/sub10/_next_icon.png) no-repeat 6px 6px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .title_box #schedule_detail_title .schedule_detail_title_text .day_prev_btn {
+    width: 22px;
+    height: 24px;
+    border: solid #fff 1px;
+    border-right: 0px;
+    background: url(../img/sub10/_prev_icon.png) no-repeat 6px 6px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable {
+    display: block;
+    overflow-y: scroll;
+    height: 683px;
+    padding-bottom: 200px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item {
+    padding: 5px;
+    cursor: move;
+    border-bottom: solid #a7a7a7 1px;
+    background: #fff;
+    width: 100%;
+    position: relative;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .item_ctrl_box {
+    position: absolute;
+    top: 55px;
+    right: 7px;
+    display: none;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .item_ctrl_box div {
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .img_box {
+    width: 62px;
+    height: 55px;
+    position: relative;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .img_box img {
+    width: 62px;
+    height: 55px;
+    float: left;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .img_box .spot_order_box {
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    position: absolute;
+    background: #223b68;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .img_box .memo_size {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    width: 22px;
+    height: 20px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .img_box .memo_size .memo_indi {
+    width: 22px;
+    height: 20px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .info_box {
+    padding-left: 10px;
+    width: 153px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .info_box div {
+    font-size: 12px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .info_box .sub {
+    font-size: 12px;
+    color: #808080;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .inspot_add_box {
+    border-top: solid #a7a7a7 1px;
+    padding-top: 10px;
+    height: 49px;
+    text-align: center;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .inspot_add_box .inspot_set_box .add_inspot_spot_btn {
+    width: 104px;
+    height: 30px;
+    background: #ff9320;
+    border: solid #f7870f 1px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    margin: auto;
+
+}
+#sub10 .full_wrap .left_full_box #schedule_full_box .inspot_add_box .inspot_set_box {
+    display: inline-block;
+}
+
+#sub10 .full_wrap #right_full_box {
+    float: left;
+    position: absolute;
+    left: 425px;
+    width: 1065px;
+}
+
+#sub10 .full_wrap #right_full_box #on_city_open_btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background: url(../img/sub10/city_open_btn.png);
+    cursor: pointer;
+    z-index: 99;
+}
+#sub10 .full_wrap #right_full_box #city_list {
+    width: 365px;
+    z-index: 999;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    background: #fff;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_title {
+    width: 365px;
+    height: 50px;
+    background: #1a7ad9;
+    line-height: 50px;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_title .list_title_option_menu {
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    top: 12px;
+    right: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    width: 76px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border: solid 1px #fff;
+    background: url(../img/sub10/w_arrow_down.png)no-repeat 62px 10px;
+    padding-right: 6px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list #on_city_close_btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    background: url(../img/sub10/city_close_btn.png);
+    cursor: pointer;
 }
