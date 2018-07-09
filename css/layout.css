@@ -1954,7 +1954,7 @@ board_list travelog - 내가 쓰는 여행기 리스트
 	/* padding: 2em; */
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.25em;
+	/* font-size: 1.25em; */
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -2005,8 +2005,8 @@ board_list travelog - 내가 쓰는 여행기 리스트
 
 
 .board_list.travelog figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
+	/* letter-spacing: 1px;
+	font-size: 68.5%; */
 }
 
 
