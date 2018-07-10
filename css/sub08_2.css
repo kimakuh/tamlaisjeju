@@ -302,7 +302,13 @@ travel_view - 타임라인
     position: relative;
 }
 
-#sub08 .t_timeline .timeline_content_day {
+#sub08 .t_timeline nav {
+    
+
+}
+
+#sub08 .t_timeline .action {
+    position: absolute;
     top: 50px;
 }
 
@@ -326,7 +332,6 @@ travel_view - 타임라인
     margin: auto;
     width: 100%;
     border-bottom: 1px solid #e6e6e6;
-    margin-bottom: 10px;
 }
  
 #sub08 .t_timeline .t_timeline_content .context_menu span {
@@ -492,7 +497,7 @@ figure.snip0016:hover figcaption::before {
 }
 
 .fixed {
+    top: 169px;
 	position: fixed;
-	top: 50px;
 	z-index: 1;
 }

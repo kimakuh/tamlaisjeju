@@ -85,7 +85,7 @@
                 <!-- 타임라인 -->
 
                 <div class="t_timeline">
-                    <nav class="timeline_content_day clear">
+                    <nav class="timeline_content_day action clear">
                         <h4> Day 1</h4>
                         <p>2018.08.02</p>
                         <p>Day1 경로보기</p>
@@ -316,12 +316,14 @@
     //fixed
     $(document).ready(function(){
 	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 70;
-			 if ($(window).scrollTop() > navHeight) {
+	   var navHeight = $( window ).height();
+			 if ($(window).scrollTop() > navHeight-169) {
+                 $('nav').removeClass('action');
 				 $('nav').addClass('fixed');
 			 }
 			 else {
 				 $('nav').removeClass('fixed');
+                 $('nav').addClass('action');
 			 }
 		});
 	});
