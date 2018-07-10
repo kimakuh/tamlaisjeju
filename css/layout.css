@@ -858,6 +858,8 @@ container - 컨텐츠 스타일
   color:#fff;
 }
 
+.btn-write{color:#fff;}
+
 .bico.bticon {
   position: relative;
   top: -1px;
