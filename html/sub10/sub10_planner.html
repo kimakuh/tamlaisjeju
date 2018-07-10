@@ -823,6 +823,70 @@
              */
         });
     </script>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=35a2267e059228624227866fafbb7d06&libraries=services"></script>
+<script>
+  var infowindow = new daum.maps.InfoWindow({
+    zIndex: 1
+  });
+
+  var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = {
+      center: new daum.maps.LatLng(37.450701, 126.994784), // 지도의 중심좌표
+      level: 6 // 지도의 확대 레벨
+    };
+
+  var map = new daum.maps.Map(mapContainer, mapOption);
+  var ps = new daum.maps.services.Places();
+  ps.keywordSearch('섭지코지 관광지', placesSearchCB);
+
+  function placesSearchCB(data, status, pagination) {
+    if (status === daum.maps.services.Status.OK) {
+      var bounds = new daum.maps.LatLngBounds();
+      for (var i = 0; i < data.length; i++) {
+        displayMarker(data[i]);
+        bounds.extend(new daum.maps.LatLng(data[i].y, data[i].x));
+      }
+      map.setBounds(bounds);
+    }
+  }
+
+  function displayMarker(place) {
+    var marker = new daum.maps.Marker({
+      map: map,
+      position: new daum.maps.LatLng(place.y, place.x)
+    });
+    daum.maps.event.addListener(marker, 'click', function () {
+      infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
+      infowindow.open(map, marker);
+    });
+  }
+
+  function relayout() {
+    map.relayout();
+  }
+
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("conts_detail");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab_btn");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  map.relayout();
+
+
+  document.getElementById("defaultOpen").click();
+</script>
 </body>
 
 </html>
+
+
+
