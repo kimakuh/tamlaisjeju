@@ -16,10 +16,11 @@ all - 여행필수정보 전체
 }
 
 #sub11 .location_wrap {
-    height: 50px;
+    height: 26px;
     padding: 11px 28px;
     border: 1px solid #e5e5e5;
     border-top: 0;
+    margin-bottom: 20px;
 }
 
 #sub11 .location {
@@ -177,7 +178,6 @@ all - 여행필수정보 전체
 }
 
 #sub11 .my_tour .profile_wrap {
-    margin-top: 20px;
     margin-bottom: 50px;
     background: #f4f4f4;
     border: 1px solid #e5e5e5;
@@ -212,7 +212,7 @@ all - 여행필수정보 전체
 
 #sub11 .my_tour .profile_wrap .name_zone {
     float: left;
-    width: 885px;
+    width: 925px;
     height: 41px;
     padding: 14px 0 0 30px;
     border-bottom: 1px solid #e5e5e5;
@@ -221,7 +221,7 @@ all - 여행필수정보 전체
 #sub11 .my_tour .profile_wrap .name_zone .user_name {
     font-size: 25px;
     font-weight: 800;
-    color: #ef8321;
+    color: #2168f6;
     line-height: 25px;
 }
 
@@ -231,7 +231,7 @@ all - 여행필수정보 전체
 }
 
 #sub11 .my_tour .profile_wrap .name_zone .text_tit {
-    margin-top: 4px;
+    padding-top: 3px;
     font-size: 18px;
     color: #1b1b1b;
 }
@@ -268,6 +268,7 @@ all - 여행필수정보 전체
     height: 90px;
     background: url(../img/sub11/common/bg_badge.png) no-repeat 0 0;
     text-indent: -9999px;
+    margin-bottom: 10px;
 }
 
 #sub11 .my_tour .profile_wrap .take_zone div .take_item .take_img {
@@ -298,7 +299,7 @@ all - 여행필수정보 전체
 
 #sub11 .my_tour .profile_wrap .take_zone div .take_item .take_tit1 {
     position: relative;
-    margin-top: 10px;
+    margin-bottom: 6px;
     font-size: 18px;
     font-weight: 800;
     color: #535353;
@@ -307,7 +308,6 @@ all - 여행필수정보 전체
 
 #sub11 .my_tour .profile_wrap .take_zone div .take_item .take_tit2 {
     position: relative;
-    margin-top: 6px;
     font-size: 14px;
     color: #535353;
     line-height: 17px;
@@ -342,7 +342,7 @@ all - 여행필수정보 전체
 #sub11 .my_tour .profile_wrap .count_zone {
     position: relative;
     float: left;
-    width: 744px;
+    width: 784px;
     height: 177px;
 }
 
@@ -355,7 +355,7 @@ all - 여행필수정보 전체
 
 #sub11 .my_tour .profile_wrap .count_zone .count_list dl {
     width: 155px;
-    margin-top: 24px;
+    margin-bottom: 24px;
     font-size: 16px;
     color: #1b1b1b;
     line-height: 16px;
@@ -370,7 +370,7 @@ all - 여행필수정보 전체
 }
 
 #sub11 .mt0 {
-    margin-top: 0!important;
+    margin-bottom: 24px;!important;
 }
 
 #sub11 .my_tour .profile_wrap .count_zone .count_list dl dd.orange {
@@ -394,20 +394,36 @@ all - 여행필수정보 전체
     color: #959595;
     line-height: 33px;
     text-align: center;
+    margin-bottom: 9px;
 }
 
 #sub11 .my_tour .profile_wrap .count_zone .report_area a.type_1 {
-    margin-top: 9px;
     background: #959595;
     color: #fff;
+    margin-bottom: 0;
 }
 
-#sub11 .my_tour .my_tour_wrap {
-    margin-top: 50px;
+#sub11 .my_tour .my_tour_wrap .wrap_tit_zone {
+    margin-bottom: 30px;
 }
 
 #sub11 .my_tour .my_tour_wrap .wrap_tit_zone p {
     float: left;
+}
+
+#sub11 .my_tour .my_tour_wrap .place_wrap {
+    margin-bottom: 20px;
+}
+
+#sub11 .my_tour .my_tour_wrap .place_wrap .info_txt {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #959595;
+    line-height: 16px;
+}
+
+.my_tour .my_tour_wrap .place_wrap .map {
+    margin-top: 0px;
 }
 
 #sub11 .wrap_tit_zone .wrap_tit {
@@ -419,10 +435,11 @@ all - 여행필수정보 전체
 
 
 #sub11 .my_tour .my_tour_wrap .util_wrap {
-    margin-top: 20px;
+    margin-bottom: 27px;
 }
 
 #sub11 .my_tour .my_tour_wrap .util_wrap .util_area {
+    padding: 0;
     float: left;
 }
 
@@ -642,7 +659,7 @@ all - 여행필수정보 전체
     display: table;
     position: relative;
     height: 65px;
-    padding: 12px 48px 0 22px;
+    padding: 0 48px 0 22px;
 }
 
 #sub11 .item_section .item_review p {
@@ -668,7 +685,7 @@ all - 여행필수정보 전체
 
 #sub11 .item_section .item_review .btn_del_review {
     position: absolute;
-    top: 15px;
+    top: 4px;
     right: 25px;
     width: 10px;
     height: 10px;
@@ -677,7 +694,7 @@ all - 여행필수정보 전체
 }
 
 #sub11 .item_section .item_count_area {
-    margin-top: 15px;
+    margin-bottom: 12px;
 }
 
 #sub11 .item_section .item_count_area .ico_type.like, .item_section .item_count_area .ico_type.zzim {
@@ -703,6 +720,7 @@ all - 여행필수정보 전체
 
 #sub11 .item_section .item_count_area .ico_type {
     padding-top: 28px;
+    margin-bottom: 10px;
 }
 
 #sub11 .item_section .item_count_area a, .item_section .item_count_area p {
@@ -716,10 +734,10 @@ all - 여행필수정보 전체
     font-weight: 400;
     color: #535353;
     line-height: 14px;
+    margin-bottom: 6px;
 }
 
 #sub11 .item_section .item_count_area .ico_type span.count {
-    margin-top: 6px;
     font-size: 13px;
     font-weight: 400;
     color: #959595;
@@ -728,19 +746,19 @@ all - 여행필수정보 전체
 
 #sub11 .item_section .item_count_area .item_count_h_area {
     clear: left;
-    width: 100%;
+    width: 96%;
     height: 30px;
-    margin-top: 10px;
     background: #f4f4f4;
     font-size: 12px;
     color: #959595;
     line-height: 30px;
+    padding: 0 2%;
 }
 
 #sub11 .my_tour .my_tour_wrap .tour_list.type_1 .item_section .item_top .s_tit {
     overflow: hidden;
     width: 211px;
-    margin: 19px auto 0;
+    margin: 0 auto 8px;
     font-size: 22px;
     line-height: 22px;
     text-overflow: ellipsis;
@@ -748,26 +766,12 @@ all - 여행필수정보 전체
 }
 
 #sub11 .my_tour .my_tour_wrap .tour_list.type_1 .item_section .item_top .s_theme {
-    margin-top: 8px;
+    margin-bottom: 14px;
     color: #959595;
 }
 
-#sub11 .item_section .item_top .s_theme {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding: 0 10px;
-}
-
-#sub11 .item_section .item_top .s_theme {
-    margin-top: 11px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 14px;
-}
-
 #sub11 .my_tour .my_tour_wrap .tour_list.type_1 .item_section .item_top .item_tag {
-    margin-top: 14px;
+    margin-bottom: 15px;
     font-size: 15px;
     font-weight: 700;
     color: #535353;
@@ -783,17 +787,17 @@ all - 여행필수정보 전체
     width: 264px;
     height: 44px;
     margin-bottom: 20px;
-    border: 3px solid #f8c990;
+    border: 3px solid #2168f6;
     border-radius: 5px;
     font-size: 18px;
     font-weight: 700;
-    color: #ef8321;
+    color: #2168f6;
     line-height: 44px;
     text-align: center;
 }
 
 #sub11 .my_tour .my_tour_wrap .my_tour_list li .tour_list dd {
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #sub11 .my_tour .my_tour_wrap .tour_list dl:nth-child(4n+1) {
@@ -803,7 +807,7 @@ all - 여행필수정보 전체
 
 #sub11 .my_tour .my_tour_wrap .tour_list .item_section {
     height: 210px;
-    margin-top: 27px;
+    margin-bottom: 27px;
 }
 
 #sub11 .my_tour .my_tour_wrap .my_tour_list li .item_section {
@@ -882,7 +886,7 @@ all - 여행필수정보 전체
 }
 
 #sub11 .my_tour .my_tour_wrap .my_tour_list li .item_section .item_top .s_tit {
-    margin-top: 13px;
+    padding-top: 13px;
 }
 
 .my_tour .my_tour_wrap .wrap_tit_zone .wrap_sub_tit {
@@ -897,14 +901,14 @@ all - 여행필수정보 전체
 
 #sub11 .item_section .item_top .s_tit {
     overflow: hidden;
-    margin: 19px auto 0;
+    margin: 0 auto;
     width: 94%;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding-top: 29px;
 }
 
 #sub11 .item_section .item_top .s_tit {
-    margin-top: 19px;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
@@ -918,7 +922,7 @@ all - 여행필수정보 전체
 }
 
 #sub11 .item_section .item_top .s_theme {
-    margin-top: 11px;
+    padding-top: 11px;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
@@ -1020,17 +1024,18 @@ all - 여행필수정보 전체
 
 #sub11 .inner_map_wrap {
     padding-top: 80px;
+    margin-bottom: 30px;
 }
 
 #sub11 .inner_map_wrap .map_area {
     width: 100%;
     height: 340px;
-    margin-top: 10px;
     background-color: rgba(0,0,0,.1);
 }
 
 
 #sub11 .inner_map_wrap .loc_btn_area {
+    margin-bottom: 10px;
     text-align: center;
 }
 
