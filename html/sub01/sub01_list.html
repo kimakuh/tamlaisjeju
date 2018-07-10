@@ -50,12 +50,12 @@
             <script>
                 jQuery(document).ready(function ($) {
                     //enable tabs and add fade effect
-                    $(".toggler").tabs(".window_body > .layout_type", {
+                    $(".toggle_area").tabs(".board_list > .box_wrap", {
                         effect: 'fade'
                     });
                     // add stripes for list view
-                    $(".single:even").addClass("even");
-                    $(".single:odd").addClass("odd");
+                    $(".box:even").addClass("even");
+                    $(".box:odd").addClass("odd");
                 });
             </script>
 
