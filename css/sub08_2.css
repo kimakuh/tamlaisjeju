@@ -331,7 +331,7 @@ travel_view - 타임라인
 #sub08 .t_timeline .t_timeline_content .context_menu {
     margin: auto;
     width: 100%;
-    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
 }
  
 #sub08 .t_timeline .t_timeline_content .context_menu span {
