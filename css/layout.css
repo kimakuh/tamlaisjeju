@@ -2263,6 +2263,10 @@ all_page_box - 제주여행 꿀팁
                     font-size: 50px
                 }
 
+                .all_page_box .box i.fa-question-circle{
+                  padding:25px;
+                }
+
                 .all_page_box .box h4:before {
                     display: none;
 
