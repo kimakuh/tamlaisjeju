@@ -1495,8 +1495,8 @@ board_list notice - 공지사항
 
 
 
-.board_list.notice .tbl_basic th{border-left:none;}
-.board_list.notice .tbl_basic td{border-left:none;}
+.board_list.notice .tbl_basic th{border-left:none;padding:15px;}
+.board_list.notice .tbl_basic td{border-left:none;padding:15px;}
 .board_list.notice .tbl_basic th:last-child, .board_list.notice .tbl_basic td:last-child{border-right:none;}
 
 
