@@ -683,8 +683,7 @@
     line-height: 50px;
     font-size: 15px;
     font-weight: bold;
-    padding: 0px 10px;
-}
+    }
 
 #sub10 .full_wrap .left_full_box #schedule_full_box .title_box #schedule_detail_title {
     display: block;
@@ -853,6 +852,7 @@
     left: 0px;
     height: 100%;
     background: #fff;
+    display: block;
 }
 
 #sub10 .full_wrap #right_full_box #city_list .list_title {
@@ -892,3 +892,172 @@
     background: url(../img/sub10/city_close_btn.png);
     cursor: pointer;
 }
+
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box {
+    background: #fff;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_search_box {
+    height: 75px;
+    border-bottom: solid #dadada 1px;
+    padding-top: 10px;
+    background: #fff;
+    text-align: center;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_search_box #input_search {
+    width: 328px;
+    height: 31px;
+    border: solid #c8c8ca 1px;
+    padding-left: 5px;
+    font-family: 'nanum';
+    background: url(../img/sub10/search_icon.png) no-repeat;
+    background-position: 300px 4px;
+    font-size: 14px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box {
+    background: #f7f7f7;
+    height: 120px;
+    padding-top: 8px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .list_cat_item {
+    width: 68px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .list_tag_box {
+    position: relative;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .list_tag_box #map_tag_select_box {
+    width: 318px;
+    height: 31px;
+    border: solid #c8c8ca 1px;
+    background: #fff url(../img/sub10/drop_select_arrow_a.png) no-repeat 300px 12px;
+    line-height: 31px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding-left: 5px;
+    font-size: 13px;
+    color: #808080;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .list_tag_box #map_tag_select_sub_box {
+    position: absolute;
+    width: 318px;
+    padding: 10px;
+    border: solid 1px #c8c8ca;
+    background: #fff;
+    padding-bottom: 3px;
+    max-height: 252px;
+    overflow-y: auto;
+    display: none;
+    margin-top: -1px;
+    z-index: 9;
+    left: 24px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable {
+    overflow-y: scroll;
+    background: #fff;
+    height: 582px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable {
+    padding: 15px;
+    cursor: move;
+    border-bottom: solid #a7a7a7 1px;
+    background: #fff;
+    width: 100%;
+    position: relative;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable .img_box {
+    width: 82px;
+    height: 75px;
+    position: relative;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable .img_box img {
+    width: 82px;
+    height: 75px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable .info_box {
+    padding-left: 10px;
+    width: 153px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable .info_box .title {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable .info_box .sub {
+    font-size: 12px;
+    color: #808080;
+    padding-top: 5px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable .info_box .sub .tooltip_clip_cnt.fl {
+    height: 19px;
+    padding-left: 18px;
+    line-height: 19px;
+    background: url(../img/sub10/list_clip_icon.png) no-repeat;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable .info_box .sub .tooltip_cnt_line.fl {
+    width: 6px;
+    height: 13px;
+    margin-top: 3px;
+    border-right: solid 1px #d9d9d9;
+    margin-right: 5px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable .info_box .sub .tooltip_review_rate.fl {
+    height: 19px;
+    padding-left: 18px;
+    line-height: 19px;
+    background: url(../img/sub10/list_review_icon.png) no-repeat;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable .info_box .sub.include_pn_day {
+    font-size: 12px;
+    color: #808080;
+    padding-top: 8px;
+    color:#1a7ad9;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable .spot_to_inspot {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .total_view_item {
+    height: 106px;
+    background: #f0f0f0;
+    font-size: 12px;
+    color: #363636;
+    padding-top: 26px;
+    border-bottom: solid #dcdcdc 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .total_view_item .total_view_sub_text {
+    font-size: 11px;
+    color: #555555;
+    line-height: 18px;
+    padding-top: 5px;
+}
+
+
+
+
