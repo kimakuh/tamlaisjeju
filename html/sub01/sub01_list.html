@@ -41,8 +41,10 @@
 
             <div class="board_form_wrap">
                 <div class="toggle_area">
-                    <button class="thumb"><i class="fas fa-th"></i>Thumbnails</button>
-                    <button class="list"><i class="fas fa-th-list"></i>List view</button>
+                    <button class="thumb">
+                        <i class="fas fa-th"></i>Thumbnails</button>
+                    <button class="list">
+                        <i class="fas fa-th-list"></i>List view</button>
                 </div>
                 <!-- toggle_area end -->
             </div>
@@ -56,6 +58,19 @@
                     // add stripes for list view
                     $(".box:even").addClass("even");
                     $(".box:odd").addClass("odd");
+                    $('#container ul').removeClass('list').addClass('grid');
+
+                });
+
+
+
+
+                $('button').on('click', function (e) {
+                    if ($(this).hasClass('thumb')) {
+                        $('.board_list').removeClass('type01').addClass('type02');
+                    } else if ($(this).hasClass('list')) {
+                        $('.board_list').removeClass('type02').addClass('type01');
+                    }
                 });
             </script>
 
