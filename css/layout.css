@@ -2227,3 +2227,53 @@ board_list travelog - 내가 쓰는 여행기 리스트
   }
 }
 */
+
+
+
+/**************************************************************************************
+all_page_box - 제주여행 꿀팁
+***************************************************************************************/
+
+
+
+.all_page_box .box_wrap .box:first-child {
+  margin-left: 0;
+}
+
+.all_page_box .box {
+  float: left;
+  width: 32%;
+  margin-left: 2%;
+  min-height: 300px;
+  padding: 30px;
+  /* background-color: #bdd7fa;
+  background-color: #d5e6fd;
+  background-color: #deebfd; 
+  background-color: #e9f2ff;*/
+  background-color: #1a7ef8;
+  text-align: center;
+  min-height: 406px;
+}
+
+.all_page_box .box i {
+  border: 1px solid #1a7ef8;
+  border-radius: 100%;
+  padding: 25px 20px;
+  color: #bdd7fa;
+  font-size: 50px
+}
+
+.all_page_box .box h4:before {
+  display: none;
+
+}
+
+.all_page_box .box h4 {
+  padding: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.all_page_box .box .h4_txt {
+  text-align: center;
+}
