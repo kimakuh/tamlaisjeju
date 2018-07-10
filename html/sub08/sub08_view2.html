@@ -85,21 +85,14 @@
                 <!-- 타임라인 -->
 
                 <div class="t_timeline">
-                    <nav class="timeline_content_day action clear">
-                        <h4> Day 1</h4>
-                        <p>2018.08.02</p>
-                        <p>Day1 경로보기</p>
-                    </nav>
 
-
-                    <div class="t_timeline_content ">
-                        <div class="context_menu">
-                            <span>
-                                <a href="#">#데이트</a>
-                                <a href="#">#포토존</a>
-                                <a href="#">#꽃</a>
-                            </span>
+                    <nav class="action">
+                        <div class="timeline_content_day clear">
+                            <h4> Day 1</h4>
+                            <p>2018.08.02</p>
+                            <p>Day1 경로보기</p>
                         </div>
+
 
                         <div class="context_writer">
                             <div class="container_box">
@@ -125,10 +118,42 @@
                                                 <span class="verified"></span>@zx3620</div>
                                             <div class="about">모든 제주도를 클리어해보자!!</div>
                                         </div>
+                                        <div class="social-btns">
+                                            <a class="btn facebook" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a class="btn twitter" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                            <a class="btn google" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </div>
+                                        <div class="prifile_bottom_msg">
+                                            <p>퍼가기</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </nav>
+
+
+
+
+
+
+
+
+                    <div class="t_timeline_content ">
+                        <div class="context_menu">
+                            <span>
+                                <a href="#">#데이트</a>
+                                <a href="#">#포토존</a>
+                                <a href="#">#꽃</a>
+                            </span>
+                        </div>
+
 
 
 
@@ -344,7 +369,7 @@
 
 
     <script>
-        //fixed
+        //왼쪽 fixed
         $(document).ready(function () {
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
@@ -359,8 +384,6 @@
             });
         });
     </script>
-
-
 
 
 </body>
