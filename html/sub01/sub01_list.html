@@ -41,21 +41,36 @@
 
             <div class="board_form_wrap">
                 <div class="toggle_area">
-                    <button class="thumb"><i class="fas fa-th"></i>Thumbnails</button>
-                    <button class="list"><i class="fas fa-th-list"></i>List view</button>
+                    <button class="thumb">
+                        <i class="fas fa-th"></i>Thumbnails</button>
+                    <button class="list">
+                        <i class="fas fa-th-list"></i>List view</button>
                 </div>
                 <!-- toggle_area end -->
             </div>
             <!-- board_form_wrap end -->
             <script>
-                jQuery(document).ready(function ($) {
-                    //enable tabs and add fade effect
-                    $(".toggle_area").tabs(".board_list > .box_wrap", {
-                        effect: 'fade'
-                    });
-                    // add stripes for list view
-                    $(".box:even").addClass("even");
-                    $(".box:odd").addClass("odd");
+                // jQuery(document).ready(function ($) {
+                //     //enable tabs and add fade effect
+                //     $(".toggle_area").tabs(".board_list > .box_wrap", {
+                //         effect: 'fade'
+                //     });
+                //     // add stripes for list view
+                //     $(".box:even").addClass("even");
+                //     $(".box:odd").addClass("odd");
+                //     $('#container ul').removeClass('list').addClass('grid');
+
+                // });
+
+
+
+
+                $('button').on('click', function (e) {
+                    if ($(this).hasClass('thumb')) {
+                        $('.board_list',{ effect: 'fade'}).removeClass('type02').addClass('type01');
+                    } else if ($(this).hasClass('list')) {
+                        $('.board_list',{ effect: 'fade'}).removeClass('type01').addClass('type02');
+                    }
                 });
             </script>
 
