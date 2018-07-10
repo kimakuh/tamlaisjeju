@@ -85,11 +85,11 @@
                 <!-- 타임라인 -->
 
                 <div class="t_timeline">
-                    <div class="timeline_content_day clear">
+                    <nav class="timeline_content_day clear">
                         <h4> Day 1</h4>
                         <p>2018.08.02</p>
                         <p>Day1 경로보기</p>
-                    </div>
+                    </nav>
 
 
                     <div class="t_timeline_content ">
@@ -189,7 +189,7 @@
                                         </figcaption>
                                     </figure>
                                 </div>
-                            </div>
+                            </div> 
 
 
 
@@ -311,6 +311,24 @@
         });
     </script> -->
 
+
+    <script>
+    //fixed
+    $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 70;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+	});
+        
+
+
+    </script>
    
 
 </body>
