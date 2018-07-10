@@ -1144,6 +1144,8 @@ container - 컨텐츠 스타일
   }
 }
 
+
+
 /* baisc list */
 
 .list_1st {
@@ -1257,6 +1259,12 @@ container - 컨텐츠 스타일
   font-size: 16px;
   line-height: 28px;
 }
+
+
+
+/*tip*/
+.txt-tip {color:#da4453}
+.txt-tip .excep_icon{display: inline-block; width: 16px;height: 15px;margin: -4px 5px 0 0;background: #da4453;border-radius: 50%;font-size: 14px;text-align: center;font-weight: bold;line-height: 18px;color:#fff;vertical-align: middle;}
 
 /* top_box */
 
