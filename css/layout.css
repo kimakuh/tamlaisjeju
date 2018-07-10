@@ -987,6 +987,7 @@ container - 컨텐츠 스타일
   line-height: 26px;
   word-wrap: break-word;
   word-break: keep-all;
+  text-align: center;
 }
 
 .h4_txt {
