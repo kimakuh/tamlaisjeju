@@ -67,9 +67,9 @@
 
                 $('button').on('click', function (e) {
                     if ($(this).hasClass('thumb')) {
-                        $('.board_list').removeClass('type02').addClass('type01');
+                        $('.board_list').removeClass('type02').addClass('type01'), {effect:'fade'};
                     } else if ($(this).hasClass('list')) {
-                        $('.board_list').removeClass('type01').addClass('type02');
+                        $('.board_list').removeClass('type01').addClass('type02'), {effect:'fade'};
                     }
                 });
             </script>
