@@ -835,6 +835,7 @@
     position: absolute;
     left: 425px;
     width: 1065px;
+    overflow: hidden;
 }
 
 #sub10 .full_wrap #right_full_box #on_city_open_btn {
@@ -852,7 +853,6 @@
     z-index: 999;
     position: absolute;
     left: 0px;
-    height: 100%;
     background: #fff;
     display: block;
 }
