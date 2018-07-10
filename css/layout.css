@@ -852,14 +852,13 @@ container - 컨텐츠 스타일
   text-indent: -9999px;
 }
 
-.btn.btn-ani.btn-write {
+.btn.btn-ani.btn-write, .btn.btn-ani.btn-list {
   border-color: #10349e;
   background-color: #10349e;
   color:#fff;
   padding:10px 20px;
 }
 
-.btn.btn-ani.btn-write{color:#fff;}
 
 .bico.bticon {
   position: relative;
