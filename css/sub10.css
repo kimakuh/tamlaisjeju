@@ -834,7 +834,7 @@
     float: left;
     position: absolute;
     left: 425px;
-    width: 1065px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -858,7 +858,7 @@
 }
 
 #sub10 .full_wrap #right_full_box #city_list .list_title {
-    width: 365px;
+    width: 355px;
     height: 50px;
     background: #1a7ad9;
     line-height: 50px;
@@ -1072,7 +1072,7 @@
 #sub10 .full_wrap #right_full_box .fr {
     height: 824px;
     position: relative;
-    width: 700px;
+    width: 100%;
     overflow: hidden;
 }
 
