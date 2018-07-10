@@ -701,7 +701,7 @@
 #sub10 .full_wrap .left_full_box #schedule_full_box .title_box #schedule_detail_title .schedule_detail_title_text .day_reset_btn {
     width: 20px;
     height: 20px;
-    background: url(../img/sub10/_day_reset_icon.png) no-repeat;
+    background: url(../img/sub10/day_reset_icon.png) no-repeat;
     background-size: 20px 20px;
     margin-top: 14px;
     margin-left: 3px;
@@ -712,7 +712,7 @@
     width: 22px;
     height: 24px;
     border: solid #fff 1px;
-    background: url(../img/sub10/_next_icon.png) no-repeat 6px 6px;
+    background: url(../img/sub10/next_icon.png) no-repeat 6px 6px;
     margin-top: 13px;
     cursor: pointer;
 }
@@ -722,7 +722,7 @@
     height: 24px;
     border: solid #fff 1px;
     border-right: 0px;
-    background: url(../img/sub10/_prev_icon.png) no-repeat 6px 6px;
+    background: url(../img/sub10/prev_icon.png) no-repeat 6px 6px;
     margin-top: 13px;
     cursor: pointer;
 }
