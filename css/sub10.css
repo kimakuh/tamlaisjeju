@@ -75,6 +75,7 @@
 
 #sub10 .plan .plan_cover .cover_bg {
     background: url(../img/sub10/cover_bg.png) repeat-x;
+    /* linear-gradient( to bottom, transparent, rgba(0,0,0,.6));  백그라운드 이미지 대신 사용가능*/
     width: 100%;
     height: 204px;
     position: absolute;
@@ -509,6 +510,7 @@
 #sub10 .full_wrap {
     width: 100%;
     height: 824px;
+    
 }
 
 #sub10 .full_wrap .left_full_box {
@@ -516,6 +518,7 @@
     height: 100%;
     z-index: 999;
     float: left;
+    overflow: hidden;
 }
 
 #sub10 .full_wrap .left_full_box .f1 {
@@ -727,8 +730,7 @@
 #sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable {
     display: block;
     overflow-y: scroll;
-    height: 683px;
-    padding-bottom: 200px;
+    height: 724px;
 }
 
 #sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item {
@@ -964,13 +966,22 @@
 #sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable {
     overflow-y: scroll;
     background: #fff;
-    height: 582px;
+    height: 578px;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item.ui-draggable {
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item {
     padding: 15px;
     cursor: move;
     border-bottom: solid #a7a7a7 1px;
+    background: #fff;
+    width: 100%;
+    position: relative;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable .day_spot_item:last-child {
+    padding: 15px;
+    cursor: move;
+    border-bottom: solid #a7a7a7 0px;
     background: #fff;
     width: 100%;
     position: relative;
@@ -1056,6 +1067,13 @@
     color: #555555;
     line-height: 18px;
     padding-top: 5px;
+}
+
+#sub10 .full_wrap #right_full_box .fr {
+    height: 824px;
+    position: relative;
+    width: 700px;
+    overflow: hidden;
 }
 
 
