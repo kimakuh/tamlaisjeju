@@ -250,6 +250,12 @@ travel_view - 투어 뷰
     display: block;
     margin: 5px 0;
 }
+/* 지도 */
+
+#sub08 .map {
+    margin-bottom: 50px;
+}
+
 
 /**************************************************************************************
 travel_view - 타임라인
@@ -304,7 +310,6 @@ travel_view - 타임라인
 
 #sub08 .action {
     position: relative;
-    top: 50px;
     width: 1200px;
 }
 
@@ -510,7 +515,6 @@ timeline fixed
 #sub08 .t_timeline .timeline_content_day {
     position: absolute;
     left: 0;
-    top:130px;
 }
 
 /* 작성자 fixed */
