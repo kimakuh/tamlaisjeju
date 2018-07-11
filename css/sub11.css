@@ -323,6 +323,10 @@ all - 여행필수정보 전체
     width: 118px;
 }
 
+.input_type_1.w_160 {
+    width: 158px;
+}
+
 #sub11 .my_tour .board_wrap td .float_ln .space {
     width: 30px;
     height: 35px;
