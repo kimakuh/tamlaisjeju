@@ -49,7 +49,7 @@
 		</div>
 		<div class="content">
 			<div class="plan-info-box">
-				<div class="info-left-box">
+				<nav class="info-left-box">
 					<div class="user-info-box">
 						<div class="author-box">
 							<div class="author-img">
@@ -81,7 +81,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</nav>
 				<div class="info-right-box">
 					<div class="plan-info-top">
 						<div class="plan-detail-txt">
@@ -176,10 +176,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> 
 					<div class="story-nav fix">
-						<div class="nav-warp" style="height: 678px;">
-							<ul>
+						<nav class="nav-warp" style="height: 678px;">
+							<ul> 
 								<li><a class="btn-top nav-btn-top story-view-nav-btn"
 									data-id="top">Top</a></li>
 								<li class="story-view-nav-li"><a class="story-view-nav-btn"
@@ -190,7 +190,7 @@
 										class="plan-comment-count">5</span>
 								</a></li>
 							</ul>
-						</div>
+						</nav>
 					</div>
 					<div class="comment-wrap" id="plan-detail-comment-wrap-area">
 						<h3>
@@ -255,7 +255,7 @@
 																	class="username">뽀로봉</span> </a> <span class="update-date">2018-02-11
 																	12:11:19</span>
 															</div>
-														</div>
+														</div> 
 														<div class="comment-txt">
 															<p class="comment-content-for-find">일정짜는데 도움많이 될것같네요.
 																잘보고갑니당~~</p>
@@ -283,32 +283,46 @@
 			 */
 		});
 	</script>
-
+	
+	 <script type="text/javascript">
+      $(document).ready(function(){
+        $("#moveBtn").on("click",function(event){
+          // 이동 버튼을 클릭시 pre 태그로 스크롤의 위치가 이동되도록 한다.
+ 
+          var offset = $("#header").offset();
+ 
+          // offset은 절대 위치를 가져온다. offset.top을 통해 상단의 좌표를 가져온다.
+          // position은 부모를 기준으로한 상대위치를 가져온다.
+          $("html body").animate({scrollTop:offset.top},2000);
+  
+        });
+      }); // end of ready()
+    </script>
+	
 	<script>
         //왼쪽 fixed
-        jQuery(document).ready(function(){
-    var wrap = jQuery(window);
-    // 페이지로딩, 새로고침
-    var sct = jQuery(this).scrollTop();
-    console.log("scroll = " + sct);
-    if(sct>140) {
-        jQuery(".info-left-box").addClass("fixed");
-    } else {
-        jQuery(".info-left-box").removeClass("fixed");
-    }
-    // scroll 반응
-    wrap.on("scroll", function(e){
-        var sct = jQuery(this).scrollTop();
-        console.log("scroll = " + sct);
-        if(sct>140) {
-            jQuery(".info-left-box").addClass("fixed");
-        } else {
-            jQuery(".info-left-box").removeClass("fixed");
-        }
-    }); 
-});
+        $(document).ready(function () {
+            $(window).bind('scroll', function () {
+                var container = $('.container').height();
+                var content = $('.info-left-box').height();
+                if ($(window).scrollTop() > container - content - 100) {
+                    if ($(window).scrollTop() > content - 310) {
+                        $('nav').addClass('absolute');
+                        $('nav').removeClass('fixed');
+                        return;
+                    }
+                    $('nav').removeClass('action');
+                    $('nav').removeClass('absolute');
+                    $('nav').addClass('fixed');
+                } else {
+                    $('nav').removeClass('absolute');
+                    $('nav').removeClass('fixed');
+                    $('nav').addClass('action');
+                }
+            });
+        }); 
     </script>
-
-
+	
+	
 </body>
 </html>
