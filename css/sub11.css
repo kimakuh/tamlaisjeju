@@ -332,7 +332,14 @@ all - 여행필수정보 전체
     text-align: center;
 }
 
-
+#sub11 label.css-label2 {
+    background-image: url(../img/common/ico_check_box3.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 
 
