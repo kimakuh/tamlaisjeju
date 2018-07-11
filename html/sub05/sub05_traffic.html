@@ -288,10 +288,10 @@
                     <h4>제주버스</h4>
 
                     <div class="tab">
-                        <button class="tablinks" onclick="openTabs(event, 'bus1')" id="defaultOpen">전세버스</button>
-                        <button class="tablinks" onclick="openTabs(event, 'bus2')">관광지 순환버스</button>
-                        <button class="tablinks" onclick="openTabs(event, 'bus3')">공항 리무진버스</button>
-                        <button class="tablinks" onclick="openTabs(event, 'bus4')">전세버스</button>
+                        <button class="inner_tablinks" onclick="innerTabs(event, 'bus1')" id="defaultOpen">전세버스</button>
+                        <button class="inner_tablinks" onclick="innerTabs(event, 'bus2')">관광지 순환버스</button>
+                        <button class="inner_tablinks" onclick="innerTabs(event, 'bus3')">공항 리무진버스</button>
+                        <button class="inner_tablinks" onclick="innerTabs(event, 'bus4')">전세버스</button>
                     </div>
                     <!-- tab end-->
 
@@ -329,13 +329,9 @@
 
                 <script>
                     function openTabs(evt, tabNames) {
-                        var i, tabcontent, tablinks, inner_tabcontent;
+                        var i, tabcontent, tablinks;
                         tabcontent = document.getElementsByClassName("tabcontent");
                         for (i = 0; i < tabcontent.length; i++) {
-                            tabcontent[i].style.display = "none";
-                        }
-                        inner_tabcontent = document.getElementsByClassName("inner_tabcontent");
-                        for (i = 0; i < inner_tabcontent.length; i++) {
                             tabcontent[i].style.display = "none";
                         }
                         tablinks = document.getElementsByClassName("tablinks");
@@ -349,6 +345,27 @@
                     // Get the element with id="defaultOpen" and click on it
                     document.getElementById("defaultOpen").click();
                 </script>
+
+
+                <script>
+                    function innerTabs(evt, tabNames) {
+                        var i, inner_tabcontent, inner_tablinks;
+                        inner_tabcontent = document.getElementsByClassName("inner_tabcontent");
+                        for (i = 0; i < inner_tabcontent.length; i++) {
+                            inner_tabcontent[i].style.display = "none";
+                        }
+                        inner_tablinks = document.getElementsByClassName("inner_tablinks");
+                        for (i = 0; i < inner_tablinks.length; i++) {
+                            inner_tablinks[i].className = inner_tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(tabNames).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("defaultOpen").click();
+                </script>
+
             </div>
             <!-- tab_area end-->
         </div>
