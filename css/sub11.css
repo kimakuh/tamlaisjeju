@@ -1680,6 +1680,10 @@ all - 여행필수정보 전체
     text-align: center;
 }
 
+#sub11 .my_tour .btn_wrap div {
+    display: inline-block;
+}
+
 #sub11 .my_tour .btn_wrap div button:first-child {
     margin-left: 0;
 }
