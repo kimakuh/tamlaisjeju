@@ -493,7 +493,7 @@ timeline fixed
 .fixed {
     width: 1200px;
     top: 169px;
-    position: fixed;
+    position: sticky;
     z-index: 1;
 }
 
