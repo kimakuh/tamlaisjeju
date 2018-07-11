@@ -299,6 +299,7 @@ travel_view - 타임라인
 
 #sub08 .t_timeline {
     width: 100%;
+    position: relative;
 }
 
 #sub08 .action {
@@ -490,21 +491,26 @@ timeline fixed
 
 /* 네비 fixed */
 
-.fixed {
+.absolute {
     width: 1200px;
-    top: 190px;
-    position: fixed;
+    bottom: 900px;
+    position: absolute;
     z-index: 1;
 }
 
-
-
+.fixed {
+    width: 1200px;
+    top: 169px;
+    position: fixed;
+    z-index: 1;
+}
 
 /* Day fixed */
 
 #sub08 .t_timeline .timeline_content_day {
     position: absolute;
     left: 0;
+    top:130px;
 }
 
 /* 작성자 fixed */
