@@ -106,47 +106,37 @@
                     </div>
 
                     <div class="nav_menu">
-                        <button onclick="fnMove('1')">day1</button>
-                        <button onclick="fnMove('2')">day2</button>
-                        <button onclick="fnMove('3')">day3</button>
 
-                        <div class="title">Infinte Depth Treemenu </div>
                         <div class="treemenu">
-                            <div level="0">
-                                <span class="lbl">Top item </span>
+                            <div level="0" onclick="fnMove('1')">
+                                <span class="lbl">1일차 </span>
                             </div>
-                            <div level="1">
-                                <span class="lbl"> Sub item 1 </span>
+                            <div level="1" class="under">
+                                <span class="lbl"> 유채꽃밭 </span>
                             </div>
-                            <div level="1">
-                                <span class="lbl"> Sub item 2 </span>
+                            <div level="1" class="under">
+                                <span class="lbl"> 해물파스타 </span>
                             </div>
-                            <div level="2">
-                                <span class="lbl"> Sub Sub item 2 </span>
+                            <div level="0" onclick="fnMove('2')">
+                                <span class="lbl"> 2일차 </span>
                             </div>
-                            <div level="0">
-                                <span class="lbl"> Top item </span>
+                            <div level="1" class="under">
+                                <span class="lbl"> 카멜리아힐 </span>
                             </div>
-                            <div level="1">
-                                <span class="lbl"> Sub item 1 </span>
+                            <div level="1" class="under">
+                                <span class="lbl"> 심슨 </span>
                             </div>
-                            <div level="1">
-                                <span class="lbl"> Sub item 2 </span>
+                            <div level="0" onclick="fnMove('3')">
+                                <span class="lbl"> 3일차 </span>
                             </div>
-                            <div level="2">
-                                <span class="lbl"> Sub Sub item 2 </span>
+                            <div level="1" class="under">
+                                <span class="lbl"> 성산일출봉 </span>
                             </div>
-                            <div level="0">
-                                <span class="lbl"> Top item </span>
+                            <div level="1" class="under">
+                                <span class="lbl"> 애월카페  </span>
                             </div>
-                            <div level="1">
-                                <span class="lbl"> Sub item 1 </span>
-                            </div>
-                            <div level="1">
-                                <span class="lbl"> Sub item 2 </span>
-                            </div>
-                            <div level="2">
-                                <span class="lbl"> Sub Sub item 2 </span>
+                            <div level="1" class="under">
+                                <span class="lbl"> 지금이순간 </span>
                             </div>
                         </div>
                     </div>
@@ -678,11 +668,7 @@
                     $('.c_day1').addClass('off');
 
                     return;
-                } else {
-
                 }
-
-
             });
         });
     </script>
@@ -702,16 +688,12 @@
         var _createClass = function () {
             function defineProperties(target, props) {
                 for (var i = 0; i < props.length; i++) {
-                    if (window.CP.shouldStopExecution(1)) {
-                        break;
-                    }
                     var descriptor = props[i];
                     descriptor.enumerable = descriptor.enumerable || false;
                     descriptor.configurable = true;
                     if ("value" in descriptor) descriptor.writable = true;
                     Object.defineProperty(target, descriptor.key, descriptor);
                 }
-                window.CP.exitedLoop(1);
             }
             return function (Constructor, protoProps, staticProps) {
                 if (protoProps) defineProperties(Constructor.prototype, protoProps);
@@ -827,7 +809,9 @@
             }, {
                 key: "openItem",
                 value: function openItem($el) {
-                    this.setOpen($el, true);
+                    this.setOpen($el);
+                    $('.under').removeClass('opened');
+                    $('.under').addClass('closed');
                     this.getGroup($el).forEach(function ($item, index) {
                         if (!index) return true;
                         this.showItem($item);

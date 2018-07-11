@@ -250,12 +250,12 @@ travel_view - 투어 뷰
     display: block;
     margin: 5px 0;
 }
+
 /* 지도 */
 
 #sub08 .mapbb {
     margin-bottom: 50px;
 }
-
 
 /**************************************************************************************
 travel_view - 타임라인
@@ -531,74 +531,64 @@ timeline fixed
 }
 
 /* nav 메뉴 */
+
 #sub08 .t_timeline .nav_menu {
     position: absolute;
-    top: 300px;
+    top: 150px;
 }
 
-.treemenu [level]{
-   transition: max-height 0.3s ease-out;
+.treemenu [level="0"] .lbl {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.treemenu [level] {
+    transition: max-height 0.3s ease-out;
     overflow: hidden;
 }
 
 .treemenu [level].closed {
-  max-height: 0;
+    max-height: 0;
 }
 
 .treemenu [level].opened {
-  max-height: 50px;
+    max-height: 50px;
 }
 
-.treemenu [level="1"] .lbl{
-  padding-left: 50px;
-}
-
-.treemenu [level="2"] .lbl{
-  padding-left: 100px;
+.treemenu [level="1"] .lbl {
+    font-size: 13px;
+    color: #959595;
+    margin-left: 34px;
+    border-left: #dc4a38 solid 3px;
 }
 
 /* basic non-functional styling passed this poing */
-*{
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .treemenu {
-  width: 300px;
-  margin: auto;
+    width: 300px;
+    margin: auto;
+    border-left: 2px solid #000000;
 }
 
-.treemenu > [level] {
-  background-color: #558855;
-  cursor: pointer;
+.treemenu>[level] {
+    cursor: pointer;
 }
 
-.treemenu > [level].opened {
-    margin: 1px;
-}
-
-.treemenu > [level]:hover {
-  background-color: #338833;
+.treemenu>[level]:hover {
+    background-color: #eee;
 }
 
 .treemenu .lbl {
-  color: white;
-  padding: 15px;
-  display: inline-block;
- }
-
-.title{
-  text-align: center;
-  font-size: 30px;
-  margin: 10px;
-  color: black;
-  
+    color: black;
+    padding: 15px;
+    display: inline-block;
 }
-
-
-
-
 
 /* 작성자 콘텐츠 */
 
@@ -657,7 +647,6 @@ timeline fixed
     text-transform: none;
     font-weight: bold;
     color: #adadad;
-    
 }
 
 #sub08 .t_timeline .context_writer .auther_post .post_section .post_content .post_dscrt .post_dscrt_text {
