@@ -2286,3 +2286,16 @@ all_page_box - 제주여행 꿀팁
 .all_page_box .box .h4_txt {
   text-align: center;
 }
+
+
+/**************************************************************************************
+weather - 제주여행 꿀팁 - 날씨
+***************************************************************************************/
+
+.weather ul{}
+.weather li{position: absolute;}
+.weather li.jeju{top:0;left:475px;}
+.weather li.seogwipo{bottom:0;left:475px;}
+.weather li.sungsan{top:124px;right:0;}
+.weather li.kosan{top:330px;left:-4px;}
+.weather li strong{display: block;font-size:28px;}
