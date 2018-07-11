@@ -2301,6 +2301,7 @@ weather - 제주여행 꿀팁 - 날씨
 .weather li.kosan{top:330px;left:-4px;}
 .weather li strong{display: block;font-size:28px;}
 .weather li .icon{display: inline-block;}
+.weather li strong{font-weight: normal;}
 .weather li b{display: inline-block;margin-left:10px;vertical-align:middle;}
 .weather li b span{display: block;font-size:24px;}
 
