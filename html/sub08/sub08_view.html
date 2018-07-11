@@ -79,20 +79,31 @@
                 </div>
                 <!-- 지도 -->
 
-                <!-- <div class=map_bb style="width: 100%;height: 400px;background-color: teal" style="overflow: hidden;z-index:2; "></div> -->
-                </div><div id="map" style="width:100%;height:400px;margin-bottom:84px;"></div>
+                <div class=map_bb style="width: 100%;height: 400px;background-color: teal;margin-bottom:84px;" style="overflow: hidden;z-index:2; "></div>
+            </div>
+            <!-- <div id="map" style="width:100%;height:400px;margin-bottom:84px;"></div> -->
 
-                <!-- 타임라인 -->
+            <!-- 타임라인 -->
 
-                <div class="t_timeline">
+            <div class="t_timeline">
 
-                    <nav class="action">
-                        <div class="timeline_content_day on clear">
-                            <h4> Day 1</h4>
-                            <p>2018.08.02</p>
-                            <p>Day1 경로보기</p>
-                        </div>
-                        <!-- <div class="timeline_content_day off clear">
+                <nav class="action">
+                    <div class="timeline_content_day fix_day1 day off clear">
+                        <h4> Day 1</h4>
+                        <p>2018.08.02</p>
+                        <p>Day1 경로보기</p>
+                    </div>
+                    <div class="timeline_content_day fix_day2 day off clear">
+                        <h4> Day 2</h4>
+                        <p>2018.08.02</p>
+                        <p>Day2 경로보기</p>
+                    </div>
+                    <div class="timeline_content_day fix_day3 day off clear">
+                        <h4> Day 3</h4>
+                        <p>2018.08.02</p>
+                        <p>Day3 경로보기</p>
+                    </div>
+                    <!-- <div class="timeline_content_day off clear">
                             <h4> Day 2</h4>
                             <p>2018.08.03</p>
                             <p>Day2 경로보기</p>
@@ -104,344 +115,359 @@
                         </div> -->
 
 
-                        <div class="context_writer">
-                            <div class="profile large">
-                                <div class="cover">
-                                    <img src="https://source.unsplash.com/random/700x300" />
-                                    <div class="layer">
-                                        <div class="loader"></div>
-                                    </div>
-                                </div>
-                                <div class="user-info">
-                                    <div class="profile-pic">
-                                        <img src="../../img/sub08/img4.jpg" />
-                                        <a class="image-wrapper" href="#">
-                                            <form id="profilePictureForm" action="#">
-                                                <input class="hidden-input" id="changePicture" type="file" />
-                                                <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file" title="Change picture"></label>
-                                            </form>
-                                        </a>
-                                    </div>
-                                    <div class="username">
-                                        <div class="name">
-                                            <span class="verified"></span>
-                                            <a href="#">@zx3620</a>
-                                        </div>
-                                        <div class="about">모든 제주도를 클리어해보자!!</div>
-                                    </div>
-                                    <div class="social-btns">
-                                        <a class="btn facebook" href="#">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a class="btn twitter" href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                        <a class="btn google" href="#">
-                                            <i class="fa fa-google"></i>
-                                        </a>
-                                    </div>
-                                    <div class="prifile_bottom_msg">
-                                        <p>퍼가기</p>
-                                    </div>
+                    <div class="context_writer">
+                        <div class="profile large">
+                            <div class="cover">
+                                <img src="https://source.unsplash.com/random/700x300" />
+                                <div class="layer">
+                                    <div class="loader"></div>
                                 </div>
                             </div>
-                            <div class="auther_post">
-                                <div class="post_section">
-                                    <div class="post_topbox clear">
-                                        <div class="post_text">추천 여행기</div>
-                                        <a href="#">모두보기</a>
-                                    </div>
-                                    <div class="post_content">
-                                        <div class="post_content_imgbox">
-                                            <a href="#">
-                                                <img src="https://source.unsplash.com/random/700x500" />
-                                            </a>
-                                        </div>
-                                        <div class="post_dscrt">
-                                            <a href="#">
-                                                <div class="post_dscrt_text">한여름의 제주도</div>
-                                            </a>
-                                            <a>좋아요 : 142,094</a>
-                                        </div>
-                                    </div>
-                                    <div class="post_content">
-                                        <div class="post_content_imgbox">
-                                            <a href="#">
-                                                <img src="https://source.unsplash.com/random/700x600" />
-                                            </a>
-                                        </div>
-                                        <div class="post_dscrt">
-                                            <a href="#">
-                                                <div class="post_dscrt_text">애월탐방기</div>
-                                            </a>
-                                            <a>좋아요 : 215,112</a>
-                                        </div>
-                                    </div>
-                                    <div class="post_content">
-                                        <div class="post_content_imgbox">
-                                            <a href="#">
-                                                <img src="https://source.unsplash.com/random/700x700" />
-                                            </a>
-                                        </div>
-                                        <div class="post_dscrt">
-                                            <a href="#">
-                                                <div class="post_dscrt_text">이국적인 서귀포시</div>
-                                            </a>
-                                            <a>좋아요 : 18,112</a>
-                                        </div>
-                                    </div>
-
-
-
-
+                            <div class="user-info">
+                                <div class="profile-pic">
+                                    <img src="../../img/sub08/img4.jpg" />
+                                    <a class="image-wrapper" href="#">
+                                        <form id="profilePictureForm" action="#">
+                                            <input class="hidden-input" id="changePicture" type="file" />
+                                            <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file" title="Change picture"></label>
+                                        </form>
+                                    </a>
                                 </div>
+                                <div class="username">
+                                    <div class="name">
+                                        <span class="verified"></span>
+                                        <a href="#">@zx3620</a>
+                                    </div>
+                                    <div class="about">모든 제주도를 클리어해보자!!</div>
+                                </div>
+                                <div class="social-btns">
+                                    <a class="btn facebook" href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a class="btn twitter" href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a class="btn google" href="#">
+                                        <i class="fa fa-google"></i>
+                                    </a>
+                                </div>
+                                <div class="prifile_bottom_msg">
+                                    <p>퍼가기</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auther_post">
+                            <div class="post_section">
+                                <div class="post_topbox clear">
+                                    <div class="post_text">추천 여행기</div>
+                                    <a href="#">모두보기</a>
+                                </div>
+                                <div class="post_content">
+                                    <div class="post_content_imgbox">
+                                        <a href="#">
+                                            <img src="https://source.unsplash.com/random/700x500" />
+                                        </a>
+                                    </div>
+                                    <div class="post_dscrt">
+                                        <a href="#">
+                                            <div class="post_dscrt_text">한여름의 제주도</div>
+                                        </a>
+                                        <a>좋아요 : 142,094</a>
+                                    </div>
+                                </div>
+                                <div class="post_content">
+                                    <div class="post_content_imgbox">
+                                        <a href="#">
+                                            <img src="https://source.unsplash.com/random/700x600" />
+                                        </a>
+                                    </div>
+                                    <div class="post_dscrt">
+                                        <a href="#">
+                                            <div class="post_dscrt_text">애월탐방기</div>
+                                        </a>
+                                        <a>좋아요 : 215,112</a>
+                                    </div>
+                                </div>
+                                <div class="post_content">
+                                    <div class="post_content_imgbox">
+                                        <a href="#">
+                                            <img src="https://source.unsplash.com/random/700x700" />
+                                        </a>
+                                    </div>
+                                    <div class="post_dscrt">
+                                        <a href="#">
+                                            <div class="post_dscrt_text">이국적인 서귀포시</div>
+                                        </a>
+                                        <a>좋아요 : 18,112</a>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </nav>
+
+
+                <div class="day1">
+                    <div class="timeline_content_day">
+                        <h4> Day 1</h4>
+                        <p>2018.08.02</p>
+                        <p>Day1 경로보기</p>
+                    </div>
+                    <div class="t_timeline_content">
+                        <div class="context_menu">
+                            <span>
+                                <a href="#">#데이트</a>
+                                <a href="#">#포토존</a>
+                                <a href="#">#꽃</a>
+                            </span>
+                        </div>
+
+                        <div class="content_box clear">
+                            <img src="../../img/sub08/jeju1.jpg" alt="jeju1" />
+                            <div class="content_icon">
+                                <p class="contnet_name">유채꽃밭</p>
+                                <p class="content_addr">제주특별시 성산일출봉 근처 11-2</p>
+                            </div>
+                            <div class="content_text">
+                                <p>사진이 정말 이쁘게 찍히는곳💕
+                                    <br> 너무너무 맘에 들었어요 유채꽃밭 꼭 가보세요</p>
 
                             </div>
                         </div>
-                    </nav>
-
-
-                    <div class="day1 day">
-                        <div class="t_timeline_content ">
-                            <div class="context_menu">
-                                <span>
-                                    <a href="#">#데이트</a>
-                                    <a href="#">#포토존</a>
-                                    <a href="#">#꽃</a>
-                                </span>
-                            </div>
-
-                            <div class="content_box clear">
+                        <div class="t_timeline_content_imgbox">
+                            <figure class="snip0016">
                                 <img src="../../img/sub08/jeju1.jpg" alt="jeju1" />
-                                <div class="content_icon">
-                                    <p class="contnet_name">유채꽃밭</p>
-                                    <p class="content_addr">제주특별시 성산일출봉 근처 11-2</p>
-                                </div>
-                                <div class="content_text">
-                                    <p>사진이 정말 이쁘게 찍히는곳💕
-                                        <br> 너무너무 맘에 들었어요 유채꽃밭 꼭 가보세요</p>
-
-                                </div>
-                            </div>
-                            <div class="t_timeline_content_imgbox">
-                                <figure class="snip0016">
-                                    <img src="../../img/sub08/jeju1.jpg" alt="jeju1" />
-                                    <figcaption>
-                                        <p>사진더보기</p>
-                                        <a href="#"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="t_timeline_content ">
-                            <div class="context_menu">
-                                <span>
-                                    <a href="#">#데이트</a>
-                                    <a href="#">#포토존</a>
-                                    <a href="#">#꽃</a>
-                                </span>
-
-                            </div>
-                            <div class="content_box clear">
-
-                                <img src="../../img/sub08/jeju2.jpg" alt="jeju1" />
-                                <div class="content_icon">
-                                    <p class="contnet_name">해물파스타</p>
-                                    <p class="content_addr">제주특별시 성산일출봉 근처 11-2</p>
-                                </div>
-                                <div class="content_text">
-                                    <p>엄청맛있어요💕
-                                        <br> 해물의 맛 굿굿굿 ㅋ</p>
-
-                                </div>
-                            </div>
-                            <div class="t_timeline_content_imgbox">
-                                <figure class="snip0016">
-                                    <img src="../../img/sub08/jeju2.jpg" alt="jeju2" />
-                                    <figcaption>
-                                        <p>사진더보기</p>
-                                        <a href="#"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
+                                <figcaption>
+                                    <p>사진더보기</p>
+                                    <a href="#"></a>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
-                    <div class="day2 day">
-                        <div class="t_timeline_content ">
-                            <div class="context_menu">
-                                <span>
-                                    <a href="#">#데이트</a>
-                                    <a href="#">#포토존</a>
-                                    <a href="#">#꽃</a>
-                                </span>
 
+                    <div class="t_timeline_content ">
+                        <div class="context_menu">
+                            <span>
+                                <a href="#">#데이트</a>
+                                <a href="#">#포토존</a>
+                                <a href="#">#꽃</a>
+                            </span>
+
+                        </div>
+                        <div class="content_box clear">
+
+                            <img src="../../img/sub08/jeju2.jpg" alt="jeju1" />
+                            <div class="content_icon">
+                                <p class="contnet_name">해물파스타</p>
+                                <p class="content_addr">제주특별시 성산일출봉 근처 11-2</p>
                             </div>
-                            <div class="content_box clear">
+                            <div class="content_text">
+                                <p>엄청맛있어요💕
+                                    <br> 해물의 맛 굿굿굿 ㅋ</p>
 
-                                <img src="../../img/sub08/jeju3.jpg" alt="jeju3" />
-                                <div class="content_icon">
-                                    <p class="contnet_name">카멜리아힐</p>
-                                    <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
-                                </div>
-                                <div class="content_text">
-                                    <p>사진이 정말 이쁘게 찍히는곳💕
-                                        <br> 엄청좋았어요 좋은시간 베리굿</p>
-
-                                </div>
-                            </div>
-                            <div class="t_timeline_content_imgbox">
-                                <figure class="snip0016">
-                                    <img src="../../img/sub08/jeju3.jpg" alt="jeju1" />
-                                    <figcaption>
-                                        <p>사진더보기</p>
-                                        <a href="#"></a>
-                                    </figcaption>
-                                </figure>
                             </div>
                         </div>
-
-                        <div class="t_timeline_content ">
-                            <div class="context_menu">
-                                <span>
-                                    <a href="#">#데이트</a>
-                                    <a href="#">#포토존</a>
-                                    <a href="#">#꽃</a>
-                                </span>
-
-                            </div>
-                            <div class="content_box clear">
-
-                                <img src="../../img/sub08/jeju4.jpg" alt="jeju3" />
-                                <div class="content_icon">
-                                    <p class="contnet_name">카멜리아힐</p>
-                                    <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
-                                </div>
-                                <div class="content_text">
-                                    <p>사진이 정말 이쁘게 찍히는곳💕
-                                        <br> 엄청좋았어요 좋은시간 베리굿</p>
-
-                                </div>
-                            </div>
-                            <div class="t_timeline_content_imgbox">
-                                <figure class="snip0016">
-                                    <img src="../../img/sub08/jeju4.jpg" alt="제주사진" />
-                                    <figcaption>
-                                        <p>사진더보기</p>
-                                        <a href="#"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
+                        <div class="t_timeline_content_imgbox">
+                            <figure class="snip0016">
+                                <img src="../../img/sub08/jeju2.jpg" alt="jeju2" />
+                                <figcaption>
+                                    <p>사진더보기</p>
+                                    <a href="#"></a>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
-                    <div class="day3 day">
-                        <div class="t_timeline_content ">
-                            <div class="context_menu">
-                                <span>
-                                    <a href="#">#데이트</a>
-                                    <a href="#">#포토존</a>
-                                    <a href="#">#꽃</a>
-                                </span>
+                </div>
+                <div class="day2">
+                    <div class="timeline_content_day">
+                        <h4> Day 2</h4>
+                        <p>2018.08.03</p>
+                        <p>Day2 경로보기</p>
+                    </div>
+                    <div class="t_timeline_content ">
+                        <div class="context_menu">
+                            <span>
+                                <a href="#">#데이트</a>
+                                <a href="#">#포토존</a>
+                                <a href="#">#꽃</a>
+                            </span>
+
+                        </div>
+                        <div class="content_box clear">
+
+                            <img src="../../img/sub08/jeju3.jpg" alt="jeju3" />
+                            <div class="content_icon">
+                                <p class="contnet_name">카멜리아힐</p>
+                                <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
+                            </div>
+                            <div class="content_text">
+                                <p>사진이 정말 이쁘게 찍히는곳💕
+                                    <br> 엄청좋았어요 좋은시간 베리굿</p>
 
                             </div>
-                            <div class="content_box clear">
+                        </div>
+                        <div class="t_timeline_content_imgbox">
+                            <figure class="snip0016">
+                                <img src="../../img/sub08/jeju3.jpg" alt="jeju1" />
+                                <figcaption>
+                                    <p>사진더보기</p>
+                                    <a href="#"></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
 
+                    <div class="t_timeline_content ">
+                        <div class="context_menu">
+                            <span>
+                                <a href="#">#데이트</a>
+                                <a href="#">#포토존</a>
+                                <a href="#">#꽃</a>
+                            </span>
+
+                        </div>
+                        <div class="content_box clear">
+
+                            <img src="../../img/sub08/jeju4.jpg" alt="jeju3" />
+                            <div class="content_icon">
+                                <p class="contnet_name">카멜리아힐</p>
+                                <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
+                            </div>
+                            <div class="content_text">
+                                <p>사진이 정말 이쁘게 찍히는곳💕
+                                    <br> 엄청좋았어요 좋은시간 베리굿</p>
+
+                            </div>
+                        </div>
+                        <div class="t_timeline_content_imgbox">
+                            <figure class="snip0016">
+                                <img src="../../img/sub08/jeju4.jpg" alt="제주사진" />
+                                <figcaption>
+                                    <p>사진더보기</p>
+                                    <a href="#"></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="day3">
+                    <div class="timeline_content_day">
+                        <h4> Day 3</h4>
+                        <p>2018.08.03</p>
+                        <p>Day3 경로보기</p>
+                    </div>
+                    <div class="t_timeline_content">
+                        <div class="context_menu">
+                            <span>
+                                <a href="#">#데이트</a>
+                                <a href="#">#포토존</a>
+                                <a href="#">#꽃</a>
+                            </span>
+
+                        </div>
+                        <div class="content_box clear">
+
+                            <img src="../../img/sub08/jeju1.jpg" alt="제주사진" />
+                            <div class="content_icon">
+                                <p class="contnet_name">카멜리아힐</p>
+                                <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
+                            </div>
+                            <div class="content_text">
+                                <p>사진이 정말 이쁘게 찍히는곳💕
+                                    <br> 엄청좋았어요 좋은시간 베리굿</p>
+
+                            </div>
+                        </div>
+                        <div class="t_timeline_content_imgbox">
+                            <figure class="snip0016">
                                 <img src="../../img/sub08/jeju1.jpg" alt="제주사진" />
-                                <div class="content_icon">
-                                    <p class="contnet_name">카멜리아힐</p>
-                                    <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
-                                </div>
-                                <div class="content_text">
-                                    <p>사진이 정말 이쁘게 찍히는곳💕
-                                        <br> 엄청좋았어요 좋은시간 베리굿</p>
-
-                                </div>
-                            </div>
-                            <div class="t_timeline_content_imgbox">
-                                <figure class="snip0016">
-                                    <img src="../../img/sub08/jeju1.jpg" alt="제주사진" />
-                                    <figcaption>
-                                        <p>사진더보기</p>
-                                        <a href="#"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="t_timeline_content ">
-                            <div class="context_menu">
-                                <span>
-                                    <a href="#">#데이트</a>
-                                    <a href="#">#포토존</a>
-                                    <a href="#">#꽃</a>
-                                </span>
-
-                            </div>
-                            <div class="content_box clear">
-
-                                <img src="../../img/sub08/jeju2.jpg" alt="제주사진" />
-                                <div class="content_icon">
-                                    <p class="contnet_name">카멜리아힐</p>
-                                    <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
-                                </div>
-                                <div class="content_text">
-                                    <p>사진이 정말 이쁘게 찍히는곳💕
-                                        <br> 엄청좋았어요 좋은시간 베리굿</p>
-
-                                </div>
-                            </div>
-                            <div class="t_timeline_content_imgbox">
-                                <figure class="snip0016">
-                                    <img src="../../img/sub08/jeju2.jpg" alt="제주사진" />
-                                    <figcaption>
-                                        <p>사진더보기</p>
-                                        <a href="#"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="t_timeline_content ">
-                            <div class="context_menu">
-                                <span>
-                                    <a href="#">#데이트</a>
-                                    <a href="#">#포토존</a>
-                                    <a href="#">#꽃</a>
-                                </span>
-
-                            </div>
-                            <div class="content_box clear">
-
-                                <img src="../../img/sub08/jeju3.jpg" alt="제주사진" />
-                                <div class="content_icon">
-                                    <p class="contnet_name">카멜리아힐</p>
-                                    <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
-                                </div>
-                                <div class="content_text">
-                                    <p>사진이 정말 이쁘게 찍히는곳💕
-                                        <br> 엄청좋았어요 좋은시간 베리굿</p>
-
-                                </div>
-                            </div>
-                            <div class="t_timeline_content_imgbox">
-                                <figure class="snip0016">
-                                    <img src="../../img/sub08/jeju3.jpg" alt="제주사진" />
-                                    <figcaption>
-                                        <p>사진더보기</p>
-                                        <a href="#"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
+                                <figcaption>
+                                    <p>사진더보기</p>
+                                    <a href="#"></a>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
 
+                    <div class="t_timeline_content ">
+                        <div class="context_menu">
+                            <span>
+                                <a href="#">#데이트</a>
+                                <a href="#">#포토존</a>
+                                <a href="#">#꽃</a>
+                            </span>
+
+                        </div>
+                        <div class="content_box clear">
+
+                            <img src="../../img/sub08/jeju2.jpg" alt="제주사진" />
+                            <div class="content_icon">
+                                <p class="contnet_name">카멜리아힐</p>
+                                <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
+                            </div>
+                            <div class="content_text">
+                                <p>사진이 정말 이쁘게 찍히는곳💕
+                                    <br> 엄청좋았어요 좋은시간 베리굿</p>
+
+                            </div>
+                        </div>
+                        <div class="t_timeline_content_imgbox">
+                            <figure class="snip0016">
+                                <img src="../../img/sub08/jeju2.jpg" alt="제주사진" />
+                                <figcaption>
+                                    <p>사진더보기</p>
+                                    <a href="#"></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="t_timeline_content ">
+                        <div class="context_menu">
+                            <span>
+                                <a href="#">#데이트</a>
+                                <a href="#">#포토존</a>
+                                <a href="#">#꽃</a>
+                            </span>
+
+                        </div>
+                        <div class="content_box clear">
+
+                            <img src="../../img/sub08/jeju3.jpg" alt="제주사진" />
+                            <div class="content_icon">
+                                <p class="contnet_name">카멜리아힐</p>
+                                <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
+                            </div>
+                            <div class="content_text">
+                                <p>사진이 정말 이쁘게 찍히는곳💕
+                                    <br> 엄청좋았어요 좋은시간 베리굿</p>
+
+                            </div>
+                        </div>
+                        <div class="t_timeline_content_imgbox">
+                            <figure class="snip0016">
+                                <img src="../../img/sub08/jeju3.jpg" alt="제주사진" />
+                                <figcaption>
+                                    <p>사진더보기</p>
+                                    <a href="#"></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
 
 
 
 
 
-                    <!--모달-->
-                    <!-- 
+
+                <!--모달-->
+                <!-- 
                     <div class="fotorama" data-nav="thumbs">
                         <a href="../../img/sub08/img2.jpg">
                             <img src="../../img/sub08/img2.jpg">
@@ -455,9 +481,9 @@
 
 
 
-                </div>
             </div>
         </div>
+    </div>
     </div>
 
     <div id="footer"></div>
@@ -470,10 +496,10 @@
              */
         });
     </script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script>
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script> -->
 
-        
-    <script>
+
+    <!-- <script>
         // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
         var infowindow = new daum.maps.InfoWindow({
             zIndex: 1
@@ -540,7 +566,7 @@
             // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
             map.relayout();
         }
-    </script>
+    </script> -->
 
     <!-- <script>
         $('.js-timeline').Timeline({
@@ -576,6 +602,43 @@
                     $('nav').removeClass('fixed');
                     $('nav').addClass('action');
                 }
+            });
+        });
+    </script>
+    <script>
+        //왼쪽 fixed
+        $(document).ready(function () {
+            $(window).bind('scroll', function () {
+                var day1 = $('.day1').offset().top;
+                var day2 = $('.day2').offset().top;
+                var day3 = $('.day3').offset().top;
+
+                if ($(document).scrollTop() > day3-180) {
+                    $('.day').removeClass('off');
+                    $('.day').addClass('off');
+                    $('.fix_day3').removeClass('off');
+                    $('.fix_day3').addClass('on');
+                    return;
+                }
+                if ($(document).scrollTop() > day2-180) {
+                    $('.day').removeClass('off');
+                    $('.day').addClass('off');
+                    $('.fix_day2').removeClass('off');
+                    $('.fix_day2').addClass('on');
+                    return;
+                }
+
+                if ($(document).scrollTop() > day1-180) {
+                    $('.day').removeClass('off');
+                    $('.day').addClass('off');
+                    $('.fix_day1').removeClass('off');
+                    $('.fix_day1').addClass('on');
+                    return;
+                } else {
+                    
+                }
+
+
             });
         });
     </script>

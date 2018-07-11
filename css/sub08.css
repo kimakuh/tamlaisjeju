@@ -252,7 +252,7 @@ travel_view - 투어 뷰
 }
 /* 지도 */
 
-#sub08 .map {
+#sub08 .mapbb {
     margin-bottom: 50px;
 }
 
@@ -495,6 +495,13 @@ timeline fixed
 ***************************************************************************************/
 
 /* 네비 fixed */
+
+.on {
+
+}
+.off {
+    display: none;
+}
 
 .absolute {
     width: 1200px;
