@@ -45,31 +45,48 @@
                                 <button class="dropbtn" style="border-right: solid #ebebeb 1px;">일행
                                     <i class="fa fa-caret-down"></i>
                                 </button>
-                                <div class="dropdown-content">
-                                    <a href="../sub04/sub04_planner_list.html">부모</a>
-                                    <a href="../sub04/sub04_travelog_list.html">친구</a>
-                                    <a href="../sub04/sub04_travelmate_list.html">커플</a>
-                                    <a href="../sub04/sub04_curation_list.html">혼자</a>
-                                    <a href="../sub04/sub04_curation_list.html">아이</a>
-                                    <a href="../sub04/sub04_curation_list.html">단체</a>
+                                <div class="dropdown-content" style="z-index: 9999;">
+                                    <table style="width:200px;">
+                                        <tr>
+                                            <td><a href="../sub04/sub04_travelog_list.html" style="font-size: 13px; text-align: center;">부모</td>
+                                            <td><a href="../sub04/sub04_travelog_list.html" style="font-size: 13px; text-align: center;">친구</a></td>
+                                            <td><a href="../sub04/sub04_travelmate_list.html" style="font-size: 13px; text-align: center;">커플</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">혼자</a></td>
+                                            <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">아이</a></td>
+                                            <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">단체</a></td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                         <div class="dropdown">
                             <button class="dropbtn">테마
                                 <i class="fa fa-caret-down"></i>
                             </button>
-                            <div class="dropdown-content">
-                                <a href="../sub04/sub04_planner_list.html">걷기/등산</a>
-                                <a href="../sub04/sub04_travelog_list.html">경관/포토</a>
-                                <a href="../sub04/sub04_travelmate_list.html">휴식/힐링</a>
-                                <a href="../sub04/sub04_curation_list.html">테마공원</a>
-                                <a href="../sub04/sub04_curation_list.html">문화유적지</a>
-                                <a href="../sub04/sub04_curation_list.html">미술/박물관</a>
-                                <a href="../sub04/sub04_curation_list.html">액티비티</a>
-                                <a href="../sub04/sub04_curation_list.html">체험관광</a>
-                                <a href="../sub04/sub04_curation_list.html">드라이브</a>
-                                <a href="../sub04/sub04_curation_list.html">쇼핑</a>
-
+                            <div class="dropdown-content" style="z-index: 9999;">
+                                <table style="width:300px;">
+                                    <tr>
+                                        <td><a href="../sub04/sub04_planner_list.html" style="font-size: 13px; text-align: center;">걷기/등산</a></td>
+                                        <td><a href="../sub04/sub04_travelog_list.html" style="font-size: 13px; text-align: center;">경관/포토</a></td>
+                                        <td><a href="../sub04/sub04_travelmate_list.html" style="font-size: 13px; text-align: center;">휴식/힐링</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">테마공원</a></td>
+                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">문화유적지</a></td>
+                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">미술/박물관</a></td>
+                                    </tr>
+                                <tr>
+                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">액티비티</a></td>
+                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">체험관광</a></td>
+                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">드라이브</a></td>
+                                    </tr>
+                                <tr>
+                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">쇼핑</a></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
                         <div class="people">
@@ -888,8 +905,8 @@
              */
         });
     </script>
-
-    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=35a2267e059228624227866fafbb7d06&libraries=services"></script>
+<!--
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=35a2267e059228624227866fafbb7d06&libraries=services"></script>
     <script>
         var infowindow = new daum.maps.InfoWindow({
             zIndex: 1
@@ -949,6 +966,7 @@
 
         document.getElementById("defaultOpen").click();
     </script>
+    -->
 <script>
 $(function() {
 
