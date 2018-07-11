@@ -2373,3 +2373,7 @@ padding: 50px 30px 80px 30px;
 .inquiry_list ul li span img{width:117px;}
 .inquiry_list ul li b{float: left;margin-left:30px;color:#5c5c5c;}
 .inquiry_list ul li b strong{display: block;margin:12px 0 20px 0;font-size:24px;line-height:32px;font-weight:normal;}
+
+.welcomcenter_info{}
+.welcomcenter_info .map_area{float: left;}
+.welcomcenter_info .text_area{float: left;}
