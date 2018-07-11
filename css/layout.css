@@ -469,7 +469,8 @@
 /* tab */
 .tab_area{}
 .tab_area .tab{}
-.tab_area .tab button{display:inline-block;background-color: #1a7ef8;}
+.tab_area .tab button{display:inline-block;position:relative;background-color:#1a7ef8;}
+.tab_area .tab button::after{content:"";display:block;position: absolute;left:0;bottom:20px;width:100%;height:3px;background-color:#fff;}
 
 
 /* layout_ common */
