@@ -64,7 +64,7 @@
 
 .absolute {
     width: 1200px;
-    bottom: 900px;
+    bottom: 0px;
     position: absolute;
     z-index: 1;
 }
@@ -571,6 +571,10 @@
     width: 100%;
 }
 /* 전체일정표 */
+
+#sub10 .plan .day_page_all {
+    position: relative;
+}
 
 #sub10 .plan .day_page_all .all_schedule_title {
     float: left;
