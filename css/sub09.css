@@ -37,7 +37,6 @@
 }
 #sub09 .content .info-left-box .author-box {
     width: 100%;
-    padding: 30px 15px 0; 
     text-align: center;
 }
 #sub09 .content .info-left-box .author-box .author-img {
@@ -72,6 +71,7 @@
     white-space: nowrap;
 }
 #sub09 .content .info-left-box .author-box .author-name h5 {
+	
  	font-size: 14px;
  	font-family: inherit;
     font-weight: 500;
