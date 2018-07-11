@@ -296,16 +296,16 @@
                     <!-- tab end-->
 
 
-                    <div id="bus1" class="tabcontent">
+                    <div id="bus1" class="inner_tabcontent">
                         <h5>전세버스</h5>
                     </div>
-                    <div id="bus2" class="tabcontent">
+                    <div id="bus2" class="inner_tabcontent">
                         <h5>관광지 순환버스</h5>
                     </div>
-                    <div id="bus3" class="tabcontent">
+                    <div id="bus3" class="inner_tabcontent">
                         <h5>공항 리무진버스</h5>
                     </div>
-                    <div id="bus4" class="tabcontent">
+                    <div id="bus4" class="inner_tabcontent">
                         <h5>전세버스</h5>
                     </div>
 
@@ -325,9 +325,13 @@
 
                 <script>
                     function openTabs(evt, tabNames) {
-                        var i, tabcontent, tablinks;
+                        var i, tabcontent, tablinks, inner_tabcontent;
                         tabcontent = document.getElementsByClassName("tabcontent");
                         for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        inner_tabcontent = document.getElementsByClassName("inner_tabcontent");
+                        for (i = 0; i < inner_tabcontent.length; i++) {
                             tabcontent[i].style.display = "none";
                         }
                         tablinks = document.getElementsByClassName("tablinks");
