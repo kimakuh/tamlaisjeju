@@ -2363,3 +2363,12 @@ tourinfo - 제주여행 꿀팁 - 관광문의
 .tour_info img:first-child {
   margin-left: 0;
 }
+
+.inquiry_list{
+
+}
+.inquiry_list ul{}
+.inquiry_list ul li{}
+.inquiry_list ul li span{float: left;}
+.inquiry_list ul li b{float: left;}
+.inquiry_list ul li b strong{display: block;}
