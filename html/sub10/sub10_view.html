@@ -680,7 +680,7 @@
     <!-- container-->
 
 
-    <div id="footer"></div>
+    <div id="footer" style="height: 500px;"></div>
     <script type="text/javascript">
         $(document).ready(function () {
             $("#header").load("../include/sub_header.html")
@@ -789,10 +789,10 @@ function openCity(evt, cityName) {
         //왼쪽 fixed
         $(document).ready(function () {
             $(window).bind('scroll', function () {
-                var container = $('.container').height();
+                var container = $('body').height();
                 var content = $('.day_page_all').height();
                 if ($(window).scrollTop() > container - content - 50) {
-                    if ($(window).scrollTop() > content - 200) {
+                    if ($(window).scrollTop() < content - 2000) {
                         $('nav').addClass('absolute');
                         $('nav').removeClass('fixed');
                         return;
