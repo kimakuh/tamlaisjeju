@@ -2368,10 +2368,10 @@ tourinfo - 제주여행 꿀팁 - 관광문의
 padding: 50px 30px 80px 30px;
 }
 .inquiry_list ul{}
-.inquiry_list ul li{}
+.inquiry_list ul li{margin-bottom:30px;}
 .inquiry_list ul li span{float: left;}
 .inquiry_list ul li span img{width:117px;}
-.inquiry_list ul li b{float: left;margin-left:30px;color:#5c5c5c;}
+.inquiry_list ul li b{float: left;margin-left:30px;color:#5c5c5c;font-weight:normal;}
 .inquiry_list ul li b strong{display: block;margin:12px 0 20px 0;font-size:24px;line-height:32px;font-weight:normal;}
 
 .welcomcenter_info{}
