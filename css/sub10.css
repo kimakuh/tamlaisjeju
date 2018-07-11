@@ -299,7 +299,7 @@
 #sub10 .plan .day_page {
     padding-bottom: 60px;
     float: left;
-    width: 100%;
+    
     margin: 0 auto;
     position: relative;
 }
@@ -505,19 +505,19 @@
 
 #sub10 .plan .day_page .day_page_left .day_box .day_sch_box .sch_add_content .sch_memo_box .plan_info_box {}
 
-#sub10 .plan .day_page .day_page_right {
-    float: left;
-    width: 348px;
+#sub10 .plan .day_page_right {
+    float: right;
+    width: 35%;
     position: relative;
 }
 
-#sub10 .plan .day_page .day_page_right .right_scroll_box {
+#sub10 .plan .day_page_right .right_scroll_box {
     left: 0px;
     top: 0px;
     width: 100%;
 }
 
-#sub10 .plan .day_page .day_page_right .right_scroll_box .day_sel {
+#sub10 .plan .day_page_right .right_scroll_box .day_sel {
     width: 80px;
     height: 30px;
     border: 1px solid #c8c8ca;
@@ -529,7 +529,7 @@
     z-index: 99;
 }
 
-#sub10 .plan .day_page .day_page_right .right_scroll_box .day_sel .day_select {
+#sub10 .plan .day_page_right .right_scroll_box .day_sel .day_select {
     width: 100px;
     background: transparent;
     height: 30px;
@@ -541,8 +541,8 @@
     padding-left: 5px;
 }
 
-#sub10 .plan .day_page .day_page_right .right_scroll_box .map_box {
-    width: 30%;
+#sub10 .plan .day_page_right .right_scroll_box .map_box {
+    width: 100%;
     height: 305px;
     position: relative;
     border-bottom: 1px solid #ff9320;
@@ -554,7 +554,7 @@
     overflow: hidden;
 }
 
-#sub10 .plan .day_page .day_page_right .right_scroll_box .spot_list_box {
+#sub10 .plan .day_page_right .right_scroll_box .spot_list_box {
     display: block;
     position: relative;
     border-bottom: 1px solid #e5e5e5;
@@ -562,6 +562,7 @@
     border-left: 1px solid #e5e5e5;
     background: white;
     height: 195px;
+    width: 100%;
 }
 /* 전체일정표 */
 
