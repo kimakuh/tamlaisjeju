@@ -5,7 +5,7 @@ all - 여행필수정보 전체
 ***************************************************************************************/
 
 #sub11 {
-    padding-top: 83px;
+    padding-top: 168px;
     min-height: 500px;
 }
 
@@ -175,6 +175,60 @@ all - 여행필수정보 전체
 
 #sub11 .cont{
     padding-bottom: 100px;
+}
+
+#sub11 .cont_wrap {
+    padding-top: 50px;
+}
+
+#sub11 .cont_wrap h3{
+    padding-top: 50px;
+}
+
+#sub11 .my_tour .board_wrap {
+    margin-top: 50px;
+}
+
+#sub11 .tab_area.item_2 .tab_btn, .tab_area.item_2 button:first-child {
+    width: 50%;
+}
+
+.tab_area button.on {
+    background: none;
+    background-color: #fff;
+    border: 2px solid #2168f6;
+    border-bottom: 0;
+}
+
+.tab_area button.on+button {
+    background: none;
+    background-color: #f4f4f4;
+}
+
+.tab_area button.on span {
+    color: #2168f6;
+}
+
+.tab_area button span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #959595;
+    line-height: 47px;
+}
+
+.tab_area button:last-child {
+    border-right: 1px solid #e5e5e5;
+}
+
+.my_tour .board_wrap .tbl_tit {
+    height: 20px;
+    margin: 50px 0 20px;
+    padding-left: 35px;
+    background: url(../img/sub11/common/ico_arr_right_circle.png) no-repeat 0 50%;
+    font-size: 18px;
+    font-weight: 800;
+    color: #1b1b1b;
+    line-height: 20px;
 }
 
 #sub11 .my_tour .profile_wrap {

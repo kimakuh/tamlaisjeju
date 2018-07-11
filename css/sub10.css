@@ -57,8 +57,15 @@
 }
 .fixed {
     width: 1200px;
-    top: 213px;
+    top: 260px;
     position: fixed;
+    z-index: 1;
+}
+
+.absolute {
+    width: 1200px;
+    bottom: 900px;
+    position: absolute;
     z-index: 1;
 }
 
@@ -299,7 +306,6 @@
 #sub10 .plan .day_page {
     padding-bottom: 60px;
     float: left;
-    
     margin: 0 auto;
     position: relative;
 }
