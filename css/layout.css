@@ -2287,38 +2287,79 @@ all_page_box - 제주여행 꿀팁
   text-align: center;
 }
 
-
 /**************************************************************************************
 weather - 제주여행 꿀팁 - 날씨
 ***************************************************************************************/
 
-.weather{margin:50px 0;}
-.weather ul{}
-.weather li{position: absolute;}
-.weather li.jeju{top:0;left:475px;}
-.weather li.seogwipo{bottom:0;left:475px;}
-.weather li.sungsan{top:124px;right:0;}
-.weather li.kosan{top:330px;left:-4px;}
-.weather li strong{display: block;font-size:28px;}
-.weather li .icon{display: inline-block;}
-.weather li strong{font-weight: normal;}
-.weather li b{display: inline-block;margin-left:10px;vertical-align:middle;}
-.weather li b span{display: block;font-size:24px;}
+.weather {
+  margin: 50px 0;
+}
+
+.weather ul {}
+
+.weather li {
+  position: absolute;
+}
+
+.weather li.jeju {
+  top: 0;
+  left: 475px;
+}
+
+.weather li.seogwipo {
+  bottom: 0;
+  left: 475px;
+}
+
+.weather li.sungsan {
+  top: 124px;
+  right: 0;
+}
+
+.weather li.kosan {
+  top: 330px;
+  left: -4px;
+}
+
+.weather li strong {
+  display: block;
+  font-size: 28px;
+}
+
+.weather li .icon {
+  display: inline-block;
+}
+
+.weather li strong {
+  font-weight: normal;
+}
+
+.weather li b {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.weather li b span {
+  display: block;
+  font-size: 24px;
+}
 
 /**************************************************************************************
 tourinfo - 제주여행 꿀팁 - 관광문의
 ***************************************************************************************/
-
-
-
-
 
 .slogun {
   padding: 50px 0 40px 0;
   text-align: center
 }
 
-.tour_info{
-border:1px solid #1a7ef8;
+.tour_info {}
+
+.tour_info img {
+  margin-left: -4px
 }
-.tour_info img{float: left;}
+
+.tour_info img:first-child {
+  margin-left: 0;
+}
