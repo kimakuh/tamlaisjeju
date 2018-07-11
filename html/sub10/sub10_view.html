@@ -680,8 +680,12 @@
       
       <!-- 화면 꽉찬 modal -->
 <div class="modal fade" id="myFullsizeModal" tabindex="-1" role="dialog" aria-labelledby="myFullsizeModalLabel">
-        <div class="modal-dialog modal-fullsize" role="document">
-          <div class="modal-content modal-fullsize">
+        <div class="modal-dialog modal-fullsize" style="position: fixed; width: 100%; height: 100%;  z-index: 999999;  /* background: rgba(0,0,0,0.7); */ background: white;" role="document">
+          <div class="modal-content modal-fullsize" style="    width: 100%;
+          height: 100%;
+          top: 0px;
+          margin: 0px;
+          display: block;">
                 <div id="map" style="width: 100%; height: 100%;"></div>
           </div>
         </div>
