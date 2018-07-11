@@ -193,34 +193,34 @@ all - 여행필수정보 전체
     width: 50%;
 }
 
-.tab_area button.on {
+#sub11 .tab_area button.on {
     background: none;
     background-color: #fff;
     border: 2px solid #2168f6;
     border-bottom: 0;
 }
 
-.tab_area button.on+button {
+#sub11 .tab_area button.on+button {
     background: none;
     background-color: #f4f4f4;
 }
 
-.tab_area button.on span {
+#sub11 .tab_area button.on span {
     color: #2168f6;
 }
 
-.tab_area button span {
+#sub11 .tab_area button span {
     font-size: 18px;
     font-weight: 800;
     color: #959595;
     line-height: 47px;
 }
 
-.tab_area button:last-child {
+#sub11 .tab_area button:last-child {
     border-right: 1px solid #e5e5e5;
 }
 
-.my_tour .board_wrap .tbl_tit {
+#sub11 .my_tour .board_wrap .tbl_tit {
     height: 20px;
     margin: 50px 0 20px;
     padding-left: 35px;
@@ -230,6 +230,88 @@ all - 여행필수정보 전체
     color: #1b1b1b;
     line-height: 20px;
 }
+
+#sub11 .tbl_type02 {
+    border-top: 2px solid #535353;
+    font-size: 16px;
+}
+
+#sub11 .tbl_type02 td, .tbl_type02 th {
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+#sub11 .tbl_type02 th {
+    padding: 0 0 0 30px;
+    font-size: 17px;
+    color: #1b1b1b;
+}
+
+#sub11 .my_tour .board_wrap .tbl_type02 td.pd_tnb {
+    height: auto;
+    padding: 15px 30px;
+}
+
+#sub11 .tbl_type02 td.pd_tnb {
+    height: auto;
+    padding: 15px 30px;
+}
+
+#sub11 .tbl_type02 td {
+    padding: 0 30px;
+    border-left: 1px solid #e5e5e5;
+    color: #535353;
+}
+
+#sub11 .tbl_type02 td, .tbl_type02 th {
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+#sub11 .my_tour .board_wrap td select:first-child.select_type01 {
+    margin-left: 0;
+}
+
+#sub11 .my_tour .board_wrap .select_type01 {
+    float: left;
+    margin-left: 10px;
+}
+
+#sub11 .input_type_1, .select_type01 {
+    border: 1px solid #e5e5e5;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+#sub11 .select_type01 {
+    width: 120px;
+    height: 35px;
+    color: #959595;
+}
+
+#sub11 .my_tour .board_wrap .tbl_type02 .input_wrap {
+    float: left;
+    margin-left: 30px;
+    line-height: 35px;
+}
+
+#sub11 .my_tour .board_wrap td .info_warn {
+    float: left;
+    margin-top: 6px;
+    padding-left: 12px;
+    background: url(../img/sub11/common/ico_exclamation.png) no-repeat 0 3px;
+    font-size: 14px;
+    color: #535353;
+    line-height: 20px;
+}
+
+
+
+
+
+
 
 #sub11 .my_tour .profile_wrap {
     margin-bottom: 50px;
