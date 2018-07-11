@@ -791,8 +791,8 @@ function openCity(evt, cityName) {
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
                 var content = $('.day_page_all').height();
-                if ($(window).scrollTop() > container - content - 100) {
-                    if ($(window).scrollTop() > content - 360) {
+                if ($(window).scrollTop() > container - content) {
+                    if ($(window).scrollTop() > content - 922) {
                         $('nav').addClass('absolute');
                         $('nav').removeClass('fixed');
                         return;
