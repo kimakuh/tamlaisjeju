@@ -103,16 +103,12 @@
                         <p>2018.08.04</p>
                         <p>Day3 경로보기</p>
                     </div>
-                    <!-- <div class="timeline_content_day off clear">
-                            <h4> Day 2</h4>
-                            <p>2018.08.03</p>
-                            <p>Day2 경로보기</p>
-                        </div>
-                        <div class="timeline_content_day off clear">
-                            <h4> Day 3</h4>
-                            <p>2018.08.04</p>
-                            <p>Day3 경로보기</p>
-                        </div> -->
+
+                    <div class="nav_menu">
+                            <button onclick="fnMove('1')">day1</button>
+                            <button onclick="fnMove('2')">day2</button>
+                            <button onclick="fnMove('3')">day3</button>
+                    </div>
 
 
                     <div class="context_writer">
@@ -212,8 +208,8 @@
                 </nav>
 
 
-                <div class="day1">
-                    <div class="timeline_content_day">
+                <div id="div1" class="day1">
+                    <div class="timeline_content_day c_day1">
                         <h4> Day 1</h4>
                         <p>2018.08.02</p>
                         <p>Day1 경로보기</p>
@@ -283,8 +279,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="day2">
-                    <div class="timeline_content_day">
+                <div id="div2" class="day2">
+                    <div class="timeline_content_day c_day2">
                         <h4> Day 2</h4>
                         <p>2018.08.03</p>
                         <p>Day2 경로보기</p>
@@ -355,8 +351,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="day3">
-                    <div class="timeline_content_day">
+                <div id="div3" class="day3">
+                    <div class="timeline_content_day c_day3">
                         <h4> Day 3</h4>
                         <p>2018.08.04</p>
                         <p>Day3 경로보기</p>
@@ -588,7 +584,7 @@
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
                 var content = $('.t_timeline').height();
-                if ($(window).scrollTop() > container - content - 100) {
+                if ($(window).scrollTop() > container - content - 90) {
                     if ($(window).scrollTop() > content - 310) {
                         $('nav').addClass('absolute');
                         $('nav').removeClass('fixed');
@@ -613,34 +609,50 @@
                 var day2 = $('.day2').offset().top;
                 var day3 = $('.day3').offset().top;
 
-                if ($(document).scrollTop() > day3-180) {
+                if ($(document).scrollTop() > day3 - 180) {
                     $('.day').removeClass('off');
                     $('.day').addClass('off');
                     $('.fix_day3').removeClass('off');
                     $('.fix_day3').addClass('on');
+                    $('.c_day3').addClass('off');
                     return;
                 }
-                if ($(document).scrollTop() > day2-180) {
+                if ($(document).scrollTop() > day2 - 180) {
                     $('.day').removeClass('off');
                     $('.day').addClass('off');
                     $('.fix_day2').removeClass('off');
                     $('.fix_day2').addClass('on');
+                    $('.c_day3').removeClass('off');
+                    $('.c_day2').addClass('off');
+
                     return;
                 }
 
-                if ($(document).scrollTop() > day1-180) {
+                if ($(document).scrollTop() > day1 - 180) {
                     $('.day').removeClass('off');
                     $('.day').addClass('off');
                     $('.fix_day1').removeClass('off');
                     $('.fix_day1').addClass('on');
+                    $('.c_day2').removeClass('off');
+                    $('.c_day1').addClass('off');
+
                     return;
                 } else {
-                    
+
                 }
 
 
             });
         });
+    </script>
+
+    <script>
+        function fnMove(seq) {
+            var offset = $("#div" + seq).offset();
+            $('html, body').animate({
+                scrollTop: offset.top
+            }, 400);
+        }
     </script>
 
 

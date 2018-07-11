@@ -530,6 +530,12 @@ timeline fixed
     right: 0;
 }
 
+/* nav 메뉴 */
+#sub08 .t_timeline .nav_menu {
+    position: absolute;
+    top: 300px;
+}
+
 /* 작성자 콘텐츠 */
 
 #sub08 .t_timeline .context_writer .auther_post {
