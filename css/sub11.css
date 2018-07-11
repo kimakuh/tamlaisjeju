@@ -185,14 +185,6 @@ all - 여행필수정보 전체
     padding-top: 50px;
 }
 
-#sub11 p {
-    color: #5c5c5c;
-    font-size: 16px;
-    line-height: 23px;
-    word-wrap: break-word;
-    word-break: keep-all;
-}
-
 #sub11 .my_tour .board_wrap {
     margin-top: 50px;
 }
@@ -226,6 +218,17 @@ all - 여행필수정보 전체
 
 .tab_area button:last-child {
     border-right: 1px solid #e5e5e5;
+}
+
+.my_tour .board_wrap .tbl_tit {
+    height: 20px;
+    margin: 50px 0 20px;
+    padding-left: 35px;
+    background: url(../img/sub11/common/ico_arr_right_circle.png) no-repeat 0 50%;
+    font-size: 18px;
+    font-weight: 800;
+    color: #1b1b1b;
+    line-height: 20px;
 }
 
 #sub11 .my_tour .profile_wrap {
