@@ -307,7 +307,30 @@ all - 여행필수정보 전체
     line-height: 20px;
 }
 
+#sub11 .my_tour .board_wrap td .float_ln * {
+    float: left;
+}
 
+#sub11 .input_type_1 {
+    width: 598px;
+    height: 33px;
+    color: #535353;
+    line-height: 33px;
+    text-indent: 10px;
+}
+
+#sub11 .input_type_1.w_120 {
+    width: 118px;
+}
+
+#sub11 .my_tour .board_wrap td .float_ln .space {
+    width: 30px;
+    height: 35px;
+    font-size: 15px;
+    color: #959595;
+    line-height: 35px;
+    text-align: center;
+}
 
 
 
