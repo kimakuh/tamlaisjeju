@@ -345,10 +345,6 @@ all - 여행필수정보 전체
     user-select: none;
 }
 
-#sub11 .my_tour .btn_wrap {
-    text-align: center;
-}
-
 #sub11 .my_tour .btn_wrap div button:first-child {
     margin-left: 0;
 }
