@@ -405,12 +405,13 @@
                 var container = $('.container').height();
                 var content = $('.t_timeline').height();
                 if ($(window).scrollTop() > container - content - 50) {
-                    $('nav').removeClass('action');
-                    $('nav').addClass('fixed');
-                    if ($(window).scrollTop() > container + content) {
+                    if ($(window).scrollTop() > content - 170) {
                         $('nav').removeClass('fixed');
                         $('nav').addClass('action');
+                        return;
                     }
+                    $('nav').removeClass('action');
+                    $('nav').addClass('fixed');
                 } else {
                     $('nav').removeClass('fixed');
                     $('nav').addClass('action');
