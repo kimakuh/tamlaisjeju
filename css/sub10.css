@@ -62,12 +62,6 @@
     z-index: 1;
 }
 
-.absolute {
-    width: 1200px;
-    bottom: 900px;
-    position: absolute;
-    z-index: 1;
-}
 
 #sub10 .plan .plan_nav {
     position: absolute;
