@@ -305,17 +305,19 @@
 
                         <div class="day_page_right">
                             <div class="right_scroll_box" style>
-                                <div class="day_sel">
-                                    <select name="" id="" class="day_select">
-                                        <option value="1">DAY1</option>
-                                        <option value="2">DAY2</option>
-                                        <option value="3">DAY3</option>
-                                    </select>
-                                </div>
+                                <nav class="action">
+                                    <div class="day_sel">
+                                        <select name="" id="" class="day_select">
+                                            <option value="1">DAY1</option>
+                                            <option value="2">DAY2</option>
+                                            <option value="3">DAY3</option>
+                                        </select>
+                                    </div>
                                     <div class="map_box">
                                         <div id="map" style="width: 100%; height: 100%;"></div>
                                     </div>
                                     <div class="spot_list_box"></div>
+                                </nav>
                             </div>
                             <div class="clear"></div>
                         </div>
@@ -688,7 +690,7 @@
              */
         });
     </script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=35a2267e059228624227866fafbb7d06&libraries=services"></script>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=35a2267e059228624227866fafbb7d06&libraries=services"></script>
     <script>
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
             mapOption = {
@@ -790,7 +792,7 @@ function openCity(evt, cityName) {
                 var container = $('.container').height();
                 var content = $('.day_page_all').height();
                 if ($(window).scrollTop() > container - content - 50) {
-                    if ($(window).scrollTop() > content - 410) {
+                    if ($(window).scrollTop() > content - 200) {
                         $('nav').addClass('absolute');
                         $('nav').removeClass('fixed');
                         return;
