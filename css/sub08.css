@@ -575,7 +575,6 @@ timeline fixed
 
 #sub08 .t_timeline .context_writer .auther_post .post_section .post_content .post_dscrt .post_dscrt_text {
     color: black;
-    font-size: 15px;
 }
 
 @-webkit-keyframes spin {
