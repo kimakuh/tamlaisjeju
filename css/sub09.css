@@ -293,13 +293,10 @@
     white-space: nowrap;
     border-left: 0px solid black;
 }
-
-
 #sub09 .story-conts .spot-contents {
     position: relative;
-    margin: 10px 0 0 30px;
     padding: 10px 0 0;
-    background: #fff;
+    background: #fff; 
     border: none;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -344,7 +341,6 @@
     margin: 5px 0 0 0;
     border-top: 1px solid #eee;
 }
-
 #sub09 .spot-contents .author-info .conts-label {
     display: block;
     float: left;
@@ -369,7 +365,6 @@
     margin: -1px 10px 0;
     border-top: 1px solid #eee;
 }
-
 #sub09 .spot-contents .author-info .conts-label div {
     display: inline-block;
     float: left;
@@ -397,7 +392,6 @@
 #sub09 .spot-contents .author-info .conts-label div span {
     padding: 0 0 0 5px;
 }
-
 #sub09 .spot-contents .author-info .conts-label .spot-commont-count a {
     background: url(../img/sub09/comment.png) 0 4px no-repeat;
     cursor: pointer;
@@ -592,15 +586,80 @@
 #sub09 .plan-comment ul.comment-list li:first-child {
     border-top: 5px solid #eee;
 }
-#sub09 
-element.style {
-}
-.plan-comment ul.comment-list li:first-child {
-    border-top: 5px solid #eee;
-}
-.plan-comment ul.comment-list li {
+#sub09 .plan-comment ul.comment-list li {
     padding: 15px 0;
     display: block;
     border-bottom: 1px solid #eee;
     clear: both;
+} 
+#sub09 .plan-comment ul.comment-list li>div {
+    overflow: hidden;
+}
+#sub09 .view-comment .plan-comment ul.comment-list li .profile-img {
+    width: 5%;
+}
+#sub09 .plan-comment ul.comment-list li div.profile-img {
+    display: block;
+    float: left;
+    width: 5%;
+    height: 40px;
+    vertical-align: top;
+}
+#sub09 .plan-comment ul.comment-list li div.profile-img a.user {
+    width: 40px;
+    height: 40px;
+    display: block;
+    overflow: hidden;
+}
+#sub09 .plan-comment ul.comment-list a.user {
+    display: inline;
+    margin-right: 5px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+}
+#sub09 .view-comment .plan-comment ul.comment-list li .comment-contents {
+    width: 76%;
+}
+#sub09 .plan-comment ul.comment-list li div.comment-contents, .plan-comment ul.comment-list li div.profile-img {
+    display: inline-block;
+    vertical-align: top;
+}
+#sub09 .plan-comment ul.comment-list .comment-contents {
+    position: relative;
+    float: left;
+    width: 76%;
+    margin-left: 1%;
+    color: #666;
+}
+#sub09 .plan-comment ul.comment-list .comment-info .name-date {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+}
+#sub09 .plan-comment ul.comment-list a.user .username {
+    font-weight: 400;
+}
+#sub09 .plan-comment ul.comment-list .name-date .update-date {
+    font-size: 10px;
+    color: #999;
+}
+#sub09 .plan .plan-info-box .info-right-box .update-date {
+    padding-top: 5px;
+}
+#sub09 .plan-comment ul.comment-list .comment-txt {
+    clear: both;
+    width: 100%;
+}
+#sub09 .plan-comment ul.comment-list .comment-txt p {
+    overflow: hidden;
+    width: 95%;
+    line-height: 24px;
+    padding: 2px 5% 0 0;
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    font-weight: 300;
+    word-break: break-all;
+    white-space: pre-wrap;
 }
