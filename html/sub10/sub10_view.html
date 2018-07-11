@@ -83,18 +83,35 @@
                     </div>
                 </div>
                 <div class="day_page_all" id="1">
-                    <div class="day_page">
-                            <nav class="action">
-                                    <div class="plan_nav" style>
-                                        <div class="plan_nav_prev" data-op="prev"></div>
-                                        <div class="plan_nav_list">
-                                            <div class="plan_nav_btn on" onclick="page_scroll('day_box','1')" data-id="1">D1 제주도</div>
-                                            <div class="plan_nav_btn" onclick="page_scroll('day_box','2')" data-id="2">D2 제주도</div>
-                                            <div class="plan_nav_btn  last" onclick="page_scroll('day_box','3')" data-id="3">D3 제주도</div>
-                                        </div>
-                                        <div class="plan_nav_next" data-op="next"></div>
+                    <nav class="action">
+                            <div class="plan_nav" style>
+                                <div class="plan_nav_prev" data-op="prev"></div>
+                                <div class="plan_nav_list">
+                                    <div class="plan_nav_btn on" onclick="page_scroll('day_box','1')" data-id="1">D1 제주도</div>
+                                    <div class="plan_nav_btn" onclick="page_scroll('day_box','2')" data-id="2">D2 제주도</div>
+                                    <div class="plan_nav_btn  last" onclick="page_scroll('day_box','3')" data-id="3">D3 제주도</div>
+                                </div>
+                                <div class="plan_nav_next" data-op="next"></div>
+                            </div>
+                            <div class="day_page_right">
+                                    <div class="right_scroll_box" style>
+                                            <div class="day_sel">
+                                                <select name="" id="" class="day_select">
+                                                    <option value="1">DAY1</option>
+                                                    <option value="2">DAY2</option>
+                                                    <option value="3">DAY3</option>
+                                                </select>
+                                            </div>
+                                            <div class="map_box">
+                                                <div id="map" style="width: 100%; height: 100%;"></div>
+                                            </div>
+                                            <div class="spot_list_box"></div>
+                                            <div class="clear"></div>
                                     </div>
-                                </nav>
+                                    <div class="clear"></div>
+                                </div>
+                        </nav>
+                    <div class="day_page">
                         <div class="day_page_left">
                             <div class="day_box" data-id="1">
                                 <div class="day_info_box">
@@ -303,24 +320,7 @@
                             </div>
                         </div>
 
-                        <div class="day_page_right">
-                            <div class="right_scroll_box" style>
-                                <nav class="action">
-                                    <div class="day_sel">
-                                        <select name="" id="" class="day_select">
-                                            <option value="1">DAY1</option>
-                                            <option value="2">DAY2</option>
-                                            <option value="3">DAY3</option>
-                                        </select>
-                                    </div>
-                                    <div class="map_box">
-                                        <div id="map" style="width: 100%; height: 100%;"></div>
-                                    </div>
-                                    <div class="spot_list_box"></div>
-                                </nav>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
+                       
 
                     </div>
 
