@@ -493,9 +493,12 @@ timeline fixed
 .fixed {
     width: 1200px;
     top: 169px;
-    position: sticky;
+    position: fixed;
     z-index: 1;
 }
+
+
+
 
 /* Day fixed */
 
