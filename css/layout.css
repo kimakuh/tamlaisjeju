@@ -464,6 +464,14 @@
   color: #fff;
 }
 
+
+
+/* tab */
+.tab_area{}
+.tab_area .tab{}
+.tab_area .tab button{display:inline-block;background-color: #1a7ef8;}
+
+
 /* layout_ common */
 
 .wrapper {
@@ -623,6 +631,9 @@
   line-height: 14px;
   color: #959595;
 }
+
+
+
 
 /* paging */
 
@@ -2413,3 +2424,7 @@ tourinfo - 제주여행 꿀팁 - 관광문의
 .welcomcenter_info .text_area ul {
   padding-left: 15px;
 }
+
+/**************************************************************************************
+tourinfo - 제주여행 꿀팁 - 교통
+***************************************************************************************/
