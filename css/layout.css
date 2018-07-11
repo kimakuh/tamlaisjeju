@@ -2299,3 +2299,7 @@ weather - 제주여행 꿀팁 - 날씨
 .weather li.sungsan{top:124px;right:0;}
 .weather li.kosan{top:330px;left:-4px;}
 .weather li strong{display: block;font-size:28px;}
+.weather li .icon{float: left;}
+.weather li b{}
+.weather li b span{display: block;}
+
