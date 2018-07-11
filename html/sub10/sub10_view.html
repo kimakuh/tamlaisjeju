@@ -858,7 +858,7 @@ function openCity(evt, cityName) {
             };
 
         // 지도를 생성합니다    
-        var map = new daum.maps.Map(mapContainer, mapOption);
+        var map1 = new daum.maps.Map(mapContainer, mapOption);
 
         // 주소-좌표 변환 객체를 생성합니다
         var geocoder = new daum.maps.services.Geocoder();
@@ -874,7 +874,7 @@ function openCity(evt, cityName) {
 
                 // 결과값으로 받은 위치를 마커로 표시합니다
                 var marker = new daum.maps.Marker({
-                    map: map,
+                    map: map1,
                     position: coords
                 });
 
@@ -882,13 +882,13 @@ function openCity(evt, cityName) {
                 var infowindow = new daum.maps.InfoWindow({
                     content: '<div style="width:150px;text-align:center;padding:6px 0;"></div>'
                 });
-                infowindow.open(map, marker);
+                infowindow.open(map1, marker);
 
                 // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
-                map.setCenter(coords);
+                map1.setCenter(coords);
             }
             // 장소 검색 객체를 생성합니다
-            var ps = new daum.maps.services.Places(map);
+            var ps = new daum.maps.services.Places(map1);
             ps.categorySearch('AD5', placesSearchCB, {
                 useMapCenter: true
             });
@@ -912,7 +912,7 @@ function openCity(evt, cityName) {
             function displayMarker(place) {
                 // 마커를 생성하고 지도에 표시합니다
                 var marker = new daum.maps.Marker({
-                    map: map,
+                    map: map1,
                     position: new daum.maps.LatLng(place.y, place.x)
                 });
 
@@ -921,7 +921,7 @@ function openCity(evt, cityName) {
                     // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
                     infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name +
                         '</div>');
-                    infowindow.open(map, marker);
+                    infowindow.open(map1, marker);
                 });
             }
         });
