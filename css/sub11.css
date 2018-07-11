@@ -177,6 +177,45 @@ all - 여행필수정보 전체
     padding-bottom: 100px;
 }
 
+#sub11 .cont_wrap {
+    padding-top: 50px;
+}
+
+#sub11 .my_tour .board_wrap {
+    margin-top: 50px;
+}
+
+#sub11 .tab_area.item_2 .tab_btn, .tab_area.item_2 button:first-child {
+    width: 50%;
+}
+
+.tab_area button.on {
+    background: none;
+    background-color: #fff;
+    border: 2px solid #2168f6;
+    border-bottom: 0;
+}
+
+.tab_area button.on+button {
+    background: none;
+    background-color: #f4f4f4;
+}
+
+.tab_area button.on span {
+    color: #2168f6;
+}
+
+.tab_area button span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #959595;
+    line-height: 47px;
+}
+
+.tab_area button:last-child {
+    border-right: 1px solid #e5e5e5;
+}
+
 #sub11 .my_tour .profile_wrap {
     margin-bottom: 50px;
     background: #f4f4f4;
