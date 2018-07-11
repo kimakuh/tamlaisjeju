@@ -185,6 +185,14 @@ all - 여행필수정보 전체
     padding-top: 50px;
 }
 
+#sub11 p {
+    color: #5c5c5c;
+    font-size: 16px;
+    line-height: 23px;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
 #sub11 .my_tour .board_wrap {
     margin-top: 50px;
 }
