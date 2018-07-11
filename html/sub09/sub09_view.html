@@ -49,7 +49,7 @@
 		</div>
 		<div class="content">
 			<div class="plan-info-box">
-				<div class="info-left-box">
+				<nav class="info-left-box">
 					<div class="user-info-box">
 						<div class="author-box">
 							<div class="author-img">
@@ -81,7 +81,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</nav>
 				<div class="info-right-box">
 					<div class="plan-info-top">
 						<div class="plan-detail-txt">
@@ -176,10 +176,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> 
 					<div class="story-nav fix">
-						<div class="nav-warp" style="height: 678px;">
-							<ul>
+						<nav class="nav-warp" style="height: 678px;">
+							<ul> 
 								<li><a class="btn-top nav-btn-top story-view-nav-btn"
 									data-id="top">Top</a></li>
 								<li class="story-view-nav-li"><a class="story-view-nav-btn"
@@ -190,7 +190,7 @@
 										class="plan-comment-count">5</span>
 								</a></li>
 							</ul>
-						</div>
+						</nav>
 					</div>
 					<div class="comment-wrap" id="plan-detail-comment-wrap-area">
 						<h3>
@@ -283,5 +283,31 @@
 			 */
 		});
 	</script>
+	
+	<script>
+        //왼쪽 fixed
+        $(document).ready(function () {
+            $(window).bind('scroll', function () {
+                var container = $('.container').height();
+                var content = $('.info-left-box').height();
+                if ($(window).scrollTop() > container - content - 100) {
+                    if ($(window).scrollTop() > content - 310) {
+                        $('nav').addClass('absolute');
+                        $('nav').removeClass('fixed');
+                        return;
+                    }
+                    $('nav').removeClass('action');
+                    $('nav').removeClass('absolute');
+                    $('nav').addClass('fixed');
+                } else {
+                    $('nav').removeClass('absolute');
+                    $('nav').removeClass('fixed');
+                    $('nav').addClass('action');
+                }
+            });
+        }); 
+    </script>
+	
+	
 </body>
 </html>
