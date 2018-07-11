@@ -181,6 +181,10 @@ all - 여행필수정보 전체
     padding-top: 50px;
 }
 
+#sub11 .cont_wrap h3{
+    padding-top: 50px;
+}
+
 #sub11 .my_tour .board_wrap {
     margin-top: 50px;
 }
