@@ -796,12 +796,17 @@ function openCity(evt, cityName) {
                         $('nav').addClass('absolute');
                         $('nav').removeClass('fixed');
                         return;
+                    } else {
+                        $('nav').addClass('fixed');
+                        $('nav').removeClass('absolute');
                     }
                     $('nav').removeClass('action');
                     $('nav').addClass('fixed');
                 } else {
                     $('nav').removeClass('fixed');
                     $('nav').addClass('action');
+
+                    
                 }
             });
         });
