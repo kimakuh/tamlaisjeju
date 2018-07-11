@@ -536,6 +536,70 @@ timeline fixed
     top: 300px;
 }
 
+.treemenu [level]{
+   transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.treemenu [level].closed {
+  max-height: 0;
+}
+
+.treemenu [level].opened {
+  max-height: 50px;
+}
+
+.treemenu [level="1"] .lbl{
+  padding-left: 50px;
+}
+
+.treemenu [level="2"] .lbl{
+  padding-left: 100px;
+}
+
+/* basic non-functional styling passed this poing */
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.treemenu {
+  width: 300px;
+  margin: auto;
+}
+
+.treemenu > [level] {
+  background-color: #558855;
+  cursor: pointer;
+}
+
+.treemenu > [level].opened {
+    margin: 1px;
+}
+
+.treemenu > [level]:hover {
+  background-color: #338833;
+}
+
+.treemenu .lbl {
+  color: white;
+  padding: 15px;
+  display: inline-block;
+ }
+
+.title{
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  color: black;
+  
+}
+
+
+
+
+
 /* 작성자 콘텐츠 */
 
 #sub08 .t_timeline .context_writer .auther_post {

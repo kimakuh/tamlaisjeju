@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
 
     <style type="text/css">
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
@@ -105,9 +106,49 @@
                     </div>
 
                     <div class="nav_menu">
-                            <button onclick="fnMove('1')">day1</button>
-                            <button onclick="fnMove('2')">day2</button>
-                            <button onclick="fnMove('3')">day3</button>
+                        <button onclick="fnMove('1')">day1</button>
+                        <button onclick="fnMove('2')">day2</button>
+                        <button onclick="fnMove('3')">day3</button>
+
+                        <div class="title">Infinte Depth Treemenu </div>
+                        <div class="treemenu">
+                            <div level="0">
+                                <span class="lbl">Top item </span>
+                            </div>
+                            <div level="1">
+                                <span class="lbl"> Sub item 1 </span>
+                            </div>
+                            <div level="1">
+                                <span class="lbl"> Sub item 2 </span>
+                            </div>
+                            <div level="2">
+                                <span class="lbl"> Sub Sub item 2 </span>
+                            </div>
+                            <div level="0">
+                                <span class="lbl"> Top item </span>
+                            </div>
+                            <div level="1">
+                                <span class="lbl"> Sub item 1 </span>
+                            </div>
+                            <div level="1">
+                                <span class="lbl"> Sub item 2 </span>
+                            </div>
+                            <div level="2">
+                                <span class="lbl"> Sub Sub item 2 </span>
+                            </div>
+                            <div level="0">
+                                <span class="lbl"> Top item </span>
+                            </div>
+                            <div level="1">
+                                <span class="lbl"> Sub item 1 </span>
+                            </div>
+                            <div level="1">
+                                <span class="lbl"> Sub item 2 </span>
+                            </div>
+                            <div level="2">
+                                <span class="lbl"> Sub Sub item 2 </span>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -647,12 +688,169 @@
     </script>
 
     <script>
-        function fnMove(seq) {
-            var offset = $("#div" + seq).offset();
+        // 아이디 바로가기
+        function fnMove(id) {
+            var offset = $("#div" + id).offset();
             $('html, body').animate({
                 scrollTop: offset.top - 169
             }, 400);
         }
+    </script>
+
+    <script>
+        // 트리메뉴
+        var _createClass = function () {
+            function defineProperties(target, props) {
+                for (var i = 0; i < props.length; i++) {
+                    if (window.CP.shouldStopExecution(1)) {
+                        break;
+                    }
+                    var descriptor = props[i];
+                    descriptor.enumerable = descriptor.enumerable || false;
+                    descriptor.configurable = true;
+                    if ("value" in descriptor) descriptor.writable = true;
+                    Object.defineProperty(target, descriptor.key, descriptor);
+                }
+                window.CP.exitedLoop(1);
+            }
+            return function (Constructor, protoProps, staticProps) {
+                if (protoProps) defineProperties(Constructor.prototype, protoProps);
+                if (staticProps) defineProperties(Constructor, staticProps);
+                return Constructor;
+            };
+        }();
+
+        function _classCallCheck(instance, Constructor) {
+            if (!(instance instanceof Constructor)) {
+                throw new TypeError("Cannot call a class as a function");
+            }
+        }
+
+        window.log = function (text) {
+            console.log(text);
+            //$(".console").prepend(text + "<br/>");  
+        };
+
+        var TreeMenu = function () {
+            function TreeMenu($container) {
+                _classCallCheck(this, TreeMenu);
+
+                this.$container = $container;
+                $container.find("[level]").click(this.levelClickHandler.bind(this));
+                var id = 0;
+                $container.find("[level]").each(function (index, item) {
+                    var $item = $(item);
+                    $item.attr("data-treemenu-id", ++id);
+                    this.setOpen($item, false);
+                    if (parseInt($item.attr("level")) > 0) {
+                        this.hideItem($item);
+                    } else {
+                        this.showItem($item);
+                    }
+                }.bind(this));
+            }
+
+            _createClass(TreeMenu, [{
+                key: "levelClickHandler",
+                value: function levelClickHandler(evt) {
+                    var $el = $(evt.currentTarget);
+
+                    if (this.isOpen($el)) {
+                        this.closeItem($el);
+                    } else {
+                        this.openItem($el);
+                    }
+                }
+            }, {
+                key: "getElementTreeMenuId",
+                value: function getElementTreeMenuId($el) {
+                    return $el.attr("data-treemenu-id");
+                }
+            }, {
+                key: "getElementLevel",
+                value: function getElementLevel($el) {
+                    return parseInt($el.attr("level"));
+                }
+            }, {
+                key: "isOpen",
+                value: function isOpen($el) {
+                    return $el.attr("data-treemenu-open") === "1";
+                }
+            }, {
+                key: "setOpen",
+                value: function setOpen($el, to) {
+                    log("set open: " + to);
+                    $el.attr("data-treemenu-open", to ? "1" : "0");
+                }
+            }, {
+                key: "getGroup",
+                value: function getGroup($el) {
+                    log("get group");
+                    //the group is every element that has a higher level than this one
+                    var firstElementLevel = this.getElementLevel($el);
+                    var group = [];
+
+                    this.$container.find("[level]").each(function (index, item) {
+                        var $item = $(item);
+
+                        if (!group.length) {
+                            //first item has not been passed in the loop
+                            if (this.getElementTreeMenuId($el) == this.getElementTreeMenuId(
+                                    $item)) {
+                                //the current item is the parent of the group
+                                group.push($item);
+                            }
+                            //stop this iteration of the loop
+                            return true;
+                        }
+                        //
+                        //if the level of the item equals or is lower then the initial level, 
+                        // we have reached the end of the group
+                        var level = parseInt($item.attr("level"));
+                        if (level <= firstElementLevel) return false;
+                        if (level == firstElementLevel + 1) group.push($item);
+                    }.bind(this));
+                    return group;
+                }
+            }, {
+                key: "closeItem",
+                value: function closeItem($el) {
+                    this.setOpen($el, false);
+                    this.getGroup($el).forEach(function ($item, index) {
+                        if (!index) return true;
+                        this.hideItem($item);
+
+                        //also close its children
+                        this.closeItem($item);
+                    }.bind(this));
+                }
+            }, {
+                key: "openItem",
+                value: function openItem($el) {
+                    this.setOpen($el, true);
+                    this.getGroup($el).forEach(function ($item, index) {
+                        if (!index) return true;
+                        this.showItem($item);
+                    }.bind(this));
+                }
+            }, {
+                key: "showItem",
+                value: function showItem($el) {
+                    $el.removeClass("closed");
+                    $el.addClass("opened");
+                }
+            }, {
+                key: "hideItem",
+                value: function hideItem($el) {
+                    $el.removeClass('opened');
+                    $el.addClass("closed");
+                }
+            }]);
+
+            return TreeMenu;
+        }();
+
+        var menu = new TreeMenu($(".treemenu"));
     </script>
 
 
