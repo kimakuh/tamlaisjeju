@@ -182,11 +182,11 @@ all - 여행필수정보 전체
 }
 
 #sub11 .cont_wrap h3{
-    padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 #sub11 .my_tour .board_wrap {
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #sub11 .tab_area.item_2 .tab_btn, .tab_area.item_2 button:first-child {
@@ -307,10 +307,68 @@ all - 여행필수정보 전체
     line-height: 20px;
 }
 
+#sub11 .my_tour .board_wrap td .float_ln * {
+    float: left;
+}
 
+#sub11 .input_type_1 {
+    width: 598px;
+    height: 33px;
+    color: #535353;
+    line-height: 33px;
+    text-indent: 10px;
+}
 
+#sub11 .input_type_1.w_120 {
+    width: 118px;
+}
 
+#sub11 .input_type_1.w_160 {
+    width: 158px;
+}
 
+#sub11 .my_tour .board_wrap td .float_ln .space {
+    width: 30px;
+    height: 35px;
+    font-size: 15px;
+    color: #959595;
+    line-height: 35px;
+    text-align: center;
+}
+
+#sub11 label.css-label2 {
+    background-image: url(../img/common/ico_check_box3.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sub11 .my_tour .btn_wrap {
+    text-align: center;
+}
+
+#sub11 .my_tour .btn_wrap div button:first-child {
+    margin-left: 0;
+}
+
+#sub11 .my_tour .btn_wrap div button {
+    float: left;
+    width: 120px;
+    height: 45px;
+    border: 3px solid #2168f6;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #2168f6;
+    line-height: 45px;
+}
+
+#sub11 .my_tour .btn_wrap div button.btn_type1 {
+    border: 3px solid #e5e5e5;
+    color: #959595;
+}
 
 
 #sub11 .my_tour .profile_wrap {
