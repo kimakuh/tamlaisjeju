@@ -194,6 +194,16 @@ all - 여행필수정보 전체
     width: 50%;
 }
 
+#sub11 .tab_area .tab_btn {
+    float: left;
+    width: 33.333333%;
+    height: 50px;
+    background: url(/image/common/ln_39_1_e5e5e5.png) no-repeat 0 50%;
+    background-color: #f4f4f4;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 2px solid #2168f6;
+}
+
 #sub11 .tab_area button.on {
     background: none;
     background-color: #fff;
