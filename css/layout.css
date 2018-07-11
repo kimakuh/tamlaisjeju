@@ -2365,7 +2365,7 @@ tourinfo - 제주여행 꿀팁 - 관광문의
 }
 
 .inquiry_list{
-
+padding: 50px 30px 80px 30px;
 }
 .inquiry_list ul{}
 .inquiry_list ul li{}
