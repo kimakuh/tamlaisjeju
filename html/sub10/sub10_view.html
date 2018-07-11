@@ -12,8 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- css -->
     <link rel="stylesheet" href="../../css/common.css" />
     <link rel="stylesheet" href="../../css/layout.css" />
@@ -24,6 +23,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style type="text/css">
     @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
@@ -69,9 +70,7 @@
                         <button type="button" class="plan_mnu" onclick="openCity(event, '2')">전체일정</button>
                         <div class="plan_mnu_line"></div>
                         <button type="button" class="plan_mnu" onclick="openCity(event, '3')">지도</button>
-                        <!-- modal 구동 버튼 (trigger) -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myFullsizeModal" >
-                        Modal 띄우기
+                        
                     </button>
                         <div class="plan_mnu_line"></div>
                         <button type="button" class="plan_mnu" onclick="openCity(event, '4')">댓글</button>
@@ -674,21 +673,31 @@
                     
                 </div>
 
-                
+                <!-- modal 구동 버튼 (trigger) -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myFullsizeModal">
+        Fullsize Modal
+      </button>
+      
+      <!-- 화면 꽉찬 modal -->
+<div class="modal fade" id="myFullsizeModal" tabindex="-1" role="dialog" aria-labelledby="myFullsizeModalLabel">
+        <div class="modal-dialog modal-fullsize" role="document">
+          <div class="modal-content modal-fullsize">
+                <div id="map" style="width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+      </div> 
+      
+      
+     
 
-                    
-                    <!-- Modal -->
-                     <div class="modal fade" id="myFullsizeModal" tabindex="-1" role="dialog" aria-labelledby="myFullsizeModalLabel">
-                                <div class="modal-dialog modal-fullsize" role="document">
-                                  <div class="modal-content modal-fullsize">
-                                    <div id="map" style="width: 100%; height: 100%;"></div>
-                                  </div>
-                                </div>
-                              </div> 
-      
-      
-                       
-                              
+
+
+
+
+
+
+
+
 
 
 
