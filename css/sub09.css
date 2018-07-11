@@ -37,7 +37,6 @@
 }
 #sub09 .content .info-left-box .author-box {
     width: 100%;
-    padding: 30px 15px 0;
     text-align: center;
 }
 #sub09 .content .info-left-box .author-box .author-img {
@@ -72,6 +71,7 @@
     white-space: nowrap;
 }
 #sub09 .content .info-left-box .author-box .author-name h5 {
+	
  	font-size: 14px;
  	font-family: inherit;
     font-weight: 500;
@@ -135,7 +135,7 @@
 }
 #sub09 .content .plan-info-box .info-right-box {
     position: relative;
-    width: 100%;
+    width: 75%;
     padding: 0 0 0 280px;
 }
 #sub09 .content .plan-info-box .info-right-box .plan-info-top {
