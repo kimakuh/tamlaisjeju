@@ -492,7 +492,7 @@
   background-color: #fff;
 }
 
-.tab_area .tab button .inner_tablinks {
+.tab_area .tab button.inner_tablinks {
   background-color: #fff;
   color: #1b1b1b;
 }
