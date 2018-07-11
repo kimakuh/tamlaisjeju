@@ -1203,7 +1203,7 @@ container - 컨텐츠 스타일
 .list_2st li {
   margin: 3px 0;
   padding-left: 9px;
-  background: url(/common/img/list_bul2.png) no-repeat left 9px;
+  background: url(../img/common/list_bul2.png) no-repeat left 9px;
   color: #555;
   word-break: keep-all;
   word-wrap: break-word;
