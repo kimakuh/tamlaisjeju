@@ -648,7 +648,7 @@
 
     <script>
         function fnMove(seq) {
-            var offset = $("#div" + seq).offset();
+            var offset = $("#div" + seq).offset().top;
             $('html, body').animate({
                 scrollTop: offset.top
             }, 400);
