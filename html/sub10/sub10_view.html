@@ -789,7 +789,7 @@ function openCity(evt, cityName) {
         //왼쪽 fixed
         $(document).ready(function () {
             $(window).bind('scroll', function () {
-                var container = $('body').height();
+                var container = $('.container').height();
                 var content = $('.day_page_all').height();
                 if ($(window).scrollTop() > container - content - 50) {
                     if ($(window).scrollTop() < content - 2000) {
