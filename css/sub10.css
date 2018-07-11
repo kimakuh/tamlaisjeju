@@ -57,7 +57,7 @@
 }
 .fixed {
     width: 1200px;
-    top: 248px;
+    top: 260px;
     position: fixed;
     z-index: 1;
 }
