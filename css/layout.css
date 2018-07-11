@@ -501,6 +501,13 @@
   background-color: #fff;
 }
 
+
+
+.tab_area .tab.inner_tabs button.active::after{
+  background-color: #1a7ef8;
+}
+
+
 /* layout_ common */
 
 .wrapper {
