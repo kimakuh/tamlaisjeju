@@ -322,6 +322,21 @@ all - 여행필수정보 전체
     float: left;
 }
 
+#sub11 .my_tour .board_wrap .member_delete_info {
+    width: 420px;
+    height: 230px;
+    margin: 50px auto 0;
+    padding-top: 190px;
+    background: url(../img/sub11/common/ico_member_delete.png) no-repeat 50% 0;
+}
+
+#sub11 .my_tour .board_wrap .member_delete_info li {
+    font-size: 16px;
+    color: #535353;
+    line-height: 32px;
+    text-align: center;
+}
+
 #sub11 .input_type_1 {
     width: 598px;
     height: 33px;
