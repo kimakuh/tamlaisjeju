@@ -497,8 +497,9 @@
   color: #1b1b1b;
 }
 
-.tab_area .tabcontent .tab.inner_tabs{background-color:none;}
-
+.tab_area .tab.inner_tabs {
+  background-color: #fff;
+}
 
 /* layout_ common */
 
