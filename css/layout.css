@@ -1298,6 +1298,7 @@ container - 컨텐츠 스타일
 /* img_wrap */
 
 .img_wrap {
+  position: relative;
   text-align: center;
 }
 
