@@ -418,9 +418,9 @@
                 var container = $('.container').height();
                 var content = $('.t_timeline').height();
                 if ($(window).scrollTop() > container - content - 50) {
-                    if ($(window).scrollTop() > content - 390) {
+                    if ($(window).scrollTop() > content - 410) {
+                        $('nav').addClass('absolute');
                         $('nav').removeClass('fixed');
-                        $('nav').addClass('action');
                         return;
                     }
                     $('nav').removeClass('action');
