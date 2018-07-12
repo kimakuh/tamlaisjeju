@@ -310,7 +310,7 @@ visual  - 비주얼
   top: -450px;
   padding: 20px;
   width: 350px;
-  height:450px;
+  height: 450px;
   overflow: hidden;
   background: rgba(0, 0, 0, .5);
 }
@@ -345,7 +345,9 @@ visual  - 비주얼
   margin-bottom: 15px;
 }
 
-.visual_cont_box ul {margin-bottom:30px}
+.visual_cont_box ul {
+  margin-bottom: 30px
+}
 
 .visual_cont_box ul li {
   margin: 10px 0;
@@ -353,7 +355,7 @@ visual  - 비주얼
 
 .visual_cont_box ul li b {
   display: block;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   height: 14px;
   font-size: 14px;
   line-height: 18px;
@@ -368,23 +370,19 @@ visual  - 비주얼
   line-height: 18px;
 }
 
-
 .visual_cont_box a.btn {
   display: inline-block;
-  padding:10px 15px;
+  padding: 10px 15px;
   min-height: 14px;
   font-size: 14px;
   color: #fff;
   line-height: 18px;
-  background-color:transparent;
+  background-color: transparent;
 }
-
 
 .visual_cont_box a.btn:hover {
-  background-color:#fff;
+  background-color: #fff;
 }
-
-
 
 .visual_cont_box .weather_area {
   position: absolute;
@@ -475,16 +473,35 @@ visual  - 비주얼
   color: #535353;
 }
 
+.view_tab_area {
+  overflow: hidden;
+}
 
+.view_tab_area ul {}
 
-.view_tab_area{overflow: hidden;}
-.view_tab_area ul{}
-.view_tab_area ul li{float: left;width:20%;text-align:center;border:1px solid #ededed;}
-.view_tab_area ul li a{display:inline-block;padding:20px;}
-.view_tab_area ul li a.active{border-bottom:3px solid #2168f6}
+.view_tab_area ul li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  border: 1px solid #ededed;
+}
 
+.view_tab_area ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
 
-
+.view_tab_area ul li a.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #2168f6
+}
 
 .container {
   max-width: 100%;
