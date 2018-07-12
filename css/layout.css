@@ -485,6 +485,7 @@ visual  - 비주얼
   text-align: center;
   border: 1px solid #ededed;
   border-left:none;
+  box-sizing: border-box;
 }
 
 .view_tab_area ul li:first-child{
