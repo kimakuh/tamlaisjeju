@@ -1398,40 +1398,7 @@
             var stop = $(document).scrollTop();
             var body_height = parseInt($(document).height()) - parseInt($('.list_bottom.page.show').height()) -
                 1000;
-            if (stop > body_height) {
-                $('.right_scroll_box').css('position', 'absolute');
-                $('.right_scroll_box').css('left', '0px');
-                //오른쪽 배너 여기 수정
-                $('.right_scroll_box').css('top', (body_height - 657));
-                $('.right_scroll_box').css('margin-left', '0px');
-
-                $('.plan_nav').css('position', 'absolute');
-                $('.plan_nav').css('left', '50%');
-                $('.plan_nav').css('top', body_height);
-                $('.plan_nav').css('margin-left', '-700px');
-            } else {
-                $('.plan_nav').attr('style', '');
-                if (stop > 473) {
-                    $('.plan_mnu_box').css('position', 'fixed');
-                    $('.plan_mnu_box').css('top', 0);
-                    $('.plan_mnu_box').css('z-index', '10');
-                    $('.plan_mnu_box').css('left', '50%');
-                    $('.plan_mnu_box').css('margin-left', '-546px');
-                    $('.plan_mnu_box').css('width', '1092px');
-
-                    if (stop < parseInt(stop_top) - 700) {
-                        $('.right_scroll_box').css('position', 'fixed');
-                        $('.right_scroll_box').css('width', '348px');
-                        $('.right_scroll_box').css('left', '50%');
-                        $('.right_scroll_box').css('top', '100px');
-                        $('.right_scroll_box').css('margin-left', '198px');
-                    }
-                } else {
-                    $('.plan_mnu_box').attr('style', '');
-                    $('.wrap.page').attr('style', '');
-                    $('.right_scroll_box').attr('style', '');
-                }
-            }
+            
 
             if (stop > 0) {
                 $('.btn_top').fadeIn();
