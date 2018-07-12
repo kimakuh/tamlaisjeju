@@ -71,7 +71,7 @@
                         <div class="plan_mnu_line"></div>
                         <button type="button" class="plan_mnu" onclick="openCity(event, '2')">전체일정</button>
                         <div class="plan_mnu_line"></div>
-                        <button type="button" class="plan_mnu" onclick="openCity(event, '3')">지도</button>
+                        <button type="button" class="plan_mnu" data-toggle="modal" data-target="#myModal">지도</button>
                         
                     </button>
                         <div class="plan_mnu_line"></div>
@@ -333,7 +333,7 @@
                         <div class="day_page_left">
                             <div class="day_box" data-id="2">
                                 <div class="day_info_box">
-                                    <div class="day_txt">DAY1</div>
+                                    <div class="day_txt">DAY2</div>
                                     <div class="day_info">
                                         <div class="day_info_left">
                                             <div class="date">2018.07.13 (금)</div>
@@ -677,10 +677,7 @@
 
        
       
-        <!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    Open modal
-  </button>
+        
   
   <!-- The Modal -->
   <div class="modal fade" id="myModal">
@@ -689,7 +686,7 @@
   
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
+          <h4 class="modal-title">전체 일정 루트</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
   
@@ -863,7 +860,6 @@ $("#myModal").on('shown.bs.modal', function(e){
 e.preventDefault();
 //console.log("Map Modal is shown!");
 map1.relayout();
-map1.updateSize();
 });
 
 </script>
