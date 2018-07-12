@@ -367,7 +367,7 @@
 }
 #sub09 .spot-contents .author-info .conts-label div {
     display: inline-block;
-    float: left;
+    float: left; 
     height: 30px;
     line-height: 20px;
     color: #999;
@@ -401,6 +401,103 @@
     margin: 0 15px 0 0;
     cursor: pointer;
 }
+#sub09 .plan-comment{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    font-size: 0;
+}
+#sub09 .plan-comment .spot-comment-content {
+    margin: 0 20px;
+}
+#sub09 .plan-comment .comment-write {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    background: #fff;
+}
+#sub09 .plan-comment .comment-write textarea {
+    float: left;
+    display: block;
+    width: 83%;
+    resize: vertical;
+    height: 40px;
+    padding: 9px 65px 0 10px;
+    margin: 0;
+    font-weight: 400;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #eee;
+    background: #f6f6f6;
+    border-radius: 0;
+}
+#sub09 .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+#sub09 .plan-comment .comment-write .comment-edit-btns {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+#sub09 .plan-comment .comment-edit-btns .btn.btn-primary {
+    color: #ff8000;
+    border-radius: 0;
+    border: 1px solid #ff8000;
+    background: #fff!important;
+    outline: 0;
+}
+#sub09 .spot-comment-list {
+    margin: 0 20px;
+}
+#sub09 .plan-comment ul.comment-list {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+}
+#sub09 .plan-comment ul.comment-list li:first-child {
+    border-top: 1px solid #eee;
+}
+#sub09 .plan-comment ul.comment-list li {
+    padding: 15px 0;
+    display: block;
+    border-bottom: 1px solid #eee;
+    clear: both;
+}
+#sub09 .plan-comment ul.comment-list li>div {
+    overflow: hidden;
+}
+#sub09 .plan-comment ul.comment-list li div.profile-img {
+    display: block;
+    float: left;
+    width: 5%;
+    height: 40px;
+    vertical-align: top;
+}
+
+
+
+
+
+ 
+
 #sub09 .story-nav.fix {
     position: fixed;
     top: 400px;
