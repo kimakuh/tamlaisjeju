@@ -90,7 +90,7 @@
                         <div class="plan_nav" style>
                             <div class="plan_nav_prev" data-op="prev"></div>
                             <div class="plan_nav_list">
-                                <div class="plan_nav_btn on" onclick="page_scroll('day_page','1')" data-id="1">D1 제주도</div>
+                                <div class="plan_nav_btn on" onclick="page_scroll('day_page','1')" data-id="1" id="defaultOpen1">D1 제주도</div>
                                 <div class="plan_nav_btn" onclick="page_scroll('day_page','2')" data-id="2">D2 제주도</div>
                                 <div class="plan_nav_btn last" onclick="page_scroll('day_page','3')" data-id="3">D3 제주도</div>
                             </div>
@@ -1429,7 +1429,7 @@
         }
 
         function page_scroll(target, id) {
-            var xtop = parseInt($('.' + target + '[data-id=' + id + ']').offset().top) - 200;
+            var xtop = parseInt($('.' + target + '[data-id=' + id + ']').offset().top) - 175;
             $('.colorTip').hide();
             $('body,html').animate({
                 scrollTop: xtop

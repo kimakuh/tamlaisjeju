@@ -99,9 +99,9 @@
 }
 
 #sub10 .plan .plan_nav .plan_nav_list .plan_nav_btn.on {
-    background: url(../img/sub10/plan_nav_line_on.gif) no-repeat;
+    background: url(../img/sub10/plan_nav_line.gif) no-repeat;
     background-position: left center;
-    color: #ff9320;
+    color: #b3b3b3;
 }
 
 #sub10 .plan .plan_nav .plan_nav_list .plan_nav_btn {
