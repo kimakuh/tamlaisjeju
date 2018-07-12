@@ -365,6 +365,16 @@ visual  - 비주얼
   line-height: 18px;
 }
 
+
+.visual_cont_box .btn {
+  display: block;
+  min-height: 14px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 18px;
+  background-color:none;
+}
+
 .visual_cont_box .weather_area {
   position: absolute;
   right: 20px;
