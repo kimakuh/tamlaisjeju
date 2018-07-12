@@ -367,13 +367,14 @@ visual  - 비주얼
 }
 
 
-.visual_cont_box .btn {
-  display: block;
+.visual_cont_box a.btn {
+  display: inline-block;
+  padding:10px 15px;
   min-height: 14px;
   font-size: 14px;
   color: #fff;
   line-height: 18px;
-  background-color:none;
+  background-color:transparent;
 }
 
 .visual_cont_box .weather_area {
