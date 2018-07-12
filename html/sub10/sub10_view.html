@@ -1519,7 +1519,7 @@
 
         function set_day(day) {
             //console.log('set_day: '+day);
-            var top = 30 * parseInt(day) - 180;
+            var top = 30 * parseInt(day) - 50;
             $('.plan_nav_list').scrollTop(top);
             $('.plan_nav_btn').removeClass('on');
             $('.plan_nav_btn[data-id=' + day + ']').addClass('on');
