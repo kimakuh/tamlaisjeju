@@ -324,7 +324,7 @@ visual  - 비주얼
 }
 
 
-.visual_cont_box .weather{
+.visual_cont_box .weather_area{
   position: absolute;
   right: 20px;
   top: 20px;
@@ -337,7 +337,7 @@ visual  - 비주얼
 }
 
 
-.visual_cont_box .weather img {
+.visual_cont_box .weather_area img {
   display: block;
   margin: 15px auto;
 }
