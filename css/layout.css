@@ -349,6 +349,7 @@ visual  - 비주얼
 
 }
 .visual_cont_box ul li b{
+  display: inline-block;
   float: left;
   height: 14px;
   font-size: 14px;
@@ -356,6 +357,7 @@ visual  - 비주얼
   color: #ccc;
 }
 .visual_cont_box ul li span{
+  display: inline-block;
   float: left;
   min-height: 14px;
   font-size: 14px;
