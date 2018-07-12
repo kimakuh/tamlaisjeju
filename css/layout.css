@@ -477,10 +477,10 @@ visual  - 비주얼
 
 
 
-.view_tab_area{}
+.view_tab_area{overflow: hidden;}
 .view_tab_area ul{}
-.view_tab_area ul li{float: left;width:20%;text-align:center;}
-.view_tab_area ul li a{display:inline-block;padding:20px;border:1px solid #ededed;}
+.view_tab_area ul li{float: left;width:20%;text-align:center;border:1px solid #ededed;}
+.view_tab_area ul li a{display:inline-block;padding:20px;}
 .view_tab_area ul li a.active{border-bottom:3px solid #2168f6}
 
 
