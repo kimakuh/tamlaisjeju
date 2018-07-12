@@ -345,7 +345,7 @@ visual  - 비주얼
   margin-bottom: 15px;
 }
 
-.visual_cont_box ul {}
+.visual_cont_box ul {margin-bottom:30px}
 
 .visual_cont_box ul li {
   margin: 10px 0;
@@ -378,6 +378,13 @@ visual  - 비주얼
   line-height: 18px;
   background-color:transparent;
 }
+
+
+.visual_cont_box a.btn:hover {
+  background-color:#fff;
+}
+
+
 
 .visual_cont_box .weather_area {
   position: absolute;
