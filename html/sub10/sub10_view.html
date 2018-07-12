@@ -1378,7 +1378,6 @@
                     _this_day = $(this).attr('data-id');
                 }
             });
-
             set_day(_this_day);
         });
 
@@ -1393,10 +1392,6 @@
             $('.day_select').val(day);
             if (cur_day != day) {
                 $('.spot_list_box').html(spot_nav[day]);
-                reset_spot_list();
-
-
-
 
             }
             cur_day = day;
