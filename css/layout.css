@@ -8,6 +8,7 @@
  */
 
 /* layout */
+
 /* header */
 
 #header {
@@ -299,32 +300,27 @@ visual  - 비주얼
   height: 450px;
 }
 
-
-
 .visual_cont {
   position: relative;
 }
 
-
-.visual_cont_box{
+.visual_cont_box {
   position: absolute;
   left: 0;
   top: -450px;
-  padding:20px;
-  width:350px;
+  padding: 20px;
+  width: 350px;
   background: rgba(0, 0, 0, .5);
 }
 
-
-.visual_cont_box h3{
+.visual_cont_box h3 {
   font-size: 32px;
   color: #fff;
   line-height: 35px;
   margin-bottom: 25px;
 }
 
-
-.visual_cont_box .weather_area{
+.visual_cont_box .weather_area {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -336,12 +332,10 @@ visual  - 비주얼
   color: #fff;
 }
 
-
 .visual_cont_box .weather_area img {
   display: block;
   margin: 15px auto;
 }
-
 
 .svisual_info_box {
   position: absolute;
@@ -365,7 +359,6 @@ visual  - 비주얼
   color: #ccc;
   font-size: 15px;
 }
-
 
 .svisual_info_box .info_area {}
 
@@ -432,7 +425,7 @@ visual  - 비주얼
 .sns_area ul li a {
   display: block;
   font-size: 16px;
-  color: #535353;
+  color: #2168f6;
 }
 
 .sns_area ul li a .icon {
@@ -472,6 +465,7 @@ visual  - 비주얼
 .sns_area ul li a strong {
   display: block;
   margin: 5px 0;
+  color: #535353;
 }
 
 .location_wrap {
@@ -505,7 +499,6 @@ visual  - 비주얼
   text-align: center;
   word-wrap: break-word;
 }
-
 
 .util_area {
   float: right;
@@ -665,13 +658,10 @@ visual  - 비주얼
 container  - 컨텐츠
 ***************************************************************************************/
 
-
-
-
-
 /**************************************************************************************
 footer  - 푸터
 ***************************************************************************************/
+
 #footer {
   /* background-color: #3c3c3c; */
   background-color: #3d464f;
@@ -724,10 +714,6 @@ footer  - 푸터
   margin-top: 8px;
 }
 
-
-
-
-
 .item_count_area {}
 
 .item_count_area ul {
@@ -766,6 +752,7 @@ footer  - 푸터
   line-height: 14px;
   color: #959595;
 }
+
 /**************************************************************************************
 paging  - 페이징
 ***************************************************************************************/
@@ -864,19 +851,6 @@ paging  - 페이징
 .spr_com.page-first {
   background-position: 0 -100px
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**************************************************************************************
 container - 컨텐츠 스타일
@@ -1067,8 +1041,6 @@ container - 컨텐츠 스타일
   height: 33px;
   background-position: -126px 0;
 }
-
-
 
 /* heading */
 
