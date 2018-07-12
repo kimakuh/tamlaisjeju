@@ -185,8 +185,23 @@
 															<li class="commentRoot">
 																<div>
 																	<div class="profile-img">
-																		<a target="_blank" href="#" class="user">
-																		<img src="../../img/sub09/me.jpg"></a>
+																		<a target="_blank" href="#" class="user"> <img
+																			src="../../img/sub09/me.jpg"></a>
+																	</div>
+																	<div class="comment-contents">
+																		<div class="comment-info">
+																			<div class="name-date">
+																				<a target="_blank" href="#"	class="user"
+																					onclick="WebTrackingSendEvent('/plan', 'replyAuthor', '6cfe50c0f9ee989f');">
+																					<span class="username">이정호</span>
+																				</a>
+																				<span class="comment-author-info-links">
+																					<a target="_blank" href="#">
+																					<img src="../../img/sub09/me.jpg"></a>
+																				</span>
+																				<span class="update-date">2016-07-09 01:36:07</span>
+																			</div>
+																		</div>
 																	</div>
 																</div>
 															</li>
@@ -197,8 +212,8 @@
 										</div>
 									</div>
 								</div>
-							</div> 
-						</div> 
+							</div>
+						</div>
 					</div>
 					<div class="story-nav fix">
 						<nav class="nav-warp" style="height: 678px;">
@@ -345,6 +360,23 @@
 					$('nav').addClass('action');
 				}
 			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+
+			$(document).on("click", ".likes-count", function() {
+				var closestLikesList = $(this).parent().find(".likes-list");
+				$(this).toggleClass("show-likes");
+				closestLikesList.toggleClass("show-likes");
+			});
+
+			$(document).on("click", ".comments-count", function() {
+				var closestLikesList = $(this).parent().find(".comments-list");
+				$(this).toggleClass("show-comments");
+				closestLikesList.toggleClass("show-comments");
+			});
+
 		});
 	</script>
 </body>
