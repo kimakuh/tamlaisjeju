@@ -664,13 +664,6 @@
     top: 10px;
     right: 0;
 }
-#sub09 .plan-comment .comment-edit-btns .btn.btn-primary {
-    color: #ff8000;
-    border-radius: 0;
-    border: 1px solid #ff8000;
-    background: #fff!important;
-    outline: 0;
-}
 #sub09 .view-comment .plan-comment .spot-comment-list {
     margin: 0 10px;
 }
