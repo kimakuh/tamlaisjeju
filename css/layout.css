@@ -285,67 +285,75 @@
   height: 400px;
 }
 
-
-
 /**************************************************************************************
-svisual  - 서브비주얼
+visual  - 비주얼
 ***************************************************************************************/
+
+#visual {
+  margin-top: 168px;
+  width: 100%;
+}
+
+#visual img {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
 
 
 .svisual {}
 
 .svisual img {
-    display: block;
-    height: 400px;
-    width: 100%;
+  display: block;
+  height: 400px;
+  width: 100%;
 }
 
 .svisual_info_box_wrap {
-    width: 1200px;
-    margin: 0 auto;
-    position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .svisual_info_box {
-    position: absolute;
-    left: 0;
-    top: -400px;
-    width: 340px;
-    background: rgba(0, 0, 0, .5);
-    padding: 27px;
-    min-height: 340px;
+  position: absolute;
+  left: 0;
+  top: -400px;
+  width: 340px;
+  background: rgba(0, 0, 0, .5);
+  padding: 27px;
+  min-height: 340px;
 }
 
-
-
 .svisual_info_box h3 {
-    font-size: 32px;
-    color: #fff;
-    line-height: 35px;
-    margin-bottom: 25px;
+  font-size: 32px;
+  color: #fff;
+  line-height: 35px;
+  margin-bottom: 25px;
 }
 
 .svisual_info_box p {
-    margin: 5px 0;
-    color: #ccc;
-    font-size: 15px;
+  margin: 5px 0;
+  color: #ccc;
+  font-size: 15px;
 }
 
 .svisual_info_box .weather {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 90px;
-    height: 90px;
-    background: rgba(0, 0, 0, .3);
-    border-radius: 100%;
-    text-align: center;
-    color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 90px;
+  height: 90px;
+  background: rgba(0, 0, 0, .3);
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
 }
 
 .svisual_info_box .weather img {
-    display: block;
-    margin: 15px auto;
+  display: block;
+  margin: 15px auto;
 }
 
 .svisual_info {}
@@ -353,131 +361,109 @@ svisual  - 서브비주얼
 .svisual_info_box .info_area {}
 
 .svisual_info_box .info_area h4 {
-    padding-bottom: 10px;
-    color: #fff;
-    font-size: 20px;
-    border-bottom: 1px solid #9398a6;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 20px;
+  border-bottom: 1px solid #9398a6;
 }
 
 .svisual_info_box .info_area a {
-    display: inline-block;
-    padding: 8px 15px;
-    border: 1px solid #eee;
-    color: #fff;
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid #eee;
+  color: #fff;
 }
 
 .svisual_info_box .info_area ul {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .svisual_info_box .info_area ul li {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .svisual_info_box .info_area ul li strong {
-    display: block;
-    margin: 15px 0;
-    color: #ccc;
+  display: block;
+  margin: 15px 0;
+  color: #ccc;
 }
 
 .svisual_info_box .info_area ul li span {
-    color: #fff;
+  color: #fff;
 }
 
-
-
-
-
-
 .sns_area {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .sns_area ul {}
 
 .sns_area ul li {
-    float: left;
-    position: relative;
-    width: 14.28%;
-    text-align: center;
-
+  float: left;
+  position: relative;
+  width: 14.28%;
+  text-align: center;
 }
 
 .sns_area ul li:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1px;
-    height: 100px;
-    background-color: #e5e5e5;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100px;
+  background-color: #e5e5e5;
 }
 
 .sns_area ul li:first-child:after {
-    display: none;
+  display: none;
 }
 
 .sns_area ul li a {
-    display: block;
-    font-size: 16px;
-    color: #535353;
+  display: block;
+  font-size: 16px;
+  color: #535353;
 }
 
 .sns_area ul li a .icon {
-    display: inline-block;
-    height: 50px;
-    width: 100%;
+  display: inline-block;
+  height: 50px;
+  width: 100%;
 }
 
 .sns_area ul li a .icon.view_like_icon {
-    background: url('../../img/common/ico_view_like.png') no-repeat 50% 7px;
+  background: url('../../img/common/ico_view_like.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_zzim_icon {
-    background: url('../../img/common/ico_view_zzim.png') no-repeat 50% 7px;
+  background: url('../../img/common/ico_view_zzim.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_review_icon {
-    background: url('../../img/common/ico_view_review.png') no-repeat 50% 7px;
+  background: url('../../img/common/ico_view_review.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_schedule_icon {
-    background: url('../../img/common/ico_view_schedule.png') no-repeat 50% 7px;
+  background: url('../../img/common/ico_view_schedule.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_visit_icon {
-    background: url('../../img/common/ico_view_visit.png') no-repeat 50% 7px;
+  background: url('../../img/common/ico_view_visit.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_hit_icon {
-    background: url('../../img/common/ico_view_hits.png') no-repeat 50% 7px;
+  background: url('../../img/common/ico_view_hits.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_sns_icon {
-    background: url('../../img/common/ico_view_sns.png') no-repeat 50% 7px;
+  background: url('../../img/common/ico_view_sns.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a strong {
-    display: block;
-    margin: 5px 0;
+  display: block;
+  margin: 5px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .location_wrap {
   background-color: #f4f4f4;
@@ -695,12 +681,9 @@ svisual  - 서브비주얼
   background-color: #fff;
 }
 
-
-
-.tab_area .tab.inner_tabs button.active::after{
+.tab_area .tab.inner_tabs button.active::after {
   background-color: #1a7ef8;
 }
-
 
 /* layout_ common */
 
