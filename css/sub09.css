@@ -663,9 +663,8 @@
     word-break: break-all;
     white-space: pre-wrap;
 }
-#sub09 .space{
+#sub09. absolute{
 	text-align: left;
     position: absolute;
-    bottom: -30px;
-}
+    bottom: 10px; 
 }
