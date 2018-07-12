@@ -487,6 +487,11 @@ visual  - 비주얼
   border-left:none;
 }
 
+.view_tab_area ul li:first-child{
+  border-left:1px solid #ededed;
+}
+
+
 .view_tab_area ul li a {
   position: relative;
   display: block;
