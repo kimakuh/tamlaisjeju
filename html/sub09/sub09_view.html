@@ -307,9 +307,18 @@
                 var container = $('.container').height();
                 var content = $('.content').height();
                 if ($(window).scrollTop() > container - content - 100) {
+                    if ($(window).scrollTop() > content - 310) {
+                        $('nav').removeClass('fixed');
+                        $('nav').addClass('absolute');
+                        return;
+                    }
+                    $('nav').removeClass('action');
                     $('nav').removeClass('absolute');
-                    $('div').addClass('space');
-                    return;
+                    $('nav').addClass('fixed');
+                } else { 
+                    $('nav').removeClass('absolute');
+                    $('nav').removeClass('fixed');
+                    $('nav').addClass('action');
                 }
             }); 
         });   
