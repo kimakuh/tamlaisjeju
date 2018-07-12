@@ -72,8 +72,6 @@
                         <button type="button" class="plan_mnu" onclick="openCity(event, '2')">전체일정</button>
                         <div class="plan_mnu_line"></div>
                         <button type="button" class="plan_mnu" data-toggle="modal" data-target="#myModal">지도</button>
-
-                        </button>
                         <div class="plan_mnu_line"></div>
                         <button type="button" class="plan_mnu" onclick="openCity(event, '4')">댓글</button>
                         <div class="plan_mnu_line"></div>
@@ -1001,11 +999,6 @@
                     </div>
 
                 </div>
-
-
-
-
-
                 <!-- The Modal -->
                 <div class="modal fade" id="myModal">
                     <div class="modal-dialog" style="width: 100%; height: 100%;  z-index: 999999;  /* background: rgba(0,0,0,0.7); */ background: white;"
@@ -1031,7 +1024,85 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="day_page_all" id="4">
+                    <div class="comment-wrap" id="plan-detail-comment-wrap-area">
+                            <h3>
+                                댓글 (<span class="plan-comment-count">16</span>)
+                            </h3>
+                            <div class="view-comment">
+                                <div id="plan-detail-comment-area">
+                                    <div class="plan-comment">
+                                        <div class="spot-comment-content">
+                                            <div class="comment-write">
+                                                <div class="my-p">
+                                                    <div class="my-p-img">
+                                                        <div>
+                                                            <img src="../../img/sub09/me.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <textarea class="form-control new-comment-textarea"
+                                                    placeholder="댓글을 입력해주세요."></textarea>
+                                                <div class="comment-edit-btns">
+                                                    <button class="btn btn-primary save-new-comment">저장</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="spot-comment-list">
+                                            <ul class="comment-list">
+                                                <li class="commentRoot">
+                                                    <div>
+                                                        <div class="profile-img">
+                                                            <a target="_blank" href="#" class="user"> <img
+                                                                src="../../img/sub09/me.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="comment-contents">
+                                                            <div class="comment-info">
+                                                                <div class="name-date">
+                                                                    <a target="_blank" href="#" class="user"
+                                                                        onclick="WebTrackingSendEvent('/plan', 'replyAuthor', '829961837daea80d');"><span
+                                                                        class="username">뽀로봉</span> </a> <span class="update-date">2018-02-11
+                                                                        12:11:19</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="comment-txt">
+                                                                <p class="comment-content-for-find">일정짜는데 도움많이 될것같네요.
+                                                                    잘보고갑니당~~</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="commentRoot">
+                                                    <div>
+                                                        <div class="profile-img">
+                                                            <a target="_blank" href="#" class="user"> <img
+                                                                src="../../img/sub09/me.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="comment-contents">
+                                                            <div class="comment-info">
+                                                                <div class="name-date">
+                                                                    <a target="_blank" href="#" class="user"
+                                                                        onclick="WebTrackingSendEvent('/plan', 'replyAuthor', '829961837daea80d');"><span
+                                                                        class="username">뽀로봉</span> </a> <span class="update-date">2018-02-11
+                                                                        12:11:19</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="comment-txt">
+                                                                <p class="comment-content-for-find">일정짜는데 도움많이 될것같네요.
+                                                                    잘보고갑니당~~</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
 
 
 
@@ -1181,7 +1252,6 @@
             });
         });
     </script>
-
     <script>
         // 모달 다이알로그가 열리면 지도 크기 재조정
         $("#myModal").on('shown.bs.modal', function (e) {
@@ -1286,9 +1356,6 @@
         );
         var spot_nav = new Array(); //오른쪽 스팟 네비게이션 html
         $(document).ready(function () {
-            setInterval(function () {
-                callback_list();
-            }, 100);
             $(document).on('click', '.plan_nav_prev, .plan_nav_next', function () {
                 var op = $(this).attr('data-op');
                 var is_target = $('.plan_nav_btn.on').length;
@@ -1315,25 +1382,7 @@
                     }
                 }
             });
-            $(document).on('mouseenter', '[title]', function () {
-                _this_class = $(this).attr('class');
-                console.log(_this_class);
-                //맵안의 라벨 제외
-                if (_this_class != 'labels') {
-                    var position = $(this).offset();
-                    var txt = $(this).attr('title');
-                    $('.colorTip txt').text(txt);
-                    var this_width = parseInt($('.colorTip').width()) / 2;
-                    var top = parseInt(position.top) - 123;
-                    var left = parseInt(position.left) - this_width;
-                    $('.colorTip').css('top', top);
-                    $('.colorTip').css('left', left);
-                    $('.colorTip').show();
-                }
-            });
-            $(document).on('mouseleave', '[title]', function () {
-                $('.colorTip').hide();
-            });
+          
 
             $('.spot_list_box').owlCarousel({
                 navigation: false,
@@ -1352,42 +1401,8 @@
                 $('.plan_nav_btn[data-id=' + _this_day + ']').click();
             });
 
-            $(document).on('click', '.member_btn', function (e) {});
         });
 
-
-
-        function get_last_day(date, tour_day) {
-            var date_arr = date.split('-');
-
-            var yyyy = parseInt(date_arr[0]);
-            var mm = parseInt(date_arr[1]) - 1;
-            var dd = parseInt(date_arr[2]);
-
-            var add_day = parseInt(tour_day) - 1;
-            var cDate;
-            var oDate;
-            var cYear, cMonth, cDay;
-
-
-            dd = (dd * 1) + (add_day * 1);
-
-
-            cDate = new Date(yyyy, mm, dd);
-            cYear = cDate.getFullYear();
-            cMonth = cDate.getMonth() + 1;
-            cDay = cDate.getDate();
-
-            cMonth = cMonth < 10 ? "0" + cMonth : cMonth;
-            cDay = cDay < 10 ? "0" + cDay : cDay;
-
-            return cYear + '.' + fillzero(cMonth, 2) + '.' + fillzero(cDay, 2);
-        }
-
-        function fillzero(obj, len) {
-            obj = '000000000000000' + obj;
-            return obj.substring(obj.length - len);
-        }
 
         function reset_spot_list() { // 스팟리스트 슬라이드 리셋
             $('.spot_list_box').trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
@@ -1432,48 +1447,6 @@
         }
 
 
-
-
-        $(document).on('click', '.like_btn', function () {
-            if ('1360628' != '' && '1360628' != '0') {
-
-                if ($(this).attr('data-on') == 'off') {
-                    $(this).attr('data-on', 'on');
-                    $(this).addClass('on');
-                } else {
-                    $(this).attr('data-on', 'off');
-                    $(this).removeClass('on');
-                }
-
-                $.ajax({
-                    type: 'POST',
-                    url: '/api/common/set_like',
-                    data: {
-                        'srl': '249671',
-                        'like_type': '3'
-                    },
-                    success: function (data) {
-
-                    }
-                });
-            } else {
-                et_modal('365px', '380px', '1', '0', '/ko/member', '2', '1');
-            }
-
-        });
-
-        $(document).on('click', '.share_btn.share', function () {
-            console.log('ee');
-            $(this).toggleClass('on');
-        });
-
-        function fb_share() {
-            window.open(
-                "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.earthtory.com%2Fko%2Fmypage%2Fet_1806060524060304575001528273446%3Ftype%3Dplan_sub%26gdb_srl%3D249671",
-                'service_check',
-                'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no, resizable=no,width=500,height=600'
-            )
-        }
     </script>
 
 

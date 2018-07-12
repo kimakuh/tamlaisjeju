@@ -1251,4 +1251,207 @@
 }
 
 
+#sub10 .comment-wrap {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+#sub10 .comment-wrap h3 {
+    color: #666;
+    font-size: 18px;
+}
+#sub10 .view-comment {
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(125,125,125,.2);
+    -webkit-box-shadow: 0 1px 1px rgba(125,125,125,.2);
+    -moz-box-shadow: 0 1px 1px rgba(125,125,125,.2);
+}
+#sub10 .plan-comment {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    font-size: 0;
+}
+#sub10 .view-comment .plan-comment .spot-comment-content, .view-comment .spot-comment-content {
+    margin: 0 10px;
+}
+#sub10 .view-comment .plan-comment .comment-write {
+    border-top: none;
+}
+#sub10 .plan-comment .comment-write {
+    position: relative;
+    overflow: hidden; 
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    background: #fff;
+}
+#sub10 .plan-comment .my-p {
+    width: 50px;
+    float: left;
+    display: block;
+    margin-right: 0;
+}
+#sub10 .plan-comment .comment-write .my-p-img {
+    width: 40px;
+    overflow: hidden;
+    display: block;
+    margin-top: 2px;
+}
+#sub10 .plan-comment .comment-write .my-p-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+#sub10 .view-comment .plan-comment .comment-write textarea {
+    width: 84%;
+}
+#sub10 .plan-comment .comment-write textarea {
+    float: left;
+    display: block;
+    width: 83%;
+    resize: vertical;
+    height: 40px;
+    padding: 9px 65px 0 10px;
+    margin: 0;
+    font-weight: 400;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #eee;
+    background: #f6f6f6;
+    border-radius: 0;
+}
+#sub10 .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+#sub10 .plan-comment .comment-write .comment-edit-btns {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+#sub10 .plan-comment .comment-edit-btns .btn.btn-primary {
+    color: #ff8000;
+    border-radius: 0;
+    border: 1px solid #ff8000;
+    background: #fff!important;
+    outline: 0;
+}
+#sub10 .view-comment .plan-comment .spot-comment-list {
+    margin: 0 10px;
+}
+#sub10 .plan-comment ul.comment-list {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+}
+#sub10 .plan-comment ul.comment-list li:first-child {
+    border-top: 5px solid #eee;
+}
+#sub10 .plan-comment ul.comment-list li {
+    padding: 15px 0;
+    display: block;
+    border-bottom: 1px solid #eee;
+    clear: both;
+} 
+#sub10 .plan-comment ul.comment-list li>div {
+    overflow: hidden;
+}
+#sub10 .view-comment .plan-comment ul.comment-list li .profile-img {
+    width: 5%;
+}
+#sub10 .plan-comment ul.comment-list li div.profile-img {
+    display: block;
+    float: left;
+    width: 5%;
+    height: 40px;
+    vertical-align: top;
+}
+#sub10 .plan-comment ul.comment-list li div.profile-img a.user {
+    width: 40px;
+    height: 40px;
+    display: block; 
+    overflow: hidden;
+}
+#sub10 .plan-comment ul.comment-list li div.profile-img a.user img {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 20px;
+}
+#sub10 .plan-comment ul.comment-list a.user {
+    display: inline;
+    margin-right: 5px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+}
+#sub10 .view-comment .plan-comment ul.comment-list li .comment-contents {
+    width: 76%;
+}
+#sub10 .plan-comment ul.comment-list li div.comment-contents, .plan-comment ul.comment-list li div.profile-img {
+    display: inline-block;
+    vertical-align: top;
+}
+#sub10 .plan-comment ul.comment-list .comment-contents {
+    position: relative;
+    float: left;
+    width: 76%;
+    margin-left: 1%;
+    color: #666;
+}
+#sub10 .plan-comment ul.comment-list .comment-info .name-date {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+}
+#sub10 .plan-comment ul.comment-list a.user .username {
+    font-weight: 400;
+}
+#sub10 .plan-comment ul.comment-list .name-date .update-date {
+    font-size: 10px;
+    color: #999;
+}
+#sub10 .plan .plan-info-box .info-right-box .update-date {
+    padding-top: 5px;
+}
+#sub10 .plan-comment ul.comment-list .comment-txt {
+    clear: both;
+    width: 100%;
+}
+#sub10 .plan-comment ul.comment-list .comment-txt p {
+    overflow: hidden;
+    width: 95%;
+    line-height: 24px;
+    padding: 2px 5% 0 0;
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    font-weight: 300;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
 
