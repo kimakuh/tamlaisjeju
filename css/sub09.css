@@ -25,6 +25,7 @@
     width: 270px;
     height: 340px;
     z-index: 1001;
+    padding-top:40px;
 }
 #sub09 .content .info-left-box .user-info-box {
     background: #fff;
@@ -765,5 +766,5 @@
 }
 #sub09 .absolute{
 	text-align: left;
-    bottom: 205px; 
+    bottom: 287px; 
 }

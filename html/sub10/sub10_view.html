@@ -72,8 +72,6 @@
                         <button type="button" class="plan_mnu" onclick="openCity(event, '2')">전체일정</button>
                         <div class="plan_mnu_line"></div>
                         <button type="button" class="plan_mnu" data-toggle="modal" data-target="#myModal">지도</button>
-
-                        </button>
                         <div class="plan_mnu_line"></div>
                         <button type="button" class="plan_mnu" onclick="openCity(event, '4')">댓글</button>
                         <div class="plan_mnu_line"></div>
@@ -1431,7 +1429,7 @@
         }
 
         function page_scroll(target, id) {
-            var xtop = parseInt($('.' + target + '[data-id=' + id + ']').offset().top) - 150;
+            var xtop = parseInt($('.' + target + '[data-id=' + id + ']').offset().top) - 200;
             $('.colorTip').hide();
             $('body,html').animate({
                 scrollTop: xtop
