@@ -309,7 +309,7 @@ visual  - 비주얼
 .visual_cont_box{
   position: absolute;
   left: 0;
-  top: 0;
+  top: -450px;
   padding:20px;
   background: rgba(0, 0, 0, .5);
 }
