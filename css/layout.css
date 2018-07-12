@@ -475,6 +475,16 @@ visual  - 비주얼
   color: #535353;
 }
 
+
+
+.view_tab_area{}
+.view_tab_area ul{}
+.view_tab_area ul li{float: left;width:20px;text-align:center;}
+.view_tab_area ul li a{}
+
+
+
+
 .container {
   max-width: 100%;
   margin: 0;
