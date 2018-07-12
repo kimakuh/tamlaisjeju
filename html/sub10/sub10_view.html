@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
@@ -1329,6 +1330,18 @@
             });
 
 
+            $('.spot_list_box').owlCarousel({
+                navigation: false,
+                nav: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                items: 1,
+                navText: ['<img src="../../img/sub10/spot_list_prev.gif">',
+                    '<img src="../../img/sub10/spot_list_next.gif">'
+                ]
+            });
+
             $(document).on('change', '.day_select', function () {
                 var _this_day = $(this).val();
                 $('.plan_nav_btn[data-id=' + _this_day + ']').click();
@@ -1337,7 +1350,29 @@
         });
 
 
-        
+        function reset_spot_list() { // 스팟리스트 슬라이드 리셋
+            $('.spot_list_box').trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+            $('.spot_list_box').find('.owl-stage-outer').children().unwrap();
+            $('.spot_list_box').owlCarousel({
+                navigation: false,
+                nav: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                items: 1,
+                navText: ['<img src="../../img/sub10/spot_list_prev.gif">',
+                    '<img src="../../img/sub10/spot_list_next.gif">'
+                ]
+            });
+            //$('[title]').colorTip({color:'white'});
+        }
+
+        function callback_list() {
+            var items = $('.spot_list_item').length;
+            if (items <= 1) {
+                $('.owl-controls').remove();
+            }
+        }
 
         function page_scroll(target, id) {
             var xtop = parseInt($('.' + target + '[data-id=' + id + ']').offset().top) - 175;
@@ -1363,7 +1398,40 @@
             var stop = $(document).scrollTop();
             var body_height = parseInt($(document).height()) - parseInt($('.list_bottom.page.show').height()) -
                 1000;
-            
+            if (stop > body_height) {
+                $('.right_scroll_box').css('position', 'absolute');
+                $('.right_scroll_box').css('left', '0px');
+                //오른쪽 배너 여기 수정
+                $('.right_scroll_box').css('top', (body_height - 657));
+                $('.right_scroll_box').css('margin-left', '0px');
+
+                $('.plan_nav').css('position', 'absolute');
+                $('.plan_nav').css('left', '50%');
+                $('.plan_nav').css('top', body_height);
+                $('.plan_nav').css('margin-left', '-700px');
+            } else {
+                $('.plan_nav').attr('style', '');
+                if (stop > 473) {
+                    $('.plan_mnu_box').css('position', 'fixed');
+                    $('.plan_mnu_box').css('top', 0);
+                    $('.plan_mnu_box').css('z-index', '10');
+                    $('.plan_mnu_box').css('left', '50%');
+                    $('.plan_mnu_box').css('margin-left', '-546px');
+                    $('.plan_mnu_box').css('width', '1092px');
+
+                    if (stop < parseInt(stop_top) - 700) {
+                        $('.right_scroll_box').css('position', 'fixed');
+                        $('.right_scroll_box').css('width', '348px');
+                        $('.right_scroll_box').css('left', '50%');
+                        $('.right_scroll_box').css('top', '100px');
+                        $('.right_scroll_box').css('margin-left', '198px');
+                    }
+                } else {
+                    $('.plan_mnu_box').attr('style', '');
+                    $('.wrap.page').attr('style', '');
+                    $('.right_scroll_box').attr('style', '');
+                }
+            }
 
             if (stop > 0) {
                 $('.btn_top').fadeIn();
@@ -1377,6 +1445,7 @@
                     _this_day = $(this).attr('data-id');
                 }
             });
+
             set_day(_this_day);
         });
 
@@ -1389,8 +1458,13 @@
             $('.plan_nav_btn').removeClass('on');
             $('.plan_nav_btn[data-id=' + day + ']').addClass('on');
             $('.day_select').val(day);
+            set_map(day);
             if (cur_day != day) {
                 $('.spot_list_box').html(spot_nav[day]);
+                reset_spot_list();
+
+
+
 
             }
             cur_day = day;
