@@ -18,7 +18,7 @@
     position: relative;
     margin: 0 auto 20px;
     z-index: 1;
-    min-height: 1700px;
+    min-height: 1600px;
 } 
 #sub09 .content .plan-info-box .info-left-box {
     position: fixed;
@@ -766,5 +766,5 @@
 }
 #sub09 .absolute{
 	text-align: left;
-    bottom: 287px; 
+    bottom: 257px; 
 }
