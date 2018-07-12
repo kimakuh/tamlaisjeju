@@ -154,9 +154,9 @@
                             <div class="clear"></div>
                         </div>
                     </nav>
-                    <div class="day_page">
+                    <div class="day_page" data-id="1">
                         <div class="day_page_left">
-                            <div class="day_box" data-id="1">
+                            <div class="day_box">
                                 <div class="day_info_box">
                                     <div class="day_txt">DAY1</div>
                                     <div class="day_info">
@@ -445,9 +445,9 @@
 
                     </div>
 
-                    <div class="day_page">
+                    <div class="day_page" data-id="2">
                         <div class="day_page_left">
-                            <div class="day_box" data-id="2">
+                            <div class="day_box">
                                 <div class="day_info_box">
                                     <div class="day_txt">DAY2</div>
                                     <div class="day_info">
@@ -656,9 +656,9 @@
 
                     </div>
 
-                    <div class="day_page">
+                    <div class="day_page" data-id="3">
                         <div class="day_page_left">
-                            <div class="day_box" data-id="3">
+                            <div class="day_box">
                                 <div class="day_info_box">
                                     <div class="day_txt">DAY3</div>
                                     <div class="day_info">
@@ -1414,7 +1414,7 @@
         }
 
         function page_scroll(target, id) {
-            var xtop = parseInt($('.' + target + '[data-id=' + id + ']').offset().top) - 100;
+            var xtop = parseInt($('.' + target + '[data-id=' + id + ']').offset().top) - 50;
             $('.colorTip').hide();
             $('body,html').animate({
                 scrollTop: xtop
