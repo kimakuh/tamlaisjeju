@@ -1425,7 +1425,6 @@
             $('.plan_nav_btn').removeClass('on');
             $('.plan_nav_btn[data-id=' + day + ']').addClass('on');
             $('.day_select').val(day);
-            set_map(day);
             if (cur_day != day) {
                 $('.spot_list_box').html(spot_nav[day]);
                 reset_spot_list();
