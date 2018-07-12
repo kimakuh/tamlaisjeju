@@ -1330,6 +1330,8 @@
             });
 
 
+            
+
             $(document).on('change', '.day_select', function () {
                 var _this_day = $(this).val();
                 $('.plan_nav_btn[data-id=' + _this_day + ']').click();
@@ -1338,7 +1340,13 @@
         });
 
 
-        
+
+        function callback_list() {
+            var items = $('.spot_list_item').length;
+            if (items <= 1) {
+                $('.owl-controls').remove();
+            }
+        }
 
         function page_scroll(target, id) {
             var xtop = parseInt($('.' + target + '[data-id=' + id + ']').offset().top) - 175;
@@ -1362,9 +1370,7 @@
             var right_top = $('.right_scroll_box').offset().top;
             //console.log(stop_top+'/'+right_top+'/'+(parseInt(stop_top)-567));
             var stop = $(document).scrollTop();
-            var body_height = parseInt($(document).height()) - parseInt($('.list_bottom.page.show').height()) -
-                1000;
-            
+            var body_height = parseInt($(document).height()) - parseInt($('.list_bottom.page.show').height()) -  1000;
 
             if (stop > 0) {
                 $('.btn_top').fadeIn();
@@ -1378,6 +1384,7 @@
                     _this_day = $(this).attr('data-id');
                 }
             });
+
             set_day(_this_day);
         });
 

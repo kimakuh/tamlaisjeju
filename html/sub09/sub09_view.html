@@ -163,7 +163,8 @@
 																<a class="">좋아요<span>170</span></a>
 															</div>
 															<div class="comment-count">
-																<a class="show-comments-of-note">댓글<span>100</span></a>
+																<a class="show-comments-of-note"  id="comment-space">댓글<span>100</span></a>
+																								<!-- 스크립트로 이동을 위한 아이디 -->
 															</div>
 														</div>
 													</div>
@@ -207,15 +208,34 @@
 					<div class="story-nav fix">
 						<nav class="nav-warp" style="height: 678px;">
 							<ul>
-								<li><a class="btn-top nav-btn-top story-view-nav-btn"
-									data-id="top" id="top">Top</a></li>
-								<li class="story-view-nav-li"><a class="story-view-nav-btn"
-									data-id="0"> <span>Day</span><span>1</span>
-								</a></li>
-								<li class="story-view-nav-li"><a
-									class="nav-cmt story-view-nav-btn" data-id="comment"> <span
-										class="plan-comment-count">5</span>
-								</a></li>
+								<li>
+									<a class="btn-top nav-btn-top story-view-nav-btn"
+										data-id="top" id="top">Top</a>
+								</li>
+								
+								<li class="story-view-nav-li">
+									<a class="story-view-nav-day-btn" data-id="0"> 
+										<span>Day</span><span>1</span>
+									</a>
+								</li>
+								
+								<li class="story-view-nav-li">
+									<a class="story-view-nav-day-btn" data-id="0"> 
+										<span>Day</span><span>2</span>
+									</a>
+								</li>
+								
+								<li class="story-view-nav-li">
+									<a class="story-view-nav-day-btn" data-id="0"> 
+										<span>Day</span><span>3</span>
+									</a>
+								</li>
+								
+								<li class="story-view-nav-li">
+									<a class="nav-cmt story-view-nav-btn" data-id="comment" id="sm-comment" >
+										 <span class="plan-comment-count">5</span>
+									</a>
+								</li>
 							</ul>
 						</nav>
 					</div>
@@ -241,7 +261,16 @@
 	    }, 500);
 	});
 	</script> 
-
+	
+	<script type="text/javascript">
+	$('#sm-comment').click(function() {      // When arrow is clicked
+	    $('body,#comment-space').animate({
+	        scrollTop : 0                       // Scroll to top of body
+	    }, 500);
+	});
+	</script>
+	
+ 
 	<script>
 		//왼쪽 fixed
 		$(document).ready(function() {
