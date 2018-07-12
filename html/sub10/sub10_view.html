@@ -41,7 +41,7 @@
 
     <div class="container" id="sub10">
 
-        <div id="content" class="wrapper">
+        <div id="content" class="wrapper">  q
 
             <div class="plan wrapper clear">
                 
@@ -862,7 +862,7 @@ function openCity(evt, cityName) {
 $("#myModal").on('shown.bs.modal', function(e){
 e.preventDefault();
 //console.log("Map Modal is shown!");
- 
+map1.relayout();
 map1.updateSize();
 });
 
@@ -941,7 +941,7 @@ map1.updateSize();
                     infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name +
                         '</div>');
                     infowindow.open(map1, marker);
-                    map1.relayout();
+                   
                 });
             }
         });
