@@ -317,7 +317,7 @@ visual  - 비주얼
   font-size: 32px;
   color: #fff;
   line-height: 35px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .visual_cont_box h3 span {
@@ -336,28 +336,28 @@ visual  - 비주얼
 
 .visual_cont_box .tit {
   padding: 10px 0;
-  font-size:16px;
+  font-size: 16px;
   color: #fff;
   font-weight: bold;
   border-bottom: 1px solid #9398a6;
-  margin-bottom:15px;
-}
-.visual_cont_box ul{
-
+  margin-bottom: 15px;
 }
 
+.visual_cont_box ul {}
 
-.visual_cont_box ul li{
-
+.visual_cont_box ul li {
+  margin: 10px 0;
 }
-.visual_cont_box ul li b{
+
+.visual_cont_box ul li b {
   display: block;
   height: 14px;
   font-size: 14px;
   line-height: 18px;
   color: #ccc;
 }
-.visual_cont_box ul li span{
+
+.visual_cont_box ul li span {
   display: block;
   min-height: 14px;
   font-size: 14px;
