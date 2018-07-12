@@ -1053,7 +1053,6 @@
         });
     </script>
 
-
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=35a2267e059228624227866fafbb7d06&libraries=services"></script>
     <script>
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
@@ -1135,6 +1134,9 @@
             map.relayout();
         }
     </script>
+
+
+
     <script>
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
@@ -1159,7 +1161,7 @@
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
                 var content = $('.day_page_all').height();
-                if ($(window).scrollTop() > container - content - 100) {
+                if ($(window).scrollTop() > container - content - 200) {
                     if ($(window).scrollTop() > content - 100) {
                         $('nav').addClass('absolute');
                         $('nav').removeClass('fixed');
@@ -1188,7 +1190,6 @@
             map1.relayout();
         });
     </script>
-
 
     <script>
         var mapContainer = document.getElementById('map2'), // 지도를 표시할 div 
@@ -1271,7 +1272,6 @@
             map1.relayout();
         }
     </script>
-
     <script type="text/javascript">
         var day_data; //일차 데이터
         var sch_data; //상세 일정 데이터
