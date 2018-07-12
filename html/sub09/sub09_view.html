@@ -119,6 +119,7 @@
 										126.570667),
 								level : 3
 							};
+
 							var map = new daum.maps.Map(container, options);
 						</script>
 					</div>
@@ -166,81 +167,34 @@
 															</div>
 														</div>
 													</div>
-													<div class="comment-wrap"
-														id="plan-detail-comment-wrap-area">
-														<div class="view-comment">
-															<div id="plan-detail-comment-area">
-																<div class="plan-comment">
-																	<div class="spot-comment-content">
-																		<div class="comment-write">
-																			<div class="my-p">
-																				<div class="my-p-img">
-																					<div>
-																						<img src="../../img/sub09/me.jpg">
-																					</div>
-																				</div>
-																			</div>
-																			<textarea class="form-control new-comment-textarea"
-																				placeholder="댓글을 입력해주세요."></textarea>
-																			<div class="comment-edit-btns">
-																				<button class="btn btn-primary save-new-comment">저장</button>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="spot-comment-list">
-																		<ul class="comment-list">
-																			<li class="commentRoot">
-																				<div>
-																					<div class="profile-img">
-																						<a target="_blank" href="#" class="user"> <img
-																							src="../../img/sub09/me.jpg">
-																						</a>
-																					</div>
-																					<div class="comment-contents">
-																						<div class="comment-info">
-																							<div class="name-date">
-																								<a target="_blank" href="#" class="user"
-																									onclick="WebTrackingSendEvent('/plan', 'replyAuthor', '829961837daea80d');"><span
-																									class="username">뽀로봉</span> </a> <span
-																									class="update-date">2018-02-11 12:11:19</span>
-																							</div>
-																						</div>
-																						<div class="comment-txt">
-																							<p class="comment-content-for-find">일정짜는데
-																								도움많이 될것같네요. 잘보고갑니당~~</p>
-																						</div>
-																					</div>
-																				</div>
-																			</li>
-																			<li class="commentRoot">
-																				<div>
-																					<div class="profile-img">
-																						<a target="_blank" href="#" class="user"> <img
-																							src="../../img/sub09/me.jpg">
-																						</a>
-																					</div>
-																					<div class="comment-contents">
-																						<div class="comment-info">
-																							<div class="name-date">
-																								<a target="_blank" href="#" class="user"
-																									onclick="WebTrackingSendEvent('/plan', 'replyAuthor', '829961837daea80d');"><span
-																									class="username">뽀로봉</span> </a> <span
-																									class="update-date">2018-02-11 12:11:19</span>
-																							</div>
-																						</div>
-																						<div class="comment-txt">
-																							<p class="comment-content-for-find">일정짜는데
-																								도움많이 될것같네요. 잘보고갑니당~~</p>
-																						</div>
-																					</div>
-																				</div>
-																			</li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-														</div>
+
+													<!-- 라이브리 시티 설치 코드 -->
+													<div id="lv-container" data-id="city"
+														data-uid="MTAyMC8zNzk5NC8xNDUyNA==">
+														<script type="text/javascript">
+															(function(d, s) {
+																var j, e = d
+																		.getElementsByTagName(s)[0];
+
+																if (typeof LivereTower === 'function') {
+																	return;
+																}
+
+																j = d
+																		.createElement(s);
+																j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+																j.async = true;
+
+																e.parentNode
+																		.insertBefore(
+																				j,
+																				e);
+															})(document,
+																	'script');
+														</script>
+														<noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
 													</div>
+													<!-- 시티 설치 코드 끝 -->
 												</div>
 											</div>
 										</div>
@@ -248,8 +202,8 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					
+					</div> 
+
 					<div class="story-nav fix">
 						<nav class="nav-warp" style="height: 678px;">
 							<ul>
@@ -277,8 +231,8 @@
 			/* id 지정을 통해서도 가능합니다. 
 			 $("#header").load("header.html #navbar")
 			 */
-		}); 
-	</script> 
+		});
+	</script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -319,23 +273,6 @@
 				}
 			});
 		});
-	</script>
-	<script> 
-		$(document).ready(function() {
-
-			$(document).on("click", ".likes-count", function() {
-				var closestLikesList = $(this).parent().find(".likes-list");
-				$(this).toggleClass("show-likes");
-				closestLikesList.toggleClass("show-likes");
-			});
-
-			$(document).on("click", ".comments-count", function() {
-				var closestLikesList = $(this).parent().find(".comments-list");
-				$(this).toggleClass("show-comments");
-				closestLikesList.toggleClass("show-comments");
-			});
-
-		}); 
 	</script>
 </body>
 </html>
