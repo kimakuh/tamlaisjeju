@@ -856,6 +856,19 @@ function openCity(evt, cityName) {
     </script>
 
 <script>
+
+// 모달 다이알로그가 열리면 지도 크기 재조정
+$("#myModal").on('shown.bs.modal', function(e){
+e.preventDefault();
+//console.log("Map Modal is shown!");
+ 
+map1.updateSize();
+});
+
+</script>
+
+
+<script>
         var mapContainer = document.getElementById('map2'), // 지도를 표시할 div 
             mapOption = {
                 center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
