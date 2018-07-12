@@ -1111,9 +1111,9 @@
                         <div class="clear"></div>
                         <div class="lbottom_btn_box">
                             <a href="/ko/plan/create" class="lb_btn plan">
-                                일정 만들기			</a>
+                             		</a>
                             <a href="/ko/plan" class="lb_btn view">
-                                여행자 일정보기			</a>
+                                			</a>
                             <div class="clear"></div>
                         </div>
                     </div>
@@ -1458,11 +1458,11 @@
             });
         }
         $(document).scroll(function () {
-            var stop_top = $('#footer').position().top;
+            var stop_top = $('.list_bottom.page').position().top;
             var right_top = $('.right_scroll_box').offset().top;
             //console.log(stop_top+'/'+right_top+'/'+(parseInt(stop_top)-567));
             var stop = $(document).scrollTop();
-            var body_height = parseInt($(document).height()) - parseInt($('#footer').height()) -
+            var body_height = parseInt($(document).height()) - parseInt($('.list_bottom.page.show').height()) -
                 1000;
             if (stop > body_height) {
                 $('.right_scroll_box').css('position', 'absolute');
@@ -1506,7 +1506,7 @@
             }
             var _this_day = '1';
             $('.day_page').each(function () {
-                var xtop = parseInt($(this).offset().top) - 100;
+                var xtop = parseInt($(this).offset().top) - 150;
                 if (stop >= xtop) {
                     _this_day = $(this).attr('data-id');
                 }
