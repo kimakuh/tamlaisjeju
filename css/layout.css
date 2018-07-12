@@ -430,31 +430,31 @@ visual  - 비주얼
 }
 
 .sns_area ul li a .icon.view_like_icon {
-  background: url('../../img/common/ico_view_like.png') no-repeat 50% 7px;
+  background: url('../img/common/ico_view_like.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_zzim_icon {
-  background: url('../../img/common/ico_view_zzim.png') no-repeat 50% 7px;
+  background: url('../img/common/ico_view_zzim.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_review_icon {
-  background: url('../../img/common/ico_view_review.png') no-repeat 50% 7px;
+  background: url('../img/common/ico_view_review.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_schedule_icon {
-  background: url('../../img/common/ico_view_schedule.png') no-repeat 50% 7px;
+  background: url('../img/common/ico_view_schedule.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_visit_icon {
-  background: url('../../img/common/ico_view_visit.png') no-repeat 50% 7px;
+  background: url('../img/common/ico_view_visit.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_hit_icon {
-  background: url('../../img/common/ico_view_hits.png') no-repeat 50% 7px;
+  background: url('../img/common/ico_view_hits.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a .icon.view_sns_icon {
-  background: url('../../img/common/ico_view_sns.png') no-repeat 50% 7px;
+  background: url('../img/common/ico_view_sns.png') no-repeat 50% 7px;
 }
 
 .sns_area ul li a strong {
