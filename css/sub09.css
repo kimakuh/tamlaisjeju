@@ -611,9 +611,10 @@
     display: block; 
     overflow: hidden;
 }
-#sub09 .plan-comment ul.comment-list li div.profile-img a.user .user-img {
+#sub09 .plan-comment ul.comment-list li div.profile-img a.user img {
     width: 100%;
     height: 100%;
+    -webkit-border-radius: 20px;
 }
 #sub09 .plan-comment ul.comment-list a.user {
     display: inline;
