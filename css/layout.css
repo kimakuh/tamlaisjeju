@@ -334,11 +334,33 @@ visual  - 비주얼
 }
 
 .visual_cont_box .tit {
-  padding-bottom: 10px;
+  padding: 10px 0;
   font-size:16px;
   color: #fff;
   font-weight: bold;
   border-bottom: 1px solid #9398a6;
+}
+.visual_cont_box ul{
+
+}
+
+
+.visual_cont_box ul li{
+
+}
+.visual_cont_box ul li b{
+  float: left;
+  height: 14px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ccc;
+}
+.visual_cont_box ul li span{
+  float: left;
+  min-height: 14px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 18px;
 }
 
 .visual_cont_box .weather_area {
