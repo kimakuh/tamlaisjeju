@@ -297,10 +297,8 @@ visual  - 비주얼
 #visual img {
   display: block;
   width: 100%;
-  height: 400px;
+  height: 450px;
 }
-
-
 
 .svisual {}
 
@@ -472,8 +470,11 @@ visual  - 비주얼
 
 .container {
   max-width: 100%;
-  padding: 168px 0 0 0;
   margin: 0;
+}
+
+#content {
+  padding: 168px 0 0 0;
 }
 
 #content h3 {
