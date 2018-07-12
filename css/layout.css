@@ -307,11 +307,11 @@ visual  - 비주얼
   width: 100%;
 }
 
-.svisual_info_box_wrap {
+/* .svisual_info_box_wrap {
   width: 1200px;
   margin: 0 auto;
   position: relative;
-}
+} */
 
 .svisual_info_box {
   position: absolute;
