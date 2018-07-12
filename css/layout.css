@@ -313,6 +313,10 @@ visual  - 비주얼
 }
 
 
+.visual_cont_box{
+  background: rgba(0, 0, 0, .5);
+}
+
 
 .svisual_info_box {
   position: absolute;
