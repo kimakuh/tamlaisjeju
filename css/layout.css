@@ -351,6 +351,7 @@ visual  - 비주얼
 
 .visual_cont_box ul li b {
   display: block;
+  margin-bottom:10px;
   height: 14px;
   font-size: 14px;
   line-height: 18px;
