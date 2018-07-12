@@ -352,8 +352,6 @@ visual  - 비주얼
 }
 .visual_cont_box ul li b{
   display: block;
-  float: left;
-  width:60px;
   height: 14px;
   font-size: 14px;
   line-height: 18px;
@@ -361,7 +359,6 @@ visual  - 비주얼
 }
 .visual_cont_box ul li span{
   display: block;
-  float: left;
   min-height: 14px;
   font-size: 14px;
   color: #fff;
