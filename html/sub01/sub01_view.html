@@ -223,6 +223,8 @@
 
 
 
+
+
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=63e85967272ed81006a618efef0241f0&libraries=services"></script>
             <script>
                 // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
@@ -232,10 +234,9 @@
 
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                     mapOption = {
-                        center: new daum.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+                        center: new daum.maps.LatLng(394358, 31344), // 지도의 중심좌표
                         level: 3 // 지도의 확대 레벨
                     };
-
                 // 지도를 생성합니다    
                 var map = new daum.maps.Map(mapContainer, mapOption);
 
@@ -280,6 +281,9 @@
                     map.relayout();
                 }
             </script>
+
+
+
         </div>
         <!-- content end -->
     </div>
