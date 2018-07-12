@@ -44,9 +44,7 @@
 <body>
 	<div id="header"></div>
 	<div id="sub09" class="container">
-		<div class="tit-img">
-			<img id="plan-title-img" src="">
-		</div>
+		
 		<div class="content">
 			<div class="plan-info-box">
 				<nav class="info-left-box">
@@ -305,8 +303,8 @@
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
                 var content = $('.content').height();
-                if ($(window).scrollTop() > container - content + 200) {
-                    if ($(window).scrollTop() > content - 620) {
+                if ($(window).scrollTop() > container - content - 100) {
+                    if ($(window).scrollTop() > content - 310) {
                         $('div').addClass('absolute');
                         $('div').removeClass('fixed');
                         return;
