@@ -44,7 +44,7 @@
 <body>
 	<div id="header"></div>
 	<div id="sub09" class="container">
-		
+
 		<div class="content">
 			<div class="plan-info-box">
 				<nav class="info-left-box">
@@ -53,7 +53,7 @@
 							<div class="author-img">
 								<a target="_blank" href="#"> <img
 									src="../../img/sub09/iu.jpg">
-								</a> 
+								</a>
 							</div>
 							<div class="author-name">
 								<h3>hangover</h3>
@@ -65,7 +65,7 @@
 							<button class="follower following-btn">동행신청</button>
 							<button class="following follower-btn hide">신청하였습니다</button>
 						</div>
- 
+
 						<div class="author-page-links">
 							<ul>
 								<li><a> <span>여행일정</span> <span class="count">(40)</span>
@@ -84,7 +84,7 @@
 					<div class="plan-info-top">
 						<div class="plan-detail-txt">
 							<h2 class="plan-tit">글쓴이 한 마디</h2>
-							<div class="plan-txt"> 
+							<div class="plan-txt">
 								<pre>같이 가고 싶은 분들 많이 신청해주세요!!</pre>
 							</div>
 							<div class="more-info-con">
@@ -174,20 +174,20 @@
 								</div>
 							</div>
 						</div>
-					</div> 
+					</div>
 					<div class="story-nav fix">
 						<nav class="nav-warp" style="height: 678px;">
-							<ul> 
+							<ul>
 								<li><a class="btn-top nav-btn-top story-view-nav-btn"
 									data-id="top" id="top">Top</a></li>
 								<li class="story-view-nav-li"><a class="story-view-nav-btn"
 									data-id="0"> <span>Day</span><span>1</span>
 								</a></li>
 								<li class="story-view-nav-li"><a
-									class="nav-cmt story-view-nav-btn" data-id="comment"> 
-									<span class="plan-comment-count">5</span>
+									class="nav-cmt story-view-nav-btn" data-id="comment"> <span
+										class="plan-comment-count">5</span>
 								</a></li>
-							</ul> 
+							</ul>
 						</nav>
 					</div>
 					<div class="comment-wrap" id="plan-detail-comment-wrap-area">
@@ -219,7 +219,7 @@
 												<div>
 													<div class="profile-img">
 														<a target="_blank" href="#" class="user"> <img
-															src="../../img/sub09/me.jpg">
+															src="../../img/sub09/me.jpg" class="user-img">
 														</a>
 													</div>
 													<div class="comment-contents">
@@ -253,7 +253,7 @@
 																	class="username">뽀로봉</span> </a> <span class="update-date">2018-02-11
 																	12:11:19</span>
 															</div>
-														</div> 
+														</div>
 														<div class="comment-txt">
 															<p class="comment-content-for-find">일정짜는데 도움많이 될것같네요.
 																잘보고갑니당~~</p>
@@ -281,44 +281,46 @@
 			 */
 		});
 	</script>
-	
-	 <script type="text/javascript">
-      $(document).ready(function(){
-        $("#top").on("click",function(event){
-          // 이동 버튼을 클릭시 pre 태그로 스크롤의 위치가 이동되도록 한다.
-  
-          var offset = $("#header").offset();
- 
-          // offset은 절대 위치를 가져온다. offset.top을 통해 상단의 좌표를 가져온다.
-          // position은 부모를 기준으로한 상대위치를 가져온다.
-          $("html body").animate({scrollTop:offset.top},2000);
-  
-        }); 
-      }); // end of ready()
-    </script>
-	
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#top").on("click", function(event) {
+				// 이동 버튼을 클릭시 pre 태그로 스크롤의 위치가 이동되도록 한다.
+
+				var offset = $("#header").offset();
+
+				// offset은 절대 위치를 가져온다. offset.top을 통해 상단의 좌표를 가져온다.
+				// position은 부모를 기준으로한 상대위치를 가져온다.
+				$("html body").animate({
+					scrollTop : offset.top
+				}, 2000);
+
+			});
+		}); // end of ready()
+	</script>
+
 	<script>
-        //왼쪽 fixed
-        $(document).ready(function () {
-            $(window).bind('scroll', function () {
-                var container = $('.container').height();
-                var content = $('.content').height();
-                if ($(window).scrollTop() > container - content + 200) {
-                    if ($(window).scrollTop() > content - 310) {
-                        $('nav').removeClass('fixed');
-                        $('nav').addClass('absolute');
-                        return;
-                    }
-                    $('nav').removeClass('action');
-                    $('nav').removeClass('absolute');
-                    $('nav').addClass('fixed');
-                } else { 
-                    $('nav').removeClass('absolute');
-                    $('nav').removeClass('fixed');
-                    $('nav').addClass('action');
-                } 
-            }); 
-        });   
-    </script>
-</body>  
+		//왼쪽 fixed
+		$(document).ready(function() {
+			$(window).bind('scroll', function() {
+				var container = $('.container').height();
+				var content = $('.content').height();
+				if ($(window).scrollTop() > container - content + 200) {
+					if ($(window).scrollTop() > content - 310) {
+						$('nav').removeClass('fixed');
+						$('nav').addClass('absolute');
+						return;
+					}
+					$('nav').removeClass('action');
+					$('nav').removeClass('absolute');
+					$('nav').addClass('fixed');
+				} else {
+					$('nav').removeClass('absolute');
+					$('nav').removeClass('fixed');
+					$('nav').addClass('action');
+				}
+			});
+		});
+	</script>
+</body>
 </html>
