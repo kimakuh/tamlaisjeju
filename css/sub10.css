@@ -1183,4 +1183,10 @@
 }
 
 
+#sub10 .modal-dialog {
+    max-width: 100%;
+    margin:1.75rem auto
+}
+
+
 

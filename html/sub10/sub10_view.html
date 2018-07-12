@@ -683,7 +683,7 @@
   
   <!-- The Modal -->
   <div class="modal fade" id="myModal">
-    <div class="modal-dialog" style="position: fixed; width: 100%; height: 100%;  z-index: 999999;  /* background: rgba(0,0,0,0.7); */ background: white;" role="document">
+    <div class="modal-dialog" style="width: 100%; height: 100%;  z-index: 999999;  /* background: rgba(0,0,0,0.7); */ background: white;" role="document">
       <div class="modal-content"style="width: 100%; height: 100%; top: 0px; margin: 0px; display: block;">
   
         <!-- Modal Header -->
@@ -706,17 +706,6 @@
     </div>
   </div>
       
-     
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -938,12 +927,13 @@ function openCity(evt, cityName) {
                     infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name +
                         '</div>');
                     infowindow.open(map1, marker);
+                    map1.relayout();
                 });
             }
         });
 
         function relayout() {
-            map.relayout();
+            map1.relayout();
     }
     </script>
 
