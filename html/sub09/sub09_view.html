@@ -304,20 +304,20 @@
         $(document).ready(function () {
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
-                var content = $('.info-left-box').height();
-                if ($(window).scrollTop() > container - content - 100) {
-                    if ($(window).scrollTop() > content - 310) {
-                        $('nav').addClass('absolute');
-                        $('nav').removeClass('fixed');
+                var content = $('.content').height();
+                if ($(window).scrollTop() > container - content + 200) {
+                    if ($(window).scrollTop() > content - 620) {
+                        $('div').addClass('absolute');
+                        $('div').removeClass('fixed');
                         return;
                     }
-                    $('nav').removeClass('action');
-                    $('nav').removeClass('absolute');
-                    $('nav').addClass('fixed');
+                    $('div').removeClass('action');
+                    $('div').removeClass('absolute');
+                    $('div').addClass('fixed');
                 } else {
-                    $('nav').removeClass('absolute');
-                    $('nav').removeClass('fixed');
-                    $('nav').addClass('action');
+                    $('div').removeClass('absolute');
+                    $('div').removeClass('fixed');
+                    $('div').addClass('action');
                 }
             });
         }); 
