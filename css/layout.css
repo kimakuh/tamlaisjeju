@@ -299,13 +299,6 @@ visual  - 비주얼
   height: 450px;
 }
 
-.svisual {}
-
-.svisual img {
-  display: block;
-  height: 400px;
-  width: 100%;
-}
 
 
 .visual_cont {
@@ -316,6 +309,15 @@ visual  - 비주얼
 .visual_cont_box{
   background: rgba(0, 0, 0, .5);
 }
+
+
+.visual_cont_box h3{
+  font-size: 32px;
+  color: #fff;
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+
 
 
 .svisual_info_box {
