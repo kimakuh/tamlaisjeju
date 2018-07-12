@@ -664,5 +664,8 @@
     white-space: pre-wrap;
 }
 #sub09 .space{
-	
+	text-align: left;
+    position: absolute;
+    bottom: -30px;
+}
 }
