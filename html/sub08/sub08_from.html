@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta property="og:title" content="탐라는제주">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <!-- sub08 -->
+    <link rel="stylesheet" type="text/css" href="../../css/sub08.css">
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+
+    <style type="text/css">
+        @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+    </style>
+</head>
+
+<body>
+    <div id="sub08" class="editor_wrap">
+            <div class="editor-header" id="se_top_menu_area">
+                    <a href="#se_side_bar" title="네비게이션" class="access_hot_key"><span>문서작성 메뉴 바로가기</span></a>
+                    <a href="#se_canvas_frame" title="네비게이션" class="access_hot_key"><span>본문 및 미리보기영역 바로가기</span></a>
+                    <div class="header-default">
+                        <h1>
+                            <a href="http://www.naver.com" target="_blnak" class="logo_naver" onclick="clickcr(this, 'STA.naver', '', '', event);"><span class="blind">네이버 메인</span></a>
+                            <a href="http://blog.naver.com" target="_blnak" class="logo_service blog" onclick="clickcr(this, 'STA.blog', '', '', event);"><span class="blind">블로그 서비스</span></a>
+                        </h1>
+                        <div class="se2_link_wrap" style="">
+                            <a class="se2_link" href="#" style="" id="_se_se2" onclick="clickcr(this,'STA.se2', '', '', event); return false;">이전 버전으로 쓰기</a>
+                            <a class="se_set_default" style="" id="_se_default_eidtor_setting" href="#" onclick="clickcr(this, 'STA.editorset', '', '', event); return false;"><span class="blind">기본에디터설정</span></a>
+                        </div>
+                        <div class="device_group" id="se_preview_ctrl">
+                            <a href="#" title="" class="device_mobile __preview_type" data-previewtype="mobile" onclick="clickcr(this, 'tpb.mview', '', '', event);"><span class="blind">미리보기 영역 모바일 너비로 바꾸기</span></a>
+                            <a href="#" title="" class="device_tablet __preview_type" data-previewtype="tablet" onclick="clickcr(this, 'tpb.tview', '', '', event);"><span class="blind">미리보기 영역 태블릿 너비로 바꾸기</span></a>
+                            <a href="#" title="" class="device_desktop __preview_type is-active" data-previewtype="desktop" onclick="clickcr(this, 'tpb.pview', '', '', event);"><span class="blind">미리보기 영역 PC 너비로 바꾸기</span></a>
+                        </div>
+                        <div class="header-nav">
+                            <ul class="nav_group">
+                                <li class="lst_btn_setting">
+                                <div class="btn_temp_wrap">
+                                    <a href="#" class="btn_temp_save" id="se_top_savedoc_temp_save_btn" onclick="clickcr(this, 'tpb.save', '', '', event);"><span>저장</span></a>
+                                    <a href="#" class="btn_temp_state" id="se_top_savedoc_temp_count_btn" onclick="clickcr(this, 'tpb.spost', '', '', event);"><span id="se_top_savedoc_temp_count_view">6</span></a>
+                                </div>
+                                <div id="se_top_savelist_layer"></div>
+                                </li>
+            
+                                <li class="lst_btn_setting">
+                                    <a href="#" id="se_top_publish_btn" class="btn_type_active" onclick="clickcr(this, 'tpb.publish', '', '', event);"><span>발행</span></a>
+                                    <div id="se_top_publish_layer"></div>
+                                </li>
+                                <li class="lst_btn_setting">
+                                    <a href="#" onclick="return false;" title="도움말" id="se_guide_btn" class="btn_tip"><span class="blind">퀵 가이드 띄우기</span></a>
+                                </li>
+                                <li class="lst_btn_setting">
+                                    <a title="" href="#" id="se_top_setting_btn" class="btn_gnb_more" onclick="clickcr(this, 'tpb.more', '', '', event); return false;"><span class="blind">더보기</span></a>
+                                    <div class="pop_simple pop_gnb_more" id="se_top_setting_contents">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h2>
+                            <!-- [D] 자동저장 텍스트 저장중.../저장됨 -->
+                            <span class="lbl_autoSaving" style="display:none">저장중...</span>
+                        </h2>
+                    </div>
+                    <div id="se_doctoolbar" class="header-docProperty">
+                        <div class="wrap_btn_wholeSetting __document_toolbar"><a role="button" href="#" onclick="clickcr(this, 'dct.font', '', '', event);" class="btn_wholeFF __se_font_select">전체글꼴선택</a>
+            <div class="pop_simple pop_wholeFF __se_font_list">
+                <ul>
+                    <li class="lst">
+                        <a href="#" class="__se_font_list_item menu0" onclick="clickcr(this, 'dct.font1', '', '', event);" data-font="sans-serif" data-fontname="기본서체" title="전체 문서에 서체 적용하기"><span>기본서체</span></a>
+                    </li>
+                    <li class="lst">
+                        <a href="#" class="__se_font_list_item menu1" onclick="clickcr(this, 'dct.font2', '', '', event);" data-font="nanummyeongjo" data-fontname="나눔명조" title="전체 문서에 서체 적용하기"><span>나눔명조</span></a>
+                    </li>
+                    <li class="lst">
+                        <a href="#" class="__se_font_list_item menu2" onclick="clickcr(this, 'dct.font3', '', '', event);" data-font="nanumgothic" data-fontname="나눔고딕" title="전체 문서에 서체 적용하기"><span>나눔고딕</span></a>
+                    </li>
+                    <li class="lst">
+                        <a href="#" class="__se_font_list_item menu3" onclick="clickcr(this, 'dct.font4', '', '', event);" data-font="nanumbarungothic" data-fontname="바른고딕" title="전체 문서에 서체 적용하기"><span>바른고딕</span></a>
+                    </li>
+                    <!--li class="lst">
+                        <a href="#" class="__se_font_list_item menu4 se_fontFamily se_ff_nanumsquare" onclick="clickcr(this, 'dct.font5', '', '', event);" data-font="nanumsquare" data-fontname="나눔스퀘어" title="전체 문서에 서체 적용하기"><span>나눔스퀘어</span></a>
+                    </li-->
+                </ul>
+            </div>
+                            <div class="se_wholeAlign __se_doc_align">
+                                <a href="#" role="button" class="btn_alignLeft __se_align_btn" onclick="clickcr(this, 'dct.left', '', '', event);" data-align="left" title="왼쪽 정렬"><span class="blind">왼쪽 정렬</span></a>
+                                <a href="#" role="button" class="btn_alignCenter __se_align_btn" onclick="clickcr(this, 'dct.center', '', '', event);" data-align="center" title="가운데 정렬"><span class="blind">가운데 정렬</span></a>
+                                <a href="#" role="button" class="btn_alignRight __se_align_btn" onclick="clickcr(this, 'dct.right', '', '', event);" data-align="right" title="오른쪽 정렬"><span class="blind">오른쪽 정렬</span></a>
+                                <a href="#" role="button" class="btn_alignJustify __se_align_btn" onclick="clickcr(this, 'dct.justify', '', '', event);" data-align="justify" title="양끝 정렬"><span class="blind">양끝 정렬</span></a>
+                            </div>
+                            <a role="button" href="#" class="btn_speller" id="se_top_speller_btn" onclick="clickcr(this, 'dct.spellcheck', '', '', event);"><span>맞춤법 검사</span></a>
+                        </div>
+            
+                        <div class="wrap_btn_load">
+                            <a href="#" id="se_top_template_btn" class="btn_load" onclick="clickcr(this, 'tpb.template', '', '', event);"><span>템플릿</span></a>
+                            <div id="se_top_templatelist_layer">
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <!-- 맞춤법검사 상단영역 -->
+                    <div class="speller_header" id="se_top_speller">
+                        <div class="speller_title" id="se_speller_msg">
+                            맞춤법에 어긋난 단어가 <span class="speller_cnt">15개</span> 있습니다.
+                        </div>
+                        <ul class="speller_nav_group">
+                            <li class="lst_btn_setting">
+                                <a role="button" href="#" class="btn_speller_re" id="se_speller_retry_btn" onclick="clickcr(this, 'spc.recheck', '', '', event);"><span>맞춤법 재검사</span></a>
+                            </li>
+                            <li class="lst_btn_setting">
+                                <a role="button" href="#" class="btn_speller_end" id="se_speller_stop_btn" onclick="clickcr(this, 'spc.end', '', '', event);"><span>검사 종료</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+        <div class="editor-container">
+
+        </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script> -->
+
+
+    <!-- <script>
+        // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
+        var infowindow = new daum.maps.InfoWindow({
+            zIndex: 1
+        });
+
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new daum.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+                level: 5 // 지도의 확대 레벨
+            };
+
+
+
+        // 지도를 생성합니다    
+        var map = new daum.maps.Map(mapContainer, mapOption);
+
+        // 장소 검색 객체를 생성합니다
+        var ps = new daum.maps.services.Places();
+
+        // 키워드로 장소를 검색합니다
+        ps.keywordSearch('성산일출봉 관광지', placesSearchCB);
+
+        // 키워드 검색 완료 시 호출되는 콜백함수 입니다
+        function placesSearchCB(data, status, pagination) {
+            if (status === daum.maps.services.Status.OK) {
+
+                // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
+                // LatLngBounds 객체에 좌표를 추가합니다
+                var bounds = new daum.maps.LatLngBounds();
+
+                for (var i = 0; i < data.length; i++) {
+                    displayMarker(data[i]);
+                    bounds.extend(new daum.maps.LatLng(data[i].y, data[i].x));
+                }
+
+                // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
+                map.setBounds(bounds);
+            }
+        }
+
+        // 지도에 마커를 표시하는 함수입니다
+        function displayMarker(place) {
+
+            // 마커를 생성하고 지도에 표시합니다
+            var marker = new daum.maps.Marker({
+                map: map,
+                position: new daum.maps.LatLng(place.y, place.x)
+            });
+
+            // 마커에 클릭이벤트를 등록합니다
+            daum.maps.event.addListener(marker, 'click', function () {
+                // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
+                infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name +
+                    '</div>');
+                infowindow.open(map, marker);
+            });
+        }
+
+
+        function relayout() {
+
+            // 지도를 표시하는 div 크기를 변경한 이후 지도가 정상적으로 표출되지 않을 수도 있습니다
+            // 크기를 변경한 이후에는 반드시  map.relayout 함수를 호출해야 합니다 
+            // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
+            map.relayout();
+        }
+    </script> -->
+
+    <!-- <script>
+        $('.js-timeline').Timeline({
+            dotsPosition: 'top'
+        });
+
+        // Dots Position Top
+        $('.timeline-2').Timeline({
+            itemClass: 'box-item',
+            dotsPosition: 'top',
+            startItem: 'last'
+        });
+    </script> -->
+
+
+</body>
+
+
+</html>
