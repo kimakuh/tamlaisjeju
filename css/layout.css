@@ -329,6 +329,10 @@ visual  - 비주얼
   color: #fff;
 }
 
+.visual_cont_box .hashtag {
+  color: #ccc;
+}
+
 .visual_cont_box .weather_area {
   position: absolute;
   right: 20px;
