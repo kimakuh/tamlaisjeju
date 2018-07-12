@@ -375,7 +375,7 @@
     font-weight: 300;
     text-decoration: none;
 }
-#sub09 .spot-contents .author-info .conts-label .spot-like-count a {
+#sub09 .spot-contents .author-info .conts-label .like-count a {
     background: url(../img/sub09/like.png) 0 3px no-repeat;
 }
 #sub09 .spot-contents .author-info .conts-label div a {
@@ -392,7 +392,7 @@
 #sub09 .spot-contents .author-info .conts-label div span {
     padding: 0 0 0 5px;
 }
-#sub09 .spot-contents .author-info .conts-label .spot-commont-count a {
+#sub09 .spot-contents .author-info .conts-label .comment-count a {
     background: url(../img/sub09/comment.png) 0 4px no-repeat;
     cursor: pointer;
 }
@@ -502,7 +502,7 @@
 }
 #sub09 .plan-comment .comment-write {
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
     padding: 10px 0;
     border-top: 1px solid #eee;
     background: #fff;
