@@ -565,7 +565,7 @@
 #sub09 .comment-wrap {
     position: relative;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 #sub09 .comment-wrap h3 {
     color: #666;
@@ -766,5 +766,6 @@
 }
 #sub09 .absolute{
 	text-align: left;
-    bottom: 257px; 
+    bottom: 207px; 
 }
+ 
