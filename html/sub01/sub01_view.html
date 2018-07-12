@@ -195,34 +195,26 @@
             </div>
             <div id="tab_cont04" class="tabcontent">
                 <h3>리뷰1</h3>
-                <div id="commentsDiv"></div>
-                <script type="text/javascript">
-                    // Optional - define templates to change graphic layout in the Comments Plugin
-                    var templates= {
-                      //  commentsPlugin: '<span style="color:blue;">This activates the compose box:</span><span class="gig-comments-composebox"> </span><br>' +
-                      //                  '<span style="color:blue;">This is the more option(appears at the bottom):</span><span class="gig-comments-more"> </span>',
-                      //  header:         '<span style="color:red;">This is the header:</span><span class="gig-comments-header-left"> </span><br>',
-                      //  comment: '<span style="color:green;">This is the username:</span> <span class="gig-comment-username" style="color:blue;"></span><br>' +
-                      //              '<br><br><span style="color:green;">This is the Photo: </span><span class =gig-comment-photo style="float:right;"></span><br>'
-                    };
-                     
-                    var params =
-                    {
-                        // Required parameters:
-                        categoryID: 'Developers Public Comments',
-                        containerID: 'commentsDiv',
-                        streamID: 'foo6',
-                        version: 2,
-                         
-                        // Optional parameters:
-                        templates: templates,
-                        streamTitle: 'myTitle',
-                        deviceType: 'auto',
-                        cid: ''
-                    };
-                    // Load the Comments Plugin
-                    gigya.comments.showCommentsUI(params);
-                </script>
+
+<!-- 라이브리 시티 설치 코드 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNzk5NC8xNDUyNA==">
+        <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+    
+           if (typeof LivereTower === 'function') { return; }
+    
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+    
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+        </script>
+    <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+    </div>
+    <!-- 시티 설치 코드 끝 -->
+
             </div>
             <div id="tab_cont05" class="tabcontent">
                 <h3>리뷰2</h3>
