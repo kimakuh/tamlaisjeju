@@ -320,6 +320,12 @@ visual  - 비주얼
   margin-bottom: 25px;
 }
 
+.visual_cont_box h3 span {
+  display:block;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .visual_cont_box .weather_area {
   position: absolute;
   right: 20px;
