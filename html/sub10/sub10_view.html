@@ -92,9 +92,9 @@
                         <div class="plan_nav" style>
                             <div class="plan_nav_prev" data-op="prev"></div>
                             <div class="plan_nav_list">
-                                <div class="plan_nav_btn on" onclick="page_scroll('day_box','1')" data-id="1">D1 제주도</div>
-                                <div class="plan_nav_btn" onclick="page_scroll('day_box','2')" data-id="2">D2 제주도</div>
-                                <div class="plan_nav_btn last" onclick="page_scroll('day_box','3')" data-id="3">D3 제주도</div>
+                                <div class="plan_nav_btn on" onclick="page_scroll('day_page','1')" data-id="1">D1 제주도</div>
+                                <div class="plan_nav_btn" onclick="page_scroll('day_page','2')" data-id="2">D2 제주도</div>
+                                <div class="plan_nav_btn last" onclick="page_scroll('day_page','3')" data-id="3">D3 제주도</div>
                             </div>
                             <div class="plan_nav_next" data-op="next"></div>
                         </div>
@@ -154,9 +154,9 @@
                             <div class="clear"></div>
                         </div>
                     </nav>
-                    <div class="day_page">
+                    <div class="day_page" data-id="1">
                         <div class="day_page_left">
-                            <div class="day_box" data-id="1">
+                            <div class="day_box">
                                 <div class="day_info_box">
                                     <div class="day_txt">DAY1</div>
                                     <div class="day_info">
@@ -445,9 +445,9 @@
 
                     </div>
 
-                    <div class="day_page">
+                    <div class="day_page" data-id="2">
                         <div class="day_page_left">
-                            <div class="day_box" data-id="2">
+                            <div class="day_box">
                                 <div class="day_info_box">
                                     <div class="day_txt">DAY2</div>
                                     <div class="day_info">
@@ -656,9 +656,9 @@
 
                     </div>
 
-                    <div class="day_page">
+                    <div class="day_page" data-id="3">
                         <div class="day_page_left">
-                            <div class="day_box" data-id="3">
+                            <div class="day_box">
                                 <div class="day_info_box">
                                     <div class="day_txt">DAY3</div>
                                     <div class="day_info">
@@ -1414,7 +1414,7 @@
         }
 
         function page_scroll(target, id) {
-            var xtop = parseInt($('.' + target + '[data-id=' + id + ']').offset().top) - 100;
+            var xtop = parseInt($('.' + target + '[data-id=' + id + ']').offset().top) - 150;
             $('.colorTip').hide();
             $('body,html').animate({
                 scrollTop: xtop
