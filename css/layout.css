@@ -484,14 +484,13 @@ visual  - 비주얼
   width: 20%;
   text-align: center;
   border: 1px solid #ededed;
-  border-left:none;
+  border-left: none;
   box-sizing: border-box;
 }
 
-.view_tab_area ul li:first-child{
-  border-left:1px solid #ededed;
+.view_tab_area ul li:first-child {
+  border-left: 1px solid #ededed;
 }
-
 
 .view_tab_area ul li a {
   position: relative;
@@ -510,20 +509,21 @@ visual  - 비주얼
   background-color: #2168f6
 }
 
-
-
-
 .row {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox;
+  /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap;
+  /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
+
 .column {
-  -ms-flex: 25%; /* IE10 */
+  -ms-flex: 25%;
+  /* IE10 */
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
@@ -535,33 +535,24 @@ visual  - 비주얼
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+
 @media screen and (max-width: 800px) {
   .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .container {
   max-width: 100%;
@@ -1909,11 +1900,16 @@ board_list - 게시판 리스트
   height: 225px;
   border-left: none;
   border-right: none;
+  padding: 20px 0;
+}
+
+.board_list.type02 .box .img_area img {
+height:180px;
 }
 
 .board_list.type02 .img_area {
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
 .board_list.type02 .box_cont_area {
