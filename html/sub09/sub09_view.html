@@ -224,8 +224,8 @@
 										<span>Day</span><span>3</span>
 									</a>
 								</li>
-								<li class="story-view-nav-li"><a
-									class="nav-cmt story-view-nav-btn" data-id="comment" id="sm-comment">
+								<li class="story-view-nav-li" id="sm-comment">
+								<a class="nav-cmt story-view-nav-btn" data-id="comment" >
 									 <span class="plan-comment-count">5</span>
 								</a></li>
 							</ul>
@@ -255,16 +255,8 @@
 	</script> 
 	
 	<script type="text/javascript">
-	$('.story-view-nav-day-btn').click(function() {      // When arrow is clicked
-	    $('.story-conts').animate({
-	        scrollTop : 0                       // Scroll to top of body
-	    }, 500);
-	});
-	</script> 
-	
-	<script type="text/javascript">
 	$('#sm-comment').click(function() {      // When arrow is clicked
-	    $('$wrapper').animate({
+	    $('#wrapper').animate({
 	        scrollTop : 0                       // Scroll to top of body
 	    }, 500);
 	});
