@@ -1458,11 +1458,11 @@
             });
         }
         $(document).scroll(function () {
-            var stop_top = $('.list_bottom.page').position().top;
+            var stop_top = $('#footer').position().top;
             var right_top = $('.right_scroll_box').offset().top;
             //console.log(stop_top+'/'+right_top+'/'+(parseInt(stop_top)-567));
             var stop = $(document).scrollTop();
-            var body_height = parseInt($(document).height()) - parseInt($('.list_bottom.page.show').height()) -
+            var body_height = parseInt($(document).height()) - parseInt($('#footer').height()) -
                 1000;
             if (stop > body_height) {
                 $('.right_scroll_box').css('position', 'absolute');
