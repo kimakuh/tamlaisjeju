@@ -30,7 +30,7 @@
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
     </style>
 </head>
-
+ 
 <body>
     <div id="header"></div>
     <div id="sub08" class="sub08 container">
@@ -108,8 +108,8 @@
                     <div class="nav_menu">
 
                         <div class="treemenu">
-                            <div level="0" onclick="fnMove('1')">
-                                <span class="lbl">1일차 </span>
+                            <div level="0" onclick="fnMove('1')" class="lbl_titl">
+                                <span class="lbl ">1일차 </span>
                             </div>
                             <div level="1" class="under">
                                 <span class="lbl"> 유채꽃밭 </span>
@@ -117,7 +117,7 @@
                             <div level="1" class="under">
                                 <span class="lbl"> 해물파스타 </span>
                             </div>
-                            <div level="0" onclick="fnMove('2')">
+                            <div level="0" onclick="fnMove('2')" class="lbl_titl">
                                 <span class="lbl"> 2일차 </span>
                             </div>
                             <div level="1" class="under">
@@ -126,7 +126,7 @@
                             <div level="1" class="under">
                                 <span class="lbl"> 심슨 </span>
                             </div>
-                            <div level="0" onclick="fnMove('3')">
+                            <div level="0" onclick="fnMove('3')" class="lbl_titl">
                                 <span class="lbl"> 3일차 </span>
                             </div>
                             <div level="1" class="under">
@@ -812,6 +812,10 @@
                     this.setOpen($el);
                     $('.under').removeClass('opened');
                     $('.under').addClass('closed');
+                    $('.lbl_titl').removeClass('color_active');
+                    $('.lbl_titl').removeClass('color_off');
+                    ($el).addClass('color_off');
+                    ($el).addClass('color_active');
                     this.getGroup($el).forEach(function ($item, index) {
                         if (!index) return true;
                         this.showItem($item);

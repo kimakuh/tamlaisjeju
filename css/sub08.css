@@ -540,6 +540,7 @@ timeline fixed
 .treemenu [level="0"] .lbl {
     font-size: 16px;
     font-weight: bold;
+
 }
 
 .treemenu [level] {
@@ -553,6 +554,14 @@ timeline fixed
 
 .treemenu [level].opened {
     max-height: 50px;
+}
+
+.color_active {
+    color: #dc4a38;
+}
+
+.color_off {
+    
 }
 
 .treemenu [level="1"] .lbl {
@@ -585,7 +594,6 @@ timeline fixed
 }
 
 .treemenu .lbl {
-    color: black;
     padding: 15px;
     display: inline-block;
 }
