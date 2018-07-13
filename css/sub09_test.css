@@ -59,8 +59,7 @@
 
 #sub09 .content .aside_wrap .info-left-box .user-info-box .author-box h5::before {
 	display:none;
- 
-}
+ }
 
 #sub09 .content .aside_wrap .info-left-box .user-info-box .author-box .author-name {
     display: block;
@@ -257,3 +256,34 @@
 	height: 300px;
 	width: 100%;
 }
+/*cont_wrap의 day시작*/
+#sub09 .story-day {
+    width: 100%;
+}
+
+#sub09 .story-day .spot-container {
+    width: 100%;
+    height: 700px;
+    margin: 30px 0 40px;
+    padding-left: 2px;
+    border-radius: 0;
+}
+
+#sub09 .story-conts {
+    width: 920px;
+    margin-left: -16px;
+    padding-top: 10px;
+    background: url(../../img/sub09/left_line.png) 14px 0 repeat-y;
+}
+#sub09 .story-conts h3 {
+    top: -10px;
+    left: 2px;
+    display: block;
+    width: 100%;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #999;
+    background: url(../../img/sub09/back_point.jpg) 10px 6px no-repeat;
+}
+
+/*cont_wrap의 day시작*/

@@ -167,21 +167,35 @@
                         </div>
                     </div>
                 </div>
-                <!-- -->
+                <!-- cont_wrap 종료 -->
+                <!--지도 시작-->
                 <div id="map">
-						<script type="text/javascript"
-							src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a39a869b2b427425c966081cb35dc719"></script>
-						<script>
-							var container = document.getElementById('map');
-							var options = {
-								center : new daum.maps.LatLng(33.450701,
-										126.570667),
-								level : 3
-							};
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a39a869b2b427425c966081cb35dc719"></script>
+                    <script>
+                        var container = document.getElementById('map');
+                        var options = {
+                            center: new daum.maps.LatLng(33.450701,
+                                126.570667),
+                            level: 3
+                        };
 
-							var map = new daum.maps.Map(container, options);
-						</script>
-					</div>
+                        var map = new daum.maps.Map(container, options);
+                    </script>
+                </div>
+                <!--지도 종료-->
+                <!--cont_wrap의 day시작-->
+                <div class="story-day">
+                    <div class="spot-container">
+                        <div class="story-conts">
+                            <h3>
+                                <strong>Day
+                                    <span>1</span>
+                                </strong>
+                                <span class="desc">2016.07.12(Tue)</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- cont_wrap 끝남 -->
         </div>
