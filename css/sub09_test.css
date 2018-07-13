@@ -100,7 +100,7 @@
     margin: 10px 0 5px;
 }
 
-#sub09 .follower .following-btn  {
+#sub09 .content .aside_wrap .info-left-box .user-info-box .follower-btns .follower  {
     width: 100px;
     background: #fff;
     border: 1px solid #ff8000;
@@ -109,7 +109,7 @@
     outline: 0;
 }
 
-#sub09 .follower-btns .following {
+#sub09 .content .aside_wrap .info-left-box .user-info-box .follower-btns .following {
     width: 100px;
     background: #fff;
     border: 1px solid #000;
