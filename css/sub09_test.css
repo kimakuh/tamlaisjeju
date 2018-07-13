@@ -217,16 +217,16 @@
     font-weight: 700;
     border-bottom: 1px solid #d0d0d0;
 }
-#sub09 .content .cont_wrap .plan-info-top .plan-txt {
+#sub09  .plan-info-top .plan-txt {
     line-height: 1.4;
     color: #666;
     font-size: 18px;
     font-weight: 300;
 }
-#sub09 .content .cont_wrap .plan-info-top .plan-txt .more-info-con {
+#sub09  .plan-info-top .plan-txt .more-info-con {
     padding: 15px 0 0;
 }
-#sub09 .content .cont_wrap .plan-info-top .plan-txt .more-info-con .theme-round p {
+#sub09 .plan-info-top .plan-detail-txt .more-info-con .theme-round p {
     display: inline-block;
     line-height: 16px;
     margin: 0;
@@ -235,5 +235,21 @@
     color: #999;
     border-right: 1px solid #eee;
     padding: 0 5px 0 0;
+}
+#sub09 .plan-info-top .plan-detail-txt .more-info-con .update-date {
+    padding-top: 5px;
+}
+#sub09 .plan-info-top .plan-detail-txt .more-info-con .update-date>span:first-child {
+    border-left: none;
+    padding: 0 10px 0 0;
+}
+#sub09 .plan-info-top .plan-detail-txt .more-info-con .update-date>span {
+    display: inline-block;
+    line-height: 16px;
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+    border-left: 1px solid #eee;
+    padding: 0 10px;
 }
 /*cont-wrap의 종료*/
