@@ -49,13 +49,13 @@
 
 /*the container must be positioned relative:*/
 
-#sub10 .custom-select-1 {
+#sub10 .custom-select1 {
     position: relative;
     font-family: Arial;
     float: left;
 }
 
-#sub10 .custom-select-1 select {
+#sub10 .custom-select1 select {
     display: none;
     /*hide original SELECT element:*/
 }
