@@ -3,7 +3,8 @@
 #sub09 .content{
 	width: 1200px;
 	margin: 0 auto;
-	background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.1);
+    padding-top: 168px;
 }
 
 #sub09 .content .aside_wrap {
