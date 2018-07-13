@@ -181,13 +181,13 @@
     cursor: pointer;
     border-left: 5px solid #ddd;
 }
-#sub09 .story-nav a {
+#sub09 .content .aside_wrap .info-right-box .nav-warp a {
     text-decoration: none!important;
 }
-#sub09 .story-nav ul li a span {
+#sub09 .content .aside_wrap .info-right-box .nav-warpv ul li a span {
     padding-right: 3px;
 }
-#sub09 .story-nav .nav-cmt {
+#sub09 .content .aside_wrap .info-right-box .nav-warp .nav-cmt {
     height: 30px;
     line-height: 30px;
     padding-left: 30px;
