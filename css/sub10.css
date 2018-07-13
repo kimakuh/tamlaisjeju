@@ -54,7 +54,12 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .menu_wrap .plan_out_btn {
+#sub10_planner_header .topnav .plan_out {
+    float: right;
+    padding: 10px;
+}
+
+#sub10_planner_header .topnav .plan_out .plan_out_btn {
     float: right;
     width: 100px;
     height: 42px;
