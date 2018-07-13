@@ -659,26 +659,34 @@
                             <div class="list_search_box">
                                 <input type="text" id="input_search" placeholder="장소 검색">
                             </div>
-                            <div class="list_category_box" id="category">
-                                <div id="AT4" data-order="0">
-                                    <img src="../../img/sub10/ic_300_c.png" alt="관광지">
-                                </div>
-                                <div id="FD6" data-order="1">
-                                    <img src="../../img/sub10/ic_200_a.png" alt="음식">
-                                </div>
-                                <div id="MT1, CS2, CE7" data-order="2">
-                                    <img src="../../img/sub10/ic_400_a.png" alt="쇼핑">
-                                </div>
-                                <div id="AD5" data-order="3">
-                                    <img src="../../img/sub10/ic_100_a.png" alt="숙박">
-                                </div>
-                                <div class="list_cat_item fl" data="5">
+                            <ul class="list_category_box" id="category">
+                                <li id="AT4" data-order="0">
+                                    <span class="category_bg bank">
+                                        <img src="../../img/sub10/ic_300_c.png" alt="관광지">
+                                    </span>
+                                </li>
+                                <li id="FD6" data-order="1">
+                                    <span class="category_bg cafe">
+                                        <img src="../../img/sub10/ic_200_a.png" alt="음식">
+                                    </span>
+                                </li>
+                                <li id="MT1, CS2, CE7" data-order="2">
+                                    <span class="category_bg mart">
+                                        <img src="../../img/sub10/ic_400_a.png" alt="쇼핑">
+                                    </span>
+                                </li>
+                                <li id="AD5" data-order="3">
+                                    <span class="category_bg store">
+                                        <img src="../../img/sub10/ic_100_a.png" alt="숙박">
+                                    </span>
+                                </li>
+                                <li class="list_cat_item fl" data="5">
                                     <img src="../../img/sub10/ic_000_a.png" alt="찜하기">
-                                </div>
+                                </li>
                                 <div class="clear"></div>
 
                             
-                            </div>
+                                </ul>
                         </div>
                         <div class="list_box connectedSortable">
                             <div class="day_spot_item ui-draggable" data="0" data-set_day="0" data-rel_srl="7319" data-pl_type="0" data-no="0" data-pl_cat="301"
@@ -835,11 +843,6 @@
                         </div>
                     </div>
                     <div id="map" class="fr"></div>
-                    
-                    <div id="menu_wrap" class="bg_white">
-                            <ul id="placesList"></ul>
-                            <div id="pagination"></div>
-                        </div>
                 </div>
                 <div class="clear"></div>
             </div>
