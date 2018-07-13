@@ -12,6 +12,11 @@
     margin-right: 100px;
 }
 
+#sub10_planner_header .topnav .menu_wrap {
+    float: left;
+    margin-left: 100px;
+}
+
 #sub10_planner_header .topnav .menu_wrap .people {
     float: left;
     width: 170px;
