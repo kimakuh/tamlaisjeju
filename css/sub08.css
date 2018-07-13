@@ -1071,7 +1071,7 @@ margin-bottom: 10px;
     margin-bottom: 0;
 }
 
-/* 콘텐츠박스 */
+/***** 콘텐츠박스 *******/
 
 #sub08  .editor_container .content_wrap {
     position: relative;
@@ -1087,13 +1087,18 @@ margin-bottom: 10px;
     margin-left: 33%;
 }
 
+/** 타이틀/제목 **/
+#sub08 .editor_container .content_wrap .title_wrap {
+    margin-bottom: 10px;
+}
+
 #sub08 .editor_container .content_wrap .title_text {
     font-size: 32px;
     line-height: 42px;
     cursor: auto;
     padding-right: 0;
     padding-left: 0;
-    padding-bottom: 31px;
+    padding-bottom: 15px;
     width: auto;
     max-width: 700px;
     border-bottom: 1px solid #EEE;
@@ -1123,3 +1128,47 @@ margin-bottom: 10px;
     
 }
 
+/* 지도 */
+#sub08 .editor_container .map_wrap .contnet_map {
+    max-width: 700px;
+    margin-bottom: 10px;
+}
+
+/* 콘텐트 */
+
+#sub08 .editor_container .content_wrap .post_wrap .post_text {
+    font-size: 32px;
+    line-height: 42px;
+    cursor: auto;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 15px;
+    width: auto;
+    max-width: 700px;
+    border-bottom: 1px solid #EEE;
+}
+
+#sub08 .editor_container .content_wrap .post_wrap .post_text .title_textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    outline: 0;
+    border: none;
+    background: 0 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-align: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+    resize: none;
+    
+}
+
+/* 일정 */
+#sub08 .editor_container .content_wrap .cal_warp .cal * {
+    display: inline-block;
+}
