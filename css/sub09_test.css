@@ -146,7 +146,6 @@
 /*right-box의 실행*/
 #sub09 .content .aside_wrap .info-right-box {
     width: 100px;
-    height: 300px;
     background: rgba(0,0,0,0.1);
     position: absolute;
     right: 370px;
