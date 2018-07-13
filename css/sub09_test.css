@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-#content .aside_wrap {
-    position: fixed;
+#sub09 .content .aside_wrap {
     width: 100%;
     height: 340px;
     padding-top:40px;
