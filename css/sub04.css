@@ -374,21 +374,21 @@ all - 여행필수정보 전체
     margin-top: 80px!important;
 }
 
-.tab_area button.on {
+#sub04 .tab_area button.on {
     background: none;
     background-color: #fff;
     border: 2px solid #2168f6;
     border-bottom: 0;
 }
 
-.tab_area button:first-child {
+#sub04 .tab_area button:first-child {
     width: 33.333334%;
     background: none;
     background-color: #f4f4f4;
     border-left: 1px solid #e5e5e5;
 }
 
-.tab_area .tab_btn {
+#sub04 .tab_area .tab_btn {
     float: left;
     width: 33.333333%;
     height: 50px;
@@ -396,4 +396,15 @@ all - 여행필수정보 전체
     background-color: #f4f4f4;
     border-top: 1px solid #e5e5e5;
     border-bottom: 2px solid #2168f6;
+}
+
+#sub04 .tab_area button.on span {
+    color: #2168f6;
+}
+
+#sub04 .tab_area button span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #959595;
+    line-height: 47px;
 }
