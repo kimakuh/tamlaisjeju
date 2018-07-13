@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #sub09 .content{
-	width: 1200px;
+	width: 100%;
 	margin: 0 auto;
     background: rgba(0,0,0,0.1);
     padding-top: 188px;
@@ -14,7 +14,7 @@
     position: fixed;
 } 
 #sub09 .content .cont_wrap {
-    width: 75%;
+    width: 1200px;
     height: 1500px;
     background: rgba(0,0,0,0.1);
     padding-left: 280px;
