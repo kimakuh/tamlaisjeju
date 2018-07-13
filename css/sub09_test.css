@@ -199,3 +199,41 @@
     background: url(../img/sub09/comment.png) 10px 8px no-repeat;
 }
 /*right-box의 종료*/
+
+/*cont-wrap의 시작*/
+#sub09 .content .cont_wrap .plan-info-top .plan-detail-txt .plan-tit {
+    padding: 15px;
+    margin: 0 0 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(125,125,125,.2);
+}
+#sub09 .content .cont_wrap .plan-info-top .plan-detail-txt {
+    padding: 5px 0 0;
+}
+#sub09 .content .cont_wrap .plan-info-top h2.plan-tit {
+    color: #333;
+    padding: 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #d0d0d0;
+}
+#sub09 .content .cont_wrap .plan-info-top .plan-txt {
+    line-height: 1.4;
+    color: #666;
+    font-size: 18px;
+    font-weight: 300;
+}
+#sub09 .content .cont_wrap .plan-info-top .plan-txt .more-info-con {
+    padding: 15px 0 0;
+}
+#sub09 .content .cont_wrap .plan-info-top .plan-txt .more-info-con .theme-round p {
+    display: inline-block;
+    line-height: 16px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999;
+    border-right: 1px solid #eee;
+    padding: 0 5px 0 0;
+}
+/*cont-wrap의 종료*/
