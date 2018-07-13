@@ -945,11 +945,181 @@ timeline fixed
 /**************************************************************************************
 여행기 에디터
 ***************************************************************************************/
+html, body {
+    height: 100%;
+}
 
-#sub08 .editor_wrap {
+
+/* 헤더 */
+#sub08.editor_wrap { 
+    width: 100%;
     min-width: 1024px;
     min-height: 100%;
-    overflow: hidden;
-    position: relative;
-    background-color: yellow;
+    height: 100%;
 }
+
+.editor-header {
+    height: 88px;
+    min-width: 1024px;
+    width: 100%;
+    background-color: orange;
+    position: fixed;    
+    z-index: 99999;
+}
+
+.editor-header .header-default {
+    background-color: white;
+    height: 46px;
+}
+
+.editor-header .header-default .header-nav {
+    float: right;
+    line-height: 46px;
+    margin-right: 30px;
+    height: 31px;
+}
+.editor-header .header-default .header-nav button {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 18px 10px 18px;
+    outline: none;
+    border: #eee 1px solid;
+    border-radius: 20px;
+}
+
+.editor-header .header-default .header-nav #submit {
+    background-color: #2168f6;
+    color: white;
+}
+
+/* 컨테이너 */
+#sub08 .editor_container {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    min-width: 360px;
+    
+}
+
+/* 사이드메뉴 */
+#sub08 .editor_container .editor-side-innerWrap {
+    height: 100%;
+    width: 245px;
+    background-color: #eee;
+    position: fixed;
+    top: 88px;
+}
+#sub08 .editor_container .editor_form {
+    float: right;
+    width: 100%;
+}
+#sub08 .editor_container .editor-side-innerWrap {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#sub08 .editor_container .editor-side-innerWrap * *  {
+    margin-bottom: 10px;
+}
+
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn button {
+    display: block;
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn span * {
+    display: inline-block;
+}
+#sub08 .editor_container .editor-side-innerWrap p {
+    font-size: 12px;
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_tag * {
+    margin-bottom: 6px;
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner {
+    width: 205px;
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner .partner_selector {
+    width: 100%;
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner ul {
+margin-bottom: 10px;
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner li {
+    float: left;
+    text-align: center;
+    width: 33%;
+    border: 1px solid black;
+    margin-bottom: 0;
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite {
+    width: 205px;
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite .favorite_selector {
+    width: 100%;
+}
+
+#sub08  .editor_container .editor-side-innerWrap .editor_side_favorite li {
+    float: left;
+    text-align: center;
+    width: 33%;
+    border: 1px solid black;
+    margin-bottom: 0;
+}
+
+/* 콘텐츠박스 */
+
+#sub08  .editor_container .content_wrap {
+    position: relative;
+    top: 88px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#sub08 .editor_container .content_wrap {
+    padding-top: 83px;
+    max-width: 886px;
+    margin-left: 33%;
+}
+
+#sub08 .editor_container .content_wrap .title_text {
+    font-size: 32px;
+    line-height: 42px;
+    cursor: auto;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 31px;
+    width: auto;
+    max-width: 700px;
+    border-bottom: 1px solid #EEE;
+}
+
+#sub08 .editor_container textarea::-webkit-input-placeholder {
+    color: rgb(194, 194, 194);
+}
+
+#sub08 .editor_container .content_wrap .title_text .title_textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    outline: 0;
+    border: none;
+    background: 0 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-align: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+    resize: none;
+    
+}
+
