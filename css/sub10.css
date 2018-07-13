@@ -59,6 +59,7 @@
     border: none;
     outline: none;
     color: #282828;
+    border-right: solid #ebebeb 1px;
 }
 
 #sub10_planner_header .custom-select1 select {
@@ -75,12 +76,12 @@
 #sub10_planner_header .select-selected:after {
     position: absolute;
     content: "";
-    top: 14px;
-    right: 10px;
+    top: 32px;
+    right: 0px;
     width: 0;
     height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
+    border: 5px solid transparent;
+    border-color: #282828 transparent transparent transparent;
 }
 
 /*point the arrow upwards when the select box is open (active):*/
