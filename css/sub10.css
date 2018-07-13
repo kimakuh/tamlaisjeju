@@ -95,9 +95,7 @@
 #sub10_planner_header 
 .select-items div,
 .select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
+    color: #282828;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     cursor: pointer;
 }
@@ -106,7 +104,7 @@
 
 #sub10_planner_header .select-items {
     position: absolute;
-    background-color: DodgerBlue;
+    background-color: #fff;
     top: 100%;
     left: 0;
     right: 0;
