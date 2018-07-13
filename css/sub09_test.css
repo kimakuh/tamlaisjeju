@@ -150,20 +150,17 @@
     top: 50px;
 }
 
-#sub09 .story-nav .nav-warp {
-    overflow: hidden;
-    text-align: left;
-    background: rgba(0,0,0,0.1);
-}
-#sub09 .story-nav ul li {
+
+#sub09 .content .aside_wrap .info-right-box .nav-warp ul li {
     display: block;
     width: 100%;
     height: 30px;
     line-height: 30px;
     padding: 0;
 }
-#sub09 .story-nav a.btn-top {
-    position: inherit;
+
+#sub09 .content .aside_wrap .info-right-box .nav-warp a.btn-top {
+    
     display: block;
     width: 100%;
     height: 30px;
@@ -173,10 +170,8 @@
     color: #999;
     font-size: 12px;
 }
-#sub09 ul li {
-    list-style: none;
-}
-#sub09 .story-nav ul li a {
+
+#sub09 .content .aside_wrap .info-right-box .nav-warp ul li a {
     display: block;
     width: 100%;
     height: 100%;
