@@ -622,6 +622,24 @@ all - 여행필수정보 전체
     display: none;
 }
 
+#sub04 .recommend_area .item_list.type_thumb li .item_section .item_top .item_tag {
+    margin-top: 14px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #535353;
+    line-height: 15px;
+    height: 15px;
+    width: 90%;
+}
+
+#sub04 .recommend_area .item_list li .item_section .item_top .item_tag {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 5px 0 0;
+    display: inline-block;
+}
+
 #sub04 .item_section .item_count_area {
     margin-top: 15px;
 }
