@@ -423,6 +423,12 @@ all - 여행필수정보 전체
     float: left;
 }
 
+#sub04 .paging {
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+}
+
 #sub04 .util_area2 .sort_type .ico_sort.on {
     background: url(../img/common/ico_sort_thumb_on.png) no-repeat 50% 50%;
     border-color: #000;
@@ -517,4 +523,141 @@ all - 여행필수정보 전체
     height: 30px;
     border: 1px solid #ccc;
     color: #959595;
+}
+
+/*********************************************************************
+큐레이션 카드
+*********************************************************************/
+
+#sub04 .recommend_area .item_list.type_thumb li.fst, .recommend_area .item_list.type_thumb li:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+#sub04 .recommend_area .item_list.type_thumb li {
+    float: left;
+    margin: 25px 0 0 25px;
+}
+
+#sub04 .recommend_area .item_list.type_thumb li .item_section {
+    float: none;
+    overflow: hidden;
+    width: 272px;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    background: #fff;
+}
+
+#sub04 .item_section .item_top a {
+    display: block;
+    position: relative;
+}
+
+#sub04 .item_section .item_top .s_day {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    padding: 0 13px;
+    background: #333;
+    font-size: 13px;
+    color: #fff;
+    line-height: 22px;
+}
+
+#sub04 .recommend_area .item_list.type_thumb li .item_section .item_top a img {
+    display: block;
+    width: 272px;
+    height: 172px;
+}
+
+#sub04 .recommend_tour .recommend_area .item_list.type_thumb li .item_section .item_top a .score_area {
+    position: absolute;
+    top: 150px;
+    right: 11px;
+    width: 88px;
+    height: 15px;
+    background: url(../img/common/bg_star_off.png) no-repeat 0 0;
+}
+
+#sub04 .recommend_tour .recommend_area .item_list.type_thumb li .item_section .item_top a .score_area .score_count {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    font-size: 10px;
+    color: transparent;
+    line-height: 10px;
+    background: url(../img/common/bg_star_on.png) no-repeat 0 0;
+}
+
+#sub04 .recommend_area .item_list.type_thumb li .item_section .item_top .s_tit {
+    overflow: hidden;
+    width: 250px;
+    margin: 19px auto 0;
+    font-size: 22px;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#sub04 .recommend_area .item_list.type_thumb li .item_section .item_top .s_theme {
+    margin-top: 8px;
+    color: #959595;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+#sub04 .recommend_area .item_list.type_thumb li .item_section .item_top .s_theme_tit {
+    display: none;
+}
+
+#sub04 .item_section .item_count_area {
+    margin-top: 15px;
+}
+
+#sub04 .item_section .item_count_area .ico_type.like, .item_section .item_count_area .ico_type.zzim {
+    cursor: pointer;
+}
+
+#sub04 .item_section .item_count_area .ico_type.like {
+    display: block;
+    background: url(../img/common/ico_like.png) no-repeat 50% 2px;
+}
+
+#sub04 .item_section .item_count_area a:first-child, .item_section .item_count_area p:first-child {
+    width: 33.333334%;
+}
+
+#sub04 .item_section .item_count_area .ico_type {
+    padding-top: 28px;
+}
+
+#sub04 .item_section .item_count_area a, .item_section .item_count_area p {
+    float: left;
+    width: 33.333333%;
+}
+
+.item_section .item_count_area .ico_type span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #535353;
+    line-height: 14px;
+}
+
+.item_section .item_count_area .ico_type span.count {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #959595;
+    line-height: 13px;
 }
