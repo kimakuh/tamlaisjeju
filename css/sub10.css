@@ -12,7 +12,7 @@
     margin-right: 100px;
 }
 
-#sub10_planner_header .topnav .custom-box .people {
+#sub10_planner_header .topnav .menu_wrap .people {
     float: left;
     width: 170px;
     height: 65px;
@@ -24,7 +24,7 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .custom-box .people input {
+#sub10_planner_header .topnav .menu_wrap .people input {
     float: left;
     width: 140px;
     height: 65px;
@@ -36,13 +36,13 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .custom-box .tag {
+#sub10_planner_header .topnav .menu_wrap .tag {
     float: left;
     border-right: solid #ebebeb 1px;
     color: #555555;
 }
 
-#sub10_planner_header .topnav .custom-box .tag input {
+#sub10_planner_header .topnav .menu_wrap .tag input {
     float: left;
     width: 140px;
     height: 65px;
@@ -54,12 +54,12 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .plan_out_btn {
+#sub10_planner_header .topnav .plan_out {
     float: right;
     padding: 10px;
 }
 
-#sub10_planner_header .topnav .plan_out_btn .plan_save_out_btn {
+#sub10_planner_header .topnav .plan_out .plan_out_btn {
     float: right;
     width: 100px;
     height: 42px;
