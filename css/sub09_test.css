@@ -200,7 +200,7 @@
 }
 /*right-box의 종료*/
 
-/*cont-wrap의 시작*/
+/*cont-wrap의 plan-info-top 시작*/
 #sub09 .content .cont_wrap .plan-info-top .plan-detail-txt .plan-tit {
     padding: 15px;
     margin: 0 0 10px;
@@ -208,7 +208,8 @@
     box-shadow: 0 1px 1px rgba(125,125,125,.2);
 }
 #sub09 .content .cont_wrap .plan-info-top .plan-detail-txt {
-    padding: 5px 0 0;
+    padding: 15px;
+    box-shadow: 0 1px 1px rgba(125,125,125,.2);
 }
 #sub09 .content .cont_wrap .plan-info-top h2.plan-tit {
     color: #333;
@@ -252,4 +253,8 @@
     border-left: 1px solid #eee;
     padding: 0 10px;
 }
-/*cont-wrap의 종료*/
+/*cont-wrap의 plan-info-top 종료*/
+#sub09 .cont_wrap #map{
+	height: 300px;
+	width: 100%;
+}
