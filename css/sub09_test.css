@@ -24,6 +24,68 @@
     width: 270px;
     height: 340px;
     z-index: 1001;
-    padding-top:40px;
-    background: rgba(0,0,0,0.1); 
+    padding-top: 40px;
+    background: rgba(0,0,0,0.1);
+    margin: 50px 0 0 150px;
+}
+
+
+
+
+#sub09 .content .aside_wrap .story-nav {
+    width: 100px;
+    height: 300px;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    right: 50px;
+}
+#sub09 .story-nav .nav-warp {
+    overflow: hidden;
+    text-align: left;
+    background: rgba(0,0,0,0.1);
+}
+#sub09 .story-nav ul li {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+}
+#sub09 .story-nav a.btn-top {
+    position: inherit;
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 10px;
+    padding: 0 0 0 11px;
+    color: #999;
+    font-size: 12px;
+}
+#sub09 ul li {
+    list-style: none;
+}
+#sub09 .story-nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #bbb;
+    font-size: 12px;
+    padding: 0 0 0 11px;
+    cursor: pointer;
+    border-left: 5px solid #ddd;
+}
+#sub09 .story-nav a {
+    text-decoration: none!important;
+}
+#sub09 .story-nav ul li a span {
+    padding-right: 3px;
+}
+#sub09 .story-nav .nav-cmt {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+    color: #999;
+    font-size: 12px;
+    background: url(../img/sub09/comment.png) 10px 8px no-repeat;
 }
