@@ -186,7 +186,7 @@ all - 여행필수정보 전체
     width: 250px;
 }
 
-#sub04.recommend_tour .aside_wrap .zone_tit {
+#sub04 .recommend_tour .aside_wrap .zone_tit {
     height: 35px;
     background: #959595;
     font-size: 15px;
@@ -220,7 +220,7 @@ all - 여행필수정보 전체
     margin-top: 10px;
 }
 
-input[type=checkbox].css-checkbox {
+#sub04 input[type=checkbox].css-checkbox {
     position: absolute;
     z-index: -1000;
     left: -1000px;
@@ -233,7 +233,7 @@ input[type=checkbox].css-checkbox {
     border: 0;
 }
 
-input[type=checkbox].css-checkbox+label.css-label {
+#sub04 input[type=checkbox].css-checkbox+label.css-label {
     padding-left: 21px;
     height: 15px;
     display: inline-block;
@@ -251,16 +251,270 @@ input[type=checkbox].css-checkbox+label.css-label {
     letter-spacing: -.5px;
 }
 
-
-
-
-
-
-
-
-
-#sub04 .cont_wrap {
-    margin: 0;
-    padding: 50px 0 0;
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap {
+    padding-bottom: 25px;
+    background: #f4f4f4;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
 }
 
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .tag_area {
+    width: 180px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .tag_area a {
+    display: inline-block;
+    font-size: 15px;
+    color: #595959;
+    line-height: 24px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .input_area {
+    padding: 25px 17px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .input_area input[type=text] {
+    float: left;
+    width: 138px;
+    height: 28px;
+    padding-left: 5px;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    color: #000;
+    line-height: 28px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .input_area .btn_sch {
+    float: right;
+    width: 60px;
+    height: 30px;
+    background: #2168f6;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .btn_save {
+    display: block;
+    width: 208px;
+    height: 39px;
+    margin: 0 auto;
+    background: #fff;
+    border: 3px solid #76a1f8;
+    font-size: 17px;
+    font-weight: 700;
+    color: #2168f6;
+    line-height: 39px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .btn_reset {
+    display: block;
+    width: 208px;
+    height: 39px;
+    margin: 10px auto 0;
+    background: #fff;
+    border: 3px solid #e5e5e5;
+    font-size: 17px;
+    font-weight: 700;
+    color: #959595;
+    line-height: 39px;
+}
+
+
+/**************************************************************************************
+여행 큐레이션 _ 컨텐츠 구역
+***************************************************************************************/
+
+#sub04 .partition_wrap .cont_wrap {
+    float: right;
+    position: relative;
+    width: 866px;
+    padding-top: 20px;
+}
+
+#sub04 .relative {
+    position: relative;
+}
+
+#sub04 .cont_wrap h3 {
+    font-size: 35px;
+    color: #1b1b1b;
+    line-height: 35px;
+    text-align: center;
+}
+
+#sub04 .btn_jeju_map {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #2168f6;
+    border-radius: 5px;
+    width: 145px;
+    height: 33px;
+    font-size: 15px;
+    color: #2168f6;
+    background: #fff;
+}
+
+#sub04 .cont_wrap .h3_txt {
+    margin-top: 24px;
+    font-size: 18px;
+    color: #555;
+    line-height: 30px;
+    text-align: center;
+}
+
+#sub04 .recommend_area {
+    margin-top: 80px!important;
+}
+
+#sub04 .tab_area button.on {
+    background: none;
+    background-color: #fff;
+    border: 2px solid #2168f6;
+    border-bottom: 0;
+}
+
+#sub04 .tab_area button:first-child {
+    width: 33.333334%;
+    background: none;
+    background-color: #f4f4f4;
+    border-left: 1px solid #e5e5e5;
+}
+
+#sub04 .tab_area .tab_btn {
+    float: left;
+    width: 33.333333%;
+    height: 50px;
+    background: url(../img/common/ln_39_1_e5e5e5.png) no-repeat 0 50%;
+    background-color: #f4f4f4;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 2px solid #2168f6;
+}
+
+#sub04 .tab_area button.on span {
+    color: #2168f6;
+}
+
+#sub04 .tab_area button span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #959595;
+    line-height: 47px;
+}
+
+#sub04 .recommend_area .util_area2 {
+    padding-top: 20px;
+}
+
+#sub04 .util_area2 {
+    height: 30px;
+    text-align: right;
+}
+
+#sub04 .util_area2 div {
+    display: inline-block;
+    float: left;
+}
+
+#sub04 .util_area2 .sort_type .ico_sort.on {
+    background: url(../img/common/ico_sort_thumb_on.png) no-repeat 50% 50%;
+    border-color: #000;
+}
+
+#sub04 .util_area2 .sort_type .ico_sort {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background: url(../img/common/ico_sort_thumb.png) no-repeat 50% 50%;
+    border: 1px solid #dedede;
+    text-indent: -9999px;
+}
+
+#sub04 .util_area2 .sort_type .ico_sort.type_list {
+    background: url(../img/common/ico_sort_list.png) no-repeat 50% 50%;
+}
+
+#sub04 .util_area2 .order_type {
+    margin-left: 5px;
+}
+
+#sub04 .util_area2 .order_type select {
+    width: 104px;
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #959595;
+}
+
+#sub04 .util_area2 .target_page {
+    margin-left: 18px;
+}
+
+#sub04 .util_area2 .target_page input {
+    width: 33px;
+    height: 28px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+}
+
+#sub04 .util_area2 .target_page button {
+    width: 35px;
+    height: 30px;
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+
+#sub04 .util_area2 .page_navi {
+    margin-left: 16px;
+    padding: 9px 0;
+}
+
+#sub04 .util_area2 .page_navi a.btn_first {
+    background: url(../img/common/ico_u_first.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi a.btn_prev {
+    margin: 0 10px 0 7px;
+    background: url(../img/common/ico_u_prev.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi p {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+#sub04 .util_area2 .page_navi a.btn_next {
+    margin: 0 7px 0 10px;
+    background: url(../img/common/ico_u_next.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi a.btn_last {
+    background: url(../img/common/ico_u_last.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    line-height: 30px;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+#sub04 .util_area2 .page_size {
+    margin-left: 12px;
+}
+
+#sub04 .util_area2 .page_size select {
+    width: 90px;
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #959595;
+}
