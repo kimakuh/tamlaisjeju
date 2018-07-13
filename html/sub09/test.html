@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta property="og:title" content="탐라는제주">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+    <!-- font -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- js -->
+    <script src="../../js/common/jquery-3.3.1.min.js"></script>
+    <script src="../../js/common/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+
+    <header id="header"></header>
+
+
+    <div id="container" class="container wrapper">
+
+        <div id="content" class="content">
+            <div class="aside_wrap">
+            		
+            	
+            </div>
+            <div class="cont_wrap">
+            	
+            </div>
+        </div>
+        <!-- content end -->
+    </div>
+    <!-- container end -->
+
+
+
+    <script>
+        function openTabs(evt, tabNames) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabNames).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+    <script>
+        function innerTabs(evt, tabNames) {
+            var i, inner_tabcontent, inner_tablinks;
+            inner_tabcontent = document.getElementsByClassName("inner_tabcontent");
+            for (i = 0; i < inner_tabcontent.length; i++) {
+                inner_tabcontent[i].style.display = "none";
+            }
+            inner_tablinks = document.getElementsByClassName("inner_tablinks");
+            for (i = 0; i < inner_tablinks.length; i++) {
+                inner_tablinks[i].className = inner_tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabNames).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <div id="footer"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
+
+</body>
+
+</html>
