@@ -52,36 +52,24 @@
                                 <option value="6">단체</option>
                             </select>
                         </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">테마
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content" style="z-index: 9999;">
-                                <table style="width:300px;">
-                                    <tr>
-                                        <td style="font-size: 13px; text-align: center;">걷기/등산</td>
-                                        <td><a href="../sub04/sub04_travelog_list.html" style="font-size: 13px; text-align: center;">경관/포토</a></td>
-                                        <td><a href="../sub04/sub04_travelmate_list.html" style="font-size: 13px; text-align: center;">휴식/힐링</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">테마공원</a></td>
-                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">문화유적지</a></td>
-                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">미술/박물관</a></td>
-                                    </tr>
-                                <tr>
-                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">액티비티</a></td>
-                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">체험관광</a></td>
-                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">드라이브</a></td>
-                                    </tr>
-                                <tr>
-                                        <td><a href="../sub04/sub04_curation_list.html" style="font-size: 13px; text-align: center;">쇼핑</a></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </table>
+
+                        <div class="custom-select1" style="width: 180px;">
+                                <select>
+                                    <option value="0">테마</option>
+                                    <option value="1">걷기/등산</option>
+                                    <option value="2">경관/포토</option>
+                                    <option value="3">휴식/힐링</option>
+                                    <option value="4">테마공원</option>
+                                    <option value="5">문화유적지</option>
+                                    <option value="6">미술/박물관</option>
+                                    <option value="7">액티비티</option>
+                                    <option value="8">체험관광</option>
+                                    <option value="9">드라이브</option>
+                                    <option value="10">쇼핑</option>
+                                </select>
                             </div>
-                        </div>
-                        <div class="people">
+                        
+                        <div class="tag">
                                 <input type="text" placeholder="태그 입력하세요">
                             </div>
                         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
@@ -671,12 +659,10 @@
                     <div class="clear"></div>
                 </div>
                 <div id="right_full_box" class="f1">
-                    <div id="on_city_open_btn"></div>
                     <div id="city_list">
                         <div class="list_title">
                             <span>제주도</span>
                         </div>
-                        <div id="on_city_close_btn"></div>
                         <div class="clear"></div>
                         <div class="list_search_full_box">
                             <div class="list_search_box">
@@ -1056,6 +1042,8 @@ document.addEventListener("click", closeAllSelect);
 
 
 </script>
+
+
 </body>
 
 </html>
