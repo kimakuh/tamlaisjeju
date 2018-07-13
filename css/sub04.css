@@ -707,22 +707,22 @@ all - 여행필수정보 전체
     clear: both;
 }
 
-#sub04 .paging {
+#sub04 .recommend_area .paging {
     position: relative;
     text-align: center;
     padding-top: 70px;
 }
 
-#sub04 .paging .page-wrap {
+#sub04 .recommend_area .paging .page-wrap {
     display: inline-block;
 }
 
-#sub04 .paging .page-wrap a.page-first, 
-#sub04 .paging .page-wrap a.page-last {
+#sub04 .recommend_area .paging .page-wrap a.page-first, 
+#sub04 .recommend_area .paging .page-wrap a.page-last {
     margin: 0 3px;
 }
 
-#sub04 .paging .page-wrap a {
+#sub04 .recommend_area .paging .page-wrap a {
     display: inline-block;
     width: 30px;
     height: 30px;
