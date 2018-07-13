@@ -101,7 +101,7 @@
     margin: 10px 0 5px;
 }
 
-#sub09 .follower .follower-btns  {
+#sub09 .follower .following-btn  {
     width: 100px;
     background: #fff;
     border: 1px solid #ff8000;
@@ -141,6 +141,7 @@
 }
 /*left-box의 종료*/
 
+/*right-box의 실행*/
 #sub09 .content .aside_wrap .info-right-box {
     width: 100px;
     height: 300px;
@@ -200,3 +201,4 @@
     font-size: 12px;
     background: url(../img/sub09/comment.png) 10px 8px no-repeat;
 }
+/*right-box의 종료*/

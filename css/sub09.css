@@ -23,9 +23,7 @@
 #sub09 .content .plan-info-box .info-left-box {
     position: fixed;
     width: 270px;
-    height: 340px;
     z-index: 1001;
-
     padding-top:40px;
 }
 #sub09 .content .info-left-box .user-info-box {
