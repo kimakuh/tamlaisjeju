@@ -648,7 +648,7 @@ all - 여행필수정보 전체
     width: 33.333333%;
 }
 
-.item_section .item_count_area .ico_type span {
+#sub04 .item_section .item_count_area .ico_type span {
     display: block;
     font-size: 12px;
     font-weight: 400;
@@ -656,11 +656,34 @@ all - 여행필수정보 전체
     line-height: 14px;
 }
 
-.item_section .item_count_area .ico_type span.count {
+#sub04 .item_section .item_count_area .ico_type span.count {
     display: block;
     margin-top: 6px;
     font-size: 13px;
     font-weight: 400;
     color: #959595;
     line-height: 13px;
+}
+
+#sub04 .item_section .item_count_area .ico_type.like, .item_section .item_count_area .ico_type.zzim {
+    cursor: pointer;
+}
+
+#sub04 .item_section .item_count_area .ico_type.zzim {
+    background: url(../img/common/ico_zzim_l.png) no-repeat 50% 0;
+}
+
+#sub04 .item_section .item_count_area .ico_type.review {
+    background: url(../img/common/ico_review.png) no-repeat 50% 0;
+}
+
+#sub04 .item_section .item_count_area .item_count_h_area {
+    clear: left;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background: #f4f4f4;
+    font-size: 12px;
+    color: #959595;
+    line-height: 30px;
 }
