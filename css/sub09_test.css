@@ -1,10 +1,4 @@
 @charset "UTF-8";
-.container{
-    
-        max-width: 100%;
-        padding: 183px 0 0 0;
-    
-}
 
 #sub09 .content{
 	width: 100%;
@@ -78,7 +72,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin: 0 0 35px 0;
+    margin: 10px 0 10px 0;
     line-height: 43px;
     text-align: center;
     font-weight: bold;
@@ -127,7 +121,7 @@
     display: none!important;
 }
 #sub09 .content .aside_wrap .info-left-box .user-info-box .author-page-links {
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 #sub09 .content .aside_wrap .info-left-box .user-info-box .author-page-links ul {
     text-align: center;
