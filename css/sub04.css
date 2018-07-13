@@ -701,6 +701,12 @@ all - 여행필수정보 전체
     line-height: 30px;
 }
 
+#sub04 .item_list.type_thumb:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 #sub04 .paging {
     position: relative;
     text-align: center;
