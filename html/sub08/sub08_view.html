@@ -30,7 +30,7 @@
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
     </style>
 </head>
- 
+
 <body>
     <div id="header"></div>
     <div id="sub08" class="sub08 container">
@@ -108,7 +108,7 @@
                     <div class="nav_menu">
 
                         <div class="treemenu">
-                            <div level="0" onclick="fnMove('1')" class="lbl_titl">
+                            <div id="day1" level="0" onclick="fnMove('1')" class="lbl_titl">
                                 <span class="lbl ">1일차 </span>
                             </div>
                             <div level="1" class="under">
@@ -117,7 +117,7 @@
                             <div level="1" class="under">
                                 <span class="lbl"> 해물파스타 </span>
                             </div>
-                            <div level="0" onclick="fnMove('2')" class="lbl_titl">
+                            <div id="day2" level="0" onclick="fnMove('2')" class="lbl_titl">
                                 <span class="lbl"> 2일차 </span>
                             </div>
                             <div level="1" class="under">
@@ -126,14 +126,14 @@
                             <div level="1" class="under">
                                 <span class="lbl"> 심슨 </span>
                             </div>
-                            <div level="0" onclick="fnMove('3')" class="lbl_titl">
+                            <div id="day3" level="0" onclick="fnMove('3')" class="lbl_titl">
                                 <span class="lbl"> 3일차 </span>
                             </div>
                             <div level="1" class="under">
                                 <span class="lbl"> 성산일출봉 </span>
                             </div>
                             <div level="1" class="under">
-                                <span class="lbl"> 애월카페  </span>
+                                <span class="lbl"> 애월카페 </span>
                             </div>
                             <div level="1" class="under">
                                 <span class="lbl"> 지금이순간 </span>
@@ -639,6 +639,9 @@
                 var day1 = $('.day1').offset().top;
                 var day2 = $('.day2').offset().top;
                 var day3 = $('.day3').offset().top;
+                var day4 = document.getElementById('day1');
+                var day5 = document.getElementById('day2');
+                var day6 = document.getElementById('day3');
 
                 if ($(document).scrollTop() > day3 - 180) {
                     $('.day').removeClass('off');
@@ -655,7 +658,6 @@
                     $('.fix_day2').addClass('on');
                     $('.c_day3').removeClass('off');
                     $('.c_day2').addClass('off');
-
                     return;
                 }
 
@@ -666,7 +668,6 @@
                     $('.fix_day1').addClass('on');
                     $('.c_day2').removeClass('off');
                     $('.c_day1').addClass('off');
-
                     return;
                 }
             });
