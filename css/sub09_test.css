@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.container{
+    
+        max-width: 100%;
+        padding: 183px 0 0 0;
+    
+}
 
 #sub09 .content{
 	width: 100%;
@@ -23,7 +29,6 @@
 /*left-box의 시작*/
 #sub09 .content .aside_wrap .info-left-box {
     width: 270px;
-    height: 340px;
     z-index: 1001;
     padding-top: 40px;
     background: rgba(0,0,0,0.1);
