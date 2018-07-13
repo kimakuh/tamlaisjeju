@@ -109,12 +109,12 @@
 
 /*hide the items when the select box is closed:*/
 
-#sub10 
+#sub10_planner_header
 .select-hide {
     display: none;
 }
 
-#sub10 
+#sub10_planner_header
 .select-items div:hover,
 .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
