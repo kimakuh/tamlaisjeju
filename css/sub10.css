@@ -24,15 +24,6 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .menu_wrap .people .people_title {
-    float: left;
-    border-right: solid #ebebeb 1px;
-    text-align: center;
-    color: #555555;
-    font-size: 16px;
-    font-weight: bold;
-}
-
 #sub10_planner_header .topnav .menu_wrap .people input {
     float: left;
     width: 140px;
@@ -43,6 +34,12 @@
     color: #555555;
     font-size: 16px;
     font-weight: bold;
+}
+
+#sub10_planner_header .topnav .menu_wrap .tag {
+    float: left;
+    border-right: solid #ebebeb 1px;
+    color: #555555;
 }
 
 #sub10_planner_header .topnav .menu_wrap .tag input {
