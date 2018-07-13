@@ -1044,6 +1044,80 @@ document.addEventListener("click", closeAllSelect);
 
 
 </script>
+
+
+<script>
+$('#city_list').on('click','#on_city_close_btn',function(){
+      $('#city_list').hide("slide", { direction: "left" }, 200);
+      deleteMarkers(0);
+    map_resize(1);
+  });
+  
+  
+  $('#on_city_open_btn').click(function(){
+      $('#city_list').show("slide", { direction: "left" }, 200);
+    $('#cat_menu li.on').click();
+  });
+
+ function size_reload(only_close){
+    _now_cat_select = $('#cat_menu li.on').attr('data');
+    if(_now_cat_select == 'show_all_day'){
+        var map_width = $( window ).width() - 160;
+       $('#on_city_open_btn').hide();
+    }else{
+      $('#on_city_open_btn').show();
+        _display = $('#city_list').css('display');
+        if(_display != 'none' && only_close != 1){
+          var map_width = $( window ).width() - 790;
+        }else{
+          var map_width = $( window ).width() - 425;
+        }
+        
+    }
+    var _map_width = $( window ).width() - 425;
+    var map_height = $( window ).height() - 74;
+    var map_list_height = $( window ).height() - 167;
+    $('#right_full_box').css('width',map_width+'px');
+    $('#schedule_detail_box').css('height',map_height-141);
+    $('#cat_menu').css('max-height',map_height-170);
+    var cat_height = $('#cat_menu').height();
+    $('#cat_add_box').css('height',map_height - cat_height - 120);
+    $('#cat_menu_edit_box').css('height',map_height-50);
+  
+    $('#city_list .list_box').css('height',map_height-242);
+  
+    $('#map').css('width',map_width+'px');
+  
+  
+    $('#full_wrap').css('height',map_height+'px');
+    $('#map_spot_list').css('height',map_list_height+'px');
+    $('#top_menu').css('width',map_width+'px');
+  }
+  
+  
+  function map_resize(only_close){
+    _now_cat_select = $('#cat_menu li.on').attr('data');
+    if(_now_cat_select == 'show_all_day'){
+        var map_width = $( window ).width() - 160;
+         $('#on_city_open_btn').hide();
+       
+    }else{
+      $('#on_city_open_btn').show();
+        _display = $('#city_list').css('display');
+        if(_display != 'none' && only_close != 1){
+          var map_width = $( window ).width() - 790;
+        }else{
+          var map_width = $( window ).width() - 425;
+        }
+        
+    }
+    var _map_width = $( window ).width() - 425;
+    $('#right_full_box').css('width',_map_width+'px');
+  
+     $('#map').css('width',map_width+'px');
+     google.maps.event.trigger(map, 'resize');
+  }
+</script>
 </body>
 
 </html>
