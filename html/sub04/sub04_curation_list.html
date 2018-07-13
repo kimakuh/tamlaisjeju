@@ -26,7 +26,6 @@
 
     <style type="text/css">
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
-
     </style>
 </head>
 
@@ -40,11 +39,38 @@
                 <!-- location_wrap -->
                 <div class="partition_wrap clear">
                     <div class="aside_wrap">
-
+                        <div class="tendency_zone">
+                            <p class="zone_tit">선택해주세요</p>
+                            <dl class="survey_box">
+                                <dt>일행</dt>
+                                <dd class="clear">
+                                    <span class="input_wrap">
+                                        <input type="checkbox" id="tag118" value="118" class="css-checkbox">
+                                        <label for="tag118" class="css-label radGroup1">부모</label>
+                                    </span>
+                                    <span class="input_wrap">
+                                        <input type="checkbox" id="tag120" value="120" class="css-checkbox">
+                                        <label for="tag120" class="css-label radGroup1">친구</label>
+                                    </span>
+                                    <span class="input_wrap">
+                                        <input type="checkbox" id="tag121" value="121" class="css-checkbox">
+                                        <label for="tag121" class="css-label radGroup1">커플</label>
+                                    </span>
+                                    <span class="input_wrap">
+                                        <input type="checkbox" id="tag122" value="122" class="css-checkbox">
+                                        <label for="tag122" class="css-label radGroup1">혼자</label>
+                                    </span>
+                                    <span class="input_wrap">
+                                        <input type="checkbox" id="tag119" value="119" class="css-checkbox">
+                                        <label for="tag119" class="css-label radGroup1">아이</label>
+                                    </span>
+                                </dd>
+                            </dl>
+                        </div>
                     </div>
                     <!-- aside_wrap -->
                     <div class="cont_wrap">
-                        
+
                     </div>
                     <!-- cont_wrap -->
                 </div>
@@ -57,14 +83,13 @@
     <!-- container -->
     <div id="footer"></div>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#header").load("../include/sub_header.html")
             $("#footer").load("../include/sub_footer.html")
             /* id 지정을 통해서도 가능합니다. 
              $("#header").load("header.html #navbar")
              */
         });
-
     </script>
 </body>
 
