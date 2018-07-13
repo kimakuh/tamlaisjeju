@@ -12,6 +12,11 @@
     margin-right: 100px;
 }
 
+#sub10_planner_header .topnav .menu_wrap {
+    float: left;
+    margin-left: 100px;
+}
+
 #sub10_planner_header .topnav .menu_wrap .people {
     float: left;
     width: 170px;
@@ -1198,39 +1203,6 @@
     width: 68px;
     text-align: center;
     cursor: pointer;
-}
-
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .list_tag_box {
-    position: relative;
-}
-
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .list_tag_box #map_tag_select_box {
-    width: 318px;
-    height: 31px;
-    border: solid #c8c8ca 1px;
-    background: #fff url(../img/sub10/drop_select_arrow_a.png) no-repeat 300px 12px;
-    line-height: 31px;
-    margin: 0 auto;
-    margin-top: 5px;
-    padding-left: 5px;
-    font-size: 13px;
-    color: #808080;
-    cursor: pointer;
-}
-
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .list_tag_box #map_tag_select_sub_box {
-    position: absolute;
-    width: 318px;
-    padding: 10px;
-    border: solid 1px #c8c8ca;
-    background: #fff;
-    padding-bottom: 3px;
-    max-height: 252px;
-    overflow-y: auto;
-    display: none;
-    margin-top: -1px;
-    z-index: 9;
-    left: 24px;
 }
 
 #sub10 .full_wrap #right_full_box #city_list .list_box.connectedSortable {
