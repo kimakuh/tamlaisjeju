@@ -285,5 +285,11 @@
     color: #999;
     background: url(../../img/sub09/back_point.jpg) 10px 6px no-repeat;
 }
-
+#sub09 .story-conts h3 strong {
+    display: inline-block;
+    line-height: 14px;
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+}
 /*cont_wrap의 day시작*/
