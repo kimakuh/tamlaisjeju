@@ -54,7 +54,7 @@
     font-family: Arial;
     float: left;
     z-index: 9999;
-    padding: 20px 16px;
+    padding: 20px 25px;
     font-size: 17px;
     border: none;
     outline: none;
@@ -69,6 +69,7 @@
 
 #sub10_planner_header .select-selected {
     background-color: white;
+    font-size: 17px;
 }
 
 /*style the arrow inside the select element:*/
@@ -77,7 +78,7 @@
     position: absolute;
     content: "";
     top: 32px;
-    right: 0px;
+    right: 7px;
     width: 0;
     height: 0;
     border: 5px solid transparent;
@@ -123,6 +124,7 @@
 .select-items div:hover,
 .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
+    font-size: 13px;    
 }
 
 /*--------------------------------------*/
