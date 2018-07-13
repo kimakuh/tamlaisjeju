@@ -20,10 +20,10 @@
     background: rgba(0,0,0,0.1);
     margin:auto;
 }  
-#sub09 .content .aside_wrap .info-info-box {
+#sub09 .content .aside_wrap .user-info-box {
     width: 270px;
     height: 340px;
     z-index: 1001;
     padding-top:40px;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.1); 
 }
