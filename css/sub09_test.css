@@ -20,6 +20,7 @@
     background: rgba(0,0,0,0.1);
     margin:auto;
 }  
+/*left-box의 시작*/
 #sub09 .content .aside_wrap .info-left-box {
     width: 270px;
     height: 340px;
@@ -48,6 +49,81 @@
     border-radius: 40px;
     overflow: hidden;
 }
+
+#sub09 .content .aside_wrap .info-left-box .user-info-box .author-box .author-img img {
+    width: 100%;
+    height: auto;
+}
+
+#sub09 .content .aside_wrap .info-left-box .user-info-box .author-box h5::before {
+	display:none;
+ 
+}
+
+#sub09 .content .aside_wrap .info-left-box .user-info-box .author-box .author-name {
+    display: block;
+    width: 100%;
+    color: #999;
+    font-size: 12px;
+}
+
+#sub09 .content .info-left-box .author-box .author-name h3 {
+    font-size: 20px;
+    color: #1b1b1b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 0 35px 0;
+    line-height: 43px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sub09 .content .aside_wrap .info-left-box .user-info-box .author-box h5{
+    margin-top: 5px;
+    color: #ff8000;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    padding-left: 0;
+}
+#sub09 .content .aside_wrap .info-left-box .user-info-box .author-ment {
+    padding: 5px 20px 0;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    word-break: break-all;
+}
+
+#sub09 .content .aside_wrap .info-left-box .user-info-box .follower-btns {
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+#sub09 .follower .follower-btns  {
+    width: 100px;
+    background: #fff;
+    border: 1px solid #ff8000;
+    border-radius: 5px;
+    color: #ff8000;
+    outline: 0;
+}
+
+#sub09 .follower-btns .following {
+    width: 100px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+    outline: 0;
+}
+#sub09 .hide {
+    display: none!important;
+}
+
+/*left-box의 종료*/
+
 #sub09 .content .aside_wrap .info-right-box {
     width: 100px;
     height: 300px;
@@ -56,11 +132,6 @@
     right: 350px;
     top: 50px;
 }
-
-
-
-
-
 
 #sub09 .story-nav .nav-warp {
     overflow: hidden;
