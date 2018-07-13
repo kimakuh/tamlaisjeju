@@ -201,7 +201,44 @@
                             </div>
                             <div class="tab_cnt">
                                 <div class="util_area2">
-
+                                    <div class="clear">
+                                        <div class="sort_type">
+                                            <button type="button" class="ico_sort on">섬네일형</button>
+                                            <button type="button" class="ico_sort type_list">리스트형</button>
+                                        </div>
+                                        <div class="order_type">
+                                            <label for="goto-select-1" style="display:none;"> 정렬 </label>
+                                            <select id="goto-select-1">
+                                                <option selected="selected" value="score,popularity desc">인기순</option>
+                                                <option value="score,created desc">최신순</option>
+                                                <option value="score,likecnt desc">좋아요순</option>
+                                                <option value="score,reviewcnt desc">리뷰순</option>
+                                                <option value="score,photosharecnt desc">공유순</option>
+                                                <option value="score,title_kr asc">이름순</option>
+                                            </select>
+                                        </div>
+                                        <div class="target_page">
+                                            <label for="goto-page-1" style="display:none;"> 페이지 </label>
+                                            <input id="goto-page-1" type="text" value="4">
+                                            <button type="button">GO</button>
+                                        </div>
+                                        <div class="page_navi">
+                                            <a href="javascript:void(0)" class="btn_first">첫 페이지</a>
+                                            <a href="javascript:void(0)" class="btn_prev">이전 페이지</a>
+                                            <p>4/394</p>
+                                            <a href="javascript:void(0)" class="btn_next">다음 페이지</a>
+                                            <a href="javascript:void(0)" class="btn_last">마지막 페이지</a>
+                                        </div>
+                                        <div class="page_size">
+                                            <label for="goto-size-1" style="display:none;"> 페이지 뷰 </label>
+                                            <select id="goto-size-1">
+                                                <option value="6" selected="selected">6</option>
+                                                <option value="9">9</option>
+                                                <option value="12">12</option>
+                                                <option value="15">15</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                                 <ul class="item_list type_thumb">
 

@@ -408,3 +408,113 @@ all - 여행필수정보 전체
     color: #959595;
     line-height: 47px;
 }
+
+#sub04 .recommend_area .util_area2 {
+    padding-top: 20px;
+}
+
+#sub04 .util_area2 {
+    height: 30px;
+    text-align: right;
+}
+
+#sub04 .util_area2 div {
+    display: inline-block;
+    float: left;
+}
+
+#sub04 .util_area2 .sort_type .ico_sort.on {
+    background: url(../img/common/ico_sort_thumb_on.png) no-repeat 50% 50%;
+    border-color: #000;
+}
+
+#sub04 .util_area2 .sort_type .ico_sort {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background: url(../img/common/ico_sort_thumb.png) no-repeat 50% 50%;
+    border: 1px solid #dedede;
+    text-indent: -9999px;
+}
+
+#sub04 .util_area2 .sort_type .ico_sort.type_list {
+    background: url(../img/common/ico_sort_list.png) no-repeat 50% 50%;
+}
+
+#sub04 .util_area2 .order_type {
+    margin-left: 5px;
+}
+
+#sub04 .util_area2 .order_type select {
+    width: 104px;
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #959595;
+}
+
+#sub04 .util_area2 .target_page {
+    margin-left: 18px;
+}
+
+#sub04 .util_area2 .target_page input {
+    width: 33px;
+    height: 28px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+}
+
+#sub04 .util_area2 .target_page button {
+    width: 35px;
+    height: 30px;
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+
+#sub04 .util_area2 .page_navi {
+    margin-left: 16px;
+    padding: 9px 0;
+}
+
+#sub04 .util_area2 .page_navi a.btn_first {
+    background: url(../img/common/ico_u_first.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi a.btn_prev {
+    margin: 0 10px 0 7px;
+    background: url(../img/common/ico_u_prev.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi p {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+#sub04 .util_area2 .page_navi a.btn_next {
+    margin: 0 7px 0 10px;
+    background: url(../img/common/ico_u_next.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi a.btn_last {
+    background: url(../img/common/ico_u_last.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    line-height: 30px;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+#sub04 .util_area2 .page_size {
+    margin-left: 12px;
+}
+
+#sub04 .util_area2 .page_size select {
+    width: 90px;
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #959595;
+}
