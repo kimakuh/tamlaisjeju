@@ -17,7 +17,7 @@
     width: 1200px;
     height: 1500px;
     background: rgba(0,0,0,0.1);
-    padding-left: 280px;
+    margin:auto;
 }  
 #sub09 .content .aside_wrap .info-left-box {
     width: 270px;
