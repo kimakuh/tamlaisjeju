@@ -420,6 +420,9 @@ all - 여행필수정보 전체
 
 #sub04 .util_area2 div {
     display: inline-block;
+}
+
+#sub04 .util_area2 div * {
     float: left;
 }
 
