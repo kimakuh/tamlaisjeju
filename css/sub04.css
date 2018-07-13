@@ -410,6 +410,7 @@ all - 여행필수정보 전체
 }
 
 #sub04 .recommend_area .util_area2 {
+    float: right;
     padding-top: 20px;
 }
 
@@ -421,6 +422,12 @@ all - 여행필수정보 전체
 #sub04 .util_area2 div {
     display: inline-block;
     float: left;
+}
+
+#sub04 .paging {
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
 }
 
 #sub04 .util_area2 .sort_type .ico_sort.on {
