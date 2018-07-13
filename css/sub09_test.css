@@ -11,11 +11,11 @@
     width: 100%;
     height: 340px;
     background: rgba(0,0,0,0.1);
+    float: left;
 } 
 #sub09 .content .cont_wrap {
     width: 75%;
     height: 1500px;
     background: rgba(0,0,0,0.1);
-    float: left;
-    left: 280px;
-} 
+    padding-left: 280px;
+}  
