@@ -53,6 +53,12 @@
     position: relative;
     font-family: Arial;
     float: left;
+    z-index: 9999;
+    padding: 20px 16px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #282828;
 }
 
 #sub10_planner_header .custom-select1 select {
@@ -61,7 +67,7 @@
 }
 
 #sub10_planner_header .select-selected {
-    background-color: DodgerBlue;
+    background-color: white;
 }
 
 /*style the arrow inside the select element:*/
