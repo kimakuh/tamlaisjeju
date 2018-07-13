@@ -47,8 +47,9 @@
     font-weight: bold;
 }
 
-#sub10 .dropdown-content {
-    z-index: 9999;
+#sub10 .custom-select {
+    width: 200px;
+    
 }
 
 #sub10 .action {

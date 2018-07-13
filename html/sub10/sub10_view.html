@@ -207,7 +207,7 @@
                                         <div class="sch_num">2</div>
                                     </div>
                                     <div class="sch_content">
-                                        <img src="http://img.earthtory.com/img/place_img/312/10342_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
+                                        <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="" class="spot_img" onerror="this.src='/res/img/common/no_img/sight55.png';"
                                             onclick="window.open('/ko/city/jeju_312/attraction/jeju-international-airport_7488');"
                                             style="cursor:pointer;">
                                         <div class="spot_content_box">
@@ -999,6 +999,10 @@
                     </div>
 
                 </div>
+
+
+
+                
                 <!-- The Modal -->
                 <div class="modal fade" id="myModal">
                     <div class="modal-dialog" style="width: 100%; height: 100%;  z-index: 999999;  /* background: rgba(0,0,0,0.7); */ background: white;"
@@ -1211,7 +1215,7 @@
         var mapContainer = document.getElementById('map2'), // 지도를 표시할 div 
             mapOption = {
                 center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
+                level: 8 // 지도의 확대 레벨
             };
 
         // 지도를 생성합니다    
@@ -1255,6 +1259,13 @@
             ps.categorySearch('FD6', placesSearchCB, {
                 useMapCenter: true
             });
+            ps.categorySearch('CT1', placesSearchCB, {
+                useMapCenter: true
+            });
+            ps.categorySearch('CE7', placesSearchCB, {
+                useMapCenter: true
+            });
+
 
             // 키워드 검색 완료 시 호출되는 콜백함수 입니다
             function placesSearchCB(data, status, pagination) {
