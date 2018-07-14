@@ -962,7 +962,7 @@ body {
     border-bottom: 1px solid #eee;
     background-color: white;
     position: fixed;
-    z-index: 99999;
+    z-index: 2;
 }
 
 .editor-header .header-default {
@@ -1277,7 +1277,7 @@ body {
 .date-picker {
     display: inline-block;
     position: absolute;
-    z-index: 9999;
+    z-index: 2;
 }
 
 .date-picker {
@@ -1470,4 +1470,10 @@ body {
 
 .date-picker.open .input button {
     background: #68768A;
+}
+
+
+/* dropzone */
+.dropzone * {
+    min-height: 300px;
 }
