@@ -156,7 +156,7 @@
                             <div class="input">
                                 <div class="result">
                                     <span class="date_text">출발일</span>
-                                    <span id ="sdt" class="date_result"></span>
+                                    <span id="sdt" class="date_result"></span>
                                 </div>
                                 <button>
                                     <i class="fa fa-calendar"></i>
@@ -167,8 +167,8 @@
                         <div class="end_date date-picker">
                             <div class="input">
                                 <div class="result">
-                                    <span id ="edt" class="date_text">도착일</span>
-                                    <span class="date_result"></span>
+                                    <span class="date_text">도착일</span>
+                                    <span id="edt" class="date_result"></span>
                                 </div>
                                 <button>
                                     <i class="fa fa-calendar"></i>
@@ -178,7 +178,7 @@
                         </div>
                         <div class="cal_days">
                             <span>총</span>
-                            <input id="cal_day" readonly value="0">
+                            <span id="cal_day">0</span>
                             <spam>일</span>
                         </div>
                     </div>
@@ -322,6 +322,10 @@
 
     <script>
         // 캘린더
+        $(document).ready(function () {
+            $("#total_cost").text($("#total_cost_value").val())
+        });
+
 
         $(function () {
             $(".calendar").datepicker({
@@ -336,17 +340,44 @@
             });
 
 
+
             $(".calendar").on("change", function () {
+
                 var $me = $(this),
                     $selected = $me.val(),
                     $parent = $me.parents('.date-picker');
                 $parent.find('.date_text').siblings('span').html($selected);
                 $parent.toggleClass('open');
+                var str = '';
+                var str2 = '';
+                for (var i = 0; i < $('#sdt').length; i++) {
+                    str += $('#sdt').eq(i).html();
+                }
+                for (var i = 0; i < $('#edt').length; i++) {
+                    str2 += $('#edt').eq(i).html();
+                }
+                var dateArray = str.split("/");
+                var dateArray2 = str2.split("/");
+                var dateObj = new Date(dateArray[0], Number(dateArray[1]) - 1, dateArray[2]);
+                var dateObj2 = new Date(dateArray2[0], Number(dateArray2[1]) - 1, dateArray2[2]);
+                var betweenDay = (dateObj2.getTime()) / 1000 / 60 / 60 / 24 - dateObj.getTime() / 1000 /
+                    60 / 60 / 24;
+                var $edt = $('#edt')
+                var $sdt = $("#sdt")
+                console.log(betweenDay)
+                if (betweenDay || betweenDay == 0) {
+                    if (betweenDay < 0) {
+                        alert("출발일과 도착일을 확인해주세요")
+                        document.getElementById('sdt').innerHTML = "";
+                        document.getElementById('edt').innerHTML = "";
+                        document.getElementById('cal_day').innerHTML = "0";
+                        return;
+                    }
+                    document.getElementById('cal_day').innerHTML = betweenDay + 1;
+
+                }
             });
         });
-
-  
-
     </script>
 
 
