@@ -1120,7 +1120,9 @@ body {
 #sub08 .editor_container textarea::-webkit-input-placeholder {
     color: rgb(194, 194, 194);
 }
-
+#sub08 .editor_container input::-webkit-input-placeholder {
+    color: rgb(194, 194, 194);
+}
 #sub08 .editor_container .content_wrap .title_text .title_textarea {
     display: block;
     width: 100%;
