@@ -26,7 +26,7 @@
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
     </style>
 </head>
- 
+
 <body>
     <div class="editor-header" id="se_top_menu_area">
         <div class="header-default">
@@ -36,11 +36,16 @@
                     <button id="submit">발행</button>
                     <button id="exit">나가기</button>
                 </div>
+                
             </div>
+            
 
             <div id="se_doctoolbar" class="header-docProperty">
+                   
             </div>
+            
         </div>
+        <div class="header_title">TamLaIsJeJu</div>
     </div>
     <div id="sub08" class="editor_wrap">
 
@@ -150,18 +155,27 @@
                         <form>
                             <input id="calendar" type="date">
                             <input id="calendar" type="date">
+                            <span>총</span><input id="cal_days" readonly value="0"><spam>일</span>
                         </form>
-                        <p>총$일</p>
                     </div>
                 </div>
                 <div class="post_wrap">
+                    <div class="post_imgbox">
+                        클릭하여 사진 등록
+                        <img src="">
+                    </div>
                     <div class="post_text">
                         <form>
-                            <textarea class="title_textarea" placeholder="내용" rows="1" data-is-observable="false"></textarea>
+                            <textarea id="post_title" class="post_titl" placeholder="장소" rows="1"></textarea>
+                            <textarea id="post_address" class="post_addr" placeholder="주소" rows="1"></textarea>
+                            <textarea id="post_text" class="title_textarea" placeholder="내용을 입력하세요."  data-is-observable="false"></textarea>
+                            <div class="text_count">남은 글자수: <span class="count">80</span>/80</div>
                         </form>
                     </div>
                 </div>
+                
             </div>
+            
         </div>
     </div>
     <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script> -->
@@ -248,6 +262,38 @@
             startItem: 'last'
         });
     </script> -->
+    <script>
+$(function() {
+    $('.text_count').each(function() {
+        // count 정보 및 count 정보와 관련된 textarea/input 요소를 찾아내서 변수에 저장한다.
+        var $count = $('.count', this);
+        var $input = $(this).prev();
+        // .text()가 문자열을 반환하기에 이 문자를 숫자로 만들기 위해 1을 곱한다.
+        var maximumCount = $count.text() * 1;
+        // update 함수는 keyup, paste, input 이벤트에서 호출한다.
+        var update = function() {
+            var before = $count.text() * 1;
+            var now = maximumCount - $input.val().length;
+            // 사용자가 입력한 값이 제한 값을 초과하는지를 검사한다.
+            if (now < 0) {
+                var str = $input.val();
+                alert('글자 입력수가 초과하였습니다.');
+                $input.val(str.substr(0, maximumCount));
+                now = 0;
+            }
+            // 필요한 경우 DOM을 수정한다.
+            if (before != now) {
+                $count.text(now);
+            }
+        };
+        // input, keyup, paste 이벤트와 update 함수를 바인드한다
+        $input.bind('input keyup paste', function() {
+            setTimeout(update, 0)
+        });
+        update();
+    });
+});
+    </script>
 
 
 </body>
