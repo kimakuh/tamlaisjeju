@@ -1126,7 +1126,7 @@ document.addEventListener("drag", function( event ) {
 document.addEventListener("dragstart", function( event ) {
     // store a ref. on the dragged elem
     dragged = event.target;
-    event.target.style.ondragstart="event.dataTransfer.setData('text/plain',null)";
+    event.target.setAttribute = "'ondragstart='drag(event)'";
     // make it half transparent
     event.target.style.opacity = .5;
 }, false);
