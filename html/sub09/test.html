@@ -205,8 +205,8 @@
                                 </div>
                                 <div id="spot-contents">
                                     <div class="conts-txt-area">
-                                        <div class="upload_img" contenteditable="false">
-                                            <img class="load_img" src="../../img/sub09/content.jpg" style="height: 489.77777777777777px; width: 100%">
+                                        <div class="medium-insert-image ui-sortable" contenteditable="false">
+                                            <img src="../../img/sub09/content.jpg" style="height: 489.77777777777777px; width: 100%">
                                         </div>
                                         <p class="">
                                             ⓒInstagram |
@@ -234,70 +234,70 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
                                     </div>
                                 </div>
-                              <!--spot-contents종료 -->
                             </div>
                         </div>
                     </div>
-                    <!-- cont_wrap 끝남 -->
                 </div>
-                <!-- content end -->
             </div>
-            <!-- container end -->
+            <!-- cont_wrap 끝남 -->
+        </div>
+        <!-- content end -->
+    </div>
+    <!-- container end -->
 
 
 
-            <script>
-                function openTabs(evt, tabNames) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(tabNames).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
+    <script>
+        function openTabs(evt, tabNames) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabNames).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-                // Get the element with id="defaultOpen" and click on it
-                document.getElementById("defaultOpen").click();
-            </script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 
 
-            <script>
-                function innerTabs(evt, tabNames) {
-                    var i, inner_tabcontent, inner_tablinks;
-                    inner_tabcontent = document.getElementsByClassName("inner_tabcontent");
-                    for (i = 0; i < inner_tabcontent.length; i++) {
-                        inner_tabcontent[i].style.display = "none";
-                    }
-                    inner_tablinks = document.getElementsByClassName("inner_tablinks");
-                    for (i = 0; i < inner_tablinks.length; i++) {
-                        inner_tablinks[i].className = inner_tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(tabNames).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
+    <script>
+        function innerTabs(evt, tabNames) {
+            var i, inner_tabcontent, inner_tablinks;
+            inner_tabcontent = document.getElementsByClassName("inner_tabcontent");
+            for (i = 0; i < inner_tabcontent.length; i++) {
+                inner_tabcontent[i].style.display = "none";
+            }
+            inner_tablinks = document.getElementsByClassName("inner_tablinks");
+            for (i = 0; i < inner_tablinks.length; i++) {
+                inner_tablinks[i].className = inner_tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabNames).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-                // Get the element with id="defaultOpen" and click on it
-                document.getElementById("defaultOpen").click();
-            </script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 
-            <div id="footer"></div>
-            <script type="text/javascript">
-                $(document).ready(function () {
-                    $("#header").load("../include/sub_header.html")
-                    $("#footer").load("../include/sub_footer.html")
-                    /* id 지정을 통해서도 가능합니다. 
-                     $("#header").load("header.html #navbar")
-                     */
-                });
-            </script>
+    <div id="footer"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
 
 </body>
 
