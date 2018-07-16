@@ -4,26 +4,43 @@
 #sub10_planner_header {
     height: 85px;
     width: 100%;
-    min-width: 1050px;
+    min-width: 1200px;
     float: left;
 }
 
 #sub10_planner_header #myTopnav {
+    padding: 10px;
     height: 85px;
     width: 100%;
     float: left;
 }
 
-#sub10_planner_header .topnav .wrapper h1 a {
+#sub10_planner_header .myTopnav h1 {
+    display: block;
+    float: left;
+}
+
+#sub10_planner_header .myTopnav h1 a {
+    display: block;
+    width: 200px;
+    height: 63px;
+    font-family: 'Gugi', cursive;
+    float: none;
+    font-size: 0;
+    text-indent: -9999px;
+    padding: 0;
+    line-height: 0;
+    background: url(../img/common/tamla_logo_web.gif) no-repeat;
+    background-size: cover;
     margin-right: 100px;
 }
 
-#sub10_planner_header .topnav .planner_set {
+#sub10_planner_header .myTopnav .planner_set {
     float: left;
     margin-left: 100px;
 }
 
-#sub10_planner_header .topnav .planner_set .people {
+#sub10_planner_header .myTopnav .planner_set .people {
     float: left;
     width: 170px;
     height: 65px;
@@ -35,7 +52,7 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .planner_set .people input {
+#sub10_planner_header .myTopnav .planner_set .people input {
     float: left;
     width: 140px;
     height: 65px;
@@ -47,13 +64,13 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .planner_set .tag {
+#sub10_planner_header .myTopnav .planner_set .tag {
     float: left;
     border-right: solid #ebebeb 1px;
     color: #555555;
 }
 
-#sub10_planner_header .topnav .planner_set .tag input {
+#sub10_planner_header .myTopnav .planner_set .tag input {
     float: left;
     width: 140px;
     height: 65px;
@@ -65,12 +82,12 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .plan_out {
+#sub10_planner_header .myTopnav .plan_out {
     float: right;
     padding: 10px;
 }
 
-#sub10_planner_header .topnav .plan_out .plan_out_btn {
+#sub10_planner_header .myTopnav .plan_out .plan_out_btn {
     float: right;
     width: 100px;
     height: 42px;
@@ -83,6 +100,12 @@
     color: #fff;
     margin-right: 10px;
     cursor: pointer;
+}
+
+#sub10_planner_header .myTopnav .plan_out .plan_out_btn a {
+    float: right;
+    width: 100px;
+    height: 42px;
 }
 /*custom-select-1 */
 
@@ -1143,6 +1166,7 @@
 
 #sub10 .full_wrap #right_full_box #city_list {
     width: 365px;
+    height: 100%;
     z-index: 999;
     position: absolute;
     left: 0px;
@@ -1183,7 +1207,7 @@
 }
 
 #sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_search_box {
-    height: 100px;
+    height: 115px;
     border-bottom: solid #dadada 1px;
     padding-top: 10px;
     background: #fff;
@@ -1382,7 +1406,7 @@
 #sub10 .full_wrap #right_full_box .fr {
     height: 824px;
     position: relative;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
 }
 
@@ -1637,8 +1661,8 @@
 /* 카테고리 검색 목록 css */
 .map_wrap, .map_wrap * {margin:0; padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
 .map_wrap {position:relative;width:100%;height:350px;}
-#category {position:absolute;top:95px;left:10px;border-radius: 5px; border:1px solid #909090;background: #fff;overflow: hidden;z-index: 2;}
-#category li {float:left;list-style: none;width:50px;border-right: 1px solid #acacac;text-align: center; cursor: pointer;}
+#category {position:absolute;top:95px;left:10px;border-radius: 5px; background: #fff;overflow: hidden;z-index: 2;}
+#category li {float:left;list-style: none;width:50px;text-align: center; cursor: pointer;}
 #category li.on {background: #eee;}
 #category li:hover {background: #ffe6e6;border-left:1px solid #acacac;margin-left: -1px;}
 #category li:last-child{margin-right:0;border-right:0;}
