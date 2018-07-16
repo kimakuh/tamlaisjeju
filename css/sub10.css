@@ -9,6 +9,7 @@
 }
 
 #sub10_planner_header #myTopnav {
+    padding: 10px;
     height: 85px;
     width: 100%;
     float: left;
