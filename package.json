@@ -1,0 +1,17 @@
+{
+  "name": "tamlaisjeju",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/kimakuh/tamlaisjeju/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "dropzone": "^5.5.1",
+    "handlebars": "^4.0.11",
+    "jquery": "^3.3.1"
+  }
+}
