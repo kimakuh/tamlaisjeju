@@ -850,7 +850,6 @@
             el.className = 'item';
             el.draggable = 'true';
             el.ondragstart = 'drag(event)';
-            el.addEventListener.ondragstart = 'drag(event)';
             return el;
         }
 
@@ -1116,61 +1115,30 @@ document.addEventListener("click", closeAllSelect);
 </script>
 
 <script>
- var dragged;
-
-/* events fired on the draggable target */
-document.addEventListener("drag", function( event ) {
-
-}, false);
-
-document.addEventListener("dragstart", function( event ) {
-    // store a ref. on the dragged elem
-    dragged = event.target;
-    event.target.setAttribute = "'ondragstart='drag(event)'";
-    // make it half transparent
-    event.target.style.opacity = .5;
-}, false);
-
-document.addEventListener("dragend", function( event ) {
-    // reset the transparency
-    event.target.style.opacity = "";
-}, false);
-
-/* events fired on the drop targets */
-document.addEventListener("dragover", function( event ) {
-    // prevent default to allow drop
-    event.preventDefault();
-}, false);
-
-document.addEventListener("dragenter", function( event ) {
-    // highlight potential drop target when the draggable element enters it
-    if ( event.target.className == "item" ) {
-        event.target.style.background = "white";
-    }
-
-}, false);
-
-document.addEventListener("dragleave", function( event ) {
-    // reset background of potential drop target when the draggable element leaves it
-    if ( event.target.className == "item" ) {
-        event.target.style.background = "";
-    }
-
-}, false);
-
-document.addEventListener("drop", function( event ) {
-    // prevent default action (open as link for some elements)
-    event.preventDefault();
-    // move dragged elem to the selected drop target
-    if ( event.target.className == "item" ) {
-        event.target.style.background = "";
-        dragged.parentNode.removeChild( dragged );
-        event.target.appendChild( dragged );
-    }
-  
-}, false);
-    
-</script>
+        /* Events fired on the drag target */
+        document.addEventListener("dragstart", function(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+            document.getElementById("dragitem").innerHTML = "Started to drag the p element.";
+        });
+        
+        document.addEventListener("dragend", function(event) {
+            document.getElementById("dragitem").innerHTML = "Finished dragging the p element.";
+        });
+        
+        /* Events fired on the drop target */
+        document.addEventListener("dragover", function(event) {
+            event.preventDefault();
+        });
+        
+        document.addEventListener("drop", function(event) {
+            event.preventDefault();
+            if ( event.target.className == "item" ) {
+                var data = event.dataTransfer.getData("Text");
+                event.target.appendChild(document.getElementById(data));
+            }
+        });
+        </script>
+        
 </body>
 
 </html>
