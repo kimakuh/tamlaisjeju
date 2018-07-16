@@ -427,7 +427,7 @@ all - 여행필수정보 전체
 }
 
 
-#sub04 .util_area2 .sort_type .ico_sort.on {
+#sub04 .toggle_area button on{
     background: url(../img/common/ico_sort_thumb_on.png) no-repeat 50% 50%;
     border-color: #000;
 }
@@ -441,7 +441,7 @@ all - 여행필수정보 전체
     text-indent: -9999px;
 }
 
-#sub04 .util_area2 .sort_type .ico_sort.type_list {
+#sub04 .toggle_area button off {
     background: url(../img/common/ico_sort_list.png) no-repeat 50% 50%;
 }
 
