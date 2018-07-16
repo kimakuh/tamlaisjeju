@@ -1013,8 +1013,9 @@ body {
 #sub08 .editor_container .editor-side-innerWrap {
     height: 100%;
     width: 245px;
-    background-color: #eee;
+    background-color: #fafafa;
     position: fixed;
+    border-right: 1px solid #eee;
     top: 88px;
 }
 
@@ -1033,11 +1034,94 @@ body {
 }
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn button {
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 14px;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn button img {
+    background-image: url("../../img/sub08/cloud.png");
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn button>span {
+    width: 28px;
+    height: 28px;
     display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    background-size: 28px;
+}
+
+
+/* 왼쪽바 사진 이미지 및 버튼 */
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_upload {
+    background-image: url("../img/sub08/photo.png");
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_sns {
+    background-image: url("../img/sub08/cloud.png");
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_lib {
+    background-image: url("../img/sub08/photos.png");
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_upload:hover {
+    background-image: url("../img/sub08/photo-b.png");
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_sns:hover {
+    background-image: url("../img/sub08/cloud-b.png");
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_lib:hover {
+    background-image: url("../img/sub08/photos-b.png");
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_upload_btn:hover .side_upload {
+    background-image: url("../img/sub08/photo-b.png");
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_sns_btn:hover .side_sns {
+    background-image: url("../img/sub08/cloud-b.png");
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_lib_btn:hover .side_lib {
+    background-image: url("../img/sub08/photos-b.png");
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_upload_btn:hover {
+    color: #2168f6;
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_sns_btn:hover {
+    color: #2168f6;
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_lib_btn:hover {
+    color: #2168f6;
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .action_btn {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 8px;
+    border: 1px solid #EEE;
+    border-radius: 10px;
+    color: white;
+    background-color: #2168f6;
+    margin-left: 0;
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .action_btn:hover {
+    background-color: #2168f6;
+    opacity: 0.9;
+}
+/*왼쪽바 여기까지 */
+
+
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn span {
+    font-size: 15px;
+    margin-left: 14px;
+
+    display: inline-block;
 }
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn span * {
     display: inline-block;
+    
 }
 
 #sub08 .editor_container .editor-side-innerWrap p {
@@ -1066,6 +1150,29 @@ body {
     width: 33%;
     border: 1px solid black;
     margin-bottom: 0;
+    font-size: 12px;
+    padding: 6px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner li:hover {
+background-color: wheat;
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type1,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type2,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type3
+{
+    border-bottom: none;
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type1,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type4 {
+    border-right: none;
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type3,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type6 {
+    border-left: none;
 }
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite {
@@ -1082,7 +1189,33 @@ body {
     width: 33%;
     border: 1px solid black;
     margin-bottom: 0;
+    font-size: 12px;
+    padding: 6px;
+    cursor: pointer;
 }
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite li:hover {
+    background-color: wheat;
+}
+
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type1,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type2,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type3,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type4,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type5,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type6 {
+    border-bottom: none;
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type1,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type4,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type7 {
+    border-right: none;
+}
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type3,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type6,
+#sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type9 {
+    border-left: none;
+}
+
 
 /***** 콘텐츠박스 *******/
 
@@ -1124,7 +1257,6 @@ body {
 #sub08 .editor_container input::-webkit-input-placeholder {
     color: rgb(194, 194, 194);
 }
-
 
 #sub08 .editor_container .content_wrap .title_text .title_textarea {
     display: block;
@@ -1210,7 +1342,7 @@ body {
     display: block;
     width: 100%;
     height: 114px;
-    padding: 0;
+    padding: 5px 0 0 0;
     outline: 0;
     border: none;
     background: 0 0;
