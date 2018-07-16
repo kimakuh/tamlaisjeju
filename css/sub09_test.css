@@ -353,14 +353,14 @@
     font-size: 18px;
     font-weight: 300;
 }
-#sub09 .spot-contents .conts-txt-area p {
+#sub09 .conts-txt-area p {
     color: #5c5c5c;
     font-size: 16px;
     line-height: 23px;
     word-wrap: break-word;
     word-break: keep-all;
 }
-#sub09 .spot-contents .conts-txt-area p a {
+#sub09 .conts-txt-area p a {
     display: inline;
     color: #ff8000;
 }
