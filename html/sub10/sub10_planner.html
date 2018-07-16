@@ -1031,7 +1031,7 @@ for (i = 0; i < x.length; i++) {
   x[i].appendChild(a);
   /*for each element, create a new DIV that will contain the option list:*/
   b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
+  b.setAttribute("class", "select-items select-hide");  
   for (j = 1; j < selElmnt.length; j++) {
     /*for each option in the original select element,
     create a new DIV that will act as an option item:*/
@@ -1118,11 +1118,11 @@ document.addEventListener("click", closeAllSelect);
         /* Events fired on the drag target */
         document.addEventListener("dragstart", function(event) {
             event.dataTransfer.setData("Text", event.target.id);
-            document.getElementById("dragitem").innerHTML = "Started to drag the p element.";
+            document.getElementById("dragitem").innerHTML;
         });
         
         document.addEventListener("dragend", function(event) {
-            document.getElementById("dragitem").innerHTML = "Finished dragging the p element.";
+            document.getElementById("dragitem").innerHTML;
         });
         
         /* Events fired on the drop target */
