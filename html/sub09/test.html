@@ -203,7 +203,7 @@
                                         </h4>
                                     </a>
                                 </div>
-                                <div id="spot-contents">
+                                <div class="spot-contents">
                                     <div class="conts-txt-area">
                                         <div class="medium-insert-image ui-sortable" contenteditable="false">
                                             <img src="../../img/sub09/content.jpg" style="height: 489.77777777777777px; width: 100%">
@@ -237,28 +237,7 @@
                                     </div>
                                     <!-- 라이브리 시티 설치 코드 -->
                                     <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzk5NC8xNDUyNA==">
-                                        <script type="text/javascript">
-                                            (function (d, s) {
-                                                var j, e = d
-                                                    .getElementsByTagName(s)[0];
-
-                                                if (typeof LivereTower === 'function') {
-                                                    return;
-                                                }
-
-                                                j = d
-                                                    .createElement(s);
-                                                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                                                j.async = true;
-
-                                                e.parentNode
-                                                    .insertBefore(
-                                                        j,
-                                                        e);
-                                            })(document,
-                                                'script');
-                                        </script>
-                                        <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+                                        
                                     </div>
                                     <!-- 시티 설치 코드 끝 -->
                                 </div>
@@ -321,28 +300,7 @@
                                     </div>
                                     <!-- 라이브리 시티 설치 코드 -->
                                     <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzk5NC8xNDUyNA==">
-                                        <script type="text/javascript">
-                                            (function (d, s) {
-                                                var j, e = d
-                                                    .getElementsByTagName(s)[0];
-
-                                                if (typeof LivereTower === 'function') {
-                                                    return;
-                                                }
-
-                                                j = d
-                                                    .createElement(s);
-                                                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                                                j.async = true;
-
-                                                e.parentNode
-                                                    .insertBefore(
-                                                        j,
-                                                        e);
-                                            })(document,
-                                                'script');
-                                        </script>
-                                        <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+                                        
                                     </div>
                                     <!-- 시티 설치 코드 끝 -->
                                 </div>
@@ -359,48 +317,7 @@
         <!-- content end -->
     </div>
     <!-- container end -->
-
-
-
-    <script>
-        function openTabs(evt, tabNames) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabNames).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
-
-
-    <script>
-        function innerTabs(evt, tabNames) {
-            var i, inner_tabcontent, inner_tablinks;
-            inner_tabcontent = document.getElementsByClassName("inner_tabcontent");
-            for (i = 0; i < inner_tabcontent.length; i++) {
-                inner_tabcontent[i].style.display = "none";
-            }
-            inner_tablinks = document.getElementsByClassName("inner_tablinks");
-            for (i = 0; i < inner_tablinks.length; i++) {
-                inner_tablinks[i].className = inner_tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabNames).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
-
+    <!--footer -->
     <div id="footer"></div>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -433,7 +350,38 @@
 				}
 			});
 		});
-	</script>
+    </script>
+    <!--리모컨 -->
+    <script type="text/javascript">
+        (function (d, s) {
+            var j, e = d
+                .getElementsByTagName(s)[0];
+
+            if (typeof LivereTower === 'function') {
+                return;
+            }
+
+            j = d
+                .createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
+
+            e.parentNode
+                .insertBefore(
+                    j,
+                    e);
+        })(document,
+            'script');
+    </script>
+    <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+
+    <script type="text/javascript">
+        $('#top').click(function() {      
+            $('body,html').animate({
+                scrollTop : 0                       
+            }, 500);
+        });
+        </script>
 </body>
 
 </html>
