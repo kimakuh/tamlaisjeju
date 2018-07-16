@@ -846,12 +846,12 @@
                         '</div>';           
         
             el.innerHTML = itemStr;
-            el.ondragstart = 'drag(event)';
             el.id = 'dragitem';
             el.className = 'item';
             el.draggable = 'true';
             return el;
         }
+            dragitem.ondragstart = 'drag(event)';
 
         
 
