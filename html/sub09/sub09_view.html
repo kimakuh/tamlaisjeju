@@ -95,14 +95,14 @@
                                 <a class="btn-top nav-btn-top story-view-nav-btn" id="top">Top</a>
                             </li>
 
-                            <li class="story-view-nav-li">
+                            <li id="day-1" class="story-view-nav-li">
                                 <a class="story-view-nav-day-btn">
                                     <span>Day</span>
                                     <span>1</span>
                                 </a>
                             </li>
 
-                            <li class="story-view-nav-li">
+                            <li id="day-2" class="story-view-nav-li">
                                 <a class="story-view-nav-day-btn">
                                     <span>Day</span>
                                     <span>2</span>
@@ -352,7 +352,7 @@
     <script type="text/javascript">
        $('#top').click(function () {
             $('body,html').animate({
-                scroll: 0
+                scrollEnd: 0
             }, 500);
         });
     </script>
