@@ -1125,6 +1125,7 @@ body {
     color: rgb(194, 194, 194);
 }
 
+
 #sub08 .editor_container .content_wrap .title_text .title_textarea {
     display: block;
     width: 100%;
@@ -1474,6 +1475,36 @@ body {
 
 
 /* dropzone */
-.dropzone * {
+.dropzone {
     min-height: 300px;
+    margin: 20px;
+    border: 1px dotted #eee;
+}
+#txtData {
+    display: none;
+}
+.dropzone .dz_ico {
+    font-size: 50px;
+    border: 1px dotted gray;
+    display: block;
+    line-height: 90px;
+    color: gray;
+    height: 100px;
+    width: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 43%;
+    border-radius: 20px;
+}
+
+.dz_form:hover .dz_ico {
+    background-color: #FFFEF0;
+    opacity: 0.5;
+}
+
+
+.text_area {
+    resize: none;
+    font-size: small;
+    outline: none;
 }
