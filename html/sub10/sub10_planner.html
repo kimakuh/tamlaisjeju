@@ -694,7 +694,7 @@
                         </div>
                        
                         <div id="menu_wrap" class="bg_white">
-                                <ul id="placesList" el.ondragstart= 'event.dataTransfer.setData("text/plain",null)'></ul>
+                                <ul id="placesList"></ul>
                                 <div id="pagination"></div>
                             </div>
                     </div>
@@ -846,8 +846,9 @@
                         '</div>';           
         
             el.innerHTML = itemStr;
-            el.id = 'dragitem',
-            el.className = 'item',
+            el.ondragstart = 'drag(event)';
+            el.id = 'dragitem';
+            el.className = 'item';
             el.draggable = 'true';
             return el;
         }
