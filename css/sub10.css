@@ -84,6 +84,12 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
+#sub10_planner_header .topnav .plan_out .plan_out_btn a {
+    float: right;
+    width: 100px;
+    height: 42px;
+}
 /*custom-select-1 */
 
 /*the container must be positioned relative:*/
