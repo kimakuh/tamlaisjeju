@@ -353,18 +353,19 @@
     font-size: 18px;
     font-weight: 300;
 }
-#sub09 .spot-contents .conts-txt-area p {
+#sub09 .conts-txt-area p {
     color: #5c5c5c;
     font-size: 16px;
     line-height: 23px;
     word-wrap: break-word;
     word-break: keep-all;
 }
-#sub09 .spot-contents .conts-txt-area p a {
+#sub09 .conts-txt-area p a {
     display: inline;
     color: #ff8000;
 }
 #sub09 .spot-contents .author-info {
+    
     height: 30px;
     padding: 8px 0;
     margin: 5px 0 0 0;
@@ -378,6 +379,13 @@
     padding: 0;
     background: 0 0;
 }
+#sub09 .spot-contents .author-info .conts-label div {
+    color: #999;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
 #sub09 .author-info .conts-label div span {
     color: #999;
     font-size: 14px;
