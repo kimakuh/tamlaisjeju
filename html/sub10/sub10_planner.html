@@ -850,10 +850,14 @@
             el.className = 'item';
             el.draggable = 'true';
             el.ondragstart = 'drag(event)';
-            el.onclick = dragitem.ondragstart;
+            ondragstart();
             return el;
         }
+
+            function ondragstart() {
             dragitem.ondragstart = 'drag(event)';
+
+            }
 
         
 
