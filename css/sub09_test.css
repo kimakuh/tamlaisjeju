@@ -12,7 +12,7 @@
     height: 500px;
     background: rgba(0,0,0,0.1);
     float: left;
-    position: fixed;
+    /*position: fixed;*/
 } 
 #sub09 .content .cont_wrap {
     width: 900px;
