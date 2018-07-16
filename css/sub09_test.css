@@ -364,14 +364,14 @@
     display: inline;
     color: #ff8000;
 }
-#sub09 .spot-contents .author-info {
+#sub09 #spot-contents .author-info {
     
     height: 30px;
     padding: 8px 0;
     margin: 5px 0 0 0;
     border-top: 1px solid #eee;
 }
-#sub09 .spot-contents .author-info .conts-label {
+#sub09 #spot-contents .author-info .conts-label {
     display: block;
     float: left;
     height: 30px;
@@ -379,7 +379,7 @@
     padding: 0;
     background: 0 0;
 }
-#sub09 .spot-contents .author-info .conts-label div {
+#sub09 #spot-contents .author-info .conts-label div {
     color: #999;
     font-size: 14px;
     font-weight: 300;
@@ -392,10 +392,10 @@
     font-weight: 300;
     text-decoration: none;
 }
-#sub09 .spot-contents .author-info .conts-label .like-count a {
+#sub09 #spot-contents .author-info .conts-label .like-count a {
     background: url(../img/sub09/like.png) 0 3px no-repeat;
 }
-#sub09 .spot-contents .author-info .conts-label .comment-count a {
+#sub09 #spot-contents .author-info .conts-label .comment-count a {
     background: url(../img/sub09/comment.png) 0 4px no-repeat;
     cursor: pointer;
 }
