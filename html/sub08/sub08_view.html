@@ -616,8 +616,8 @@
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
                 var content = $('.t_timeline').height();
-                if ($(window).scrollTop() > container - content - 180) {
-                    if ($(window).scrollTop() > content - 220) {
+                if ($(window).scrollTop() > container - content) {
+                    if ($(window).scrollTop() > content - 260) {
                         $('nav').addClass('absolute');
                         $('nav').removeClass('fixed');
                         return;
