@@ -846,9 +846,10 @@
                         '</div>';           
         
             el.innerHTML = itemStr;
+            el.innerHTML.ondragstart = 'event.dataTransfer.setData("text/plain",null)';
             el.id = 'dragitem',
             el.className = 'item',
-            el.ondragstart="event.dataTransfer.setData('text/plain',null)",
+            el.ondragstart= 'event.dataTransfer.setData("text/plain",null)',
             el.draggable = 'true';
             return el;
         }
