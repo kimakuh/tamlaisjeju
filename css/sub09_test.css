@@ -270,10 +270,8 @@
 }
 
 #sub09 .story-conts {
-    width: 920px;
-    margin-left: -16px;
-    padding-top: 10px;
-    
+    width: 100%;
+     
 }
 #sub09 .story-conts h3 {
     top: -10px;
