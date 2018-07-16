@@ -999,9 +999,12 @@
             return el;
             
         }
-        function dragAtt() {
-            $('.item').attr('ondragstart="drag(event)"' ,'draggable="true"');
-        }
+        $(document).ready(function(){
+
+            $('.item').attr('ondragstart="drag(event)"','draggable="true"');
+        });
+
+
 
 
 
