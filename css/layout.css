@@ -2000,7 +2000,7 @@ img.picture-item__blur {
 
 .board_list.type01 .box {
   /* width: 32%; */
-  width: calc(32% - 2%);
+  width: calc(34% - 2%);
   margin-left: 2%;
 }
 
