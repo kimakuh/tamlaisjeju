@@ -203,7 +203,7 @@
                                         </h4>
                                     </a>
                                 </div>
-                                <div id="spot-contents">
+                                <div class="spot-contents">
                                     <div class="conts-txt-area">
                                         <div class="medium-insert-image ui-sortable" contenteditable="false">
                                             <img src="../../img/sub09/content.jpg" style="height: 489.77777777777777px; width: 100%">
@@ -237,28 +237,7 @@
                                     </div>
                                     <!-- 라이브리 시티 설치 코드 -->
                                     <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzk5NC8xNDUyNA==">
-                                        <script type="text/javascript">
-                                            (function (d, s) {
-                                                var j, e = d
-                                                    .getElementsByTagName(s)[0];
-
-                                                if (typeof LivereTower === 'function') {
-                                                    return;
-                                                }
-
-                                                j = d
-                                                    .createElement(s);
-                                                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                                                j.async = true;
-
-                                                e.parentNode
-                                                    .insertBefore(
-                                                        j,
-                                                        e);
-                                            })(document,
-                                                'script');
-                                        </script>
-                                        <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+                                        
                                     </div>
                                     <!-- 시티 설치 코드 끝 -->
                                 </div>
@@ -268,6 +247,70 @@
                     </div>
                 </div>
                 <!-- day1종료-->
+                <div class="story-day">
+                    <div class="spot-container">
+                        <div class="story-conts">
+                            <h3>
+                                <strong>Day
+                                    <span>1</span>
+                                </strong>
+                                <span class="desc">2016.07.12(Tue)</span>
+                            </h3>
+                            <div class="spot-note-box">
+                                <div class="spot-tit type">
+                                    <a class="spot-title-area">
+                                        <h4>
+                                            <span>
+                                                시드니
+                                            </span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="spot-contents">
+                                    <div class="conts-txt-area">
+                                        <div class="medium-insert-image ui-sortable" contenteditable="false">
+                                            <img src="../../img/sub09/content.jpg" style="height: 489.77777777777777px; width: 100%">
+                                        </div>
+                                        <p>
+                                            ⓒInstagram |
+                                            <a target="_blank" href="#">이정호의제주도탐방</a>
+                                        </p>
+                                        <p>
+                                            <br>
+                                        </p>
+                                        <p>
+                                            <b>여행!!</b>여긴 거시기에요 엄청 이뻐서요 갔던 시기는
+                                            <b>8~9월</b>이에요!
+                                        </p>
+                                        <div class="author-info">
+                                            <div class="conts-label">
+                                                <div class="like-count">
+                                                    <a class="">좋아요
+                                                        <span>170</span>
+                                                    </a>
+                                                </div>
+                                                <div class="comment-count">
+                                                    <a class="show-comments-of-note" id="comment-space">댓글
+                                                        <span>100</span>
+                                                    </a>
+                                                    <!-- 스크립트로 이동을 위한 아이디 -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 라이브리 시티 설치 코드 -->
+                                    <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzk5NC8xNDUyNA==">
+                                        
+                                    </div>
+                                    <!-- 시티 설치 코드 끝 -->
+                                </div>
+                            </div>
+                            <!--spot-note-box-->
+                        </div>
+                    </div>
+                </div>
+                <!-- day1종료-->
+
             </div>
             <!-- cont_wrap 끝남 -->
         </div>
@@ -326,7 +369,59 @@
              */
         });
     </script>
+    <script>
+		//왼쪽 fixed
+		$(document).ready(function() {
+			$(window).bind('scroll', function() {
+				var container = $('.container').height();
+				var content = $('.content').height();
+				if ($(window).scrollTop() > container - content + 200) {
+					if ($(window).scrollTop() > content - 310) {
+						$('nav').removeClass('fixed');
+						$('nav').addClass('absolute');
+						return;
+					}
+					$('nav').removeClass('action');
+					$('nav').removeClass('absolute');
+					$('nav').addClass('fixed');
+				} else {
+					$('nav').removeClass('absolute');
+					$('nav').removeClass('fixed');
+					$('nav').addClass('action');
+				}
+			});
+		});
+    </script>
+    <script type="text/javascript">
+        (function (d, s) {
+            var j, e = d
+                .getElementsByTagName(s)[0];
 
+            if (typeof LivereTower === 'function') {
+                return;
+            }
+
+            j = d
+                .createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
+
+            e.parentNode
+                .insertBefore(
+                    j,
+                    e);
+        })(document,
+            'script');
+    </script>
+    <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+
+    <script type="text/javascript">
+        $('#top').click(function() {      
+            $('body,html').animate({
+                scrollTop : 0                       
+            }, 500);
+        });
+        </script>
 </body>
 
 </html>
