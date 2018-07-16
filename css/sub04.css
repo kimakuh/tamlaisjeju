@@ -838,7 +838,7 @@ all - 여행필수정보 전체
 #sub04 .layer_map_area .layer_map ul {
     position: relative;
     height: 520px;
-    background: url(../img/sub04/map_large.png) no-repeat center 0;
+    background: url(../img/sub04/map_large_kr.png) no-repeat center 0;
 }
 
 #sub04 .layer_map_area .layer_map a {
