@@ -290,7 +290,7 @@ visual  - 비주얼
 ***************************************************************************************/
 
 #visual {
-  margin-top: 168px;
+  /* margin-top: 168px; */
   width: 100%;
 }
 
@@ -1816,6 +1816,20 @@ board_list - 게시판 리스트
   display: inline-block;
   color: #2168f6;
 }
+
+
+
+/* form_wrap board */
+
+.form_wrap{text-align:right;}
+.form_wrap .toggle_area{}
+.form_wrap .toggle_area button{display:inline-block;padding:5px;margin-left:-4px;border:1px solid #e5e5e5;}
+
+
+
+
+
+
 
 /* board_list type01*/
 
