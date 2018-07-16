@@ -167,7 +167,7 @@
 
                         <div id="schedule_detail_box" class="connectedSortable ui-sortable">
                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="" ondrop="drop(event)" ondragover="allowDrop(event)" id="drag1">
+                                data-ci="">
                                 <div class="item_ctrl_box" style="display: none;">
                                     <div class="fl item_copy_plan" title="장소복사">
                                         <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
@@ -195,7 +195,7 @@
                                 <div class="clear"></div>
                             </div>
                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="" ondrop="drop(event)" ondragover="allowDrop(event)" id="drag2">
+                                data-ci="">
                                 <div class="item_ctrl_box" style="display: none;">
                                     <div class="fl item_copy_plan" title="장소복사">
                                         <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
@@ -1113,7 +1113,28 @@ document.addEventListener("click", closeAllSelect);
 
 </script>
 
-
+<script>
+    /* Events fired on the drag target */
+    document.addEventListener("dragstart", function(event) {
+        event.dataTransfer.setData("Text", event.target.id);
+    });
+    
+    document.addEventListener("dragend", function(event) {
+    });
+    
+    /* Events fired on the drop target */
+    document.addEventListener("dragover", function(event) {
+        event.preventDefault();
+    });
+    
+    document.addEventListener("drop", function(event) {
+        event.preventDefault();
+        if ( event.target.className == "schedule_detail_box" ) {
+            var data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+        }
+    });
+    </script>
         
 </body>
 
