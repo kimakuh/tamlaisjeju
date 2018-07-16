@@ -544,6 +544,41 @@ all - 여행필수정보 전체
   height: 185px;
 }
 
+#sub04 .box .img_area .category {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    padding: 3px 8px;
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+    min-width: 60px;
+    text-align: center;
+    line-height: 22px;
+}
+
+#sub04 .box .img_area .score_area {
+    position: absolute;
+    top: 160px;
+    right: 10px;
+    width: 88px;
+    height: 15px;
+    background: url(../img/common/bg_star_off.png) no-repeat 0 0;
+}
+
+#sub04 .box .img_area .score_area .score_count {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    font-size: 10px;
+    color: transparent;
+    line-height: 10px;
+    background: url(../img/common/bg_star_on.png) no-repeat 0 0;
+}
+
 #sub04 .board_list.type01 .box p{
   font-size: 14px;
 }
@@ -625,6 +660,18 @@ all - 여행필수정보 전체
   border-left: none;
   border-right: none;
   padding: 20px 0;
+}
+
+#sub04 .board_list.type02 .box_cont_area b {
+    display: block;
+    width: 65%;
+    font-size: 22px;
+    font-weight: bold;
+    overflow: hidden;
+    color: #1b1b1b;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #sub04 .board_list.type02 .box .img_area img {
