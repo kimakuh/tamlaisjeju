@@ -1214,43 +1214,43 @@
 }
 
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on category_bg.bank {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on .category_bg.bank {
     background: url(../img/sub10/ic_300_c.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box category_bg.bank {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .category_bg.bank {
     background: url(../img/sub10/ic_300_a.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on category_bg.cafe {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on .category_bg.cafe {
     background: url(../img/sub10/ic_200_c.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box category_bg.cafe {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .category_bg.cafe {
     background: url(../img/sub10/ic_200_a.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on category_bg.mart {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on .category_bg.mart {
     background: url(../img/sub10/ic_400_c.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box category_bg.mart {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .category_bg.mart {
     background: url(../img/sub10/ic_400_a.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on category_bg.store {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on .category_bg.store {
     background: url(../img/sub10/ic_100_c.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box category_bg.store {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .category_bg.store {
     background: url(../img/sub10/ic_100_a.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on list_cat_item {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on .list_cat_item {
     background: url(../img/sub10/ic_000_c.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box list_cat_item {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .list_cat_item {
     background: url(../img/sub10/ic_000_a.png) no-repeat;
 }
 
