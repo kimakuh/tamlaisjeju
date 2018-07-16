@@ -203,36 +203,34 @@
                                         </h4>
                                     </a>
                                 </div>
-                                <div id="notes-0-1">
-                                    <div id="spot-contents">
-                                        <div class="conts-txt-area">
-                                            <div class="upload_img" contenteditable="false">
-                                                <img class="load_img" src="../../img/sub09/content.jpg" style="height: 489.77777777777777px; width: 100%">
-                                            </div>
-                                            <p class="">
-                                                ⓒInstagram |
-                                                <a target="_blank" href="#">이정호의제주도탐방</a>
-                                            </p>
-                                            <p class="">
-                                                <br>
-                                            </p>
-                                            <p class="">
-                                                <b>여행!!</b>여긴 거시기에요 엄청 이뻐서요 갔던 시기는
-                                                <b>8~9월</b>이에요!
-                                            </p>
-                                            <div class="author-info">
-                                                <div class="conts-label">
-                                                    <div class="like-count">
-                                                        <a class="">좋아요
-                                                            <span>170</span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="comment-count">
-                                                        <a class="show-comments-of-note" id="comment-space">댓글
-                                                            <span>100</span>
-                                                        </a>
-                                                        <!-- 스크립트로 이동을 위한 아이디 -->
-                                                    </div>
+                                <div id="spot-contents">
+                                    <div class="conts-txt-area">
+                                        <div class="medium-insert-image ui-sortable" contenteditable="false">
+                                            <img src="../../img/sub09/content.jpg" style="height: 489.77777777777777px; width: 100%">
+                                        </div>
+                                        <p class="">
+                                            ⓒInstagram |
+                                            <a target="_blank" href="#">이정호의제주도탐방</a>
+                                        </p>
+                                        <p class="">
+                                            <br>
+                                        </p>
+                                        <p class="">
+                                            <b>여행!!</b>여긴 거시기에요 엄청 이뻐서요 갔던 시기는
+                                            <b>8~9월</b>이에요!
+                                        </p>
+                                        <div class="author-info">
+                                            <div class="conts-label">
+                                                <div class="like-count">
+                                                    <a class="">좋아요
+                                                        <span>170</span>
+                                                    </a>
+                                                </div>
+                                                <div class="comment-count">
+                                                    <a class="show-comments-of-note" id="comment-space">댓글
+                                                        <span>100</span>
+                                                    </a>
+                                                    <!-- 스크립트로 이동을 위한 아이디 -->
                                                 </div>
                                             </div>
                                         </div>
@@ -241,63 +239,65 @@
                             </div>
                         </div>
                     </div>
-                    <!-- cont_wrap 끝남 -->
                 </div>
-                <!-- content end -->
             </div>
-            <!-- container end -->
+            <!-- cont_wrap 끝남 -->
+        </div>
+        <!-- content end -->
+    </div>
+    <!-- container end -->
 
 
 
-            <script>
-                function openTabs(evt, tabNames) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(tabNames).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
+    <script>
+        function openTabs(evt, tabNames) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabNames).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-                // Get the element with id="defaultOpen" and click on it
-                document.getElementById("defaultOpen").click();
-            </script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 
 
-            <script>
-                function innerTabs(evt, tabNames) {
-                    var i, inner_tabcontent, inner_tablinks;
-                    inner_tabcontent = document.getElementsByClassName("inner_tabcontent");
-                    for (i = 0; i < inner_tabcontent.length; i++) {
-                        inner_tabcontent[i].style.display = "none";
-                    }
-                    inner_tablinks = document.getElementsByClassName("inner_tablinks");
-                    for (i = 0; i < inner_tablinks.length; i++) {
-                        inner_tablinks[i].className = inner_tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(tabNames).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
+    <script>
+        function innerTabs(evt, tabNames) {
+            var i, inner_tabcontent, inner_tablinks;
+            inner_tabcontent = document.getElementsByClassName("inner_tabcontent");
+            for (i = 0; i < inner_tabcontent.length; i++) {
+                inner_tabcontent[i].style.display = "none";
+            }
+            inner_tablinks = document.getElementsByClassName("inner_tablinks");
+            for (i = 0; i < inner_tablinks.length; i++) {
+                inner_tablinks[i].className = inner_tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabNames).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-                // Get the element with id="defaultOpen" and click on it
-                document.getElementById("defaultOpen").click();
-            </script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 
-            <div id="footer"></div>
-            <script type="text/javascript">
-                $(document).ready(function () {
-                    $("#header").load("../include/sub_header.html")
-                    $("#footer").load("../include/sub_footer.html")
-                    /* id 지정을 통해서도 가능합니다. 
-                     $("#header").load("header.html #navbar")
-                     */
-                });
-            </script>
+    <div id="footer"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
 
 </body>
 

@@ -654,10 +654,10 @@
                         <div class="list_title">
                             <span>제주도</span>
                         </div>
-                        <div class="clear"></div>   
+                        <div class="clear"></div>
                         <div class="list_search_full_box">
                             <div class="list_search_box">
-                                <input type="text" id="input_search" placeholder="장소 검색">
+                                <input type="text" id="keyword" placeholder="장소 검색">
                             </div>
                             <ul class="list_category_box" id="category">
                                 <li id="AT4" data-order="0">
@@ -676,7 +676,9 @@
                                     <span class="category_bg store">
                                     </span>
                                 </li>
-                                <li class="list_cat_item fl" data="5">
+                                <li id="zzim1">
+                                    <span class="category_bg zzim">
+                                     </span>
                                 </li>
                                 <div class="clear"></div>
 
@@ -909,6 +911,16 @@
             if (!currCategory) {
                 return;
             }
+
+             var keyword = document.getElementById('keyword').value;
+
+            if (!keyword.replace(/^\s+|\s+$/g, '')) {
+                alert('키워드를 입력해주세요!');
+                return false;
+            }
+
+            // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
+            ps.keywordSearch( keyword, placesSearchCB); 
             
             // 커스텀 오버레이를 숨깁니다 
             placeOverlay.setMap(null);
@@ -941,6 +953,7 @@
             // 몇번째 카테고리가 선택되어 있는지 얻어옵니다
             // 이 순서는 스프라이트 이미지에서의 위치를 계산하는데 사용됩니다
             var order = document.getElementById(currCategory).getAttribute('data-order');
+            menuEl = document.getElementById('menu_wrap');
             var listEl = document.getElementById('placesList');
             fragment = document.createDocumentFragment();
         
