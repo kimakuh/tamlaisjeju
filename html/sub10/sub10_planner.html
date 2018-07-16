@@ -978,7 +978,7 @@
         
         function getListItem(index, places) {
         
-            var el = document.createElement('li'),
+            var el = document.createElement('li').addclass('draggable="true"', 'ondragstart="drag(event)"'),
             itemStr = '<span class="markerbg marker_' + (index+1) + '"></span>' +
                         '<div class="info">' +
                         '   <h5>' + places.place_name + '</h5>';
@@ -1044,6 +1044,7 @@
                         '</div>' + 
                         '<div class="after"></div>';
         
+
             contentNode.innerHTML = content;
             placeOverlay.setPosition(new daum.maps.LatLng(place.y, place.x));
             placeOverlay.setMap(map);  
@@ -1267,8 +1268,6 @@ document.addEventListener("click", closeAllSelect);
     }
     var element = document.getElementsByClassName('item');
 
-    element.classList.add('draggable="true"');
-    element.classList.add('ondragstart="drag(event)');
 </script>
 
 </body>
