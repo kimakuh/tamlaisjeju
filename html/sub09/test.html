@@ -317,48 +317,7 @@
         <!-- content end -->
     </div>
     <!-- container end -->
-
-
-
-    <script>
-        function openTabs(evt, tabNames) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabNames).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
-
-
-    <script>
-        function innerTabs(evt, tabNames) {
-            var i, inner_tabcontent, inner_tablinks;
-            inner_tabcontent = document.getElementsByClassName("inner_tabcontent");
-            for (i = 0; i < inner_tabcontent.length; i++) {
-                inner_tabcontent[i].style.display = "none";
-            }
-            inner_tablinks = document.getElementsByClassName("inner_tablinks");
-            for (i = 0; i < inner_tablinks.length; i++) {
-                inner_tablinks[i].className = inner_tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabNames).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
-
+    <!--footer -->
     <div id="footer"></div>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -392,6 +351,7 @@
 			});
 		});
     </script>
+    <!--리모컨 -->
     <script type="text/javascript">
         (function (d, s) {
             var j, e = d
