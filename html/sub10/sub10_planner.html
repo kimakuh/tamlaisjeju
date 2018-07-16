@@ -848,7 +848,8 @@
             el.innerHTML = itemStr;
             el.id = 'dragitem';
             el.className = 'item';
-            
+            el.draggable = "true";
+            el.ondragstart="drag(event)";
             return el;
             
         }
