@@ -1131,7 +1131,7 @@ document.addEventListener("click", closeAllSelect);
         
         document.addEventListener("drop", function(event) {
             event.preventDefault();
-            if ( event.target.className == "item" ) {
+            if ( event.target.className == "day_spot_item" ) {
                 var data = event.dataTransfer.getData("Text");
                 event.target.appendChild(document.getElementById(data));
             }
