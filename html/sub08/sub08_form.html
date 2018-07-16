@@ -21,17 +21,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
-    <!-- drozone -->
-    <link rel="stylesheet" src="../../node_modules/dropzone/dist/min/dropzone.min.css">
-
-    <script type="text/javascript" src="../../node_modules/dropzone/dist/min/dropzone.min.js"></script>
     <!--bootstrap-->
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    </script>
-    <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+</script>
+<script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-
+        
+        <!-- drozone -->
+        <link rel="stylesheet" href="../../node_modules/dropzone/dist/min/dropzone.min.css">
+        <link rel="stylesheet" href="../../node_modules/dropzone/dist/min/basic.min.css">
+        <script type="text/javascript" src="../../node_modules/dropzone/dist/min/dropzone.min.js"></script>
 
     <style type="text/css">
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
@@ -220,7 +220,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">사진업로드</h5>
+                            <h5>사진업로드</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -242,13 +242,13 @@
 
                             </form>
 
-                            <div>
+                            <div class="clear">
 
                                 <!--업로드 버튼을 여러 장의 사진 일회용 업로드 기능 제공-->
 
-                                <button type="submit" id="btnSubmit" disabled="disabled">업로드</button>
-
-                                <button id="btnAllClear" disabled="disabled">All Clear</button>
+                                <!-- <button id="btnAllClear" disabled="disabled">취소</button> -->
+                                
+                                <button type="submit" id="btnSubmit" disabled="disabled">등록</button>
 
                             </div>
 
@@ -444,7 +444,7 @@
         </script>
 
 
-        <!--   <script type="text/javascript">
+           <script type="text/javascript">
             //Dropzone 초기화, myDropzone form 있는 id 위해
 
             Dropzone.options.myDropzone = {
@@ -541,7 +541,7 @@
 
                     // Call the action method to load the images from the server
 
-                    $.getJSON("/Home/getList").done(function (data) {
+                    $.getJSON("../..//getList").done(function (data) {
 
                         if (data.Data != '') {
 
@@ -747,7 +747,7 @@
                 }
 
             };
-        </script> -->
+        </script> 
         <!-- <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
         <script>
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
