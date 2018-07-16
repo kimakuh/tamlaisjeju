@@ -195,7 +195,7 @@
                                 <div class="clear"></div>
                             </div>
                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
+                                data-ci="" ondrop="drop(event)" ondragover="allowDrop(event)" id="drag2">
                                 <div class="item_ctrl_box" style="display: none;">
                                     <div class="fl item_copy_plan" title="장소복사">
                                         <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
@@ -848,6 +848,8 @@
             el.innerHTML = itemStr;
             el.id = 'dragitem';
             el.className = 'item';
+            el.draggable = "true";
+            el.ondragstart = "drag(event)";
             
             return el;
             
