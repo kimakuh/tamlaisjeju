@@ -999,7 +999,7 @@
             return el;
             
         }
-        function drag() {
+        function dragAtt() {
             $('.item').attr('ondragstart="drag(event)"' ,'draggable="true"');
         }
 
@@ -1127,7 +1127,7 @@
             if (el) {
                 el.className = 'on';
             } 
-            drag();
+            dragAtt();
         } 
         // 검색결과 목록의 자식 Element를 제거하는 함수입니다
         function removeAllChildNods(el) {   
