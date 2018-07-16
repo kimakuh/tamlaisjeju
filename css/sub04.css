@@ -766,3 +766,223 @@ all - 여행필수정보 전체
 #sub04 .spr_com.page-last {
     background-position: -90px -100px;
 }
+
+/*********************************************************************
+팝업지도 구역
+*********************************************************************/
+
+
+#sub04 .btn_jeju_map.active {
+    color: #fff;
+    background: #2168f6;
+}
+
+#sub04 .jeju_map_popup {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    padding: 60px 0 30px;
+    background: #fff;
+    border: 1px solid #2168f6;
+    -webkit-box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
+    box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
+    z-index: 100;
+}
+
+#sub04 .jeju_map_popup .btn_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/sub04/btn_del_circle.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#sub04 .jeju_map_popup .layer_map_area {
+    margin-top: 0;
+}
+
+#sub04 .layer_map_area {
+    position: relative;
+    margin: 0 auto;
+    width: 866px;
+    height: auto;
+}
+
+#sub04 .recommend_tour .cont_wrap .layer_map_area .bubble_area {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 200px;
+    height: 102px;
+    padding: 18px 0 0 21px;
+    background: url(../img/sub04/bg_bubble_area.png) no-repeat 0 0;
+    text-align: center;
+}
+
+#sub04 .recommend_tour .cont_wrap .layer_map_area .bubble_area .txt_1 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #535353;
+    line-height: 18px;
+}
+
+#sub04 .recommend_tour .cont_wrap .layer_map_area .bubble_area .txt_2 {
+    margin-top: 7px;
+    font-size: 14px;
+    color: #535353;
+    line-height: 20px;
+}
+
+#sub04 .layer_map_area .layer_map ul {
+    position: relative;
+    height: 520px;
+    background: url(../img/sub04/map_large.png) no-repeat center 0;
+}
+
+#sub04 .layer_map_area .layer_map a {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    position: absolute;
+    left: 50%;
+    color: transparent;
+    background: transparent;
+}
+
+#sub04 .layer_map_area .layer_map a.jejusi {
+    margin-left: -74px;
+    top: 81px;
+    width: 90px;
+    height: 90px;
+}
+
+#sub04 .layer_map_area .layer_map a.aewol {
+    margin-left: -168px;
+    top: 118px;
+    width: 37px;
+    height: 100px;
+}
+
+#sub04 .layer_map_area .layer_map a.halim {
+    margin-left: -251px;
+    top: 194px;
+    height: 30px;
+}
+
+#sub04 .layer_map_area .layer_map a.hangyeong {
+    margin-left: -308px;
+    top: 245px;
+    width: 40px;
+    height: 24px;
+}
+
+#sub04 .layer_map_area .layer_map a.jocheon {
+    margin-left: 82px;
+    top: 41px;
+    width: 35px;
+    height: 110px;
+}
+
+#sub04 .layer_map_area .layer_map a.gujwa {
+    margin-left: 165px;
+    top: 19px;
+    width: 100px;
+    height: 110px;
+}
+
+#sub04 .layer_map_area .layer_map a.seogwipo {
+    margin-left: -22px;
+    top: 242px;
+    height: 100px;
+}
+
+#sub04 .layer_map_area .layer_map a.daejong {
+    margin-left: -304px;
+    top: 302px;
+    width: 48px;
+    height: 70px;
+}
+
+
+#sub04 .layer_map_area .layer_map a.andeok {
+    margin-left: -207px;
+    top: 260px;
+    height: 76px;
+}
+
+#sub04 .layer_map_area .layer_map a.jungmun {
+    margin-left: -104px;
+    top: 241px;
+    width: 52px;
+    height: 100px;
+}
+
+#sub04 .layer_map_area .layer_map a.namwon {
+    margin-left: 63px;
+    top: 225px;
+    width: 48px;
+    height: 80px;
+}
+
+#sub04 .layer_map_area .layer_map a.pyoseon {
+    margin-left: 171px;
+    top: 166px;
+    height: 100px;
+}
+
+#sub04 .layer_map_area .layer_map a.seongsan {
+    margin-left: 242px;
+    top: 133px;
+    width: 40px;
+    height: 70px;
+}
+
+#sub04 .layer_map_area .layer_map a.udo {
+    margin-left: 322px;
+    top: 44px;
+    height: 42px;
+}
+
+#sub04 .layer_map_area .layer_map a.chusado {
+    margin-left: -254px;
+    top: 9px;
+    width: 80px;
+    height: 50px;
+}
+
+#sub04 .layer_map_area .layer_map a.marado {
+    margin-left: -288px;
+    top: 466px;
+}
+
+#sub04 .layer_map_area .layer_map a.biyangdo {
+    margin-left: -329px;
+    top: 161px;
+}
+
+#sub04 .layer_map_area .layer_map a.chagwido {
+    margin-left: -396px;
+    top: 249px;
+    height: 30px;
+}
+
+#sub04 .layer_map_area .layer_map a.gapado {
+    margin-left: -277px;
+    top: 417px;
+}
+
+#sub04 .cont_wrap .layer_map_area .btn_map_reset {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -72px;
+    border: 1px solid #2168f6;
+    border-radius: 5px;
+    width: 145px;
+    height: 33px;
+    font-size: 15px;
+    color: #2168f6;
+    background: #fff;
+}
