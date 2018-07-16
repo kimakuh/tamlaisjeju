@@ -228,6 +228,22 @@
 
 
             <div class="form_wrap board">
+
+                <div class="category_wrap">
+                    <button class="active btn" data-filter="box">전체</button>
+                    <button class="btn" data-filter="nature">자연</button>
+                    <button class="btn" data-filter="culture">문화관광</button>
+                    <button class="btn" data-filter="leisure">레저/체험</button>
+                    <button class="btn" data-filter="theme">테마관광지</button>
+                    <button class="btn" data-filter="island">섬속의 섬</button>
+                    <button class="btn" data-filter="walking">도보</button>
+                    <button class="btn" data-filter="photospot">포토스팟</button>
+                    <button class="btn" data-filter="shopping">쇼핑</button>
+                </div>
+                <!--category_wrap end -->
+
+
+
                 <div class="toggle_area">
                     <button class="thumb">
                         <i class="fas fa-th"></i>
@@ -252,21 +268,7 @@
             </script>
 
             <div id="board" class="board_list type01">
-
-                <div class="category_wrap">
-                    <button class="active btn" data-filter="box">전체</button>
-                    <button class="btn" data-filter="nature">자연</button>
-                    <button class="btn" data-filter="culture">문화관광</button>
-                    <button class="btn" data-filter="leisure">레저/체험</button>
-                    <button class="btn" data-filter="theme">테마관광지</button>
-                    <button class="btn" data-filter="island">섬속의 섬</button>
-                    <button class="btn" data-filter="walking">도보</button>
-                    <button class="btn" data-filter="photospot">포토스팟</button>
-                    <button class="btn" data-filter="shopping">쇼핑</button>
-                </div>
-                <!--category_wrap end -->
-
-                <div id="board_content" class="box_wrap clear">
+                <div id="board_cont" class="box_wrap clear">
                     <div class="box nature">
                         <div class="img_area">
                             <a href="sub01_view.html">
@@ -596,7 +598,7 @@
 
 
     <script>
-        var $boxs = $("#board_content > .box");
+        var $boxs = $("#board_cont > .box");
         var $btns = $(".btn").on("click", function () {
 
             var active =
@@ -626,16 +628,16 @@
 
 
 
-        <footer id="footer"></footer>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#header").load("../include/sub_header.html")
-                $("#footer").load("../include/sub_footer.html")
-                /* id 지정을 통해서도 가능합니다. 
-                 $("#header").load("header.html #navbar")
-                 */
-            });
-        </script>
+    <footer id="footer"></footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
 </body>
 
 </html>
