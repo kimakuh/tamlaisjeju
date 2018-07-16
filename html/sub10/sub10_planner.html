@@ -996,9 +996,8 @@
         
             el.innerHTML = itemStr;
             el.className = 'item';
-            el.attributes = 'ondragstart="drag(event)"';
-            el.attributes = 'draggable="true"';
-        
+            el.className.attributes = 'ondragstart="drag(event)"' ,'draggable="true"' ;
+            
             return el;
         }
         
@@ -1136,24 +1135,9 @@
             map.relayout();
         }
 
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("conts_detail");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tab_btn");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        map.relayout();
+ 
+</script>
 
-
-        document.getElementById("defaultOpen").click();
-    </script>
 <script>
 $(function() {
 
@@ -1269,7 +1253,7 @@ document.addEventListener("click", closeAllSelect);
         var data = ev.dataTransfer.getData("text");
         ev.target.appendChild(document.getElementById(data));
     }
-    var element = document.getElementsByClassName('item');
+
 
 </script>
 
