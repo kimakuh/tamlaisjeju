@@ -383,6 +383,7 @@
     font-size: 14px;
     font-weight: 300;
     text-decoration: none;
+    float: left;
 }
 
 #sub09 .author-info .conts-label div span {
