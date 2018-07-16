@@ -1113,30 +1113,7 @@ document.addEventListener("click", closeAllSelect);
 
 </script>
 
-<script>
-        /* Events fired on the drag target */
-        document.addEventListener("dragstart", function(event) {
-            event.dataTransfer.setData("Text", event.target.id);
-            document.getElementById("dragitem").innerHTML;
-        });
-        
-        document.addEventListener("dragend", function(event) {
-            document.getElementById("dragitem").innerHTML;
-        });
-        
-        /* Events fired on the drop target */
-        document.addEventListener("dragover", function(event) {
-            event.preventDefault();
-        });
-        
-        document.addEventListener("drop", function(event) {
-            event.preventDefault();
-            if ( event.target.className == "day_spot_item" ) {
-                var data = event.dataTransfer.getData("Text");
-                event.target.appendChild(document.getElementById(data));
-            }
-        });
-        </script>
+
         
 </body>
 
