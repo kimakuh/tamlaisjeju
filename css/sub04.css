@@ -778,6 +778,7 @@ all - 여행필수정보 전체
 }
 
 #sub04 .jeju_map_popup {
+    display:none;
     position: absolute;
     top: 36px;
     right: 0;
