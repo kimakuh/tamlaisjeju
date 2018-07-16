@@ -365,6 +365,7 @@
     color: #ff8000;
 }
 #sub09 .spot-contents .author-info {
+    
     height: 30px;
     padding: 8px 0;
     margin: 5px 0 0 0;
@@ -378,6 +379,13 @@
     padding: 0;
     background: 0 0;
 }
+#sub09 .spot-contents .author-info .conts-label div {
+    color: #999;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
 #sub09 .author-info .conts-label div span {
     color: #999;
     font-size: 14px;
