@@ -137,20 +137,19 @@
                             <pre>같이 가고 싶은 분들 많이 신청해주세요!!</pre>
                         </div>
                         <div class="more-info-con">
-                            <div class="theme">
-                                <div class="theme-round">
-                                    <p>
-                                        <span> 여행시작일 : </span>
-                                        <span>2016-07-12</span>
-                                    </p>
-                                    <p>
-                                        <span>1</span>
-                                        <span>명</span>
-                                    </p>
-                                    <p>여행 전</p>
-                                    <p>나홀로 여행</p>
-                                </div>
+                            <div class="theme-round">
+                                <p>
+                                    <span> 여행시작일 : </span>
+                                    <span>2016-07-12</span>
+                                </p>
+                                <p>
+                                    <span>1</span>
+                                    <span>명</span>
+                                </p>
+                                <p>여행 전</p>
+                                <p>나홀로 여행</p>
                             </div>
+
                             <div class="update-date">
                                 <span class="first">
                                     <span>처음 만든 날 : </span>
@@ -164,6 +163,49 @@
                                     <span>조회수</span> :
                                     <span>87.3K</span>
                                 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cont_wrap 종료 -->
+                <!--지도 시작-->
+                <div id="map">
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a39a869b2b427425c966081cb35dc719"></script>
+                    <script>
+                        var container = document.getElementById('map');
+                        var options = {
+                            center: new daum.maps.LatLng(33.450701,
+                                126.570667),
+                            level: 3
+                        };
+
+                        var map = new daum.maps.Map(container, options);
+                    </script>
+                </div>
+                <!--지도 종료-->
+                <!--cont_wrap의 day시작-->
+                <div class="story-day">
+                    <div class="spot-container">
+                        <div class="story-conts">
+                            <h3>
+                                <strong>Day
+                                    <span>1</span>
+                                </strong>
+                                <span class="desc">2016.07.12(Tue)</span>
+                            </h3>
+                            <div class="spot-note-box">
+                                <div class="spot-tit type">
+                                    <a class="spot-title-area">
+                                        <h4>
+                                            <span>
+                                                시드니
+                                            </span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="notes-0-1">
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>

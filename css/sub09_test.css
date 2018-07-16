@@ -59,8 +59,7 @@
 
 #sub09 .content .aside_wrap .info-left-box .user-info-box .author-box h5::before {
 	display:none;
- 
-}
+ }
 
 #sub09 .content .aside_wrap .info-left-box .user-info-box .author-box .author-name {
     display: block;
@@ -146,7 +145,6 @@
 /*right-box의 실행*/
 #sub09 .content .aside_wrap .info-right-box {
     width: 100px;
-    height: 300px;
     background: rgba(0,0,0,0.1);
     position: absolute;
     right: 370px;
@@ -199,3 +197,140 @@
     background: url(../img/sub09/comment.png) 10px 8px no-repeat;
 }
 /*right-box의 종료*/
+
+/*cont-wrap의 plan-info-top 시작*/
+#sub09 .content .cont_wrap .plan-info-top .plan-detail-txt .plan-tit {
+    padding: 15px;
+    margin: 0 0 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(125,125,125,.2);
+}
+#sub09 .content .cont_wrap .plan-info-top .plan-detail-txt {
+    padding: 15px;
+    box-shadow: 0 1px 1px rgba(125,125,125,.2);
+}
+#sub09 .content .cont_wrap .plan-info-top h2.plan-tit {
+    color: #333;
+    padding: 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #d0d0d0;
+}
+#sub09  .plan-info-top .plan-txt {
+    line-height: 1.4;
+    color: #666;
+    font-size: 18px;
+    font-weight: 300;
+}
+#sub09  .plan-info-top .plan-txt .more-info-con {
+    padding: 15px 0 0;
+}
+#sub09 .plan-info-top .plan-detail-txt .more-info-con .theme-round p {
+    display: inline-block;
+    line-height: 16px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999;
+    border-right: 1px solid #eee;
+    padding: 0 5px 0 0;
+}
+#sub09 .plan-info-top .plan-detail-txt .more-info-con .update-date {
+    padding-top: 5px;
+}
+#sub09 .plan-info-top .plan-detail-txt .more-info-con .update-date>span:first-child {
+    border-left: none;
+    padding: 0 10px 0 0;
+}
+#sub09 .plan-info-top .plan-detail-txt .more-info-con .update-date>span {
+    display: inline-block;
+    line-height: 16px;
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+    border-left: 1px solid #eee;
+    padding: 0 10px;
+}
+/*cont-wrap의 plan-info-top 종료*/
+#sub09 .cont_wrap #map{
+	height: 300px;
+	width: 100%;
+}
+/*cont_wrap의 day시작*/
+#sub09 .story-day {
+    width: 100%;
+}
+
+#sub09 .story-day .spot-container {
+    width: 100%;
+    height: 700px;
+    margin: 30px 0 40px;
+    padding-left: 2px;
+    border-radius: 0;
+}
+
+#sub09 .story-conts {
+    width: 920px;
+    margin-left: -16px;
+    padding-top: 10px;
+    
+}
+#sub09 .story-conts h3 {
+    top: -10px;
+    left: 2px;
+    display: block;
+    width: 100%;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #999;
+    background: url(../../img/sub09/back_point.jpg) 10px 6px no-repeat;
+}
+#sub09 .story-conts h3 strong {
+    display: inline-block;
+    line-height: 14px;
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#sub09 .story-day .story-conts .spot-note-box {
+    width: 100%;
+}
+#sub09 .story-day .story-conts .spot-tit {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0 0;
+}
+
+#sub09 .story-day .story-conts .spot-tit>a {
+    display: block;
+    float: left;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+#sub09 .story-day .story-conts .spot-tit h4 {
+    float: left;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #121212;
+    line-height: 32px;
+}
+#sub09 .story-wrap .story-conts .spot-tit h4>span {
+    display: block;
+    float: left;
+    max-width: 800px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-left: 0px solid black;
+}
+
+/*cont_wrap의 day시작*/
