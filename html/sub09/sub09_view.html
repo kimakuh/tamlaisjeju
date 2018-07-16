@@ -357,9 +357,11 @@
 
     <!--원하는 위치 scroll로 이동-->
     <script type="text/javascript">
-        $(function () {
-            var position = $('#day-1').offset(); // 위치값
-            $('html,body').animate({ scrollTop: position.top }, 100); // 이동
+        jQuery(document).ready(function ($) {
+            $("#day-1").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+            });
         });
     </script>
 
