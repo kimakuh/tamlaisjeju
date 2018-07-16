@@ -1995,9 +1995,9 @@ img.picture-item__blur {
 
 /* board_list type01*/
 
-.board_list.type01 .box_wrap .box:first-child {
+/* .board_list.type01 .box_wrap .box:first-child {
   margin-left: 0;
-}
+} */
 
 .board_list.type01 .box {
    width: 33.3%; 
