@@ -32,7 +32,7 @@
 </head>
 <body>
         <div id="sub10_planner_header">
-            <div class="topnav" id="myTopnav">
+            <div class="topnav clear" id="myTopnav">
                     <h1>
                         <a href="../../index.html">탐라는 제주</a>
                     </h1>
@@ -71,6 +71,7 @@
                         <div class="tag">
                                 <input type="text" placeholder="태그 입력하세요">
                         </div>
+                        
                         
                     </div>
                     <div class="plan_out">
@@ -163,7 +164,7 @@
 
                         <div id="schedule_detail_box" class="connectedSortable ui-sortable">
                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
+                                data-ci="" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 <div class="item_ctrl_box" style="display: none;">
                                     <div class="fl item_copy_plan" title="장소복사">
                                         <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
@@ -659,7 +660,7 @@
                             <div class="list_search_box">
                                 <form onsubmit="searchPlaces(); return false;">
                                     <input type="text" id="keyword" placeholder="장소 검색">
-                                    <button type="submit" id=key-btn>검색하기</button>
+                                    <button type="submit">검색하기</button>
                                 </form>
                             </div>
                             <ul class="list_category_box" id="category">
@@ -915,13 +916,6 @@
                 return;
             }
 
-             var keyword = document.getElementById('keyword').value;
-
-            if (!keyword.replace(/^\s+|\s+$/g, '')) {
-                alert('키워드를 입력해주세요!');
-                return false;
-            }
-
             // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
             ps.keywordSearch( keyword, placesSearchCB); 
             
@@ -1051,6 +1045,7 @@
                         '</div>' + 
                         '<div class="after"></div>';
         
+
             contentNode.innerHTML = content;
             placeOverlay.setPosition(new daum.maps.LatLng(place.y, place.x));
             placeOverlay.setMap(map);  
@@ -1257,6 +1252,24 @@ document.addEventListener("click", closeAllSelect);
 
 </script>
 
+<script>
+
+    function allowDrop(ev) {
+    ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+    var element = document.getElementsByClassName('item');
+
+</script>
 
 </body>
 
