@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 #sub09 .content{
-	width: 100%;
-	margin: 0 auto;
+   width: 100%;
+   margin: 0 auto;
     background: rgba(0,0,0,0.1);
     padding-top: 188px;
 }
@@ -58,7 +58,7 @@
 }
 
 #sub09 .content .aside_wrap .info-left-box .user-info-box .author-box h5::before {
-	display:none;
+   display:none;
  }
 
 #sub09 .content .aside_wrap .info-left-box .user-info-box .author-box .author-name {
@@ -253,8 +253,8 @@
 }
 /*cont-wrap의 plan-info-top 종료*/
 #sub09 .cont_wrap #map{
-	height: 300px;
-	width: 100%;
+   height: 300px;
+   width: 100%;
 }
 /*cont_wrap의 day시작*/
 #sub09 .story-day {
@@ -333,4 +333,58 @@
     border-left: 0px solid black;
 }
 
-/*cont_wrap의 day시작*/
+/*cont_wrap의 day종료*/
+
+/*.spot-contents시작*/
+#sub09 .story-conts .spot-contents {
+    
+    padding: 10px 0 0;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(125,125,125,.2);
+    
+}
+#sub09 .spot-contents .conts-txt-area {
+    overflow: hidden;
+    line-height: 1.5;
+    padding: 5px 0 10px;
+    margin: 0 10px;
+    color: #666;
+    font-size: 18px;
+    font-weight: 300;
+}
+#sub09 p {
+    color: #5c5c5c;
+    font-size: 16px;
+    line-height: 23px;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+#sub09 .spot-contents .author-info {
+    height: 30px;
+    padding: 8px 0;
+    margin: 5px 0 0 0;
+    border-top: 1px solid #eee;
+}
+#sub09 .spot-contents .author-info .conts-label {
+    display: block;
+    float: left;
+    height: 30px;
+    left: 0;
+    padding: 0;
+    background: 0 0;
+}
+#sub09 .author-info .conts-label div span {
+    color: #999;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+#sub09 .spot-contents .author-info .conts-label .like-count a {
+    background: url(../img/sub09/like.png) 0 3px no-repeat;
+}
+#sub09 .spot-contents .author-info .conts-label .comment-count a {
+    background: url(../img/sub09/comment.png) 0 4px no-repeat;
+    cursor: pointer;
+}
