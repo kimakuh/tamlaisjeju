@@ -330,8 +330,8 @@
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
                 var content = $('.content').height();
-                if ($(window).scrollTop() > container - content - 180) {
-                    if ($(window).scrollTop() > content - 220) {
+                if ($(window).scrollTop() > container - content - 360) {
+                    if ($(window).scrollTop() > content - 440) {
                         $('nav').removeClass('fixed');
                         $('nav').addClass('absolute');
                         return;
