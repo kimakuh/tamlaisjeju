@@ -1826,7 +1826,7 @@ board_list - 게시판 리스트
 
 .form_wrap .toggle_area button {
   display: inline-block;
-  padding: 5px 10x;
+  padding: 5px 10px;
   border: 1px solid #e5e5e5;
 }
 
