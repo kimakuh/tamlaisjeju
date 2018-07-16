@@ -1190,9 +1190,6 @@
     padding-left: 5px;
     font-family: 'nanum';
     font-size: 14px;
-}
-
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_search_box #key-btn {
     background: url(../img/sub10/search_icon.png) no-repeat;
     background-position: 300px 4px;
 }
