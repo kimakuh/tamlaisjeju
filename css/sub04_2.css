@@ -1,0 +1,1048 @@
+@charset "utf-8";
+
+/**************************************************************************************
+all - 여행필수정보 전체
+***************************************************************************************/
+
+#sub04 {
+    padding-top: 83px;
+    min-height: 500px;
+}
+
+#sub04 #content {
+    margin: 0 auto 30px;
+    /* padding: 0px 20px 100px; */
+    width: 1200px;
+}
+
+#sub04 .location_wrap {
+    height: 50px;
+    padding: 11px 28px;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+}
+
+#sub04 .location {
+    float: left;
+}
+
+#sub04 .ico_home {
+    width: 15px;
+    height: 27px;
+    background: url(../img/sub05/common/ico_home.png) no-repeat 0 50%;
+    text-indent: -9999px;
+}
+
+#sub04 .location_wrap .location a,
+#sub04 .location_wrap .location div.lst_depth,
+#sub04 .location_wrap .location span {
+    display: block;
+    float: left;
+}
+
+#sub04 .location_wrap .location .lst_depth,
+#sub04 .location_wrap .location .p_depth {
+    height: 27px;
+    margin-left: 6px;
+    font-size: 14px;
+    color: #959595;
+    line-height: 27px;
+}
+
+#sub04 .location_wrap .location .lst_depth .btn_dropdown {
+    padding-right: 15px;
+    color: #535353;
+    background: url(../img/sub05/common/bg_locaion_dropdown.gif) no-repeat right 5px;
+    cursor: pointer;
+}
+
+#sub04 .location_wrap .location .lst_depth .snb_menu_box {
+    position: absolute;
+    top: 49px;
+    overflow-y: scroll;
+    min-width: 165px;
+    max-height: 236px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    z-index: 100;
+}
+
+#sub04 .snb_menu_box {
+    top: auto;
+    margin-top: 38px;
+    overflow: hidden;
+    outline: none;
+    display: none;
+}
+
+#sub04 .location_wrap .location .lst_depth .snb_menu_box a {
+    display: block;
+    float: none;
+    padding-right: 5px;
+    padding-left: 20px;
+    line-height: 39px;
+    color: #535353;
+}
+
+#sub04 .snb_menu_box a.active {
+    background-color: #2168f6;
+}
+
+#sub04 .snb_menu_box a:nth-child(odd) {
+    background-color: #fff;
+}
+
+#sub04 .snb_menu_box a:nth-child(2n) {
+    background-color: #fbfbfb;
+}
+
+#sub04 .location_wrap .location {
+    float: left;
+}
+
+#sub04 .location_wrap .location a,
+#sub04 .location_wrap .location div.lst_depth,
+#sub04 .location_wrap .location span {
+    display: block;
+    float: left;
+}
+
+#sub04 .location_wrap .util_zone {
+    float: right;
+}
+
+#sub04 .location_wrap .util_zone .btn_s_lnk {
+    -webkit-box-shadow: 1px 1px #c1c1c1;
+    box-shadow: 1px 1px #c1c1c1;
+}
+
+#sub04 .location_wrap .util_zone .btn_s_lnk {
+    display: block;
+    float: left;
+    width: 73px;
+    height: 25px;
+    border: 1px solid #959595;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #959595;
+    line-height: 25px;
+    text-align: center;
+}
+
+#sub04 .location_wrap .util_zone .util_list {
+    float: left;
+    margin-left: 27px;
+}
+
+#sub04 .location_wrap .util_zone .util_list li {
+    float: left;
+    margin: 0 0 0 12px;
+}
+
+#sub04 .location_wrap .util_zone .util_list li a.btn_kt {
+    margin-left: 0;
+    background: url(../img/sub05/sub05/common/ico_kakao.png) no-repeat 0 50%;
+}
+
+#sub04 .location_wrap .util_zone .util_list li a.btn_fb {
+    margin-left: 0;
+    background: url(../img/sub05/sub05/common/ico_facebook.png) no-repeat 0 50%;
+}
+
+#sub04 .location_wrap .util_zone .util_list li a.btn_tw {
+    margin-left: 0;
+    background: url(../img/sub05/common/ico_twitter.png) no-repeat 0 50%;
+}
+
+#sub04 .location_wrap .util_zone .util_list li a.btn_pr {
+    margin-left: 0;
+    background: url(../img/sub05/common/ico_print.png) no-repeat 0 50%;
+}
+
+#sub04 .location_wrap .util_zone .util_list li a.btn_re {
+    margin-left: 0;
+    background: url(../img/sub05/common/ico_report.png) no-repeat 0 50%;
+}
+
+#sub04 .location_wrap .util_zone .util_list li a {
+    display: block;
+    width: 22px;
+    height: 27px;
+    margin-left: 17px;
+    text-indent: -9999px;
+}
+
+
+/**************************************************************************************
+여행 큐레이션 _ 왼쪽 선택 구역
+***************************************************************************************/
+
+#sub04 .partition_wrap {
+    padding-top: 50px;
+}
+
+#sub04 .partition_wrap .aside_wrap {
+    float: left;
+    width: 250px;
+}
+
+#sub04 .recommend_tour .aside_wrap .zone_tit {
+    height: 35px;
+    background: #959595;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+}
+
+#sub04 .recommend_tour .aside_wrap .tendency_zone .survey_box {
+    padding: 20px 0 20px 20px;
+    background: #f4f4f4;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+}
+
+#sub04 .recommend_tour .aside_wrap .tendency_zone .survey_box dt {
+    font-size: 16px;
+    color: #000;
+    line-height: 16px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tendency_zone .survey_box .input_wrap:nth-child(odd) {
+    clear: both;
+}
+
+#sub04 .recommend_tour .aside_wrap .tendency_zone .survey_box .input_wrap {
+    display: block;
+    float: left;
+    width: 107px!important;
+    margin-top: 10px;
+}
+
+#sub04 input[type=checkbox].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+#sub04 input[type=checkbox].css-checkbox+label.css-label {
+    padding-left: 21px;
+    height: 15px;
+    display: inline-block;
+    line-height: 15px;
+    background-repeat: no-repeat!important;
+    background-position: 0 0!important;
+    font-size: 14px;
+    color: #595959;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#sub04 .recommend_tour .aside_wrap .tendency_zone label.css-label {
+    background: url(../img/common/ico_check_box2.png);
+    letter-spacing: -.5px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap {
+    padding-bottom: 25px;
+    background: #f4f4f4;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .tag_area {
+    width: 180px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .tag_area a {
+    display: inline-block;
+    font-size: 15px;
+    color: #595959;
+    line-height: 24px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .input_area {
+    padding: 25px 17px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .input_area input[type=text] {
+    float: left;
+    width: 138px;
+    height: 28px;
+    padding-left: 5px;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    color: #000;
+    line-height: 28px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .input_area .btn_sch {
+    float: right;
+    width: 60px;
+    height: 30px;
+    background: #2168f6;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .btn_save {
+    display: block;
+    width: 208px;
+    height: 39px;
+    margin: 0 auto;
+    background: #fff;
+    border: 3px solid #76a1f8;
+    font-size: 17px;
+    font-weight: 700;
+    color: #2168f6;
+    line-height: 39px;
+}
+
+#sub04 .recommend_tour .aside_wrap .tag_zone_wrap .btn_reset {
+    display: block;
+    width: 208px;
+    height: 39px;
+    margin: 10px auto 0;
+    background: #fff;
+    border: 3px solid #e5e5e5;
+    font-size: 17px;
+    font-weight: 700;
+    color: #959595;
+    line-height: 39px;
+}
+
+
+/**************************************************************************************
+여행 큐레이션 _ 컨텐츠 구역
+***************************************************************************************/
+
+#sub04 .partition_wrap .cont_wrap {
+    float: right;
+    position: relative;
+    width: 866px;
+    padding-top: 20px;
+}
+
+#sub04 .relative {
+    position: relative;
+}
+
+#sub04 .cont_wrap h3 {
+    font-size: 35px;
+    color: #1b1b1b;
+    line-height: 35px;
+    text-align: center;
+}
+
+#sub04 .btn_jeju_map {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #2168f6;
+    border-radius: 5px;
+    width: 145px;
+    height: 33px;
+    font-size: 15px;
+    color: #2168f6;
+    background: #fff;
+}
+
+#sub04 .cont_wrap .h3_txt {
+    margin-top: 24px;
+    font-size: 18px;
+    color: #555;
+    line-height: 30px;
+    text-align: center;
+}
+
+#sub04 .recommend_area {
+    margin-top: 80px!important;
+}
+
+#sub04 .tab_area button.on {
+    background: none;
+    background-color: #fff;
+    border: 2px solid #2168f6;
+    border-bottom: 0;
+}
+
+#sub04 .tab_area button:first-child {
+    width: 33.333334%;
+    background: none;
+    background-color: #f4f4f4;
+    border-left: 1px solid #e5e5e5;
+}
+
+#sub04 .tab_area .tab_btn {
+    float: left;
+    width: 33.333333%;
+    height: 50px;
+    background: url(../img/common/ln_39_1_e5e5e5.png) no-repeat 0 50%;
+    background-color: #f4f4f4;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 2px solid #2168f6;
+}
+
+#sub04 .tab_area button.on span {
+    color: #2168f6;
+}
+
+#sub04 .tab_area button span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #959595;
+    line-height: 47px;
+}
+
+#sub04 .recommend_area .util_area2 {
+    padding-top: 20px;
+}
+
+#sub04 .util_area2 {
+    height: 30px;
+    text-align: right;
+}
+
+#sub04 .util_area2 div {
+    display: inline-block;
+}
+
+#sub04 .util_area2 div * {
+    float: left;
+}
+
+
+#sub04 .util_area2 .sort_type .ico_sort.on {
+    background: url(../img/common/ico_sort_thumb_on.png) no-repeat 50% 50%;
+    border-color: #000;
+}
+
+#sub04 .toggle_area button {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background: url(../img/common/ico_sort_thumb.png) no-repeat 50% 50%;
+    border: 1px solid #dedede;
+    text-indent: -9999px;
+}
+
+#sub04 .util_area2 .sort_type .ico_sort.type_list {
+    background: url(../img/common/ico_sort_list.png) no-repeat 50% 50%;
+}
+
+#sub04 .util_area2 .order_type {
+    margin-left: 5px;
+}
+
+#sub04 .util_area2 .order_type select {
+    width: 104px;
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #959595;
+}
+
+#sub04 .util_area2 .target_page {
+    margin-left: 18px;
+}
+
+#sub04 .util_area2 .target_page input {
+    width: 33px;
+    height: 28px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+}
+
+#sub04 .util_area2 .target_page button {
+    width: 35px;
+    height: 30px;
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+
+#sub04 .util_area2 .page_navi {
+    margin-left: 16px;
+    padding: 9px 0;
+}
+
+#sub04 .util_area2 .page_navi a.btn_first {
+    background: url(../img/common/ico_u_first.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi a.btn_prev {
+    margin: 0 10px 0 7px;
+    background: url(../img/common/ico_u_prev.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi p {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+#sub04 .util_area2 .page_navi a.btn_next {
+    margin: 0 7px 0 10px;
+    background: url(../img/common/ico_u_next.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi a.btn_last {
+    background: url(../img/common/ico_u_last.png) no-repeat 0 0;
+}
+
+#sub04 .util_area2 .page_navi a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    line-height: 30px;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+#sub04 .util_area2 .page_size {
+    margin-left: 12px;
+}
+
+#sub04 .util_area2 .page_size select {
+    width: 90px;
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #959595;
+}
+
+/*********************************************************************
+큐레이션 카드
+*********************************************************************/
+
+#sub04 .board_list.type01 .box_wrap .box:first-child {
+  margin-left: 0;
+}
+#sub04 .board_list.type01 .box {
+  width: 32%;
+  margin-left: 2%;
+}
+#sub04 .box .box_cont_area .location_category {
+    padding: 10px;
+    color: #959595;
+    line-height: 16px;
+}
+
+#sub04 .board_list.type01 .box .img_area img {
+  height: 185px;
+}
+
+#sub04 .box .img_area .category {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    padding: 3px 8px;
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+    min-width: 60px;
+    text-align: center;
+    line-height: 22px;
+}
+
+#sub04 .box .img_area .score_area {
+    position: absolute;
+    top: 160px;
+    right: 10px;
+    width: 88px;
+    height: 15px;
+    background: url(../img/common/bg_star_off.png) no-repeat 0 0;
+}
+
+#sub04 .box .img_area .score_area .score_count {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    font-size: 10px;
+    color: transparent;
+    line-height: 10px;
+    background: url(../img/common/bg_star_on.png) no-repeat 0 0;
+}
+
+#sub04 .board_list.type01 .box p{
+  font-size: 14px;
+}
+
+#sub04 .board_list.type01 .box_cont_area {
+  padding: 25px 0 0;
+    text-align: center;
+}
+
+#sub04 .board_list.type01 .box_cont_area b {
+  text-align: center;
+}
+
+#sub04 .board_list.type01 .box_cont_area .location_category {
+  text-align: center;
+}
+
+#sub04 .board_list.type01 .box_cont_area .hashtag {
+  text-align: center;
+}
+
+#sub04 .board_list.type01 .box_cont_area .hashtag a {
+  display: inline-block;
+  color: #2168f6;
+}
+#sub04 .board_list.type01 .box_cont_area .icon_area {
+  margin-top: 20px;
+}
+
+#sub04 .board_list.type01 .box_cont_area .icon_area ul li {
+  float: left;
+  width: 33.3%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#sub04 .board_list.type01 .box_cont_area .icon_area ul li a {
+  display: block;
+  margin: 5px;
+  font-size: 13px;
+}
+
+#sub04 .board_list.type01 .box_cont_area .icon_area ul li.icon.like_icon {
+  background: url('../img/common/ico_like.png') no-repeat 50% 0;
+}
+
+#sub04 .board_list.type01 .box_cont_area .icon_area ul li.icon.zzim_icon {
+  background: url('../img/common/ico_zzim.png') no-repeat 50% 0;
+}
+
+#sub04 .board_list.type01 .box_cont_area .icon_area ul li.icon.review_icon {
+  background: url('../img/common/ico_review.png') no-repeat 50% 0;
+}
+
+#sub04 .board_list.type01 .box_cont_area .icon_area ul li span {
+  margin: 2px 0;
+  display: block;
+  color: #959595;
+  font-size: 12px;
+}
+
+ #sub04 .board_list.type01 .box_cont_area .item_count_h_area {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background: #f4f4f4;
+    font-size: 12px;
+    color: #959595;
+    line-height: 30px;
+}
+
+/* board_list type02 */
+
+#sub04 .board_list.type02 .box {
+  float: none;
+  width: 100%;
+  margin-bottom: 2%;
+  height: 225px;
+  border-left: none;
+  border-right: none;
+  padding: 20px 0;
+}
+
+#sub04 .board_list.type02 .box_cont_area b {
+    display: block;
+    width: 65%;
+    font-size: 22px;
+    font-weight: bold;
+    overflow: hidden;
+    color: #1b1b1b;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#sub04 .board_list.type02 .box .img_area img {
+  height: 180px;
+}
+
+#sub04 .board_list.type02 .img_area {
+  float: left;
+  width: 25%;
+}
+
+#sub04 .board_list.type02 .box_cont_area {
+  float: left;
+  position: relative;
+  width: 70%;
+  padding: 2%;
+}
+
+#sub04 .board_list.type02 .box_cont_area h4 {
+  text-align: left
+}
+
+#sub04 .board_list.type02 .box_cont_area .location_category {
+  padding-left: 0;
+  text-align: left;
+}
+
+#sub04 .board_list.type02 .box_cont_area .info_txt {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #959595;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+#sub04 .board_list.type02 .box_cont_area .count_area {
+  color: #959595;
+  font-size: 13px;
+}
+
+#sub04 .board_list.type02 .box_cont_area .count_area li {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+}
+
+#sub04 .board_list.type02 .box_cont_area .count_area li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1px;
+  height: 10px;
+  background: #999;
+}
+
+#sub04 .board_list.type02 .box_cont_area .count_area li:first-child {
+  padding-left: 0;
+}
+
+#sub04 .board_list.type02 .box_cont_area .count_area li:first-child:after {
+  display: none;
+}
+
+#sub04 .board_list.type02 .box_cont_area .icon_area {
+  position: absolute;
+  right: 0;
+  top: 18px;
+}
+
+#sub04 .board_list.type02 .box_cont_area .icon_area li {
+  margin: 5px 0;
+  border: 1px solid #e5e5e5;
+}
+
+#sub04 .board_list.type02 .box_cont_area .icon_area ul li a {
+  display: block;
+  padding: 10px 60px;
+}
+
+#sub04 .board_list.type02 .box_cont_area .icon_area ul li.icon.like_icon {
+  background: url('../img/common/ico_like.png') no-repeat 20px 50%;
+}
+
+#sub04 .board_list.type02 .box_cont_area .icon_area ul li.icon.zzim_icon {
+  background: url('../img/common/ico_zzim.png') no-repeat 20px 50%;
+}
+
+#sub04 .board_list.type02 .box_cont_area .icon_area ul li.icon.review_icon {
+  background: url('../img/common/ico_review.png') no-repeat 20px 50%;
+}
+
+#sub04 .paging {
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#sub04 .paging .page-wrap {
+    display: inline-block;
+}
+
+#sub04 .paging .page-wrap a.page-first, 
+#sub04 .paging .page-wrap a.page-last {
+    margin: 0 3px;
+}
+
+#sub04 .paging .page-wrap a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#sub04 .spr_com.page-first {
+    background-position: 0 -100px;
+}
+
+#sub04 .spr_com {
+    display: inline-block;
+    background: url(../img/sub11/common/spr_comm.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#sub04 .spr_com.page-prev {
+    background-position: -30px -100px;
+    margin-right: 30px!important;
+}
+
+#sub04 .paging a.current {
+    color: #fff!important;
+    font-weight: 700;
+    border-color: #2168f6;
+    background-color: #2168f6;
+}
+
+#sub04 .spr_com.page-next {
+    background-position: -60px -100px;
+    margin-left: 30px!important;
+}
+
+#sub04 .spr_com.page-last {
+    background-position: -90px -100px;
+}
+
+/*********************************************************************
+팝업지도 구역
+*********************************************************************/
+
+
+#sub04 .btn_jeju_map.active {
+    color: #fff;
+    background: #2168f6;
+}
+
+#sub04 .jeju_map_popup {
+    display:none;
+    position: absolute;
+    top: 36px;
+    right: 0;
+    padding: 60px 0 30px;
+    background: #fff;
+    border: 1px solid #2168f6;
+    -webkit-box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
+    box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
+    z-index: 100;
+}
+
+#sub04 .jeju_map_popup .btn_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/sub04/btn_del_circle.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#sub04 .jeju_map_popup .layer_map_area {
+    margin-top: 0;
+}
+
+#sub04 .layer_map_area {
+    position: relative;
+    margin: 0 auto;
+    width: 866px;
+    height: auto;
+}
+
+#sub04 .recommend_tour .cont_wrap .layer_map_area .bubble_area {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 200px;
+    height: 102px;
+    padding: 18px 0 0 21px;
+    background: url(../img/sub04/bg_bubble_area.png) no-repeat 0 0;
+    text-align: center;
+}
+
+#sub04 .recommend_tour .cont_wrap .layer_map_area .bubble_area .txt_1 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #535353;
+    line-height: 18px;
+}
+
+#sub04 .recommend_tour .cont_wrap .layer_map_area .bubble_area .txt_2 {
+    margin-top: 7px;
+    font-size: 14px;
+    color: #535353;
+    line-height: 20px;
+}
+
+#sub04 .layer_map_area .layer_map ul {
+    position: relative;
+    height: 520px;
+    background: url(../img/sub04/map_large_kr.png) no-repeat center 0;
+}
+
+#sub04 .layer_map_area .layer_map a {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    position: absolute;
+    left: 50%;
+    color: transparent;
+    background: transparent;
+}
+
+#sub04 .layer_map_area .layer_map a.jejusi {
+    margin-left: -74px;
+    top: 81px;
+    width: 90px;
+    height: 90px;
+}
+
+#sub04 .layer_map_area .layer_map a.aewol {
+    margin-left: -168px;
+    top: 118px;
+    width: 37px;
+    height: 100px;
+}
+
+#sub04 .layer_map_area .layer_map a.halim {
+    margin-left: -251px;
+    top: 194px;
+    height: 30px;
+}
+
+#sub04 .layer_map_area .layer_map a.hangyeong {
+    margin-left: -308px;
+    top: 245px;
+    width: 40px;
+    height: 24px;
+}
+
+#sub04 .layer_map_area .layer_map a.jocheon {
+    margin-left: 82px;
+    top: 41px;
+    width: 35px;
+    height: 110px;
+}
+
+#sub04 .layer_map_area .layer_map a.gujwa {
+    margin-left: 165px;
+    top: 19px;
+    width: 100px;
+    height: 110px;
+}
+
+#sub04 .layer_map_area .layer_map a.seogwipo {
+    margin-left: -22px;
+    top: 242px;
+    height: 100px;
+}
+
+#sub04 .layer_map_area .layer_map a.daejong {
+    margin-left: -304px;
+    top: 302px;
+    width: 48px;
+    height: 70px;
+}
+
+
+#sub04 .layer_map_area .layer_map a.andeok {
+    margin-left: -207px;
+    top: 260px;
+    height: 76px;
+}
+
+#sub04 .layer_map_area .layer_map a.jungmun {
+    margin-left: -104px;
+    top: 241px;
+    width: 52px;
+    height: 100px;
+}
+
+#sub04 .layer_map_area .layer_map a.namwon {
+    margin-left: 63px;
+    top: 225px;
+    width: 48px;
+    height: 80px;
+}
+
+#sub04 .layer_map_area .layer_map a.pyoseon {
+    margin-left: 171px;
+    top: 166px;
+    height: 100px;
+}
+
+#sub04 .layer_map_area .layer_map a.seongsan {
+    margin-left: 242px;
+    top: 133px;
+    width: 40px;
+    height: 70px;
+}
+
+#sub04 .layer_map_area .layer_map a.udo {
+    margin-left: 322px;
+    top: 44px;
+    height: 42px;
+}
+
+#sub04 .layer_map_area .layer_map a.chusado {
+    margin-left: -254px;
+    top: 9px;
+    width: 80px;
+    height: 50px;
+}
+
+#sub04 .layer_map_area .layer_map a.marado {
+    margin-left: -288px;
+    top: 466px;
+}
+
+#sub04 .layer_map_area .layer_map a.biyangdo {
+    margin-left: -329px;
+    top: 161px;
+}
+
+#sub04 .layer_map_area .layer_map a.chagwido {
+    margin-left: -396px;
+    top: 249px;
+    height: 30px;
+}
+
+#sub04 .layer_map_area .layer_map a.gapado {
+    margin-left: -277px;
+    top: 417px;
+}
+
+#sub04 .cont_wrap .layer_map_area .btn_map_reset {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -72px;
+    border: 1px solid #2168f6;
+    border-radius: 5px;
+    width: 145px;
+    height: 33px;
+    font-size: 15px;
+    color: #2168f6;
+    background: #fff;
+}
