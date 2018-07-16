@@ -334,8 +334,8 @@
 			$(window).bind('scroll', function() {
 				var container = $('.container').height();
 				var content = $('.content').height();
-				if ($(window).scrollTop() > container - content + 200) {
-					if ($(window).scrollTop() > content - 310) {
+				if ($(window).scrollTop() > container - content - 180) {
+					if ($(window).scrollTop() > content - 220) {
 						$('nav').removeClass('fixed');
 						$('nav').addClass('absolute');
 						return;
@@ -379,6 +379,13 @@
         $('#top').click(function() {      
             $('body,html').animate({
                 scrollTop : 0                       
+            }, 500);
+        });
+        </script>
+    <script type="text/javascript">
+        $('#sm-comment').click(function() {      
+            $('body,html').animate({
+                sc : 0                       
             }, 500);
         });
         </script>

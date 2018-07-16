@@ -996,10 +996,18 @@
         
             el.innerHTML = itemStr;
             el.className = 'item';
-        
             return el;
+            
         }
-        
+        $(document).ready(function(){
+
+            $('.item').attr('ondragstart="drag(event)"','draggable="true"');
+        });
+
+
+
+
+
         // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
         function addMarker(position, order) {
             var imageSrc = 'http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_category.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
@@ -1122,6 +1130,7 @@
             if (el) {
                 el.className = 'on';
             } 
+            dragAtt();
         } 
         // 검색결과 목록의 자식 Element를 제거하는 함수입니다
         function removeAllChildNods(el) {   
@@ -1134,24 +1143,9 @@
             map.relayout();
         }
 
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("conts_detail");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tab_btn");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        map.relayout();
+ 
+</script>
 
-
-        document.getElementById("defaultOpen").click();
-    </script>
 <script>
 $(function() {
 
@@ -1267,7 +1261,7 @@ document.addEventListener("click", closeAllSelect);
         var data = ev.dataTransfer.getData("text");
         ev.target.appendChild(document.getElementById(data));
     }
-    var element = document.getElementsByClassName('item');
+
 
 </script>
 
