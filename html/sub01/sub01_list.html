@@ -251,7 +251,7 @@
                 });
             </script>
 
-            <div class="board_list type01">
+            <div id="board" class="board_list type01">
 
                 <div class="category_wrap">
                     <button class="active btn" data-filter="box">전체</button>
@@ -429,52 +429,6 @@
                     <!-- box end -->
                 </div>
                 <!-- box_wrap -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div class="box_wrap clear">
                     <div class="box">
                         <div class="img_area">
@@ -653,7 +607,7 @@
 
 
     <script>
-        var $boxs = $("#parent > .box");
+        var $boxs = $("#board > .box");
         var $btns = $(".btn").on("click", function () {
 
             var active =
