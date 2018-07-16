@@ -4,7 +4,7 @@
    width: 100%;
    margin: 0 auto;
     background: rgba(0,0,0,0.1);
-    padding-top: 188px;
+   
 }
 
 #sub09 .content .aside_wrap {
@@ -28,7 +28,7 @@
         z-index: 1001;
         padding-top: 40px;
         background: rgba(0,0,0,0.1);
-        margin: 50px 0 0 450px;
+        margin: 50px 0 0 400px;
     
 }
 
@@ -147,7 +147,7 @@
     width: 100px;
     background: rgba(0,0,0,0.1);
     position: absolute;
-    right: 370px;
+    right: 340px;
     top: 50px;
 }
 
@@ -365,4 +365,34 @@
     line-height: 1.4!important;
     margin: 0;
     font-size: 18px!important;
+}
+#sub09 .spot-contents .author-info {
+    height: 50px;
+    padding: 8px 0;
+    margin: -1px 10px 0;
+    border-top: 1px solid #eee;
+}
+#sub09 .spot-contents .author-info .conts-label {
+    display: block;
+    float: left;
+    height: 30px;
+    left: 0;
+    padding: 0;
+    background: 0 0;
+}
+#sub09 .spot-contents .author-info .conts-label div {
+    display: inline-block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+#sub09 .spot-contents .author-info .conts-label .spot-like-count a {
+    background: url(../img/sub09/like.png) 0 3px no-repeat;
+}
+#sub09 .spot-contents .author-info .conts-label div span {
+    padding: 0 0 0 5px;
+}
+#sub09 .spot-contents .author-info .conts-label .spot-commont-count a {
+    background: url(../../images/icon-comment-gry.png) 0 4px no-repeat;
+    cursor: pointer;
 }
