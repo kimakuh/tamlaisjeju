@@ -28,7 +28,7 @@
         z-index: 1001;
         padding-top: 40px;
         background: rgba(0,0,0,0.1);
-        margin: 50px 0 0 450px;
+        margin: 50px 0 0 420px;
     
 }
 
@@ -147,7 +147,7 @@
     width: 100px;
     background: rgba(0,0,0,0.1);
     position: absolute;
-    right: 370px;
+    right: 330px;
     top: 50px;
 }
 

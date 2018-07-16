@@ -657,7 +657,10 @@
                         <div class="clear"></div>
                         <div class="list_search_full_box">
                             <div class="list_search_box">
-                                <input type="text" id="keyword" placeholder="장소 검색">
+                                <form onsubmit="searchPlaces(); return false;">
+                                    <input type="text" id="keyword" placeholder="장소 검색">
+                                    <button type="submit" id=key-btn></button>
+                                </form>
                             </div>
                             <ul class="list_category_box" id="category">
                                 <li id="AT4" data-order="0">
