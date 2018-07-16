@@ -350,7 +350,11 @@
     </script>
     <!--bottom scroll로 이동-->
     <script type="text/javascript">
-       $(".container").scrollTop($(".container")[0].scrollHeight);
+       $('#top').click(function () {
+            $('body,html').animate({
+                scrollHeight: 0
+            }, 500);
+        });
     </script>
     
     <!--페이스북 댓글 라이브러리 -->
@@ -364,4 +368,4 @@
         }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 
-</html>
+</html> 
