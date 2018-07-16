@@ -27,975 +27,6 @@
     <script src="../../js/common/jquery-3.3.1.min.js"></script>
     <script src="../../js/common/jquery-ui.min.js"></script>
     <script src="../../node_modules/shufflejs/dist/shuffle.min.js"></script>
-    <style type="text/css">
-        .textfield {
-            -webkit-appearance: none;
-            border: 2px solid #95a5a6;
-            border-radius: 4px;
-            box-sizing: border-box;
-            color: #34495e;
-            font-size: 1rem;
-            padding: .5em;
-            transition: .15s;
-            width: 100%
-        }
-
-        .textfield::-webkit-input-placeholder {
-            color: #95a5a6;
-            transition: .15s
-        }
-
-        .textfield:-ms-input-placeholder,
-        .textfield::-ms-input-placeholder {
-            color: #95a5a6;
-            transition: .15s
-        }
-
-        .textfield::placeholder {
-            color: #95a5a6;
-            transition: .15s
-        }
-
-        .textfield:hover {
-            border-color: #5d6d77;
-            color: #5d6d77;
-            outline-width: 0
-        }
-
-        .textfield:hover::-webkit-input-placeholder {
-            color: #5d6d77
-        }
-
-        .textfield:hover:-ms-input-placeholder,
-        .textfield:hover::-ms-input-placeholder {
-            color: #5d6d77
-        }
-
-        .textfield:hover::placeholder {
-            color: #5d6d77
-        }
-
-        .textfield:focus {
-            border-color: #34495e;
-            outline-width: 0
-        }
-
-        .textfield:focus::-webkit-input-placeholder {
-            color: #34495e
-        }
-
-        .textfield:focus:-ms-input-placeholder,
-        .textfield:focus::-ms-input-placeholder {
-            color: #34495e
-        }
-
-        .textfield:focus::placeholder {
-            color: #34495e
-        }
-
-        .textfield--large {
-            font-size: 1.125em
-        }
-
-        .text-center {
-            text-align: center
-        }
-
-        .ib {
-            display: inline-block
-        }
-
-        @media screen and (max-width:767px) {
-            .hidden\@xs {
-                display: none
-            }
-        }
-
-        @media screen and (min-width:768px) {
-            .visible\@xs {
-                display: none
-            }
-        }
-
-        .hidden {
-            display: none !important;
-            visibility: hidden
-        }
-
-        .visuallyhidden {
-            border: 0;
-            clip: rect(0 0 0 0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px
-        }
-
-        .clearfix,
-        .clearfix:after {
-            clear: both;
-            content: " ";
-            display: table
-        }
-
-        .pull-left {
-            float: left
-        }
-
-        .pull-right {
-            float: right
-        }
-
-        .full-width {
-            width: 100%
-        }
-
-        .full-height {
-            height: 100%
-        }
-
-        .hide-text {
-            background-color: transparent;
-            border: 0;
-            color: transparent;
-            font: 0/0 a;
-            text-shadow: none
-        }
-
-        .table-center-wrap {
-            display: table;
-            table-layout: fixed
-        }
-
-        .table-center {
-            display: table-cell;
-            vertical-align: middle
-        }
-
-        .btn-group:after,
-        .btn-group:before {
-            content: " ";
-            display: table
-        }
-
-        .btn-group:after {
-            clear: both
-        }
-
-        .btn-group .btn {
-            border-radius: 0;
-            float: left
-        }
-
-        .btn-group .btn:first-child {
-            border-radius: 3px 0 0 3px
-        }
-
-        .btn-group .btn:not(:first-child) {
-            margin-left: -1px
-        }
-
-        .btn-group .btn:last-child {
-            border-radius: 0 3px 3px 0
-        }
-
-        .btn-group label.btn input[type=radio] {
-            clip: rect(0, 0, 0, 0);
-            pointer-events: none;
-            position: absolute
-        }
-
-        .btn {
-            -webkit-appearance: none;
-            background-color: rgba(52, 73, 94, 0);
-            border: 1px solid #34495e;
-            border-radius: 3px;
-            color: #34495e;
-            cursor: pointer;
-            display: inline-block;
-            font-size: 1rem;
-            padding: .75em .8em;
-            text-align: center;
-            transition: .2s ease-out
-        }
-
-        @media (-moz-touch-enabled:0),
-        (pointer:fine) {
-            .btn:hover {
-                background-color: #34495e;
-                color: #fff;
-                text-decoration: none
-            }
-        }
-
-        .btn:focus {
-            box-shadow: 0 0 0 2px rgba(52, 73, 94, .4);
-            outline-width: 0
-        }
-
-        .btn.active,
-        .btn:active {
-            background-color: #34495e;
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
-            color: #fff
-        }
-
-        .btn:focus.active {
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3), 0 0 0 2px rgba(52, 73, 94, .4)
-        }
-
-        .btn:disabled {
-            background-color: rgba(52, 73, 94, 0);
-            color: #34495e;
-            cursor: not-allowed;
-            opacity: .7
-        }
-
-        .btn--warning {
-            background-color: rgba(230, 126, 34, 0);
-            border-color: #e67e22;
-            color: #e67e22
-        }
-
-        @media (-moz-touch-enabled:0),
-        (pointer:fine) {
-            .btn--warning:hover {
-                background-color: #e67e22
-            }
-        }
-
-        .btn--warning:focus {
-            box-shadow: 0 0 0 2px rgba(230, 126, 34, .4)
-        }
-
-        .btn--warning.active,
-        .btn--warning:active {
-            background-color: #e67e22
-        }
-
-        .btn--warning:focus.active {
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3), 0 0 0 2px rgba(230, 126, 34, .4)
-        }
-
-        .btn--warning:disabled {
-            background-color: rgba(230, 126, 34, 0);
-            color: #e67e22
-        }
-
-        .btn--primary {
-            background-color: rgba(52, 152, 219, 0);
-            border-color: #3498db;
-            color: #3498db
-        }
-
-        @media (-moz-touch-enabled:0),
-        (pointer:fine) {
-            .btn--primary:hover {
-                background-color: #3498db
-            }
-        }
-
-        .btn--primary:focus {
-            box-shadow: 0 0 0 2px rgba(52, 152, 219, .4)
-        }
-
-        .btn--primary.active,
-        .btn--primary:active {
-            background-color: #3498db
-        }
-
-        .btn--primary:focus.active {
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3), 0 0 0 2px rgba(52, 152, 219, .4)
-        }
-
-        .btn--primary:disabled {
-            background-color: rgba(52, 152, 219, 0);
-            color: #3498db
-        }
-
-        .btn--danger {
-            background-color: rgba(231, 76, 60, 0);
-            border-color: #e74c3c;
-            color: #e74c3c
-        }
-
-        @media (-moz-touch-enabled:0),
-        (pointer:fine) {
-            .btn--danger:hover {
-                background-color: #e74c3c
-            }
-        }
-
-        .btn--danger:focus {
-            box-shadow: 0 0 0 2px rgba(231, 76, 60, .4)
-        }
-
-        .btn--danger.active,
-        .btn--danger:active {
-            background-color: #e74c3c
-        }
-
-        .btn--danger:focus.active {
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3), 0 0 0 2px rgba(231, 76, 60, .4)
-        }
-
-        .btn--danger:disabled {
-            background-color: rgba(231, 76, 60, 0);
-            color: #e74c3c
-        }
-
-        .btn--go {
-            background-color: rgba(46, 204, 113, 0);
-            border-color: #2ecc71;
-            color: #2ecc71
-        }
-
-        @media (-moz-touch-enabled:0),
-        (pointer:fine) {
-            .btn--go:hover {
-                background-color: #2ecc71
-            }
-        }
-
-        .btn--go:focus {
-            box-shadow: 0 0 0 2px rgba(46, 204, 113, .4)
-        }
-
-        .btn--go.active,
-        .btn--go:active {
-            background-color: #2ecc71
-        }
-
-        .btn--go:focus.active {
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3), 0 0 0 2px rgba(46, 204, 113, .4)
-        }
-
-        .btn--go:disabled {
-            background-color: rgba(46, 204, 113, 0);
-            color: #2ecc71
-        }
-
-        @media screen and (max-width:767px) {
-            .btn {
-                font-size: .875rem
-            }
-        }
-
-        .filter-group .btn {
-            position: relative
-        }
-
-        .filter-group .btn.active:after,
-        .filter-group .btn.active:before {
-            content: "";
-            height: 20px;
-            left: 50%;
-            margin-left: -10px;
-            margin-top: -10px;
-            opacity: 0;
-            position: absolute;
-            top: 50%;
-            transition: .2s;
-            width: 20px
-        }
-
-        .filter-group .btn:before {
-            background-color: #2c3e50;
-            border-radius: 50%
-        }
-
-        .filter-group .btn:after {
-            background-image: url(../img/check.svg);
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: 60%
-        }
-
-        .filter-group .btn.active:after,
-        .filter-group .btn.active:before {
-            opacity: 1
-        }
-
-        .demo-list .figure-wrap {
-            position: relative;
-            z-index: 1
-        }
-
-        .demo-list .figure-wrap,
-        .demo-list .figure-wrap img {
-            -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-            transition: .1s ease
-        }
-
-        .demo-list:hover .figure-wrap {
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1)
-        }
-
-        .demo-list:hover .figure-wrap img {
-            -webkit-filter: grayscale(1);
-            filter: grayscale(1)
-        }
-
-        .demo-list:hover .figure-wrap:hover {
-            -webkit-transform: scale3d(1.05, 1.05, 1);
-            transform: scale3d(1.05, 1.05, 1);
-            z-index: 2
-        }
-
-        .demo-list:hover .figure-wrap:hover img {
-            -webkit-filter: none;
-            filter: none
-        }
-
-        .demo-list .figure-wrap:nth-child(4n+1) {
-            margin-left: 0
-        }
-
-        .demo-list .figure-wrap>a {
-            display: block
-        }
-
-        .demo-list .figure-wrap figcaption {
-            height: 2em;
-            margin-bottom: 1em;
-            margin-top: .5em
-        }
-
-        .demo-link-container:before {
-            color: #2ecc71;
-            content: "➜";
-            margin-right: 5px
-        }
-
-        span.demo-link-container:before {
-            margin-left: 5px
-        }
-
-        @media screen and (max-width:47.9375em) {
-            .demo-list+.demo-list {
-                margin-top: 1em
-            }
-            .figure-wrap:nth-child(odd) {
-                margin-left: 0
-            }
-            .figure-wrap:nth-child(n+3) {
-                margin-top: 1em
-            }
-        }
-
-        .site-nav {
-            background: #ecf0f1;
-            border-bottom: 1px solid #e1e5e6;
-            margin-bottom: 28px;
-            padding: 10px 0
-        }
-
-        .site-nav__content {
-            display: flex;
-            justify-content: space-between
-        }
-
-        .site-nav__logo {
-            font-size: 20px
-        }
-
-        .site-nav__logo,
-        .site-nav__logo:visited {
-            color: #34495e
-        }
-
-        .site-nav__logo:hover,
-        .site-nav__logo:visited:hover {
-            text-decoration: none
-        }
-
-        .site-nav__links,
-        .site-nav__logo {
-            align-items: center;
-            display: flex
-        }
-
-        .site-nav__logo svg {
-            display: block;
-            height: 24px;
-            margin-right: 4px;
-            width: 24px
-        }
-
-        .site-nav__logo rect {
-            transition: .18s cubic-bezier(.4, 0, .2, 1)
-        }
-
-        .site-nav__link {
-            position: relative;
-            z-index: 3
-        }
-
-        .site-nav__link:not(:last-of-type) {
-            margin-right: 8px
-        }
-
-        .site-nav__dropdown {
-            -webkit-transform: translateY(10px);
-            background-color: #fff;
-            box-shadow: 0 7px 10px -1px rgba(0, 0, 0, .12);
-            max-height: 100vh;
-            opacity: 0;
-            position: absolute;
-            right: 0;
-            top: 40px;
-            transform: translateY(10px);
-            transition: .3s cubic-bezier(.165, .84, .44, 1);
-            visibility: hidden;
-            z-index: 2
-        }
-
-        .site-nav__dropdown:before {
-            border-bottom: 8px solid #fff;
-            border-left: 9px solid transparent;
-            border-right: 9px solid transparent;
-            content: "";
-            display: block;
-            position: absolute;
-            right: 32px;
-            top: -8px
-        }
-
-        .site-nav__dropdown li+li {
-            margin-top: 8px
-        }
-
-        .site-nav__dropdown a {
-            color: #5d6d77;
-            display: block
-        }
-
-        .site-nav__dropdown a:hover {
-            background-color: #ecf0f1;
-            color: #5d6d77;
-            text-decoration: none
-        }
-
-        .site-nav__dropdown figure {
-            align-items: center;
-            display: flex
-        }
-
-        .site-nav__dropdown picture {
-            flex-shrink: 0;
-            height: 75px;
-            width: 100px
-        }
-
-        .site-nav__dropdown figcaption {
-            padding-left: 8px;
-            padding-right: 8px
-        }
-
-        .site-nav__dropdown--simple-links a {
-            padding: 8px 16px
-        }
-
-        .site-nav__dropdown--simple-links li+li {
-            margin-top: 0
-        }
-
-        .site-nav__link-toggle {
-            padding: 6px 8px
-        }
-
-        .site-nav__link-toggle:after {
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-top: 6px solid;
-            content: "";
-            display: inline-block;
-            margin-left: 4px;
-            margin-top: -1px;
-            transition: -webkit-transform .18s cubic-bezier(.4, 0, .2, 1);
-            transition: transform .18s cubic-bezier(.4, 0, .2, 1);
-            transition: transform .18s cubic-bezier(.4, 0, .2, 1), -webkit-transform .18s cubic-bezier(.4, 0, .2, 1);
-            vertical-align: middle
-        }
-
-        .site-nav__link--dropdown-active .site-nav__link-toggle:after {
-            -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg)
-        }
-
-        .site-nav__link--dropdown-active .site-nav__dropdown {
-            -webkit-transform: translateY(0);
-            opacity: 1;
-            transform: translateY(0);
-            visibility: visible
-        }
-
-        @media (-moz-touch-enabled:0),
-        (pointer:fine) {
-            .site-nav__logo:hover rect:first-of-type {
-                -webkit-transform: translate(20px, 10px);
-                transform: translate(20px, 10px);
-                transition-delay: 0ms
-            }
-            .site-nav__logo:hover rect:nth-of-type(2) {
-                -webkit-transform: translateY(20px);
-                transform: translateY(20px);
-                transition-delay: 10ms
-            }
-            .site-nav__logo:hover rect:nth-of-type(3) {
-                -webkit-transform: translate(-20px, 6px);
-                transform: translate(-20px, 6px);
-                transition-delay: 20ms
-            }
-            .site-nav__logo:hover rect:nth-of-type(4) {
-                -webkit-transform: translate(10px, -10px);
-                transform: translate(10px, -10px);
-                transition-delay: 30ms
-            }
-            .site-nav__logo:hover rect:nth-of-type(5) {
-                -webkit-transform: translate(-10px, 10px);
-                transform: translate(-10px, 10px);
-                transition-delay: 40ms
-            }
-            .site-nav__logo:hover rect:nth-of-type(6) {
-                -webkit-transform: translate(-20px, -14px);
-                transform: translate(-20px, -14px);
-                transition-delay: 50ms
-            }
-            .site-nav__logo:hover rect:nth-of-type(7) {
-                -webkit-transform: translateY(-20px);
-                transform: translateY(-20px);
-                transition-delay: 60ms
-            }
-            .site-nav__link-toggle:hover {
-                border-color: #34495e
-            }
-        }
-
-        @media screen and (max-width:767px) {
-            body.site-nav--open {
-                padding-top: 51px
-            }
-            body.site-nav--open .site-nav {
-                left: 0;
-                position: fixed;
-                top: 0;
-                width: 100%;
-                z-index: 4
-            }
-            .site-nav__dropdown {
-                -webkit-overflow-scrolling: touch;
-                left: 0;
-                overflow: auto;
-                padding: 8px calc(3.5vw + 8px);
-                position: fixed;
-                right: 0;
-                top: 51px;
-                width: 100vw
-            }
-        }
-
-        @media screen and (min-width:768px) {
-            .site-nav {
-                padding: 16px 0
-            }
-            .site-nav__logo {
-                font-size: 24px
-            }
-            .site-nav__logo svg {
-                height: 32px;
-                width: 32px
-            }
-            .site-nav__link:not(:last-child) {
-                margin-right: 16px
-            }
-            .site-nav__link--dropdown:not(:last-child) {
-                margin-right: 12px
-            }
-            .site-nav__dropdown {
-                box-shadow: 0 0 10px rgba(0, 0, 0, .12);
-                max-height: none !important;
-                padding: 16px;
-                right: -100px
-            }
-            .site-nav__dropdown:before {
-                right: 132px
-            }
-            .site-nav__dropdown ul {
-                -webkit-column-count: 2;
-                -webkit-column-gap: 16px;
-                column-count: 2;
-                column-gap: 16px
-            }
-            .site-nav__dropdown li {
-                -webkit-column-break-inside: avoid;
-                break-inside: avoid;
-                page-break-inside: avoid
-            }
-            .site-nav__dropdown figcaption {
-                white-space: nowrap
-            }
-            @supports ((-webkit-filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.12))) or (filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.12)))) {
-                .site-nav__dropdown {
-                    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, .12));
-                    box-shadow: none;
-                    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .12))
-                }
-            }
-            .site-nav__link-img {
-                height: 24px;
-                width: 24px
-            }
-            .site-nav__dropdown--simple-links {
-                padding: 0;
-                right: 0
-            }
-            .site-nav__dropdown--simple-links:before {
-                right: 24px
-            }
-            .site-nav__dropdown--simple-links a {
-                width: 200px
-            }
-        }
-
-        @media screen and (min-width:1024px) {
-            .site-nav__dropdown {
-                right: 0
-            }
-            .site-nav__dropdown:before {
-                right: 32px
-            }
-            .site-nav__dropdown--simple-links:before {
-                right: 24px
-            }
-        }
-
-        .site-footer {
-            background-color: #34495e;
-            margin-top: 2em;
-            padding: 1em 0
-        }
-
-        .site-footer p {
-            color: #ecf0f1
-        }
-
-        .site-footer a {
-            color: #fff;
-            text-decoration: underline
-        }
-
-        .site-footer a:hover {
-            color: #3498db
-        }
-
-        .has-code-block .code-block pre {
-            margin-bottom: 0
-        }
-
-        .has-code-block+.site-footer {
-            margin-top: 0
-        }
-
-        @media screen and (min-width:768px) {
-            .site-footer__credit {
-                text-align: right
-            }
-        }
-
-        .filter-label {
-            color: #95a5a6;
-            display: block;
-            margin-bottom: 4px;
-            margin-top: 0;
-            padding: 0
-        }
-
-        .filters-group {
-            border: 0;
-            margin: 0 0 4px;
-            padding: 0
-        }
-
-        @media screen and (min-width:768px) {
-            .filters-group-wrap {
-                display: flex;
-                justify-content: space-between
-            }
-        }
-
-        .compound-filter-options {
-            margin-bottom: 40px;
-            margin-top: 20px
-        }
-
-        .filter-group--compound button {
-            background-color: currentColor;
-            height: 40px;
-            padding: 0;
-            width: 40px
-        }
-
-        .filter-group--compound label {
-            cursor: pointer
-        }
-
-        .filter-group--compound .ib+.ib {
-            margin-left: 8px
-        }
-
-        .shape-shuffle-container {
-            overflow: hidden;
-            position: relative
-        }
-
-        .shape {
-            margin-left: 0;
-            margin-top: 10px;
-            position: relative
-        }
-
-        .shape .shape__space {
-            background-color: #000;
-            border: 0 solid transparent;
-            height: 100%;
-            width: 100%
-        }
-
-        .shape--blue .shape__space {
-            background-color: #3498db;
-            border-bottom-color: #3498db
-        }
-
-        .shape--red .shape__space {
-            background-color: #e74c3c;
-            border-bottom-color: #e74c3c
-        }
-
-        .shape--orange .shape__space {
-            background-color: #f39c12;
-            border-bottom-color: #f39c12
-        }
-
-        .shape--green .shape__space {
-            background-color: #2ecc71;
-            border-bottom-color: #2ecc71
-        }
-
-        .shape--circle .shape__space {
-            border-radius: 50%
-        }
-
-        .shape--diamond .shape__space {
-            -webkit-transform: rotate(45deg) scale(.70711);
-            transform: rotate(45deg) scale(.70711)
-        }
-
-        .shape--triangle .shape__space {
-            background-color: transparent;
-            border-width: 0 66px 114px;
-            height: 0;
-            margin: auto;
-            padding-top: 9px;
-            width: 0
-        }
-
-        @media (min-width:425px) {
-            .shape--triangle .shape__space {
-                border-width: 0 90px 156px;
-                height: 0;
-                padding-top: 12px;
-                width: 0
-            }
-        }
-
-        @media (min-width:600px) {
-            .shape--triangle .shape__space {
-                border-width: 0 131px 227px;
-                height: 0;
-                padding-top: 17.5px;
-                width: 0
-            }
-        }
-
-        @media (min-width:768px) {
-            .shape--triangle .shape__space {
-                border-width: 0 74px 128px;
-                height: 0;
-                padding-top: 10px;
-                width: 0
-            }
-        }
-
-        @media (min-width:1024px) {
-            .shape--triangle .shape__space {
-                border-width: 0 102px 177px;
-                height: 0;
-                padding-top: 13.5px;
-                width: 0
-            }
-        }
-
-        @media (min-width:1200px) {
-            .shape--triangle .shape__space {
-                border-width: 0 135px 234px;
-                height: 0;
-                padding-top: 18px;
-                width: 0
-            }
-        }
-
-        @media (min-width:1392px) {
-            .shape--triangle .shape__space {
-                border-width: 0 142px 246px;
-                height: 0;
-                padding-top: 19px;
-                width: 0
-            }
-        }
-
-        .search-section {
-            margin-bottom: 1em;
-            margin-top: 1em
-        }
-
-        .question {
-            float: none;
-            margin: 2em 0;
-            overflow: hidden;
-            transition: .2s ease-out
-        }
-
-        .question--collapsed {
-            border-width: 0;
-            height: 0 !important;
-            margin: 0
-        }
-
-        .question--collapsed+.question {
-            margin-top: 0
-        }
-
-        .question--unanswered {
-            border-top: 2px solid #2ecc71;
-            padding-top: 1.25em
-        }
-
-        .question__title {
-            margin-top: 0
-        }
-
-        .question__answer {
-            margin-bottom: 0;
-            padding-bottom: 1px
-        }
-    </style>
-
-
 
 </head>
 
@@ -1019,7 +50,198 @@
             <h4>게시판 리스트 타입1</h4>
             <p class="h4_txt">이미지 경로는 변경해서 사용해 주세요.이미지는 각 메뉴 폴더 별로 작업해 주세요. 예) sub01, sub02, sub03 ...</p>
 
+
+
+
+
+
+
+
+
+
+            <select id="filter-company" class="filter">
+                <option value="0">No value</option>
+                <option value="Alfreds">Alfreds</option>
+                <option value="Centro">Centro</option>
+                <option value="Ernst">Ernst</option>
+                <option value="Island">Island</option>
+                <option value="Laughing">Laughing</option>
+                <option value="Magazzini">Magazzini</option>
+            </select>
+
+            <select id="filter-contact" class="filter">
+                <option value="0">No value</option>
+                <option value="Maria Anders">Maria Anders</option>
+                <option value="Francisco Chang">Francisco Chang</option>
+                <option value="Roland Mendel">Roland Mendel</option>
+            </select>
+
+            <select id="filter-range" class="filter">
+                <option value="0" data-min="1" data-max="1">No value</option>
+                <option value="£100,000 - £200,000" data-min="100000" data-max="200000">£100,000 - £200,000</option>
+                <option value="£200,000 - £300,000" data-min="200000" data-max="300000">£200,000 - £300,000</option>
+                <option value="£300,000 - £400,000" data-min="300000" data-max="400000">£300,000 - £400,000</option>
+                <option value="£400,000 - £500,000" data-min="400000" data-max="500000">£400,000 - £500,000</option>
+            </select>
+
+            <!-- ^^ range select box contains data-max and data-min which will be used to compare ranges -->
+
+
+
+            <h2>HTML Table</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Range</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <tbody>
+                        <td class="company" data-company="Alfreds">Alfreds</td>
+
+                        <!-- Data attributes helps in fetching values but you can fetch value of text in td also -->
+
+                        <td class="contact" data-contact="Maria Anders">Maria Anders</td>
+                        <td class="range" data-min="200000" data-max="300000">£200,000 - £300,000</td>
+
+                        <!-- here Data attributes are necessary as we need separate min max values -->
+
+                </tr>
+                <tr>
+                    <td class="company" data-company="Centro">Centro</td>
+                    <td class="contact" data-contact="Francisco Chang">Francisco Chang</td>
+                    <td class="range" data-min="100000" data-max="200000">£100,000 - £200,000</td>
+                </tr>
+                <tr>
+                    <td class="company" data-company="Alfreds">Alfreds</td>
+                    <td class="contact" data-contact="Roland Mendel">Roland Mendel</td>
+                    <td class="range" data-min="200000" data-max="300000">£200,000 - £300,000</td>
+                </tr>
+                <tr>
+                    <td class="company" data-company="Centro">Centro</td>
+                    <td class="contact" data-contact="Helen Bennett">Helen Bennett</td>
+                    <td class="range" data-min="100000" data-max="200000">£100,000 - £200,000</td>
+                </tr>
+                <tr>
+                    <td class="company" data-company="Laughing">Laughing</td>
+                    <td class="contact" data-contact="Yoshi Tannamuri">Yoshi Tannamuri</td>
+                    <td class="range" data-min="200000" data-max="300000">£200,000 - £300,000</td>
+                </tr>
+                <tr>
+                    <td class="company" data-company="Laughing">Laughing</td>
+                    <td data-contact="Giovanni Rovelli">Giovanni Rovelli</td>
+                    <td class="range" data-min="150000" data-max="250000">£150,000 - £250,000</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+
+
+
+
+
+            <script>
+                $('.filter').change(function () {
+
+                    filter_function();
+
+                    //calling filter function each select box value change
+
+                });
+
+                $('table tbody tr').show(); //intially all rows will be shown
+
+                function filter_function() {
+                    $('table tbody tr').hide(); //hide all rows
+
+                    var companyFlag = 0;
+                    var companyValue = $('#filter-company').val();
+                    var contactFlag = 0;
+                    var contactValue = $('#filter-contact').val();
+                    var rangeFlag = 0;
+                    var rangeValue = $('#filter-range').val();
+                    var rangeminValue = $('#filter-range').find(':selected').attr('data-min');
+                    var rangemaxValue = $('#filter-range').find(':selected').attr('data-max');
+
+                    //setting intial values and flags needed
+
+                    //traversing each row one by one
+                    $('table tr').each(function () {
+
+                        if (companyValue == 0) { //if no value then display row
+                            companyFlag = 1;
+                        } else if (companyValue == $(this).find('td.company').data('company')) {
+                            companyFlag = 1; //if value is same display row
+                        } else {
+                            companyFlag = 0;
+                        }
+
+
+                        if (contactValue == 0) {
+                            contactFlag = 1;
+                        } else if (contactValue == $(this).find('td.contact').data('contact')) {
+                            contactFlag = 1;
+                        } else {
+                            contactFlag = 0;
+                        }
+
+
+
+                        if (rangeValue == 0) {
+                            rangeFlag = 1;
+                        }
+                        //condition to display rows for a range
+                        else if ((rangeminValue <= $(this).find('td.range').data('min') && rangemaxValue >
+                                $(this).find('td.range').data('min')) || (
+                                rangeminValue < $(this).find('td.range').data('max') &&
+                                rangemaxValue >= $(this).find('td.range').data('max'))) {
+                            rangeFlag = 1;
+                        } else {
+                            rangeFlag = 0;
+                        }
+
+                        console.log(rangeminValue + ' ' + rangemaxValue);
+                        console.log($(this).find('td.range').data('min') + ' ' + $(this).find('td.range').data(
+                            'max'));
+
+
+                        if (companyFlag && contactFlag && rangeFlag) {
+                            $(this).show(); //displaying row which satisfies all conditions
+                        }
+
+                    });
+
+
+
+
+                }
+            </script>
+
+
+
+
+            <div class="category_wrap">
+                <button class="active btn" data-filter="box">전체</button>
+                <button class="btn" data-filter="nature">자연</button>
+                <button class="btn" data-filter="culture">문화관광</button>
+                <button class="btn" data-filter="leisure">레저/체험</button>
+                <button class="btn" data-filter="theme">테마관광지</button>
+                <button class="btn" data-filter="island">섬속의 섬</button>
+                <button class="btn" data-filter="walking">도보</button>
+                <button class="btn" data-filter="photospot">포토스팟</button>
+                <button class="btn" data-filter="shopping">쇼핑</button>
+            </div>
+            <!--category_wrap end -->
             <div class="form_wrap board">
+
+
+
+
+
                 <div class="toggle_area">
                     <button class="thumb">
                         <i class="fas fa-th"></i>
@@ -1043,12 +265,12 @@
                 });
             </script>
 
-            <div class="board_list type01">
-                <div class="box_wrap clear">
-                    <div class="box">
+            <div id="board" class="board_list type01">
+                <div id="board_cont" class="box_wrap clear">
+                    <div class="box nature">
                         <div class="img_area">
                             <a href="sub01_view.html">
-                                <span class="category">관광지</span>
+                                <span class="category">자연관광지</span>
                                 <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
                                 <span class="star_score"></span>
                             </a>
@@ -1094,10 +316,10 @@
                         <!-- box_cont_area -->
                     </div>
                     <!-- box end -->
-                    <div class="box">
+                    <div class="box culture">
                         <div class="img_area">
                             <a href="#">
-                                <span class="category">관광지</span>
+                                <span class="category">문화관광지</span>
                                 <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
                                 <span class="star_score"></span>
                             </a>
@@ -1196,214 +418,7 @@
                     <!-- box end -->
                 </div>
                 <!-- box_wrap -->
-
-
-
-
-
-
-
-                <select id="filter-company" class="filter">
-                    <option value="0">No value</option>
-                    <option value="Alfreds">Alfreds</option>
-                    <option value="Centro">Centro</option>
-                    <option value="Ernst">Ernst</option>
-                    <option value="Island">Island</option>
-                    <option value="Laughing">Laughing</option>
-                    <option value="Magazzini">Magazzini</option>
-                </select>
-
-                <select id="filter-contact" class="filter">
-                    <option value="0">No value</option>
-                    <option value="Maria Anders">Maria Anders</option>
-                    <option value="Francisco Chang">Francisco Chang</option>
-                    <option value="Roland Mendel">Roland Mendel</option>
-                </select>
-
-                <select id="filter-range" class="filter">
-                    <option value="0" data-min="1" data-max="1">No value</option>
-                    <option value="£100,000 - £200,000" data-min="100000" data-max="200000">£100,000 - £200,000</option>
-                    <option value="£200,000 - £300,000" data-min="200000" data-max="300000">£200,000 - £300,000</option>
-                    <option value="£300,000 - £400,000" data-min="300000" data-max="400000">£300,000 - £400,000</option>
-                    <option value="£400,000 - £500,000" data-min="400000" data-max="500000">£400,000 - £500,000</option>
-                </select>
-
-                <!-- ^^ range select box contains data-max and data-min which will be used to compare ranges -->
-
-
-
-                <h2>HTML Table</h2>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Company</th>
-                            <th>Contact</th>
-                            <th>Range</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <tbody>
-                            <td class="company" data-company="Alfreds">Alfreds</td>
-
-                            <!-- Data attributes helps in fetching values but you can fetch value of text in td also -->
-
-                            <td class="contact" data-contact="Maria Anders">Maria Anders</td>
-                            <td class="range" data-min="200000" data-max="300000">£200,000 - £300,000</td>
-
-                            <!-- here Data attributes are necessary as we need separate min max values -->
-
-                    </tr>
-                    <tr>
-                        <td class="company" data-company="Centro">Centro</td>
-                        <td class="contact" data-contact="Francisco Chang">Francisco Chang</td>
-                        <td class="range" data-min="100000" data-max="200000">£100,000 - £200,000</td>
-                    </tr>
-                    <tr>
-                        <td class="company" data-company="Alfreds">Alfreds</td>
-                        <td class="contact" data-contact="Roland Mendel">Roland Mendel</td>
-                        <td class="range" data-min="200000" data-max="300000">£200,000 - £300,000</td>
-                    </tr>
-                    <tr>
-                        <td class="company" data-company="Centro">Centro</td>
-                        <td class="contact" data-contact="Helen Bennett">Helen Bennett</td>
-                        <td class="range" data-min="100000" data-max="200000">£100,000 - £200,000</td>
-                    </tr>
-                    <tr>
-                        <td class="company" data-company="Laughing">Laughing</td>
-                        <td class="contact" data-contact="Yoshi Tannamuri">Yoshi Tannamuri</td>
-                        <td class="range" data-min="200000" data-max="300000">£200,000 - £300,000</td>
-                    </tr>
-                    <tr>
-                        <td class="company" data-company="Laughing">Laughing</td>
-                        <td data-contact="Giovanni Rovelli">Giovanni Rovelli</td>
-                        <td class="range" data-min="150000" data-max="250000">£150,000 - £250,000</td>
-                    </tr>
-                    </tbody>
-                </table>
-
-
-
-
-
-
-
-                <script>
-                    $('.filter').change(function () {
-
-                        filter_function();
-
-                        //calling filter function each select box value change
-
-                    });
-
-                    $('table tbody tr').show(); //intially all rows will be shown
-
-                    function filter_function() {
-                        $('table tbody tr').hide(); //hide all rows
-
-                        var companyFlag = 0;
-                        var companyValue = $('#filter-company').val();
-                        var contactFlag = 0;
-                        var contactValue = $('#filter-contact').val();
-                        var rangeFlag = 0;
-                        var rangeValue = $('#filter-range').val();
-                        var rangeminValue = $('#filter-range').find(':selected').attr('data-min');
-                        var rangemaxValue = $('#filter-range').find(':selected').attr('data-max');
-
-                        //setting intial values and flags needed
-
-                        //traversing each row one by one
-                        $('table tr').each(function () {
-
-                            if (companyValue == 0) { //if no value then display row
-                                companyFlag = 1;
-                            } else if (companyValue == $(this).find('td.company').data('company')) {
-                                companyFlag = 1; //if value is same display row
-                            } else {
-                                companyFlag = 0;
-                            }
-
-
-                            if (contactValue == 0) {
-                                contactFlag = 1;
-                            } else if (contactValue == $(this).find('td.contact').data('contact')) {
-                                contactFlag = 1;
-                            } else {
-                                contactFlag = 0;
-                            }
-
-
-
-                            if (rangeValue == 0) {
-                                rangeFlag = 1;
-                            }
-                            //condition to display rows for a range
-                            else if ((rangeminValue <= $(this).find('td.range').data('min') && rangemaxValue >
-                                    $(this).find('td.range').data('min')) || (
-                                    rangeminValue < $(this).find('td.range').data('max') &&
-                                    rangemaxValue >= $(this).find('td.range').data('max'))) {
-                                rangeFlag = 1;
-                            } else {
-                                rangeFlag = 0;
-                            }
-
-                            console.log(rangeminValue + ' ' + rangemaxValue);
-                            console.log($(this).find('td.range').data('min') + ' ' + $(this).find('td.range').data(
-                                'max'));
-
-
-                            if (companyFlag && contactFlag && rangeFlag) {
-                                $(this).show(); //displaying row which satisfies all conditions
-                            }
-
-                        });
-
-
-
-
-                    }
-                </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="box_wrap clear">
+                <div id="board_cont" class="box_wrap clear">
                     <div class="box">
                         <div class="img_area">
                             <a href="#">
@@ -1580,317 +595,34 @@
     <!-- container end-->
 
 
-
-
-    <button class="active btn" data-filter="box">Show All</button>
-    <button class="btn" data-filter="a">Show A</button>
-    <button class="btn" data-filter="b">Show B</button>
-    <button class="btn" data-filter="c">Show C</button>
-    <button class="btn" data-filter="d">Show D</button>
-
-    <div class="spacer"></div>
-
-    <div id="parent">
-        <div class="box a b">A &amp; B</div>
-        <div class="box a">A</div>
-        <div class="box b">B</div>
-        <div class="box c a">C &amp A</div>
-        <div class="box c">C</div>
-        <div class="box d">D</div>
-    </div>
-
-
-
-
-
-
-
-
-
-    <section id="board">
-        <div class="wrapper">
-            <div class="row">
-                <div class="col-4@sm col-3@md">
-                    <div class="filters-group">
-                        <label for="filters-search-input" class="filter-label">Search</label>
-                        <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12@sm filters-group-wrap">
-                    <div class="filters-group">
-                        <p class="filter-label">Filter</p>
-                        <div class="btn-group filter-options">
-                            <button class="btn btn--primary" data-group="nature">자연</button>
-                            <button class="btn btn--primary" data-group="culture">문화관광</button>
-                            <button class="btn btn--primary" data-group="leisure">레저/체험</button>
-                            <button class="btn btn--primary" data-group="theme">테마관광지</button>
-                            <button class="btn btn--primary" data-group="island">섬속의 섬</button>
-                            <button class="btn btn--primary" data-group="photospot">포토스팟</button>
-                            <button class="btn btn--primary" data-group="shopping">쇼핑</button>
-                        </div>
-                    </div>
-                    <fieldset class="filters-group">
-                        <legend class="filter-label">Sort</legend>
-                        <div class="btn-group sort-options">
-                            <label class="btn active">
-                                <input type="radio" name="sort-value" value="dom"> Default
-                            </label>
-                            <label class="btn">
-                                <input type="radio" name="sort-value" value="title"> Title
-                            </label>
-                            <label class="btn">
-                                <input type="radio" name="sort-value" value="date-created"> 최신순
-                            </label>
-                            <label class="btn">
-                                <input type="radio" name="sort-value" value="liked"> 좋아요순
-                            </label>
-                        </div>
-                    </fieldset>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-        <div class="wrapper">
-
-            <div class="row my-shuffle-container">
-                <figure class="col-4@sm picture-item" data-groups='["animal"]' data-date-created="2016-08-12" data-title="Crocodile">
-                    <div class="aspect aspect--16x9">
-                        <div class="aspect__inner">
-                            <img src="https://images.unsplash.com/photo-1471005197911-88e9d4a7834d?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=bd8b952c4c983d4bde5e2018c90c9124"
-                                alt="A close, profile view of a crocodile looking directly into the camera" />
-                        </div>
-                    </div>
-                    <figcaption>Crocodile</figcaption>
-                </figure>
-                <figure class="col-4@sm picture-item" data-groups='["city"]' data-date-created="2016-06-09" data-title="Crossroads">
-                    <div class="aspect aspect--16x9">
-                        <div class="aspect__inner">
-                            <img src="https://images.unsplash.com/photo-1465447142348-e9952c393450?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=7d97e22d36a9a73beb639a936e6774e9"
-                                alt="A multi-level highway stack interchange in Puxi, Shanghai" />
-                        </div>
-                    </div>
-                    <figcaption>Crossroads</figcaption>
-                </figure>
-                <figure class="col-4@sm picture-item" data-groups='["nature","city"]' data-date-created="2015-10-20" data-title="Central Park">
-                    <div class="aspect aspect--16x9">
-                        <div class="aspect__inner">
-                            <img src="https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=1822bfd69c4021973a3d926e9294b70f"
-                                alt="Looking down on central park and the surrounding builds from the Rockefellar Center" />
-                        </div>
-                    </div>
-                    <figcaption>Central Park</figcaption>
-                </figure>
-                <div class="col-1@sm my-sizer-element"></div>
-            </div>
-        </div>
-    </section>
-
-    <script src="../../node_modules/shufflejs/dist/shuffle.min.js"></script>
     <script>
-        'use strict';
+        var $boxs = $("#board_cont > .box");
+        var $btns = $(".btn").on("click", function () {
 
-        var Shuffle = window.Shuffle;
+            var active =
+                $btns.removeClass("active")
+                .filter(this)
+                .addClass("active")
+                .data("filter");
 
-        var Demo = function (element) {
-            this.element = element;
+            $boxs
+                .hide()
+                .filter("." + active)
+                .fadeIn(450);
 
-            this.shuffle = new Shuffle(element, {
-                itemSelector: '.picture-item',
-                sizer: element.querySelector('.my-sizer-element'),
-            });
-
-            // Log events.
-            this.addShuffleEventListeners();
-
-            this._activeFilters = [];
-
-            this.addFilterButtons();
-            this.addSorting();
-            this.addSearchFilter();
-
-            this.mode = 'exclusive';
-        };
-
-        Demo.prototype.toggleMode = function () {
-            if (this.mode === 'additive') {
-                this.mode = 'exclusive';
-            } else {
-                this.mode = 'additive';
-            }
-        };
-
-        /**
-         * Shuffle uses the CustomEvent constructor to dispatch events. You can listen
-         * for them like you normally would (with jQuery for example).
-         */
-        Demo.prototype.addShuffleEventListeners = function () {
-            this.shuffle.on(Shuffle.EventType.LAYOUT, function (data) {
-                console.log('layout. data:', data);
-            });
-
-            this.shuffle.on(Shuffle.EventType.REMOVED, function (data) {
-                console.log('removed. data:', data);
-            });
-        };
-
-        Demo.prototype.addFilterButtons = function () {
-            var options = document.querySelector('.filter-options');
-
-            if (!options) {
-                return;
-            }
-
-            var filterButtons = Array.from(options.children);
-
-            filterButtons.forEach(function (button) {
-                button.addEventListener('click', this._handleFilterClick.bind(this), false);
-            }, this);
-        };
-
-        Demo.prototype._handleFilterClick = function (evt) {
-            var btn = evt.currentTarget;
-            var isActive = btn.classList.contains('active');
-            var btnGroup = btn.getAttribute('data-group');
-
-            // You don't need _both_ of these modes. This is only for the demo.
-
-            // For this custom 'additive' mode in the demo, clicking on filter buttons
-            // doesn't remove any other filters.
-            if (this.mode === 'additive') {
-                // If this button is already active, remove it from the list of filters.
-                if (isActive) {
-                    this._activeFilters.splice(this._activeFilters.indexOf(btnGroup));
-                } else {
-                    this._activeFilters.push(btnGroup);
-                }
-
-                btn.classList.toggle('active');
-
-                // Filter elements
-                this.shuffle.filter(this._activeFilters);
-
-                // 'exclusive' mode lets only one filter button be active at a time.
-            } else {
-                this._removeActiveClassFromChildren(btn.parentNode);
-
-                var filterGroup;
-                if (isActive) {
-                    btn.classList.remove('active');
-                    filterGroup = Shuffle.ALL_ITEMS;
-                } else {
-                    btn.classList.add('active');
-                    filterGroup = btnGroup;
-                }
-
-                this.shuffle.filter(filterGroup);
-            }
-        };
-
-        Demo.prototype._removeActiveClassFromChildren = function (parent) {
-            var children = parent.children;
-            for (var i = children.length - 1; i >= 0; i--) {
-                children[i].classList.remove('active');
-            }
-        };
-
-        Demo.prototype.addSorting = function () {
-            var buttonGroup = document.querySelector('.sort-options');
-
-            if (!buttonGroup) {
-                return;
-            }
-
-            buttonGroup.addEventListener('change', this._handleSortChange.bind(this));
-        };
-
-        Demo.prototype._handleSortChange = function (evt) {
-            // Add and remove `active` class from buttons.
-            var wrapper = evt.currentTarget;
-            var buttons = Array.from(evt.currentTarget.children);
-            buttons.forEach(function (button) {
-                if (button.querySelector('input').value === evt.target.value) {
-                    button.classList.add('active');
-                } else {
-                    button.classList.remove('active');
-                }
-            });
-
-            // Create the sort options to give to Shuffle.
-            var value = evt.target.value;
-            var options = {};
-
-            function sortByDate(element) {
-                return element.getAttribute('data-created');
-            }
-
-            function sortByTitle(element) {
-                return element.getAttribute('data-title').toLowerCase();
-            }
-
-            if (value === 'date-created') {
-                options = {
-                    reverse: true,
-                    by: sortByDate,
-                };
-            } else if (value === 'title') {
-                options = {
-                    by: sortByTitle,
-                };
-            }
-
-            this.shuffle.sort(options);
-        };
-
-        // Advanced filtering
-        Demo.prototype.addSearchFilter = function () {
-            var searchInput = document.querySelector('.js-shuffle-search');
-
-            if (!searchInput) {
-                return;
-            }
-
-            searchInput.addEventListener('keyup', this._handleSearchKeyup.bind(this));
-        };
-
-        /**
-         * Filter the shuffle instance by items with a title that matches the search input.
-         * @param {Event} evt Event object.
-         */
-        Demo.prototype._handleSearchKeyup = function (evt) {
-            var searchText = evt.target.value.toLowerCase();
-
-            this.shuffle.filter(function (element, shuffle) {
-
-                // If there is a current filter applied, ignore elements that don't match it.
-                if (shuffle.group !== Shuffle.ALL_ITEMS) {
-                    // Get the item's groups.
-                    var groups = JSON.parse(element.getAttribute('data-groups'));
-                    var isElementInCurrentGroup = groups.indexOf(shuffle.group) !== -1;
-
-                    // Only search elements in the current group
-                    if (!isElementInCurrentGroup) {
-                        return false;
-                    }
-                }
-
-                var titleElement = element.querySelector('.picture-item__title');
-                var titleText = titleElement.textContent.toLowerCase().trim();
-
-                return titleText.indexOf(searchText) !== -1;
-            });
-        };
-
-        document.addEventListener('DOMContentLoaded', function () {
-            window.demo = new Demo(document.getElementById('grid'));
         });
     </script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
