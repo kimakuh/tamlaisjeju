@@ -351,14 +351,16 @@
     <!--bottom scroll로 이동-->
     <script type="text/javascript">
         $("#sm-comment").click(function () {
-            $('html, body').scrollTop($(document).height(),1500);
+            $('html, body').scrollTop($(document).height());
         });
     </script>
 
     <!--원하는 위치 scroll로 이동-->
     <script type="text/javascript">
-        var scmove = $('#day-1').offset().top;
-        $('html, body').animate({ scrollTop: scmove }, 400);
+        $(function () {
+            var position = $('#day-1').offset(); // 위치값
+            $('html,body').animate({ scrollTop: position.top }, 100); // 이동
+        });
     </script>
 
     <!--페이스북 댓글 라이브러리 -->
