@@ -25,6 +25,8 @@
     <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+    <!-- daum map -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script>
 
     <style type="text/css">
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
@@ -80,9 +82,9 @@
                 </div>
                 <!-- 지도 -->
 
-                <div class=map_bb style="width: 100%;height: 400px;background-color: teal;margin-bottom:84px;" style="overflow: hidden;z-index:2; "></div>
+                <!-- <div class=map_bb style="width: 100%;height: 400px;background-color: teal;margin-bottom:84px;" style="overflow: hidden;z-index:2; "></div> -->
+                 <div id="map" style="width:100%;height:400px;margin-bottom:84px;"></div>
             </div>
-            <!-- <div id="map" style="width:100%;height:400px;margin-bottom:84px;"></div> -->
 
             <!-- 타임라인 -->
 
@@ -523,10 +525,9 @@
              */
         });
     </script>
-    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script> -->
 
 
-    <!-- <script>
+    <script>
         // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
         var infowindow = new daum.maps.InfoWindow({
             zIndex: 1
@@ -593,7 +594,7 @@
             // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
             map.relayout();
         }
-    </script> -->
+    </script> 
 
     <!-- <script>
         $('.js-timeline').Timeline({
@@ -606,8 +607,8 @@
             dotsPosition: 'top',
             startItem: 'last'
         });
-    </script> -->
-
+    </script>
+-->
 
     <script>
         //왼쪽 fixed

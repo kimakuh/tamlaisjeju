@@ -22,13 +22,13 @@
     <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
     <!-- drozone -->
-    <link rel="stylesheet" src="../../lib/dropzone/dist/min/dropzone.min.css">
+    <link rel="stylesheet" src="../../node_modules/dropzone/dist/min/dropzone.min.css">
 
-    <script type="text/javascript" src="../../lib/dropzone/dist/min/dropzone.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/dropzone/dist/min/dropzone.min.js"></script>
     <!--bootstrap-->
-    <link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     </script>
-    <script type="text/javascript" src="../../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 
@@ -78,7 +78,7 @@
                             태그 및 여행정보
                         </p>
                         <form class="editor_side_tag_text">
-                            <textarea name="" id="" cols="31" rows="5"></textarea>
+                            <textarea class="tag_area text_area" name="" id="" cols="31" rows="5"></textarea>
                         </form>
                     </div>
                     <div class="editor_side_partner">
@@ -152,13 +152,14 @@
                 <div class="title_wrap">
                     <div class="title_text">
                         <form>
-                            <textarea class="title_textarea" placeholder="제목" rows="1" data-is-observable="false"></textarea>
+                            <textarea class="title_textarea text_area" placeholder="제목" rows="1" data-is-observable="false"></textarea>
                         </form>
                     </div>
                 </div>
                 <div class="map_wrap">
                     <div class="contnet_map">
-                        <div class=map style="width: 100%;height: 400px;background-color: teal;"></div>
+                        <div id="map" class=map style="width:100%;height:400px;"></div>
+                        <!-- <div class=map style="width: 100%;height: 400px;background-color: teal;"></div> -->
                     </div>
                 </div>
                 <div class="cal_warp">
@@ -205,7 +206,7 @@
                         <form>
                             <input id="post_title" type="text" value="" class="post_titl" placeholder="장소">
                             <input id="post_address" type="text" class="post_addr" value="" placeholder="주소">
-                            <textarea id="post_text" class="title_textarea" placeholder="내용을 입력하세요." data-is-observable="false"></textarea>
+                            <textarea id="post_text" class="title_textarea text_area" placeholder="내용을 입력하세요." data-is-observable="false"></textarea>
                             <div class="text_count">글자제한:
                                 <span class="count">80</span>/80</div>
                         </form>
@@ -225,19 +226,47 @@
                         </div>
                         <!--dropzone-->
 
+                        <div id="xForm">
+
+                            <input type="text" id="txtData" />
+
+                        </div>
+
+                        <div id="trueForm">
+
+                            <form action="/" class="dropzone dz_form" enctype="multipart/form-data" id="my-dropzone" method="post">
+                                <span class="dz_ico">+</span>
+                                <!-- 고유 값이 필요한 경우 -->
 
 
-                        <form action="UploadImages" class="dropzone" id="my-awesome-dropzone" enctype="multipart/form-data">
-                        </form>
+                            </form>
+
+                            <div>
+
+                                <!--업로드 버튼을 여러 장의 사진 일회용 업로드 기능 제공-->
+
+                                <button type="submit" id="btnSubmit" disabled="disabled">업로드</button>
+
+                                <button id="btnAllClear" disabled="disabled">All Clear</button>
+
+                            </div>
+
+                        </div>
+
+                        <div id="falseForm" style="display:none;">
+
+                            지원하지 않는 브라우저입니다.
+
+                        </div>
 
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script> -->
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script>
 
 
-        <!-- <script>
+        <script>
         // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
         var infowindow = new daum.maps.InfoWindow({
             zIndex: 1
@@ -258,7 +287,7 @@
         var ps = new daum.maps.services.Places();
 
         // 키워드로 장소를 검색합니다
-        ps.keywordSearch('성산일출봉 관광지', placesSearchCB);
+        ps.keywordSearch('제주도', placesSearchCB);
 
         // 키워드 검색 완료 시 호출되는 콜백함수 입니다
         function placesSearchCB(data, status, pagination) {
@@ -304,7 +333,7 @@
             // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
             map.relayout();
         }
-    </script> -->
+    </script>
 
         <!-- <script>
         $('.js-timeline').Timeline({
@@ -318,6 +347,7 @@
             startItem: 'last'
         });
     </script> -->
+    
         <script>
             $(function () {
                 $('.text_count').each(function () {
@@ -412,46 +442,312 @@
             });
         </script>
 
-        <script>
-            Dropzone.options.myAwesomeDropzone = {
-                paramName: "file",
-                maxFilesize: 10,
-                url: 'UploadImages',
-                previewsContainer: "#dropzone-previews",
-                uploadMultiple: true,
-                parallelUploads: 5,
+
+        <script type="text/javascript">
+            //Dropzone 초기화, myDropzone form 있는 id 위해
+
+            Dropzone.options.myDropzone = {
+
+
+
+                //업로드 그림 경로 지정
+
+                url: '@Url.Action("dropZone", "Home")',
+
+
+
+                // 파라메터 지정
+
+                //params: {"Data" : xx},
+
+
+
+                //업로드 취소 및 추가 삭제 미리 보기 그림 링크 를 기본 안 추가
+
+                addRemoveLinks: true,
+
+
+
+                // 자동 업로드 끔
+
+                autoProcessQueue: false,
+
+
+
+                // 최대 업로드 카운트
+
                 maxFiles: 20,
+
+
+
+                //여러 개의 사진 업로드 허용
+
+                uploadMultiple: true,
+
+
+
+                // 병렬처리 WebConfig도 같이 수정해줘야함.
+
+                parallelUploads: 20,
+
+
+
+                // 최대 업로드 용량 Mb 단위
+
+                maxFilesize: 100,
+
+
+
+                method: 'post',
+
+
+
+                // 허용 확장자
+
+                acceptedFiles: ".jpeg,.jpg,.png,.gif,.JPEG,.JPG,.PNG,.GIF",
+
+
+
+                // 기본 true false 로 주면 아무 동작 못함
+
+                clickable: true,
+
+
+
+                // 지원하지 않는 IE 10 미만일 경우
+
+                fallback: function () {
+
+                    document.getElementById('trueForm').style.display = "none";
+
+                    document.getElementById('falseForm').style.display = 'block';
+
+                },
+
+
+
                 init: function () {
-                    var cd;
-                    this.on("success", function (file, response) {
-                        $('.dz-progress').hide();
-                        $('.dz-size').hide();
-                        $('.dz-error-mark').hide();
-                        console.log(response);
-                        console.log(file);
-                        cd = response;
-                    });
-                    this.on("addedfile", function (file) {
-                        var removeButton = Dropzone.createElement("<a href=\"#\">Remove file</a>");
-                        var _this = this;
-                        removeButton.addEventListener("click", function (e) {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            _this.removeFile(file);
-                            var name = "largeFileName=" + cd.pi.largePicPath +
-                                "&smallFileName=" + cd.pi.smallPicPath;
-                            $.ajax({
-                                type: 'POST',
-                                url: 'DeleteImage',
-                                data: name,
-                                dataType: 'json'
+
+                    var submitButton = document.querySelector("#btnSubmit")
+
+                    var allClearButton = document.querySelector("#btnAllClear")
+
+
+
+                    myDropzone = this; // closure
+
+
+
+                    // Call the action method to load the images from the server
+
+                    $.getJSON("/Home/getList").done(function (data) {
+
+                        if (data.Data != '') {
+
+
+
+                            $.each(data.Data, function (index, item) {
+
+                                //// Create the mock file:
+
+                                var mockFile = {
+
+                                    name: item.fileName, // 마우스 오버 네임
+
+                                    size: item.Size
+
+                                };
+
+
+
+                                // Call the default addedfile event handler
+
+                                myDropzone.emit("addedfile", mockFile);
+
+
+
+                                // And optionally show the thumbnail of the file:
+
+                                myDropzone.emit("thumbnail", mockFile, item.Path);
+
+
+
+                                // If you use the maxFiles option, make sure you adjust it to the
+
+                                // correct amount:
+
+                                //var existingFileCount = 1; // The number of files already uploaded
+
+                                //myDropzone.options.maxFiles = myDropzone.options.maxFiles - existingFileCount;
+
                             });
-                        });
-                        file.previewElement.appendChild(removeButton);
+
+                        }
+
                     });
+
+
+
+                    // 업로드 버튼 이벤트 등록
+
+                    submitButton.addEventListener("click", function () {
+
+                        // tell Dropzone to process all queued files
+
+
+
+                        // 다른 폼의 데이터를 Dropzone 안의 히든 폼으로 주고 서브밋 시키면 Form 2개 데이터를 취합할 수 있다.
+
+                        $('#hideTxtData').attr('value', $('#txtData').val());
+
+                        myDropzone.processQueue();
+
+                    });
+
+
+
+                    // All Clear
+
+                    allClearButton.addEventListener("click", function () {
+
+                        // Using "_this" here, because "this" doesn't point to the dropzone anymore
+
+                        if (confirm('정말 전체 항목을 삭제하겠습니까?')) {
+
+                            // 서버 삭제 로직
+
+                            $.ajax({
+
+                                url: '@Url.Action("removeAll","Home")',
+
+                                type: 'POST',
+
+                                success: function (data) {
+
+                                    if (data.Data == 'OK') {
+
+                                        myDropzone.removeAllFiles(true); // true 주면 업로드 중인 파일도 다 같이 삭제
+
+
+
+                                        //document.location.reload();
+
+                                    }
+
+                                }
+
+                            });
+
+                        }
+
+
+
+                        // If you want to cancel uploads as well, you
+
+                        // could also call _this.removeAllFiles(true);
+
+                    });
+
+
+
+
+
+
+
+                    // maxFiles 카운터를 초과하면 경고창
+
+                    this.on("maxfilesexceeded", function (data) {
+
+                        alert('최대 업로드 파일 수는 20개 입니다.');
+
+                    });
+
+
+
+                    // Dropzone에 이미지가 추가되면 업로드 버튼 활성화
+
+                    this.on("addedfile", function () {
+
+                        $("#btnSubmit").removeAttr("disabled");
+
+                        $("#btnAllClear").removeAttr("disabled");
+
+                    });
+
+
+
+                    //업로드 완료 후 사건 내가 받아들일 위해 JSON 데이터 형식
+
+                    this.on("complete", function (data) {
+
+                        if (this.getUploadingFiles().length === 0 && this.getQueuedFiles().length ===
+                            0) {
+
+                            if (data.xhr != undefined) {
+
+                                var res = eval('(' + data.xhr.responseText + ')');
+
+                                //var res = data;
+
+                                var msg;
+
+                                if (res.Result) {
+
+                                    msg = "이미지 업로드 완료( " + res.Count + " )";
+
+                                } else {
+
+                                    msg = "업로드 실패: " + res.Message;
+
+                                }
+
+                                alert(msg);
+
+                            }
+
+                        }
+
+                    });
+
+
+
+                    // 이미지 삭제
+
+                    this.on("removedfile", function (data) {
+
+                        //alert(data.name);   // 삭제할 파일명       
+
+
+
+                        // 서버 삭제 로직
+
+                        $.ajax({
+
+                            url: '@Url.Action("removeTarget","Home")',
+
+                            type: 'POST',
+
+                            data: {
+                                'PK': data.name
+                            }
+
+                        });
+
+                        if (this.getAcceptedFiles().length === 0) {
+
+                            $("#btnSubmit").attr("disabled", true);
+
+                            $("#btnAllClear").attr("disabled", true);
+
+                        }
+
+                    });
+
                 }
+
             };
         </script>
+
 
 </body>
 

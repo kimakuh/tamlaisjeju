@@ -183,8 +183,8 @@
                     <div class="cont_wrap">
                         <div class="relative">
                             <h3>여행 큐레이션</h3>
-                            <button type="button" class="btn_jeju_map">지도에서 선택</button>
-                            <div class="jeju_map_popup">
+                            <button class="btn_jeju_map" id="btn_jeju_map">지도에서 선택</button>
+                            <div class="jeju_map_popup" id="jeju_map_popup">
                                 <button type="button" class="btn_close">닫기</button>
                                 <div class="layer_map_area">
                                     <div class="bubble_area">
@@ -194,7 +194,7 @@
                                             <br>여행일정을 추천해 드립니다.</p>
                                     </div>
                                     <div class="layer_map">
-                                        <ul class="" style="background-image: url(&quot;../img/sub04/map_large_kr.png&quot;);">
+                                        <ul>
                                             <li>
                                                 <a href="javascript:void(0)" class="jejusi">제주시</a>
                                             </li>
@@ -565,13 +565,13 @@
     </script>
     <script>
         // Get the modal
-        var modal = document.getElementById('sub04').getElementsByClassName('jeju_map_popup');
+        var modal = document.getElementById('jeju_map_popup');
         
         // Get the button that opens the modal
-        var btn = document.getElementById('sub04').getElementsByClassName("btn_jeju_map");
+        var btn = document.getElementById('btn_jeju_map');
         
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        var span = document.getElementsByClassName("btn_close")[0];
         
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
@@ -589,7 +589,19 @@
                 modal.style.display = "none";
             }
         }
-        </script>  
+        </script>
+        <!--
+        <script>
+            function myFunction() {
+                var x = document.getElementById("jeju_map_popup");
+                if (x.style.display == "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            </script>
+            -->
 </body>
 
 </html>
