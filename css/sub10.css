@@ -4,11 +4,12 @@
 #sub10_planner_header {
     height: 85px;
     width: 100%;
-    min-width: 1050px;
+    min-width: 1200px;
     float: left;
 }
 
 #sub10_planner_header #myTopnav {
+    padding: 10px;
     height: 85px;
     width: 100%;
     float: left;
