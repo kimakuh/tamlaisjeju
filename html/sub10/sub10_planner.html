@@ -989,6 +989,8 @@
             map.relayout();
         }
 
+
+
  
 </script>
 
@@ -1122,6 +1124,7 @@ document.addEventListener("drag", function( event ) {
 document.addEventListener("dragstart", function( event ) {
     // store a ref. on the dragged elem
     dragged = event.target;
+    event.target.ondragstart="event.dataTransfer.setData('text/plain',null)";
     // make it half transparent
     event.target.style.opacity = .5;
 }, false);
