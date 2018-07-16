@@ -254,7 +254,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <button type="button" class="btn_map_reset">전체지역보기</button>
+                                    <button type="button" class="btn_map_reset" onclick="btn_map_click();">전체지역보기</button>
                                 </div>
                             </div>
                             <!---->
@@ -561,6 +561,11 @@
              $("#header").load("header.html #navbar")
              */
         });
+    </script>
+    <script>
+        function btn_map_click() {
+            alert("버튼1을 누르셨습니다.");
+        }
     </script>
 </body>
 
