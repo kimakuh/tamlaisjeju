@@ -1183,15 +1183,18 @@
     text-align: center;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_search_box #input_search {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_search_box #keyword {
     width: 328px;
     height: 31px;
     border: solid #c8c8ca 1px;
     padding-left: 5px;
     font-family: 'nanum';
+    font-size: 14px;
+}
+
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_search_box #key-btn {
     background: url(../img/sub10/search_icon.png) no-repeat;
     background-position: 300px 4px;
-    font-size: 14px;
 }
 
 #sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box {
