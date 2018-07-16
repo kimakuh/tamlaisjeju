@@ -1166,6 +1166,7 @@
 
 #sub10 .full_wrap #right_full_box #city_list {
     width: 365px;
+    height: 100%;
     z-index: 999;
     position: absolute;
     left: 0px;
