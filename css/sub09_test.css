@@ -384,6 +384,7 @@
     font-weight: 300;
     text-decoration: none;
     float: left;
+    cursor: pointer;
 }
 
 #sub09 .author-info .conts-label div span {
@@ -405,7 +406,7 @@
     cursor: pointer;
 }
 
-#sub09 .absolute{
+#sub09 .fixed{
 	text-align: left;
-    bottom: 200px; 
+    bottom: 400px; 
 }
