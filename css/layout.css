@@ -558,14 +558,13 @@ visual  - 비주얼
   max-width: 100%;
   padding: 168px 0 0 0;
 }
+
 .container {
   max-width: 100%;
   padding: 168px 0 0 0;
 }
 
-#content {
-
-}
+#content {}
 
 #content h3 {
   margin-bottom: 20px;
@@ -1817,19 +1816,19 @@ board_list - 게시판 리스트
   color: #2168f6;
 }
 
-
-
 /* form_wrap board */
 
-.form_wrap{text-align:right;}
-.form_wrap .toggle_area{}
-.form_wrap .toggle_area button{display:inline-block;padding:5px;margin-left:-4px;border:1px solid #e5e5e5;}
+.form_wrap {
+  text-align: right;
+}
 
+.form_wrap .toggle_area {}
 
-
-
-
-
+.form_wrap .toggle_area button {
+  display: inline-block;
+  padding: 5px 10x;
+  border: 1px solid #e5e5e5;
+}
 
 /* board_list type01*/
 
@@ -1922,7 +1921,7 @@ board_list - 게시판 리스트
 }
 
 .board_list.type02 .box .img_area img {
-height:180px;
+  height: 180px;
 }
 
 .board_list.type02 .img_area {
