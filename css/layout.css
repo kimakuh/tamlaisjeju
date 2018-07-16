@@ -300,11 +300,11 @@ visual  - 비주얼
   height: 450px;
 }
 
-.visual_cont {
+.container .visual_cont {
   position: relative;
 }
 
-.visual_cont_box {
+.container .visual_cont_box {
   position: absolute;
   left: 0;
   top: -450px;
@@ -315,28 +315,28 @@ visual  - 비주얼
   background: rgba(0, 0, 0, .5);
 }
 
-.visual_cont_box h3 {
+.container .visual_cont_box h3 {
   font-size: 32px;
   color: #fff;
   line-height: 35px;
   margin-bottom: 20px;
 }
 
-.visual_cont_box h3 span {
+.container .visual_cont_box h3 span {
   display: block;
   font-size: 20px;
   line-height: 28px;
 }
 
-.visual_cont_box p.score {
+.container .visual_cont_box p.score {
   color: #fff;
 }
 
-.visual_cont_box .hashtag {
+.container .visual_cont_box .hashtag {
   color: #ccc;
 }
 
-.visual_cont_box .tit {
+.container .visual_cont_box .tit {
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
@@ -345,15 +345,15 @@ visual  - 비주얼
   margin-bottom: 15px;
 }
 
-.visual_cont_box ul {
+.container .visual_cont_box ul {
   margin-bottom: 30px
 }
 
-.visual_cont_box ul li {
+.container .visual_cont_box ul li {
   margin: 10px 0;
 }
 
-.visual_cont_box ul li b {
+.container .visual_cont_box ul li b {
   display: block;
   margin-bottom: 10px;
   height: 14px;
@@ -362,7 +362,7 @@ visual  - 비주얼
   color: #ccc;
 }
 
-.visual_cont_box ul li span {
+.container .visual_cont_box ul li span {
   display: block;
   min-height: 14px;
   font-size: 14px;
@@ -370,7 +370,7 @@ visual  - 비주얼
   line-height: 18px;
 }
 
-.visual_cont_box a.btn {
+.container .visual_cont_box a.btn {
   display: inline-block;
   padding: 10px 15px;
   min-height: 14px;
@@ -380,11 +380,11 @@ visual  - 비주얼
   background-color: transparent;
 }
 
-.visual_cont_box a.btn:hover {
+.container .visual_cont_box a.btn:hover {
   background-color: #fff;
 }
 
-.visual_cont_box .weather_area {
+.container .visual_cont_box .weather_area {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -396,7 +396,7 @@ visual  - 비주얼
   color: #fff;
 }
 
-.visual_cont_box .weather_area img {
+.container .visual_cont_box .weather_area img {
   display: block;
   margin: 8px auto;
 }
