@@ -4,7 +4,13 @@
 #sub10_planner_header {
     height: 85px;
     width: 100%;
-    position: relative;
+    min-width: 1050px;
+    float: left;
+}
+
+#sub10_planner_header #myTopnav {
+    height: 85px;
+    width: 100%;
     float: left;
 }
 
