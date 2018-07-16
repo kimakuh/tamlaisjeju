@@ -962,7 +962,7 @@ body {
     border-bottom: 1px solid #eee;
     background-color: white;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 
 .editor-header .header-default {
@@ -1507,4 +1507,8 @@ body {
     resize: none;
     font-size: small;
     outline: none;
+}
+/* 주소 버튼 */
+.addr_btn {
+    display: none;
 }
