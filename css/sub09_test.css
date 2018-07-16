@@ -365,7 +365,6 @@
     color: #ff8000;
 }
 #sub09 #spot-contents .author-info {
-    
     height: 30px;
     padding: 8px 0;
     margin: 5px 0 0 0;
@@ -391,6 +390,11 @@
     font-size: 14px;
     font-weight: 300;
     text-decoration: none;
+}
+#sub09 #spot-contents .author-info .conts-label div a {
+    padding: 2px 0 2px 25px;
+    margin: 0 15px 0 0;
+    cursor: pointer;
 }
 #sub09 #spot-contents .author-info .conts-label .like-count a {
     background: url(../img/sub09/like.png) 0 3px no-repeat;
