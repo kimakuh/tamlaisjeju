@@ -14,12 +14,12 @@
     float: left;
 }
 
-#sub10_planner_header .myTopnav .wrapper h1 {
+#sub10_planner_header .myTopnav h1 {
     display: block;
     float: left;
 }
 
-#sub10_planner_header .myTopnav .wrapper h1 a {
+#sub10_planner_header .myTopnav h1 a {
     display: block;
     width: 200px;
     height: 63px;
