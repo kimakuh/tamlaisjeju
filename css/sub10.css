@@ -1212,15 +1212,16 @@
     height: 100%;
     text-align: center;
     cursor: pointer;
-    padding-left: 7px;
+  
 }
 
 
 #sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box li {
-    width: 100%;
+    width: 68px;
     height: 100%;
     text-align: center;
     cursor: pointer;
+    padding-left: 7px;
 }
 
 
