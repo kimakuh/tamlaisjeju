@@ -849,6 +849,8 @@
             el.id = 'dragitem';
             el.className = 'item';
             el.draggable = 'true';
+            el.ondragstart = 'drag(event)';
+            el.onclick = dragitem.ondragstart;
             return el;
         }
             dragitem.ondragstart = 'drag(event)';
