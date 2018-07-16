@@ -163,7 +163,7 @@
 
                         <div id="schedule_detail_box" class="connectedSortable ui-sortable">
                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
+                                data-ci="" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 <div class="item_ctrl_box" style="display: none;">
                                     <div class="fl item_copy_plan" title="장소복사">
                                         <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
@@ -1250,6 +1250,26 @@ document.addEventListener("click", closeAllSelect);
 
 </script>
 
+<script>
+
+    function allowDrop(ev) {
+    ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+    var element = document.getElementsByClassName('item');
+
+    element.classList.add('draggable="true"');
+    element.classList.add('ondragstart="drag(event)');
+</script>
 
 </body>
 
