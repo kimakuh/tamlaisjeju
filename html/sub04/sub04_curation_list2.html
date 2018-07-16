@@ -322,8 +322,10 @@
                                     $('.toggle_area button').on('click', function (e) {
                                         if ($(this).hasClass('thumb')) {
                                             $('.board_list').removeClass('type02').addClass('type01');
+                                            $(this).removeClass("off").addClass('on');
                                         } else if ($(this).hasClass('list')) {
                                             $('.board_list').removeClass('type01').addClass('type02');
+                                            $(this).removeClass("on").addClass('off');
                                         }
                                     });
                                 </script>
