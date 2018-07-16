@@ -14,7 +14,23 @@
     float: left;
 }
 
+#sub10_planner_header .myTopnav .wrapper h1 {
+    display: block;
+    float: left;
+}
+
 #sub10_planner_header .myTopnav .wrapper h1 a {
+    display: block;
+    width: 200px;
+    height: 63px;
+    font-family: 'Gugi', cursive;
+    float: none;
+    font-size: 0;
+    text-indent: -9999px;
+    padding: 0;
+    line-height: 0;
+    background: url(../img/common/tamla_logo_web.gif) no-repeat;
+    background-size: cover;
     margin-right: 100px;
 }
 
