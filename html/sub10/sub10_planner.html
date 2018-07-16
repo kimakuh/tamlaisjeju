@@ -846,12 +846,18 @@
                         '</div>';           
         
             el.innerHTML = itemStr;
-            el.ondragstart = 'drag(event)';
             el.id = 'dragitem';
             el.className = 'item';
             el.draggable = 'true';
+            el.ondragstart = 'drag(event)';
+            ondragstart();
             return el;
         }
+
+            function ondragstart() {
+            el.ondragstart = 'drag(event)';
+                
+            }
 
         
 
@@ -989,6 +995,8 @@
             map.relayout();
         }
 
+
+
  
 </script>
 
@@ -1122,6 +1130,7 @@ document.addEventListener("drag", function( event ) {
 document.addEventListener("dragstart", function( event ) {
     // store a ref. on the dragged elem
     dragged = event.target;
+    event.target.ondragstart="event.dataTransfer.setData('text/plain',null)";
     // make it half transparent
     event.target.style.opacity = .5;
 }, false);
