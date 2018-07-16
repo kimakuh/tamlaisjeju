@@ -329,27 +329,27 @@
         });
     </script>
     <script>
-        //왼쪽 fixed
-        $(document).ready(function () {
-            $(window).bind('scroll', function () {
-                var container = $('.container').height();
-                var content = $('.t_timeline').height();
-                if ($(window).scrollTop() > container - content - 180) {
-                    if ($(window).scrollTop() > content - 220) {
-                        $('nav').addClass('absolute');
-                        $('nav').removeClass('fixed');
-                        return;
-                    }
-                    $('nav').removeClass('action');
-                    $('nav').removeClass('absolute');
-                    $('nav').addClass('fixed');
-                } else {
-                    $('nav').removeClass('absolute');
-                    $('nav').removeClass('fixed');
-                    $('nav').addClass('action');
-                }
-            });
-        });
+		//왼쪽 fixed
+		$(document).ready(function() {
+			$(window).bind('scroll', function() {
+				var container = $('.container').height();
+				var content = $('.content').height();
+				if ($(window).scrollTop() > container - content - 180) {
+					if ($(window).scrollTop() > content - 220) {
+						$('nav').removeClass('fixed');
+						$('nav').addClass('absolute');
+						return;
+					}
+					$('nav').removeClass('action');
+					$('nav').removeClass('absolute');
+					$('nav').addClass('fixed');
+				} else {
+					$('nav').removeClass('absolute');
+					$('nav').removeClass('fixed');
+					$('nav').addClass('action');
+				}
+			});
+		});
     </script>
     <!--리모컨 -->
     <script type="text/javascript">
