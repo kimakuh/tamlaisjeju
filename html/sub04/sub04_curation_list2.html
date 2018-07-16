@@ -336,6 +336,7 @@
                                                     <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
                                                     <span class="star_score"></span>
                                                 </a>
+                                                <div class="score_area"><p class="score_count" style="width: 100%;">5</p></div>
                                             </div>
                                             <!-- img area end -->
                                             <div class="box_cont_area">
@@ -384,6 +385,7 @@
                                                     <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
                                                     <span class="star_score"></span>
                                                 </a>
+                                                <div class="score_area"><p class="score_count" style="width: 100%;">5</p></div>
                                             </div>
                                             <!-- img area end -->
                                             <div class="box_cont_area">
@@ -432,6 +434,7 @@
                                                     <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
                                                     <span class="star_score"></span>
                                                 </a>
+                                                <div class="score_area"><p class="score_count" style="width: 100%;">5</p></div>
                                             </div>
                                             <!-- img area end -->
                                             <div class="box_cont_area">
@@ -483,6 +486,7 @@
                                                     <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
                                                     <span class="star_score"></span>
                                                 </a>
+                                                <div class="score_area"><p class="score_count" style="width: 100%;">5</p></div>
                                             </div>
                                             <!-- img area end -->
                                             <div class="box_cont_area">
@@ -531,6 +535,7 @@
                                                     <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
                                                     <span class="star_score"></span>
                                                 </a>
+                                                <div class="score_area"><p class="score_count" style="width: 100%;">5</p></div>
                                             </div>
                                             <!-- img area end -->
                                             <div class="box_cont_area">
@@ -579,6 +584,7 @@
                                                     <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
                                                     <span class="star_score"></span>
                                                 </a>
+                                                <div class="score_area"><p class="score_count" style="width: 100%;">5</p></div>
                                             </div>
                                             <!-- img area end -->
                                             <div class="box_cont_area">
@@ -677,17 +683,23 @@
         // When the user clicks the button, open the modal 
         btn.onclick = function () {
             modal.style.display = "block";
+            btn.style.background = "#2168f6";
+            btn.style.color = "white";
         }
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function () {
             modal.style.display = "none";
+            btn.style.background = "white";
+            btn.style.color = "#2168f6";
         }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
+                btn.style.background = "white";
+                btn.style.color = "#2168f6";
             }
         }
     </script>

@@ -1403,6 +1403,11 @@
     padding-top: 5px;
 }
 
+#sub10 .full_wrap #right_full_box #city_list .item h5 {
+    padding-left: 13px;
+    font-size: 16px;
+}
+
 #sub10 .full_wrap #right_full_box .fr {
     height: 824px;
     position: relative;
