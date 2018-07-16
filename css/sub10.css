@@ -14,16 +14,16 @@
     float: left;
 }
 
-#sub10_planner_header .topnav .wrapper h1 a {
+#sub10_planner_header .myTopnav .wrapper h1 a {
     margin-right: 100px;
 }
 
-#sub10_planner_header .topnav .planner_set {
+#sub10_planner_header .myTopnav .planner_set {
     float: left;
     margin-left: 100px;
 }
 
-#sub10_planner_header .topnav .planner_set .people {
+#sub10_planner_header .myTopnav .planner_set .people {
     float: left;
     width: 170px;
     height: 65px;
@@ -35,7 +35,7 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .planner_set .people input {
+#sub10_planner_header .myTopnav .planner_set .people input {
     float: left;
     width: 140px;
     height: 65px;
@@ -47,13 +47,13 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .planner_set .tag {
+#sub10_planner_header .myTopnav .planner_set .tag {
     float: left;
     border-right: solid #ebebeb 1px;
     color: #555555;
 }
 
-#sub10_planner_header .topnav .planner_set .tag input {
+#sub10_planner_header .myTopnav .planner_set .tag input {
     float: left;
     width: 140px;
     height: 65px;
@@ -65,12 +65,12 @@
     font-weight: bold;
 }
 
-#sub10_planner_header .topnav .plan_out {
+#sub10_planner_header .myTopnav .plan_out {
     float: right;
     padding: 10px;
 }
 
-#sub10_planner_header .topnav .plan_out .plan_out_btn {
+#sub10_planner_header .myTopnav .plan_out .plan_out_btn {
     float: right;
     width: 100px;
     height: 42px;
@@ -85,7 +85,7 @@
     cursor: pointer;
 }
 
-#sub10_planner_header .topnav .plan_out .plan_out_btn a {
+#sub10_planner_header .myTopnav .plan_out .plan_out_btn a {
     float: right;
     width: 100px;
     height: 42px;
