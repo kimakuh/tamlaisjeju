@@ -848,8 +848,8 @@
             el.innerHTML = itemStr;
             el.id = 'dragitem';
             el.className = 'item';
+            el.ondragstart = 'drag(event)';
             el.draggable = 'true';
-            el.dragstart = 'drag(event)';
             
             return el;
             
