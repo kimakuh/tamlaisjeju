@@ -183,7 +183,7 @@
                     <div class="cont_wrap">
                         <div class="relative">
                             <h3>여행 큐레이션</h3>
-                            <button type="button" class="btn_jeju_map">지도에서 선택</button>
+                            <button type="button" class="btn_jeju_map" onclick="myFunction()">지도에서 선택</button>
                             <div class="jeju_map_popup">
                                 <button type="button" class="btn_close">닫기</button>
                                 <div class="layer_map_area">
@@ -563,12 +563,13 @@
              */
         });
     </script>
+    <!--
     <script>
         // Get the modal
         var modal = document.getElementById('sub04').getElementsByClassName('jeju_map_popup');
         
         // Get the button that opens the modal
-        var btn = document.getElementById('sub04').getElementsByClassName("btn_jeju_map");
+        var btn = document.getElementById('sub04').getElementsByClassName('btn_jeju_map');
         
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
@@ -589,7 +590,17 @@
                 modal.style.display = "none";
             }
         }
-        </script>  
+        </script> -->
+        <script>
+            function myFunction() {
+                var x = document.getElementsByClassName("jeju_map_popup");
+                if (x.style.display == "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            </script>
 </body>
 
 </html>
