@@ -1830,6 +1830,24 @@ board_list - 게시판 리스트
   border: 1px solid #e5e5e5;
 }
 
+
+
+.textfield{
+-webkit-appearance: none;
+    border: 2px solid #95a5a6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #34495e;
+    font-size: 1rem;
+    padding: .5em;
+    transition: .15s;
+    width: 100%;
+  }
+
+
+
+
+
 /* board_list type01*/
 
 .board_list.type01 .box_wrap .box:first-child {
