@@ -997,9 +997,17 @@
             el.innerHTML = itemStr;
             el.className = 'item';
             return el;
-            $('item').attr('ondragstart="drag(event)"' ,'draggable="true"')
+            
         }
-        
+
+        $(document).ready(function () {
+
+            $('item').attr('ondragstart="drag(event)"' ,'draggable="true"');
+
+        });
+
+
+
         // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
         function addMarker(position, order) {
             var imageSrc = 'http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_category.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
