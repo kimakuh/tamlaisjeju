@@ -52,6 +52,52 @@
 
 
 
+
+
+            <button class="active btn" data-filter="box">전체</button>
+            <button class="btn" data-filter="nature">자연</button>
+            <button class="btn" data-filter="culture">문화관광</button>
+            <button class="btn" data-filter="leisure">레저/체험</button>
+            <button class="btn" data-filter="theme">테마관광지</button>
+            <button class="btn" data-filter="island">섬속의 섬</button>
+            <button class="btn" data-filter="walking">도보</button>
+            <button class="btn" data-filter="photospot">포토스팟</button>
+            <button class="btn" data-filter="shopping">쇼핑</button>
+
+
+
+
+            <div id="parent">
+                <div class="box nature b">A &amp; B</div>
+                <div class="box nature">A</div>
+                <div class="box culture">B</div>
+                <div class="box c a">C &amp A</div>
+                <div class="box c">C</div>
+                <div class="box d">D</div>
+            </div>
+
+            <script>
+                var $boxs = $("#parent > .box");
+                var $btns = $(".btn").on("click", function () {
+
+                    var active =
+                        $btns.removeClass("active")
+                        .filter(this)
+                        .addClass("active")
+                        .data("filter");
+
+                    $boxs
+                        .hide()
+                        .filter("." + active)
+                        .fadeIn(450);
+
+                });
+            </script>
+
+
+
+
+
             <select id="filter-company" class="filter">
                 <option value="0">No value</option>
                 <option value="Alfreds">Alfreds</option>
