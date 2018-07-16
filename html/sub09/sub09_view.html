@@ -324,8 +324,8 @@
              */
         });
     </script>
+    <!--왼쪽 fixed-->
     <script>
-        //왼쪽 fixed
         $(document).ready(function () {
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
@@ -347,30 +347,7 @@
             });
         });
     </script>
-    <!--리모컨 -->
-    <script type="text/javascript">
-        (function (d, s) {
-            var j, e = d
-                .getElementsByTagName(s)[0];
-
-            if (typeof LivereTower === 'function') {
-                return;
-            }
-
-            j = d
-                .createElement(s);
-            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-            j.async = true;
-
-            e.parentNode
-                .insertBefore(
-                    j,
-                    e);
-        })(document,
-            'script');
-    </script>
-    <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
-
+    <!--top scroll로 이동-->
     <script type="text/javascript">
         $('#top').click(function () {
             $('body,html').animate({
@@ -378,6 +355,7 @@
             }, 500);
         });
     </script>
+    <!--bottom scroll로 이동-->
     <script type="text/javascript">
         $('#sm-comment').click(function () {
             $('body,html').animate({
@@ -385,6 +363,7 @@
             }, 500);
         });
     </script>
+    <!--페이스북 댓글 라이브러리 -->
     <div id="fb-root"></div>
     <script>(function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
