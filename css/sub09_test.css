@@ -406,7 +406,7 @@
     cursor: pointer;
 }
 
-#sub09 .fixed{
+#sub09 .absolute{
 	text-align: left;
     bottom: 200px; 
 }
