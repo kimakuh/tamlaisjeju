@@ -247,7 +247,7 @@ all - 여행필수정보 전체
 }
 
 #sub04 .recommend_tour .aside_wrap .tendency_zone label.css-label {
-    background: url(/image/common/ico_check_box2.png);
+    background: url(../img/common/ico_check_box2.png);
     letter-spacing: -.5px;
 }
 
