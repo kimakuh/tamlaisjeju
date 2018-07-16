@@ -330,7 +330,7 @@
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
                 var content = $('.content').height();
-                if ($(window).scrollTop() > container - content - 360) {
+                if ($(window).scrollTop() > container - content - 30) {
                     if ($(window).scrollTop() > content - 440) {
                         $('nav').removeClass('fixed');
                         $('nav').addClass('absolute');
@@ -356,13 +356,7 @@
         });
     </script>
     <!--bottom scroll로 이동-->
-    <script type="text/javascript">
-        $('#sm-comment').click(function () {
-            $('body,html').animate({
-                sc: 0
-            }, 500);
-        });
-    </script>
+    
     <!--페이스북 댓글 라이브러리 -->
     <div id="fb-root"></div>
     <script>(function (d, s, id) {
