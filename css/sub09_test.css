@@ -201,8 +201,8 @@
 #sub09 .content .cont_wrap .plan-info-top .plan-detail-txt .plan-tit {
     padding: 15px;
     margin: 0 0 10px;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(125,125,125,.2);
+   /* border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(125,125,125,.2);*/
 }
 #sub09 .content .cont_wrap .plan-info-top .plan-detail-txt {
     padding: 15px;
@@ -252,6 +252,7 @@
 }
 /*cont-wrap의 plan-info-top 종료*/
 #sub09 .cont_wrap #map{
+   margin-top: 10px;
    height: 300px;
    width: 100%;
 }
@@ -402,4 +403,9 @@
 #sub09 .spot-contents .author-info .conts-label .comment-count a {
     background: url(../img/sub09/comment.png) 0 4px no-repeat;
     cursor: pointer;
+}
+
+#sub09 .absolute{
+	text-align: left;
+    bottom: 200px; 
 }
