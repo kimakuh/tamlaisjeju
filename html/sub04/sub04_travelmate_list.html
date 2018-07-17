@@ -304,9 +304,8 @@
 	
   </script>
   <script type="text/javascript">
-  	
-  $('body').on('hidden.bs.modal', '.modal', function () {
-	     $(this).removeData('bs.modal');
+  $('.modal').on('hidden.bs.modal', function (e) { 
+	    $(this).find('form')[0].reset() 
 	});
   </script>
 </body>
