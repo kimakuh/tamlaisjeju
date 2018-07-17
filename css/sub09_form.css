@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #sub09 .content{
-   width: 100%;
+   width: 50%;
    margin: 0 auto;
    
     
@@ -409,11 +409,4 @@
 #sub09 .absolute{
 	text-align: left;
     bottom: 200px; 
-}
-
-
-@media(max-width:1200px){
-    
-    #sub09 .content .aside_wrap .info-right-box{display:none;}
-
 }
