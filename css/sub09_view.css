@@ -410,3 +410,10 @@
 	text-align: left;
     bottom: 200px; 
 }
+
+
+@media(max-width:1680px){
+
+    #sub09 .content .aside_wrap .info-right-box{display:none;}
+
+}
