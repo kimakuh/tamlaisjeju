@@ -2537,6 +2537,11 @@ board_list planner - 여행일정 추천
   padding:2% 0;
 }
 
+
+.board_list.planner .box_wrap .box_cont p{margin-bottom:30px;}
+
+
+
 .board_list.planner .box_wrap figure img {
   position: relative;
   display: block;
