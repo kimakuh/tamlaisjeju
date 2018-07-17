@@ -2507,7 +2507,6 @@ board_list planner - 여행일정 추천
 
 .board_list.planner .box_wrap .box h5 {
   padding: 0;
-  color:#fff;
 }
 
 .board_list.planner .box_wrap .box h5::before {
@@ -2528,7 +2527,7 @@ board_list planner - 여행일정 추천
 .board_list.planner .box_wrap .box_cont {
   float: left;
   width: 75%;
-  padding:2%;
+  padding: 2%;
 }
 
 .board_list.planner .box_wrap .box_cont p {
@@ -2566,6 +2565,10 @@ board_list planner - 여행일정 추천
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.board_list.planner .box_wrap figure figcaption h5 {
+  color: #fff;
 }
 
 .board_list.planner .box_wrap figure figcaption::before,
