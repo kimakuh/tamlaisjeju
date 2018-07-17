@@ -1121,6 +1121,90 @@ document.addEventListener("click", closeAllSelect);
     });
     </script>
         
+
+<script>
+  $('#schedule_detail_box, .list_box').on('click', '.spot_distance_box', function () {
+      return false;
+    });
+
+    $('#schedule_detail_box').on('click', '.btn_del', function () {
+      cur_day = $(this).parent().parent().attr('data-set_day');
+      cur_order = $(this).parent().parent().attr('data');
+
+      del_plan_inspot(cur_day, cur_order);
+      _now_menu = $('#cat_menu li.on').attr('data');
+      if (_now_menu == 'clip') {
+        clearTimeout(auto_time);
+        auto_time = setTimeout(function () {
+          get_clip_list(1);
+        }, 500);
+      }
+
+      return false;
+    });
+
+
+$('#schedule_detail_box, .list_box').on('mouseover', '.day_spot_item', function () {
+      $(this).find('.item_ctrl_box').show();
+      _now_menu = $(this).parent().attr('id');
+      var no = $(this).attr('data-no');
+      var pl_cat = $(this).attr('data-pl_cat');
+
+      if (_now_menu == 'schedule_detail_box') {
+        var _this_only_clip = 1;
+      } else {
+        var _this_only_clip = 0;
+      }
+      markers['only_clip_' + _this_only_clip][no].setZIndex(99999999999999);
+      markers['only_clip_' + _this_only_clip][no].setIcon('/res/map/marker/ic_current.png');
+
+      if (pl_cat == '800' || pl_cat == '901' || pl_cat == '902' || pl_cat == '903') {
+        _arv_no = Number(no) + 1;
+        markers['only_clip_' + _this_only_clip][_arv_no].setZIndex(99999999999999);
+        markers['only_clip_' + _this_only_clip][_arv_no].setIcon('/res/map/marker/ic_current.png');
+      }
+      if (pl_cat == '100') {
+        markers['only_clip_' + _this_only_clip][no].set("labelClass", "s_label");
+      }
+    });
+
+    $('#schedule_detail_box, .list_box').on('mouseout', '.day_spot_item', function () {
+      $(this).find('.item_ctrl_box').hide();
+
+      _now_menu = $(this).parent().attr('id');
+      var _order = $(this).attr('data');
+      var pl_srl = $(this).attr('data-rel_srl');
+      var now_pl_srl = $('#select_detail_view_spot').attr('data');
+
+      if (_now_menu == 'schedule_detail_box') {
+        var _this_only_clip = 1;
+      } else {
+        var _this_only_clip = 0;
+      }
+
+      if (pl_srl != now_pl_srl) {
+        var no = $(this).attr('data-no');
+        var pl_cat = $(this).attr('data-pl_cat');
+        var is_clip_yn = markers['only_clip_' + _this_only_clip][no].clip_yn;
+
+        markers['only_clip_' + _this_only_clip][no].setZIndex(99999999999999);
+        if (is_clip_yn == 'y') {
+          markers['only_clip_' + _this_only_clip][no].setIcon('/res/map/marker/' + pl_cat + '_' + _order + '.png');
+        } else {
+          markers['only_clip_' + _this_only_clip][no].setIcon('/res/map/marker/n' + pl_cat + '_' + _order + '.png');
+        }
+        if (pl_cat == '800' || pl_cat == '901' || pl_cat == '902' || pl_cat == '903') {
+          _arv_no = Number(no) + 1;
+          markers['only_clip_' + _this_only_clip][_arv_no].setIcon('/res/map/marker/' + pl_cat + '_' + _order +
+            '.png');
+        }
+        if (pl_cat == '100') {
+          markers['only_clip_' + _this_only_clip][no].set("labelClass", "labels");
+        }
+      }
+
+    });
+</script>
 </body>
 
 </html>
