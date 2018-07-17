@@ -2516,6 +2516,8 @@ board_list planner - 여행일정 추천
   margin:2% 0;
 }
 
+.board_list.planner .box_wrap .box h5::before{display:none;}
+
 .board_list.planner .box_wrap figure {
   position: relative;
   float: left;
