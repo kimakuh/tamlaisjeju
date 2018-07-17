@@ -1114,7 +1114,9 @@ document.addEventListener("click", closeAllSelect);
         event.preventDefault();
         if ( event.target.className == "day_spot_item" ) {
             var data = event.dataTransfer.getData("Text");
-            event.target.appendChild(document.getElementById(data));
+            var nodeCopy = document.getElementById(data).cloneNode(true);
+            nodeCopy.id = "newId"; /* We cannot use the same ID */
+            event.target.appendChild(nodeCopy);
         }
     });
     </script>

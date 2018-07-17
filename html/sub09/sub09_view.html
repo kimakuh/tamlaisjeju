@@ -95,7 +95,7 @@
                                 <a class="btn-top nav-btn-top story-view-nav-btn" id="top">Top</a>
                             </li>
 
-                            <li id="day-1" class="story-view-nav-li">
+                            <li id="day-1" class="story-view-nav-li" data-target="#d1">
                                 <a class="story-view-nav-day-btn">
                                     <span>Day</span>
                                     <span>1</span>
@@ -357,11 +357,11 @@
 
     <!--원하는 위치 scroll로 이동-->
     <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $("#day-1").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
-            });
+         $("#day-1").click(function () {
+           var scrollPosition = $($(this).attr("d1")).offset().top;
+           $("body").animate({
+               scrollTop:scrollPosition
+           },500);
         });
     </script>
 
