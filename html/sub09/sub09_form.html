@@ -96,12 +96,12 @@
                             </li>
 
                             <li class="story-view-nav-li" data-target="#d1">
-
-                                <a class="story-view-nav-day-btn" href="#d1">
-                                    <span>Day</span>
-                                    <span>1</span>
+                                <a href="#d1">
+                                    <a class="story-view-nav-day-btn" >
+                                        <span>Day</span>
+                                        <span>1</span>
+                                    </a>
                                 </a>
-
                             </li>
 
                             <li class="story-view-nav-li">
@@ -359,11 +359,11 @@
 
     <!--원하는 위치 scroll로 이동-->
     <script type="text/javascript">
-        $("#day-1").click(function () {
-            var scrollPosition = $($(this).attr("d1")).offset().top;
-            $("body").animate({
-                scrollTop: scrollPosition
-            }, 500);
+         $("#day-1").click(function () {
+           var scrollPosition = $($(this).attr("d1")).offset().top;
+           $("body").animate({
+               scrollTop:scrollPosition
+           },500);
         });
     </script>
 
