@@ -223,7 +223,7 @@
 								</button>
 							</div>
 							<div class="modal-body">
-								<input type="text"
+								<input id="m-title" type="text"
 									style="width: 100%; margin-bottom: 10px; border: 1px solid #e9e9e9; line-height: 50px;"
 									placeholder=" 일정 제목을 입력해주세요.">
 								<textarea id="nplan_desc" placeholder="일정 설명"
@@ -300,8 +300,8 @@
 	<script type="text/javascript">
   $(document).ready(function () {
 		$('#exampleModalCenter').on('show.bs.modal', function () {
-			myDropzone.removeAllFiles();
-			$('#phoTitle').val('');
+			modal-body.removeAllFiles();
+			$('#m-title').val('');
 		});
 	});
   </script>
