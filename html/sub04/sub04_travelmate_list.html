@@ -304,8 +304,12 @@
 	
   </script>
   <script type="text/javascript">
-  $('.modal').on('hidden.bs.modal', function (e) { 
-	    $(this).find('form')[0].reset() 
+  	
+  $(document).ready(function () {
+		$('#myModal').on('show.bs.modal', function () {
+			myDropzone.removeAllFiles();
+			$('#m-txt').val('');
+		});
 	});
   </script>
 </body>
