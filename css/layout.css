@@ -2503,11 +2503,11 @@ board_list planner - 여행일정 추천
   float: none;
   overflow: hidden;
   margin: 2% 0;
+  min-height:230px;
 }
 
 .board_list.planner .box_wrap .box h5 {
   padding: 0;
-  color:#fff;
 }
 
 .board_list.planner .box_wrap .box h5::before {
@@ -2528,11 +2528,11 @@ board_list planner - 여행일정 추천
 .board_list.planner .box_wrap .box_cont {
   float: left;
   width: 75%;
-  padding:2%;
+  padding: 2%;
 }
 
 .board_list.planner .box_wrap .box_cont p {
-  margin-bottom: 30px;
+  margin-bottom: 2%;
 }
 
 .board_list.planner .box_wrap .box_cont p.hashtag {
@@ -2557,6 +2557,7 @@ board_list planner - 여행일정 추천
   min-height: 100%;
   max-width: 100%;
   opacity: 0.8;
+  min-height:230px;
 }
 
 .board_list.planner .box_wrap figure figcaption {
@@ -2566,6 +2567,10 @@ board_list planner - 여행일정 추천
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.board_list.planner .box_wrap figure figcaption h5 {
+  color: #fff;
 }
 
 .board_list.planner .box_wrap figure figcaption::before,
