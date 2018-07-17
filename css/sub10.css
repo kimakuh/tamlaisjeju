@@ -1069,7 +1069,7 @@
 
 #sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .item_ctrl_box {
     position: absolute;
-    top: 55px;
+    top: 35px;
     right: 7px;
     display: none;
 }

@@ -38,9 +38,9 @@
 
   <div id="container" class="container">
 
-      <div id="visual">
-          <img src="../../img/sub04/sub04_visual.jpg" alt="제주의 풍경">
-        </div>
+    <div id="visual">
+      <img src="../../img/sub04/sub04_visual.jpg" alt="제주의 풍경">
+    </div>
 
     <div id="content" class="content wrapper">
 
@@ -50,349 +50,260 @@
       <p class="h3_txt">세계적으로 유명한 유네스코 자연유산과 세계지질공원 등을 직접 찾아가보는 여행코스는 남다른 의미가 있다. 당일 여행부터 4일 이상의 여행까지, 개인의 취향과 시간에 맞게 다양한 여행 일정을 계획해 더욱 즐거운
         제주도 여행을 경험하자.</p>
 
-      <h4>게시판 리스트 타입1</h4>
-      <p class="h4_txt">이미지 경로는 변경해서 사용해 주세요.이미지는 각 메뉴 폴더 별로 작업해 주세요. 예) sub01, sub02, sub03 ...</p>
 
-      <div class="board_form_wrap">
-        <div class="toggle_area">
-          <button class="thumb">
-            <i class="fas fa-th"></i>Thumbnails</button>
-          <button class="list">
-            <i class="fas fa-th-list"></i>List view</button>
+        <div class="best_planner">
+            <h4>인기 일정</h4>
         </div>
-        <!-- toggle_area end -->
-      </div>
-      <!-- board_form_wrap end -->
-      <script>
-        // jQuery(document).ready(function ($) {
-        //     //enable tabs and add fade effect
-        //     $(".toggle_area").tabs(".board_list > .box_wrap", {
-        //         effect: 'fade'
-        //     });
-        //     // add stripes for list view
-        //     $(".box:even").addClass("even");
-        //     $(".box:odd").addClass("odd");
-        //     $('#container ul').removeClass('list').addClass('grid');
 
-        // });
+
+      <div class="board_list travelog">
 
 
 
 
-        $('.toggle_area button').on('click', function (e) {
-          if ($(this).hasClass('thumb')) {
-            $('.board_list').removeClass('type02').addClass('type01');
-          } else if ($(this).hasClass('list')) {
-            $('.board_list').removeClass('type01').addClass('type02');
-          }
-        });
-      </script>
-
-      <div class="board_list type01">
         <div class="box_wrap clear">
-          <div class="box">
-            <div class="img_area">
-              <a href="../sub10/sub10_view.html">
-                <span class="category">관광지</span>
-                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                <span class="star_score"></span>
-              </a>
-            </div>
-            <!-- img area end -->
-            <div class="box_cont_area">
-              <a href="#">
-                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-              </a>
-              <p class="location_category">제주시 > 제주시내</p>
-              <p class="hashtag">
-                <a href="#">#전복김밥</a>
-                <a href="#">#통전복주먹밥</a>
-                <a href="#">#미역국</a>
-              </p>
-              <p class="my_hashtag">
-                <a href="#"></a>
-              </p>
-              <div class="icon_area">
-                <ul class="clear">
-                  <li class="icon like_icon">
-                    <a href="#">
-                      <span>좋아요</span>
-                      <span class="like_count">60</span>
-                    </a>
-                  </li>
-                  <li class="icon zzim_icon">
-                    <a href="#">
-                      <span>찜하기</span>
-                      <span class="zzim_count">883</span>
-                    </a>
-                  </li>
-                  <li class="icon review_icon">
-                    <a href="#">
-                      <span>리뷰</span>
-                      <span class="review_count">921</span>
-                    </a>
+          <figure class="effect type02">
+            <strong class="img_wrap">
+              <img src="../../img/common/board_img.png" alt="제주김만복(만복이네김밥집)">
+              <figcaption>
+                <h2>처음, 제주</h2>
+                <p>처음 아닌 처음가는 제주도,</p>
+                <a href="../sub08/sub08_view.html">View more</a>
+              </figcaption>
+            </strong>
+            <div class="travelog_cont">
 
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- box_cont_area -->
-          </div>
-          <!-- box end -->
-          <div class="box">
-            <div class="img_area">
-              <a href="#">
-                <span class="category">관광지</span>
-                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                <span class="star_score"></span>
-              </a>
-            </div>
-            <!-- img area end -->
-            <div class="box_cont_area">
-              <a href="#">
-                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-              </a>
-              <p class="location_category">제주시 > 제주시내</p>
-              <p class="hashtag">
-                <a href="#">#전복김밥</a>
-                <a href="#">#통전복주먹밥</a>
-                <a href="#">#미역국</a>
-              </p>
-              <p class="my_hashtag">
-                <a href="#">#쑥찐빵</a>
-                <a href="#">#우유식빵</a>
-              </p>
-              <div class="icon_area">
-                <ul class="clear">
-                  <li class="icon like_icon">
-                    <a href="#">
-                      <span>좋아요</span>
-                      <span class="like_count">60</span>
-                    </a>
-                  </li>
-                  <li class="icon zzim_icon">
-                    <a href="#">
-                      <span>찜하기</span>
-                      <span class="zzim_count">883</span>
-                    </a>
-                  </li>
-                  <li class="icon review_icon">
-                    <a href="#">
-                      <span>리뷰</span>
-                      <span class="review_count">921</span>
-                    </a>
+              <span class="writer">
+                <i class="fas fa-user-circle"></i>
+                <span class="name">kimakuh</span>
+              </span>
+              <span class="day">2박 3일</span>
 
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- box_cont_area -->
-          </div>
-          <!-- box end -->
-          <div class="box">
-            <div class="img_area">
-              <a href="#">
-                <span class="category">관광지</span>
-                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                <span class="star_score"></span>
-              </a>
-            </div>
-            <!-- img area end -->
-            <div class="box_cont_area">
-              <a href="#">
-                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-              </a>
-              <p class="location_category">제주시 > 제주시내</p>
-              <p class="hashtag">
-                <a href="#">#전복김밥</a>
-                <a href="#">#통전복주먹밥</a>
-                <a href="#">#미역국</a>
-              </p>
-              <p class="my_hashtag">
-                <a href="#">#쑥찐빵</a>
-                <a href="#">#우유식빵</a>
-              </p>
-              <div class="icon_area">
-                <ul class="clear">
-                  <li class="icon like_icon">
-                    <a href="#">
-                      <span>좋아요</span>
-                      <span class="like_count">60</span>
-                    </a>
-                  </li>
-                  <li class="icon zzim_icon">
-                    <a href="#">
-                      <span>찜하기</span>
-                      <span class="zzim_count">883</span>
-                    </a>
-                  </li>
-                  <li class="icon review_icon">
-                    <a href="#">
-                      <span>리뷰</span>
-                      <span class="review_count">921</span>
-                    </a>
+              <span class="hashtag">#힐링 #자유 #혼자</span>
+              <ul>
+                <li>
 
-                  </li>
-                </ul>
-              </div>
+                  <span>
+                    <i class="far fa-eye"></i>조회수</span>
+                  <b>50</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-heart"></i>좋아요</span>
+                  <b>23</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-calendar-alt"></i>작성일</span>
+                  <b>2018-07-09</b>
+                </li>
+              </ul>
             </div>
-            <!-- box_cont_area -->
-          </div>
-          <!-- box end -->
+          </figure>
+          <figure class="effect type02">
+            <strong class="img_wrap">
+              <img src="../../img/common/board_img.png" alt="제주김만복(만복이네김밥집)">
+              <figcaption>
+                <h2>그냥 한 번 가본 제주도 여행</h2>
+                <p>서울은 날씨가 그리 좋더니 제주도는 흐리고 비가 스리슬쩍 내린다. </p>
+                <a href="#">View more</a>
+              </figcaption>
+            </strong>
+            <div class="travelog_cont">
+              <span class="writer">
+                <i class="fas fa-user-circle"></i>
+                <span class="name">kimakuh</span>
+              </span>
+              <span class="day">2박 3일</span>
+              <span class="hashtag">#힐링 #자유 #혼자</span>
+              <ul>
+                <li>
+
+                  <span>
+                    <i class="far fa-eye"></i>조회수</span>
+                  <b>50</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-heart"></i>좋아요</span>
+                  <b>23</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-calendar-alt"></i>작성일</span>
+                  <b>2018-07-09</b>
+                </li>
+              </ul>
+            </div>
+          </figure>
         </div>
-        <!-- box_wrap -->
+        <!-- box_wrap end -->
         <div class="box_wrap clear">
-          <div class="box">
-            <div class="img_area">
-              <a href="#">
-                <span class="category">관광지</span>
-                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                <span class="star_score"></span>
-              </a>
-            </div>
-            <!-- img area end -->
-            <div class="box_cont_area">
-              <a href="#">
-                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-              </a>
-              <p class="location_category">제주시 > 제주시내</p>
-              <p class="hashtag">
-                <a href="#">#전복김밥</a>
-                <a href="#">#통전복주먹밥</a>
-                <a href="#">#미역국</a>
-              </p>
-              <p class="my_hashtag">
-                <a href="#"></a>
-              </p>
-              <div class="icon_area">
-                <ul class="clear">
-                  <li class="icon like_icon">
-                    <a href="#">
-                      <span>좋아요</span>
-                      <span class="like_count">60</span>
-                    </a>
-                  </li>
-                  <li class="icon zzim_icon">
-                    <a href="#">
-                      <span>찜하기</span>
-                      <span class="zzim_count">883</span>
-                    </a>
-                  </li>
-                  <li class="icon review_icon">
-                    <a href="#">
-                      <span>리뷰</span>
-                      <span class="review_count">921</span>
-                    </a>
+          <figure class="effect type02">
+            <strong class="img_wrap">
+              <img src="../../img/common/board_img.png" alt="제주김만복(만복이네김밥집)">
+              <figcaption>
+                <h2>처음, 제주</h2>
+                <p>처음 아닌 처음가는 제주도,</p>
+                <a href="#">View more</a>
+              </figcaption>
+            </strong>
+            <div class="travelog_cont">
 
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- box_cont_area -->
-          </div>
-          <!-- box end -->
-          <div class="box">
-            <div class="img_area">
-              <a href="#">
-                <span class="category">관광지</span>
-                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                <span class="star_score"></span>
-              </a>
-            </div>
-            <!-- img area end -->
-            <div class="box_cont_area">
-              <a href="#">
-                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-              </a>
-              <p class="location_category">제주시 > 제주시내</p>
-              <p class="hashtag">
-                <a href="#">#전복김밥</a>
-                <a href="#">#통전복주먹밥</a>
-                <a href="#">#미역국</a>
-              </p>
-              <p class="my_hashtag">
-                <a href="#">#쑥찐빵</a>
-                <a href="#">#우유식빵</a>
-              </p>
-              <div class="icon_area">
-                <ul class="clear">
-                  <li class="icon like_icon">
-                    <a href="#">
-                      <span>좋아요</span>
-                      <span class="like_count">60</span>
-                    </a>
-                  </li>
-                  <li class="icon zzim_icon">
-                    <a href="#">
-                      <span>찜하기</span>
-                      <span class="zzim_count">883</span>
-                    </a>
-                  </li>
-                  <li class="icon review_icon">
-                    <a href="#">
-                      <span>리뷰</span>
-                      <span class="review_count">921</span>
-                    </a>
+              <span class="writer">
+                <i class="fas fa-user-circle"></i>
+                <span class="name">kimakuh</span>
+              </span>
+              <span class="day">2박 3일</span>
 
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- box_cont_area -->
-          </div>
-          <!-- box end -->
-          <div class="box">
-            <div class="img_area">
-              <a href="#">
-                <span class="category">관광지</span>
-                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                <span class="star_score"></span>
-              </a>
-            </div>
-            <!-- img area end -->
-            <div class="box_cont_area">
-              <a href="#">
-                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-              </a>
-              <p class="location_category">제주시 > 제주시내</p>
-              <p class="hashtag">
-                <a href="#">#전복김밥</a>
-                <a href="#">#통전복주먹밥</a>
-                <a href="#">#미역국</a>
-              </p>
-              <p class="my_hashtag">
-                <a href="#">#쑥찐빵</a>
-                <a href="#">#우유식빵</a>
-              </p>
-              <div class="icon_area">
-                <ul class="clear">
-                  <li class="icon like_icon">
-                    <a href="#">
-                      <span>좋아요</span>
-                      <span class="like_count">60</span>
-                    </a>
-                  </li>
-                  <li class="icon zzim_icon">
-                    <a href="#">
-                      <span>찜하기</span>
-                      <span class="zzim_count">883</span>
-                    </a>
-                  </li>
-                  <li class="icon review_icon">
-                    <a href="#">
-                      <span>리뷰</span>
-                      <span class="review_count">921</span>
-                    </a>
+              <span class="hashtag">#힐링 #자유 #혼자</span>
+              <ul>
+                <li>
 
-                  </li>
-                </ul>
-              </div>
+                  <span>
+                    <i class="far fa-eye"></i>조회수</span>
+                  <b>50</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-heart"></i>좋아요</span>
+                  <b>23</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-calendar-alt"></i>작성일</span>
+                  <b>2018-07-09</b>
+                </li>
+              </ul>
             </div>
-            <!-- box_cont_area -->
-          </div>
-          <!-- box end -->
+          </figure>
+          <figure class="effect type02">
+            <strong class="img_wrap">
+              <img src="../../img/common/board_img.png" alt="제주김만복(만복이네김밥집)">
+              <figcaption>
+                <h2>그냥 한 번 가본 제주도 여행</h2>
+                <p>서울은 날씨가 그리 좋더니 제주도는 흐리고 비가 스리슬쩍 내린다. </p>
+                <a href="#">View more</a>
+              </figcaption>
+            </strong>
+            <div class="travelog_cont">
+              <span class="writer">
+                <i class="fas fa-user-circle"></i>
+                <span class="name">kimakuh</span>
+              </span>
+              <span class="day">2박 3일</span>
+              <span class="hashtag">#힐링 #자유 #혼자</span>
+              <ul>
+                <li>
+
+                  <span>
+                    <i class="far fa-eye"></i>조회수</span>
+                  <b>50</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-heart"></i>좋아요</span>
+                  <b>23</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-calendar-alt"></i>작성일</span>
+                  <b>2018-07-09</b>
+                </li>
+              </ul>
+            </div>
+          </figure>
         </div>
-        <!-- box_wrap -->
+        <!-- box_wrap end -->
+        <div class="box_wrap clear">
+          <figure class="effect type02">
+            <strong class="img_wrap">
+              <img src="../../img/common/board_img.png" alt="제주김만복(만복이네김밥집)">
+              <figcaption>
+                <h2>처음, 제주</h2>
+                <p>처음 아닌 처음가는 제주도,</p>
+                <a href="#">View more</a>
+              </figcaption>
+            </strong>
+            <div class="travelog_cont">
+
+              <span class="writer">
+                <i class="fas fa-user-circle"></i>
+                <span class="name">kimakuh</span>
+              </span>
+              <span class="day">2박 3일</span>
+
+              <span class="hashtag">#힐링 #자유 #혼자</span>
+              <ul>
+                <li>
+
+                  <span>
+                    <i class="far fa-eye"></i>조회수</span>
+                  <b>50</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-heart"></i>좋아요</span>
+                  <b>23</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-calendar-alt"></i>작성일</span>
+                  <b>2018-07-09</b>
+                </li>
+              </ul>
+            </div>
+          </figure>
+          <figure class="effect type02">
+            <strong class="img_wrap">
+              <img src="../../img/common/board_img.png" alt="제주김만복(만복이네김밥집)">
+              <figcaption>
+                <h2>그냥 한 번 가본 제주도 여행</h2>
+                <p>서울은 날씨가 그리 좋더니 제주도는 흐리고 비가 스리슬쩍 내린다. </p>
+                <a href="#">View more</a>
+              </figcaption>
+            </strong>
+            <div class="travelog_cont">
+              <span class="writer">
+                <i class="fas fa-user-circle"></i>
+                <span class="name">kimakuh</span>
+              </span>
+              <span class="day">2박 3일</span>
+              <span class="hashtag">#힐링 #자유 #혼자</span>
+              <ul>
+                <li>
+
+                  <span>
+                    <i class="far fa-eye"></i>조회수</span>
+                  <b>50</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-heart"></i>좋아요</span>
+                  <b>23</b>
+                </li>
+                <li>
+
+                  <span>
+                    <i class="far fa-calendar-alt"></i>작성일</span>
+                  <b>2018-07-09</b>
+                </li>
+              </ul>
+            </div>
+          </figure>
+        </div>
+        <!-- box_wrap end -->
 
 
         <div class="pagination_wrap">
@@ -412,6 +323,218 @@
 
       </div>
       <!-- board_list end-->
+
+
+
+      <div class="box_wrap clear">
+        <div class="box">
+          <figure class="effect type03">
+            <img src="../../img/common/board_img02.jpg" alt="제주의 바닷가">
+            <figcaption>
+              <h2>Wild
+                <span>Romeo</span>
+              </h2>
+              <p>Romeo never knows what he wants. He seemed to be very cross about something.</p>
+              <a href="#">View more</a>
+            </figcaption>
+          </figure>
+          <div class="box_cont">
+            <h5></h5>
+
+          </div>
+        </div>
+
+        <figure class="effect type03">
+          <img src="../../img/common/board_img02.jpg" alt="제주의 바닷가">
+          <figcaption>
+            <h2>Wild
+              <span>Romeo</span>
+            </h2>
+            <p>Romeo never knows what he wants. He seemed to be very cross about something.</p>
+            <a href="#">View more</a>
+          </figcaption>
+        </figure>
+      </div>
+
+
+
+      <style type="text/css">
+
+
+        
+
+
+        .box_wrap {
+          position: relative;
+          margin: 0 auto;
+          padding: 1em 0 4em;
+          max-width: 1000px;
+          list-style: none;
+          text-align: center;
+        }
+
+        /* Common style */
+
+        .box_wrap figure {
+          position: relative;
+          float: left;
+          overflow: hidden;
+          margin: 10px 1%;
+          min-width: 320px;
+          max-width: 480px;
+          max-height: 360px;
+          width: 48%;
+          background: #3085a3;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .box_wrap figure img {
+          position: relative;
+          display: block;
+          min-height: 100%;
+          max-width: 100%;
+          opacity: 0.8;
+        }
+
+        .box_wrap figure figcaption {
+          padding: 2em;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 1.25em;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        .box_wrap figure figcaption::before,
+        .box_wrap figure figcaption::after {
+          pointer-events: none;
+        }
+
+        .box_wrap figure figcaption,
+        .box_wrap figure figcaption>a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        /* Anchor will cover the whole item by default */
+
+        /* For some effects it will show as a button */
+
+        .box_wrap figure figcaption>a {
+          z-index: 1000;
+          text-indent: 200%;
+          white-space: nowrap;
+          font-size: 0;
+          opacity: 0;
+        }
+
+        .box_wrap figure h2 {
+          word-spacing: -0.15em;
+          font-weight: 300;
+        }
+
+        .box_wrap figure h2 span {
+          font-weight: 800;
+        }
+
+        .box_wrap figure h2,
+        .box_wrap figure p {
+          margin: 0;
+        }
+
+        .box_wrap figure p {
+          letter-spacing: 1px;
+          font-size: 68.5%;
+        }
+
+        figure.effect.type03 {
+          -webkit-perspective: 1000px;
+          perspective: 1000px;
+        }
+
+        figure.effect.type03 img {
+          -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+          transition: opacity 0.35s, transform 0.35s;
+          -webkit-transform: translate3d(0, 0, 300px);
+          transform: translate3d(0, 0, 300px);
+        }
+
+        figure.effect.type03:hover img {
+          opacity: 0.6;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+
+        figure.effect.type03 figcaption::before,
+        figure.effect.type03 figcaption::after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 80%;
+          height: 1px;
+          background: #fff;
+          content: '';
+          -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+          transition: opacity 0.35s, transform 0.35s;
+          -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+        }
+
+        figure.effect.type03:hover figcaption::before {
+          opacity: 0.5;
+          -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+          transform: translate3d(-50%, -50%, 0) rotate(45deg);
+        }
+
+        figure.effect.type03:hover figcaption::after {
+          opacity: 0.5;
+          -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+          transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+        }
+
+        figure.effect.type03 h2,
+        figure.effect.type03 p {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          -webkit-transition: -webkit-transform 0.35s;
+          transition: transform 0.35s;
+        }
+
+        figure.effect.type03 h2 {
+          -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
+          transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
+        }
+
+        figure.effect.type03 p {
+          padding: 0.25em 2em;
+          -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
+          transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
+        }
+
+        figure.effect.type03:hover h2 {
+          -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
+          transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
+        }
+
+        figure.effect.type03:hover p {
+          -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
+          transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
+        }
+      </style>
+
+
+
+
+
+
+
+
     </div>
     <!-- content end-->
   </div>

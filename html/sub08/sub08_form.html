@@ -21,17 +21,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
-    <!-- drozone -->
-    <link rel="stylesheet" src="../../node_modules/dropzone/dist/min/dropzone.min.css">
-
-    <script type="text/javascript" src="../../node_modules/dropzone/dist/min/dropzone.min.js"></script>
     <!--bootstrap-->
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    </script>
-    <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+</script>
+<script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-
+        
+        <!-- drozone -->
+        <link rel="stylesheet" href="../../node_modules/dropzone/dist/min/dropzone.min.css">
+        <link rel="stylesheet" href="../../node_modules/dropzone/dist/min/basic.min.css">
+        <script type="text/javascript" src="../../node_modules/dropzone/dist/min/dropzone.min.js"></script>
 
     <style type="text/css">
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
@@ -66,12 +66,11 @@
                 <div class="editor_side_inner_content">
                     <div class="editor_side_btn">
                         <p>사진도구</p>
-                        <button>사진업로드</button>
-                        <button>sns사진 불러오기</button>
-                        <button>사진보관함</button>
-                        <span>사진자동배치
-                            <button>실행</button>
-                        </span>
+                        <button class="side_upload_btn"><span class="side_upload"></span> 사진업로드</button>
+                        <button class="side_sns_btn"><span class="side_sns"></span>sns사진</button>
+                        <button class="side_lib_btn"><span class="side_lib"></span>사진보관함</button>
+                        <span>사진자동배치</span>
+                        <button class="action_btn">실행</button>
                     </div>
                     <div class="editor_side_tag">
                         <p>
@@ -205,9 +204,10 @@
 
                         <form>
                             <input id="post_title" type="text" value="" class="post_titl" placeholder="장소">
-                            <input id="post_address" type="text" onclick="sample5_execDaumPostcode()" class="post_addr" value="" placeholder="주소" readonly>
+                            <input id="post_address" type="text" onclick="/*sample5_execDaumPostcode()*/" class="post_addr" value="" placeholder="주소"
+                                readonly>
                             <div id="map" style="width:300px;height:300px;margin-top:10px;display:none"></div>
-                            <textarea id="post_text" class="title_textarea text_area" placeholder="내용을 입력하세요." data-is-observable="false"></textarea>
+                            <textarea id="post_text_form" class="title_textarea text_area" placeholder="내용을 입력하세요." data-is-observable="false"></textarea>
                             <div class="text_count">글자제한:
                                 <span class="count">80</span>/80</div>
                         </form>
@@ -220,7 +220,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">사진업로드</h5>
+                            <h5>사진업로드</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -242,13 +242,13 @@
 
                             </form>
 
-                            <div>
+                            <div class="clear">
 
                                 <!--업로드 버튼을 여러 장의 사진 일회용 업로드 기능 제공-->
 
-                                <button type="submit" id="btnSubmit" disabled="disabled">업로드</button>
-
-                                <button id="btnAllClear" disabled="disabled">All Clear</button>
+                                <!-- <button id="btnAllClear" disabled="disabled">취소</button> -->
+                                
+                                <button type="submit" id="btnSubmit" disabled="disabled">등록</button>
 
                             </div>
 
@@ -267,7 +267,7 @@
         <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script> -->
 
 
-       <!-- <script>
+        <!-- <script>
         // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
         var infowindow = new daum.maps.InfoWindow({
             zIndex: 1
@@ -348,7 +348,7 @@
             startItem: 'last'
         });
     </script> -->
-    
+
         <script>
             $(function () {
                 $('.text_count').each(function () {
@@ -444,7 +444,7 @@
         </script>
 
 
-     <!--   <script type="text/javascript">
+           <script type="text/javascript">
             //Dropzone 초기화, myDropzone form 있는 id 위해
 
             Dropzone.options.myDropzone = {
@@ -541,7 +541,7 @@
 
                     // Call the action method to load the images from the server
 
-                    $.getJSON("/Home/getList").done(function (data) {
+                    $.getJSON("../..//getList").done(function (data) {
 
                         if (data.Data != '') {
 
@@ -747,8 +747,8 @@
                 }
 
             };
-        </script> -->
-       <!-- <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+        </script> 
+        <!-- <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
         <script>
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
                     mapOption = {
