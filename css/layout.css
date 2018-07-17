@@ -2507,6 +2507,7 @@ board_list planner - 여행일정 추천
 
 .board_list.planner .box_wrap .box h5 {
   padding: 0;
+  color:#fff;
 }
 
 .board_list.planner .box_wrap .box h5::before {
