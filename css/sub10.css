@@ -1155,12 +1155,12 @@
     display: inline-block;
 }
 
-#sub10 .full_wrap .left_full_box #schedule_detail_box item h5 {
+#sub10 .full_wrap .left_full_box #schedule_detail_box .item h5 {
     padding-left: 13px;
     font-size: 16px;
 }
 
-#sub10 .full_wrap .left_full_box #schedule_detail_box item span {
+#sub10 .full_wrap .left_full_box #schedule_detail_box .item span {
     font-size: 12px;
 }
 
