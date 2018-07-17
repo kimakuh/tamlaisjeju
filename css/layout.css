@@ -1760,11 +1760,8 @@ board_list - 게시판 리스트
 
 /* board_list common*/
 
-
-
 .box_wrap {
-   margin: 2% 0;
-
+  margin: 2% 0;
 }
 
 .box {
@@ -1841,11 +1838,10 @@ board_list - 게시판 리스트
 
 .category_wrap button {
   float: left;
-  padding:10px;
+  padding: 10px;
   width: 25%;
   border-top: none;
   border-left: none;
-  
 }
 
 .category_wrap button.active,
@@ -1861,12 +1857,9 @@ board_list - 게시판 리스트
   margin-left: 0;
 } */
 
-.board_list.type01 .box_wrap{
+.board_list.type01 .box_wrap {
   margin: 2% 0 2% -2%;
 }
-
-
-
 
 .board_list.type01 .box {
   width: 31.33%;
@@ -2494,15 +2487,9 @@ board_list travelog - 내가 쓰는 여행기 리스트
 }
 */
 
-
-
-
-
-
 /**************************************************************************************
 board_list planner - 여행일정 추천
 ***************************************************************************************/
-
 
 .board_list.planner {}
 
@@ -2516,8 +2503,8 @@ board_list planner - 여행일정 추천
 .board_list.planner .box_wrap .box {
   float: none;
   overflow: hidden;
+  margin:2% 0;
 }
-
 
 .board_list.planner .box_wrap figure {
   position: relative;
@@ -2527,12 +2514,13 @@ board_list planner - 여행일정 추천
   background: #3085a3;
   text-align: center;
   cursor: pointer;
+  margin: 0;
 }
 
 .board_list.planner .box_wrap .box_cont {
   float: left;
   width: 68%;
-  margin-left:2%;
+  margin-left: 2%;
 }
 
 .board_list.planner .box_wrap figure img {
@@ -2672,17 +2660,6 @@ figure.effect.type03:hover p {
   -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
   transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /**************************************************************************************
 all_page_box - 제주여행 꿀팁
