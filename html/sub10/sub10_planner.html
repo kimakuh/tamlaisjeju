@@ -846,7 +846,7 @@
                         '</div>';           
         
             el.innerHTML = itemStr;
-            el.id = 'dragitem';
+            el.id = 'dragitem' + (index+1);
             el.className = 'item';
             el.draggable = 'true';
             return el;
