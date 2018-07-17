@@ -1047,6 +1047,9 @@ body {
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_lib {
     background-image: url("../img/sub08/photos.png");
 }
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_auto {
+    background-image: url("../img/sub08/auto.png");
+}
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_upload:hover {
     background-image: url("../img/sub08/photo-b.png");
@@ -1071,6 +1074,9 @@ body {
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_lib_btn:hover .side_lib {
     background-image: url("../img/sub08/photos-b.png");
 }
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_auto_btn:hover .side_auto {
+    background-image: url("../img/sub08/auto-b.png");
+}
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_upload_btn:hover {
     color: #2168f6;
@@ -1080,7 +1086,7 @@ body {
     color: #2168f6;
 }
 
-#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_lib_btn:hover {
+#sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_auto_btn:hover {
     color: #2168f6;
 }
 
@@ -1770,4 +1776,15 @@ input,
     font-size: 12px;
     list-style: none;
     display: inline-block;
+}
+
+.swal2-popup .swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: #3085d6;
+    color: #fff;
+    font-size: 1.0625em;
+    width: 270px;
+    padding: 6px;
 }
