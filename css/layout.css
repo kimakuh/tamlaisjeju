@@ -2503,6 +2503,7 @@ board_list planner - 여행일정 추천
   float: none;
   overflow: hidden;
   margin: 2% 0;
+  min-height:230px;
 }
 
 .board_list.planner .box_wrap .box h5 {
@@ -2556,6 +2557,7 @@ board_list planner - 여행일정 추천
   min-height: 100%;
   max-width: 100%;
   opacity: 0.8;
+  min-height:230px;
 }
 
 .board_list.planner .box_wrap figure figcaption {
