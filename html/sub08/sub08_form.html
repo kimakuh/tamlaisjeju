@@ -23,15 +23,15 @@
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
     <!--bootstrap-->
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-</script>
-<script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    </script>
+    <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-        
-        <!-- drozone -->
-        <link rel="stylesheet" href="../../node_modules/dropzone/dist/min/dropzone.min.css">
-        <link rel="stylesheet" href="../../node_modules/dropzone/dist/min/basic.min.css">
-        <script type="text/javascript" src="../../node_modules/dropzone/dist/min/dropzone.min.js"></script>
+
+    <!-- drozone -->
+    <link rel="stylesheet" href="../../node_modules/dropzone/dist/min/dropzone.min.css">
+    <link rel="stylesheet" href="../../node_modules/dropzone/dist/min/basic.min.css">
+    <script type="text/javascript" src="../../node_modules/dropzone/dist/min/dropzone.min.js"></script>
 
     <style type="text/css">
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
@@ -66,21 +66,17 @@
                 <div class="editor_side_inner_content">
                     <div class="editor_side_btn">
                         <p>사진도구</p>
-                        <button class="side_upload_btn"><span class="side_upload"></span> 사진업로드</button>
-                        <button class="side_sns_btn"><span class="side_sns"></span>sns사진</button>
-                        <button class="side_lib_btn"><span class="side_lib"></span>사진보관함</button>
-                        <span>사진자동배치</span>
-                        <button class="action_btn">실행</button>
+                        <button class="side_upload_btn">
+                            <span class="side_upload"></span> 사진업로드</button>
+                        <button class="side_sns_btn">
+                            <span class="side_sns"></span>sns사진</button>
+                        <button class="side_lib_btn">
+                            <span class="side_lib"></span>사진보관함</button>
+                        <button class="side_lib_btn">
+                            <span class="side_lib"></span>자동포스팅</button>
                     </div>
-                    <div class="editor_side_tag">
-                        <p>
-                            태그 및 여행정보
-                        </p>
-                        <form class="editor_side_tag_text">
-                            <textarea class="tag_area text_area" name="" id="" cols="31" rows="5"></textarea>
-                        </form>
-                    </div>
-                    <div class="editor_side_partner">
+
+                    <!-- <div class="editor_side_partner">
                         <p>
                             일행
                         </p>
@@ -143,7 +139,22 @@
                                 </li>
                             </ul>
                         </div>
+                    </div> -->
+
+                    <div class="editor_side_tag">
+                        <p>
+                            HashTag 입력
+                        </p>
+                        <div class="animated bounceInDown">
+
+                            <input id="input" type="text" placeholder="HashTag 엔터로 입력">
+                            <button id="enter">hashtag</button>
+                            <ul id="tag_box">
+                            </ul>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
 
@@ -247,7 +258,7 @@
                                 <!--업로드 버튼을 여러 장의 사진 일회용 업로드 기능 제공-->
 
                                 <!-- <button id="btnAllClear" disabled="disabled">취소</button> -->
-                                
+
                                 <button type="submit" id="btnSubmit" disabled="disabled">등록</button>
 
                             </div>
@@ -444,7 +455,7 @@
         </script>
 
 
-           <script type="text/javascript">
+        <script type="text/javascript">
             //Dropzone 초기화, myDropzone form 있는 id 위해
 
             Dropzone.options.myDropzone = {
@@ -747,7 +758,7 @@
                 }
 
             };
-        </script> 
+        </script>
         <!-- <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
         <script>
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
@@ -813,6 +824,68 @@
                     }).open();
                 }
             </script> -->
+
+        <script>
+            var button = document.getElementById("enter");
+            var input = document.getElementById("input");
+            var ul = document.getElementById("tag_box");
+            var li = document.getElementById("tag_box").getElementsByTagName("li");
+            var deleteBtns = document.getElementsByClassName("delete");
+
+
+            function inputLength() {
+                return input.value.length;
+            }
+
+            function createListElement() {
+                if (input.value.replace(/\s/g,'')) {
+                var li = document.createElement("li");
+                var button = document.createElement("button");
+                button.appendChild(document.createTextNode("X"));
+                li.appendChild(document.createTextNode("#"+input.value.replace(/\s/g,'')));
+                ul.appendChild(li);
+                li.appendChild(button)
+                input.value = "";
+
+                li.classList.add("items");
+                button.addEventListener("click", deleteItem);
+                button.classList.add("delete");
+                return;
+                }
+            }
+
+            function addNewItemAfterClick() {
+                if (inputLength() > 0) {
+                    createListElement();
+                }
+            }
+
+            function addNewItemAfterKeypress(event) {
+                if (inputLength() > 0 && event.keyCode === 13) {
+                    createListElement();
+                }
+            }
+
+            function toggleDone() {
+                this.classList.toggle("done");
+            }
+
+            function deleteItem() {
+                var child = document.activeElement.parentNode;
+                ul.removeChild(child);
+            }
+
+            function manageGroupTag(tag, event, action) {
+                for (let i = 0; i < tag.length; i++) {
+                    tag[i].addEventListener(event, action);
+                }
+            }
+
+            button.addEventListener("click", addNewItemAfterClick);
+            input.addEventListener("keypress", addNewItemAfterKeypress);
+            manageGroupTag(li, "click", toggleDone);
+            manageGroupTag(deleteBtns, "click", deleteItem);
+        </script>
 
 
 </body>

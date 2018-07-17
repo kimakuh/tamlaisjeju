@@ -280,7 +280,6 @@ travel_view - 타임라인
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
-
 /*콘텐트*/
 
 #sub08 .t_timeline {
@@ -1035,14 +1034,16 @@ body {
     background-size: 28px;
 }
 
-
 /* 왼쪽바 사진 이미지 및 버튼 */
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_upload {
     background-image: url("../img/sub08/photo.png");
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_sns {
     background-image: url("../img/sub08/cloud.png");
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_lib {
     background-image: url("../img/sub08/photos.png");
 }
@@ -1050,27 +1051,35 @@ body {
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_upload:hover {
     background-image: url("../img/sub08/photo-b.png");
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_sns:hover {
     background-image: url("../img/sub08/cloud-b.png");
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn button .side_lib:hover {
     background-image: url("../img/sub08/photos-b.png");
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_upload_btn:hover .side_upload {
     background-image: url("../img/sub08/photo-b.png");
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_sns_btn:hover .side_sns {
     background-image: url("../img/sub08/cloud-b.png");
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_lib_btn:hover .side_lib {
     background-image: url("../img/sub08/photos-b.png");
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_upload_btn:hover {
     color: #2168f6;
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_sns_btn:hover {
     color: #2168f6;
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn .side_lib_btn:hover {
     color: #2168f6;
 }
@@ -1085,24 +1094,22 @@ body {
     background-color: #2168f6;
     margin-left: 0;
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn .action_btn:hover {
     background-color: #2168f6;
     opacity: 0.9;
 }
+
 /*왼쪽바 여기까지 */
-
-
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn span {
     font-size: 15px;
     margin-left: 14px;
-
     display: inline-block;
 }
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_btn span * {
     display: inline-block;
-    
 }
 
 #sub08 .editor_container .editor-side-innerWrap p {
@@ -1129,7 +1136,7 @@ body {
     float: left;
     text-align: center;
     width: 33%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 0;
     font-size: 12px;
     padding: 6px;
@@ -1139,19 +1146,20 @@ body {
 }
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_partner li:hover {
-background-color: wheat;
+    background-color: wheat;
 }
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type1,
 #sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type2,
-#sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type3
-{
+#sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type3 {
     border-bottom: none;
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type1,
 #sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type4 {
     border-right: none;
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type3,
 #sub08 .editor_container .editor-side-innerWrap .editor_side_partner #p_type6 {
     border-left: none;
@@ -1159,6 +1167,9 @@ background-color: wheat;
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite {
     width: 205px;
+    padding-bottom: 10px;
+    border-bottom: 10px;
+    border-bottom: 1px solid #eee;
 }
 
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite .favorite_selector {
@@ -1169,13 +1180,14 @@ background-color: wheat;
     float: left;
     text-align: center;
     width: 33%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     margin-bottom: 0;
     font-size: 12px;
     padding: 6px;
     cursor: pointer;
     transition: background-color 0.5s;
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite li:hover {
     background-color: wheat;
 }
@@ -1188,17 +1200,18 @@ background-color: wheat;
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type6 {
     border-bottom: none;
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type1,
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type4,
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type7 {
     border-right: none;
 }
+
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type3,
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type6,
 #sub08 .editor_container .editor-side-innerWrap .editor_side_favorite #p_type9 {
     border-left: none;
 }
-
 
 /***** 콘텐츠박스 *******/
 
@@ -1588,16 +1601,18 @@ background-color: wheat;
     background: #68768A;
 }
 
-
 /* dropzone */
+
 .dropzone {
     min-height: 300px;
     margin: 20px;
     border: 1px dotted #eee;
 }
+
 #txtData {
     display: none;
 }
+
 .dropzone .dz_ico {
     font-size: 50px;
     border: 1px dotted gray;
@@ -1614,22 +1629,23 @@ background-color: wheat;
 
 .dz_form:hover .dz_ico {
     transition: background-color 1s;
-
     background-color: rgba(255, 245, 245, 0.452);
 }
-
 
 .text_area {
     resize: none;
     font-size: small;
     outline: none;
 }
+
 /* 주소 버튼 */
+
 .addr_btn {
     display: none;
 }
 
 /* 모달 */
+
 .modal {
     text-align: center;
     margin: 0 auto 20px auto;
@@ -1649,6 +1665,7 @@ background-color: wheat;
 .modal-image-caption {
     text-transform: capitalize;
 }
+
 .modal .modal-header .close {
     outline: none;
     display: block;
@@ -1657,6 +1674,7 @@ background-color: wheat;
     margin-right: -7px;
     margin-top: -31px;
 }
+
 .modal .modal-header h5 {
     font-size: 11px;
     height: auto;
@@ -1668,18 +1686,17 @@ background-color: wheat;
     font-size: 18px;
 }
 
-#trueForm #btnSubmit, #btnAllClear {
+#trueForm #btnSubmit,
+#btnAllClear {
     border: 1px solid #eee;
     padding: 7px 15px 7px 15px;
     font-size: 15px;
     margin-bottom: 10px;
-
 }
+
 #trueForm #btnAllClear {
     background-color: red;
     color: white;
-    
-
 }
 
 #trueForm #btnSubmit {
@@ -1690,7 +1707,67 @@ background-color: wheat;
 }
 
 #trueForm #btnSubmit:hover {
-    
-    
     background-color: #1358e2;
+}
+
+/* hashTag */
+
+button:focus {
+    outline: 0;
+}
+
+#enter {
+    display: none;
+}
+
+#input {
+    width: 205px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    outline: none;
+    font-size: 14px;
+    background-color: #fafafa;
+    
+}
+
+#enter:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+input,
+#enter,
+.items {
+    font-weight: 100;
+}
+
+.done {
+    text-decoration: line-through;
+    text-decoration-color: tomato;
+}
+
+#enter {
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: 0 6px #999;
+}
+
+.delete {
+    margin-left: 4px;
+    margin-right: 10px;
+    border-radius: 300px;
+    color: red;
+    border: none;
+    text-align: center;
+    font-size: 10px;
+}
+
+.animated li {
+    font-size: 12px;
+    list-style: none;
+    display: inline-block;
 }
