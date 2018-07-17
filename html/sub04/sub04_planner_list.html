@@ -26,6 +26,7 @@
   <!-- js -->
   <script src="../../js/common/jquery-3.3.1.min.js"></script>
   <script src="../../js/common/jquery-ui.min.js"></script>
+
 </head>
 
 <body>
@@ -53,6 +54,90 @@
 
       <div class="best_planner">
         <h4>인기 일정</h4>
+
+        <div class="slider autoplay slick-initialized slick-slider slick-dotted" role="toolbar">
+          <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
+          <div aria-live="polite" class="slick-list draggable">
+            <div class="slick-track" style="opacity: 1; width: 2244px; transform: translate3d(-935px, 0px, 0px);" role="listbox">
+              <div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                <h3>4</h3>
+              </div>
+              <div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                <h3>5</h3>
+              </div>
+              <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                <h3>6</h3>
+              </div>
+              <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 187px;" tabindex="-1" role="option" aria-describedby="slick-slide80">
+                <h3>1</h3>
+              </div>
+              <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 187px;" tabindex="-1" role="option" aria-describedby="slick-slide81">
+                <h3>2</h3>
+              </div>
+              <div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" style="width: 187px;" tabindex="-1"
+                role="option" aria-describedby="slick-slide82">
+                <h3>3</h3>
+              </div>
+              <div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 187px;" tabindex="-1" role="option"
+                aria-describedby="slick-slide83">
+                <h3>4</h3>
+              </div>
+              <div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 187px;" tabindex="-1" role="option"
+                aria-describedby="slick-slide84">
+                <h3>5</h3>
+              </div>
+              <div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 187px;" tabindex="-1" role="option" aria-describedby="slick-slide85">
+                <h3>6</h3>
+              </div>
+              <div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                <h3>1</h3>
+              </div>
+              <div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                <h3>2</h3>
+              </div>
+              <div class="slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                <h3>3</h3>
+              </div>
+            </div>
+          </div>
+          <script>
+            $('.autoplay').slick({
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            });
+          </script>
+          <script src="../../node_modules/slick-carousel/slick/slick.min.js"></script>
+
+
+
+
+          <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>
+          <ul class="slick-dots" style="display: block;" role="tablist">
+            <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation80" id="slick-slide80">
+              <button type="button" data-role="none" role="button" tabindex="0">1</button>
+            </li>
+            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation81" id="slick-slide81" class="">
+              <button type="button" data-role="none" role="button" tabindex="0">2</button>
+            </li>
+            <li aria-hidden="false" role="presentation" aria-selected="false" aria-controls="navigation82" id="slick-slide82" class="slick-active">
+              <button type="button" data-role="none" role="button" tabindex="0">3</button>
+            </li>
+            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation83" id="slick-slide83" class="">
+              <button type="button" data-role="none" role="button" tabindex="0">4</button>
+            </li>
+            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation84" id="slick-slide84" class="">
+              <button type="button" data-role="none" role="button" tabindex="0">5</button>
+            </li>
+            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation85" id="slick-slide85" class="">
+              <button type="button" data-role="none" role="button" tabindex="0">6</button>
+            </li>
+          </ul>
+        </div>
+
+
+
       </div>
 
 
@@ -284,28 +369,28 @@
                 <a href="#">#힐링여행</a>
               </p>
               <div class="count_area">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i class="far fa-heart"></i>
-                        20
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="far fa-comment-dots"></i>
-                        30
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fas fa-external-link-alt"></i>
-                        50
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- count_area end-->
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="far fa-heart"></i>
+                      20
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="far fa-comment-dots"></i>
+                      30
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-external-link-alt"></i>
+                      50
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- count_area end-->
             </div>
             <!-- box_cont end -->
           </div>
