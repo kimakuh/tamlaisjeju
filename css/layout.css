@@ -2466,12 +2466,6 @@ board_list travelog - 내가 쓰는 여행기 리스트
 }
 
 
-.board_list.travelog .box:hover figure.effect figcaption::before,
-.board_list.travelog .box:hover figure.effect figcaption::after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
 
 
 
@@ -2482,6 +2476,12 @@ board_list travelog - 내가 쓰는 여행기 리스트
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+
+
+
+
+
 
 /* Media queries */
 
@@ -2613,6 +2613,15 @@ figure.effect.type03:hover img {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+
+.board_list.planner .box_wrap .box:hover figure.effect.type03 img {
+  opacity: 0.6;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
 
 figure.effect.type03 figcaption::before,
 figure.effect.type03 figcaption::after {
