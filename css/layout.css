@@ -2518,7 +2518,7 @@ board_list planner - 여행일정 추천
   float: left;
   overflow: hidden;
   width: 25%;
-  background: #3085a3;
+  background: #000;
   text-align: center;
   cursor: pointer;
   margin: 0;
@@ -2526,9 +2526,8 @@ board_list planner - 여행일정 추천
 
 .board_list.planner .box_wrap .box_cont {
   float: left;
-  width: 73%;
-  margin-left: 2%;
-  padding: 2% 2% 2% 0;
+  width: 75%;
+  padding:2%;
 }
 
 .board_list.planner .box_wrap .box_cont p {
