@@ -150,24 +150,19 @@
       <style type="text/css">
         .board_list.planner {}
 
-        .board_list.planner .box_wrap {}
+        .board_list.planner .board_list.planner .box_wrap {}
 
-        .board_list.planner .box_wrap .box {
+        .board_list.planner .board_list.planner .box_wrap .box {
           float: none;
+          overflow: hidden;
         }
 
+      .board_list.planner .board_list.planner .box_wrap .box {
+          float: none;
+          overflow: hidden;
+        }
 
-        /* .box_wrap {
-          position: relative;
-          margin: 0 auto;
-          max-width: 1000px;
-          list-style: none;
-          text-align: center;
-        } */
-
-        /* Common style */
-
-        .box_wrap figure {
+        .board_list.planner .board_list.planner .box_wrap figure {
           position: relative;
           float: left;
           overflow: hidden;
@@ -177,7 +172,7 @@
           cursor: pointer;
         }
 
-        .box_wrap figure img {
+        .board_list.planner .board_list.planner .box_wrap figure img {
           position: relative;
           display: block;
           min-height: 100%;
@@ -185,7 +180,7 @@
           opacity: 0.8;
         }
 
-        .box_wrap figure figcaption {
+        .board_list.planner .board_list.planner .box_wrap figure figcaption {
           padding: 2em;
           color: #fff;
           text-transform: uppercase;
@@ -194,13 +189,13 @@
           backface-visibility: hidden;
         }
 
-        .box_wrap figure figcaption::before,
-        .box_wrap figure figcaption::after {
+        .board_list.planner .box_wrap figure figcaption::before,
+        .board_list.planner .box_wrap figure figcaption::after {
           pointer-events: none;
         }
 
-        .box_wrap figure figcaption,
-        .box_wrap figure figcaption>a {
+        .board_list.planner .box_wrap figure figcaption,
+        .board_list.planner .box_wrap figure figcaption>a {
           position: absolute;
           top: 0;
           left: 0;
@@ -212,7 +207,7 @@
 
         /* For some effects it will show as a button */
 
-        .box_wrap figure figcaption>a {
+        .board_list.planner .box_wrap figure figcaption>a {
           z-index: 1000;
           text-indent: 200%;
           white-space: nowrap;
@@ -220,21 +215,21 @@
           opacity: 0;
         }
 
-        .box_wrap figure h5 {
+        .board_list.planner .box_wrap figure h5 {
           word-spacing: -0.15em;
           font-weight: 300;
         }
 
-        .box_wrap figure h5 span {
+        .board_list.planner .box_wrap figure h5 span {
           font-weight: 800;
         }
 
-        .box_wrap figure h5,
-        .box_wrap figure p {
+        .board_list.planner .box_wrap figure h5,
+        .board_list.planner .box_wrap figure p {
           margin: 0;
         }
 
-        .box_wrap figure p {
+        .board_list.planner .box_wrap figure p {
           letter-spacing: 1px;
           font-size: 68.5%;
         }
