@@ -56,7 +56,8 @@
 
       <div class="best_planner">
         <h4>인기 일정</h4>
-        <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "autoplay":true, "autoplaySpeed":2000}' class="planner_item_wrap">
+        <div class="planner_item_wrap">
+          <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button">Previous</button>
           <div class="planner_item">
             <h3>1</h3>
           </div>
@@ -81,6 +82,7 @@
           <div class="planner_item">
             <h3>8</h3>
           </div>
+          <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button">Next</button>
         </div>
         <!-- planner_item end -->
       </div>
@@ -427,7 +429,7 @@
   </script>
   <script src="../../node_modules/slick-carousel/slick/slick.min.js"></script>
 
-<!-- 
+
   <script>
     $('.planner_item_wrap').slick({
       slidesToShow: 3,
@@ -435,7 +437,7 @@
       autoplay: true,
       autoplaySpeed: 2000,
     });
-  </script> -->
+  </script>
 
 
 </body>
