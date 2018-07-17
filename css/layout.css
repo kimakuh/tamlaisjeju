@@ -2531,8 +2531,8 @@ board_list planner - 여행일정 추천
 
 .board_list.planner .box_wrap .box_cont {
   float: left;
-  width: 70%;
-
+  width: 68%;
+  margin-left:2%;
 }
 
 .board_list.planner .box_wrap figure img {
