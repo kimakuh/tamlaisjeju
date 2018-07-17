@@ -2494,6 +2494,196 @@ board_list travelog - 내가 쓰는 여행기 리스트
 }
 */
 
+
+
+
+
+
+/**************************************************************************************
+board_list planner - 여행일정 추천
+***************************************************************************************/
+
+
+.board_list.planner {}
+
+.board_list.planner .box_wrap {}
+
+.board_list.planner .box_wrap .box {
+  float: none;
+  overflow: hidden;
+}
+
+.board_list.planner .box_wrap .box {
+  float: none;
+  overflow: hidden;
+}
+
+
+.board_list.planner .box_wrap figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 30%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.board_list.planner .box_wrap .box_cont {
+  float: left;
+  width: 70%;
+
+}
+
+.board_list.planner .box_wrap figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.board_list.planner .box_wrap figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.board_list.planner .box_wrap figure figcaption::before,
+.board_list.planner .box_wrap figure figcaption::after {
+  pointer-events: none;
+}
+
+.board_list.planner .box_wrap figure figcaption,
+.board_list.planner .box_wrap figure figcaption>a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+
+/* For some effects it will show as a button */
+
+.board_list.planner .box_wrap figure figcaption>a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.board_list.planner .box_wrap figure h5 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.board_list.planner .box_wrap figure h5 span {
+  font-weight: 800;
+}
+
+.board_list.planner .box_wrap figure h5,
+.board_list.planner .box_wrap figure p {
+  margin: 0;
+}
+
+.board_list.planner .box_wrap figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+figure.effect.type03 {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+figure.effect.type03 img {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 0, 300px);
+  transform: translate3d(0, 0, 300px);
+}
+
+figure.effect.type03:hover img {
+  opacity: 0.6;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect.type03 figcaption::before,
+figure.effect.type03 figcaption::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 1px;
+  background: #fff;
+  content: '';
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+figure.effect.type03:hover figcaption::before {
+  opacity: 0.5;
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+  transform: translate3d(-50%, -50%, 0) rotate(45deg);
+}
+
+figure.effect.type03:hover figcaption::after {
+  opacity: 0.5;
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+  transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+}
+
+figure.effect.type03 h5,
+figure.effect.type03 p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect.type03 h5 {
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
+}
+
+figure.effect.type03 p {
+  padding: 0.25em 2em;
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
+}
+
+figure.effect.type03:hover h5 {
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
+}
+
+figure.effect.type03:hover p {
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /**************************************************************************************
 all_page_box - 제주여행 꿀팁
 ***************************************************************************************/
