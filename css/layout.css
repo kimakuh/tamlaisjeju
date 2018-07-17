@@ -2439,7 +2439,6 @@ board_list travelog - 내가 쓰는 여행기 리스트
 }
 
 .board_list.travelog figure.effect h2 {
-  /* padding-top: 30%; */
   padding: 30% 20% 0 20%;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2465,6 +2464,17 @@ board_list travelog - 내가 쓰는 여행기 리스트
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+
+.board_list.travelog .box:hover figure.effect:hover figcaption::before,
+.board_list.travelog .box:hover figure.effect:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
 
 .board_list.travelog figure.effect:hover h2,
 .board_list.travelog figure.effect:hover p {
