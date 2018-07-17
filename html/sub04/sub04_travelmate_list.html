@@ -223,7 +223,7 @@
 								</button>
 							</div>
 							<div class="modal-body">
-								<input id="m-title" type="text"
+								<input type="text"
 									style="width: 100%; margin-bottom: 10px; border: 1px solid #e9e9e9; line-height: 50px;"
 									placeholder=" 일정 제목을 입력해주세요.">
 								<textarea id="nplan_desc" placeholder="일정 설명"
@@ -297,7 +297,12 @@
        */
     });
   </script>
+  <script type="text/javascript">
+  $('.modal').on('hidden.bs.modal', function (e) { 
+	    $(this).find('form')[0].reset() 
+	});
 	
+  </script>	
 </body>
 
 </html>
