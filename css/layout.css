@@ -283,6 +283,7 @@ body.modal-open {
   justify-content: flex-end;
   padding: 1rem;
   border-top: 0px;
+  margin-bottom: 1rem;
 }
 
 .login .modal-scrollbar-measure {
