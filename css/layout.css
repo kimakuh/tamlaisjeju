@@ -147,12 +147,6 @@
 헤더 모달
 ***************************************************************************************/
 
-
-
-
-
-
-
 body.modal-open {
   overflow: hidden;
   padding-right: 0px !important;
@@ -175,14 +169,14 @@ body .modal-open .modal {
   overflow-y: auto;
 }
 
-.modal-dialog {
+.login .modal-dialog {
   position: relative;
   width: auto;
   margin: 0.5rem;
   pointer-events: none;
 }
 
-.modal.fade .modal-dialog {
+.login .modal.fade .modal-dialog {
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -191,17 +185,17 @@ body .modal-open .modal {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .modal.fade .modal-dialog {
+  .login .modal.fade .modal-dialog {
     transition: none;
   }
 }
 
-.modal.show .modal-dialog {
+.login .modal.show .modal-dialog {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
-.modal-dialog-centered {
+.login .modal-dialog-centered {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -224,7 +218,7 @@ body .modal-open .modal {
   outline: 0;
 }
 
-.modal-backdrop {
+.login .modal-backdrop {
   position: fixed;
   top: 0;
   right: 0;
@@ -234,11 +228,11 @@ body .modal-open .modal {
   background-color: #000;
 }
 
-.modal-backdrop.fade {
+.login .modal-backdrop.fade {
   opacity: 0;
 }
 
-.modal-backdrop.show {
+.login .modal-backdrop.show {
   opacity: 0.5;
 }
 
@@ -255,7 +249,7 @@ body .modal-open .modal {
   border-top-right-radius: 0.3rem;
 }
 
-.modal-header .close {
+.login .modal-header .close {
   padding: 1rem;
   margin: -1rem -1rem -1rem auto;
 }
@@ -287,20 +281,63 @@ body .modal-open .modal {
   border-top: 0px;
 }
 
-.modal-footer > :not(:first-child) {
+.login .modal-footer > :not(:first-child) {
   margin-left: .25rem;
 }
 
-.modal-footer > :not(:last-child) {
+.login .modal-footer > :not(:last-child) {
   margin-right: .25rem;
 }
 
-.modal-scrollbar-measure {
+.login .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
   width: 50px;
   height: 50px;
   overflow: scroll;
+}
+
+.login .btn_login {
+  display: block;
+  width: 260px;
+  height: 45px;
+  margin-top: 10px;
+  padding: 12px 0 12px 48px;
+}
+
+.login .login_btn_area .btn_login span {
+  display: block;
+  height: 21px;
+  border-left: 1px solid #e5e5e5;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 21px;
+}
+
+.login .btn_login.fb {
+  background: url(../img/common/ico_facebook_l.png) no-repeat 19px 50%;
+    background-color: #445e99;
+}
+
+.login .btn_login.kt {
+  background: url(../img/common/ico_kakao_l.png) no-repeat 12px 50%;
+  background-color: #f7c000;
+}
+
+.login .btn_login.ig {
+  background: url(../img/common/ico_instagram_l.png) no-repeat 15px 50%;
+  background-color: #95479b;
+}
+
+.login button {
+  border: 0;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-transform: inherit;
 }
 
 
