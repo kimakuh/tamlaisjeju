@@ -147,7 +147,7 @@
 헤더 모달
 ***************************************************************************************/
 
-body .modal-open {
+body.modal-open {
   overflow: hidden;
   padding-right: 0px !important;
 }
