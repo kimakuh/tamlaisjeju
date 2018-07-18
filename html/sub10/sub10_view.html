@@ -1182,7 +1182,7 @@
             $(window).bind('scroll', function () {
                 var container = $('.container').height();
                 var content = $('.day_page_all').height();
-                if ($(window).scrollTop() > container - content - 200) {
+                if ($(window).scrollTop() > container - content - 80) {
                     if ($(window).scrollTop() > content - 100) {
                         $('nav').addClass('absolute');
                         $('nav').removeClass('fixed');
@@ -1207,7 +1207,7 @@
         $("#myModal").on('shown.bs.modal', function (e) {
             e.preventDefault();
             //console.log("Map Modal is shown!");
-            map1.relayout();
+            map.relayout();
         });
     </script>
 
