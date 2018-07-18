@@ -37,6 +37,10 @@
     <link rel="stylesheet" href="../../node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script type="text/javascript" src="../../node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 
+    <!--metadata-->
+    <script type="text/javascript" src="metadeta/jpegmeta.js"></script>
+    <script type="text/javascript" src="metadeta/demo.js"></script>
+
 
     <style type="text/css">
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
@@ -71,8 +75,8 @@
                 <div class="editor_side_inner_content">
                     <div class="editor_side_btn">
                         <p>사진도구</p>
-                        <button class="side_upload_btn">
-                            <span class="side_upload" data-toggle="modal" data-target=".bd-example-modal-lg"></span> 사진업로드</button>
+                        <button class="side_upload_btn" data-toggle="modal" data-target=".bd-example-modal-lg">
+                            <span class="side_upload" ></span> 사진업로드</button>
                         <button class="side_sns_btn">
                             <span class="side_sns"></span>sns사진</button>
                         <button class="side_lib_btn">
@@ -154,7 +158,7 @@
 
                             <input id="input" type="text" placeholder="HashTag 엔터로 입력">
                             <button id="enter">hashtag</button>
-                            <ul id="tag_box">
+                            <ul id="tag_box" class="tag_cls">
                             </ul>
                         </div>
                     </div>
@@ -211,7 +215,7 @@
                     </div>
                 </div>
                 <div class="post_wrap">
-                    <div class="post_imgbox">
+                    <div class="post_imgbox" data-toggle="modal" data-target=".bd-example-modal-lg2">
                         클릭하여 사진 등록
                         <img src="">
                     </div>
@@ -226,6 +230,7 @@
                             <textarea id="post_text_form" class="title_textarea text_area" placeholder="내용을 입력하세요." data-is-observable="false"></textarea>
                             <div class="text_count">글자제한:
                                 <span class="count">80</span>/80</div>
+                                <button onclick="map()"></button>
                         </form>
                     </div>
                 </div>
@@ -275,6 +280,28 @@
                             지원하지 않는 브라우저입니다.
 
                         </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 모달2 -->
+            <div id="dropbox" class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>사진업로드</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div>
+                        <h1>사진업로드</h1>
+                        <form id="form" action="javascript:void(0)">
+                          <p>Choose JPEG file: <input id="fileWidget" type="file"></p>
+                        </form>
+                        <img id="img" height="100" alt="Image preview" src="">
+                        <div id="status"></div>
+                    </div>
 
                     </div>
                 </div>
@@ -514,30 +541,30 @@
                     myDropzone = this; // closure
 
                     // Call the action method to load the images from the server
-                    $.getJSON("../..//getList").done(function (data) {
-                        if (data.Data != '') {
+                    // $.getJSON("../..//getList").done(function (data) {
+                    //     if (data.Data != '') {
 
-                            $.each(data.Data, function (index, item) {
-                                //// Create the mock file:
-                                var mockFile = {
-                                    name: item.fileName, // 마우스 오버 네임
-                                    size: item.Size
-                                };
+                    //         $.each(data.Data, function (index, item) {
+                    //             //// Create the mock file:
+                    //             var mockFile = {
+                    //                 name: item.fileName, // 마우스 오버 네임
+                    //                 size: item.Size
+                    //             };
 
-                                // Call the default addedfile event handler
-                                myDropzone.emit("addedfile", mockFile);
+                    //             // Call the default addedfile event handler
+                    //             myDropzone.emit("addedfile", mockFile);
 
-                                // And optionally show the thumbnail of the file:
-                                myDropzone.emit("thumbnail", mockFile, item.Path);
+                    //             // And optionally show the thumbnail of the file:
+                    //             myDropzone.emit("thumbnail", mockFile, item.Path);
 
-                                // If you use the maxFiles option, make sure you adjust it to the
-                                // correct amount:
-                                //var existingFileCount = 1; // The number of files already uploaded
-                                //myDropzone.options.maxFiles = myDropzone.options.maxFiles - existingFileCount;
+                    //             // If you use the maxFiles option, make sure you adjust it to the
+                    //             // correct amount:
+                    //             //var existingFileCount = 1; // The number of files already uploaded
+                    //             //myDropzone.options.maxFiles = myDropzone.options.maxFiles - existingFileCount;
 
-                            });
-                        }
-                    });
+                    //         });
+                    //     }
+                    // });
 
 
 
@@ -550,27 +577,27 @@
                         myDropzone.processQueue();
                     });
 
-                    // All Clear
-                    allClearButton.addEventListener("click", function () {
+                    // // All Clear
+                    // allClearButton.addEventListener("click", function () {
 
-                        // Using "_this" here, because "this" doesn't point to the dropzone anymore
-                        if (confirm('정말 전체 항목을 삭제하겠습니까?')) {
-                            // 서버 삭제 로직
-                            $.ajax({
-                                url: '@Url.Action("removeAll","Home")',
-                                type: 'POST',
-                                success: function (data) {
-                                    if (data.Data == 'OK') {
-                                        myDropzone.removeAllFiles(true); // true 주면 업로드 중인 파일도 다 같이 삭제
-                                        //document.location.reload();
-                                    }
-                                }
-                            });
-                        }
+                    //     // Using "_this" here, because "this" doesn't point to the dropzone anymore
+                    //     if (confirm('정말 전체 항목을 삭제하겠습니까?')) {
+                    //         // 서버 삭제 로직
+                    //         $.ajax({
+                    //             url: '@Url.Action("removeAll","Home")',
+                    //             type: 'POST',
+                    //             success: function (data) {
+                    //                 if (data.Data == 'OK') {
+                    //                     myDropzone.removeAllFiles(true); // true 주면 업로드 중인 파일도 다 같이 삭제
+                    //                     //document.location.reload();
+                    //                 }
+                    //             }
+                    //         });
+                    //     }
 
-                        // If you want to cancel uploads as well, you
-                        // could also call _this.removeAllFiles(true);
-                    });
+                    //     // If you want to cancel uploads as well, you
+                    //     // could also call _this.removeAllFiles(true);
+                    // });
 
                     // maxFiles 카운터를 초과하면 경고창
                     this.on("maxfilesexceeded", function (data) {
@@ -696,17 +723,16 @@
             var ul = document.getElementById("tag_box");
             var li = document.getElementById("tag_box").getElementsByTagName("li");
             var deleteBtns = document.getElementsByClassName("delete");
-            var count = $(".item").length;
-
+            var cnt
 
             function inputLength() {
                 return input.value.length;
             }
 
             function createListElement() {
-                
-                console.log(count)
-                if (count > 4) {
+                cnt = $("#tag_box > li").length;
+                console.log(cnt);
+                if (cnt > 4) {
                     swal({
                                 type: 'error',
                                 title: '입력초과',
@@ -723,8 +749,8 @@
                     li.appendChild(button)
                     input.value = "";
 
-                    li.classList.add("items", "it"+count);
-                    count++;
+                    li.classList.add("items", "it");
+                    
                     button.addEventListener("click", deleteItem);
                     button.classList.add("delete");
                     return;
@@ -762,6 +788,11 @@
             input.addEventListener("keypress", addNewItemAfterKeypress);
             manageGroupTag(li, "click", toggleDone);
             manageGroupTag(deleteBtns, "click", deleteItem);
+        </script>
+        <script>
+            function map() {
+                console.log(lo[0], lo[1]);
+            }
         </script>
 
 
