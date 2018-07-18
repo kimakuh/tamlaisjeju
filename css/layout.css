@@ -166,7 +166,8 @@ body .modal {
 
 body .modal-open .modal {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
+  padding-right: 0px !important;
 }
 
 .login .modal-dialog {
