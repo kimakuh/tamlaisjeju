@@ -304,7 +304,7 @@ body .modal-open .modal {
   padding: 12px 0 12px 48px;
 }
 
-.login.btn_login span {
+.login .btn_login span {
   display: block;
   height: 21px;
   border-left: 1px solid #e5e5e5;
