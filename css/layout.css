@@ -152,7 +152,12 @@ body.modal-open {
   padding-right: 0px !important;
 }
 
-body .modal {
+.login .modal-open {
+  overflow: hidden;
+  padding-right: 0px !important;
+}
+
+.login .modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -164,7 +169,7 @@ body .modal {
   outline: 0;
 }
 
-body .modal-open .modal {
+.login .modal-open .modal {
   overflow-x: hidden;
   overflow-y: hidden;
   padding-right: 0px !important;
