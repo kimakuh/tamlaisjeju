@@ -285,14 +285,6 @@ body.modal-open {
   border-top: 0px;
 }
 
-.login .modal-footer > :not(:first-child) {
-  margin-left: .25rem;
-}
-
-.login .modal-footer > :not(:last-child) {
-  margin-right: .25rem;
-}
-
 .login .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
