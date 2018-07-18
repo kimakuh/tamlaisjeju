@@ -269,9 +269,8 @@ body .modal-open .modal {
 }
 
 .login .modal-footer {
-  margin-top: 37px;
   display: -ms-flexbox;
-  display: flex;
+  display: block;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: end;
@@ -298,9 +297,10 @@ body .modal-open .modal {
 
 .login .btn_login {
   display: block;
-  width: 260px;
+  width: 20rem;
   height: 45px;
-  margin-top: 10px;
+  margin-left: 4.5rem;
+  margin-top: 20px;
   padding: 12px 0 12px 48px;
 }
 
