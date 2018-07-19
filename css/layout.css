@@ -324,8 +324,8 @@ body.modal-open {
 }
 
 .login .btn_login.ig {
-  background: url(../img/common/ico_instagram_l.png) no-repeat 15px 50%;
-  background-color: #95479b;
+  background: url(../img/common/ico_google_l.png) no-repeat 15px 50%;
+  background-color: #d62d20;
 }
 
 .login button {
