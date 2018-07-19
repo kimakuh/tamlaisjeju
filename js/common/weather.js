@@ -63,8 +63,8 @@ $.ajax({
         var myXML = rplLine(data.responseText);
         var indexS = myXML.indexOf('"body":{"items":{'),
             indexE = myXML.indexOf("}]}"),
-            result = myXML;
-//                result = myXML.substring(indexS, indexE);
+            // result = myXML;
+            result = myXML.substring(indexS, indexE);
         var jsonObj = $.parseJSON('[' + result + ']'),
             rainsnow = jsonObj[0].response.body.items.item[0].obsrValue,
             sky = jsonObj[0].response.body.items.item[4].obsrValue,
