@@ -47,6 +47,72 @@
             <p class="h3_txt">내가 가본 제주는 어디까지일까? 수많은 제주의 아름다운 여행지를 취향에 맞게 선택해보자. 368개의 크고 작은 오름을 비롯하여 눈 돌리면 어디에서나 마주치는 한라산 그리고 푸른 바다…. 제주의 보석
                 같은 여행지가 여러분의 선택을 기다린다.</p>
 
+            <script>
+                /* Javascript 샘플 코드 */
+                
+                var xhr = new XMLHttpRequest();
+                var url = 'http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaCode'; /*URL*/
+                var queryParams = '?' + encodeURIComponent('ServiceKey') + '=' + '서비스키'; /*Service Key*/
+                queryParams += '&' + encodeURIComponent('ServiceKey') + '=' + encodeURIComponent('5fTAWN079L8Yfhs%2F9YQ7zBKyOO6%2BKpeQJ15u5GiLJY4AN%2Bx96uwIQHWmIyyxcQwhOxdfQw8s23QzN%2B22icuKbw%3D%3D (URL - Encode)'); /*공공데이터포털에서 발급받은 인증키*/
+                queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('12'); /*한 페이지 결과수*/
+                queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /*현재 페이지 번호*/
+                queryParams += '&' + encodeURIComponent('MobileOS') + '=' + encodeURIComponent('ETC'); /*IOS (아이폰), AND (안드로이드), WIN (원도우폰), ETC*/
+                queryParams += '&' + encodeURIComponent('MobileApp') + '=' + encodeURIComponent('AppTest'); /*서비스명=어플명*/
+                queryParams += '&' + encodeURIComponent('areaCode') + '=' + encodeURIComponent('39'); /*지역코드, 시군구코드*/
+                xhr.open('GET', url + queryParams);
+                xhr.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        alert('Status: ' + this.status + ' Headers: ' + JSON.stringify(this.getAllResponseHeaders()) +
+                            ' Body: ' + this.responseText);
+                    }
+                };
+
+                xhr.send('');
+            </script>
+
+
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>등록일</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+
+
+            <script id="tr-template" type="text/x-handlebars-template">
+                {{#each list}}
+                <tr>
+                    <td>{{no}}</td>
+                    <td>
+                        <a href='form.html?no={{no}}'>{{title}}</a>
+                    </td>
+                    <td>{{createdDate}}</td>
+                </tr>
+                {{/each}}
+            </script>
+
+            <script src="../../node_modules/handlebars/dist/handlebars.min.js"></script>
+            <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+            <script>
+                // 템플릿 엔진이 사용할 템플릿 데이터 가져오기
+                var trTemplateSrc = $("#tr-template").html();
+
+                // 위에서 준비한 템플릿 데이터를 가지고 HTML을 생성할 템플릿 엔진 준비
+                var templateFn = Handlebars.compile(trTemplateSrc);
+
+                $.getJSON("../../json/board/list", (data) => {
+                    //tableBody.innerHTML = templateFn({list:data});
+                    $(tableBody).html(templateFn({
+                        list: data
+                    }))
+                });
+            </script>
+
 
 
 
