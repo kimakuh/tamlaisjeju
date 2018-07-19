@@ -59,8 +59,8 @@ $.ajax({
     ,type: 'get'
     ,success: function(msg) {
         var myXML = msg.responseText;
-        myXML = myXML.replace(/(<([^>]+)>)/ig,"");
         console.log(myXML);
+        myXML = myXML.replace(/(<([^>]+)>)/ig,"");
         myXML = '[' + myXML + ']';
         var json = $.parseJSON(myXML);
 
