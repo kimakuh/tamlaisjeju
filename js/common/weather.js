@@ -53,18 +53,18 @@ function realTimeWeather() {
     ForecastGribURL += "&nx=" + _nx + "&ny=" + _ny;
     ForecastGribURL += "&pageNo=1&numOfRows=7";
     ForecastGribURL += "&_type=json";
-    console.log(ForecastGribURL);
- 
-$.ajax({
-    url: ForecastGribURL
-    ,type: 'GET'
-    ,cache: false
-    ,success: function(data) {
-        var myXML = rplLine(data.responseText);
-        var indexS = myXML.indexOf('"body":{"items":{'),
+    
+    $.ajax({
+        url: ForecastGribURL
+        ,type: 'GET'
+        ,cache: false
+        ,success: function(data) {
+            var myXML = rplLine(data.responseText);
+            var indexS = myXML.indexOf('"body":{"items":{'),
             indexE = myXML.indexOf("}]}"),
             // result = myXML;
             result = myXML.substring(indexS, indexE);
+            console.log(result);
         var jsonObj = $.parseJSON('[' + result + ']'),
             rainsnow = jsonObj[0].response.body.items.item[0].obsrValue,
             sky = jsonObj[0].response.body.items.item[4].obsrValue,
