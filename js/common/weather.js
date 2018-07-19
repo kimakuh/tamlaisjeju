@@ -49,7 +49,7 @@ function realTimeWeather() {
     ForecastGribURL = "http://newsky2.kma.go.kr/service/SecndSrtpdFrcstInfoService2/ForecastGrib";
     ForecastGribURL += "?ServiceKey=" + apikey;
     ForecastGribURL += "&base_date=" + today;
-    ForecastGribURL += "&base_time=" + hours +"00";
+    ForecastGribURL += "&base_time=" + "15" +"00";
     ForecastGribURL += "&nx=" + _nx + "&ny=" + _ny;
     ForecastGribURL += "&pageNo=1&numOfRows=7";
     ForecastGribURL += "&_type=json";
