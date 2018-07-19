@@ -24,14 +24,10 @@
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <!-- <script src="../../js/common/jquery-3.3.1.min.js"></script> -->
+    <script src="../../js/common/jquery-3.3.1.min.js"></script>
     <script src="../../js/common/jquery-ui.min.js"></script>
-    <script src="../../js/common/jquery.xdomainajax.js"></script>
-    <script src="../../js/common/weather.js"></script>
-    <script type="text/javascript">
-        realTimeWeather();
-    </script>
+    <!-- php -->
+    <script src="../../js/common/weather.php"></script>
 </head>
 
 <body>
@@ -107,14 +103,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="vis-weather">
-                <h2 class="vh_hide">날씨정보</h2>
-                <p class="weather-date"></p>
-                <ul>
-                    <li class="weather-temp"></li>
-                    <li id="RN1">시간당강수량 : ?</li>
-                    <li class="weather-state-text"></li>
-                </ul>
+            <div>
+                    <?php echo '<p>Hello World</p>'; ?>
             </div>
 
             <!-- img_wrap end -->
