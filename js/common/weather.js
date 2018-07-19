@@ -15,7 +15,7 @@ function realTimeWeather() {
      * 30분보다 작으면, 한시간 전 hours 값
      */
     if(minutes < 30){
-        hours = hours - 1;
+        hours = hours - 2;
         if(hours < 0){
             // 자정 이전은 전날로 계산
             today.setDate(today.getDate() - 1);
