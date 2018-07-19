@@ -28,7 +28,10 @@
     <script src="../../js/common/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="../../js/common/jquery.xdomainajax.js"></script>
-    <script src="../../js/common/xml2jsonCurrentWth.js"></script>
+    <script src="../../js/common/weather.js"></script>
+    <script type="text/javascript">
+        realTimeWeather();
+    </script>
 </head>
 
 <body>
@@ -104,8 +107,15 @@
                     </li>
                 </ul>
             </div>
-            <div id="xml2jsonCurrentWth">
-            </div>
+            <div class="vis-weather">
+                    <h2 class="vh_hide">날씨정보</h2>
+                    <p class="weather-date"></p>
+                    <ul>
+                        <li class="weather-temp"></li>
+                        <li id="RN1">시간당강수량 : ?</li>
+                        <li class="weather-state-text"></li>
+                    </ul>
+                </div>
             <!-- img_wrap end -->
             <div class="btn_wrap">
                 <a class="btn btn-ani btn-file" href="http://jejutour.ecobrain.net/" title="새창열림" target="_blank">제주관광 날씨 정보 서비스 바로가기
