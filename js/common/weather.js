@@ -53,7 +53,6 @@ function realTimeWeather() {
     ForecastGribURL += "&nx=" + _nx + "&ny=" + _ny;
     ForecastGribURL += "&pageNo=1&numOfRows=7";
     ForecastGribURL += "&_type=json";
-    console.log(ForecastGribURL);
  
 $.ajax({
     url: ForecastGribURL
@@ -62,9 +61,9 @@ $.ajax({
  
        var text = msg.responseText,
        text = text.replace(/(<([^>]+)>)/ig,""); //HTML 태그 모두 공백으로 대체
+       console.log(text);
  text = '[' + text + ']';
        var json = $.parseJSON(text);
-       console.log(json);
        var rain_state = json[0].response.body.items.item[1].obsrValue;
        var rain = json[0].response.body.items.item[3].obsrValue;
        var sky = json[0].response.body.items.item[4].obsrValue;
