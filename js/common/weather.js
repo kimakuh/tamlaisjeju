@@ -56,7 +56,7 @@ function realTimeWeather() {
  
 $.ajax({
     url: ForecastGribURL
-    ,type: 'get'
+    ,type: 'GET'
     ,success: function(msg) {
         var myXML = msg.responseText;
         console.log(myXML);
