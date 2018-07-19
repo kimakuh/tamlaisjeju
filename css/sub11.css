@@ -1029,11 +1029,6 @@ all - 여행필수정보 전체
     margin: 0;
 }
 
-#sub11 .my_tour .my_tour_wrap .tour_list .item_section.add {
-    -webkit-box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
-    box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
-}
-
 #sub11 .item_section {
     float: left;
     position: relative;
