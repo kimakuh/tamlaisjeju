@@ -63,7 +63,7 @@ $.ajax({
        text = text.replace(/(<([^>]+)>)/ig,""); //HTML 태그 모두 공백으로 대체
  text = '[' + text + ']';
        var json = $.parseJSON(text);
-       
+       console.log(json);
        var rain_state = json.response.body.items.item[1].obsrValue;
        var rain = json.response.body.items.item[3].obsrValue;
        var sky = json.response.body.items.item[4].obsrValue;
