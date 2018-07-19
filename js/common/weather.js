@@ -61,8 +61,9 @@ $.ajax({
         var myXML = msg.responseText;
         myXML = myXML.replace(/(<([^>]+)>)/ig,"");
         myXML = '[' + myXML + ']';
+        console.log(myXML);
         var json = $.parseJSON(myXML);
-       
+
         var rain_state = json[0].response.body.items.item[1].obsrValue;
         var rain = json[0].response.body.items.item[3].obsrValue;
         var sky = json[0].response.body.items.item[4].obsrValue;
