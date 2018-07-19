@@ -53,13 +53,13 @@ function realTimeWeather() {
     ForecastGribURL += "&nx=" + _nx + "&ny=" + _ny;
     ForecastGribURL += "&pageNo=1&numOfRows=7";
     ForecastGribURL += "&_type=json";
+    console.log(ForecastGribURL);
  
 $.ajax({
     url: ForecastGribURL
     ,type: 'GET'
     ,cache: false
     ,success: function(msg) {
-        console.log(msg);
         var myXML = msg.responseText;
         myXML = myXML.replace(/(<([^>]+)>)/ig,"");
         myXML = '[' + myXML + ']';
