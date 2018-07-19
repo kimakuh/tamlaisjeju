@@ -57,49 +57,31 @@ function realTimeWeather() {
 $.ajax({
     url: ForecastGribURL
     ,type: 'get'
+    ,cache: false
     ,success: function(msg) {
- 
-       var text = msg.responseText,
-       text = text.replace(/(<([^>]+)>)/ig,""); //HTML 태그 모두 공백으로 대체
-       console.log(text);
- text = '[' + text + ']';
-       var json = $.parseJSON(text);
-       var rain_state = json[0].response.body.items.item[1].obsrValue;
-       var rain = json[0].response.body.items.item[3].obsrValue;
-       var sky = json[0].response.body.items.item[4].obsrValue;
-       var temperature = json[0].response.body.items.item[5].obsrValue;
+       var myXML = rplLine(msg.responseText);
+       var indexS = myXML.indexOf('"body:{"items":{'),
+           indexE = myXML.indexOf("}]}"),
+           result = myXML;
        
-       $('.weather-temp').html(temperature.toFixed(1) + " ℃");
- $('#RN1').html("시간당강수량 : "+ rain +"mm");
-       
-           if(rain_state != 0) {
-               switch(rain_state) {
-                   case 1:
-                    $('.weather-state-text').html("비");
-                       break;
-                   case 2:
-                       $('.weather-state-text').html("비/눈");
-                       break;
-                   case 3:
-                       $('.weather-state-text').html("눈");
-                       break;
-               }
-           }else {
-               switch(sky) {
-                   case 1:
-                       $('.weather-state-text').html("맑음");
-                       break;
-                   case 2:
-                       $('.weather-state-text').html("구름조금");
-                       break;
-                   case 3:
-                    $('.weather-state-text').html("구름많음");
-                       break;
-                   case 4:
-                    $('.weather-state-text').html("흐림");    
-                       break;
-                   }    
-               } //if 종료
-        } //success func 종료
-    })    
+        var jsonObj = $.parseJSON('[' + result + ']'),
+        rainsnow = jsonObj[0].response.body.items.item[0].obsrValue,
+        sky = jsonObj[0].response.body.items.item[4].obsrValue,
+        temp = jsonObj[0].response.body.items.item[5].obsrValue;
+        var contentText = document.getElementById('content');
+    contentText.innerHTML = "하늘 상태 : " + sky + " / 눈 비 상태 : " + rainsnow + " / 온도 : " + temp;
+},
+error:function(request,status,error){
+    alert("다시 시도해주세요.\n" + "code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+}
+});
+
+}
+
+function rplLine(value){
+    if (value != null && value != "") {
+        return value.replace(/\n/g, "\\n");
+    }else{
+        return value;
+    }
 }
