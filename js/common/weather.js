@@ -64,10 +64,10 @@ $.ajax({
  text = '[' + text + ']';
        var json = $.parseJSON(text);
        console.log(json);
-       var rain_state = json.response.body.items.item[1].obsrValue;
-       var rain = json.response.body.items.item[3].obsrValue;
-       var sky = json.response.body.items.item[4].obsrValue;
-       var temperature = json.response.body.items.item[5].obsrValue;
+       var rain_state = json[0].response.body.items.item[1].obsrValue;
+       var rain = json[0].response.body.items.item[3].obsrValue;
+       var sky = json[0].response.body.items.item[4].obsrValue;
+       var temperature = json[0].response.body.items.item[5].obsrValue;
        
        $('.weather-temp').html(temperature.toFixed(1) + " ℃");
  $('#RN1').html("시간당강수량 : "+ rain +"mm");
