@@ -58,8 +58,8 @@ $.ajax({
     url: ForecastGribURL
     ,type: 'GET'
     ,success: function(msg) {
+        console.log(msg);
         var myXML = msg.responseText;
-        console.log(myXML);
         myXML = myXML.replace(/(<([^>]+)>)/ig,"");
         myXML = '[' + myXML + ']';
         var json = $.parseJSON(myXML);
