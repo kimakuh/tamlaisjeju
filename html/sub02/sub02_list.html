@@ -26,6 +26,7 @@
     <!-- js -->
     <script src="../../js/common/jquery-3.3.1.min.js"></script>
     <script src="../../js/common/jquery-ui.min.js"></script>
+
 </head>
 
 <body>
@@ -35,9 +36,9 @@
 
 
     <div id="container" class="container">
-            <div id="visual">
-                    <img src="../../img/sub02/sub02_visual.jpg" alt="제주의 음식">
-                </div>
+        <div id="visual">
+            <img src="../../img/sub02/sub02_visual.jpg" alt="제주의 음식">
+        </div>
         <div id="content" class="content wrapper">
 
             <h3>제주의 전통음식부터 다양한 음식의 천국 제주도</h3>
@@ -48,376 +49,440 @@
 
 
 
-            <h4>게시판 리스트 타입1</h4>
-            <p class="h4_txt">이미지 경로는 변경해서 사용해 주세요.이미지는 각 메뉴 폴더 별로 작업해 주세요. 예) sub01, sub02, sub03 ...</p>
 
-            <div class="board_form_wrap">
-                    <div class="toggle_area">
-                            <button class="thumb">
-                                <i class="fas fa-th"></i>
-                                <span class="none">Thumbnails</span>
-                            </button>
-                            <button class="list">
-                                <i class="fas fa-th-list"></i>
-                                <span class="none">List view</span>
-                            </button>
-                        </div>
-                        <!-- toggle_area end -->
-            </div>
-            <!-- board_form_wrap end -->
-            <script>
-                // jQuery(document).ready(function ($) {
-                //     //enable tabs and add fade effect
-                //     $(".toggle_area").tabs(".board_list > .box_wrap", {
-                //         effect: 'fade'
-                //     });
-                //     // add stripes for list view
-                //     $(".box:even").addClass("even");
-                //     $(".box:odd").addClass("odd");
-                //     $('#container ul').removeClass('list').addClass('grid');
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>등록일</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
 
-                // });
-
-
-
-
-                $('.toggle_area button').on('click', function (e) {
-                    if ($(this).hasClass('thumb')) {
-                        $('.board_list').removeClass('type02').addClass('type01');
-                    } else if ($(this).hasClass('list')) {
-                        $('.board_list').removeClass('type01').addClass('type02');
-                    }
-                });
-            </script>
-
-            <div class="board_list type01">
-                <div class="box_wrap clear">
-                    <div class="box">
-                        <div class="img_area">
-                            <a href="sub02_view.html">
-                                <span class="category">관광지</span>
-                                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                                <span class="star_score"></span>
-                            </a>
-                        </div>
-                        <!-- img area end -->
-                        <div class="box_cont_area">
-                            <a href="#">
-                                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-                            </a>
-                            <p class="location_category">제주시 > 제주시내</p>
-                            <p class="hashtag">
-                                <a href="#">#전복김밥</a>
-                                <a href="#">#통전복주먹밥</a>
-                                <a href="#">#미역국</a>
-                            </p>
-                            <p class="my_hashtag">
-                                <a href="#"></a>
-                            </p>
-                            <div class="icon_area">
-                                <ul class="clear">
-                                    <li class="icon like_icon">
-                                        <a href="#">
-                                            <span>좋아요</span>
-                                            <span class="like_count">60</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon zzim_icon">
-                                        <a href="#">
-                                            <span>찜하기</span>
-                                            <span class="zzim_count">883</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon review_icon">
-                                        <a href="#">
-                                            <span>리뷰</span>
-                                            <span class="review_count">921</span>
-                                        </a>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- box_cont_area -->
-                    </div>
-                    <!-- box end -->
-                    <div class="box">
-                        <div class="img_area">
-                            <a href="#">
-                                <span class="category">관광지</span>
-                                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                                <span class="star_score"></span>
-                            </a>
-                        </div>
-                        <!-- img area end -->
-                        <div class="box_cont_area">
-                            <a href="#">
-                                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-                            </a>
-                            <p class="location_category">제주시 > 제주시내</p>
-                            <p class="hashtag">
-                                <a href="#">#전복김밥</a>
-                                <a href="#">#통전복주먹밥</a>
-                                <a href="#">#미역국</a>
-                            </p>
-                            <p class="my_hashtag">
-                                <a href="#">#쑥찐빵</a>
-                                <a href="#">#우유식빵</a>
-                            </p>
-                            <div class="icon_area">
-                                <ul class="clear">
-                                    <li class="icon like_icon">
-                                        <a href="#">
-                                            <span>좋아요</span>
-                                            <span class="like_count">60</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon zzim_icon">
-                                        <a href="#">
-                                            <span>찜하기</span>
-                                            <span class="zzim_count">883</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon review_icon">
-                                        <a href="#">
-                                            <span>리뷰</span>
-                                            <span class="review_count">921</span>
-                                        </a>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- box_cont_area -->
-                    </div>
-                    <!-- box end -->
-                    <div class="box">
-                        <div class="img_area">
-                            <a href="#">
-                                <span class="category">관광지</span>
-                                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                                <span class="star_score"></span>
-                            </a>
-                        </div>
-                        <!-- img area end -->
-                        <div class="box_cont_area">
-                            <a href="#">
-                                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-                            </a>
-                            <p class="location_category">제주시 > 제주시내</p>
-                            <p class="hashtag">
-                                <a href="#">#전복김밥</a>
-                                <a href="#">#통전복주먹밥</a>
-                                <a href="#">#미역국</a>
-                            </p>
-                            <p class="my_hashtag">
-                                <a href="#">#쑥찐빵</a>
-                                <a href="#">#우유식빵</a>
-                            </p>
-                            <div class="icon_area">
-                                <ul class="clear">
-                                    <li class="icon like_icon">
-                                        <a href="#">
-                                            <span>좋아요</span>
-                                            <span class="like_count">60</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon zzim_icon">
-                                        <a href="#">
-                                            <span>찜하기</span>
-                                            <span class="zzim_count">883</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon review_icon">
-                                        <a href="#">
-                                            <span>리뷰</span>
-                                            <span class="review_count">921</span>
-                                        </a>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- box_cont_area -->
-                    </div>
-                    <!-- box end -->
-                </div>
-                <!-- box_wrap -->
-                <div class="box_wrap clear">
-                    <div class="box">
-                        <div class="img_area">
-                            <a href="#">
-                                <span class="category">관광지</span>
-                                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                                <span class="star_score"></span>
-                            </a>
-                        </div>
-                        <!-- img area end -->
-                        <div class="box_cont_area">
-                            <a href="#">
-                                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-                            </a>
-                            <p class="location_category">제주시 > 제주시내</p>
-                            <p class="hashtag">
-                                <a href="#">#전복김밥</a>
-                                <a href="#">#통전복주먹밥</a>
-                                <a href="#">#미역국</a>
-                            </p>
-                            <p class="my_hashtag">
-                                <a href="#"></a>
-                            </p>
-                            <div class="icon_area">
-                                <ul class="clear">
-                                    <li class="icon like_icon">
-                                        <a href="#">
-                                            <span>좋아요</span>
-                                            <span class="like_count">60</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon zzim_icon">
-                                        <a href="#">
-                                            <span>찜하기</span>
-                                            <span class="zzim_count">883</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon review_icon">
-                                        <a href="#">
-                                            <span>리뷰</span>
-                                            <span class="review_count">921</span>
-                                        </a>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- box_cont_area -->
-                    </div>
-                    <!-- box end -->
-                    <div class="box">
-                        <div class="img_area">
-                            <a href="#">
-                                <span class="category">관광지</span>
-                                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                                <span class="star_score"></span>
-                            </a>
-                        </div>
-                        <!-- img area end -->
-                        <div class="box_cont_area">
-                            <a href="#">
-                                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-                            </a>
-                            <p class="location_category">제주시 > 제주시내</p>
-                            <p class="hashtag">
-                                <a href="#">#전복김밥</a>
-                                <a href="#">#통전복주먹밥</a>
-                                <a href="#">#미역국</a>
-                            </p>
-                            <p class="my_hashtag">
-                                <a href="#">#쑥찐빵</a>
-                                <a href="#">#우유식빵</a>
-                            </p>
-                            <div class="icon_area">
-                                <ul class="clear">
-                                    <li class="icon like_icon">
-                                        <a href="#">
-                                            <span>좋아요</span>
-                                            <span class="like_count">60</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon zzim_icon">
-                                        <a href="#">
-                                            <span>찜하기</span>
-                                            <span class="zzim_count">883</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon review_icon">
-                                        <a href="#">
-                                            <span>리뷰</span>
-                                            <span class="review_count">921</span>
-                                        </a>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- box_cont_area -->
-                    </div>
-                    <!-- box end -->
-                    <div class="box">
-                        <div class="img_area">
-                            <a href="#">
-                                <span class="category">관광지</span>
-                                <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
-                                <span class="star_score"></span>
-                            </a>
-                        </div>
-                        <!-- img area end -->
-                        <div class="box_cont_area">
-                            <a href="#">
-                                <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
-                            </a>
-                            <p class="location_category">제주시 > 제주시내</p>
-                            <p class="hashtag">
-                                <a href="#">#전복김밥</a>
-                                <a href="#">#통전복주먹밥</a>
-                                <a href="#">#미역국</a>
-                            </p>
-                            <p class="my_hashtag">
-                                <a href="#">#쑥찐빵</a>
-                                <a href="#">#우유식빵</a>
-                            </p>
-                            <div class="icon_area">
-                                <ul class="clear">
-                                    <li class="icon like_icon">
-                                        <a href="#">
-                                            <span>좋아요</span>
-                                            <span class="like_count">60</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon zzim_icon">
-                                        <a href="#">
-                                            <span>찜하기</span>
-                                            <span class="zzim_count">883</span>
-                                        </a>
-                                    </li>
-                                    <li class="icon review_icon">
-                                        <a href="#">
-                                            <span>리뷰</span>
-                                            <span class="review_count">921</span>
-                                        </a>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- box_cont_area -->
-                    </div>
-                    <!-- box end -->
-                </div>
-                <!-- box_wrap -->
-
-
-                <div class="pagination_wrap">
-                    <div class="pagination">
-                        <a href="#">&laquo;</a>
-                        <a href="#">1</a>
-                        <a href="#" class="active">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">&raquo;</a>
-                    </div>
-                    <!-- pagination end -->
-                </div>
-                <!-- pagination_wrap end-->
-
-            </div>
-            <!-- board_list end-->
         </div>
-        <!-- content end-->
+        <!--.container-->
+
+        <script id="tr-template" type="text/x-handlebars-template">
+            {{#each list}}
+            <tr>
+                <td>{{no}}</td>
+                <td>
+                    <a href='form.html?no={{no}}'>{{title}}</a>
+                </td>
+                <td>{{createdDate}}</td>
+            </tr>
+            {{/each}}
+        </script>
+
+        <script src="../../node_modules/handlebars/dist/handlebars.min.js"></script>
+        <script>
+            // 템플릿 엔진이 사용할 템플릿 데이터 가져오기
+            var trTemplateSrc = $("#tr-template").html();
+
+            // 위에서 준비한 템플릿 데이터를 가지고 HTML을 생성할 템플릿 엔진 준비
+            var templateFn = Handlebars.compile(trTemplateSrc);
+
+            $.getJSON("http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?ServiceKey=5fTAWN079L8Yfhs%2F9YQ7zBKyOO6%2BKpeQJ15u5GiLJY4AN%2Bx96uwIQHWmIyyxcQwhOxdfQw8s23QzN%2B22icuKbw%3D%3D&contentTypeId=12&areaCode=39&sigunguCode=&cat1=&cat2=&cat3=&listYN=Y&MobileOS=ETC&MobileApp=TourAPI3.0_Guide&arrange=P&numOfRows=12&pageNo=1&_type=json", (data) => {
+                //tableBody.innerHTML = templateFn({list:data});
+                $(tableBody).html(templateFn({
+                    list: data
+                }))
+            });
+        </script>
+
+
+
+
+
+
+        <!--category_wrap end -->
+        <div class="form_wrap board">
+            <div class="toggle_area">
+                <button class="thumb">
+                    <i class="fas fa-th"></i>
+                    <span class="none">Thumbnails</span>
+                </button>
+                <button class="list">
+                    <i class="fas fa-th-list"></i>
+                    <span class="none">List view</span>
+                </button>
+            </div>
+            <!-- toggle_area end -->
+        </div>
+        <!-- form_wrap end -->
+        <script>
+            $('.toggle_area button').on('click', function (e) {
+                if ($(this).hasClass('thumb')) {
+                    $('.board_list').removeClass('type02').addClass('type01');
+                } else if ($(this).hasClass('list')) {
+                    $('.board_list').removeClass('type01').addClass('type02');
+                }
+            });
+        </script>
+
+        <div id="board" class="board_list type01">
+            <div id="board_cont" class="box_wrap clear">
+                <div class="box nature">
+                    <div class="img_area">
+                        <a href="sub01_view.html">
+                            <span class="category">자연관광지</span>
+                            <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
+                            <span class="star_score"></span>
+                        </a>
+                    </div>
+                    <!-- img area end -->
+                    <div class="box_cont_area">
+                        <a href="#">
+                            <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
+                        </a>
+                        <p class="location_category">제주시 > 제주시내</p>
+                        <p class="hashtag">
+                            <a href="#">#전복김밥</a>
+                            <a href="#">#통전복주먹밥</a>
+                            <a href="#">#미역국</a>
+                        </p>
+                        <p class="my_hashtag">
+                            <a href="#"></a>
+                        </p>
+                        <div class="icon_area">
+                            <ul class="clear">
+                                <li class="icon like_icon">
+                                    <a href="#">
+                                        <span>좋아요</span>
+                                        <span class="like_count">60</span>
+                                    </a>
+                                </li>
+                                <li class="icon zzim_icon">
+                                    <a href="#">
+                                        <span>찜하기</span>
+                                        <span class="zzim_count">883</span>
+                                    </a>
+                                </li>
+                                <li class="icon review_icon">
+                                    <a href="#">
+                                        <span>리뷰</span>
+                                        <span class="review_count">921</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- box_cont_area -->
+                </div>
+                <!-- box end -->
+                <div class="box culture">
+                    <div class="img_area">
+                        <a href="#">
+                            <span class="category">문화관광지</span>
+                            <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
+                            <span class="star_score"></span>
+                        </a>
+                    </div>
+                    <!-- img area end -->
+                    <div class="box_cont_area">
+                        <a href="#">
+                            <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
+                        </a>
+                        <p class="location_category">제주시 > 제주시내</p>
+                        <p class="hashtag">
+                            <a href="#">#전복김밥</a>
+                            <a href="#">#통전복주먹밥</a>
+                            <a href="#">#미역국</a>
+                        </p>
+                        <p class="my_hashtag">
+                            <a href="#">#쑥찐빵</a>
+                            <a href="#">#우유식빵</a>
+                        </p>
+                        <div class="icon_area">
+                            <ul class="clear">
+                                <li class="icon like_icon">
+                                    <a href="#">
+                                        <span>좋아요</span>
+                                        <span class="like_count">60</span>
+                                    </a>
+                                </li>
+                                <li class="icon zzim_icon">
+                                    <a href="#">
+                                        <span>찜하기</span>
+                                        <span class="zzim_count">883</span>
+                                    </a>
+                                </li>
+                                <li class="icon review_icon">
+                                    <a href="#">
+                                        <span>리뷰</span>
+                                        <span class="review_count">921</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- box_cont_area -->
+                </div>
+                <!-- box end -->
+                <div class="box">
+                    <div class="img_area">
+                        <a href="#">
+                            <span class="category">관광지</span>
+                            <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
+                            <span class="star_score"></span>
+                        </a>
+                    </div>
+                    <!-- img area end -->
+                    <div class="box_cont_area">
+                        <a href="#">
+                            <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
+                        </a>
+                        <p class="location_category">제주시 > 제주시내</p>
+                        <p class="hashtag">
+                            <a href="#">#전복김밥</a>
+                            <a href="#">#통전복주먹밥</a>
+                            <a href="#">#미역국</a>
+                        </p>
+                        <p class="my_hashtag">
+                            <a href="#">#쑥찐빵</a>
+                            <a href="#">#우유식빵</a>
+                        </p>
+                        <div class="icon_area">
+                            <ul class="clear">
+                                <li class="icon like_icon">
+                                    <a href="#">
+                                        <span>좋아요</span>
+                                        <span class="like_count">60</span>
+                                    </a>
+                                </li>
+                                <li class="icon zzim_icon">
+                                    <a href="#">
+                                        <span>찜하기</span>
+                                        <span class="zzim_count">883</span>
+                                    </a>
+                                </li>
+                                <li class="icon review_icon">
+                                    <a href="#">
+                                        <span>리뷰</span>
+                                        <span class="review_count">921</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- box_cont_area -->
+                </div>
+                <!-- box end -->
+            </div>
+            <!-- box_wrap -->
+            <div id="board_cont" class="box_wrap clear">
+                <div class="box">
+                    <div class="img_area">
+                        <a href="#">
+                            <span class="category">관광지</span>
+                            <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
+                            <span class="star_score"></span>
+                        </a>
+                    </div>
+                    <!-- img area end -->
+                    <div class="box_cont_area">
+                        <a href="#">
+                            <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
+                        </a>
+                        <p class="location_category">제주시 > 제주시내</p>
+                        <p class="hashtag">
+                            <a href="#">#전복김밥</a>
+                            <a href="#">#통전복주먹밥</a>
+                            <a href="#">#미역국</a>
+                        </p>
+                        <p class="my_hashtag">
+                            <a href="#"></a>
+                        </p>
+                        <div class="icon_area">
+                            <ul class="clear">
+                                <li class="icon like_icon">
+                                    <a href="#">
+                                        <span>좋아요</span>
+                                        <span class="like_count">60</span>
+                                    </a>
+                                </li>
+                                <li class="icon zzim_icon">
+                                    <a href="#">
+                                        <span>찜하기</span>
+                                        <span class="zzim_count">883</span>
+                                    </a>
+                                </li>
+                                <li class="icon review_icon">
+                                    <a href="#">
+                                        <span>리뷰</span>
+                                        <span class="review_count">921</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- box_cont_area -->
+                </div>
+                <!-- box end -->
+                <div class="box">
+                    <div class="img_area">
+                        <a href="#">
+                            <span class="category">관광지</span>
+                            <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
+                            <span class="star_score"></span>
+                        </a>
+                    </div>
+                    <!-- img area end -->
+                    <div class="box_cont_area">
+                        <a href="#">
+                            <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
+                        </a>
+                        <p class="location_category">제주시 > 제주시내</p>
+                        <p class="hashtag">
+                            <a href="#">#전복김밥</a>
+                            <a href="#">#통전복주먹밥</a>
+                            <a href="#">#미역국</a>
+                        </p>
+                        <p class="my_hashtag">
+                            <a href="#">#쑥찐빵</a>
+                            <a href="#">#우유식빵</a>
+                        </p>
+                        <div class="icon_area">
+                            <ul class="clear">
+                                <li class="icon like_icon">
+                                    <a href="#">
+                                        <span>좋아요</span>
+                                        <span class="like_count">60</span>
+                                    </a>
+                                </li>
+                                <li class="icon zzim_icon">
+                                    <a href="#">
+                                        <span>찜하기</span>
+                                        <span class="zzim_count">883</span>
+                                    </a>
+                                </li>
+                                <li class="icon review_icon">
+                                    <a href="#">
+                                        <span>리뷰</span>
+                                        <span class="review_count">921</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- box_cont_area -->
+                </div>
+                <!-- box end -->
+                <div class="box">
+                    <div class="img_area">
+                        <a href="#">
+                            <span class="category">관광지</span>
+                            <img src="../../img/common/board_img.gif" alt="제주김만복(만복이네김밥집)">
+                            <span class="star_score"></span>
+                        </a>
+                    </div>
+                    <!-- img area end -->
+                    <div class="box_cont_area">
+                        <a href="#">
+                            <b>제주김만복(만복이네김밥집)제주김만복(만복이네김밥집)</b>
+                        </a>
+                        <p class="location_category">제주시 > 제주시내</p>
+                        <p class="hashtag">
+                            <a href="#">#전복김밥</a>
+                            <a href="#">#통전복주먹밥</a>
+                            <a href="#">#미역국</a>
+                        </p>
+                        <p class="my_hashtag">
+                            <a href="#">#쑥찐빵</a>
+                            <a href="#">#우유식빵</a>
+                        </p>
+                        <div class="icon_area">
+                            <ul class="clear">
+                                <li class="icon like_icon">
+                                    <a href="#">
+                                        <span>좋아요</span>
+                                        <span class="like_count">60</span>
+                                    </a>
+                                </li>
+                                <li class="icon zzim_icon">
+                                    <a href="#">
+                                        <span>찜하기</span>
+                                        <span class="zzim_count">883</span>
+                                    </a>
+                                </li>
+                                <li class="icon review_icon">
+                                    <a href="#">
+                                        <span>리뷰</span>
+                                        <span class="review_count">921</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- box_cont_area -->
+                </div>
+                <!-- box end -->
+            </div>
+            <!-- box_wrap -->
+
+
+            <div class="pagination_wrap">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+                <!-- pagination end -->
+            </div>
+            <!-- pagination_wrap end-->
+
+        </div>
+        <!-- board_list end-->
+    </div>
+    <!-- content end-->
     </div>
     <!-- container end-->
+
+
+    <script>
+        var $boxs = $("#board_cont > .box");
+        var $btns = $(".btn").on("click", function () {
+
+            var active =
+                $btns.removeClass("active")
+                .filter(this)
+                .addClass("active")
+                .data("filter");
+
+            $boxs
+                .hide()
+                .filter("." + active)
+                .fadeIn(450);
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer id="footer"></footer>
     <script type="text/javascript">
         $(document).ready(function () {
