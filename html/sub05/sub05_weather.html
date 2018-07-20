@@ -102,7 +102,20 @@
                 </ul>
             </div>
             <script>
-            $.getJSON("json/weather/info", { nx:[59, 60, 61, 62] , ny:[125, 125, 125, 125] }, data => {
+                var nx = [];
+                var ny = [];
+                
+                nx[0] = decodeURIComponent(59);
+                nx[1] = decodeURIComponent(60);
+                nx[2] = decodeURIComponent(61);
+                nx[3] = decodeURIComponent(62);
+
+                ny[0] = decodeURIComponent(125);
+                ny[1] = decodeURIComponent(125);
+                ny[2] = decodeURIComponent(125);
+                ny[3] = decodeURIComponent(125);
+
+            $.getJSON("json/weather/info", { nx:nx, ny:ny }, data => {
                 
                 $(jeju_temp).text( data.jeju_temp );     
                       
