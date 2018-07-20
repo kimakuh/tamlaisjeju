@@ -115,10 +115,10 @@
                 ny[2] = decodeURIComponent(125);
                 ny[3] = decodeURIComponent(125);
 
-            $.getJSON("json/weather/info", { nx:nx, ny:ny }, data => {
+            $.getJSON("http://localhost:8080/tamlaisjeju_gilnam/json/weather/info", { nx:nx, ny:ny }, data => {
                 
                 $(jeju_temp).text( data.jeju_temp );     
-                      
+                
             })
             </script>
 
