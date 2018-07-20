@@ -1704,6 +1704,7 @@ container - 컨텐츠 스타일
 .img_wrap {
   position: relative;
   text-align: center;
+  margin:30px 0;
 }
 
 .img_wrap img {}
