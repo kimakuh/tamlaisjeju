@@ -2926,7 +2926,6 @@ curation - 큐레이션
     color: #000;
     border: 1px solid #355e89;
     background-color: #4c83bd;
-    font-size: 0.92em;
     color: #fff;
     vertical-align: middle;
     font-weight: 500;
@@ -2935,7 +2934,6 @@ curation - 큐레이션
 .board_list.curation .curation_search_box dd {
     display: table-cell;
     padding: 4px 8px;
-    font-size: 0.92em;
     border-right: 1px solid #ccc;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
