@@ -68,7 +68,7 @@
                             <img src="../../img/sub05/tour_info/sky4.png" alt="흐림">
                         </span>
                         <b>
-                            <span>24.0˚</span> 동 2 m/s
+                            <span id="jeju_temp">24.0˚</span><span id="jeju_wind">동 2 m/s</span>
                         </b>
                     </li>
                     <li class="seogwipo clear">
@@ -78,7 +78,7 @@
                             <img src="../../img/sub05/tour_info/sky4.png" alt="흐림">
                         </span>
                         <b>
-                            <span>27.0˚</span> 동 2 m/s
+                            <span id="seogwipo_temp">24.0˚</span><span id="seogwipo_wind">동 2 m/s</span>
                         </b>
                     </li>
                     <li class="sungsan clear">
@@ -88,7 +88,7 @@
                             <img src="../../img/sub05/tour_info/sky4.png" alt="흐림">
                         </span>
                         <b>
-                            <span>24.0˚</span> 남동 3 m/s
+                            <span id="sungsan_temp">24.0˚</span><span id="sungsan_wind">동 2 m/s</span>
                         </b>
                     </li>
                     <li class="kosan clear">
@@ -98,14 +98,18 @@
                             <img src="../../img/sub05/tour_info/sky4.png" alt="흐림">
                         </span>
                         <b>
-                            <span>26.0˚</span> 동 2 m/s
+                            <span id="kosan_temp">24.0˚</span><span id="kosan_wind">동 2 m/s</span>
                         </b>
                     </li>
                 </ul>
             </div>
-            <div>
-                    <?php echo '<p>Hello World</p>'; ?>
-            </div>
+            <script>
+            $.getJSON("json/weather/info"{ nx:[59, 60, 61, 62] , ny:[125, 125, 125, 125] }, data => {
+                
+                $(jeju_temp).text( data.jeju_temp );     
+                      
+            })
+            </script>
 
             <!-- img_wrap end -->
             <div class="btn_wrap">
