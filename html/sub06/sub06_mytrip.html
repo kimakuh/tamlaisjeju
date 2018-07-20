@@ -35,7 +35,7 @@
         <div id="content" class="content wrapper">
             <!-- <h3>나의 여행</h3> -->
             <div class="mytrip all">
-                <div class="profile_area">
+                <div class="profile_area clear">
                     <div class="name_area">
                         <span class="user_name">000</span>
                         <span class="text_tit">님의 제주여행</span>
@@ -62,16 +62,26 @@
                     background-color: #f5f5f5;
                 }
 
-                .profile_area .name_area{
+                .profile_area .name_area {
+                    padding: 12px;
+                }
 
+                .profile_area .name_area .user_name {
+                    color: #137ACC;
+                    font-size: 28px;
                 }
-                .profile_area .name_area .user_name{
-                    color:#137ACC;
-                    font-size:28px;
-                }
-                .profile_area .name_area .text_tit{
-                    color:#1b1b1b;
+
+                .profile_area .name_area .text_tit {
+                    color: #1b1b1b;
                     font-size: 18px;
+                }
+                .profile_area .photo_area {
+                    float: left;
+                    width: 30%;
+                }
+                .profile_area .count_area {
+                    float: left;
+                    width: 70%;
                 }
             </style>
 
