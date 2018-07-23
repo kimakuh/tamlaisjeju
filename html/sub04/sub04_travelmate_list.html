@@ -324,27 +324,6 @@
 			});
 		});
 	</script>
-	<script>
-$(function() {
-	var save_bt = $('#regi'); // 저장할 버튼을 변수에 선언
-	save_bt.click(function() {
-		var title = $('#title').html(); // 전송할 타이틀이 있는 요소
-		var text = $('#text').html(); // 전송할 내용이 있는 요소
-		$.ajax({
-			url: '/senddata.php', // 서버에 전달할 파일명
-			dataType: 'text',
-			type: 'post',
-			data: {
-				'title': idVal, // 전송할 파라미터 1
-				'text': setTitle // 전송할 파라미터 2
-			},
-			success: function() {
-			      alert('Success'); // 성공시 코드
-			}
-		});
-	})
-})
-</script>
 
 </body>
 
