@@ -103,22 +103,22 @@
             </div>
             <script>
 
-            $.getJSON("../json/weather/info", { nx:59, ny:125 }, data => {
+            $.getJSON("https://kimakuh.github.io/tamlaisjeju/json/weather/info", { nx:59, ny:125 }, data => {
                console.log(data);
                $(jeju_temp).text( data.temp + " ºC" );
                $(jeju_wind).text( data.vec +  " " + data.wsd + " m/s");
             })
-            $.getJSON("../json/weather/info", { nx:60, ny:37 }, data => {
+            $.getJSON("https://kimakuh.github.io/tamlaisjeju/json/weather/info", { nx:60, ny:37 }, data => {
                 console.log(data);
                 $(sungsan_temp).text( data.temp + " ºC" );
                 $(sungsan_wind).text( data.vec +  " " + data.wsd + " m/s");
             })
-            $.getJSON("../json/weather/info", { nx:52, ny:33 }, data => {
+            $.getJSON("https://kimakuh.github.io/tamlaisjeju/json/weather/info", { nx:52, ny:33 }, data => {
                 console.log(data);
                 $(seogwipo_temp).text( data.temp + " ºC" );
                 $(seogwipo_wind).text( data.vec +  " " + data.wsd + " m/s");
             })
-            $.getJSON("../json/weather/info", { nx:46, ny:35 }, data => {
+            $.getJSON("https://kimakuh.github.io/tamlaisjeju/json/weather/info", { nx:46, ny:35 }, data => {
                 console.log(data);
                 $(kosan_temp).text( data.temp + " ºC" );
                 $(kosan_wind).text( data.vec +  " " + data.wsd + " m/s");
