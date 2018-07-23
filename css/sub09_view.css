@@ -27,7 +27,7 @@
         z-index: 1001;
         padding-top: 40px;
         
-        margin: 50px 0 0 15%;
+        margin: 50px 0 0 300px;
     
 }
 
@@ -236,6 +236,7 @@
 }
 #sub09 .plan-info-top .plan-detail-txt .more-info-con .update-date {
     padding-top: 5px;
+    
 }
 #sub09 .plan-info-top .plan-detail-txt .more-info-con .update-date>span:first-child {
     border-left: none;
@@ -409,11 +410,4 @@
 #sub09 .absolute{
 	text-align: left;
     bottom: 200px; 
-}
-
-
-@media(max-width:1680px){
-
-    #sub09 .content .aside_wrap .info-right-box{display:none;}
-
 }
