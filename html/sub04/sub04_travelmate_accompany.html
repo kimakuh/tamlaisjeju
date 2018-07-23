@@ -2,707 +2,744 @@
 <html lang="ko">
 
 <head>
-      <!-- meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
-      <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-      <meta property="og:title" content="탐라는제주">
-      <meta property="og:type" content="website">
-      <meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-          crossorigin="anonymous">
-      <!-- css -->
-      <link rel="stylesheet" href="../../css/common.css" />
-      <link rel="stylesheet" href="../../css/layout.css" />
-      <!-- sub02 -->
-      <link rel="stylesheet" href="../../css/sub10.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-      <style type="text/css">
-          @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
-      </style>
+<!-- meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+<meta property="og:title" content="탐라는제주">
+<meta property="og:type" content="website">
+<meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+	integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	crossorigin="anonymous">
+<!-- css -->
+<link rel="stylesheet" href="../../css/common.css" />
+<link rel="stylesheet" href="../../css/layout.css" />
+<!-- sub02 -->
+<link rel="stylesheet" href="../../css/sub10.css" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<style type="text/css">
+@import
+	url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css')
+	;
+</style>
 </head>
 <body>
-        <div id="sub10_planner_header">
-            <div class="myTopnav clear" id="myTopnav">
-                    <h1>
-                        <a href="../../index.html">탐라는 제주</a>
-                    </h1>
-                    <div class="planner_set">
-                        <div class="people">
-                            <input type="text" placeholder="인원을 입력하세요">명
-                        </div>
-                        <div class="custom-select1">
-                            <select>
-                                <option value="0">일행</option>
-                                <option value="1">부모</option>
-                                <option value="2">친구</option>
-                                <option value="3">커플</option>
-                                <option value="4">혼자</option>
-                                <option value="5">아이</option>
-                                <option value="6">단체</option>
-                            </select>
-                        </div>
+	<div id="sub10_planner_header">
+		<div class="myTopnav clear" id="myTopnav">
+			<h1>
+				<a href="../../index.html">탐라는 제주</a>
+			</h1>
+			<div class="planner_set">
+				<div class="people">
+					<input type="text" placeholder="인원을 입력하세요">명
+				</div>
+				<div class="custom-select1">
+					<select>
+						<option value="0">일행</option>
+						<option value="1">부모</option>
+						<option value="2">친구</option>
+						<option value="3">커플</option>
+						<option value="4">혼자</option>
+						<option value="5">아이</option>
+						<option value="6">단체</option>
+					</select>
+				</div>
 
-                        <div class="custom-select1" style="width: 180px;">
-                                <select>
-                                    <option value="0">테마</option>
-                                    <option value="1">걷기/등산</option>
-                                    <option value="2">경관/포토</option>
-                                    <option value="3">휴식/힐링</option>
-                                    <option value="4">테마공원</option>
-                                    <option value="5">문화유적지</option>
-                                    <option value="6">미술/박물관</option>
-                                    <option value="7">액티비티</option>
-                                    <option value="8">체험관광</option>
-                                    <option value="9">드라이브</option>
-                                    <option value="10">쇼핑</option>
-                                </select>
-                            </div>
-                        
-                        <div class="tag">
-                                <input type="text" placeholder="태그 입력하세요">
-                        </div>
-                        
-                        
-                    </div>
-                        <a href="../sub09/sub09_view.html" class="plan_out"><button style="background-color: sky;" class="btn btn-primary">저장&amp;닫기</button></a>
-                        
-            </div>
-        </div>
-            
+				<div class="custom-select1" style="width: 180px;">
+					<select>
+						<option value="0">테마</option>
+						<option value="1">걷기/등산</option>
+						<option value="2">경관/포토</option>
+						<option value="3">휴식/힐링</option>
+						<option value="4">테마공원</option>
+						<option value="5">문화유적지</option>
+						<option value="6">미술/박물관</option>
+						<option value="7">액티비티</option>
+						<option value="8">체험관광</option>
+						<option value="9">드라이브</option>
+						<option value="10">쇼핑</option>
+					</select>
+				</div>
 
-    <div class="container" id="sub10" style="padding: 90px 0 0 0;">
-        <div class="content_wrap">
-            <div class="full_wrap">
-                <div class="f1 left_full_box">
-                    <div class="f1">
-                        <ul id="pn_title_box" data="" data-member_srl="">
-                            <li data="pn_data">
+				<div class="tag">
+					<input type="text" placeholder="태그 입력하세요">
+				</div>
 
-                                <div class="full_data_info f1">
-                                    <div class="cal_title">여행 일정</div>
-                                    <input type="text" name="datefilter" value="일정을 입력하세요" class="cal"/>
-                                </div>
-                              <!--  <div class="f1 day_edit_start_btn" onclick="day_edit_start()">EDIT</div> -->
-                                <div class="clear"></div>
-                            </li>
-                        </ul>
-                        <ul id="cat_menu" data="" data-member_srl="">
-                            <li id="show_all_day" data="show_all_day" original-title>전체 여행 루트</li>
-                            <li data="1" data-date="06.06" data-day_week="3" data-f_ci="" data-f_lat="" data-f_lng="" class="on" original-title="제주도">
-                                <div class="fl cat_date_left_box">
-                                    <div class="cat_left_day">DAY1</div>
-                                    <div class="cat_left_date">06.06</div>
-                                </div>
-                                <div class="fl cat_date_right_box">
-                                    <div class="cat_right_weekday">수요일</div>
-                                    <div class="cat_right_city">제주도</div>
-                                </div>
-                                <div class="clear"></div>
-                            </li>
-                            <li data="2" data-date="06.07" data-day_week="4" data-f_ci="312" data-f_lat="33.48901130" data-f_lng="126.49830230" original-title="제주도">
-                                <div class="fl cat_date_left_box">
-                                    <div class="cat_left_day">DAY2</div>
-                                    <div class="cat_left_date">06.07</div>
-                                </div>
-                                <div class="fl cat_date_right_box">
-                                    <div class="cat_right_weekday">목요일</div>
-                                    <div class="cat_right_city">제주도</div>
-                                </div>
-                                <div class="clear"></div>
-                            </li>
-                            <li data="3" data-date="06.08" data-day_week="5" data-f_ci="" data-f_lat="" data-f_lng="" original-title="">
-                                <div class="fl cat_date_left_box">
-                                    <div class="cat_left_day">DAY3</div>
-                                    <div class="cat_left_date">06.08</div>
-                                </div>
-                                <div class="fl cat_date_right_box">
-                                    <div class="cat_right_weekday">금요일</div>
-                                    <div class="cat_right_city"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </li>
-                        </ul>
-                        <ul id="cat_add_box">
-                            <li>
-                                <div class="add_box_pert" onclick="add_plan_day()"> DAY 추가</div>
-                            </li>
-                        </ul>
-                        <ul id="pn_date_controll_box" data="" data-member_srl="1360628">
-                            <li data="con_date">
-                                <div class="controll_box_pert_top">
-                                    <div class="controll_box_pert_center" onclick="$('#guide_overlay').show();">
-                                        <img src="../../img/sub10/cat_tuto_icon.png" alt="이용방법">이용방법</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="f1" id="schedule_full_box">
-                        <div class="title_box">
-                            <div id="schedule_detail_title" data-date="06-06">
-                                <div class="fl schedule_detail_title_text">
-                                    <div class="fl">DAY1
-                                        <span style="color:#999999">|</span> 06.06(수요일)</div>
-                                    <div class="fl day_reset_btn" onclick="del_plan_inspot_day_all()"></div>
-                                    <div class="fr day_next_btn" onclick="plan_day_next()"></div>
-                                    <div class="fr day_prev_btn" onclick="plan_day_prev()"></div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
 
-                        <div id="schedule_detail_box" class="connectedSortable ui-sortable">
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모,예산">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">8시</div>
-                                    <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="장소">
-                                    <div style="position:absolute;top:35px;left:40px;width:22px;height:20px;">
-                                        <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi" style="width:22px;height:20px;" alt="메모">
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title">제주 국제공항</div>
-                                    <div class="sub">공항</div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci=""  >
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="예산">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">9시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">10시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">11시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">12시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">13시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">14시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">15시</div>
-                                    <img src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg" alt="장소">
-                                    <div style="position:absolute;top:35px;left:40px;width:22px;height:20px;">
-                                        <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi" style="width:22px;height:20px;" alt="메모">
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title">제주 국제공항</div>
-                                    <div class="sub">공항</div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">16시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">17시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">18시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">19시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">20시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">21시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">22시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">23시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng=""
-                                data-ci="">
-                                <div class="item_ctrl_box" style="display: none;">
-                                    <div class="fl item_copy_plan" title="장소복사">
-                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
-                                    </div>
-                                    <div class="fl item_set_plan" title="메모&amp;예산">
-                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
-                                    </div>
-                                    <div class="fl btn_del" title="삭제">
-                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="img_box fl">
-                                    <div class="spot_order_box">24시</div>
-                                    <!--  <img src="">  -->
-                                    <div class="memo_size">
-                                        <!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
-                                    </div>
-                                </div>
-                                <div class="fl info_box">
-                                    <div class="title"></div>
-                                    <div class="sub"></div>
-                                    <div class="sub inspot_day_info_box" style="color:#1a7ad9"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
+			</div>
+			<a href="../sub09/sub09_view.html" class="plan_out"><button
+					style="border: 1px solid #2793db; color: #2793db; background-color: white;"
+					class="btn btn-primary">저장&amp;닫기</button></a>
 
-                        <div class="inspot_add_box">
-                            <div class="inspot_set_box">
-                                <div class="fl add_inspot_spot_btn" onclick="my_spot_inspot()">+ My 장소</div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div id="right_full_box" class="f1">
-                    <div id="city_list">
-                        <div class="list_title">
-                            <span>제주도</span>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="list_search_full_box">
-                            <div class="list_search_box">
-                                <form onsubmit="searchPlaces(); return false;">
-                                    <input type="text" id="keyword" placeholder="장소 검색">
-                                    <button type="submit">검색하기</button>
-                                </form>
-                            </div>
-                            <ul class="list_category_box" id="category">
-                                <li id="AT4" data-order="0">
-                                    <span class="category_bg bank">
-                                    </span>
-                                </li>
-                                <li id="FD6" data-order="1">
-                                    <span class="category_bg cafe">
-                                    </span>
-                                </li>
-                                <li id="MT1, CS2, CE7" data-order="2">
-                                    <span class="category_bg mart">
-                                    </span>
-                                </li>
-                                <li id="AD5" data-order="3">
-                                    <span class="category_bg store">
-                                    </span>
-                                </li>
-                                <li id="zzim1">
-                                    <span class="category_bg zzim">
-                                     </span>
-                                </li>
-                                <div class="clear"></div>
+		</div>
+	</div>
 
-                            
-                                </ul>
-                        </div>
-                       
-                        <div id="menu_wrap" class="bg_white">
-                                <ul id="placesList"></ul>
-                                <div id="pagination"></div>
-                            </div>
-                    </div>
-                    <div id="map" class="fr"></div>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
 
-    <div id="footer"></div>
-    <script>
+	<div class="container" id="sub10" style="padding: 90px 0 0 0;">
+		<div class="content_wrap">
+			<div class="full_wrap">
+				<div class="f1 left_full_box">
+					<div class="f1">
+						<ul id="pn_title_box" data="" data-member_srl="">
+							<li data="pn_data">
+
+								<div class="full_data_info f1">
+									<div class="cal_title">여행 일정</div>
+									<input type="text" name="datefilter" value="일정을 입력하세요"
+										class="cal" />
+								</div> <!--  <div class="f1 day_edit_start_btn" onclick="day_edit_start()">EDIT</div> -->
+								<div class="clear"></div>
+							</li>
+						</ul>
+						<ul id="cat_menu" data="" data-member_srl="">
+							<li id="show_all_day" data="show_all_day" original-title>전체
+								여행 루트</li>
+							<li data="1" data-date="06.06" data-day_week="3" data-f_ci=""
+								data-f_lat="" data-f_lng="" class="on" original-title="제주도">
+								<div class="fl cat_date_left_box">
+									<div class="cat_left_day">DAY1</div>
+									<div class="cat_left_date">06.06</div>
+								</div>
+								<div class="fl cat_date_right_box">
+									<div class="cat_right_weekday">수요일</div>
+									<div class="cat_right_city">제주도</div>
+								</div>
+								<div class="clear"></div>
+							</li>
+							<li data="2" data-date="06.07" data-day_week="4" data-f_ci="312"
+								data-f_lat="33.48901130" data-f_lng="126.49830230"
+								original-title="제주도">
+								<div class="fl cat_date_left_box">
+									<div class="cat_left_day">DAY2</div>
+									<div class="cat_left_date">06.07</div>
+								</div>
+								<div class="fl cat_date_right_box">
+									<div class="cat_right_weekday">목요일</div>
+									<div class="cat_right_city">제주도</div>
+								</div>
+								<div class="clear"></div>
+							</li>
+							<li data="3" data-date="06.08" data-day_week="5" data-f_ci=""
+								data-f_lat="" data-f_lng="" original-title="">
+								<div class="fl cat_date_left_box">
+									<div class="cat_left_day">DAY3</div>
+									<div class="cat_left_date">06.08</div>
+								</div>
+								<div class="fl cat_date_right_box">
+									<div class="cat_right_weekday">금요일</div>
+									<div class="cat_right_city"></div>
+								</div>
+								<div class="clear"></div>
+							</li>
+						</ul>
+						<ul id="cat_add_box">
+							<li>
+								<div class="add_box_pert" onclick="add_plan_day()">DAY 추가</div>
+							</li>
+						</ul>
+						<ul id="pn_date_controll_box" data="" data-member_srl="1360628">
+							<li data="con_date">
+								<div class="controll_box_pert_top">
+									<div class="controll_box_pert_center"
+										onclick="$('#guide_overlay').show();">
+										<img src="../../img/sub10/cat_tuto_icon.png" alt="이용방법">이용방법
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="f1" id="schedule_full_box">
+						<div class="title_box">
+							<div id="schedule_detail_title" data-date="06-06">
+								<div class="fl schedule_detail_title_text">
+									<div class="fl">
+										DAY1 <span style="color: #999999">|</span> 06.06(수요일)
+									</div>
+									<div class="fl day_reset_btn"
+										onclick="del_plan_inspot_day_all()"></div>
+									<div class="fr day_next_btn" onclick="plan_day_next()"></div>
+									<div class="fr day_prev_btn" onclick="plan_day_prev()"></div>
+									<div class="clear"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+
+						<div id="schedule_detail_box"
+							class="connectedSortable ui-sortable">
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모,예산">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">8시</div>
+									<img
+										src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg"
+										alt="장소">
+									<div
+										style="position: absolute; top: 35px; left: 40px; width: 22px; height: 20px;">
+										<img src="../../img/sub10/list_memo_btn_off.png"
+											class="memo_indi" style="width: 22px; height: 20px;" alt="메모">
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title">제주 국제공항</div>
+									<div class="sub">공항</div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="예산">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">9시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">10시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">11시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">12시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">13시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">14시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">15시</div>
+									<img
+										src="http://img.earthtory.com/img/place_img/312/7488_0_et.jpg"
+										alt="장소">
+									<div
+										style="position: absolute; top: 35px; left: 40px; width: 22px; height: 20px;">
+										<img src="../../img/sub10/list_memo_btn_off.png"
+											class="memo_indi" style="width: 22px; height: 20px;" alt="메모">
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title">제주 국제공항</div>
+									<div class="sub">공항</div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">16시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">17시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">18시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">19시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">20시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">21시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">22시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">23시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="day_spot_item" data="" data-set_day=""
+								data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301"
+								data-latlng="" data-ci="">
+								<div class="item_ctrl_box" style="display: none;">
+									<div class="fl item_copy_plan" title="장소복사">
+										<img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+									</div>
+									<div class="fl item_set_plan" title="메모&amp;예산">
+										<img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+									</div>
+									<div class="fl btn_del" title="삭제">
+										<img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="img_box fl">
+									<div class="spot_order_box">24시</div>
+									<!--  <img src="">  -->
+									<div class="memo_size">
+										<!-- <img src="../../img/sub10/list_memo_btn_off.png" class="memo_indi"> -->
+									</div>
+								</div>
+								<div class="fl info_box">
+									<div class="title"></div>
+									<div class="sub"></div>
+									<div class="sub inspot_day_info_box" style="color: #1a7ad9"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+
+						<div class="inspot_add_box">
+							<div class="inspot_set_box">
+								<div class="fl add_inspot_spot_btn" onclick="my_spot_inspot()">+
+									My 장소</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div id="right_full_box" class="f1">
+					<div id="city_list">
+						<div class="list_title">
+							<span>제주도</span>
+						</div>
+						<div class="clear"></div>
+						<div class="list_search_full_box">
+							<div class="list_search_box">
+								<form onsubmit="searchPlaces(); return false;">
+									<input type="text" id="keyword" placeholder="장소 검색">
+									<button type="submit">검색하기</button>
+								</form>
+							</div>
+							<ul class="list_category_box" id="category">
+								<li id="AT4" data-order="0"><span class="category_bg bank">
+								</span></li>
+								<li id="FD6" data-order="1"><span class="category_bg cafe">
+								</span></li>
+								<li id="MT1, CS2, CE7" data-order="2"><span
+									class="category_bg mart"> </span></li>
+								<li id="AD5" data-order="3"><span class="category_bg store">
+								</span></li>
+								<li id="zzim1"><span class="category_bg zzim"> </span></li>
+								<div class="clear"></div>
+
+
+							</ul>
+						</div>
+
+						<div id="menu_wrap" class="bg_white">
+							<ul id="placesList"></ul>
+							<div id="pagination"></div>
+						</div>
+					</div>
+					<div id="map" class="fr"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+	<script>
         $(document).ready(function () {
             $("#header").load("../include/sub_header.html")
             $("#footer").load("../include/sub_footer.html")
@@ -711,8 +748,9 @@
              */
         });
     </script>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=35a2267e059228624227866fafbb7d06&libraries=services"></script>
-<script>
+	<script type="text/javascript"
+		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=35a2267e059228624227866fafbb7d06&libraries=services"></script>
+	<script>
         // 마커를 클릭했을 때 해당 장소의 상세정보를 보여줄 커스텀오버레이입니다
         var placeOverlay = new daum.maps.CustomOverlay({zIndex:1}), 
             contentNode = document.createElement('div'), // 커스텀 오버레이의 컨텐츠 엘리먼트 입니다 
@@ -990,7 +1028,7 @@
  
 </script>
 
-<script>
+	<script>
 $(function() {
 
   $('input[name="datefilter"]').daterangepicker({
@@ -1012,7 +1050,7 @@ $(function() {
 </script>
 
 
-<script>
+	<script>
 /*cumtom select*/
 var x, i, j, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select1":*/
@@ -1092,7 +1130,7 @@ document.addEventListener("click", closeAllSelect);
 
 
 
-<script>
+	<script>
     /* Events fired on the drag target */
     document.addEventListener("dragstart", function(event) {
         event.dataTransfer.setData("Text", event.target.id);
@@ -1116,9 +1154,9 @@ document.addEventListener("click", closeAllSelect);
         }
     });
     </script>
-        
 
-<script>
+
+	<script>
   $('#schedule_detail_box, .list_box').on('click', '.spot_distance_box', function () {
       return false;
     });
