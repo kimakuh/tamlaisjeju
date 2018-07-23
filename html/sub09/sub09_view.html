@@ -63,11 +63,15 @@
 
 						<div class="author-page-links">
 							<ul>
-								<li><a> <span>여행일정</span><span id="tra_schedule" class="count">()</span></a></li>
-								<li><a> <span>여행리뷰</span><span id="tra_review" class="count">()</span></a></li>
+								<li><a> <span>여행일정</span><span id="tra_schedule"
+										class="count">()</span></a></li>
+								<li><a> <span>여행리뷰</span><span id="tra_review"
+										class="count">()</span></a></li>
 								<br>
-								<li><a> <span>동행횟수</span><span id="acp_num" class="count">()</span></a></li>
-								<li><a> <span>회원댓글</span><span id="mem_comment" class="count">()</span></a></li>
+								<li><a> <span>동행횟수</span><span id="acp_num"
+										class="count">()</span></a></li>
+								<li><a> <span>회원댓글</span><span id="mem_comment"
+										class="count">()</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -160,7 +164,7 @@
 						<div class="story-conts">
 							<h3>
 								<strong>Day <a href="#" id="d1">1</a>
-								</strong> <span class="desc">2016.07.12(Tue)</span>
+								</strong> <span class="desc">2016.07.12(Tue).AM(09:00)</span>
 							</h3>
 							<div class="spot-note-box">
 								<div class="spot-tit type">
@@ -267,7 +271,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- day1종료-->
+				<!-- day1종료--> 
 
 
 				<!-- 라이브리 시티 설치 코드 -->
@@ -353,6 +357,7 @@
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script> -->
+	<!-- 시티라이브리 -->
 	<script type="text/javascript">
 		(function(d, s) {
 			var j, e = d.getElementsByTagName(s)[0];
@@ -368,6 +373,21 @@
 			e.parentNode.insertBefore(j, e);
 		})(document, 'script');
 	</script>
+	<script>
+
+			$.getJSON("디스패처/클래스/메소드", {
+			   no : 1
+			}, res => {
+			   $(mid).val(res.id);
+			   $(gen).val( (res.gen == 0 ? "여" : "남") );
+			   $(content).val(res.content);
+			   $(schedule).val( "(" + res.schedule + ")" );
+			/*    $(mid).text(res.id);
+			   $(mid).html(res.id); */
+			   
+			});
+		</script>
+
 
 </body>
 
