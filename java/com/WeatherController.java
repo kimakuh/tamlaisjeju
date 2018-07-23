@@ -37,7 +37,7 @@ public class WeatherController {
         HashMap<String, Object> map = new HashMap<>();
         // 기상청 데이터 업데이트 시간 + kkmm 형식으로 변경
         if(minutes < 40) {
-            hours = hours -1;
+            hours = hours -2;
             if(hours < 0) {
                 today = today -1;
                 hours = 23;
