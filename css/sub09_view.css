@@ -238,6 +238,10 @@
     padding-top: 5px;
     
 }
+#sub09 .plan-info-top .plan-detail-txt .more-info-con .update-date p{
+    padding-top: 5px;
+    border-right: 1px solid #eee;
+}
 #sub09 .plan-info-top .plan-detail-txt .more-info-con .update-date>span:first-child {
     border-left: none;
     padding: 0 10px 0 0;
