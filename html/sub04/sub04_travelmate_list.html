@@ -208,7 +208,7 @@
 						data-target="#exampleModalCenter">일정등록</button>
 				</div>
 				<!-- Modal -->
-				<form action="">
+				<form name="form1">
 					<div class="modal fade" id="exampleModalCenter" tabindex="-1"
 						role="dialog" aria-labelledby="exampleModalCenterTitle"
 						aria-hidden="true">
@@ -291,17 +291,17 @@
 
 	<footer id="footer"></footer>
 	<script type="text/javascript">
-		$(document).ready(function () {
+		$(document).ready(function() {
 			$("#header").load("../include/sub_header.html")
 			$("#footer").load("../include/sub_footer.html")
 			/* id 지정을 통해서도 가능합니다. 
 			 $("#header").load("header.html #navbar")
 			 */
-		}); 
+		});
 	</script>
 	<!-- 모달 취소버튼시 초기화 되는 스크립트 -->
 	<script type="text/javascript">
-		$('#exampleModalCenter').on('shown.bs.modal', function () {
+		$('#exampleModalCenter').on('shown.bs.modal', function() {
 			$('#m-txt').val("");
 			$('#nplan_desc').val("");
 			$('#s-date').val("");
@@ -311,20 +311,45 @@
 		});
 	</script>
 	<!-- input type-date에 플레이스홀더를 가능하게 하는 스크립트. -->
-	<script> 
-		$('input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"]').each(function () {
-			var el = this, type = $(el).attr('type');
-			if ($(el).val() == '') $(el).attr('type', 'text');
-			$(el).focus(function () {
-				$(el).attr('type', type);
-				el.click();
-			});
-			$(el).blur(function () {
-				if ($(el).val() == '') $(el).attr('type', 'text');
-			});
-		});
+	<script>
+		$(
+				'input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"]')
+				.each(function() {
+					var el = this, type = $(el).attr('type');
+					if ($(el).val() == '')
+						$(el).attr('type', 'text');
+					$(el).focus(function() {
+						$(el).attr('type', type);
+						el.click();
+					});
+					$(el).blur(function() {
+						if ($(el).val() == '')
+							$(el).attr('type', 'text');
+					});
+				});
 	</script>
-	
+	<script type="text/javascript">
+		function test() {
+
+			var param = $("form[name=form1]").serialize();
+
+			$.ajax({
+				type : "POST",
+				url : "/https://kimakuh.github.io/tamlaisjeju/html/sub04/sub04_travelmate_list.html",
+				data : param
+				,
+				success : function(data) {
+					alert("성공");
+				},
+				error : function(data) {
+					alert("error");
+				}
+			});
+		} 
+	</script>
+
+
+
 </body>
 
 </html>

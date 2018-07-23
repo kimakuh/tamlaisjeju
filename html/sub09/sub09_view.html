@@ -373,20 +373,7 @@
 			e.parentNode.insertBefore(j, e);
 		})(document, 'script');
 	</script>
-	<script>
-
-			$.getJSON("http://52.78.63.49/phpMyAdmin/sql.php?server=1&db=project&table=TAMLA_ACCOMPANY_REGI&pos=0",function(data) {
-			   no : 1
-			}, res => {
-			   $(mid).val(res.id);
-			   $(gen).val( (res.gen == 0 ? "여" : "남") );
-			   $(content).val(res.content);
-			   $(schedule).val( "(" + res.schedule + ")" );
-			/*    $(mid).text(res.id);
-			   $(mid).html(res.id); */
-			   
-			});
-		</script>
+	
 
 
 </body>
