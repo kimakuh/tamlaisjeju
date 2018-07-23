@@ -102,24 +102,28 @@
                 </ul>
             </div>
             <script>
-                var nx = [];
-                var ny = [];
-                
-                nx[0] = decodeURIComponent(59);
-                nx[1] = decodeURIComponent(60);
-                nx[2] = decodeURIComponent(61);
-                nx[3] = decodeURIComponent(62);
 
-                ny[0] = decodeURIComponent(125);
-                ny[1] = decodeURIComponent(125);
-                ny[2] = decodeURIComponent(125);
-                ny[3] = decodeURIComponent(125);
-
-            $.getJSON("http://localhost:8080/tamlaisjeju_gilnam/json/weather/info", { nx:nx, ny:ny }, data => {
-                
-                $(jeju_temp).text( data.jeju_temp );     
-                
+            $.getJSON("http://localhost:8888/tamlaisjeju_gilnam/json/weather/info", { nx:59, ny:125 }, data => {
+               console.log(data);
+               $(jeju_temp).text( data.temp + " ºC" );
+               $(jeju_wind).text( data.vec +  " " + data.wsd + " m/s");
             })
+            $.getJSON("http://localhost:8888/tamlaisjeju_gilnam/json/weather/info", { nx:60, ny:37 }, data => {
+                console.log(data);
+                $(sungsan_temp).text( data.temp + " ºC" );
+                $(sungsan_wind).text( data.vec +  " " + data.wsd + " m/s");
+            })
+            $.getJSON("http://localhost:8888/tamlaisjeju_gilnam/json/weather/info", { nx:52, ny:33 }, data => {
+                console.log(data);
+                $(seogwipo_temp).text( data.temp + " ºC" );
+                $(seogwipo_wind).text( data.vec +  " " + data.wsd + " m/s");
+            })
+            $.getJSON("http://localhost:8888/tamlaisjeju_gilnam/json/weather/info", { nx:46, ny:35 }, data => {
+                console.log(data);
+                $(kosan_temp).text( data.temp + " ºC" );
+                $(kosan_wind).text( data.vec +  " " + data.wsd + " m/s");
+            })
+            
             </script>
 
             <!-- img_wrap end -->
