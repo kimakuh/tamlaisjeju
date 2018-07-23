@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -19,23 +20,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/weather")
 public class WeatherController {
     
-    WeatherController() {
-        super();
-    }
-
     @RequestMapping("info")
-    public Object weather(int[] nx, int[] ny) {
+    public Object weather(int nx, int ny) {
+        System.out.println("123");
         BufferedReader br = null;
-
-        nx[0] = URLDecoder.decode(nx[0], "UTF-8");
-        nx[1] = URLDecoder.decode(nx[1], "UTF-8");
-        nx[2] = URLDecoder.decode(nx[2], "UTF-8");
-        nx[3] = URLDecoder.decode(nx[3], "UTF-8");
-
-        ny[0] = URLDecoder.decode(ny[0], "UTF-8");
-        ny[1] = URLDecoder.decode(ny[1], "UTF-8");
-        ny[2] = URLDecoder.decode(ny[2], "UTF-8");
-        ny[3] = URLDecoder.decode(ny[3], "UTF-8");
         
         //현재 날짜 받아오기
         SimpleDateFormat day = new SimpleDateFormat("yyyyMMdd", Locale.KOREA);
@@ -120,6 +108,7 @@ public class WeatherController {
             }catch(Exception e){
                 System.out.println(e);
             }
+        System.out.println(map);
         return map;
         }
      
