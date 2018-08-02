@@ -1,0 +1,1215 @@
+@charset "utf-8";
+
+/**************************************************************************************
+all - 여행필수정보 전체
+***************************************************************************************/
+
+#sub05 {
+    padding-top: 83px;
+    min-height: 500px;
+}
+
+#sub05 #content {
+    margin: 0 auto 30px;
+    /* padding: 0px 20px 100px; */
+    width: 1200px;
+}
+
+#sub05 .location_wrap {
+    height: 50px;
+    padding: 11px 28px;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+}
+
+#sub05 .location {
+    float: left;
+}
+
+#sub05 .ico_home {
+    width: 15px;
+    height: 27px;
+    background: url(../img/sub05/common/ico_home.png) no-repeat 0 50%;
+    text-indent: -9999px;
+}
+
+#sub05 .location_wrap .location a,
+#sub05 .location_wrap .location div.lst_depth,
+#sub05 .location_wrap .location span {
+    display: block;
+    float: left;
+}
+
+#sub05 .location_wrap .location .lst_depth,
+#sub05 .location_wrap .location .p_depth {
+    height: 27px;
+    margin-left: 6px;
+    font-size: 14px;
+    color: #959595;
+    line-height: 27px;
+}
+
+#sub05 .location_wrap .location .lst_depth .btn_dropdown {
+    padding-right: 15px;
+    color: #535353;
+    background: url(../img/sub05/common/bg_locaion_dropdown.gif) no-repeat right 5px;
+    cursor: pointer;
+}
+
+#sub05 .location_wrap .location .lst_depth .snb_menu_box {
+    position: absolute;
+    top: 49px;
+    overflow-y: scroll;
+    min-width: 165px;
+    max-height: 236px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    z-index: 100;
+}
+
+#sub05 .snb_menu_box {
+    top: auto;
+    margin-top: 38px;
+    overflow: hidden;
+    outline: none;
+    display: none;
+}
+
+#sub05 .location_wrap .location .lst_depth .snb_menu_box a {
+    display: block;
+    float: none;
+    padding-right: 5px;
+    padding-left: 20px;
+    line-height: 39px;
+    color: #535353;
+}
+
+#sub05 .snb_menu_box a.active {
+    background-color: #2168f6;
+}
+
+#sub05 .snb_menu_box a:nth-child(odd) {
+    background-color: #fff;
+}
+
+#sub05 .snb_menu_box a:nth-child(2n) {
+    background-color: #fbfbfb;
+}
+
+#sub05 .location_wrap .location {
+    float: left;
+}
+
+#sub05 .location_wrap .location a,
+#sub05 .location_wrap .location div.lst_depth,
+#sub05 .location_wrap .location span {
+    display: block;
+    float: left;
+}
+
+#sub05 .location_wrap .util_zone {
+    float: right;
+}
+
+#sub05 .location_wrap .util_zone .btn_s_lnk {
+    -webkit-box-shadow: 1px 1px #c1c1c1;
+    box-shadow: 1px 1px #c1c1c1;
+}
+
+#sub05 .location_wrap .util_zone .btn_s_lnk {
+    display: block;
+    float: left;
+    width: 73px;
+    height: 25px;
+    border: 1px solid #959595;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #959595;
+    line-height: 25px;
+    text-align: center;
+}
+
+#sub05 .location_wrap .util_zone .util_list {
+    float: left;
+    margin-left: 27px;
+}
+
+#sub05 .location_wrap .util_zone .util_list li {
+    float: left;
+    margin: 0 0 0 12px;
+}
+
+#sub05 .location_wrap .util_zone .util_list li a.btn_kt {
+    margin-left: 0;
+    background: url(../img/sub05/sub05/common/ico_kakao.png) no-repeat 0 50%;
+}
+
+#sub05 .location_wrap .util_zone .util_list li a.btn_fb {
+    margin-left: 0;
+    background: url(../img/sub05/sub05/common/ico_facebook.png) no-repeat 0 50%;
+}
+
+#sub05 .location_wrap .util_zone .util_list li a.btn_tw {
+    margin-left: 0;
+    background: url(../img/sub05/common/ico_twitter.png) no-repeat 0 50%;
+}
+
+#sub05 .location_wrap .util_zone .util_list li a.btn_pr {
+    margin-left: 0;
+    background: url(../img/sub05/common/ico_print.png) no-repeat 0 50%;
+}
+
+#sub05 .location_wrap .util_zone .util_list li a.btn_re {
+    margin-left: 0;
+    background: url(../img/sub05/common/ico_report.png) no-repeat 0 50%;
+}
+
+#sub05 .location_wrap .util_zone .util_list li a {
+    display: block;
+    width: 22px;
+    height: 27px;
+    margin-left: 17px;
+    text-indent: -9999px;
+}
+
+#sub05 .cont_wrap {
+    margin: 0;
+    padding: 50px 0 0;
+}
+
+#sub05 .landing_area {
+    position: relative;
+    margin-left: -2%;
+    margin-top: 2%;
+}
+
+#sub05 .landing_item {
+    position: relative;
+    margin: 0 0 2% 2%;
+    padding: 21px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 3px 4px 5px 0 rgba(2, 2, 2, .2);
+    width: calc(50% - 63px);
+    float: left;
+    width: 48%;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#sub05 .landing_img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#sub05 .landing_item .landing_tit {
+    position: absolute;
+    top: 77px;
+    z-index: 20;
+    width: 100%;
+    padding-top: 17px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    text-shadow: 0 0 11px rgba(0, 0, 0, .8);
+}
+
+#sub05 .lowmenu-img {
+    width: 528px;
+    height: 160px;
+}
+
+#sub05.landing_s_tit {
+    display: -webkit-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 18px 0 0;
+    overflow: hidden;
+    height: 84px;
+    text-overflow: ellipsis;
+    -ms-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-size: 14px;
+    color: #535353;
+    line-height: 22px;
+}
+
+#sub05 .jeju_story .landing_item .landing_lnk {
+    padding-top: 16px;
+}
+
+#sub05 .landing_item .landing_lnk {
+    padding-top: 16px;
+    margin: 0 -10px;
+}
+
+#sub05 .landing_lnk {
+    overflow: hidden;
+}
+
+#sub05 .landing_item .landing_lnk a,
+#sub05 .landing_item .landing_lnk a:first-child {
+    display: table-cell;
+    width: calc(50% - 22px);
+    border: 0 solid #2168f6;
+    margin: 5px 10px;
+    height: auto;
+    min-height: 20px;
+    overflow: hidden;
+    border: 1px solid #2168f6;
+    border-radius: 3px;
+}
+
+#sub05 .landing_item .landing_lnk a {
+    word-break: keep-all;
+}
+
+#sub05 .landing_item .landing_lnk a {
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2168f6;
+    line-height: 20px;
+    text-align: center;
+}
+
+#sub05 .landing_item .landing_lnk a:hover {
+    border: 1px solid #2168f6;
+    background: #2168f6;
+}
+
+#sub05 .landing_lnk a span {
+    display: block;
+    text-align: left;
+    padding: 6px 10px 6px 20px;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2168f6;
+    line-height: 20px;
+    background-image: url(../img/sub05/common/icon_arrow02.png);
+    background-repeat: no-repeat;
+    background-position: right 5px;
+}
+
+#sub05 .landing_lnk a:hover span {
+    color: #fff;
+    background-image: url(../img/sub05/common/icon_arrow01.png);
+}
+
+/**************************************************************************************
+weather - 제주 날씨
+***************************************************************************************/
+
+
+
+
+#sub05 div.weatherMap {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background: url(../img/sub05/tour_info/mapBg.gif);
+    text-align: center;
+}
+
+#sub05 div.weatherMap img {
+    display: inline-block;
+    width: 65%;
+    height: auto;
+}
+
+#sub05 ul.weather {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 60px 0 0;
+}
+
+#sub05 ul.weather li:first-child {
+    top: -12px;
+    left: 387px;
+}
+
+#sub05 ul.weather li:nth-child(2) {
+    bottom: 10px;
+    left: 410px;
+}
+
+#sub05 ul.weather li:nth-child(3) {
+    top: 124px;
+    right: 0;
+}
+
+#sub05 ul.weather li:nth-child(4) {
+    top: 330px;
+    left: -4px;
+}
+
+#sub05 ul.weather li:last-child {
+    margin-right: 0;
+}
+
+#sub05 ul.weather li {
+    position: absolute;
+    display: block;
+    text-align: center;
+    height: 220px;
+    overflow: hidden;
+    float: left;
+    width: calc(25% - 12px);
+    margin-right: 16px;
+}
+
+#sub05 ul.weather li .title {
+    margin: 20px 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+#sub05 ul.weather li .icon {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 50%;
+}
+
+#sub05 ul.weather li .info {
+    display: block;
+    float: left;
+    text-align: left;
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+#sub05 .hide {
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    margin: 0 -1px -1px 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+#sub05 ul.weather li .icon img {
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+}
+
+#sub05 div.weatherMap img {
+    display: inline-block;
+    width: 65%;
+    height: auto;
+}
+
+#sub05 ul.weather li .info strong {
+    display: block;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+#sub05 .sub-detail .weather_btn {
+    display: block;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 17px;
+    line-height: 22px;
+    margin: 40px auto 0;
+    padding: 0;
+    text-align: center;
+}
+
+#sub05 .sub-detail .weather_btn a {
+    display: block;
+    width: 100%;
+    padding: 15px 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#sub05 .btn.darkcyan {
+    background: #2168f6;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#sub05 .btn {
+    color: #fff;
+    border: none;
+    padding: 0 30px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sub05 .sub-detail .weather_btn a {
+    display: block;
+    width: 100%;
+    padding: 15px 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/**************************************************************************************
+traffic_one - 교통정보안내 - 항공
+***************************************************************************************/
+
+#sub05 .cont_wrap h3 {
+    font-size: 35px;
+    color: #1b1b1b;
+    line-height: 35px;
+    text-align: center;
+    }
+    #sub05 .cont_wrap.h3_txt, #sub05 .cont_wrap.h4_txt {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    }
+    #sub05 .cont_wrap .h3_txt {
+    margin-top: 24px;
+    font-size: 18px;
+    color: #555;
+    line-height: 30px;
+    text-align: center;
+    }
+    
+    #sub05 .theme_list {
+    margin-top: 64px;
+    border: 1px solid #e5e5e5;
+    border-bottom: 0;
+    }
+    #sub05 .item_5 li {
+    width: 231px;
+    }
+    #sub05 .theme_list li:first-child {
+    width: 20%;
+    border-left: 0;
+    }
+    #sub05 .theme_list li {
+    display: table;
+    float: left;
+    width: 20%;
+    height: 42px;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    }
+    #sub05 .theme_list li {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    #sub05 .theme_list.item_5 li.on {
+    width: 230px;
+    }
+    #sub05 .theme_list li a {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #959595;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    }
+    #sub05 .theme_list li.on a {
+    background: #2168f6;
+    color: #fff;
+    }
+    
+    #sub05 .sub-detail .detail-text {
+    margin: 60px 0 0;
+    text-align: left;
+    overflow: hidden;
+    }
+    
+    #sub05 .btnC {
+    padding: 10px 0;
+    text-align: center;
+    }
+    #sub05 .btnC, #sub05 .btnL {
+    display: block;
+    }
+    #sub05 .btnC.btn:first-child {
+    margin-left: 0;
+    }
+    #sub05 .btn.line {
+    border: 2px solid #333;
+    color: #333;
+    background: #fff;
+    }
+    #sub05 .btnC.btn {
+    margin-left: 10px;
+    }
+    #sub05 .btnT {
+    height: 47px;
+    line-height: 47px;
+    font-size: 18px;
+    }
+    #sub05 .btn {
+    color: #fff;
+    border: none;
+    padding: 0 30px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    }
+    
+    #sub05 .tour_info .cont_inner_wrap {
+    padding-top: 60px;
+    text-align: center;
+    }
+    #sub05 .sub-detail{
+        margin-top:30px
+    }
+    #sub05 .sub-detail .subImg {
+    display: inline-block;
+    margin: 10px 0 30px;
+    }
+    
+    #sub05 .sub-detail h4.sub_title {
+    font-size: 24px;
+    }
+    #sub05 .tour_info .cont_inner_wrap h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    }
+    #sub05 .sub-detail .tit35, #sub05 .sub-detail h4 {
+    font-size: 35px;
+    color: #222;
+    line-height: 46px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    }
+    #sub05 .cont_wrap h4 {
+    font-size: 35px;
+    color: #1b1b1b;
+    line-height: 35px;
+    text-align: center;
+    }
+    #sub05 .sub-detail h4.sub_title+p {
+    font-size: 16px;
+    margin-top: 10px;
+    }
+    #sub05 .sub-detail h4+p {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    line-height: 27px;
+    letter-spacing: -1px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************************************************
+traffic_one - 교통정보안내 - 여객선/도항선
+***************************************************************************************/
+
+
+
+
+#sub05 .sub_detail{margin:30px 0;}
+
+
+#sub05 .detail-text {
+    margin: 60px 0 0;
+    text-align: left;
+    }
+
+    #sub05 .detail-text h5 {
+    display: block;
+    margin-bottom: 24px;
+    padding-left: 16px;
+    background: url(../img/sub05/common/iconH4.png) no-repeat 0;
+    font-size: 22px;
+    text-align: left;
+    line-height: 1.3;
+    }
+    #sub05 .sub-detail .text {
+    font-size: 14px;
+    padding: 0 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    }
+    
+    #sub05 .sub-detail .sub_tab {
+    overflow: hidden;
+    width: 600px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+    }
+    #sub05 .sub-detail .sub_tab ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 0 50px;
+    }
+    #sub05 .sub-detail .sub_tab ul li {
+    position: relative;
+    float: left;
+    }
+    #sub05 .sub-detail .sub_tab ul li.on a {
+    color: #535353;
+    }
+    #sub05 .sub-detail .sub_tab ul li a {
+    color: #959595;
+    padding: 0 20px;
+    }
+    #sub05 .sub-detail .sub_tab ul li a.active{
+    color: #000;
+
+}
+
+    
+#sub05 .tour_info .table-type01 td, #sub05 .tour_info .table-type01 th {
+        border: 1px solid #e2e2e2;
+        border-right: none;
+        border-top: none;
+        font-size: 14px;
+        padding: 15px 0;
+        }
+        
+        #sub05 .tour_info .table-type01 th {
+        background: #f0f0f0;
+        font-weight: 400;
+        }
+        
+    
+
+        #sub05  .detail-text {
+        margin: 60px 0 0;
+        text-align: left;
+        }
+        
+        #sub05 .table-type01 {
+        width: 100%;
+        border: 1px solid #e2e2e2;
+        margin-bottom: 30px;
+        line-height: 1.3;
+        }
+        #sub05 .table-type01.center {
+        text-align: center;
+        }
+        #sub05  .table-type01.w100 {
+        width: 100%;
+        }
+        #sub05  .table-type01 td, .table-type01 th {
+        border: 1px solid #e2e2e2;
+        border-right: none;
+        border-top: none;
+        font-size: 14px;
+        padding: 15px 0;
+        }
+        #sub05 .table-type01 th {
+        background: #f0f0f0;
+        font-weight: 400;
+        }
+        #sub05 .table-type01 td {
+        position: relative;
+        height: auto;
+        }
+        #sub05 .table-type01 td, .table-type01 th {
+        border: 1px solid #e2e2e2;
+        border-right: none;
+        border-top: none;
+        font-size: 14px;
+        padding: 15px 0;
+        }
+        
+        #sub05 .lineTitle {
+        display: inline-block;
+        height: 24px;
+        width: 100%;
+        position: relative;
+        padding-bottom: 50px;
+        margin-top: 60px;
+        line-height: 1.1;
+        }
+        #sub05 .mt0 {
+        margin-top: 0!important;
+        }
+        #sub05 .lineTitle strong {
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 24px;
+        }
+        #sub05 .lineTitle em {
+        display: inline-block;
+        background: #fff;
+        padding: 0 15px;
+        }
+
+         
+        
+        #sub05 .btn.orange {
+        background: #2168f6;
+        color: #fff;
+        border-radius: 5px;
+        }
+        #sub05 .btnB, #sub05 .btnB02 {
+        font-size: 17px;
+        }
+        #sub05 .btnB {
+        height: 49px;
+        line-height: 49px;
+        }
+        #sub05 .btn {
+        color: #fff;
+        border: none;
+        padding: 0 30px;
+        font-weight: 400;
+        display: inline-block;
+        vertical-align: middle;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************************************************
+tourInfo -관광 문의
+***************************************************************************************/
+
+
+
+
+
+        .cont_wrap h3 {
+            font-size: 35px;
+            color: #1b1b1b;
+            line-height: 35px;
+            text-align: center;
+        }
+
+        .cont_wrap .h3_txt,
+        .cont_wrap .h4_txt {
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        .cont_wrap .h3_txt {
+            margin-top: 24px;
+            font-size: 18px;
+            color: #555;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        #sub05 .slogun {
+            padding: 50px 0 40px 0;
+            text-align: center;
+        }
+
+        #sub05 .inquiryTop {
+            border: 1px #22698f solid;
+            min-height: 50px;
+            overflow: hidden;
+        }
+
+        #sub05 .inquiryTop li {
+            float: left;
+        }
+
+        #sub05.cont_wrap img {
+            vertical-align: top;
+        }
+
+        #sub05 .inquiryList {
+            padding: 50px 30px 80px 30px;
+        }
+
+        #sub05 .inquiryList li {
+            min-height: 50px;
+            overflow: hidden;
+            padding: 0 0 50px 0;
+        }
+
+        #sub05 .inquiryList li dt {
+            float: left;
+            width: 16%;
+        }
+
+        #sub05 .inquiryList li dt img {
+            width: 117px;
+        }
+
+        #sub05 .inquiryList li dd {
+            float: left;
+            width: 84%;
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+        }
+
+        #sub05 .inquiryList li dd strong {
+            display: block;
+            font-size: 28px;
+            line-height: 32px;
+            color: #000000;
+            padding: 12px 0 20px 0;
+        }
+
+        #sub05 .tour_info .cont_inner_wrap {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        #sub05 .tourInquiry .sub-detail {
+            padding-top: 30px;
+        }
+
+        #sub05 .tourInquiry .sub-detail .detail-text {
+            margin: 0;
+        }
+
+        #sub05 .detail-text {
+            text-align: left !important;
+        }
+
+        #sub05 h4.lineTitle:first-child {
+            margin-top: 0;
+        }
+
+        #sub05 .tour_info .cont_inner_wrap h4 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        #sub05 .lineTitle {
+            display: inline-block;
+            height: 24px;
+            width: 100%;
+            position: relative;
+            padding-bottom: 50px;
+            margin-top: 60px;
+            line-height: 1.1;
+        }
+
+        #sub05 .sub-detail .tit35,
+        #sub05 .sub-detail h4 {
+            font-size: 35px;
+            color: #222;
+            line-height: 46px;
+            font-weight: 400;
+            letter-spacing: -1px;
+        }
+
+        .cont_wrap h4 {
+            font-size: 35px;
+            color: #1b1b1b;
+            line-height: 35px;
+            text-align: center;
+        }
+
+        #sub05 .lineTitle strong {
+            display: block;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 24px;
+        }
+
+        #sub05 .lineTitle em {
+            display: inline-block;
+            background: #fff;
+            padding: 0 15px;
+        }
+
+        #sub05 .detail-text {
+            text-align: left !important
+        }
+
+        #sub05 .tourInquiry .sub-detail {
+            padding-top: 30px;
+        }
+
+        #sub05 .tour_info .content-group {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #sub05 .tourInquiry .sub-detail .detail-text {
+            margin: 0;
+        }
+
+        #sub05 .content-group .left {
+            width: 570px;
+            float: left;
+            text-align: center;
+        }
+
+        #sub05 .content-group .right {
+            width: 570px;
+            float: right;
+            text-align: center;
+        }
+
+        #sub05 .sub-detail .detail-text .tit22,
+        #sub05 .sub-detail .detail-text h5 {
+            display: block;
+            margin-bottom: 24px;
+            padding-left: 16px;
+            background: url(../img/common/iconH4.png) no-repeat 0;
+            font-size: 22px;
+            text-align: left;
+            line-height: 1.3;
+        }
+
+        #sub05 .sub-detail .text dt {
+            margin-top: 10px;
+        }
+
+
+
+
+
+/**************************************************************************************
+notice - 공지사항
+***************************************************************************************/
+
+
+
+
+
+#sub05 .tbl_type01 {
+    border-top: 2px solid #535353;
+    font-size: 16px;
+}
+
+#sub05 .tbl_type01 td,
+#sub05 .tbl_type01 th {
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#sub05 .tbl_type01 th {
+    padding: 0;
+    font-size: 17px;
+    color: #1b1b1b;
+}
+
+#sub05 .tbl_type01 td {
+    color: #535353;
+    text-align: center;
+}
+
+
+#sub05 .board_wrap .paging_wrap {
+    position: relative;
+    padding-bottom: 70px;
+}
+
+#sub05 .paging_wrap {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#sub05 .paging {
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#sub05 .paging .page-wrap {
+    display: inline-block;
+}
+
+#sub05 .paging .page-wrap a.page-first,
+#sub05 .paging .page-wrap a.page-last {
+    margin: 0 3px;
+}
+
+#sub05 .paging .page-wrap a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#sub05 .spr_com.page-first {
+    background-position: 0 -100px;
+}
+
+#sub05 .spr_com {
+    display: inline-block;
+    background: url(../img/sub05/common/spr_comm.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#sub05 .spr_com.ico-file {
+    width: 9px;
+    height: 18px;
+    background-position: -60px -20px;
+}
+
+#sub05 .spr_com.page-prev {
+    background-position: -30px -100px;
+    margin-right: 30px !important;
+}
+
+#sub05 .paging a.current {
+    color: #fff !important;
+    font-weight: 700;
+    border-color: #2168f6;
+    background-color: #2168f6;
+}
+
+#sub05 .spr_com.page-next {
+    background-position: -60px -100px;
+    margin-left: 30px !important;
+}
+
+#sub05 .spr_com.page-last {
+    background-position: -90px -100px;
+}
+
+#sub05 .board_wrap .search_wrap {
+    padding: 15px 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#sub05 .board_wrap .search_wrap div {
+    display: inline-block;
+}
+
+#sub05 .search_wrap .i-select {
+    float: left;
+    margin-right: 10px;
+    background: url(../img/sub05/commom/ico_arr_dn.png) no-repeat 145px 50% #fff;
+}
+
+#sub05 .search_wrap .i-select select {
+    width: 180px;
+    padding: 12px 0 13px 15px;
+    font-size: 18px;
+    color: #959595;
+    line-height: 18px;
+}
+
+#sub05 .i-select select {
+    min-width: 120px;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+}
+
+#sub05 .board_wrap .search_wrap div input {
+    float: left;
+    width: 488px;
+    height: 43px;
+    padding-left: 10px;
+    border: 1px solid #e5e5e5;
+    font-family: inherit;
+    font-size: 14px;
+    color: #000;
+    line-height: 43px;
+}
+
+#sub05 .board_wrap .search_wrap div .btn_search {
+    float: left;
+    width: 100px;
+    height: 45px;
+    margin-left: 20px;
+    padding-left: 48px;
+    background: url(../img/sub05/common/ico_btn_search.png) no-repeat 22px 50%;
+    background-color: #2168f6;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 45px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+/**************************************************************************************
+notice_view - 공지사항 뷰
+***************************************************************************************/
+
+
+
+#sub05 .tbl_type02 {
+    border-top: 2px solid #535353;
+    font-size: 16px;
+}
+
+#sub05 .tbl_type02 td,
+#sub05 .tbl_type02 th {
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+#sub05 .tbl_type02 th {
+    padding: 0 0 0 30px;
+    font-size: 17px;
+    color: #1b1b1b;
+}
+
+#sub05 .tbl_type02 td {
+    padding: 0 30px;
+    border-left: 1px solid #e5e5e5;
+    color: #535353;
+}
+
+#sub05 .tbl_type02 td,
+#sub05 .tbl_type02 th {
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+#sub05 .btnC {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#sub05 .btnC,
+#sub05 .btnL {
+    display: block;
+}

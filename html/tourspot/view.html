@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+	<meta property="og:title" content="탐라는제주">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+	<!-- font -->
+	<link rel="stylesheet" href="//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	    crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- css -->
+	<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/layout.css" />
+
+</head>
+
+<body>
+
+	<header id="header"></header>
+	<div id="container" class="container">
+		<div id="visual">
+			<img src="../../img/sub01/sub01_visual.jpg" alt="대표이미지">
+		</div>
+		<!-- visual end -->
+		<div id="content" class="content wrapper">
+			
+			<div id="travelContents">
+
+
+
+			</div>
+			<div id="detailIntro"> </div>
+
+
+
+
+
+
+
+	</div>
+	<!-- content end -->
+	</div>
+	<!-- container end-->
+
+
+
+
+
+	<footer id="footer"></footer>
+
+
+
+
+
+
+
+
+	<!-- js -->
+	<script src="../../node_modules/handlebars/dist/handlebars.min.js"></script>
+	<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../js/common/common.js"></script>
+	<script src="tourapi.js"></script>
+	<!-- <script src="list.js"></script> -->
+
+	<script>
+		$(document).ready(function () {
+			$("#header").load("../include/sub_header.html")
+			$("#footer").load("../include/sub_footer.html")
+			/* id 지정을 통해서도 가능합니다. 
+			 $("#header").load("header.html #navbar")
+			 */
+		});
+	</script>
+
+
+
+
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8dfe4ef61743ed1851a59061fe320e0d"></script>
+
+
+	<script>
+		$(function () {
+			// common.leftMenuImport();
+			var id = $.urlParam('id');
+			var item = $.urlParam('item');
+			common.getInfo('get', 'detailCommon', "contentTypeId=" + item + "&contentId=" + id +
+				"&MobileOS=ETC&MobileApp=AppTest&defaultYN=Y&firstImageYN=Y&areacodeYN=Y&catcodeYN=Y&addrinfoYN=Y&mapinfoYN=Y&overviewYN=Y&transGuideYN=Y",
+				parsing.contentsParsing);
+			common.getInfo('get', 'detailIntro', "contentTypeId=" + item + "&contentId=" + id +
+				"&MobileOS=ETC&MobileApp=AppTest&defaultYN=Y&firstImageYN=Y&areacodeYN=Y&catcodeYN=Y&addrinfoYN=Y&mapinfoYN=Y&overviewYN=Y&transGuideYN=Y",
+				common.detailPageIntroInfoDraw);
+		})
+
+		$.urlParam = function (name) {
+			var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+			return results[1] || 0;
+		}
+
+		var parsing = {
+
+			test: function (data) {
+				console.log(data)
+			},
+			contentsParsing: function (data) {
+				var InfoElements;
+				var list = data.response.body.items.item
+				InfoElements =
+					"<div class='col-md-12'>" +
+					"<figure class='text-center'>" +
+					"<img src='" + list.firstimage + "'" + "alt='이미지가 없습니다' class='img-responsive'>" +
+					"</figure>" +
+					"</div>" +
+					"<div class='col-md-12'>" +
+					"<figcaption>" +
+					"<ul>" +
+					"<li>" +
+					"<span> " + "<h2>" + list.title + "</h2>" + "</span>" +
+					"</li>" +
+					"<li>" +
+					"<b>위치</b>" +
+					"<span> " + list.addr1 + "</span>" +
+					"</li>" +
+					"<li>" +
+					"<b>문의</b>" +
+					"<span> " + list.tel + "</span>" +
+					"</li>" +
+					"</ul>" +
+					"</figcaption>"
+
+					+
+					"<div class='buttonSet text-center'>"
+				if (list.homepage != undefined) {
+					InfoElements + list.homepage
+				}
+				InfoElements += "</div>"
+
+					+
+					"<div class='col-md-12'>" +
+					"<div class='cntBox'>" +
+					"<ul>" +
+					"<li><em>개요</em> <p style='text-align:justify;'>" +
+					list.overview +
+					"</li>" +
+					"<li><div id='map' style='width:100%; height:300px;'></div></li>" +
+					"<li><em>정보제공자</em>" +
+					"<ul>" +
+					"<li>" + list.telname + "</li>" +
+					"</ul>" +
+					"</li>" +
+					"</ul>" +
+					"</div>" +
+					"</div>" +
+					"</div>"
+				$("#travelContents").append(InfoElements)
+
+
+				var mapContainer = document.getElementById('map'),
+					mapOption = {
+						center: new daum.maps.LatLng(list.mapy, list.mapx),
+						level: 3
+					};
+				var map = new daum.maps.Map(mapContainer, mapOption);
+				var mapTypeControl = new daum.maps.MapTypeControl(); // 맵 타입컨트롤러 추가 
+				var zoomControl = new daum.maps.ZoomControl(); // 줌 컨트롤러 추가 
+				var markerPosition = new daum.maps.LatLng(list.mapy, list.mapx); // 마커 position SET 
+				var marker = new daum.maps.Marker({
+					position: markerPosition
+				});
+				map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPRIGHT);
+				map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
+				marker.setMap(map);
+			}
+		}
+	</script>
+
+
+
+</body>
+
+</html>

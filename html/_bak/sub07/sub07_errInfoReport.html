@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta property="og:title" content="탐라는제주">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <!-- sub02 -->
+    <link rel="stylesheet" href="../../css/sub07.css" />
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+
+    <style type="text/css">
+		@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+	</style>
+	</head>
+<body>
+	<div id="header"></div>
+	<div class="container" id="sub7">
+		<div class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#"> <img src="home.png" width="30"
+				height="30" class="d-inline-block align-top">
+			</a>
+			<div class="menu">
+				<button class="btn_url">단축 URL</button>
+				<a href="https://www.kakaocorp.com/service/KakaoTalk?lang=ko"
+					class="btn_kt">kakao</a> <a href="https://www.facebook.com/"
+					class="btn_fb">facebook</a> <a href="https://twitter.com/"
+					class="btn_tw">twitter</a> <a href="www.naver.com" class="btn_pr">print</a>
+				<a href="www.naver.com" class="btn_re">report</a>
+
+			</div>
+		</div>
+		<button type="button" class="btn_write">글쓰기</button>
+		<div class="btn_next">
+			<button type="button"><<</button>
+			<button type="button"><</button>
+			<button type="button" style="margin-left: 30px">></button>
+			<button type="button">>></button>
+		</div>
+ 
+		<div class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#"> </a>
+			<nav class="navbar navbar-light bg-light">
+				
+				<select id="select">
+				<option value="subject" selected="selected">제목</option>
+				<option value="description">내용</option>
+				</select>
+				
+				<form class="form-inline">
+				<input id="search" type="search" placeholder="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색하기</button>
+				</form>
+			</nav>
+
+		</div>
+
+	</div>
+	<div id="footer"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
+
+</body>
+</html>

@@ -1,3 +1,558 @@
 @charset "utf-8";
+/* #mcontainer{padding:168px 0 0 0;margin:0 auto;width:1200px;} */
 
-#mcontainer{padding:168px 0 0 0;margin:0 auto;width:1200px;}
+
+
+
+
+
+#mvisual {
+    height: 950px;
+    overflow: hidden;
+    position: relative;
+}
+
+#mvisual ul li {
+    position: relative;
+    width: 100%;
+    height: 950px;
+    text-align: center;
+}
+
+#mvisual ul li.img01 {
+    background: url('../img/main/visual_img01.jpg') no-repeat 0 50%;
+    background-size: cover;
+}
+
+#mvisual ul li.img02 {
+    background: url('../img/main/visual_img02.jpg') no-repeat 0 50%;
+    background-size: cover;
+}
+
+#mvisual ul li.img03 {
+    background: url('../img/main/visual_img03.jpg') no-repeat 0 50%;
+    background-size: cover;
+}
+
+#mvisual ul li.img04 {
+    background: url('../img/main/visual_img04.jpg') no-repeat 0 50%;
+    background-size: cover;
+}
+
+#mvisual ul li.img05 {
+    background: url('../img/main/visual_img05.jpg') no-repeat 0 50%;
+    background-size: cover;
+}
+
+#mvisual ul li.img06 {
+    background: url('../img/main/visual_img06.jpg') no-repeat 0 50%;
+    background-size: cover;
+}
+
+#mvisual .slick-slider {
+    position: relative;
+    height: 950px;
+}
+
+#mvisual .slick-prev,
+#mvisual .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 118px;
+    height: 118px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 1000;
+}
+
+#mvisual .slick-prev::before,
+#mvisual .slick-next::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/main/control_btn_bg.png");
+    opacity: 0.4;
+}
+
+#mvisual .slick-prev {
+    background: url("../img/main/control_arr_left_ico.png") no-repeat 50% 50%;
+    left: 0;
+}
+
+#mvisual .slick-next {
+    background: url("../img/main/control_arr_right_ico.png") no-repeat 50% 50%;
+    right: 0;
+}
+
+#mvisual ul li div.tit_box {
+    position: absolute;
+    top: 380px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    z-index: 1000;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#mvisual ul li span.img_text {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: #fff;
+    vertical-align: middle;
+    z-index: 1000;
+    font-size: 14px;
+}
+
+#mvisual ul li span.img_text i {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#mvisual ul li span.visual_bg {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/main/mvisual_bg.png") repeat;
+    z-index: 100;
+}
+
+#mvisual ul li h3 {
+    position: relative;
+    margin: 25px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 50px;
+}
+
+#mvisual ul li p {
+    color: #fff;
+    font-size: 23px;
+}
+
+#mvisual .weather_area {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    z-index: 1000;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#mvisual .weather_area .weather_img {
+    position: relative;
+    width: 127px;
+    height: 127px;
+    margin: 15px auto;
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+
+#mvisual .weather_area .wico {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 64px;
+    height: 64px;
+    background: url("../img/main/weather_icon.png") no-repeat;
+    font-size: 0;
+}
+
+#mvisual .weather_area .wico.weather1 {
+    background-position: 0 0;
+}
+
+#mvisual .weather_area .wico.weather2 {
+    background-position: -70px 0;
+}
+
+#mvisual .weather_area .wico.weather3 {
+    background-position: -140px 0;
+}
+
+#mvisual .weather_area .wico.weather4 {
+    background-position: -209px 0;
+}
+
+#mvisual .weather_area .wico.weather5 {
+    background-position: -279px 0;
+}
+
+#mvisual .weather_area .wico.weather6 {
+    background-position: -350px 0;
+}
+
+#mvisual .weather_area .wico.weather7 {
+    background-position: -419px 0;
+}
+
+#mvisual .weather_area .today_area {}
+
+#mvisual .weather_area .today_area .today {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+}
+
+#mvisual .weather_area .today_area span {
+    display: inline-block;
+    font-size: 57px;
+    line-height: 57px;
+    font-weight: bold;
+}
+
+#mvisual .weather_area .today_area .month {}
+
+#mvisual .weather_area .today_area .bar {}
+
+#mvisual .weather_area .today_area .date {}
+
+#mvisual .weather_area .weather_txt {
+    text-align: center;
+}
+
+#mvisual .weather_area p {
+    text-align: center;
+}
+
+#mvisual .weather_area p a {
+    color: #fff;
+}
+
+#mvisual .vmore {
+    position: absolute;
+    left: 50%;
+    margin-left: -36px;
+    z-index: 20;
+    bottom: 60px;
+}
+
+@keyframes shake {
+    0%,
+    100% {}
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateY(-20px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateY(20px);
+    }
+}
+
+#mvisual .shake {
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+}
+
+#mvisual .vmore .scroll {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 104px;
+}
+
+#mvisual .vmore.bot .scroll {
+    height: 65px;
+    background: url("../img/main/scroll_down.png") no-repeat 50% 0;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+/**************************mcontent**************************/
+
+#mcontent {}
+
+#mcontent .mcont_area {
+    margin: 2% auto;
+}
+
+#mcontent h3 {
+    margin: 0 0 25px 0;
+    font-size: 35px;
+    color: #1b1b1b;
+    line-height: 43px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#mcontent .mcont_area ul {
+    /*overflow: hidden;*/
+}
+
+#mcontent .mcont_area ul li {
+    position: relative;
+    float: left;
+    width: 22.5%;
+    margin: 2% 0 0 2%;
+}
+
+/*당신만의 여행을 경험해 보세요. */
+
+#mcontent .mcont_area ul.best_spot {
+    position: relative;
+    width: 84%;
+    margin: 0 auto;
+}
+
+#mcontent .mcont_area ul.best_spot li {
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+#mcontent .mcont_area ul.best_spot li a {
+    display: inline-block;
+    height: 285px;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    margin: -4px;
+
+    /* margin: -4px 0px -4px -4px; */
+}
+
+#mcontent .mcont_area ul.best_spot li a img {
+    display: block;
+    width: 100%;
+}
+
+#mcontent .mcont_area ul.best_spot li a span {
+    display: block;
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    padding:20px;
+   background:url("../img/main/img_bg.png") repeat;
+}
+
+#mcontent .mcont_area ul.best_spot li a span b {
+    display: block;
+    text-align: left;
+}
+
+#mcontent .mcont_area ul.best_spot .slick-prev,
+#mcontent .mcont_area ul.best_spot .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 25px;
+    height: 47px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 2000;
+}
+
+#mcontent .mcont_area ul.best_spot .slick-prev {
+    background: url("../img/main/best_spot_arr_left.png") no-repeat 50% 50%;
+    left: -8%;
+}
+
+#mcontent .mcont_area ul.best_spot .slick-next {
+    background: url("../img/main/best_spot_arr_right.png") no-repeat 50% 50%;
+    right: -8%;
+}
+
+/* 가장 인기있는 플래너 best_planner */
+
+#mcontent .mcont_area.best_planner {
+    padding: 2% 0;
+    background-color: #62636a;
+}
+
+#mcontent .mcont_area.best_planner h3 {
+    color: #fff;
+}
+
+#mcontent .mcont_area.best_planner .h3_txt {
+    color: #fff;
+}
+
+#mcontent .mcont_area.best_planner ul {}
+
+#mcontent .mcont_area.best_planner ul li {
+    color: #fff;
+    margin: 0 auto;
+}
+
+#mcontent .mcont_area.best_planner figure {
+    overflow: hidden;
+    width: 84%;
+    margin: 0 auto;
+}
+
+#mcontent .mcont_area.best_planner figure span.img_area {
+    display: block;
+    float: right;
+    width: 30%;
+}
+
+#mcontent .mcont_area.best_planner figure span.img_area img {
+    height: 255px;
+}
+
+#mcontent .mcont_area.best_planner figcaption {
+    display: block;
+    float: left;
+    width: 65%;
+}
+
+#mcontent .mcont_area.best_planner figcaption b {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#mcontent .mcont_area.best_planner figcaption i {
+    padding-left: 5px;
+}
+
+#mcontent .mcont_area.best_planner figcaption h4 {
+    margin-bottom: 15px;
+    font-size: 37px;
+    color: #e4c02b;
+    line-height: 45px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: -4px;
+    word-wrap: normal;
+    overflow: hidden;
+}
+
+#mcontent .mcont_area.best_planner figcaption p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 26px;
+}
+
+#mcontent .mcont_area.best_planner figcaption .more_btn {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 8px 23px 8px 20px;
+    border: 1px solid #e4c02b;
+    font-size: 15px;
+    color: #e4c02b;
+}
+
+#mcontent .mcont_area.best_planner figcaption .more_btn:hover,
+#mcontent .mcont_area.best_planner figcaption .more_btn:focus,
+#mcontent .mcont_area.best_planner figcaption .more_btn:active {
+    background-color: #e4c02b;
+    color: #1d1d1d;
+}
+
+#mcontent .mcont_area.best_planner .slick-prev,
+#mcontent .mcont_area.best_planner .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 26px;
+    height: 47px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 2000;
+    margin-top: -23px;
+}
+
+#mcontent .mcont_area.best_planner .slick-prev {
+    background: url("../img/main/best_planner_arr_left.png") no-repeat 50% 50%;
+    left: 0;
+}
+
+#mcontent .mcont_area.best_planner .slick-next {
+    background: url("../img/main/best_planner_arr_right.png") no-repeat 50% 50%;
+    right: 0;
+}
+
+/* 더 많은 여행정보는? */
+
+#mcontent .mcont_area ul.trip_info {}
+
+#mcontent .mcont_area ul.trip_info li {}
+
+#mcontent .mcont_area ul.trip_info li a {
+    display: block;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+}
+
+#mcontent .mcont_area ul.trip_info li a b {
+    display: block;
+    font-size: 23px;
+    /* font-size: 26px; */
+    color: #212121;
+    margin: 20px 0;
+}
+
+#mcontent .mcont_area ul.trip_info li a span {
+    display: block;
+}
+
+#mcontent .mcont_area ul.trip_info li a strong {
+    display: block;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+#mcontent .mcont_area ul.trip_info li a strong.blog {
+    color: #1ec200;
+}
+
+#mcontent .mcont_area ul.trip_info li a strong.post {
+    color: #1ec200;
+}
+
+#mcontent .mcont_area ul.trip_info li a strong.facebook {
+    color: #275bab;
+}
+
+#mcontent .mcont_area ul.trip_info li a strong.instagram {
+    color: #f03657
+}
+
+/**************************************************************************************
+반응형
+***************************************************************************************/
+
+@media(max-width:1300px) {
+    #header {}
+    #header .inner_header {}
+    #header .inner_header .menu_area {
+        width: 98%;
+    }
+}

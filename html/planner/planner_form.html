@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+      <!-- meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>탐라는제주 - 숨어 있던 진짜 hot한 제주</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+      <meta property="og:title" content="탐라는제주">
+      <meta property="og:type" content="website">
+      <meta property="og:description" content="탐라는제주 - 숨어 있던 진짜 hot한 제주">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+          crossorigin="anonymous">
+      <!-- css -->
+      <link rel="stylesheet" href="../../css/common.css" />
+      <link rel="stylesheet" href="../../css/layout.css" />
+      <!-- sub02 -->
+      <link rel="stylesheet" href="../../css/sub10.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+      <style type="text/css">
+          @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+      </style>
+</head>
+<body>
+        <div id="sub10_planner_header">
+            <div class="myTopnav clear" id="myTopnav">
+                    <h1>
+                        <a href="../../index.html">탐라는 제주</a>
+                    </h1>
+                    <div class="planner_set">
+                        <div class="people">
+                            <input type="text" placeholder="인원을 입력하세요">명
+                        </div>
+                        <div class="custom-select1">
+                            <select>
+                                <option value="0">일행</option>
+                                <option value="1">부모</option>
+                                <option value="2">친구</option>
+                                <option value="3">커플</option>
+                                <option value="4">혼자</option>
+                                <option value="5">아이</option>
+                                <option value="6">단체</option>
+                            </select>
+                        </div>
+
+                        <div class="custom-select1" style="width: 180px;">
+                                <select>
+                                    <option value="0">테마</option>
+                                    <option value="1">걷기/등산</option>
+                                    <option value="2">경관/포토</option>
+                                    <option value="3">휴식/힐링</option>
+                                    <option value="4">테마공원</option>
+                                    <option value="5">문화유적지</option>
+                                    <option value="6">미술/박물관</option>
+                                    <option value="7">액티비티</option>
+                                    <option value="8">체험관광</option>
+                                    <option value="9">드라이브</option>
+                                    <option value="10">쇼핑</option>
+                                </select>
+                            </div>
+                        
+                        <div class="tag">
+                                <input type="text" placeholder="태그 입력하세요">
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="plan_out">
+                        <div class="plan_out_btn">저장&amp;닫기
+                            <a href="../sub11/sub11_myschedule.html"></a>
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>
+            
+
+    <div class="container" id="sub10" style="padding: 90px 0 0 0;">
+        <div class="content_wrap">
+            <div class="full_wrap">
+                <div class="f1 left_full_box">
+                    <div class="f1">
+                        <ul id="pn_title_box" data="" data-member_srl="">
+                            <li data="pn_data">
+
+                                <div class="full_data_info f1">
+                                    <div class="cal_title">여행 일정</div>
+                                     <input type="text" name="datefilter" id="datefilter" placeholder="일정을 입력하세요" class="cal"/>
+                                </div>
+                              <!--  <div class="f1 day_edit_start_btn" onclick="day_edit_start()">EDIT</div> -->
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+                        <ul id="cat_menu" data="" data-member_srl="">
+                            <li id="show_all_day" data="show_all_day" original-title>전체 여행 루트</li>
+                            <li id="cat_date_all">
+                             <!--    <div class="fl cat_date_left_box">
+                                    <div class="cat_left_day">DAY1</div>
+                                    <div class="cat_left_date">06.06</div>
+                                </div>
+                                <div class="fl cat_date_right_box">
+                                    <div class="cat_right_weekday">수요일</div>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li data="2" data-date="06.07" data-day_week="4" data-f_ci="312" data-f_lat="33.48901130" data-f_lng="126.49830230" original-title="제주도">
+                                <div class="fl cat_date_left_box">
+                                    <div class="cat_left_day">DAY2</div>
+                                    <div class="cat_left_date">06.07</div>
+                                </div>
+                                <div class="fl cat_date_right_box">
+                                    <div class="cat_right_weekday">목요일</div>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li data="3" data-date="06.08" data-day_week="5" data-f_ci="" data-f_lat="" data-f_lng="" original-title="">
+                                <div class="fl cat_date_left_box">
+                                    <div class="cat_left_day">DAY3</div>
+                                    <div class="cat_left_date">06.08</div>
+                                </div>
+                                <div class="fl cat_date_right_box">
+                                    <div class="cat_right_weekday">금요일</div>
+                                </div>
+                                <div class="clear"></div> -->
+                            </li>
+                        </ul>
+                        <ul id="pn_date_controll_box" data="" data-member_srl="1360628">
+                            <li data="con_date">
+                                <div class="controll_box_pert_top">
+                                    <div class="controll_box_pert_center" onclick="$('#guide_overlay').show();">
+                                        <img src="../../img/sub10/cat_tuto_icon.png" alt="이용방법">이용방법</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="f1" id="schedule_full_box">
+                        <div class="schedule_full" id="defaultOpen">
+                        <div class="title_box">
+                            <div id="schedule_detail_title" data-date="06-06">
+                                <div class="fl schedule_detail_title_text">
+                                    <div class="fl">일정입력하세요
+                                        <span style="color:#999999">|</span></div>
+                                    <div class="fl day_reset_btn" onclick="del_plan_inspot_day_all()"></div>
+                                    <div class="fr day_next_btn" onclick="plan_day_next()"></div>
+                                    <div class="fr day_prev_btn" onclick="plan_day_prev()"></div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+
+                        <div id="schedule_detail_box" class="connectedSortable ui-sortable">
+                            <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+	                            <div class="item_ctrl_box" style="display: none;">
+	                                <div class="fl item_copy_plan" title="장소복사">
+	                                    <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+	                                </div>
+	                                <div class="fl item_set_plan" title="메모&amp;예산">
+	                                    <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+	                                </div>
+	                                <div class="fl btn_del" title="삭제">
+	                                    <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+	                                </div>
+	                                <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">8시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">9시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">10시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">11시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">12시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">13시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">14시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">15시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">16시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">17시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">18시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">19시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">20시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">21시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">22시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">23시</div>
+                            </div>
+                             <div class="day_spot_item" data="" data-set_day="" data-rel_srl="" data-pl_type="" data-no="" data-pl_cat="301" data-latlng="" data-ci="">
+                                <div class="item_ctrl_box" style="display: none;">
+                                    <div class="fl item_copy_plan" title="장소복사">
+                                        <img src="../../img/sub10/item_more_icon_a.png" alt="장소복사">
+                                    </div>
+                                    <div class="fl item_set_plan" title="메모&amp;예산">
+                                        <img src="../../img/sub10/item_set_icon_a.png" alt="메모">
+                                    </div>
+                                    <div class="fl btn_del" title="삭제">
+                                        <img src="../../img/sub10/item_del_icon_a.png" alt="삭제">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="spot_order_box">24시</div>
+                            </div>
+                        </div>
+
+                        <div class="inspot_add_box">
+                            <div class="inspot_set_box">
+                                <div class="fl add_inspot_spot_btn" onclick="my_spot_inspot()">+ My 장소</div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="right_full_box" class="f1">
+                    <div id="city_list">
+                        <div class="list_title">
+                            <span>제주도</span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="list_search_full_box">
+                            <div class="list_search_box">
+                                    <input type="text" id="keyword" placeholder="장소 검색" onFocus="this.value='';return true;">
+                            </div>
+                            <ul class="list_category_box" id="category">
+                                <li id="a12" data-order="0" class="tourist"> <!-- 관광지 -->
+                                </li>
+                                <li id="a39" data-order="1" class="food"> <!-- 음식 -->
+                                </li>
+                                <li id="a38" data-order="2" class="shop"> <!-- 쇼핑 -->
+                                </li>
+                                <li id="a32" data-order="3" class="hotel"> <!-- 숙박 -->
+                                </li>
+                                <li id="a50" class="zzim"> <!-- 찜 -->
+                                </li>
+                            </ul>
+                        </div>
+
+                       
+                        <div id="menu_wrap" class="bg_white">
+                                <ul id="placesList" class="filterUL"></ul>
+                                <!-- <div id="pagination"></div> -->
+                            </div>
+                    </div>
+                    <div id="map" class="fr"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="../../node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("../include/sub_header.html")
+            $("#footer").load("../include/sub_footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+             $("#header").load("header.html #navbar")
+             */
+        });
+    </script>
+    
+<script id="tr-template" type="text/x-handlebars-template">
+{{#each list}}
+                        <div class="item" id=dragitem{{@index}}; draggable="true" data-target={{@index}}>
+                            <div class="img" style=background-image:url("{{firstimage2}}"></div>
+                            <div class="title_info">
+                            <div class="title" onclick="markerOverlay(this)" id=clti{{@index}};>{{title}}</div>
+                            <div class="info clear">{{addr1}}</div>
+                            <div class="contentid_info" style="display:none";>{{contentid}}</div>
+                            <div class="lat" style="display:none";>{{mapy}}</div>
+                            <div class="lng" style="display:none";>{{mapx}}</div>
+                            <div class="url" style="display:none";>{{firstimage2}}</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+{{/each}}
+
+</script>
+
+<script type="text/javascript">
+ jQuery(function($) {
+      $('#keyword').keyup(function(event) {
+         var val = $(this).val();
+         if (val == "") {
+             $('.filterUL .item').show();
+          } else {
+             $('.filterUL .item').hide();
+              $(".filterUL .item:contains('"+val+"')").show();
+          }
+     });
+ });
+</script>
+
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=35a2267e059228624227866fafbb7d06&libraries=services"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+    mapOption = { 
+        center: new daum.maps.LatLng(33.38003512348535,126.63019113977133), // 지도의 중심좌표
+        level: 9 // 지도의 확대 레벨
+    };
+var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+// 마커를 표시할 위치와 title 객체 배열입니다 
+var overlay;
+var marker;
+var prevClickItem = null;
+var prevClickMarker = null;
+let datas = [];
+
+function markerOverlayDelete() {
+	if (marker != null || overlay != null) {
+		   marker.setMap(null);
+		   overlay.setMap(null);
+	}
+	
+}
+
+$('#a12').on('click', function() {
+	markerOverlayDelete()
+	if (datas != null) {
+		datas = [];
+	}
+	var input = document.getElementById("keyword").value='';
+$.getJSON("http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?serviceKey=AghOwOn9iSRKD4eyNq4IepTd%2F3cDZ%2FWIuLq3zY4QHRE3OKKaRIRd6XHMc%2F66smnwRpZ0eSsflIyqdd9yrL30Dg%3D%3D&pageNo=1&startPage=1&numOfRows=999&pageSize=20&MobileApp=AppTest&MobileOS=ETC&arrange=A&areaCode=39&listYN=Y&contentTypeId=12&_type=json", 
+		function(contentTypeId) {
+	        var item = contentTypeId.response.body.items.item;
+	        console.log(item);
+	        for(let data of item) { 
+	        	if (data.firstimage2 == null) {
+                    data.firstimage2 = 'http://tong.visitkorea.or.kr/cms/resource/93/197693_image3_1.jpg';
+                }
+	        	let w = data.contenttypeid;
+	        	let x = data.mapy;
+	        	let y = data.mapx;
+	        	let z = data.firstimage2;
+	        	if( typeof(x) == "String" || typeof(x) == "string" )
+	        		x = parseFloat(x);
+	            if( typeof(y) == "String" || typeof(y) == "string" )
+	                y = parseFloat(y)
+	        	
+	        	datas.push({title:data.title, lat: x, lng:y, img:z, contenttypeid:w});
+	        }
+	  
+// 마커 이미지의 이미지 주소입니다
+});
+});
+
+
+$('#a39').on('click', function() {
+	markerOverlayDelete()
+	if (datas != null) {
+        datas = [];
+    }
+    var input = document.getElementById("keyword").value='';
+$.getJSON("http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?serviceKey=AghOwOn9iSRKD4eyNq4IepTd%2F3cDZ%2FWIuLq3zY4QHRE3OKKaRIRd6XHMc%2F66smnwRpZ0eSsflIyqdd9yrL30Dg%3D%3D&pageNo=1&startPage=1&numOfRows=999&pageSize=20&MobileApp=AppTest&MobileOS=ETC&arrange=A&areaCode=39&listYN=Y&contentTypeId=39&_type=json", 
+        function(contentTypeId) {
+            var item = contentTypeId.response.body.items.item;
+            
+            for(let data of item) { 
+                if (data.firstimage2 == null) {
+                    data.firstimage2 = 'http://tong.visitkorea.or.kr/cms/resource/97/689597_image3_1.jpg';
+                }
+                let w = data.contenttypeid;
+                let x = data.mapy;
+                let y = data.mapx;
+                let z = data.firstimage2;
+                if( typeof(x) == "String" || typeof(x) == "string" )
+                    x = parseFloat(x);
+                if( typeof(y) == "String" || typeof(y) == "string" )
+                    y = parseFloat(y)
+                
+                Promise.resolve(datas.push( { title:data.title, lat: x, lng:y, img:z, contenttypeid:w}));
+            }
+      
+// 마커 이미지의 이미지 주소입니다
+});
+});
+
+
+$('#a38').on('click', function() {
+	markerOverlayDelete()
+	if (datas != null) {
+        datas = [];
+    }
+    var input = document.getElementById("keyword").value='';
+$.getJSON("http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?serviceKey=AghOwOn9iSRKD4eyNq4IepTd%2F3cDZ%2FWIuLq3zY4QHRE3OKKaRIRd6XHMc%2F66smnwRpZ0eSsflIyqdd9yrL30Dg%3D%3D&pageNo=1&startPage=1&numOfRows=999&pageSize=20&MobileApp=AppTest&MobileOS=ETC&arrange=A&areaCode=39&listYN=Y&contentTypeId=38&_type=json", 
+        function(contentTypeId) {
+            var item = contentTypeId.response.body.items.item;
+            
+            for(let data of item) { 
+                if (data.firstimage2 == null) {
+                    data.firstimage2 = 'http://tong.visitkorea.or.kr/cms/resource/92/818792_image3_1.jpg';
+                }
+                let w = data.contenttypeid;
+                let x = data.mapy;
+                let y = data.mapx;
+                let z = data.firstimage2;
+                if( typeof(x) == "String" || typeof(x) == "string" )
+                    x = parseFloat(x);
+                if( typeof(y) == "String" || typeof(y) == "string" )
+                    y = parseFloat(y)
+                
+                Promise.resolve(datas.push( { title:data.title, lat: x, lng:y, img:z, contenttypeid:w}));
+            }
+      
+// 마커 이미지의 이미지 주소입니다
+});
+});
+
+
+$('#a32').on('click', function() {
+	markerOverlayDelete()
+	if (datas != null) {
+        datas = [];
+    }
+    var input = document.getElementById("keyword").value='';
+$.getJSON("http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?serviceKey=AghOwOn9iSRKD4eyNq4IepTd%2F3cDZ%2FWIuLq3zY4QHRE3OKKaRIRd6XHMc%2F66smnwRpZ0eSsflIyqdd9yrL30Dg%3D%3D&pageNo=1&startPage=1&numOfRows=999&pageSize=20&MobileApp=AppTest&MobileOS=ETC&arrange=A&areaCode=39&listYN=Y&contentTypeId=32&_type=json", 
+        function(contentTypeId) {
+            var item = contentTypeId.response.body.items.item;
+            
+            for(let data of item) { 
+                if (data.firstimage2 == null) {
+                    data.firstimage2 = 'http://tong.visitkorea.or.kr/cms/resource/11/729311_image3_1.jpg';
+                }
+                let w = data.contenttypeid;
+                let x = data.mapy;
+                let y = data.mapx;
+                let z = data.firstimage2;
+                if( typeof(x) == "String" || typeof(x) == "string" )
+                    x = parseFloat(x);
+                if( typeof(y) == "String" || typeof(y) == "string" )
+                    y = parseFloat(y)
+                
+                Promise.resolve(datas.push( { title:data.title, lat: x, lng:y, img:z, contenttypeid:w}));
+            }
+      
+// 마커 이미지의 이미지 주소입니다
+});
+});
+
+
+function markerPoint(datas) {
+		    var bounds = new daum.maps.LatLngBounds();
+			if (!(overlay == null)) {
+				closeOverlay();  
+			}
+			console.log(datas)
+			if (datas.contenttypeid == 12) {
+			var imageSrc = '../../img/sub10/301_0.png';
+			} 
+			else if (datas.contenttypeid == 39) {
+			var imageSrc = '../../img/sub10/200_0.png';
+			}
+			else if (datas.contenttypeid == 38) {
+            var imageSrc = '../../img/sub10/400_0.png';
+            }
+			else if (datas.contenttypeid == 32) {
+            var imageSrc = '../../img/sub10/100_0.png';
+            }
+            var imageSize = new daum.maps.Size(45, 45); // 마커이미지의 크기입니다
+            var imageOption = {offset: new daum.maps.Point(20, 20)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다
+            var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption);
+            marker = new daum.maps.Marker({
+            	map: map,
+            	position: new daum.maps.LatLng(datas.lat, datas.lng),
+            	image: markerImage
+            })
+            
+	        bounds.extend(new daum.maps.LatLng(datas.lat, datas.lng));
+            var content = '<div class="customoverlay">' +'<img src=' + datas.img + '>' 
+				            + '<div>' + datas.title + '</div>' + '</div>'
+				            + '<div class="close" onclick="closeOverlay()" title="닫기"></div>';
+	        overlay = new daum.maps.CustomOverlay({
+	            content: content,
+	            map: map,
+	            position: new daum.maps.LatLng(datas.lat, datas.lng)
+	        });
+	        overlay.setMap(map);
+	        map.setBounds(bounds);
+	        map.setLevel(8);
+}
+		function closeOverlay() {
+			overlay.setMap(null);   
+			overlay = null;
+			marker.setMap(null);
+		}
+
+function markerOverlay(node) {
+        
+        for (var i = 0; i < datas.length; i++) {
+            if (datas[i].title == node.textContent) {
+                if(prevClickItem != null)
+                	prevClickItem.removeClass('on');
+                prevClickItem = $(node).parent().parent();
+                prevClickItem.addClass('on');
+                markerPoint(datas[i]);
+            }
+        }
+}  
+</script>
+<script>
+function dayRootMap(dayRootIndex) {
+	for (var i = 0; i < dayMarkers.length; i ++) {
+		var dmk = dayMarkers[i];
+		var mol = mapOverlays[i];
+		var pl = polylines[i];
+		for (var z = 0; z < dmk.length; z++) {
+			dmkl = dmk[z];
+			moll = mol[z];
+			pll = pl[z];
+			dmkl.setMap(null);
+			moll.setMap(null);
+			pll.setMap(null);
+		}
+	}
+	update12();
+		/* var lp = linePaths[i]; */
+	/* dayMarkers.setMap(null);
+	mapOverlay[0].setMap(null);
+	polyline[0].setMap(null);  */
+	function update12() {
+		console.log(dayRootIndex)
+		  dayRootIndexNo = parseInt(dayRootIndex.substring(3))-1;
+		console.log(dayRootIndexNo)
+		var dayIndexNo11 = dayRootIndexNo;
+			
+		for (var s = 0; s < dayMarkers[dayIndexNo11].length; s ++) {
+			console.log(dayMarkers[dayIndexNo11])
+			var aaa = dayMarkers[dayIndexNo11][s]
+			var bbb = mapOverlays[dayIndexNo11][s]
+			var ccc = polylines[dayIndexNo11][s]
+			aaa.setMap(map);
+			bbb.setMap(map); 
+			ccc.setMap(map); 
+		}
+	    };
+}
+var dayRootIndexNo = null;
+var dayMarker = [];
+var dayMarkers = [];
+var polyline = [];
+var polylines = [];
+var linePath = [];
+var linePaths = [];
+var mapOverlay = [];
+var mapOverlays = [];
+var dayIndexNo = null;
+function dayRoot(dayIndex, daySchedule) {
+	  dayIndexNo = parseInt(dayIndex.substring(3))-1;
+      
+	  var imageSrc1 = 'http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png';
+	  var imageSize1 = new daum.maps.Size(24, 35); // 마커이미지의 크기입니다
+      var imageOption1 = {offset: new daum.maps.Point(13, 25)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다
+      var markerImage1 = new daum.maps.MarkerImage(imageSrc1, imageSize1, imageOption1);
+      dayMarker[dayIndexNo] = new daum.maps.Marker({
+          position: new daum.maps.LatLng($(daySchedule).children()[3].textContent, $(daySchedule).children()[4].textContent),
+          image: markerImage1,
+      });
+      dayMarkers[dayIndexNo].push(dayMarker[dayIndexNo]);
+      dayMarker[dayIndexNo].setMap(map);
+      /* if (marker1 == ) */
+      linePath[dayIndexNo].push(new daum.maps.LatLng($(daySchedule).children()[3].textContent, $(daySchedule).children()[4].textContent));
+    	// 지도에 표시할 선을 생성합니다
+    	linePaths.push(linePath[dayIndexNo]);
+    	polyline[dayIndexNo] = new daum.maps.Polyline({
+    	    path: linePath[dayIndexNo], // 선을 구성하는 좌표배열 입니다
+    	    strokeWeight: 5, // 선의 두께 입니다
+    	    strokeColor: '#FFAE00', // 선의 색깔입니다
+    	    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+    	    strokeStyle: 'solid' // 선의 스타일입니다
+    	});
+    	polylines[dayIndexNo].push(polyline[dayIndexNo]);
+    	polyline[dayIndexNo].setMap(map); 
+    	
+    	var content1 = '<div class="customoverlay">' + '<div>' + $(daySchedule).children()[0].textContent + '</div>' + '</div>';
+        mapOverlay[dayIndexNo] = new daum.maps.CustomOverlay({
+		content: content1,
+		position: new daum.maps.LatLng($(daySchedule).children()[3].textContent, $(daySchedule).children()[4].textContent)
+		});
+        mapOverlay[dayIndexNo].setMap(map);
+        mapOverlays[dayIndexNo].push(mapOverlay[dayIndexNo]);
+        
+}
+
+</script>
+
+
+
+<script>
+$(function() {
+  $('input[name="datefilter"]').daterangepicker({
+      autoUpdateInput: false,
+      locale: {
+          cancelLabel: 'Clear'
+      }
+  });
+
+  $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+	  $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format('YYYY/MM/DD'));
+	  calDate();
+  });
+
+  $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+  });
+
+});
+var dayOfWeek = null;
+var calMonthDate = null;
+function calDate() {
+    if ($('.cal')[0].value.match(/-/) != null) {
+    
+    var strDate1 = $('.cal')[0].value.split(" - ")[0].split("/")[0] + "-" + $('.cal')[0].value.split(" - ")[0].split("/")[1] + "-" + $('.cal')[0].value.split(" - ")[0].split("/")[2]
+    var strDate2 = $('.cal')[0].value.split(" - ")[1].split("/")[0] + "-" + $('.cal')[0].value.split(" - ")[1].split("/")[1] + "-" + $('.cal')[0].value.split(" - ")[1].split("/")[2]
+    var arr1 = strDate1.split('-');
+    var arr2 = strDate2.split('-');
+    var dat1 = new Date(arr1[0], arr1[1], arr1[2]);
+    var dat2 = new Date(arr2[0], arr2[1], arr2[2]);
+    
+    var diff = dat2 - dat1;
+    var currDay = 24 * 60 * 60 * 1000;// 시 * 분 * 초 * 밀리세컨
+    
+    /* console.log(dat1/currDay);
+    console.log(new Date((dat1/currDay)*currDay));
+    console.log(dat1);
+    console.log(dat2);
+    console.log(dat1/currDay);
+    console.log(dat2/currDay);
+    var dd = (new Date(((dat2/currDay)+1)*currDay));
+                            console.log(dd);
+                            console.log(dd.getDate()); */
+    var betweenDay = parseInt(diff/currDay);
+                            
+    for(let i=0; i<betweenDay+1; i++) {
+    	dayMarker[i] = [];
+    	dayMarkers[i] = [];
+    	linePath[i] = [];
+    	mapOverlay[i] = [];
+    	mapOverlays[i] = [];
+    	polylines[i] = [];
+    }
+                            
+    var week = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+    $("#cat_date_all").empty();
+    $("#schedule_full_box").empty();
+
+    for (var i = 0; i < betweenDay+1; i++) {
+        var dat3 = (new Date(((dat1/currDay)+i)*currDay));
+        calMonthDate = (dat3.getMonth() + "." + (dat3.getDate()));
+        var calYearMonthDate = dat3.getFullYear() + "." + dat3.getMonth() + "." + (dat3.getDate());
+        dayOfWeek = week[new Date(calYearMonthDate).getDay()];
+            $('#cat_date_all').append(
+            "<li class='cat_date' onclick=" + 'openCity'+ '('+'this'+','+'event'+','+ "'"+ 'schedule_day'+(i+1)+"'"+ ')'+ ">" +
+                  "<div class='fl cat_date_left_box'>" +
+                      "<div class='cat_left_day'>" + 'DAY'+(i+1)+"</div>" +
+                      "<div class='cat_left_date'>" + calMonthDate + "</div>" +
+                  "</div>" +
+                  "<div class='fl cat_date_right_box'>" +
+                      "<div class='cat_right_weekday'>"+ dayOfWeek + "</div>" +
+                  "</div>" +
+                  "<div class='clear'></div>" +
+              "</li>"
+            );
+            $("#schedule_full_box").append(
+            	    "<div class='schedule_full' id=schedule_day"+(i+1)+ " style='display:block;'>" +
+            	    "<div class='title_box'>" +
+            	    "<div id='schedule_detail_title'>" +
+            	        "<div class='fl schedule_detail_title_text'>" +
+            	            "<div class='fl'>" + 'DAY'+(i+1)+
+            	                "<span style='color:#999999'>|</span>"+ calMonthDate+'('+dayOfWeek+')'+"</div>" + 
+            	            "<div class='fl day_reset_btn' onclick='del_plan_inspot_day_all()'></div>" +
+            	            "<div class='clear'></div>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	"</div>" +
+
+            	"<div id='schedule_detail_box' class='connectedSortable ui-sortable'>" +
+            	    "<div class='day_spot_item'>" +
+            	        "<div class='item_ctrl_box'>" +
+            	            "<div class='fl item_copy_plan' title='장소복사'>" +
+            	                "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	            "</div>" +
+            	            "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	                "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	            "</div>" +
+            	            "<div class='fl btn_del' title='삭제'>" +
+            	                "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	            "</div>" +
+            	            "<div class='clear'></div>" +
+            	        "</div>" +
+            	        "<div class='spot_order_box'>8시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>9시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>10시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>11시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>12시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>13시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>14시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>15시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>16시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>17시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>18시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>19시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>20시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>21시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>22시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>23시</div>" +
+            	    "</div>" +
+            	    "<div class='day_spot_item'>" +
+            	    "<div class='item_ctrl_box'>" +
+            	        "<div class='fl item_copy_plan' title='장소복사'>" +
+            	            "<img src='../../img/sub10/item_more_icon_a.png' alt='장소복사'>" +
+            	        "</div>" +
+            	        "<div class='fl item_set_plan' title='메모&amp;예산'>" + 
+            	            "<img src='../../img/sub10/item_set_icon_a.png' alt='메모'>" +
+            	        "</div>" +
+            	        "<div class='fl btn_del' title='삭제'>" +
+            	            "<img src='../../img/sub10/item_del_icon_a.png' alt='삭제'>" +
+            	        "</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	    "<div class='spot_order_box'>24시</div>" +
+            	    "</div>" +
+            	    
+            	"</div>" +
+            	    "<div class='inspot_add_box'>" +
+            	    "<div class='inspot_set_box'>" +
+            	        "<div class='fl add_inspot_spot_btn' onclick='my_spot_inspot()'>+ My 장소</div>" +
+            	        "<div class='clear'></div>" +
+            	    "</div>" +
+            	"</div>" +
+            	"</div>"
+
+            	);
+    }
+    }
+}
+var dayRootIndex = null;
+function openCity(val, evt, cityName) {
+	dayRootIndex = $(val).children()[0].childNodes[0].textContent;
+	/* console.log($(val).children()[0].childNodes[0].textContent) */
+	dayRootMap(dayRootIndex);
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("schedule_full");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("cat_date");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" on", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " on";
+    
+}
+document.getElementById("defaultOpen").click();
+
+/* function del_plan_inspot_day_all(){
+    if (confirm('일정을 초기화하겠습니까?') == true){ 
+         $("#cat_date_all").empty();
+         $(".schedule_full").empty();
+         $("#datefilter").empty();
+   }else{   
+       return;
+   }
+ } */
+
+</script>
+
+<script>
+/*cumtom select*/
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select1":*/
+x = document.getElementsByClassName("custom-select1");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");  
+  for (j = 1; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+  });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+
+
+</script>
+
+
+<script>
+    /* Events fired on the drag target */
+    document.addEventListener("dragstart", function(event) {
+        event.dataTransfer.setData("Text", event.target.id);
+    });
+    
+    document.addEventListener("dragend", function(event) {
+    });
+    
+    /* Events fired on the drop target */
+    document.addEventListener("dragover", function(event) {
+        event.preventDefault();
+    });
+    
+    document.addEventListener("drop", function(event) {
+        event.preventDefault();
+        if ( event.target.className == "day_spot_item" ) {
+            var data = event.dataTransfer.getData("Text");
+            var nodeCopy = document.getElementById(data).cloneNode(true);
+            nodeCopy.id = "newId"; /* We cannot use the same ID */
+            event.target.appendChild(nodeCopy);
+            //console.log(event.target.appendChild(nodeCopy));
+            console.log("asd");
+            console.log(nodeCopy);
+            console.log($(nodeCopy).parent().parent().parent().children()[0].childNodes[0].childNodes[0].childNodes[0].childNodes[0].textContent);
+            console.log()
+            var dayIndex = $(nodeCopy).parent().parent().parent().children()[0].childNodes[0].childNodes[0].childNodes[0].childNodes[0].textContent;
+            var daySchedule = $(nodeCopy).children()[1];
+            console.log(dayIndex);
+        }
+        dayRoot(dayIndex, daySchedule);
+    });
+    </script>
+        
+
+<!-- <script>
+  $('#schedule_detail_box, .list_box').on('click', '.spot_distance_box', function () {
+      return false;
+    });
+
+    $('#schedule_detail_box').on('click', '.btn_del', function () {
+      cur_day = $(this).parent().parent().attr('data-set_day');
+      cur_order = $(this).parent().parent().attr('data');
+
+      del_plan_inspot(cur_day, cur_order);
+      _now_menu = $('#cat_menu li.on').attr('data');
+      if (_now_menu == 'clip') {
+        clearTimeout(auto_time);
+        auto_time = setTimeout(function () {
+          get_clip_list(1);
+        }, 500);
+      }
+
+      return false;
+    });
+
+
+$('#schedule_detail_box, .list_box').on('mouseover', '.day_spot_item', function () {
+      $(this).find('.item_ctrl_box').show();
+      _now_menu = $(this).parent().attr('id');
+      var no = $(this).attr('data-no');
+      var pl_cat = $(this).attr('data-pl_cat');
+
+      if (_now_menu == 'schedule_detail_box') {
+        var _this_only_clip = 1;
+      } else {
+        var _this_only_clip = 0;
+      }
+      markers['only_clip_' + _this_only_clip][no].setZIndex(99999999999999);
+      markers['only_clip_' + _this_only_clip][no].setIcon('/res/map/marker/ic_current.png');
+
+      if (pl_cat == '800' || pl_cat == '901' || pl_cat == '902' || pl_cat == '903') {
+        _arv_no = Number(no) + 1;
+        markers['only_clip_' + _this_only_clip][_arv_no].setZIndex(99999999999999);
+        markers['only_clip_' + _this_only_clip][_arv_no].setIcon('/res/map/marker/ic_current.png');
+      }
+      if (pl_cat == '100') {
+        markers['only_clip_' + _this_only_clip][no].set("labelClass", "s_label");
+      }
+    });
+
+    $('#schedule_detail_box, .list_box').on('mouseout', '.day_spot_item', function () {
+      $(this).find('.item_ctrl_box').hide();
+
+      _now_menu = $(this).parent().attr('id');
+      var _order = $(this).attr('data');
+      var pl_srl = $(this).attr('data-rel_srl');
+      var now_pl_srl = $('#select_detail_view_spot').attr('data');
+
+      if (_now_menu == 'schedule_detail_box') {
+        var _this_only_clip = 1;
+      } else {
+        var _this_only_clip = 0;
+      }
+
+      if (pl_srl != now_pl_srl) {
+        var no = $(this).attr('data-no');
+        var pl_cat = $(this).attr('data-pl_cat');
+        var is_clip_yn = markers['only_clip_' + _this_only_clip][no].clip_yn;
+
+            markers['only_clip_' + _this_only_clip][no].setZIndex(99999999999999);
+        if (is_clip_yn == 'y') {
+          markers['only_clip_' + _this_only_clip][no].setIcon('/res/map/marker/' + pl_cat + '_' + _order + '.png');
+        } else {
+          markers['only_clip_' + _this_only_clip][no].setIcon('/res/map/marker/n' + pl_cat + '_' + _order + '.png');
+        }
+        if (pl_cat == '800' || pl_cat == '901' || pl_cat == '902' || pl_cat == '903') {
+          _arv_no = Number(no) + 1;
+          markers['only_clip_' + _this_only_clip][_arv_no].setIcon('/res/map/marker/' + pl_cat + '_' + _order +
+            '.png');
+        }
+        if (pl_cat == '100') {
+          markers['only_clip_' + _this_only_clip][no].set("labelClass", "labels");
+        }
+      }
+
+    });
+</script> -->
+
+<script>
+$('#category > li').click(function() {
+    // 클릭된 당사자 => this
+    // 이 함수를 실행한 주어 => this
+    // $(this) => 이거 포장해주세요.
+    // 굳이 포장을 하는 이유
+    var $this = $(this);
+    
+    var $part5 = $this.closest('#category');
+    //var $part5 = $클릭된_녀석.parent().parent().parent(); // $part5를 얻는 또 다른 방법
+    // 오직 $part5 안에서만 .body 로 검색해서 나온 것들 포장해주세요.
+    var $list_category_box = $part5.find('.list_category_box');
+    
+    // 기존에 active 가진 녀석에게 active 빼앗기
+    $this.parent().find('.on').removeClass('on');
+    $this.addClass('on');
+    
+    // 클릭된 녀석이 형제 중에서 몇 번째 인지 확인(참고로 0부터 셉니다.);
+    var index = $this.index();
+    
+    // part-5 라는 클래스를 가진 나의 조상중에 나랑 가장 가까운 1개를 포장해주세요.
+    
+    // 기존의 active 된 요소들에서 active 제거
+    $list_category_box.find('.on').removeClass('on');
+    
+    $list_category_box.find('div:nth-child(' + (index + 1) + ')').addClass('on');
+});
+</script>
+<script src="planner_form.js"></script>
+</body>
+
+</html>

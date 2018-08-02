@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<title>Tour Information</title>
+<style type="text/css">
+#map {
+	height: 80%;
+}
+header {
+	border: 1px solid black;
+    width: auto;
+    padding : 5px;
+	height: 9%;
+}
+footer {
+	border: 1px solid black;
+    width: auto;
+    padding : 5px;
+	height: 9%;
+	vertical-align:top;
+}
+footer #destSet {
+    width: 100px;
+    height: 30px;
+}
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+form select{
+    width: 100px;
+    height: 30px;
+}
+form input{
+    width: 100px;
+    height: 30px;
+}
+img{
+  	width : 150px;
+    height : 100px;
+   	alt : null;
+}
+</style>
+
+
+	<!-- js -->
+	<script src="../../node_modules/handlebars/dist/handlebars.min.js"></script>
+	<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../js/common/common.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfcFC3fDM3EZab4iaF_ZkzftKyjdtBaHE">
+</script>
+<script>
+// 목표 1. 출발지점을 선택하고 좌표값을 받아 tourInformation에 넘겨주는 페이지
+//		(Google Maps API와 Marker 찍기 기능을 활용, Marker를 찍은 뒤 출발위치 설정 버튼 누르면 tourInformation 페이지로 이동)
+// 목표 2. 목표 1에서 받은 출발지점 좌표값과 tourInformation에서 선택한 도착지점 좌표값을 다음 페이지로 전송
+//		(도착지점 Marker 선택 후 목적지 설정 버튼 누르면 다음 페이지로 이동)
+// 목표 3. 목표 1, 2를 통해 얻은 출발/도착지점 좌표값으로 여행 경로를 안내하는 페이지
+//		(도시내 조회가 나올 경우 도시내 조회 결과를 보여줌
+//		도시간 조회가 나올 경우? 어떻게 해야하지?)
+// 대중교통 경로 조회 API
+	//도시간 경로 조회(기차/버스/항공) -> "https://api.odsay.com/api/searchPubTransPath?SX=[StartXpos]&SY=[StartYpos]&EX=[EndXpos]&EY=[EndYpos]&apiKey=IsDcGwapou2oVksmy4rIuQ"
+	//도시내 경로 조회(SearchPathType-모두:0/지하철:1/버스:2) -> "https://api.odsay.com/api/searchPubTransPath?SX=[StartXpos]&SY=[StartYpos]&EX=[EndXpos]&EY=[EndYpos]&SearchPath=0&SearchPathType=0&apiKey=IsDcGwapou2oVksmy4rIuQ"
+// SearchType이 0이면 도시내, 1이나 2면 도시간 경로
+// 도시간 경로 -> TrainRequest, exBusRequest, outBusRequest에 각각 기차/고속버스/시외버스 정보 출력
+// 도시내 경로 -> Path 객체 내에 도보/지하철/버스 정보의 조합으로 경로 계산
+// 도시내 경로일 경우 조회한 정보를 출력해서 경로 표기
+// 도시간 경로일 경우 도시내(출발점 ~ 도시간 거리 출발점) + 도시간 + 도시내(도시간 거리 도착점 ~ 목적지) 조회
+// 도시간 경로의 경우, 도시간 경로 조회 -> 도시내 경로 조회 2회 -> 종합 경로 표시 과정으로 진행해야 하나?
+			
+// 주소 선택창(header)을 만들고 관련 이벤트를 선언
+var ShowAddress = function(selectId){
+    var selectId=selectId;    
+    var addressObj={
+        "fields":[{"id":"code"},{"id":"name"},{"id":"rnum"}],
+        "records":[
+                   {"rnum":"1","name":"서울","code":"1"},
+                   {"rnum":"2","name":"인천","code":"2"},
+                   {"rnum":"3","name":"대전","code":"3"},
+                   {"rnum":"4","name":"대구","code":"4"},
+                   {"rnum":"5","name":"광주","code":"5"},
+                   {"rnum":"6","name":"부산","code":"6"},
+                   {"rnum":"7","name":"울산","code":"7"},
+                   {"rnum":"8","name":"세종특별자치시","code":"8"},
+                   {"rnum":"9","name":"경기도","code":"31"},
+                   {"rnum":"10","name":"강원도","code":"32"},
+                   {"rnum":"11","name":"충청북도","code":"33"},
+                   {"rnum":"12","name":"충청남도","code":"34"},
+                   {"rnum":"13","name":"경상북도","code":"35"},
+                   {"rnum":"14","name":"경상남도","code":"36"},
+                   {"rnum":"15","name":"전라북도","code":"37"},
+                   {"rnum":"16","name":"전라남도","code":"38"},
+                   {"rnum":"17","name":"제주도","code":"39"},
+                   ]
+    };
+    var categoryObj={
+    		"content":[
+    		           {"name":"관광지","contentTypeId":"12"},
+    		           {"name":"문화시설","contentTypeId":"14"},
+    		           {"name":"행사/공연/축제","contentTypeId":"15"},
+    		           {"name":"여행코스","contentTypeId":"25"},
+    		           {"name":"레포츠","contentTypeId":"28"},
+    		           {"name":"숙박","contentTypeId":"32"},
+    		           {"name":"쇼핑","contentTypeId":"38"},
+    		           {"name":"음식점","contentTypeId":"39"},
+    		           ]
+    };
+    for(var i=0;i<selectId.length;i++){
+        var getId=document.getElementById(selectId[i]);
+        addFirstOption(getId);
+    }
+    this.init = function(){
+        var select=document.getElementById(selectId[0]);
+        var content=document.getElementById(selectId[2]);
+        
+        var addressArray = addressObj.records; 
+        var categoryArray = categoryObj.content;
+        
+      
+        for(var i=0;i<addressArray.length;i++){
+            var option = document.createElement("option");
+            if(select.value==""){
+                option.value=addressArray[i].code;
+                option.text=addressArray[i].name;
+                select.add(option);
+             }              
+        }
+        for(var i=0;i<categoryObj.content.length;i++){
+        	var option = document.createElement("option");
+        	if(content.value==""){
+        		option.value=categoryArray[i].contentTypeId;
+        		option.text=categoryArray[i].name;        		
+        		content.add(option);
+        	}
+        }     
+        select.addEventListener("change",function(){
+	       	var json="http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaCode?serviceKey=u51gF3g3ZUKA4djrRZmmhP3HyPgbU0m4GovGP%2BvH2NU5c36TGF72c1P8QZiMa%2FKnCbVhuyYz9Nk9KHxGJXXrDw%3D%3D&areaCode="+this.value+"&numOfRows=100&MobileOS=IOS&MobileApp=sample&type=json";
+	       	$.getJSON(json,function(data){
+        		var nextAddr=data.response.body.items.item;      		
+        		document.getElementById(selectId[1]).length=1;        		
+            	var selValue=select.options[select.selectedIndex].value;
+            	var nextSelect=$("form>select")[1];            	
+        		for(var i=0;i<nextAddr.length;i++){
+        			if(selValue!=""){
+        				var option = document.createElement("option");
+        				option.value=nextAddr[i].code;        				        				
+        				option.text=nextAddr[i].name;        				
+        				nextSelect.add(option);
+        			}
+        		}
+	       	});        	
+        });
+    }
+    function addFirstOption(id){
+        var addOption = document.createElement("option");
+        var id=id;
+        addOption.value="";
+        addOption.text="-선택-";
+        id.add(addOption);
+    }
+}
+// Google 지도 API 초기화 함수
+function initMap(koreaLatlng) {
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 7,
+		center: koreaLatlng,
+		mapTypeControl:false,
+		streetViewControl:false,
+		fullscreenControl:false
+	});
+	
+	return map;
+}
+// Info Window가 열려있는지의 여부를 확인하는 함수
+function isInfoWindowOpen(infoWindow){
+	var map = infoWindow.getMap();
+	return (map !== null && typeof map !== "undefined");
+}
+// 화면에 보이는 지도 위치를 재조정하는 함수
+function relocateGoogleMap(map, dataArr) {
+ 	var latAvg = 0;
+ 	var lngAvg = 0;
+ 	var passCnt = 0;
+ 	for (var i = 0; i < dataArr.length ; i++) {
+ 		if (typeof dataArr[i].mapy == "number" && typeof dataArr[i].mapx == "number") {
+ 			latAvg += dataArr[i].mapy;
+ 			lngAvg += dataArr[i].mapx;
+ 		}
+ 		else passCnt++;
+ 	}
+ 	latAvg /= dataArr.length-passCnt;
+ 	lngAvg /= dataArr.length-passCnt;
+ 	
+ 	if (!isNaN(latAvg) && !isNaN(lngAvg)) {
+	 	map.setZoom(13);
+		map.setCenter({"lat": latAvg, "lng": lngAvg});
+	}
+}
+// 즉시실행 onLoad 함수
+$(function(){
+	var koreaLatlng = {lat: 35.7, lng: 127.8};
+	var tourLocations = [];
+	var locationMarkers = [];
+	var infoWindows = [];
+	
+	var map = initMap(koreaLatlng);
+	
+	// 여행지 Marker를 생성하고 그 목록을 배열에 저장하는 함수
+	function makeLocationMarker(dataArr) {
+		for(var i = 0 ; i < dataArr.length ; i++){
+			if (typeof dataArr[i].mapy == "number" && typeof dataArr[i].mapx == "number") {
+			var tourLocation = 
+			{
+				"title" : dataArr[i].title,
+				"addr" : dataArr[i].addr1,
+				"tel" : dataArr[i].tel,
+				"latlng" : {"lat" : dataArr[i].mapy, "lng" : dataArr[i].mapx},
+				"image" : dataArr[i].firstimage2
+			};
+			tourLocations.push(tourLocation);
+			}
+		}
+		
+		makeInfoWindow();
+	}
+	
+	// 여행지 Marker 목록을 가지고 각 Marker마다 Info Window를 생성하는 함수
+	function makeInfoWindow() {
+		var geoCoder = new google.maps.Geocoder();
+		var infoWindow = new google.maps.InfoWindow();
+		
+		for (var i = 0 ; i < tourLocations.length ; i++) {
+			var locationMarker = new google.maps.Marker({
+				position: tourLocations[i].latlng,
+				map: map,
+				title: tourLocations[i].title,
+				addr: tourLocations[i].addr,
+				tel: tourLocations[i].tel,
+				image: tourLocations[i].image
+			});
+			
+			locationMarker.addListener('click', function() {
+				var infoDiv = document.createElement("div");
+				infoDiv.id = "info";
+				var infoString = '<h2>' + this.title + '</h2>';
+				if (typeof this.tel !== 'undefined') {
+					infoString += '<h3> Tel.' + this.tel + '</h3>';
+				}
+				if (typeof this.image !== 'undefined') {
+					infoString += '<image src=\"' + this.image + '\">';
+				}
+				infoDiv.innerHTML = infoString;
+				
+				var destFooter = document.getElementById("destAddr");
+				if (typeof this.addr !== 'undefined') {
+					destFooter.innerHTML = this.addr;
+				};
+				
+				infoWindow.setContent(infoDiv);
+				infoWindow.open(map, this);
+				
+				infoWindows.push(infoWindow);
+			});
+			locationMarkers.push(locationMarker);
+		}
+	}
+	
+	// 지도에 isInfoWindowOpen 함수를 적용
+	map.addListener('click', function() {
+		for (var i = 0 ; i < infoWindows.length ; i++) {
+			if (isInfoWindowOpen(infoWindows[i])) {
+				infoWindows[i].close();
+				break;
+			}
+		}
+	});
+	// 웹 페이지 로딩이 끝나면 목적지 설정 Select Box 관련 함수를 초기화
+	$(document).ready(function(){
+		
+		var selectBox=$("form>select");
+		var selectArr=new Array();
+		for(var i=0;i<selectBox.length;i++){
+			selectArr.push(selectBox[i].id);
+		}
+		var initAddress=new ShowAddress(selectArr);
+		initAddress.init();
+		
+		$("#submit").on("click",function(){
+			var siDo=$("#siDo option:selected").val();
+			var siGoonGu=$("#siGoonGu option:selected").val();
+			var category=$("#category option:selected").val();
+			var jsObj="http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?serviceKey=u51gF3g3ZUKA4djrRZmmhP3HyPgbU0m4GovGP%2BvH2NU5c36TGF72c1P8QZiMa%2FKnCbVhuyYz9Nk9KHxGJXXrDw%3D%3D&contentTypeId="+category+"&areaCode="+siDo+"&sigunguCode="+siGoonGu+"&numOfRows=200&MobileOS=ETC&MobileApp=sample&type=json";
+			
+			$.getJSON(jsObj,function(data){
+				if(data.response.body.items !=""){
+					var getDataArr=data.response.body.items.item;
+					// 기존의 location marker를 지우는 과정
+					for (var i = 0 ; i < locationMarkers.length ; i++) {
+						locationMarkers[i].setMap();
+					}
+					tourLocations.length = 0;
+					locationMarkers.length = 0;
+					relocateGoogleMap(map, getDataArr);
+					makeLocationMarker(getDataArr);
+				}else {
+					alert("Data가 없습니다.");
+				}
+			});
+		});
+		
+		$("#reset").on("click", function(){
+			for (var i = 0 ; i < locationMarkers.length ; i++) {
+				locationMarkers[i].setMap();
+			}
+			tourLocations.length = 0;
+			locationMarkers.length = 0;
+			map.setZoom(7);
+			map.setCenter(koreaLatlng);
+		});
+	});
+});
+</script>
+</head>
+<body>
+	<header>
+		<form id="address" method ="post">
+        	목적지 설정        
+			<select id="siDo" name="siDo" ></select>
+			<select id="siGoonGu" name="siGoonGu"></select>
+			<select id="category" name="category"></select><br>
+			<input type="button" value="여행지 조회" id="submit">
+			<input type="reset" value="초기화" id="reset">
+		</form>
+	</header>
+	
+	<div id="map"></div>
+	
+	<footer id="destination">
+		선택된 목적지
+		<div id = "destAddr"></div>
+		<input type = "button" value = "목적지 설정" id = "destSet">
+	</footer>
+	
+</body>
+</html>

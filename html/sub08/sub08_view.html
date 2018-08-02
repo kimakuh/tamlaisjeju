@@ -19,23 +19,22 @@
     <link rel="stylesheet" href="../../css/layout.css" />
     <!-- sub08 -->
     <link rel="stylesheet" type="text/css" href="../../css/sub08.css">
-    <!-- logo font -->
-    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="../../js/common/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
-    <!-- daum map -->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script>
-
     <style type="text/css">
         @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
     </style>
+
+
+
+
 </head>
 
 <body>
     <div id="header"></div>
     <div id="sub08" class="sub08 container">
+        <div id="visual">
+            <img src="../../img/common/sub_visual_img01.jpg" alt="대표이미지">
+        </div>
+        <!-- visual end -->
 
         <div id="content">
 
@@ -83,7 +82,7 @@
                 <!-- 지도 -->
 
                 <!-- <div class=map_bb style="width: 100%;height: 400px;background-color: teal;margin-bottom:84px;" style="overflow: hidden;z-index:2; "></div> -->
-                 <div id="map" style="width:100%;height:400px;margin-bottom:84px;"></div>
+                <div id="map" style="width:100%;height:400px;margin-bottom:84px;"></div>
             </div>
 
             <!-- 타임라인 -->
@@ -91,56 +90,13 @@
             <div class="t_timeline">
 
                 <nav class="action">
-                    <div class="timeline_content_day fix_day1 day off clear">
-                        <h4> Day 1</h4>
-                        <p>2018.08.02</p>
-                        <p>Day1 경로보기</p>
-                    </div>
-                    <div class="timeline_content_day fix_day2 day off clear">
-                        <h4> Day 2</h4>
-                        <p>2018.08.03</p>
-                        <p>Day2 경로보기</p>
-                    </div>
-                    <div class="timeline_content_day fix_day3 day off clear">
-                        <h4> Day 3</h4>
-                        <p>2018.08.04</p>
-                        <p>Day3 경로보기</p>
-                    </div>
+                    <div id="nav_day_bar"></div>
+
 
                     <div class="nav_menu">
 
-                        <div class="treemenu">
-                            <div id="day1" level="0" onclick="fnMove('1')" class="lbl_titl">
-                                <span class="lbl ">1일차 </span>
-                            </div>
-                            <div level="1" class="under">
-                                <span class="lbl"> 유채꽃밭 </span>
-                            </div>
-                            <div level="1" class="under">
-                                <span class="lbl"> 해물파스타 </span>
-                            </div>
-                            <div id="day2" level="0" onclick="fnMove('2')" class="lbl_titl">
-                                <span class="lbl"> 2일차 </span>
-                            </div>
-                            <div level="1" class="under">
-                                <span class="lbl"> 카멜리아힐 </span>
-                            </div>
-                            <div level="1" class="under">
-                                <span class="lbl"> 심슨 </span>
-                            </div>
-                            <div id="day3" level="0" onclick="fnMove('3')" class="lbl_titl">
-                                <span class="lbl"> 3일차 </span>
-                            </div>
-                            <div level="1" class="under">
-                                <span class="lbl"> 성산일출봉 </span>
-                            </div>
-                            <div level="1" class="under">
-                                <span class="lbl"> 애월카페 </span>
-                            </div>
-                            <div level="1" class="under">
-                                <span class="lbl"> 지금이순간 </span>
-                            </div>
-                        </div>
+                        <div id="tree_menu" class="treemenu"></div>
+
                     </div>
 
 
@@ -230,285 +186,12 @@
                                         <a>좋아요 : 18,112</a>
                                     </div>
                                 </div>
-
-
-
-
                             </div>
-
                         </div>
                     </div>
                 </nav>
 
-
-                <div id="div1" class="day1">
-                    <div class="timeline_content_day c_day1">
-                        <h4> Day 1</h4>
-                        <p>2018.08.02</p>
-                        <p>Day1 경로보기</p>
-                    </div>
-                    <div class="t_timeline_content">
-                        <div class="context_menu">
-                            <span>
-                                <a href="#">#데이트</a>
-                                <a href="#">#포토존</a>
-                                <a href="#">#꽃</a>
-                            </span>
-                        </div>
-
-                        <div class="content_box clear">
-                            <img src="../../img/sub08/jeju1.jpg" alt="jeju1" />
-                            <div class="content_icon">
-                                <p class="contnet_name">유채꽃밭</p>
-                                <p class="content_addr">제주특별시 성산일출봉 근처 11-2</p>
-                            </div>
-                            <div class="content_text">
-                                <p>사진이 정말 이쁘게 찍히는곳💕
-                                    <br> 너무너무 맘에 들었어요 유채꽃밭 꼭 가보세요</p>
-
-                            </div>
-                        </div>
-                        <div class="t_timeline_content_imgbox">
-                            <figure class="snip0016">
-                                <img src="../../img/sub08/jeju1.jpg" alt="jeju1" />
-                                <figcaption>
-                                    <p>사진더보기</p>
-                                    <a href="#"></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="t_timeline_content ">
-                        <div class="context_menu">
-                            <span>
-                                <a href="#">#데이트</a>
-                                <a href="#">#포토존</a>
-                                <a href="#">#꽃</a>
-                            </span>
-
-                        </div>
-                        <div class="content_box clear">
-
-                            <img src="../../img/sub08/jeju2.jpg" alt="jeju1" />
-                            <div class="content_icon">
-                                <p class="contnet_name">해물파스타</p>
-                                <p class="content_addr">제주특별시 성산일출봉 근처 11-2</p>
-                            </div>
-                            <div class="content_text">
-                                <p>엄청맛있어요💕
-                                    <br> 해물의 맛 굿굿굿 ㅋ</p>
-
-                            </div>
-                        </div>
-                        <div class="t_timeline_content_imgbox">
-                            <figure class="snip0016">
-                                <img src="../../img/sub08/jeju2.jpg" alt="jeju2" />
-                                <figcaption>
-                                    <p>사진더보기</p>
-                                    <a href="#"></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div id="div2" class="day2">
-                    <div class="timeline_content_day c_day2">
-                        <h4> Day 2</h4>
-                        <p>2018.08.03</p>
-                        <p>Day2 경로보기</p>
-                    </div>
-                    <div class="t_timeline_content ">
-                        <div class="context_menu">
-                            <span>
-                                <a href="#">#데이트</a>
-                                <a href="#">#포토존</a>
-                                <a href="#">#꽃</a>
-                            </span>
-
-                        </div>
-                        <div class="content_box clear">
-
-                            <img src="../../img/sub08/jeju3.jpg" alt="jeju3" />
-                            <div class="content_icon">
-                                <p class="contnet_name">카멜리아힐</p>
-                                <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
-                            </div>
-                            <div class="content_text">
-                                <p>사진이 정말 이쁘게 찍히는곳💕
-                                    <br> 엄청좋았어요 좋은시간 베리굿</p>
-
-                            </div>
-                        </div>
-                        <div class="t_timeline_content_imgbox">
-                            <figure class="snip0016">
-                                <img src="../../img/sub08/jeju3.jpg" alt="jeju1" />
-                                <figcaption>
-                                    <p>사진더보기</p>
-                                    <a href="#"></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="t_timeline_content ">
-                        <div class="context_menu">
-                            <span>
-                                <a href="#">#데이트</a>
-                                <a href="#">#포토존</a>
-                                <a href="#">#꽃</a>
-                            </span>
-
-                        </div>
-                        <div class="content_box clear">
-
-                            <img src="../../img/sub08/jeju4.jpg" alt="jeju3" />
-                            <div class="content_icon">
-                                <p class="contnet_name">카멜리아힐</p>
-                                <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
-                            </div>
-                            <div class="content_text">
-                                <p>사진이 정말 이쁘게 찍히는곳💕
-                                    <br> 엄청좋았어요 좋은시간 베리굿</p>
-
-                            </div>
-                        </div>
-                        <div class="t_timeline_content_imgbox">
-                            <figure class="snip0016">
-                                <img src="../../img/sub08/jeju4.jpg" alt="제주사진" />
-                                <figcaption>
-                                    <p>사진더보기</p>
-                                    <a href="#"></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div id="div3" class="day3">
-                    <div class="timeline_content_day c_day3">
-                        <h4> Day 3</h4>
-                        <p>2018.08.04</p>
-                        <p>Day3 경로보기</p>
-                    </div>
-                    <div class="t_timeline_content">
-                        <div class="context_menu">
-                            <span>
-                                <a href="#">#데이트</a>
-                                <a href="#">#포토존</a>
-                                <a href="#">#꽃</a>
-                            </span>
-
-                        </div>
-                        <div class="content_box clear">
-
-                            <img src="../../img/sub08/jeju1.jpg" alt="제주사진" />
-                            <div class="content_icon">
-                                <p class="contnet_name">카멜리아힐</p>
-                                <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
-                            </div>
-                            <div class="content_text">
-                                <p>사진이 정말 이쁘게 찍히는곳💕
-                                    <br> 엄청좋았어요 좋은시간 베리굿</p>
-
-                            </div>
-                        </div>
-                        <div class="t_timeline_content_imgbox">
-                            <figure class="snip0016">
-                                <img src="../../img/sub08/jeju1.jpg" alt="제주사진" />
-                                <figcaption>
-                                    <p>사진더보기</p>
-                                    <a href="#"></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="t_timeline_content ">
-                        <div class="context_menu">
-                            <span>
-                                <a href="#">#데이트</a>
-                                <a href="#">#포토존</a>
-                                <a href="#">#꽃</a>
-                            </span>
-
-                        </div>
-                        <div class="content_box clear">
-
-                            <img src="../../img/sub08/jeju2.jpg" alt="제주사진" />
-                            <div class="content_icon">
-                                <p class="contnet_name">카멜리아힐</p>
-                                <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
-                            </div>
-                            <div class="content_text">
-                                <p>사진이 정말 이쁘게 찍히는곳💕
-                                    <br> 엄청좋았어요 좋은시간 베리굿</p>
-
-                            </div>
-                        </div>
-                        <div class="t_timeline_content_imgbox">
-                            <figure class="snip0016">
-                                <img src="../../img/sub08/jeju2.jpg" alt="제주사진" />
-                                <figcaption>
-                                    <p>사진더보기</p>
-                                    <a href="#"></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="t_timeline_content ">
-                        <div class="context_menu">
-                            <span>
-                                <a href="#">#데이트</a>
-                                <a href="#">#포토존</a>
-                                <a href="#">#꽃</a>
-                            </span>
-
-                        </div>
-                        <div class="content_box clear">
-
-                            <img src="../../img/sub08/jeju3.jpg" alt="제주사진" />
-                            <div class="content_icon">
-                                <p class="contnet_name">카멜리아힐</p>
-                                <p class="content_addr">제주특별시 카멜리아힐 근처 11-2</p>
-                            </div>
-                            <div class="content_text">
-                                <p>사진이 정말 이쁘게 찍히는곳💕
-                                    <br> 엄청좋았어요 좋은시간 베리굿</p>
-
-                            </div>
-                        </div>
-                        <div class="t_timeline_content_imgbox">
-                            <figure class="snip0016">
-                                <img src="../../img/sub08/jeju3.jpg" alt="제주사진" />
-                                <figcaption>
-                                    <p>사진더보기</p>
-                                    <a href="#"></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-                <!--모달-->
-                <!-- 
-                    <div class="fotorama" data-nav="thumbs">
-                        <a href="../../img/sub08/img2.jpg">
-                            <img src="../../img/sub08/img2.jpg">
-                        </a>
-                        <a href="../../img/sub08/img3.JPG">
-                            <img src="../../img/sub08/img3.JPG">
-                        </a>
-                    </div> -->
-
-
-
-
+                <div id="travel_cont"></div>
 
             </div>
         </div>
@@ -516,6 +199,21 @@
     </div>
 
     <div id="footer"></div>
+
+
+
+    <!-- handlebars -->
+    <script src="../../node_modules/handlebars/dist/handlebars.min.js"></script>
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Jquery -->
+    <script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- daum map -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619a7dc4f7d23963aa128663f464c8d5&libraries=services"></script>
+    <!-- 카카오로그인 -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function () {
             $("#header").load("../include/sub_header.html")
@@ -594,82 +292,354 @@
             // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
             map.relayout();
         }
-    </script> 
-
-    <!-- <script>
-        $('.js-timeline').Timeline({
-            dotsPosition: 'top'
-        });
-
-        // Dots Position Top
-        $('.timeline-2').Timeline({
-            itemClass: 'box-item',
-            dotsPosition: 'top',
-            startItem: 'last'
-        });
     </script>
--->
-
-    <script>
-        //왼쪽 fixed
+    <script type="text/javascript">
         $(document).ready(function () {
-            $(window).bind('scroll', function () {
-                var container = $('.container').height();
-                var content = $('.t_timeline').height();
-                if ($(window).scrollTop() > container - content) {
-                    if ($(window).scrollTop() > content - 246) {
-                        $('nav').addClass('absolute');
-                        $('nav').removeClass('fixed');
-                        return;
+
+            $.ajax({
+
+                type: "GET",
+
+                url: serverRoot + "/json/TravelLogContent/list",
+
+                dataType: "JSON", // 옵션이므로 JSON으로 받을게 아니면 안써도 됨
+
+                success: function (data) {
+                    let scheduleOfDay = [];
+                    let maxDay = 0;
+                    let no = 0;
+                    var md = 0;
+                    for (let i in data) {
+                        if (maxDay < data[i].day)
+                            maxDay = data[i].day;
                     }
-                    $('nav').removeClass('action');
-                    $('nav').removeClass('absolute');
-                    $('nav').addClass('fixed');
-                } else {
-                    $('nav').removeClass('absolute');
-                    $('nav').removeClass('fixed');
-                    $('nav').addClass('action');
-                }
-            });
-        });
-    </script>
-    <script>
-        //왼쪽 fixed
-        $(document).ready(function () {
-            $(window).bind('scroll', function () {
-                var day1 = $('.day1').offset().top;
-                var day2 = $('.day2').offset().top;
-                var day3 = $('.day3').offset().top;
-                var day4 = document.getElementById('day1');
-                var day5 = document.getElementById('day2');
-                var day6 = document.getElementById('day3');
 
-                if ($(document).scrollTop() > day3 - 180) {
-                    $('.day').removeClass('off');
-                    $('.day').addClass('off');
-                    $('.fix_day3').removeClass('off');
-                    $('.fix_day3').addClass('on');
-                    $('.c_day3').addClass('off');
-                    return;
-                }
-                if ($(document).scrollTop() > day2 - 180) {
-                    $('.day').removeClass('off');
-                    $('.day').addClass('off');
-                    $('.fix_day2').removeClass('off');
-                    $('.fix_day2').addClass('on');
-                    $('.c_day3').removeClass('off');
-                    $('.c_day2').addClass('off');
-                    return;
-                }
+                    for (let idx = 0; idx < maxDay; idx++) {
+                        scheduleOfDay[idx] = [];
 
-                if ($(document).scrollTop() > day1 - 180) {
-                    $('.day').removeClass('off');
-                    $('.day').addClass('off');
-                    $('.fix_day1').removeClass('off');
-                    $('.fix_day1').addClass('on');
-                    $('.c_day2').removeClass('off');
-                    $('.c_day1').addClass('off');
-                    return;
+                        for (let schedule of data) {
+                            if ((idx + 1) == schedule.day)
+                                scheduleOfDay[idx].push(schedule);
+                        }
+
+                    }
+
+                    for (var i = 1; i < maxDay + 1; i++) {
+                        $("#nav_day_bar").append(
+                            "<div class='timeline_content_day fix_day" + i + " day off clear'>" +
+                            "<h4> Day" + i + "</h4>" +
+                            "<p></p>" +
+                            "<p>" + "Day" + i + "경로보기" + "</p>" + "</div>")
+                    }
+
+
+                    for (let i = 1; i < scheduleOfDay.length + 1; i++) {
+                        $("#tree_menu").append(
+                            "<div id='day" + i + "'" + "level='" + no + "' onclick=" +
+                            "'fnMove(" + i + ")'" + "class='lbl_titl'>" +
+                            "<span class='lbl '>" + i + "일차 </span>" +
+                            "</div>"
+                        )
+                        for (let x = 0; x < scheduleOfDay[i - 1].length; x++) {
+                            $("#tree_menu").append(
+                                "<div level='1'" + "class='under'>" +
+                                "<span class='lbl'>" + scheduleOfDay[i - 1][x].place +
+                                "</span>" +
+                                "</div>"
+                            )
+                        }
+                    }
+
+
+                    // 콘텐트
+                    for (let i = 1; i < scheduleOfDay.length + 1; i++) {
+                        $("#travel_cont").append(
+                            "<div id='div" + i + "' class='day" + i + "'>" +
+                            "</div>"
+                        )
+                        $("#div" + i).append(
+                            "<div id='cont_day" + i + "' class='timeline_content_day c_day" + i +
+                            "'>" +
+                            "<h4>" + "Day" + i + "</h4>" +
+                            "<p></p>" +
+                            "<p>" + "Day" + i + "경로보기</p>" +
+                            "</div>"
+                        )
+                        for (let x = 0; x < scheduleOfDay[i - 1].length; x++) {
+                            $("#div" + i).append(
+                                "<div class='t_timeline_content'>" +
+                                "<div class='context_menu'>" +
+                                "<span>" +
+                                "<a href='" + "#" + "'>" + "#데이트" + "</a>" +
+                                "<a href='" + "#" + "'>" + "#포토존" + "</a>" +
+                                "<a href='" + "#" + "'>" + "#꽃" + "</a>" +
+                                "</span>" +
+                                "</div>" +
+
+                                "<div class='content_box clear'>" +
+                                "<img src='../../img/sub08/jeju1.jpg' alt='jeju1' />" +
+                                "<div class='content_icon'>" +
+                                "<p class='contnet_name'>" + scheduleOfDay[i - 1][x].place +
+                                "</p>" +
+                                "<p class='content_addr'>" + scheduleOfDay[i - 1][x].address +
+                                "</p>" +
+                                "</div>" +
+                                "<div class='content_text'>" +
+                                "<p>" + scheduleOfDay[i - 1][x].review + "</p>" +
+                                "</div>" +
+                                "</div>" +
+                                "<div class='t_timeline_content_imgbox'>" +
+                                "<figure class='snip0016'>" +
+                                "<img src='../../img/sub08/" + scheduleOfDay[i - 1][x].photo +
+                                "' alt='jeju1' />" +
+                                "<figcaption>" +
+                                "<p>사진더보기</p>" +
+                                "<a href='#'></a>" +
+                                "</figcaption>" +
+                                "</figure>" +
+                                "</div>" +
+                                "</div>"
+                            )
+                        }
+                    }
+
+                    var _createClass = function () {
+                        function defineProperties(target, props) {
+                            for (var i = 0; i < props.length; i++) {
+                                var descriptor = props[i];
+                                descriptor.enumerable = descriptor.enumerable || false;
+                                descriptor.configurable = true;
+                                if ("value" in descriptor) descriptor.writable = true;
+                                Object.defineProperty(target, descriptor.key, descriptor);
+                            }
+                        }
+                        return function (Constructor, protoProps, staticProps) {
+                            if (protoProps) defineProperties(Constructor.prototype,
+                                protoProps);
+                            if (staticProps) defineProperties(Constructor, staticProps);
+                            return Constructor;
+                        };
+                    }();
+
+                    function _classCallCheck(instance, Constructor) {
+                        if (!(instance instanceof Constructor)) {
+                            throw new TypeError("Cannot call a class as a function");
+                        }
+                    }
+
+                    window.log = function (text) {
+                        // console.log(text);
+                        //$(".console").prepend(text + "<br/>");  
+
+                    };
+
+                    var TreeMenu = function () {
+                        function TreeMenu($container) {
+                            _classCallCheck(this, TreeMenu);
+
+
+                            this.$container = $container;
+                            // $container.find("[level]").scrollTop(this.levelClickHandler.bind(
+                            //     this));
+                            $container.find("[level]").scrollTop(this.levelClickHandler.bind(
+                                this));
+                            var id = 0;
+                            $container.find("[level]").each(function (index, item) {
+                                var $item = $(item);
+                                $item.attr("data-treemenu-id", ++id);
+                                this.setOpen($item, false);
+                                if (parseInt($item.attr("level")) > 0) {
+                                    this.hideItem($item);
+                                } else {
+                                    this.showItem($item);
+                                }
+                            }.bind(this));
+                        }
+
+                        _createClass(TreeMenu, [{
+                            key: "levelClickHandler",
+                            value: function levelClickHandler(evt) {
+
+                                var $el = $(evt.currentTarget);
+
+                                if (this.isOpen($el)) {
+                                    this.closeItem($el);
+                                } else {
+                                    this.openItem($el);
+                                }
+                            }
+                        }, {
+                            key: "getElementTreeMenuId",
+                            value: function getElementTreeMenuId($el) {
+                                return $el.attr("data-treemenu-id");
+                            }
+                        }, {
+                            key: "getElementLevel",
+                            value: function getElementLevel($el) {
+                                return parseInt($el.attr("level"));
+                            }
+                        }, {
+                            key: "isOpen",
+                            value: function isOpen($el) {
+                                return $el.attr("data-treemenu-open") === "1";
+                            }
+                        }, {
+                            key: "setOpen",
+                            value: function setOpen($el, to) {
+                                log("set open: " + to);
+                                $el.attr("data-treemenu-open", to ? "1" : "0");
+                            }
+                        }, {
+                            key: "getGroup",
+                            value: function getGroup($el) {
+                                log("get group");
+                                //the group is every element that has a higher level than this one
+                                var firstElementLevel = this.getElementLevel(
+                                    $el);
+                                var group = [];
+
+                                this.$container.find("[level]").each(function (
+                                    index, item) {
+                                    var $item = $(item);
+
+                                    if (!group.length) {
+                                        //first item has not been passed in the loop
+                                        if (this.getElementTreeMenuId(
+                                                $el) == this.getElementTreeMenuId(
+                                                $item)) {
+                                            //the current item is the parent of the group
+                                            group.push($item);
+                                        }
+                                        //stop this iteration of the loop
+                                        return true;
+                                    }
+                                    //
+                                    //if the level of the item equals or is lower then the initial level, 
+                                    // we have reached the end of the group
+                                    var level = parseInt($item.attr(
+                                        "level"));
+                                    if (level <= firstElementLevel)
+                                        return false;
+                                    if (level == firstElementLevel + 1)
+                                        group.push($item);
+                                }.bind(this));
+                                return group;
+                            }
+                        }, {
+                            key: "closeItem",
+                            value: function closeItem($el) {
+                                this.setOpen($el, false);
+                                this.getGroup($el).forEach(function ($item,
+                                    index) {
+                                    if (!index) return true;
+                                    this.hideItem($item);
+
+                                    //also close its children
+                                    this.closeItem($item);
+                                }.bind(this));
+                            }
+                        }, {
+                            key: "openItem",
+                            value: function openItem($el) {
+                                this.setOpen($el);
+                                $('.under').removeClass('opened');
+                                $('.under').addClass('closed');
+                                $('.lbl_titl').removeClass('color_active');
+                                $('.lbl_titl').removeClass('color_off');
+                                ($el).addClass('color_off');
+                                ($el).addClass('color_active');
+                                this.getGroup($el).forEach(function ($item,
+                                    index) {
+                                    if (!index) return true;
+                                    this.showItem($item);
+                                }.bind(this));
+                            }
+                        }, {
+                            key: "showItem",
+                            value: function showItem($el) {
+                                $el.removeClass("closed");
+                                $el.addClass("opened");
+                            }
+                        }, {
+                            key: "hideItem",
+                            value: function hideItem($el) {
+                                $el.removeClass('opened');
+                                $el.addClass("closed");
+                            }
+                        }]);
+
+                        return TreeMenu;
+                    }();
+
+                    var menu = new TreeMenu($(".treemenu"));
+
+                    // fixed
+
+                    $(document).ready(function () {
+                        $(window).bind('scroll', function () {
+                            var container = $('.container').height();
+                            var content = $('.t_timeline').height();
+                            if ($(window).scrollTop() > container - content - 75) {
+                                if ($(window).scrollTop() > content - 252) {
+                                    $('nav').addClass('absolute');
+                                    $('nav').removeClass('fixed');
+                                    return;
+                                }
+                                $('nav').removeClass('action');
+                                $('nav').removeClass('absolute');
+                                $('nav').addClass('fixed');
+                            } else {
+                                $('nav').removeClass('absolute');
+                                $('nav').removeClass('fixed');
+                                $('nav').addClass('action');
+                            }
+                        });
+                    });
+
+                    //왼쪽 fixed
+                    $(document).ready(function () {
+                        var sarr = new Array();
+                        var cntarr = new Array();
+                        var dayPath = new Array();
+                        var treeItem = new Array();
+                        for (let i = 0; i < maxDay; i++) {
+                            sarr.push($('.day' + (i + 1)).offset().top)
+                            dayPath.push($('.day' + (i + 1)));
+                            treeItem.push($('#day' + (i + 1)))
+                        }
+
+
+                        function action() {
+                            for (let y = maxDay; y >= 0; y--) {
+                                while ($(document).scrollTop() > sarr[y] - 95) {
+                                    $('.day').removeClass('off');
+                                    $('.day').addClass('off');
+                                    $('.fix_day' + (y + 1)).removeClass('off');
+                                    $('.c_day' + (y + 1)).addClass('off');
+                                    $('.c_day' + (y + 2)).removeClass('off');
+                                    $('.fix_day' + (y + 1)).addClass('on');
+                                    menu.openItem(treeItem[y])
+                                    return;
+                                }
+                            }
+                        }
+
+                        $(window).bind('scroll', function () {
+                            action()
+                        });
+
+                    });
+                },
+                complete: function (data) {
+
+                    // 통신이 실패했어도 완료가 되었을 때 이 함수를 타게 된다.
+
+                    // TODO
+                },
+
+                error: function (xhr, status, error) {
+
+                    alert("에러발생");
                 }
             });
         });
@@ -680,171 +650,12 @@
         function fnMove(id) {
             var offset = $("#div" + id).offset();
             $('html, body').animate({
-                scrollTop: offset.top - 169
+                scrollTop: offset.top - 75
             }, 400);
         }
     </script>
-
-    <script>
-        // 트리메뉴
-        var _createClass = function () {
-            function defineProperties(target, props) {
-                for (var i = 0; i < props.length; i++) {
-                    var descriptor = props[i];
-                    descriptor.enumerable = descriptor.enumerable || false;
-                    descriptor.configurable = true;
-                    if ("value" in descriptor) descriptor.writable = true;
-                    Object.defineProperty(target, descriptor.key, descriptor);
-                }
-            }
-            return function (Constructor, protoProps, staticProps) {
-                if (protoProps) defineProperties(Constructor.prototype, protoProps);
-                if (staticProps) defineProperties(Constructor, staticProps);
-                return Constructor;
-            };
-        }();
-
-        function _classCallCheck(instance, Constructor) {
-            if (!(instance instanceof Constructor)) {
-                throw new TypeError("Cannot call a class as a function");
-            }
-        }
-
-        window.log = function (text) {
-            console.log(text);
-            //$(".console").prepend(text + "<br/>");  
-        };
-
-        var TreeMenu = function () {
-            function TreeMenu($container) {
-                _classCallCheck(this, TreeMenu);
-
-                this.$container = $container;
-                $container.find("[level]").click(this.levelClickHandler.bind(this));
-                var id = 0;
-                $container.find("[level]").each(function (index, item) {
-                    var $item = $(item);
-                    $item.attr("data-treemenu-id", ++id);
-                    this.setOpen($item, false);
-                    if (parseInt($item.attr("level")) > 0) {
-                        this.hideItem($item);
-                    } else {
-                        this.showItem($item);
-                    }
-                }.bind(this));
-            }
-
-            _createClass(TreeMenu, [{
-                key: "levelClickHandler",
-                value: function levelClickHandler(evt) {
-                    var $el = $(evt.currentTarget);
-
-                    if (this.isOpen($el)) {
-                        this.closeItem($el);
-                    } else {
-                        this.openItem($el);
-                    }
-                }
-            }, {
-                key: "getElementTreeMenuId",
-                value: function getElementTreeMenuId($el) {
-                    return $el.attr("data-treemenu-id");
-                }
-            }, {
-                key: "getElementLevel",
-                value: function getElementLevel($el) {
-                    return parseInt($el.attr("level"));
-                }
-            }, {
-                key: "isOpen",
-                value: function isOpen($el) {
-                    return $el.attr("data-treemenu-open") === "1";
-                }
-            }, {
-                key: "setOpen",
-                value: function setOpen($el, to) {
-                    log("set open: " + to);
-                    $el.attr("data-treemenu-open", to ? "1" : "0");
-                }
-            }, {
-                key: "getGroup",
-                value: function getGroup($el) {
-                    log("get group");
-                    //the group is every element that has a higher level than this one
-                    var firstElementLevel = this.getElementLevel($el);
-                    var group = [];
-
-                    this.$container.find("[level]").each(function (index, item) {
-                        var $item = $(item);
-
-                        if (!group.length) {
-                            //first item has not been passed in the loop
-                            if (this.getElementTreeMenuId($el) == this.getElementTreeMenuId(
-                                    $item)) {
-                                //the current item is the parent of the group
-                                group.push($item);
-                            }
-                            //stop this iteration of the loop
-                            return true;
-                        }
-                        //
-                        //if the level of the item equals or is lower then the initial level, 
-                        // we have reached the end of the group
-                        var level = parseInt($item.attr("level"));
-                        if (level <= firstElementLevel) return false;
-                        if (level == firstElementLevel + 1) group.push($item);
-                    }.bind(this));
-                    return group;
-                }
-            }, {
-                key: "closeItem",
-                value: function closeItem($el) {
-                    this.setOpen($el, false);
-                    this.getGroup($el).forEach(function ($item, index) {
-                        if (!index) return true;
-                        this.hideItem($item);
-
-                        //also close its children
-                        this.closeItem($item);
-                    }.bind(this));
-                }
-            }, {
-                key: "openItem",
-                value: function openItem($el) {
-                    this.setOpen($el);
-                    $('.under').removeClass('opened');
-                    $('.under').addClass('closed');
-                    $('.lbl_titl').removeClass('color_active');
-                    $('.lbl_titl').removeClass('color_off');
-                    ($el).addClass('color_off');
-                    ($el).addClass('color_active');
-                    this.getGroup($el).forEach(function ($item, index) {
-                        if (!index) return true;
-                        this.showItem($item);
-                    }.bind(this));
-                }
-            }, {
-                key: "showItem",
-                value: function showItem($el) {
-                    $el.removeClass("closed");
-                    $el.addClass("opened");
-                }
-            }, {
-                key: "hideItem",
-                value: function hideItem($el) {
-                    $el.removeClass('opened');
-                    $el.addClass("closed");
-                }
-            }]);
-
-            return TreeMenu;
-        }();
-
-        var menu = new TreeMenu($(".treemenu"));
-    </script>
-
-
-
+    <script src="../../js/common/common.js"></script>
+    <!-- <script type="text/javascript" src="sub08_view.js"></script> -->
 </body>
 
 

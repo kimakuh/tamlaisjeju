@@ -752,6 +752,7 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
+    background-color: white;
 }
 
 #sub10 .plan .day_page_right .right_scroll_box .spot_list_box .owl-stage-outer .owl-stage .owl-item .spot_list_item .spot_item {
@@ -885,7 +886,6 @@
     height: 100%;
     background: #203341;
     overflow-y: auto;
-    max-height: 654px;
 }
 
 #sub10 .full_wrap .left_full_box .f1 #cat_menu li {
@@ -927,6 +927,7 @@
 
 #sub10 .full_wrap .left_full_box .f1 #cat_menu li .cat_date_right_box .cat_right_weekday {
     margin-bottom: 3px;
+    margin-left: 10px;
     text-align: left !important;
 }
 
@@ -940,26 +941,15 @@
     font-size: 15px !important;
 }
 
-#sub10 .full_wrap .left_full_box .f1 #cat_add_box {
+#sub10 .full_wrap .left_full_box .f1 #cat_menu #cat_date_all {
     width: 160px;
     background: rgb(32, 51, 65);
     color: rgb(255, 255, 255);
-    height: 413px;
+    height: 624px;
+    max-height: 624px;
+    overflow-y: auto;
 }
 
-#sub10 .full_wrap .left_full_box .f1 #cat_add_box li {
-    padding-top: 15px;
-}
-
-#sub10 .full_wrap .left_full_box .f1 #cat_add_box li .add_box_pert {
-    width: 124px;
-    height: 32px;
-    line-height: 32px;
-    border: solid 1px #fff;
-    text-align: center;
-    margin: 0 auto;
-    cursor: pointer;
-}
 
 #sub10 .full_wrap .left_full_box .f1 #pn_date_controll_box {
     width: 160px;
@@ -1064,6 +1054,7 @@
     border-bottom: solid #a7a7a7 1px;
     background: #fff;
     width: 100%;
+    height: 65px;
     position: relative;
 }
 
@@ -1080,7 +1071,6 @@
 }
 
 #sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .img_box {
-    width: 62px;
     height: 55px;
     position: relative;
     cursor: pointer;
@@ -1092,7 +1082,7 @@
     float: left;
 }
 
-#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .img_box .spot_order_box {
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .spot_order_box {
     width: 22px;
     height: 22px;
     border-radius: 10px;
@@ -1131,6 +1121,35 @@
     font-size: 12px;
     color: #808080;
 }
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .item .img{
+	width : 50px;
+	height : 50px;
+    color: #808080;
+    float: left;
+    background-size: 50px 50px;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .item .title_info{
+    margin-left: 10px;
+    float: left;
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .item .title_info .title{
+    font-size: 14px;
+    font-weight: bold;
+    width: 160px; 
+    height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block
+    
+}
+
+#sub10 .full_wrap .left_full_box #schedule_full_box .connectedSortable .day_spot_item .item .title_info .info{
+	display: none;
+}
+
 
 #sub10 .full_wrap .left_full_box #schedule_full_box .inspot_add_box {
     border-top: solid #a7a7a7 1px;
@@ -1267,47 +1286,45 @@
     height: 100%;
     text-align: center;
     cursor: pointer;
-    padding-left: 7px;
 }
 
-
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on .category_bg.bank {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .tourist.on {
     background: url(../img/sub10/ic_300_c.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .category_bg.bank {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .tourist {
     background: url(../img/sub10/ic_300_a.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on .category_bg.cafe {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .food.on {
     background: url(../img/sub10/ic_200_c.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .category_bg.cafe {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .food {
     background: url(../img/sub10/ic_200_a.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on .category_bg.mart {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .shop.on {
     background: url(../img/sub10/ic_400_c.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .category_bg.mart {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .shop {
     background: url(../img/sub10/ic_400_a.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on .category_bg.store {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .hotel.on {
     background: url(../img/sub10/ic_100_c.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .category_bg.store {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .hotel {
     background: url(../img/sub10/ic_100_a.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .on .category_bg.zzim {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .zzim.on {
     background: url(../img/sub10/ic_000_c.png) no-repeat;
 }
 
-#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .category_bg.zzim {
+#sub10 .full_wrap #right_full_box #city_list .list_search_full_box .list_category_box .zzim {
     background: url(../img/sub10/ic_000_a.png) no-repeat;
 }
 
@@ -1685,17 +1702,9 @@
 #category {position:absolute;top:95px;left:10px;border-radius: 5px; background: #fff;overflow: hidden;z-index: 2;}
 #category li {float:left;list-style: none;width:50px;text-align: center; cursor: pointer;}
 #category li.on {background: #eee;}
-#category li:hover {background: #ffe6e6;border-left:1px solid #acacac;margin-left: -1px;}
+#category li:hover {background: #ffe6e6;}
 #category li:last-child{margin-right:0;border-right:0;}
 #category li span {width: 68px;text-align: center;cursor: pointer; display: block}
-#category li .category_bg {background:url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_category.png) no-repeat;}
-#category li .bank {background-position: -10px 0;}
-#category li .mart {background-position: -10px -36px;}
-#category li .pharmacy {background-position: -10px -72px;}
-#category li .oil {background-position: -10px -108px;}
-#category li .cafe {background-position: -10px -144px;}
-#category li .store {background-position: -10px -180px;}
-#category li.on .category_bg {background-position-x:-46px;}
 .placeinfo_wrap {position:absolute;bottom:28px;left:-150px;width:300px;}
 .placeinfo {position:relative;width:100%;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;padding-bottom: 10px;background: #fff;}
 .placeinfo:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
@@ -1706,17 +1715,23 @@
 .placeinfo .title {font-weight: bold; font-size:14px;border-radius: 6px 6px 0 0;margin: -1px -1px 0 -1px;padding:10px; color: #fff;background: #d95050;background: #d95050 url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
 .placeinfo .tel {color:#0f7833;}
 .placeinfo .jibun {color:#999;font-size:11px;margin-top:0;}
-#menu_wrap {position: absolute;top: 160px;left: 0;bottom: 0;width: 365px;/* margin: 10px 0 30px 10px; *//* padding: 5px; */overflow-y: auto; background: rgba(255, 255, 255, 0.7);z-index: 99999;font-size: 12px;border-radius: 10px;}
+#menu_wrap {position: absolute;top: 160px;left: 0;bottom: 0;width: 365px;/* margin: 10px 0 30px 10px; *//* padding: 5px; */overflow-y: auto; background: rgba(255, 255, 255, 0.7);z-index: 99999;font-size: 12px;}
 .bg_white {background:#fff;}
 #menu_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
 #menu_wrap .option{text-align: center;}
 #menu_wrap .option p {margin:10px 0;}  
 #menu_wrap .option button {margin-left:5px;}
 #placesList li {list-style: none;}
-#placesList .item {position:relative;border-bottom:1px solid #888;overflow: hidden;cursor: pointer;min-height: 65px;}
-#placesList .item span {display: block;margin-top:4px;}
-#placesList .item h5, #placesList .item .info {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
-#placesList .item .info{padding:10px 0 10px 55px;}
+#placesList .item {border-bottom:1px solid #888;overflow: hidden;min-height: 65px;}
+#placesList .item.on {background-color:#DDD;}
+#placesList .item div {margin-top: 7px;}
+#placesList .item div img {width: 100%; height: 100%;  }
+#placesList .item h5, #placesList .item .info {text-overflow: ellipsis;white-space: nowrap;}
+#placesList .item .img{float:left;width: 50px; height: 50px; background-size:50px 50px;}
+#placesList .item .title{float:left;font-weight:bold;font-size:14px;cursor: pointer;}
+#placesList .item .info{float:left;font-size:12px;}
+#placesList .item .title_info{margin-left:10px;width: 180px; text-overflow: ellipsis; white-space: nowrap; display: inline-block;}
+
 #placesList .info .gray {color:#8a8a8a;}
 #placesList .info .jibun {padding-left:26px;background:url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;}
 #placesList .info .tel {color:#009900;}
@@ -1739,4 +1754,8 @@
 #pagination {margin:10px auto;text-align: center;}
 #pagination a {display:inline-block;margin-right:10px;}
 #pagination .on {font-weight: bold; cursor: default;color:#777;}
-
+.customoverlay {position:relative;text-align:center;bottom:43px;border-radius:6px;float:left; background-color:#1a7ad9; color:white; max-width:200px; }
+.close {position: absolute;top: -22px;right: 10px;color: #888;width: 10px;height: 10px;background: url('http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png'); background-size:10px;}
+.close:hover {cursor: pointer;}
+.customoverlay div {padding:2px 5px;overflow: hidden; text-overflow: ellipsis;font-size:13px;display:inline-block;text-align:center;}
+.customoverlay img {width:50px;height:50px; display:inline-block;}

@@ -1029,6 +1029,11 @@ all - 여행필수정보 전체
     margin: 0;
 }
 
+#sub11 .my_tour .my_tour_wrap .tour_list .item_section.add {
+    -webkit-box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
+    box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
+}
+
 #sub11 .item_section {
     float: left;
     position: relative;
@@ -1036,7 +1041,8 @@ all - 여행필수정보 전체
     height: 280px;
     margin-left: 27px;
     background: #fff;
-    border: 1px solid #c1c1c1;
+    -webkit-box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
+    box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
     text-align: center;
 }
 
@@ -1153,6 +1159,11 @@ all - 여행필수정보 전체
 #sub11 .my_tour .my_tour_wrap .tour_list dl:nth-child(4n+1) {
     clear: left;
     margin-left: 0;
+}
+
+#sub11 .my_tour .my_tour_wrap .tour_list .item_section.add {
+    -webkit-box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
+    box-shadow: 3px 4px 5px 0 rgba(2,2,2,.2);
 }
 
 #sub11 .my_tour .my_tour_wrap .my_tour_list li .item_section.add dt {
